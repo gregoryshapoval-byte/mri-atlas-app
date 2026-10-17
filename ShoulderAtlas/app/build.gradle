@@ -1,0 +1,13 @@
+plugins { id 'com.android.application' }
+android {
+ namespace 'ru.grigory.shoulderatlas'
+ compileSdk 35
+ defaultConfig {
+  applicationId 'ru.grigory.shoulderatlas'
+  minSdk 26
+  targetSdk 35
+  versionCode 24
+  versionName '1.23'
+ }
+ compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
+}

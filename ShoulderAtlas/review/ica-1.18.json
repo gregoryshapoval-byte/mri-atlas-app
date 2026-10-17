@@ -1,0 +1,663 @@
+{
+  "status": "manual teaching placement; not independently validated",
+  "references": [
+    "https://visualmed.usal.es/wp-content/uploads/2021/11/REVIEW1.pdf",
+    "https://pubmed.ncbi.nlm.nih.gov/8837792/"
+  ],
+  "changes": [
+    {
+      "series": "ax",
+      "structure": 900006,
+      "before": [
+        {
+          "id": "ica-teaching-ax-6-81",
+          "structure": 900006,
+          "name": "≈ ВСА — C6, офтальмический сегмент",
+          "x": 216,
+          "y": 255,
+          "color": "#ffcf70",
+          "filter": 1003,
+          "approximate": true,
+          "provenance": "manual-teaching-1.16",
+          "annotation": "13241"
+        },
+        {
+          "id": "ica-teaching-ax-6-82",
+          "structure": 900006,
+          "name": "≈ ВСА — C6, офтальмический сегмент",
+          "x": 216,
+          "y": 251,
+          "color": "#ffcf70",
+          "filter": 1003,
+          "approximate": true,
+          "provenance": "manual-teaching-1.16",
+          "annotation": "13242"
+        },
+        {
+          "id": "ica-teaching-ax-6-83",
+          "structure": 900006,
+          "name": "≈ ВСА — C6, офтальмический сегмент",
+          "x": 216,
+          "y": 246,
+          "color": "#ffcf70",
+          "filter": 1003,
+          "approximate": true,
+          "provenance": "manual-teaching-1.16",
+          "annotation": "13243"
+        }
+      ],
+      "after": [
+        [
+          81,
+          200,
+          266
+        ],
+        [
+          82,
+          208,
+          257
+        ],
+        [
+          83,
+          216,
+          245
+        ]
+      ]
+    },
+    {
+      "series": "ax",
+      "structure": 900007,
+      "before": [
+        {
+          "id": "ica-teaching-ax-7-77",
+          "structure": 900007,
+          "name": "≈ ВСА — C7, коммуникантный сегмент",
+          "x": 209,
+          "y": 265,
+          "color": "#ffcf70",
+          "filter": 1003,
+          "approximate": true,
+          "provenance": "manual-teaching-1.16",
+          "annotation": "13237"
+        },
+        {
+          "id": "ica-teaching-ax-7-78",
+          "structure": 900007,
+          "name": "≈ ВСА — C7, коммуникантный сегмент",
+          "x": 210,
+          "y": 265,
+          "color": "#ffcf70",
+          "filter": 1003,
+          "approximate": true,
+          "provenance": "manual-teaching-1.16",
+          "annotation": "13238"
+        },
+        {
+          "id": "ica-teaching-ax-7-79",
+          "structure": 900007,
+          "name": "≈ ВСА — C7, коммуникантный сегмент",
+          "x": 211,
+          "y": 266,
+          "color": "#ffcf70",
+          "filter": 1003,
+          "approximate": true,
+          "provenance": "manual-teaching-1.16",
+          "annotation": "13239"
+        }
+      ],
+      "after": [
+        [
+          77,
+          201,
+          267
+        ],
+        [
+          78,
+          198,
+          269
+        ],
+        [
+          79,
+          198,
+          269
+        ]
+      ]
+    },
+    {
+      "series": "cor",
+      "structure": 900006,
+      "before": [
+        {
+          "id": "ica-teaching-cor-6-53",
+          "structure": 900006,
+          "name": "≈ ВСА — C6, офтальмический сегмент",
+          "x": 216,
+          "y": 344,
+          "color": "#ffcf70",
+          "filter": 1003,
+          "approximate": true,
+          "provenance": "manual-teaching-1.16",
+          "annotation": "13345"
+        },
+        {
+          "id": "ica-teaching-cor-6-54",
+          "structure": 900006,
+          "name": "≈ ВСА — C6, офтальмический сегмент",
+          "x": 218,
+          "y": 341,
+          "color": "#ffcf70",
+          "filter": 1003,
+          "approximate": true,
+          "provenance": "manual-teaching-1.16",
+          "annotation": "13346"
+        },
+        {
+          "id": "ica-teaching-cor-6-55",
+          "structure": 900006,
+          "name": "≈ ВСА — C6, офтальмический сегмент",
+          "x": 218,
+          "y": 338,
+          "color": "#ffcf70",
+          "filter": 1003,
+          "approximate": true,
+          "provenance": "manual-teaching-1.16",
+          "annotation": "13347"
+        }
+      ],
+      "after": [
+        [
+          53,
+          204,
+          337
+        ],
+        [
+          54,
+          205,
+          339
+        ],
+        [
+          55,
+          204,
+          341
+        ]
+      ]
+    },
+    {
+      "series": "cor",
+      "structure": 900007,
+      "before": [
+        {
+          "id": "ica-teaching-cor-7-57",
+          "structure": 900007,
+          "name": "≈ ВСА — C7, коммуникантный сегмент",
+          "x": 206,
+          "y": 336,
+          "color": "#ffcf70",
+          "filter": 1003,
+          "approximate": true,
+          "provenance": "manual-teaching-1.16",
+          "annotation": "13349"
+        },
+        {
+          "id": "ica-teaching-cor-7-58",
+          "structure": 900007,
+          "name": "≈ ВСА — C7, коммуникантный сегмент",
+          "x": 206,
+          "y": 335,
+          "color": "#ffcf70",
+          "filter": 1003,
+          "approximate": true,
+          "provenance": "manual-teaching-1.16",
+          "annotation": "13350"
+        },
+        {
+          "id": "ica-teaching-cor-7-59",
+          "structure": 900007,
+          "name": "≈ ВСА — C7, коммуникантный сегмент",
+          "x": 205,
+          "y": 334,
+          "color": "#ffcf70",
+          "filter": 1003,
+          "approximate": true,
+          "provenance": "manual-teaching-1.16",
+          "annotation": "13351"
+        }
+      ],
+      "after": [
+        [
+          57,
+          209,
+          338
+        ],
+        [
+          58,
+          209,
+          338
+        ],
+        [
+          59,
+          208,
+          337
+        ]
+      ]
+    },
+    {
+      "series": "sag",
+      "structure": 900006,
+      "before": [
+        {
+          "id": "ica-teaching-sag-6-13",
+          "structure": 900006,
+          "name": "≈ ВСА — C6, офтальмический сегмент",
+          "x": 159,
+          "y": 283,
+          "color": "#ffcf70",
+          "filter": 1003,
+          "approximate": true,
+          "provenance": "manual-teaching-1.16",
+          "annotation": "13462"
+        },
+        {
+          "id": "ica-teaching-sag-6-14",
+          "structure": 900006,
+          "name": "≈ ВСА — C6, офтальмический сегмент",
+          "x": 160,
+          "y": 282,
+          "color": "#ffcf70",
+          "filter": 1003,
+          "approximate": true,
+          "provenance": "manual-teaching-1.16",
+          "annotation": "13463"
+        },
+        {
+          "id": "ica-teaching-sag-6-15",
+          "structure": 900006,
+          "name": "≈ ВСА — C6, офтальмический сегмент",
+          "x": 161,
+          "y": 281,
+          "color": "#ffcf70",
+          "filter": 1003,
+          "approximate": true,
+          "provenance": "manual-teaching-1.16",
+          "annotation": "13464"
+        }
+      ],
+      "after": [
+        [
+          13,
+          174,
+          280
+        ],
+        [
+          14,
+          175,
+          280
+        ],
+        [
+          15,
+          176,
+          278
+        ]
+      ]
+    },
+    {
+      "series": "sag",
+      "structure": 900007,
+      "before": [
+        {
+          "id": "ica-teaching-sag-7-13",
+          "structure": 900007,
+          "name": "≈ ВСА — C7, коммуникантный сегмент",
+          "x": 180,
+          "y": 272,
+          "color": "#ffcf70",
+          "filter": 1003,
+          "approximate": true,
+          "provenance": "manual-teaching-1.16",
+          "annotation": "13462"
+        },
+        {
+          "id": "ica-teaching-sag-7-14",
+          "structure": 900007,
+          "name": "≈ ВСА — C7, коммуникантный сегмент",
+          "x": 181,
+          "y": 272,
+          "color": "#ffcf70",
+          "filter": 1003,
+          "approximate": true,
+          "provenance": "manual-teaching-1.16",
+          "annotation": "13463"
+        },
+        {
+          "id": "ica-teaching-sag-7-15",
+          "structure": 900007,
+          "name": "≈ ВСА — C7, коммуникантный сегмент",
+          "x": 182,
+          "y": 271,
+          "color": "#ffcf70",
+          "filter": 1003,
+          "approximate": true,
+          "provenance": "manual-teaching-1.16",
+          "annotation": "13464"
+        }
+      ],
+      "after": [
+        [
+          16,
+          179,
+          275
+        ],
+        [
+          17,
+          178,
+          275
+        ],
+        [
+          18,
+          180,
+          271
+        ]
+      ]
+    },
+    {
+      "series": "arteries3d",
+      "sourceFrame": 372,
+      "new": {
+        "id": "ica-3d-372-C3",
+        "structure": 900003,
+        "name": "≈ ВСА — C3, сегмент рваного отверстия",
+        "x": 202,
+        "y": 442,
+        "color": "#ffcf70",
+        "filter": 1003,
+        "approximate": true,
+        "provenance": "manual-3d-teaching-1.18"
+      }
+    },
+    {
+      "series": "arteries3d",
+      "sourceFrame": 372,
+      "new": {
+        "id": "ica-3d-372-C5",
+        "structure": 900005,
+        "name": "≈ ВСА — C5, клиноидный сегмент",
+        "x": 220,
+        "y": 349,
+        "color": "#ffcf70",
+        "filter": 1003,
+        "approximate": true,
+        "provenance": "manual-3d-teaching-1.18"
+      }
+    },
+    {
+      "series": "arteries3d",
+      "sourceFrame": 372,
+      "new": {
+        "id": "ica-3d-372-C6",
+        "structure": 900006,
+        "name": "≈ ВСА — C6, офтальмический сегмент",
+        "x": 209,
+        "y": 348,
+        "color": "#ffcf70",
+        "filter": 1003,
+        "approximate": true,
+        "provenance": "manual-3d-teaching-1.18"
+      }
+    },
+    {
+      "series": "arteries3d",
+      "sourceFrame": 372,
+      "new": {
+        "id": "ica-3d-372-C7",
+        "structure": 900007,
+        "name": "≈ ВСА — C7, коммуникантный сегмент",
+        "x": 195,
+        "y": 339,
+        "color": "#ffcf70",
+        "filter": 1003,
+        "approximate": true,
+        "provenance": "manual-3d-teaching-1.18"
+      }
+    },
+    {
+      "series": "arteries3d",
+      "sourceFrame": 373,
+      "new": {
+        "id": "ica-3d-373-C3",
+        "structure": 900003,
+        "name": "≈ ВСА — C3, сегмент рваного отверстия",
+        "x": 181,
+        "y": 333,
+        "color": "#ffcf70",
+        "filter": 1003,
+        "approximate": true,
+        "provenance": "manual-3d-teaching-1.18"
+      }
+    },
+    {
+      "series": "arteries3d",
+      "sourceFrame": 373,
+      "new": {
+        "id": "ica-3d-373-C5",
+        "structure": 900005,
+        "name": "≈ ВСА — C5, клиноидный сегмент",
+        "x": 190,
+        "y": 241,
+        "color": "#ffcf70",
+        "filter": 1003,
+        "approximate": true,
+        "provenance": "manual-3d-teaching-1.18"
+      }
+    },
+    {
+      "series": "arteries3d",
+      "sourceFrame": 373,
+      "new": {
+        "id": "ica-3d-373-C6",
+        "structure": 900006,
+        "name": "≈ ВСА — C6, офтальмический сегмент",
+        "x": 199,
+        "y": 250,
+        "color": "#ffcf70",
+        "filter": 1003,
+        "approximate": true,
+        "provenance": "manual-3d-teaching-1.18"
+      }
+    },
+    {
+      "series": "arteries3d",
+      "sourceFrame": 373,
+      "new": {
+        "id": "ica-3d-373-C7",
+        "structure": 900007,
+        "name": "≈ ВСА — C7, коммуникантный сегмент",
+        "x": 201,
+        "y": 267,
+        "color": "#ffcf70",
+        "filter": 1003,
+        "approximate": true,
+        "provenance": "manual-3d-teaching-1.18"
+      }
+    },
+    {
+      "series": "arteries3d",
+      "sourceFrame": 374,
+      "new": {
+        "id": "ica-3d-374-C3",
+        "structure": 900003,
+        "name": "≈ ВСА — C3, сегмент рваного отверстия",
+        "x": 213,
+        "y": 405,
+        "color": "#ffcf70",
+        "filter": 1003,
+        "approximate": true,
+        "provenance": "manual-3d-teaching-1.18"
+      }
+    },
+    {
+      "series": "arteries3d",
+      "sourceFrame": 374,
+      "new": {
+        "id": "ica-3d-374-C5",
+        "structure": 900005,
+        "name": "≈ ВСА — C5, клиноидный сегмент",
+        "x": 176,
+        "y": 344,
+        "color": "#ffcf70",
+        "filter": 1003,
+        "approximate": true,
+        "provenance": "manual-3d-teaching-1.18"
+      }
+    },
+    {
+      "series": "arteries3d",
+      "sourceFrame": 374,
+      "new": {
+        "id": "ica-3d-374-C6",
+        "structure": 900006,
+        "name": "≈ ВСА — C6, офтальмический сегмент",
+        "x": 195,
+        "y": 344,
+        "color": "#ffcf70",
+        "filter": 1003,
+        "approximate": true,
+        "provenance": "manual-3d-teaching-1.18"
+      }
+    },
+    {
+      "series": "arteries3d",
+      "sourceFrame": 374,
+      "new": {
+        "id": "ica-3d-374-C7",
+        "structure": 900007,
+        "name": "≈ ВСА — C7, коммуникантный сегмент",
+        "x": 209,
+        "y": 324,
+        "color": "#ffcf70",
+        "filter": 1003,
+        "approximate": true,
+        "provenance": "manual-3d-teaching-1.18"
+      }
+    },
+    {
+      "series": "arteries3d",
+      "sourceFrame": 375,
+      "new": {
+        "id": "ica-3d-375-C3",
+        "structure": 900003,
+        "name": "≈ ВСА — C3, сегмент рваного отверстия",
+        "x": 282,
+        "y": 350,
+        "color": "#ffcf70",
+        "filter": 1003,
+        "approximate": true,
+        "provenance": "manual-3d-teaching-1.18"
+      }
+    },
+    {
+      "series": "arteries3d",
+      "sourceFrame": 375,
+      "new": {
+        "id": "ica-3d-375-C5",
+        "structure": 900005,
+        "name": "≈ ВСА — C5, клиноидный сегмент",
+        "x": 274,
+        "y": 266,
+        "color": "#ffcf70",
+        "filter": 1003,
+        "approximate": true,
+        "provenance": "manual-3d-teaching-1.18"
+      }
+    },
+    {
+      "series": "arteries3d",
+      "sourceFrame": 375,
+      "new": {
+        "id": "ica-3d-375-C6",
+        "structure": 900006,
+        "name": "≈ ВСА — C6, офтальмический сегмент",
+        "x": 266,
+        "y": 274,
+        "color": "#ffcf70",
+        "filter": 1003,
+        "approximate": true,
+        "provenance": "manual-3d-teaching-1.18"
+      }
+    },
+    {
+      "series": "arteries3d",
+      "sourceFrame": 375,
+      "new": {
+        "id": "ica-3d-375-C7",
+        "structure": 900007,
+        "name": "≈ ВСА — C7, коммуникантный сегмент",
+        "x": 269,
+        "y": 284,
+        "color": "#ffcf70",
+        "filter": 1003,
+        "approximate": true,
+        "provenance": "manual-3d-teaching-1.18"
+      }
+    },
+    {
+      "series": "arteries3d",
+      "sourceFrame": 376,
+      "new": {
+        "id": "ica-3d-376-C3",
+        "structure": 900003,
+        "name": "≈ ВСА — C3, сегмент рваного отверстия",
+        "x": 299,
+        "y": 416,
+        "color": "#ffcf70",
+        "filter": 1003,
+        "approximate": true,
+        "provenance": "manual-3d-teaching-1.18"
+      }
+    },
+    {
+      "series": "arteries3d",
+      "sourceFrame": 376,
+      "new": {
+        "id": "ica-3d-376-C5",
+        "structure": 900005,
+        "name": "≈ ВСА — C5, клиноидный сегмент",
+        "x": 316,
+        "y": 346,
+        "color": "#ffcf70",
+        "filter": 1003,
+        "approximate": true,
+        "provenance": "manual-3d-teaching-1.18"
+      }
+    },
+    {
+      "series": "arteries3d",
+      "sourceFrame": 376,
+      "new": {
+        "id": "ica-3d-376-C6",
+        "structure": 900006,
+        "name": "≈ ВСА — C6, офтальмический сегмент",
+        "x": 307,
+        "y": 342,
+        "color": "#ffcf70",
+        "filter": 1003,
+        "approximate": true,
+        "provenance": "manual-3d-teaching-1.18"
+      }
+    },
+    {
+      "series": "arteries3d",
+      "sourceFrame": 376,
+      "new": {
+        "id": "ica-3d-376-C7",
+        "structure": 900007,
+        "name": "≈ ВСА — C7, коммуникантный сегмент",
+        "x": 303,
+        "y": 332,
+        "color": "#ffcf70",
+        "filter": 1003,
+        "approximate": true,
+        "provenance": "manual-3d-teaching-1.18"
+      }
+    }
+  ]
+}

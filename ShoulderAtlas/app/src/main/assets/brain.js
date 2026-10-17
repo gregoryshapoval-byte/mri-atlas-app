@@ -1,0 +1,50 @@
+import {SliceGestures} from './brain-gestures.js';
+import {AnnotationLayer} from './brain-labels.js';
+const $=s=>document.querySelector(s), clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+let data,annotationData,group=['contrast','vascular'].includes(new URLSearchParams(location.search).get('set'))?new URLSearchParams(location.search).get('set'):'multiplanar',panels=[];
+function save(){try{localStorage.setItem('brain-view-v1',JSON.stringify({group,ids:panels.map(p=>p.series.id),indices:panels.map(p=>p.index)}))}catch{}}
+class Viewer{
+ constructor(series,index=0){
+  this.series=series;this.index=clamp(index,0,series.frames.length-1);this.zoom=1;this.x=0;this.y=0;this.rotation=0;this.flipX=1;this.flipY=1;this.points=new Map();
+  this.el=document.createElement('section');this.el.className='panel';
+  this.el.innerHTML='<div class="panelHead"><span>СЕРИЯ</span><select aria-label="Выбор серии"></select></div><div class="stage"><img alt="МРТ головного мозга" draggable="false"><span class="status"></span><span class="failed" hidden>Не удалось загрузить кадр</span></div><div class="controls"><div class="paging"><button class="prev" aria-label="Предыдущий кадр">‹</button><input class="slice" type="range" min="0" step="1" aria-label="Номер кадра"><button class="next" aria-label="Следующий кадр">›</button></div><div class="pageCount" aria-live="polite"></div><div class="displayControls"><label>Яркость<input class="bright" type="range" min="50" max="180" value="100"></label><label>Контраст<input class="ct" type="range" min="50" max="200" value="100"></label></div><div class="zoomBar"><button class="minus" aria-label="Уменьшить">−</button><button class="fit">100% · вписать</button><button class="plus" aria-label="Увеличить">+</button></div></div>';
+  const q=s=>this.el.querySelector(s);this.img=q('img');this.stage=q('.stage');this.range=q('.slice');this.select=q('select');
+  for(const s of data.series.filter(s=>s.group===group)){const o=document.createElement('option');o.value=s.id;o.textContent=s.title;this.select.append(o)}this.select.value=series.id;
+  this.select.onchange=()=>{this.series=data.series.find(s=>s.id===this.select.value);this.index=clamp(this.index,0,this.series.frames.length-1);this.reset();this.render();save()};
+  q('.prev').onclick=()=>this.move(this.index-1);q('.next').onclick=()=>this.move(this.index+1);this.range.oninput=()=>this.move(+this.range.value);
+  q('.bright').oninput=q('.ct').oninput=()=>{this.img.style.filter=`brightness(${q('.bright').value}%) contrast(${q('.ct').value}%)`;this.ann?.transform()};
+  q('.minus').onclick=()=>this.scale(this.zoom/1.3);q('.plus').onclick=()=>this.scale(this.zoom*1.3);q('.fit').onclick=()=>this.reset();
+  this.img.onerror=()=>{q('.failed').hidden=false};this.img.onload=()=>{q('.failed').hidden=true};
+  this.gestures=new SliceGestures(this);this.gestures.bind(this.stage);
+  this.stage.onwheel=e=>{e.preventDefault();if(e.ctrlKey)this.scale(this.zoom*(e.deltaY<0?1.1:1/1.1));else this.move(this.index+(e.deltaY>0?1:-1))};
+  this.stage.tabIndex=0;this.stage.setAttribute('aria-label','Изображение. Стрелки вверх и вниз листают кадры.');this.stage.onkeydown=e=>{if(['ArrowDown','ArrowUp','ArrowLeft','ArrowRight'].includes(e.key)){e.preventDefault();this.move(this.index+(['ArrowDown','ArrowRight'].includes(e.key)?1:-1))}};
+  this.fullButton=document.createElement('button');this.fullButton.className='fullscreenButton';this.fullButton.textContent='⛶';this.fullButton.setAttribute('aria-label','На весь экран');q('.panelHead').append(this.fullButton);this.fullButton.onclick=()=>this.setFullscreen(!this.el.classList.contains('fullscreenViewer'));
+  this.render();
+ }
+ setFullscreen(on){
+  if(on)for(const p of panels)if(p!==this)p.setFullscreen(false);
+  this.el.classList.toggle('fullscreenViewer',on);document.body.classList.toggle('viewerFullscreen',on);this.fullButton.textContent=on?'✕':'⛶';this.fullButton.setAttribute('aria-label',on?'Выйти из полного экрана':'На весь экран');this.fullButton.setAttribute('aria-pressed',String(on));
+  window.AtlasNative?.setImmersive(on);requestAnimationFrame(()=>this.transform());
+ }
+ distance(){const [a,b]=[...this.points.values()];return Math.hypot(a.x-b.x,a.y-b.y)}
+ transform(){this.stage.style.touchAction='none';const maxX=this.stage.clientWidth*(this.zoom-1)/2,maxY=this.stage.clientHeight*(this.zoom-1)/2;this.x=clamp(this.x,-maxX,maxX);this.y=clamp(this.y,-maxY,maxY);this.img.style.transform=`translate(${this.x}px,${this.y}px) scale(${this.zoom}) rotate(${this.rotation}deg) scale(${this.flipX},${this.flipY})`;this.el.querySelector('.fit').textContent=Math.round(this.zoom*100)+'% · вписать';this.ann?.transform()}
+ scale(z){this.zoom=clamp(z,1,5);this.transform()}
+ reset(){this.rotation=0;this.flipX=this.flipY=1;this.zoom=1;this.x=this.y=0;this.el.querySelector('.bright').value=this.el.querySelector('.ct').value=100;this.img.style.filter='none';this.transform()}
+ move(i,sync=true){this.index=clamp(i,0,this.series.frames.length-1);this.render();if(sync&&group==='contrast'&&$('#link').checked)for(const p of panels)if(p!==this)p.move(this.index,false);save()}
+ render(){const n=this.series.frames.length;if(!this.ann)this.img.src=this.series.frames[this.index].src;this.img.alt=`${this.series.title}, кадр ${this.index+1} из ${n}`;this.range.max=n-1;this.range.value=this.index;this.el.querySelector('.status').textContent=this.series.plane;this.el.querySelector('.pageCount').textContent=`${group==='vascular'?'Ракурс':'Кадр'} ${this.index+1} / ${n}`;this.el.querySelector('.prev').disabled=this.index===0;this.el.querySelector('.next').disabled=this.index===n-1;this.ann?.render();this.transform();}
+}
+function build(restore){
+ const ss=data.series.filter(s=>s.group===group),count=$('#compare').checked?2:1;for(const p of panels)p.setFullscreen(false);panels=[];$('#viewers').replaceChildren();$('#viewers').classList.toggle('compare',count===2);
+ for(let i=0;i<count;i++){const series=ss.find(s=>s.id===restore?.ids?.[i])||ss[i===1?(group==='contrast'?3:1):0];const p=new Viewer(series,restore?.indices?.[i]??(group==='vascular'?0:Math.floor(series.frames.length/2)));panels.push(p);$('#viewers').append(p.el);p.ann=new AnnotationLayer(p,annotationData)}
+ $('#vascular').setAttribute('aria-pressed',group==='vascular');$('#multi').setAttribute('aria-pressed',group==='multiplanar');$('#contrast').setAttribute('aria-pressed',group==='contrast');$('#linkLabel').hidden=!(count===2&&group==='contrast');if(group!=='contrast')$('#link').checked=false;
+ $('#summary').textContent=group==='vascular'?'8 готовых 3D-ракурсов · артерии, вены и синусы. Листай ракурсы жестом; масштаб доступен двумя пальцами.':group==='multiplanar'?'353 кадра · аксиальная, коронарная и сагиттальная плоскости.':'144 кадра · T1, T1 Гадолиний, T2, T2*, FLAIR и DWI. Названия из базы атласа.';save();
+}
+$('#vascular').onclick=()=>{group='vascular';build()};$('#multi').onclick=()=>{group='multiplanar';build()};$('#contrast').onclick=()=>{group='contrast';build()};
+$('#compare').onchange=()=>build({ids:panels.map(p=>p.series.id),indices:panels.map(p=>p.index)});
+$('#link').onchange=()=>{if($('#link').checked&&panels[0])panels[0].move(panels[0].index)};$('#reset').onclick=()=>panels.forEach(p=>p.reset());
+try{const res=await fetch('brain-data.json');if(!res.ok)throw Error('manifest');data=await res.json();const labels=await fetch('brain-labels.json');if(!labels.ok)throw Error('labels');annotationData=await labels.json();let saved;try{saved=JSON.parse(localStorage.getItem('brain-view-v1'));if(saved?.group!==group)saved=null}catch{}const requested=new URLSearchParams(location.search).get('series');if(data.series.some(s=>s.id===requested&&s.group===group))saved={ids:[requested],indices:[0]};build(saved)}catch(e){$('#summary').textContent='Не удалось открыть набор изображений.';$('#error').hidden=false;$('#error').textContent='Вернись в меню и открой раздел повторно.';console.error(e)}
+
+window.addEventListener('resize',()=>panels.forEach(p=>p.ann?.render()));
+
+window.exitAtlasFullscreen=()=>{const p=panels.find(p=>p.el.classList.contains('fullscreenViewer'));if(!p)return false;p.setFullscreen(false);return true};
+window.addEventListener('keydown',e=>{if(e.key==='Escape'&&!document.querySelector('dialog[open]'))window.exitAtlasFullscreen()});

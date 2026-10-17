@@ -1,0 +1,326 @@
+[
+  {
+    "series": "ax",
+    "frame": 98,
+    "annotation": "13258",
+    "segment": "C3",
+    "x": 207,
+    "y": 268,
+    "status": "approximate"
+  },
+  {
+    "series": "ax",
+    "frame": 99,
+    "annotation": "13259",
+    "segment": "C3",
+    "x": 207,
+    "y": 268,
+    "status": "approximate"
+  },
+  {
+    "series": "ax",
+    "frame": 100,
+    "annotation": "13260",
+    "segment": "C3",
+    "x": 206,
+    "y": 269,
+    "status": "approximate"
+  },
+  {
+    "series": "cor",
+    "frame": 65,
+    "annotation": "13357",
+    "segment": "C3",
+    "x": 186,
+    "y": 419,
+    "status": "approximate"
+  },
+  {
+    "series": "cor",
+    "frame": 66,
+    "annotation": "13358",
+    "segment": "C3",
+    "x": 184,
+    "y": 420,
+    "status": "approximate"
+  },
+  {
+    "series": "cor",
+    "frame": 67,
+    "annotation": "13359",
+    "segment": "C3",
+    "x": 181,
+    "y": 420,
+    "status": "approximate"
+  },
+  {
+    "series": "sag",
+    "frame": 15,
+    "annotation": "13464",
+    "segment": "C3",
+    "x": 203,
+    "y": 342,
+    "status": "approximate"
+  },
+  {
+    "series": "sag",
+    "frame": 16,
+    "annotation": "13465",
+    "segment": "C3",
+    "x": 204,
+    "y": 343,
+    "status": "approximate"
+  },
+  {
+    "series": "sag",
+    "frame": 17,
+    "annotation": "13466",
+    "segment": "C3",
+    "x": 205,
+    "y": 344,
+    "status": "approximate"
+  },
+  {
+    "series": "ax",
+    "frame": 85,
+    "annotation": "13245",
+    "segment": "C5",
+    "x": 213,
+    "y": 230,
+    "status": "approximate"
+  },
+  {
+    "series": "ax",
+    "frame": 86,
+    "annotation": "13246",
+    "segment": "C5",
+    "x": 212,
+    "y": 230,
+    "status": "approximate"
+  },
+  {
+    "series": "ax",
+    "frame": 87,
+    "annotation": "13247",
+    "segment": "C5",
+    "x": 211,
+    "y": 231,
+    "status": "approximate"
+  },
+  {
+    "series": "cor",
+    "frame": 49,
+    "annotation": "13341",
+    "segment": "C5",
+    "x": 204,
+    "y": 339,
+    "status": "approximate"
+  },
+  {
+    "series": "cor",
+    "frame": 50,
+    "annotation": "13342",
+    "segment": "C5",
+    "x": 205,
+    "y": 339,
+    "status": "approximate"
+  },
+  {
+    "series": "cor",
+    "frame": 51,
+    "annotation": "13343",
+    "segment": "C5",
+    "x": 206,
+    "y": 338,
+    "status": "approximate"
+  },
+  {
+    "series": "sag",
+    "frame": 13,
+    "annotation": "13462",
+    "segment": "C5",
+    "x": 153,
+    "y": 291,
+    "status": "approximate"
+  },
+  {
+    "series": "sag",
+    "frame": 14,
+    "annotation": "13463",
+    "segment": "C5",
+    "x": 154,
+    "y": 292,
+    "status": "approximate"
+  },
+  {
+    "series": "sag",
+    "frame": 15,
+    "annotation": "13464",
+    "segment": "C5",
+    "x": 155,
+    "y": 292,
+    "status": "approximate"
+  },
+  {
+    "series": "ax",
+    "frame": 81,
+    "annotation": "13241",
+    "segment": "C6",
+    "x": 216,
+    "y": 255,
+    "status": "approximate"
+  },
+  {
+    "series": "ax",
+    "frame": 82,
+    "annotation": "13242",
+    "segment": "C6",
+    "x": 216,
+    "y": 251,
+    "status": "approximate"
+  },
+  {
+    "series": "ax",
+    "frame": 83,
+    "annotation": "13243",
+    "segment": "C6",
+    "x": 216,
+    "y": 246,
+    "status": "approximate"
+  },
+  {
+    "series": "cor",
+    "frame": 53,
+    "annotation": "13345",
+    "segment": "C6",
+    "x": 216,
+    "y": 344,
+    "status": "approximate"
+  },
+  {
+    "series": "cor",
+    "frame": 54,
+    "annotation": "13346",
+    "segment": "C6",
+    "x": 218,
+    "y": 341,
+    "status": "approximate"
+  },
+  {
+    "series": "cor",
+    "frame": 55,
+    "annotation": "13347",
+    "segment": "C6",
+    "x": 218,
+    "y": 338,
+    "status": "approximate"
+  },
+  {
+    "series": "sag",
+    "frame": 13,
+    "annotation": "13462",
+    "segment": "C6",
+    "x": 159,
+    "y": 283,
+    "status": "approximate"
+  },
+  {
+    "series": "sag",
+    "frame": 14,
+    "annotation": "13463",
+    "segment": "C6",
+    "x": 160,
+    "y": 282,
+    "status": "approximate"
+  },
+  {
+    "series": "sag",
+    "frame": 15,
+    "annotation": "13464",
+    "segment": "C6",
+    "x": 161,
+    "y": 281,
+    "status": "approximate"
+  },
+  {
+    "series": "ax",
+    "frame": 77,
+    "annotation": "13237",
+    "segment": "C7",
+    "x": 209,
+    "y": 265,
+    "status": "approximate"
+  },
+  {
+    "series": "ax",
+    "frame": 78,
+    "annotation": "13238",
+    "segment": "C7",
+    "x": 210,
+    "y": 265,
+    "status": "approximate"
+  },
+  {
+    "series": "ax",
+    "frame": 79,
+    "annotation": "13239",
+    "segment": "C7",
+    "x": 211,
+    "y": 266,
+    "status": "approximate"
+  },
+  {
+    "series": "cor",
+    "frame": 57,
+    "annotation": "13349",
+    "segment": "C7",
+    "x": 206,
+    "y": 336,
+    "status": "approximate"
+  },
+  {
+    "series": "cor",
+    "frame": 58,
+    "annotation": "13350",
+    "segment": "C7",
+    "x": 206,
+    "y": 335,
+    "status": "approximate"
+  },
+  {
+    "series": "cor",
+    "frame": 59,
+    "annotation": "13351",
+    "segment": "C7",
+    "x": 205,
+    "y": 334,
+    "status": "approximate"
+  },
+  {
+    "series": "sag",
+    "frame": 13,
+    "annotation": "13462",
+    "segment": "C7",
+    "x": 180,
+    "y": 272,
+    "status": "approximate"
+  },
+  {
+    "series": "sag",
+    "frame": 14,
+    "annotation": "13463",
+    "segment": "C7",
+    "x": 181,
+    "y": 272,
+    "status": "approximate"
+  },
+  {
+    "series": "sag",
+    "frame": 15,
+    "annotation": "13464",
+    "segment": "C7",
+    "x": 182,
+    "y": 271,
+    "status": "approximate"
+  }
+]

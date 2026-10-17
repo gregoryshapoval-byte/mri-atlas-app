@@ -1,0 +1,23 @@
+# Android / Gradle
+.gradle/
+build/
+**/build/
+local.properties
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Signing keys must never be committed
+*.jks
+*.keystore
+atlas-signing/
+
+# Temporary files
+*.tmp
+*.log

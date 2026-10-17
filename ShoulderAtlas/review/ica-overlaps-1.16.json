@@ -1,0 +1,80 @@
+[
+  {
+    "annotation": "13258",
+    "point": {
+      "id": 615825,
+      "structure": 4291,
+      "name": "ВСА — C4, кавернозный сегмент",
+      "x": 207,
+      "y": 268,
+      "color": "#FF0000",
+      "filter": 1003
+    },
+    "reason": "Overlapping source point at estimated transition"
+  },
+  {
+    "annotation": "13260",
+    "point": {
+      "id": 615974,
+      "structure": 4288,
+      "name": "ВСА — C2, каменистый сегмент",
+      "x": 206,
+      "y": 269,
+      "color": "#FF0000",
+      "filter": 1003
+    },
+    "reason": "Overlapping source point at estimated transition"
+  },
+  {
+    "annotation": "13357",
+    "point": {
+      "id": 621824,
+      "structure": 4291,
+      "name": "ВСА — C4, кавернозный сегмент",
+      "x": 186,
+      "y": 419,
+      "color": "#FF0000",
+      "filter": 1003
+    },
+    "reason": "Overlapping source point at estimated transition"
+  },
+  {
+    "annotation": "13359",
+    "point": {
+      "id": 622097,
+      "structure": 4291,
+      "name": "ВСА — C4, кавернозный сегмент",
+      "x": 182,
+      "y": 420,
+      "color": "#FF0000",
+      "filter": 1003
+    },
+    "reason": "Overlapping source point at estimated transition"
+  },
+  {
+    "annotation": "13466",
+    "point": {
+      "id": 633861,
+      "structure": 4288,
+      "name": "ВСА — C2, каменистый сегмент",
+      "x": 204,
+      "y": 346,
+      "color": "#FF0000",
+      "filter": 1003
+    },
+    "reason": "Overlapping source point at estimated transition"
+  },
+  {
+    "annotation": "13247",
+    "point": {
+      "id": 614852,
+      "structure": 4291,
+      "name": "ВСА — C4, кавернозный сегмент",
+      "x": 206,
+      "y": 235,
+      "color": "#FF0000",
+      "filter": 1003
+    },
+    "reason": "Overlapping source point at estimated transition"
+  }
+]

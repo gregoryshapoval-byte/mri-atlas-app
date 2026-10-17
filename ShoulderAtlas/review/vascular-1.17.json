@@ -1,0 +1,65 @@
+{
+  "removed": [
+    {
+      "frame": 372,
+      "id": 639283,
+      "structure": 4285,
+      "reason": "Removed generic ICA/siphon; retain numbered segments"
+    },
+    {
+      "frame": 372,
+      "id": 639287,
+      "structure": 4307,
+      "reason": "Removed generic ICA/siphon; retain numbered segments"
+    },
+    {
+      "frame": 373,
+      "id": 639307,
+      "structure": 4285,
+      "reason": "Removed generic ICA/siphon; retain numbered segments"
+    },
+    {
+      "frame": 373,
+      "id": 639313,
+      "structure": 4307,
+      "reason": "Removed generic ICA/siphon; retain numbered segments"
+    },
+    {
+      "frame": 374,
+      "id": 639334,
+      "structure": 4285,
+      "reason": "Removed generic ICA/siphon; retain numbered segments"
+    },
+    {
+      "frame": 374,
+      "id": 639340,
+      "structure": 4307,
+      "reason": "Removed generic ICA/siphon; retain numbered segments"
+    },
+    {
+      "frame": 375,
+      "id": 639361,
+      "structure": 4285,
+      "reason": "Removed generic ICA/siphon; retain numbered segments"
+    },
+    {
+      "frame": 375,
+      "id": 639367,
+      "structure": 4307,
+      "reason": "Removed generic ICA/siphon; retain numbered segments"
+    },
+    {
+      "frame": 376,
+      "id": 639389,
+      "structure": 4285,
+      "reason": "Removed generic ICA/siphon; retain numbered segments"
+    },
+    {
+      "frame": 376,
+      "id": 639394,
+      "structure": 4307,
+      "reason": "Removed generic ICA/siphon; retain numbered segments"
+    }
+  ],
+  "source": "brain3dmri frames 372–379; series 571; original coordinates, no T1 point transfer"
+}

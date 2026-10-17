@@ -1,0 +1,119 @@
+[
+  {
+    "annotation": "13259",
+    "point": {
+      "id": 615903,
+      "structure": 4288,
+      "name": "ВСА — C2, каменистый сегмент",
+      "x": 208,
+      "y": 268,
+      "color": "#FF0000",
+      "filter": 1003
+    },
+    "reason": "Overlapping source label at an uncertain transition; retained here for review"
+  },
+  {
+    "annotation": "13358",
+    "point": {
+      "id": 621960,
+      "structure": 4291,
+      "name": "ВСА — C4, кавернозный сегмент",
+      "x": 184,
+      "y": 420,
+      "color": "#FF0000",
+      "filter": 1003
+    },
+    "reason": "Overlapping source label at an uncertain transition; retained here for review"
+  },
+  {
+    "annotation": "13246",
+    "point": {
+      "id": 614750,
+      "structure": 4291,
+      "name": "ВСА — C4, кавернозный сегмент",
+      "x": 206,
+      "y": 229,
+      "color": "#FF0000",
+      "filter": 1003
+    },
+    "reason": "Overlapping source label at an uncertain transition; retained here for review"
+  },
+  {
+    "annotation": "13246",
+    "point": {
+      "id": 614751,
+      "structure": 4307,
+      "name": "ВСА — сонный сифон",
+      "x": 212,
+      "y": 230,
+      "color": "#FF0000",
+      "filter": 1003
+    },
+    "reason": "Overlapping source label at an uncertain transition; retained here for review"
+  },
+  {
+    "annotation": "13342",
+    "point": {
+      "id": 620058,
+      "structure": 4291,
+      "name": "ВСА — C4, кавернозный сегмент",
+      "x": 207,
+      "y": 359,
+      "color": "#FF0000",
+      "filter": 1003
+    },
+    "reason": "Overlapping source label at an uncertain transition; retained here for review"
+  },
+  {
+    "annotation": "13342",
+    "point": {
+      "id": 620059,
+      "structure": 4307,
+      "name": "ВСА — сонный сифон",
+      "x": 213,
+      "y": 350,
+      "color": "#FF0000",
+      "filter": 1003
+    },
+    "reason": "Overlapping source label at an uncertain transition; retained here for review"
+  },
+  {
+    "annotation": "13463",
+    "point": {
+      "id": 633335,
+      "structure": 4307,
+      "name": "ВСА — сонный сифон",
+      "x": 158,
+      "y": 298,
+      "color": "#FF0000",
+      "filter": 1003
+    },
+    "reason": "Overlapping source label at an uncertain transition; retained here for review"
+  },
+  {
+    "annotation": "13242",
+    "point": {
+      "id": 614332,
+      "structure": 4307,
+      "name": "ВСА — сонный сифон",
+      "x": 216,
+      "y": 251,
+      "color": "#FF0000",
+      "filter": 1003
+    },
+    "reason": "Overlapping source label at an uncertain transition; retained here for review"
+  },
+  {
+    "annotation": "13346",
+    "point": {
+      "id": 620479,
+      "structure": 4307,
+      "name": "ВСА — сонный сифон",
+      "x": 218,
+      "y": 341,
+      "color": "#FF0000",
+      "filter": 1003
+    },
+    "reason": "Overlapping source label at an uncertain transition; retained here for review"
+  }
+]

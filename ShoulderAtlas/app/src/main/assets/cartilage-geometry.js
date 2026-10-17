@@ -1,0 +1,6 @@
+export const R=1, H=.14;
+export const cases={normal:{name:'Норма',depth:0,bone:0},shallow:{name:'Частичный <50%',depth:.35,bone:0},deep:{name:'Частичный >50%',depth:.75,bone:0},full:{name:'Полнослойный',depth:1,bone:0},osteo:{name:'Костно-хрящевой',depth:1,bone:.18}};
+export function point(theta,phi,r){return [-1.04+.93*r*Math.sin(theta)*Math.cos(phi),1.15-r*Math.cos(theta),-.05+1.14*r*Math.sin(theta)*Math.sin(phi)]}
+export function floorRadius(id){return R+H*(1-cases[id].depth)-cases[id].bone}
+export function patches(id,a){const c=cases[id];if(!c.depth)return [{t0:0,t1:Math.PI,r0:R,r1:R,m:0},{t0:0,t1:1.25,r0:R+H,r1:R+H,m:1},{t0:1.25,t1:1.25,r0:R,r1:R+H,m:1}];return [{t0:c.depth===1?a:0,t1:Math.PI,r0:R,r1:R,m:0},{t0:a,t1:1.25,r0:R+H,r1:R+H,m:1},{t0:1.25,t1:1.25,r0:R,r1:R+H,m:1},{t0:0,t1:a,r0:floorRadius(id),r1:floorRadius(id),m:c.depth<1?1:2},{t0:a,t1:a,r0:Math.max(R,floorRadius(id)),r1:R+H,m:3},...(c.bone?[{t0:a,t1:a,r0:R-c.bone,r1:R,m:2}]:[])];}
+export function meshData(p){let positions=[],indices=[];const N=p.t0===p.t1?1:48,M=96;for(let i=0;i<=N;i++){let t=p.t0+(p.t1-p.t0)*i/N,r=p.r0+(p.r1-p.r0)*i/N;for(let j=0;j<=M;j++)positions.push(...point(t,2*Math.PI*j/M,r));}for(let i=0;i<N;i++)for(let j=0;j<M;j++){let a=i*(M+1)+j,b=a+M+1;indices.push(a,b,a+1,a+1,b,b+1)}return {positions,indices};}

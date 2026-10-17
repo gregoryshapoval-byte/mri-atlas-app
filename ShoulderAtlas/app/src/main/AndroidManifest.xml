@@ -1,0 +1,7 @@
+<manifest package="ru.grigory.shoulderatlas" xmlns:android="http://schemas.android.com/apk/res/android">
+ <application android:label="МРТ Атлас" android:icon="@drawable/ic_atlas" android:theme="@style/AppTheme" android:allowBackup="false" android:enableOnBackInvokedCallback="false" android:hardwareAccelerated="true" android:usesCleartextTraffic="false" android:supportsRtl="true">
+  <activity android:name="ru.grigory.shoulderatlas.MainActivity" android:exported="true" android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout|uiMode">
+   <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+  </activity>
+ </application>
+</manifest>

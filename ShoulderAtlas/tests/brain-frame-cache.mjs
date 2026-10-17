@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {LatestFrame,decodedImage} from '../app/src/main/assets/brain-frame-cache.js';
+const defer=()=>{let resolve,reject;const promise=new Promise((a,b)=>{resolve=a;reject=b});return {promise,resolve,reject}};
+const loader=new LatestFrame();let visible='old',errors=0;
+const a=defer(),b=defer();const pa=loader.run(()=>a.promise,x=>visible=x,()=>errors++);const pb=loader.run(()=>b.promise,x=>visible=x,()=>errors++);
+assert.equal(visible,'old');b.resolve('new');await pb;a.resolve('stale');await pa;assert.equal(visible,'new');
+await loader.run(()=>Promise.reject(Error('decode')),x=>visible=x,()=>errors++);assert.equal(visible,'new');assert.equal(errors,1);
+const c=defer();const pc=loader.run(()=>c.promise,x=>visible=x,()=>errors++);await loader.run(()=>Promise.resolve('latest'),x=>visible=x);c.reject(Error('stale error'));await pc;assert.equal(visible,'latest');assert.equal(errors,1);
+let made=0;globalThis.Image=class{constructor(){made++}set src(v){queueMicrotask(()=>this.onload())}async decode(){this.decoded=true}};
+const first=decodedImage('test.jpg'),second=decodedImage('test.jpg');assert.equal(first,second);assert.equal((await first).decoded,true);assert.equal(made,1);
+console.log('PASS: previous frame retained while loading; stale success/error ignored; failure preserves image; decoded cache reused');
