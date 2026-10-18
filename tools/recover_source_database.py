@@ -105,7 +105,13 @@ def main():
     p.add_argument("destination",type=Path)
     args=p.parse_args()
     args.destination.mkdir(parents=True,exist_ok=True)
-    extract_backup(args.archive,args.destination)
+    with zipfile.ZipFile(args.archive) as source_archive:
+        names=set(source_archive.namelist())
+        if names=={'eAnatomy.db','pelvis.zip','base.apk'}:
+            for name in sorted(names):
+                (args.destination/name).write_bytes(source_archive.read(name))
+        else:
+            extract_backup(args.archive,args.destination)
     export_db(args.destination/"eAnatomy.db",args.destination/"eanatomy-readable.db",
               recover_passphrase(args.destination/"base.apk"))
     print("Readable database and pelvis images recovered. No key emitted.")
