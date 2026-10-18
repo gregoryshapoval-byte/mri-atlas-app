@@ -3,7 +3,7 @@ import {categories} from './anatomy-colors.js';
 const NS='http://www.w3.org/2000/svg';
 export function annotationSlice(data,series,frame){
  const base=data.slices[frame.annotation]||{points:[],masks:[]},extra=data.seriesSlices?.[series.id]?.[frame.annotation];
- const points=base.points.map(p=>data.displayNames?.[p.structure]?{...p,name:data.displayNames[p.structure]}:p);
+ const points=base.points.map(p=>(data.displayNames?.[p.structure]||data.shortNames?.[p.structure])?{...p,name:data.displayNames?.[p.structure]||p.name,shortName:data.shortNames?.[p.structure]||p.shortName}:p);
  if(!extra)return {...base,points};
  return {...base,points:[...points.filter(p=>!extra.suppress?.includes(p.structure)),...(extra.points||[])],regions:extra.regions||[]};
 }
