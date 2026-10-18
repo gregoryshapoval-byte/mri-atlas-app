@@ -26,5 +26,8 @@ jobs:
             with zipfile.ZipFile(io.BytesIO(outer.read('pelvis.zip'))) as inner:
               names=inner.namelist(); print('PELVIS ZIP FILES',len(names))
               print('FIRST 100:');print('\n'.join(names[:100]))
-              print('EXTENSIONS',collections.Counter(n.rsplit('.',1)[-1] for n in names).most_common(20))
+              print('SIGNATURES:')
+              for n in names[:12]:
+                blob=inner.read(n)
+                print(n[:12],len(blob),repr(blob[:18]))
           PY
