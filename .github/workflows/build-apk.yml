@@ -52,7 +52,6 @@ jobs:
       - name: Prepare model previews
         env:
           CHROME_PATH: /usr/bin/google-chrome
-          RENDER_PREVIEWS_FORCE: '1'
         run: |
           python3 -m pip install --quiet pillow
           node tools/render_menu_previews.mjs
