@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [ main ]
   push:
-    branches: [ main, 'work/wrist-tfcc-1-30' ]
+    branches: [ main, 'work/wrist-tfcc-1-30', 'work/female-pelvis-on-1-30' ]
     paths-ignore:
       - '**/*.md'
 
@@ -37,6 +37,7 @@ jobs:
       - name: Check annotation data and viewer math
         run: |
           node tests/wrist-mri.mjs
+          node tests/female-pelvis-source.mjs
           node tests/brain-screen-labels.mjs
           node tests/brain-frame-cache.mjs
 
@@ -49,7 +50,7 @@ jobs:
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
-          name: MRIAtlas-1.30-unsigned
-          path: build/MRIAtlas-1.30-unsigned.apk
+          name: MRIAtlas-1.4-unsigned
+          path: build/MRIAtlas-1.4-unsigned.apk
           if-no-files-found: error
           retention-days: 30
