@@ -1,0 +1,49 @@
+name: Restore female pelvic MRI annotations
+on:
+  push:
+    paths:
+      - '.github/workflows/restore-female-pelvis.yml'
+      - 'tools/import_female_pelvis_verified.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  restore:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install source recovery dependencies
+        run: python -m pip install androguard sqlcipher3-binary pillow loguru
+      - name: Verify and import female pelvic anatomy
+        run: python tools/import_female_pelvis_verified.py
+      - name: Validate slice annotations and links
+        run: |
+          python - <<'PY'
+          import json,pathlib,hashlib
+          p=pathlib.Path('app/src/main/assets')
+          d=json.loads((p/'female-pelvis-mri-data.json').read_text())
+          a=json.loads((p/'female-pelvis-mri-labels.json').read_text())
+          frames=[f for s in d['series'] for f in s['frames']]
+          assert len(frames)==116
+          assert len(a['slices'])==70
+          assert sum(len(s['points']) for s in a['slices'].values())==2737
+          assert sum(len(s['masks']) for s in a['slices'].values())==51
+          assert all(f['annotation'] in a['slices'] and hashlib.sha256((p/f['src']).read_bytes()).hexdigest()==f['sha256'] for f in frames)
+          assert all((p/m['src']).is_file() for s in a['slices'].values() for m in s['masks'])
+          print('Source images, exact positions, masks and groups verified')
+          PY
+      - name: Commit validated anatomical assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/src/main/assets/female-pelvis-mri-data.json app/src/main/assets/female-pelvis-mri-labels.json app/src/main/assets/female-pelvis-mri-images
+          git diff --cached --quiet && exit 0
+          git commit -m "Restore verified female pelvis slices, labels and masks"
+          git pull --rebase origin main
+          git push origin HEAD:main
