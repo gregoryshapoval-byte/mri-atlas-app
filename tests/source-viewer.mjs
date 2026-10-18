@@ -5,7 +5,7 @@ import {pathToFileURL} from 'node:url';
 const {Window}=await import(process.env.HAPPY_DOM_PATH||'/tmp/atlas-dom/node_modules/happy-dom/lib/index.js');
 const root=path.resolve('app/src/main/assets');
 const errors=[];
-for(const name of ['wrist-mri','elbow-mri','male-pelvis-mri','brain']){
+for(const name of ['wrist-mri','elbow-mri','male-pelvis-mri','female-pelvis-mri','shoulder-mri','foot-mri','brain']){
  const w=new Window({url:'https://appassets.androidplatform.net/assets/'+name+'.html'});
  w.document.write(await fs.readFile(path.join(root,name+'.html'),'utf8'));
  for(const key of ['window','document','location','localStorage'])globalThis[key]=key==='window'?w:w[key];
@@ -35,13 +35,19 @@ for(const name of ['wrist-mri','elbow-mri','male-pelvis-mri','brain']){
  first.querySelector('.anatomyMenuButton').click();
  assert.ok(first.querySelectorAll('.compactGroup').length>0);
  assert.ok(first.querySelectorAll('.compactGroup img').length>0);
- const search=first.querySelector('.search');search.value=name==='brain'?'мозг':name==='male-pelvis-mri'?'артер':'кость';search.oninput();
+ const search=first.querySelector('.search');search.value=name==='brain'?'мозг':['male-pelvis-mri','female-pelvis-mri'].includes(name)?'артер':'кость';search.oninput();
  assert.ok(first.querySelectorAll('.searchResults button').length>0,name+' search');
  first.querySelector('.searchResults button').click();
+ const mode=type=>first.querySelector('[data-mode="'+type+'"]').click();
+ mode('points');await new Promise(r=>setTimeout(r,20));assert.equal(first.querySelectorAll('.screenLabels text,.screenLabels polyline').length,0);assert(first.querySelectorAll('.screenLabels circle').length>0);
+ const dot=first.querySelector('.screenLabels [data-structure]');dot.dispatchEvent(new w.MouseEvent('click',{bubbles:true}));await new Promise(r=>setTimeout(r,20));assert.equal(first.querySelector('.pointPopup').hidden,false);
+ mode('off');await new Promise(r=>setTimeout(r,20));assert.equal(first.querySelectorAll('.screenLabels circle').length,0);assert.equal(first.querySelector('.pointPopup').hidden,true);
+ mode('labels');await new Promise(r=>setTimeout(r,20));assert(first.querySelectorAll('.screenLabels text').length>0);
+ assert(w.document.body.classList.contains('atlasViewer'));assert(w.document.querySelector('.viewerInfo .hint'));assert(w.document.querySelector('.infoButton'));
  first.querySelector('.plus').click();
  await new Promise(r=>setTimeout(r,20));
- assert.match(first.querySelector('.fit').textContent,name==='wrist-mri'?/278%/:/130%/);
- if(name==='wrist-mri'){assert.match(first.querySelector('img').style.transform,/scale\(1,-1\)/);first.querySelector('.fit').click();assert.match(first.querySelector('.fit').textContent,/214%/);}
+ assert.match(first.querySelector('.fit').textContent,/130%/);
+ if(name==='wrist-mri'){assert.match(first.querySelector('img').style.transform,/scale\(1,-1\)/);first.querySelector('.fit').click();assert.match(first.querySelector('.fit').textContent,/100%/);}
  first.querySelector('.fullscreenButton').click();assert.ok(first.classList.contains('fullscreenViewer'));
  assert.equal(w.exitAtlasFullscreen(),true);
  first.querySelector('.next').click();
@@ -50,7 +56,7 @@ for(const name of ['wrist-mri','elbow-mri','male-pelvis-mri','brain']){
  assert.equal(first.querySelector('.failed').hidden,true);
  w.document.querySelector('#compare').checked=true;w.document.querySelector('#compare').onchange();
  assert.equal(w.document.querySelectorAll('.panel').length,2);
- if(name!=='male-pelvis-mri'){
+ if(['wrist-mri','elbow-mri','brain'].includes(name)){
   w.document.querySelector('#vascular').click();await new Promise(r=>setTimeout(r,20));
   assert.ok(w.document.querySelectorAll('.screenLabels circle').length>0,name+' 3D labels');
  }

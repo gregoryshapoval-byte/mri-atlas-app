@@ -25,3 +25,5 @@ atlas-signing/
 release-signing/
 __pycache__/
 *.pyc
+
+review/browser-*/

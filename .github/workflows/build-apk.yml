@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [ main ]
   push:
-    branches: [ main, 'work/wrist-tfcc-1-30', 'work/female-pelvis-on-1-30' ]
+    branches: [ main, 'work/wrist-tfcc-1-30', 'work/female-pelvis-on-1-30', 'work/viewer-all-modules-1-41' ]
     paths-ignore:
       - '**/*.md'
 
@@ -36,10 +36,30 @@ jobs:
 
       - name: Check annotation data and viewer math
         run: |
+          node tests/all-mri-data.mjs
           node tests/wrist-mri.mjs
           node tests/female-pelvis-source.mjs
           node tests/brain-screen-labels.mjs
           node tests/brain-frame-cache.mjs
+
+      - name: Install viewer test dependencies
+        run: npm install --prefix /tmp/atlas-dom happy-dom playwright --no-audit --no-fund
+
+      - name: Check all viewer controls
+        run: node tests/source-viewer.mjs
+
+      - name: Check phone layouts in Chromium
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
+        run: node tests/browser-viewer.mjs
+
+      - name: Upload viewer screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: viewer-review-1.41
+          path: review/browser-1.41/
+          if-no-files-found: ignore
 
       - name: Build APK
         shell: bash
@@ -50,8 +70,8 @@ jobs:
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
-          name: MRIAtlas-1.4-unsigned
-          path: build/MRIAtlas-1.4-unsigned.apk
+          name: MRIAtlas-1.41-unsigned
+          path: build/MRIAtlas-1.41-unsigned.apk
           if-no-files-found: error
           retention-days: 30
 

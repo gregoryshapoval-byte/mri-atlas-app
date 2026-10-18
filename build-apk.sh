@@ -7,7 +7,7 @@ PLATFORM="$SDK_ROOT/platforms/android-35/android.jar"
 SIGNING_DIR="${SIGNING_DIR:-$PWD/../atlas-signing}"
 mkdir -p build/classes build/dex
 "$BT/aapt2" compile --dir app/src/main/res -o build/resources.zip
-"$BT/aapt2" link -o build/base.apk -I "$PLATFORM" --manifest app/src/main/AndroidManifest.xml --min-sdk-version 26 --target-sdk-version 35 --version-code 40 --version-name 1.4 --rename-manifest-package ru.grigory.shoulderatlas.restored -A app/src/main/assets build/resources.zip
+"$BT/aapt2" link -o build/base.apk -I "$PLATFORM" --manifest app/src/main/AndroidManifest.xml --min-sdk-version 26 --target-sdk-version 35 --version-code 41 --version-name 1.41 --rename-manifest-package ru.grigory.shoulderatlas.restored -A app/src/main/assets build/resources.zip
 java -m jdk.compiler/com.sun.tools.javac.Main -source 8 -target 8 -bootclasspath "$PLATFORM:$BT/core-lambda-stubs.jar" -d build/classes app/src/main/java/ru/grigory/shoulderatlas/MainActivity.java
 "$BT/d8" --lib "$PLATFORM" --min-api 26 --output build/dex build/classes/ru/grigory/shoulderatlas/*.class
 python3 - <<'PY'
@@ -18,8 +18,8 @@ with ZipFile('build/base.apk','a',ZIP_DEFLATED) as z:
 PY
 "$BT/zipalign" -f 4 build/base.apk build/aligned.apk
 if [ "${UNSIGNED_ONLY:-0}" = "1" ]; then
- cp build/aligned.apk build/MRIAtlas-1.4-unsigned.apk
- "$BT/aapt2" dump badging build/MRIAtlas-1.4-unsigned.apk
+ cp build/aligned.apk build/MRIAtlas-1.41-unsigned.apk
+ "$BT/aapt2" dump badging build/MRIAtlas-1.41-unsigned.apk
  exit 0
 fi
 if [ ! -f "$SIGNING_DIR/atlas.jks" ]; then
@@ -27,13 +27,13 @@ if [ ! -f "$SIGNING_DIR/atlas.jks" ]; then
  exit 1
 fi
 "$BT/zipalign" -f 4 build/base.apk build/aligned.apk
-"$BT/apksigner" sign --ks "$SIGNING_DIR/atlas.jks" --ks-pass pass:android --key-pass pass:android --ks-key-alias atlas --out /tmp/MRIAtlas-1.4-restored-signed.apk build/aligned.apk
+"$BT/apksigner" sign --ks "$SIGNING_DIR/atlas.jks" --ks-pass pass:android --key-pass pass:android --ks-key-alias atlas --out /tmp/MRIAtlas-1.41-restored-signed.apk build/aligned.apk
 python3 - <<'PYCODE'
 from pathlib import Path
 import os
-data=Path("/tmp/MRIAtlas-1.4-restored-signed.apk").read_bytes()
-with open("build/MRIAtlas-1.4-restored.apk","wb") as f:
+data=Path("/tmp/MRIAtlas-1.41-restored-signed.apk").read_bytes()
+with open("build/MRIAtlas-1.41-restored.apk","wb") as f:
  f.write(data); f.flush(); os.fsync(f.fileno())
 PYCODE
-"$BT/apksigner" verify --verbose build/MRIAtlas-1.4-restored.apk
-"$BT/aapt2" dump badging build/MRIAtlas-1.4-restored.apk
+"$BT/apksigner" verify --verbose build/MRIAtlas-1.41-restored.apk
+"$BT/aapt2" dump badging build/MRIAtlas-1.41-restored.apk

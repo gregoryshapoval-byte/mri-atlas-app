@@ -1,3 +1,4 @@
+import {paintPoint,categories} from './anatomy-colors.js';
 import {setupBlocks,syncBlocks,catalogMenu,catalogSearch} from './wrist-catalog.js';
 import {decodedImage,LatestFrame} from './brain-frame-cache.js';
 import {visiblePoints,screenLayout} from './brain-screen-labels.js';
@@ -28,7 +29,7 @@ export class AnnotationLayer{
   this.scene=document.createElement('canvas');this.scene.className='anatomyScene';this.scene.width=1400;this.scene.height=1520;this.scene.setAttribute('aria-label','МРТ и анатомические слои');this.frameLoader=new LatestFrame();viewer.stage.append(this.scene);
   this.overlay=svgEl('svg',{class:'screenLabels','aria-label':'Подписи видимых структур'});viewer.stage.append(this.overlay);this.labelPage=0;this.labelPager=document.createElement('button');this.labelPager.className='labelPager';this.labelPager.onclick=()=>{this.selected=null;this.labelPage=(this.labelPage+1)%this.totalPages;this.drawOverlay()};viewer.stage.after(this.labelPager);
   this.info=document.createElement('div');this.info.className='selectedStructure';viewer.stage.after(this.info);
-  this.syncSwitches();
+  this.setupModes();this.syncSwitches();
   for(const key of ['show','names','masks','markers','regionOnly'])this.controls.querySelector('.'+key).onchange=e=>{this[key==='show'?'on':key]=e.target.checked;this.render()};
   this.controls.querySelector('.all').onclick=()=>{this.hiddenStructures.clear();for(const f of this.filters())this.active().add(f.id);this.filtersUI();this.render()};
   this.controls.querySelector('.none').onclick=()=>{this.active().clear();this.filtersUI();this.render()};
@@ -37,9 +38,19 @@ export class AnnotationLayer{
   this.overlay.addEventListener('click',e=>{if(Date.now()<(this.v.gestures?.suppressClickUntil||0))return;if(this.down&&Math.hypot(e.clientX-this.down.x,e.clientY-this.down.y)>12)return;const el=e.target.closest('[data-structure]');if(el){this.selected=+el.dataset.structure;this.render()}});
   setupBlocks(this);this.render();
  }
+ setupModes(){
+  this.modeBar=document.createElement('div');this.modeBar.className='labelModes';this.modeBar.setAttribute('role','group');this.modeBar.setAttribute('aria-label','Режим меток');
+  for(const [mode,title]of [['labels','Подписи'],['points','Только точки'],['off','Без меток']]){const b=document.createElement('button');b.textContent=title;b.dataset.mode=mode;b.onclick=()=>this.setMode(mode);this.modeBar.append(b)}
+  this.v.el.querySelector('.panelHead').after(this.modeBar);
+  this.popup=document.createElement('div');this.popup.className='pointPopup';this.popup.hidden=true;this.popup.setAttribute('role','status');
+  const close=document.createElement('button');close.textContent='✕';close.setAttribute('aria-label','Закрыть описание');close.onclick=()=>{this.selected=null;this.drawOverlay()};this.popupText=document.createElement('div');this.popup.append(close,this.popupText);this.v.stage.append(this.popup);
+  const legend=document.querySelector('.colorLegend');if(legend&&!legend.children.length)for(const c of Object.values(categories)){const row=document.createElement('p'),dot=document.createElement('span');dot.style.background=c.color;row.append(dot,document.createTextNode(c.name));legend.append(row)}
+ }
+ setMode(mode){this.on=mode!=='off';this.names=mode==='labels';this.markers=mode!=='off';this.selected=null;this.syncSwitches();this.render()}
+ updateModeButtons(){const mode=!this.on?'off':this.names?'labels':'points';for(const b of this.modeBar?.children||[])b.setAttribute('aria-pressed',String(b.dataset.mode===mode));this.v.el.dataset.labelMode=mode}
  filters(){return this.data.filters[this.v.series.module]||[]}
  active(){const mod=this.v.series.module;if(!this.enabled.has(mod)){const fs=this.filters();this.enabled.set(mod,new Set(fs.filter(f=>(this.data.useSourceDefaults||mod==='cerveau'||mod.startsWith('vascular'))?f.default:(!f.parent&&(/Желудочки|Доли/.test(f.name)))).map(f=>f.id)))}return this.enabled.get(mod)}
- syncSwitches(){for(const key of ['show','names','masks','markers','regionOnly'])this.controls.querySelector('.'+key).checked=this[key==='show'?'on':key]}
+ syncSwitches(){this.updateModeButtons();for(const key of ['show','names','masks','markers','regionOnly'])this.controls.querySelector('.'+key).checked=this[key==='show'?'on':key]}
  persist(){try{localStorage.setItem(this.storageKey,JSON.stringify({groups:Object.fromEntries([...this.enabled].map(([k,v])=>[k,[...v]])),hidden:[...this.hiddenStructures],on:this.on,names:this.names,masks:this.masks,markers:this.markers,regionOnly:this.regionOnly}))}catch{}}
  filtersUI(){
   const box=this.controls.querySelector('.filterList');box.replaceChildren();this.filterPath??=[];const fs=this.filters();
@@ -59,27 +70,31 @@ export class AnnotationLayer{
  transform(){this.scene.style.transform=this.v.img.style.transform;this.scene.style.filter=this.v.img.style.filter;this.drawOverlay()}
  drawOverlay(){
   if(!this.overlay)return;const v=this.v,f=this.displayedFrame;if(!f)return;const a=this.data.slices[f.annotation];const w=v.stage.clientWidth||360,h=v.stage.clientHeight||500;
-  this.overlay.replaceChildren();this.overlay.setAttribute('viewBox',`0 0 ${w} ${h}`);this.overlay.hidden=!this.on;this.overlay.style.display=this.on?'block':'none';this.labelPager.hidden=true;if(!this.on)return;
-  const pts=(a?.points||[]).filter(p=>this.active().has(p.filter)&&!this.hiddenStructures.has(p.structure)),visible=visiblePoints(pts,f,v,w,h);
+  this.overlay.replaceChildren();this.overlay.setAttribute('viewBox',`0 0 ${w} ${h}`);this.overlay.hidden=!this.on;this.overlay.style.display=this.on?'block':'none';this.labelPager.hidden=true;if(!this.on){this.popup.hidden=true;this.info.textContent='';return;}
+  const pts=(a?.points||[]).filter(p=>this.active().has(p.filter)&&!this.hiddenStructures.has(p.structure)).map(p=>paintPoint(p,this.filters())),visible=visiblePoints(pts,f,v,w,h);
   if(this.lastFrame!==f.annotation){this.lastFrame=f.annotation;this.labelPage=0}
-  const layout=screenLayout(visible,w,h,this.labelPage,this.selected);this.labelPage=layout.page;this.totalPages=layout.pages;
-  const labelWidth=Math.min(124,Math.max(88,w*.26)),font=12;
-  if(this.names)for(const p of layout.labels){const g=svgEl('g',{'data-structure':p.structure,tabindex:0,role:'button','aria-label':p.name});const tx=p.side?w-8:8,edge=p.side?w-labelWidth-8:labelWidth+8;
+  this.textMeasure??=document.createElement('canvas').getContext('2d');this.textMeasure.font='12px sans-serif';
+  const layout=screenLayout(visible,w,h,this.labelPage,this.selected,t=>this.textMeasure.measureText(t).width);this.labelPage=layout.page;this.totalPages=layout.pages;
+  const labelWidth=layout.labelWidth,font=12;
+  if(this.names)for(const p of layout.labels.filter(p=>!p.requiresFilter)){const g=svgEl('g',{'data-structure':p.structure,tabindex:0,role:'button','aria-label':p.name});const tx=p.side?w-8:8,edge=p.side?w-labelWidth-8:labelWidth+8;
    g.append(svgEl('polyline',{points:`${p.sx},${p.sy} ${edge},${p.ly}`,fill:'none',stroke:p.color,'stroke-width':p.structure===this.selected?2:1,opacity:.85,'stroke-dasharray':p.approximate?'4 3':'none'}));
-   const lines=wrapName(p.name,Math.floor(labelWidth/7)).slice(0,3);if(wrapName(p.name,Math.floor(labelWidth/7)).length>3)lines[2]=lines[2].slice(0,-1)+'…';const bh=lines.length*15+8,top=Math.max(2,Math.min(h-bh-2,p.ly-bh/2));
+   const lines=p.lines,bh=p.bh,top=p.ly-bh/2;
    this.textMeasure??=document.createElement('canvas').getContext('2d');this.textMeasure.font=font+'px sans-serif';const textWidth=Math.max(...lines.map(line=>this.textMeasure.measureText(line).width));
    g.append(svgEl('rect',{class:'labelBackdrop',x:p.side?tx-textWidth-3:tx-3,y:top+2,width:textWidth+6,height:lines.length*15+4,rx:3,fill:'#06110d','fill-opacity':.32,'pointer-events':'none'}));
    const text=svgEl('text',{x:tx,y:top+15,fill:p.color,'text-anchor':p.side?'end':'start','font-size':font,'font-family':'sans-serif',stroke:'#000','stroke-width':.7,'stroke-linejoin':'round','paint-order':'stroke'});
    lines.forEach((line,i)=>{const t=svgEl('tspan',{x:tx,dy:i?15:0});t.textContent=line;text.append(t)});g.append(text);g.onkeydown=e=>{if(e.key==='Enter'){this.selected=p.structure;this.drawOverlay()}};this.overlay.append(g);
   }
-  if(this.markers)for(const p of visible){const g=svgEl('g',{'data-structure':p.structure,'aria-label':p.name});g.append(svgEl('circle',{cx:p.sx,cy:p.sy,r:9,fill:'transparent'}),svgEl('circle',{cx:p.sx,cy:p.sy,r:p.approximate?6:(p.structure===this.selected?5:3.5),fill:p.approximate?'#111b18':p.color,stroke:p.approximate?p.color:'#304039','stroke-width':p.approximate?2:1,'stroke-dasharray':p.approximate?'3 2':'none'}));this.overlay.append(g)}
-  this.labelPager.hidden=!this.names||layout.pages<=1;this.labelPager.textContent=`Подписи ${layout.page+1}/${layout.pages} · ещё ›`;
-  const selected=pts.find(p=>p.structure===this.selected);this.info.textContent=selected?selected.name+(this.data.structureNotes?.[selected.structure]?' · '+this.data.structureNotes[selected.structure]:''):`В области: ${visible.length} точек · ${layout.total} структур`;
+  if(this.markers)for(const p of visible){const g=svgEl('g',{'data-structure':p.structure,'aria-label':p.name});g.append(svgEl('circle',{cx:p.sx,cy:p.sy,r:9,fill:'transparent'}),svgEl('circle',{cx:p.sx,cy:p.sy,r:p.approximate?6:(p.structure===this.selected?5:3.5),fill:p.approximate?'none':p.color,stroke:p.approximate?p.color:'#304039','stroke-width':p.approximate?2:1,'stroke-dasharray':p.approximate?'3 2':'none'}));this.overlay.append(g)}
+  this.labelPager.hidden=!this.names||(layout.pages<=1&&!layout.labels.some(p=>p.requiresFilter));this.labelPager.textContent=layout.labels.some(p=>p.requiresFilter)?'Плотная разметка · выберите группы в «Анатомии»':`Подписи ${layout.page+1}/${layout.pages} · ещё ›`;
+  const selected=visible.find(p=>p.structure===this.selected);
+  this.popup.hidden=!selected;
+  if(selected){this.popupText.replaceChildren();const title=document.createElement('strong');title.textContent=selected.name;const note=document.createElement('p');note.textContent=this.data.structureNotes?.[selected.structure]||categories[selected.category].name+' · '+(selected.approximate?'Ориентировочная учебная метка.':'Исходная метка атласа.');this.popupText.append(title,note);this.popup.style.borderColor=selected.color}
+  this.info.textContent=this.names?`В области: ${visible.length} точек · ${layout.total} структур`:'';
  }
  render(){
   const v=this.v,f=v.series.frames[v.index],a=this.data.slices[f.annotation];if(this.module!==v.series.module){this.module=v.series.module;this.filtersUI();this.controls.querySelector('.search').value='';this.controls.querySelector('.searchResults').replaceChildren();this.selected=null}
-  v.stage.style.touchAction='none';syncBlocks(this);this.persist();v.img.style.visibility='hidden';this.scene.style.display='block';v.stage.classList.toggle('annotated',this.on);
-  const masks=this.on&&this.masks?(a?.masks||[]).filter(m=>this.active().has(m.filter)):[];
+  v.stage.style.touchAction='none';this.updateModeButtons();syncBlocks(this);this.persist();v.img.style.visibility='hidden';this.scene.style.display='block';v.stage.classList.toggle('annotated',this.on);
+  const masks=this.on&&this.names&&this.masks?(a?.masks||[]).filter(m=>this.active().has(m.filter)):[];
   const key=f.src+'|'+masks.map(m=>m.src).join('|');
   if(key===this.rasterKey){this.frameLoader.version++;this.displayedFrame=f;this.transform();return}
   this.frameLoader.run(async()=>Promise.all([decodedImage(f.src),...masks.map(m=>decodedImage(m.src))]),images=>{

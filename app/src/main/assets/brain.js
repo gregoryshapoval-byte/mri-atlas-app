@@ -1,5 +1,7 @@
+import {setupViewerPage,fitZoom} from './viewer-ui.js';
 import {SliceGestures} from './brain-gestures.js';
 import {AnnotationLayer} from './brain-labels.js';
+setupViewerPage();
 const $=s=>document.querySelector(s), clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
 let data,annotationData,group=['contrast','vascular'].includes(new URLSearchParams(location.search).get('set'))?new URLSearchParams(location.search).get('set'):'multiplanar',panels=[];
 function save(){try{localStorage.setItem('brain-view-v1',JSON.stringify({group,ids:panels.map(p=>p.series.id),indices:panels.map(p=>p.index)}))}catch{}}
@@ -24,18 +26,19 @@ class Viewer{
  setFullscreen(on){
   if(on)for(const p of panels)if(p!==this)p.setFullscreen(false);
   this.el.classList.toggle('fullscreenViewer',on);document.body.classList.toggle('viewerFullscreen',on);this.fullButton.textContent=on?'✕':'⛶';this.fullButton.setAttribute('aria-label',on?'Выйти из полного экрана':'На весь экран');this.fullButton.setAttribute('aria-pressed',String(on));
-  window.AtlasNative?.setImmersive(on);requestAnimationFrame(()=>this.transform());
+  window.AtlasNative?.setImmersive(true);requestAnimationFrame(()=>this.transform());
  }
+ toggleZoom(){const base=fitZoom(this);if(this.zoom>base*1.1)this.reset();else this.scale(base*1.65)}
  distance(){const [a,b]=[...this.points.values()];return Math.hypot(a.x-b.x,a.y-b.y)}
- transform(){this.stage.style.touchAction='none';const maxX=this.stage.clientWidth*(this.zoom-1)/2,maxY=this.stage.clientHeight*(this.zoom-1)/2;this.x=clamp(this.x,-maxX,maxX);this.y=clamp(this.y,-maxY,maxY);this.img.style.transform=`translate(${this.x}px,${this.y}px) scale(${this.zoom}) rotate(${this.rotation}deg) scale(${this.flipX},${this.flipY})`;this.el.querySelector('.fit').textContent=Math.round(this.zoom*100)+'% · вписать';this.ann?.transform()}
+ transform(){this.stage.style.touchAction='none';const maxX=this.stage.clientWidth*(this.zoom-1)/2,maxY=this.stage.clientHeight*(this.zoom-1)/2;this.x=clamp(this.x,-maxX,maxX);this.y=clamp(this.y,-maxY,maxY);this.img.style.transform=`translate(${this.x}px,${this.y}px) scale(${this.zoom}) rotate(${this.rotation}deg) scale(${this.flipX},${this.flipY})`;this.el.querySelector('.fit').textContent='↺ '+Math.round(this.zoom/fitZoom(this)*100)+'%';this.el.querySelector('.fit').setAttribute('aria-label','Сбросить масштаб');this.ann?.transform()}
  scale(z){this.zoom=clamp(z,1,5);this.transform()}
- reset(){this.rotation=0;this.flipX=this.flipY=1;this.zoom=1;this.x=this.y=0;this.el.querySelector('.bright').value=this.el.querySelector('.ct').value=100;this.img.style.filter='none';this.transform()}
+ reset(){this.rotation=0;this.flipX=this.flipY=1;this.zoom=fitZoom(this);this.x=this.y=0;this.el.querySelector('.bright').value=this.el.querySelector('.ct').value=100;this.img.style.filter='none';this.transform()}
  move(i,sync=true){this.index=clamp(i,0,this.series.frames.length-1);this.render();if(sync&&group==='contrast'&&$('#link').checked)for(const p of panels)if(p!==this)p.move(this.index,false);save()}
  render(){const n=this.series.frames.length;if(!this.ann)this.img.src=this.series.frames[this.index].src;this.img.alt=`${this.series.title}, кадр ${this.index+1} из ${n}`;this.range.max=n-1;this.range.value=this.index;this.el.querySelector('.status').textContent=this.series.plane;this.el.querySelector('.pageCount').textContent=`${group==='vascular'?'Ракурс':'Кадр'} ${this.index+1} / ${n}`;this.el.querySelector('.prev').disabled=this.index===0;this.el.querySelector('.next').disabled=this.index===n-1;this.ann?.render();this.transform();}
 }
 function build(restore){
  const ss=data.series.filter(s=>s.group===group),count=$('#compare').checked?2:1;for(const p of panels)p.setFullscreen(false);panels=[];$('#viewers').replaceChildren();$('#viewers').classList.toggle('compare',count===2);
- for(let i=0;i<count;i++){const series=ss.find(s=>s.id===restore?.ids?.[i])||ss[i===1?(group==='contrast'?3:1):0];const p=new Viewer(series,restore?.indices?.[i]??(group==='vascular'?0:Math.floor(series.frames.length/2)));panels.push(p);$('#viewers').append(p.el);p.ann=new AnnotationLayer(p,annotationData)}
+ for(let i=0;i<count;i++){const series=ss.find(s=>s.id===restore?.ids?.[i])||ss[i===1?(group==='contrast'?3:1):0];const p=new Viewer(series,restore?.indices?.[i]??(group==='vascular'?0:Math.floor(series.frames.length/2)));panels.push(p);$('#viewers').append(p.el);p.ann=new AnnotationLayer(p,annotationData);p.reset()}
  $('#vascular').setAttribute('aria-pressed',group==='vascular');$('#multi').setAttribute('aria-pressed',group==='multiplanar');$('#contrast').setAttribute('aria-pressed',group==='contrast');$('#linkLabel').hidden=!(count===2&&group==='contrast');if(group!=='contrast')$('#link').checked=false;
  $('#summary').textContent=group==='vascular'?'8 готовых 3D-ракурсов · артерии, вены и синусы. Листай ракурсы жестом; масштаб доступен двумя пальцами.':group==='multiplanar'?'353 кадра · аксиальная, коронарная и сагиттальная плоскости.':'144 кадра · T1, T1 Гадолиний, T2, T2*, FLAIR и DWI. Названия из базы атласа.';save();
 }
