@@ -7,7 +7,7 @@ PLATFORM="$SDK_ROOT/platforms/android-35/android.jar"
 SIGNING_DIR="${SIGNING_DIR:-$PWD/../atlas-signing}"
 mkdir -p build/classes build/dex
 "$BT/aapt2" compile --dir app/src/main/res -o build/resources.zip
-"$BT/aapt2" link -o build/base.apk -I "$PLATFORM" --manifest app/src/main/AndroidManifest.xml --min-sdk-version 26 --target-sdk-version 35 --version-code 31 --version-name 1.4 --rename-manifest-package ru.grigory.shoulderatlas.restored -A app/src/main/assets build/resources.zip
+"$BT/aapt2" link -o build/base.apk -I "$PLATFORM" --manifest app/src/main/AndroidManifest.xml --min-sdk-version 26 --target-sdk-version 35 --version-code 40 --version-name 1.4 --rename-manifest-package ru.grigory.shoulderatlas.restored -A app/src/main/assets build/resources.zip
 java -m jdk.compiler/com.sun.tools.javac.Main -source 8 -target 8 -bootclasspath "$PLATFORM:$BT/core-lambda-stubs.jar" -d build/classes app/src/main/java/ru/grigory/shoulderatlas/MainActivity.java
 "$BT/d8" --lib "$PLATFORM" --min-api 26 --output build/dex build/classes/ru/grigory/shoulderatlas/*.class
 python3 - <<'PY'
