@@ -1,0 +1,24 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Женский таз · МРТ Атлас</title><link rel="stylesheet" href="brain.css"><style>
+#imaging{position:relative;width:100%;height:68dvh;max-height:750px;background:#000;overflow:hidden;touch-action:none;user-select:none}
+#world{position:absolute;inset:0;transform-origin:center;will-change:transform}
+#sliceImage{position:absolute;width:100%;height:100%;object-fit:contain}
+#markers{position:absolute;inset:0;pointer-events:none}
+#markers circle{pointer-events:auto;cursor:pointer}
+#labels{position:absolute;inset:0;pointer-events:none}
+#labels text{font:12px sans-serif;fill:#f7fff9;paint-order:stroke;stroke:#071412;stroke-width:3px;stroke-linejoin:round}
+#labels line{stroke:#80d5bc;stroke-width:1.3}
+#markers line{stroke-width:1}
+#side{position:fixed;inset:0 0 0 auto;max-width:min(94vw,450px);width:94vw;background:#eff5ef;color:#173c33;border:0;padding:15px;overflow:auto}
+#side::backdrop{background:#0009}#side label{display:block;padding:8px;border-bottom:1px solid #cbdcd3}#side label input{margin-right:8px}#side h2{font-size:21px;margin:5px 0}
+#side button{background:#d4e8dc;color:#143b31}
+#search{display:block;width:100%;font-size:16px;padding:12px}
+#frames{width:100%;accent-color:#8bcfb6}.row{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;align-items:center}.row select{flex:1;min-width:120px}
+#selection{font-size:14px;color:#b2eacb;padding:8px} .toolbar button{margin:0}
+</style></head><body><header><a href="region.html?area=pelvis">‹ Малый таз</a><span>МРТ ЖЕНСКОГО ТАЗА · ИСХОДНАЯ РАЗМЕТКА</span></header>
+<main><div class="row"><select id="series" aria-label="Серия"></select><button id="anatomy">☰ Анатомия</button><button id="fullscreen">⛶</button></div>
+<div id="imaging"><div id="world"><img id="sliceImage" alt="МРТ женского таза"><svg id="markers" xmlns="http://www.w3.org/2000/svg"></svg></div><svg id="labels" xmlns="http://www.w3.org/2000/svg"></svg></div>
+<div id="selection" aria-live="polite"></div><div class="row"><button id="prev">‹</button><input type="range" min="0" value="0" id="frames" aria-label="Срез"><button id="next">›</button><span id="counter"></span></div>
+<div class="row"><button id="minus">−</button><button id="reset">Сброс вида</button><button id="plus">+</button><button id="hideLabels">Скрыть подписи</button></div>
+<p class="hint">Один палец — перелистывание, два пальца — увеличение и перемещение. Метки загружены из исходной базы e-Anatomy и относятся к конкретному кадру.</p><p id="error" role="alert"></p>
+</main><dialog id="side"><div class="row"><h2>Анатомия и вид</h2><button id="close">✕</button></div><input id="search" type="search" placeholder="Поиск структуры в серии"><div class="row"><button id="all">Все группы</button><button id="none">Снять выбор</button></div><div id="filterList"></div><p>Координаты взяты из исходной анатомической базы. Это учебный атлас, не разметка пациента.</p></dialog>
+<script type="module" src="female-pelvis-mri.js"></script></body></html>
