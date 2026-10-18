@@ -3,11 +3,11 @@ android {
  namespace 'ru.grigory.shoulderatlas'
  compileSdk 35
  defaultConfig {
-  applicationId 'ru.grigory.shoulderatlas'
+  applicationId 'ru.grigory.shoulderatlas.restored'
   minSdk 26
   targetSdk 35
-  versionCode 24
-  versionName '1.23'
+  versionCode 31
+  versionName '1.30'
  }
  compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
 }

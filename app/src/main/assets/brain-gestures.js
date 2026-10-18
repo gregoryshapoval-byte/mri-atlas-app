@@ -1,5 +1,5 @@
 export class SliceGestures{
- constructor(v){this.v=v;this.points=new Map();this.mode='slices';this.step=30;this.multi=false;this.travel=0;this.remainder=0;this.suppressClickUntil=0;this.lastTap=0;}
+ constructor(v){this.v=v;this.points=new Map();this.mode='slices';this.step=18;this.multi=false;this.travel=0;this.remainder=0;this.suppressClickUntil=0;this.lastTap=0;}
  geometry(){const [a,b]=[...this.points.values()];return {x:(a.x+b.x)/2,y:(a.y+b.y)/2,d:Math.max(1,Math.hypot(a.x-b.x,a.y-b.y))}}
  down(id,x,y){if(!this.points.size){this.travel=0;this.remainder=0;this.multi=false}this.points.set(id,{x,y});if(this.points.size>=2){this.multi=true;this.lastTap=0;this.remainder=0}}
  move(id,x,y){const old=this.points.get(id);if(!old)return;const before=this.points.size===2?this.geometry():null;this.points.set(id,{x,y});this.travel+=Math.hypot(x-old.x,y-old.y);const v=this.v;

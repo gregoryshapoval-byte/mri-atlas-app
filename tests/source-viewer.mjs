@@ -1,0 +1,58 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
+const {Window}=await import(process.env.HAPPY_DOM_PATH||'/tmp/atlas-dom/node_modules/happy-dom/lib/index.js');
+const root=path.resolve('app/src/main/assets');
+const errors=[];
+for(const name of ['wrist-mri','elbow-mri','male-pelvis-mri','brain']){
+ const w=new Window({url:'https://appassets.androidplatform.net/assets/'+name+'.html'});
+ w.document.write(await fs.readFile(path.join(root,name+'.html'),'utf8'));
+ for(const key of ['window','document','location','localStorage'])globalThis[key]=key==='window'?w:w[key];
+ globalThis.requestAnimationFrame=fn=>fn();
+ globalThis.Image=class {set src(v){queueMicrotask(()=>this.onload?.())}async decode(){}};
+ globalThis.fetch=async url=>({ok:true,json:async()=>JSON.parse(await fs.readFile(path.join(root,url),'utf8'))});
+ w.HTMLCanvasElement.prototype.getContext=()=>new Proxy({measureText:t=>({width:t.length*6})},{get:(o,k)=>o[k]||(()=>{})});
+ await import(pathToFileURL(path.join(root,name==='brain'?'brain.js':'source-mri-viewer.js'))+'?case='+name);
+ await new Promise(r=>setTimeout(r,30));
+ assert.equal(w.document.querySelector('#error').hidden,true,name+' loads');
+ assert.equal(w.document.querySelectorAll('.panel').length,1);
+ assert.ok(w.document.querySelectorAll('.screenLabels circle').length>0,name+' has visible points');
+ const first=w.document.querySelector('.panel');
+ if(name==='wrist-mri'){
+  const switches=first.querySelectorAll('.anatomyBlocks input');assert.equal(switches.length,2);
+  const set=(i,value)=>{switches[i].checked=value;switches[i].onchange()};
+  set(0,false);assert.equal(switches[0].checked,false);assert.equal(switches[1].checked,true);
+  set(1,false);assert.equal(switches[0].checked,false);assert.equal(switches[1].checked,false);
+  set(0,true);assert.equal(switches[1].checked,false);set(1,true);
+  const q=first.querySelector('.search');q.value='DCSS';q.oninput();
+  assert.match(first.querySelector('.searchResults').textContent,/нет отдельной метки/);assert.equal(first.querySelectorAll('.searchResults button').length,0);
+  q.value='ладонная лучелоктевая';q.oninput();assert.ok(first.querySelector('.searchResults button'));first.querySelector('.searchResults button').click();
+  assert.match(first.querySelector('select').selectedOptions[0].textContent,/Аксиальный/i);
+  const sel=first.querySelector('select');sel.selectedIndex=3;sel.onchange();await new Promise(r=>setTimeout(r,20));
+ }
+
+ first.querySelector('.anatomyMenuButton').click();
+ assert.ok(first.querySelectorAll('.compactGroup').length>0);
+ assert.ok(first.querySelectorAll('.compactGroup img').length>0);
+ const search=first.querySelector('.search');search.value=name==='brain'?'мозг':name==='male-pelvis-mri'?'артер':'кость';search.oninput();
+ assert.ok(first.querySelectorAll('.searchResults button').length>0,name+' search');
+ first.querySelector('.searchResults button').click();
+ first.querySelector('.plus').click();
+ await new Promise(r=>setTimeout(r,20));
+ assert.match(first.querySelector('.fit').textContent,name==='wrist-mri'?/278%/:/130%/);
+ if(name==='wrist-mri'){assert.match(first.querySelector('img').style.transform,/scale\(1,-1\)/);first.querySelector('.fit').click();assert.match(first.querySelector('.fit').textContent,/214%/);}
+ first.querySelector('.fullscreenButton').click();assert.ok(first.classList.contains('fullscreenViewer'));
+ assert.equal(w.exitAtlasFullscreen(),true);
+ first.querySelector('.next').click();
+ const select=first.querySelector('select');select.selectedIndex=1;select.onchange();
+ await new Promise(r=>setTimeout(r,20));
+ assert.equal(first.querySelector('.failed').hidden,true);
+ w.document.querySelector('#compare').checked=true;w.document.querySelector('#compare').onchange();
+ assert.equal(w.document.querySelectorAll('.panel').length,2);
+ if(name!=='male-pelvis-mri'){
+  w.document.querySelector('#vascular').click();await new Promise(r=>setTimeout(r,20));
+  assert.ok(w.document.querySelectorAll('.screenLabels circle').length>0,name+' 3D labels');
+ }
+ console.log('PASS',name,': menu/icons/search, labels, zoom, fullscreen, series, comparison');
+}

@@ -10,6 +10,6 @@ export function screenLayout(points,w,h,page=0,selected=null){
  const all=[...unique.values()].sort((a,b)=>a.sy-b.sy||a.sx-b.sx);const pages=Math.max(1,Math.ceil(all.length/capacity));page=Math.min(page,pages-1);
  if(selected!==null){const index=all.findIndex(p=>p.structure===selected);if(index>=0)page=Math.floor(index/capacity)}
  const chosen=all.slice(page*capacity,(page+1)*capacity).sort((a,b)=>a.sx-b.sx),sides=[chosen.slice(0,Math.ceil(chosen.length/2)),chosen.slice(Math.ceil(chosen.length/2))];
- const labels=[];for(let side=0;side<2;side++){sides[side].sort((a,b)=>a.sy-b.sy);const step=Math.min(70,(h-32)/Math.max(1,sides[side].length));sides[side].forEach((p,i)=>labels.push({...p,side,ly:16+step*(i+.5)}))}
+ const labels=[];for(let side=0;side<2;side++){sides[side].sort((a,b)=>a.sy-b.sy);const step=(h-32)/Math.max(1,sides[side].length);sides[side].forEach((p,i)=>labels.push({...p,side,ly:16+step*(i+.5)}))}
  return {labels,page,pages,total:all.length};
 }
