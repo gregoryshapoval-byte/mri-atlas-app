@@ -11,7 +11,7 @@ with zipfile.ZipFile(root/'female-pelvis-source-minimal.zip') as outer:
         frames=[]
         for i,name in enumerate(names,1):
             blob=inner.read(name)
-            if not blob.startswith(b'\\xff\\xd8\\xff'):
+            if not blob[:3] == bytes([255,216,255]):
                 raise ValueError('Non-JPEG image '+name)
             filename=f'frame-{i:03}.jpg'
             (dest/filename).write_bytes(blob)
