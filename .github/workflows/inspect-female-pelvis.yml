@@ -3,7 +3,6 @@ on:
   push:
     paths:
       - '.github/workflows/inspect-female-pelvis.yml'
-  workflow_dispatch:
 permissions:
   contents: read
 jobs:
@@ -14,14 +13,18 @@ jobs:
       - name: Inspect source archive
         run: |
           python - <<'PY'
-          import zipfile,collections
-          p='female-pelvis-source-minimal.zip'
-          with zipfile.ZipFile(p) as z:
-              files=z.infolist()
-              print('ARCHIVE FILES:',len(files))
-              print('TOTAL UNCOMPRESSED:',sum(f.file_size for f in files))
-              print('TOP-LEVEL:',collections.Counter(f.filename.split('/')[0] for f in files).most_common(30))
-              print('EXTENSIONS:',collections.Counter(f.filename.rsplit('.',1)[-1].lower() for f in files).most_common(30))
-              print('FIRST FILES:')
-              for f in files[:120]: print(f.filename, f.file_size)
+          import zipfile,collections,io,sqlite3,tempfile,os
+          with zipfile.ZipFile('female-pelvis-source-minimal.zip') as outer:
+            db=outer.read('eAnatomy.db')
+            print('DB HEADER:',repr(db[:64]))
+            with tempfile.NamedTemporaryFile(delete=False) as temp: temp.write(db); path=temp.name
+            try:
+              c=sqlite3.connect('file:'+path+'?mode=ro',uri=True)
+              print('SQLITE TABLES:',c.execute("select name,sql from sqlite_master where type='table' limit 20").fetchall())
+            except Exception as e:print('DB ERROR:',str(e))
+            finally:os.unlink(path)
+            with zipfile.ZipFile(io.BytesIO(outer.read('pelvis.zip'))) as inner:
+              names=inner.namelist(); print('PELVIS ZIP FILES',len(names))
+              print('FIRST 100:');print('\n'.join(names[:100]))
+              print('EXTENSIONS',collections.Counter(n.rsplit('.',1)[-1] for n in names).most_common(20))
           PY
