@@ -7,6 +7,9 @@ on:
       - 'tools/recover_source_database.py'
       - 'tools/import_source_modules.py'
       - 'female-pelvis-source-minimal.zip'
+      - 'app/src/main/assets/female-pelvis-mri.html'
+      - 'app/src/main/assets/female-pelvis-mri.js'
+      - 'app/src/main/assets/regions.js'
   workflow_dispatch:
     inputs:
       source_run_id:
@@ -64,3 +67,24 @@ jobs:
             app/src/main/assets/female-pelvis-mri-labels.json
             app/src/main/assets/female-pelvis-mri-images/
           retention-days: 7
+      - name: Install Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Install Android SDK 35
+        shell: bash
+        run: |
+          yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null || true
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'platforms;android-35' 'build-tools;35.0.0'
+      - name: Build APK with verified source annotations
+        run: |
+          chmod +x ./build-apk.sh
+          ./build-apk.sh
+      - name: Upload APK with female pelvis annotations
+        uses: actions/upload-artifact@v4
+        with:
+          name: MRIAtlas-female-pelvis-source-labeled-apk
+          path: build/MRIAtlas-1.23.apk
+          if-no-files-found: error
+          retention-days: 30
