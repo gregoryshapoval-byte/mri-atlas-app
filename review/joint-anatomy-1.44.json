@@ -24,7 +24,7 @@
     },
     {
       "module": "knee-mri",
-      "ribbons": 78,
+      "ribbons": 72,
       "notes": 25,
       "sourceDataSha256": "10de14ba67ff748c32ee911178a8ba7b461ccb6afe933b0ced570e03eaaba413",
       "sourceLabelsSha256": "81669880fda2b0aa8f05d88664b5aa5572872d5218a7e753126471fb2b2006df",
@@ -38,8 +38,8 @@
           "ribbons": 41
         },
         "654-contraste_dp": {
-          "framesWithRibbons": 13,
-          "ribbons": 13
+          "framesWithRibbons": 7,
+          "ribbons": 7
         }
       }
     },

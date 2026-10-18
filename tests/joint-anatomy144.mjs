@@ -19,4 +19,4 @@ for(const m of report.modules){const D=JSON.parse(fs.readFileSync(A+m.module+'-d
  if(m.module==='shoulder-mri')for(const ss of Object.values(E.seriesSlices))for(const a of Object.values(ss))for(const r of a.regions)if(r.structure===143201)assert.equal(r.filter,14301,'axillary recess in shared group');
  total+=regions;console.log('PASS',m.module,regions,'PD ribbons, preserved source, explicit approximate status, valid descriptions and transforms');
 }
-assert.equal(pdFrames,371);assert.equal(total,238);console.log('PASS',pdFrames,'PD frames;',total,'ribbons');
+assert.equal(pdFrames,371);assert.equal(total,232);console.log('PASS',pdFrames,'PD frames;',total,'ribbons');

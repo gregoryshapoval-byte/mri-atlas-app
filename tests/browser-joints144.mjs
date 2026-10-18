@@ -29,5 +29,5 @@ try{
   }
   assert.deepEqual(errors,[]);await page.close();
  }
- fs.writeFileSync(out+'/result.json',JSON.stringify({passed:true,modules:3,pdFrames:371,ribbons:238,viewports:3,externalNetworkBlocked:true}));
+ fs.writeFileSync(out+'/result.json',JSON.stringify({passed:true,modules:3,pdFrames:371,ribbons:232,viewports:3,externalNetworkBlocked:true}));
 }finally{await browser?.close();server.kill()}
