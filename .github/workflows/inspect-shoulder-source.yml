@@ -1,0 +1,78 @@
+name: Inspect IMAIOS Shoulder Source
+
+on:
+  push:
+    branches: [work/shoulder-mri-from-1-4]
+    paths: [.github/workflows/inspect-shoulder-source.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download previously uploaded source archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p /tmp/imaios
+          gh release download source-archive-1 -R "$GITHUB_REPOSITORY" -p 'net.imaios.eanatomy.zip' -D /tmp/imaios
+          unzip -t /tmp/imaios/net.imaios.eanatomy.zip | tail -2
+      - name: Locate shoulder source package without extracting private database
+        run: |
+          python3 - <<'PY'
+          import zipfile,zlib,json
+          from pathlib import Path
+          p=Path('/tmp/imaios/net.imaios.eanatomy.zip')
+          hits=[]
+          with zipfile.ZipFile(p) as z:
+              names=z.namelist()
+              assert names==['net.imaios.eanatomy.ab'],f'Unexpected members: {names}'
+              with z.open(names[0]) as inp:
+                  header=b''.join(inp.readline() for _ in range(4))
+                  assert header==b'ANDROID BACKUP\n1\n1\nnone\n',repr(header)
+                  d=zlib.decompressobj()
+                  buf=b''
+                  pending=None
+                  done=False
+                  while not done:
+                      raw=inp.read(1024*1024)
+                      buf+=d.decompress(raw) if raw else d.flush()
+                      while True:
+                          if pending:
+                              name,remain= pending
+                              n=min(len(buf),remain)
+                              buf=buf[n:];remain-=n
+                              if remain:
+                                  pending=(name,remain);break
+                              padding=(-pending[2])%512 if len(pending)>2 else 0
+                              pending=None
+                              continue
+                          if len(buf)<512:break
+                          h=buf[:512]
+                          if h==bytes(512):done=True;break
+                          name=h[:100].split(b'\0')[0].decode('utf8','replace')
+                          prefix=h[345:500].split(b'\0')[0].decode('utf8','replace')
+                          if prefix:name=prefix+'/'+name
+                          size=int(h[124:136].strip(b'\0 ') or b'0',8)
+                          if ('shoulder' in name.lower() or 'epaule' in name.lower() or 'gleno' in name.lower() or 'scapul' in name.lower() or name.endswith('/eAnatomy.db')):
+                              hits.append(dict(path=name,size=size))
+                          skip=512+((size+511)//512)*512
+                          if len(buf)>=skip:buf=buf[skip:]
+                          else:
+                              buf=buf[512:]
+                              pending=(name,skip-512)
+                              break
+                      if not raw:break
+          Path('shoulder-source-inspection.json').write_text(json.dumps({'candidates':hits},ensure_ascii=False,indent=2))
+          print('Matching archive entries:', len(hits))
+          for h in hits:print(h['path'],h['size'])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: shoulder-source-inspection
+          path: shoulder-source-inspection.json
