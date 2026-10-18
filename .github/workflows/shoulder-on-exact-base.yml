@@ -23,7 +23,7 @@ jobs:
           mkdir -p /tmp/input
           gh api "repos/$GITHUB_REPOSITORY/actions/artifacts/12142397489/zip" > /tmp/base-artifact.zip
           unzip -Z -1 /tmp/base-artifact.zip | tee /tmp/base-content.txt
-          BASE_ENTRY="$(grep -Ei '(^|/).*\\.apk$' /tmp/base-content.txt | head -n 1)"
+          BASE_ENTRY="$(head -n 1 /tmp/base-content.txt)"
           test -n "$BASE_ENTRY" || { echo "::error::No APK in selected 1.4-from-1.30 artifact"; exit 1; }
           unzip -p /tmp/base-artifact.zip "$BASE_ENTRY" > /tmp/input/MRIAtlas-1.4-from-1.30.apk
           python3 - <<'PY'
