@@ -3,7 +3,7 @@ import {OrbitControls} from './vendor/OrbitControls.js';
 import {types,outer,inner,surface,cutFace} from './fibroids-geometry.js';
 import {descriptions} from './fibroids-data.js';
 const $=s=>document.querySelector(s),host=$('#canvas');let id='2',cut=true;
-const scene=new T.Scene();scene.background=new T.Color('#eee9e7');const camera=new T.PerspectiveCamera(34,1,.1,70);
+const scene=new T.Scene();scene.background=new T.Color('#111a22');const camera=new T.PerspectiveCamera(34,1,.1,70);
 let renderer;try{renderer=new T.WebGLRenderer({antialias:true})}catch(e){$('#failure').hidden=false;throw e}renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.toneMapping=T.ACESFilmicToneMapping;renderer.localClippingEnabled=true;host.appendChild(renderer.domElement);
 const controls=new OrbitControls(camera,renderer.domElement);controls.target.set(0,0,0);controls.enableDamping=true;controls.minDistance=5;controls.maxDistance=28;controls.autoRotateSpeed=.45;
 scene.add(new T.HemisphereLight(0xffffff,0x9b7d7e,2.6));for(const [p,n]of [[[3,6,7],3],[[-5,1,-4],1.8]]){let l=new T.DirectionalLight(0xffffff,n);l.position.set(...p);scene.add(l)}

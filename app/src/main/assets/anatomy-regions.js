@@ -1,0 +1,264 @@
+export const regions=[
+  {
+    "id": "brain",
+    "name": "Головной мозг",
+    "description": "МРТ и сосудистая анатомия",
+    "image": "menu-art/brain.webp",
+    "items": [
+      {
+        "title": "Артерии · 3D",
+        "description": "Артерии и сегменты ВСА · 5 ракурсов",
+        "url": "brain.html?set=vascular&series=arteries3d",
+        "type": "3D-РАКУРСЫ",
+        "thumb": "menu-thumbs/brain-set-vascular-series-arteries3d.webp"
+      },
+      {
+        "title": "Вены и синусы · 3D",
+        "description": "Вены и венозные синусы · 3 ракурса",
+        "url": "brain.html?set=vascular&series=veins3d",
+        "type": "3D-РАКУРСЫ",
+        "thumb": "menu-thumbs/brain-set-vascular-series-veins3d.webp"
+      },
+      {
+        "title": "МРТ · три плоскости",
+        "description": "353 кадра · AX / COR / SAG",
+        "url": "brain.html?set=multiplanar",
+        "type": "МРТ",
+        "thumb": "menu-thumbs/brain-set-multiplanar.webp"
+      },
+      {
+        "title": "МРТ · разные контрасты",
+        "description": "T1, T2, FLAIR, DWI · 144 кадра",
+        "url": "brain.html?set=contrast",
+        "type": "МРТ",
+        "thumb": "menu-thumbs/brain-set-contrast.webp"
+      }
+    ]
+  },
+  {
+    "id": "spine",
+    "name": "Позвоночник",
+    "description": "Поясничный отдел · МРТ",
+    "image": "menu-art/spine.webp",
+    "items": [
+      {
+        "title": "МРТ поясничного отдела",
+        "description": "T1 и T2 · исходные серии и мультипланарные реконструкции.",
+        "url": "spine-mri.html",
+        "type": "МРТ",
+        "thumb": "menu-thumbs/spine-mri.webp"
+      }
+    ]
+  },
+  {
+    "id": "face-neck",
+    "name": "Лицо и шея",
+    "description": "МРТ · три плоскости",
+    "image": "menu-art/face-neck.webp",
+    "items": [
+      {
+        "title": "МРТ лица и шеи",
+        "description": "418 срезов · три плоскости · группы и поиск структур.",
+        "url": "face-neck-mri.html",
+        "type": "МРТ",
+        "thumb": "menu-thumbs/face-neck-mri.webp"
+      }
+    ]
+  },
+  {
+    "id": "shoulder",
+    "name": "Плечевой сустав",
+    "description": "МРТ и анатомия в 3D",
+    "image": "menu-art/shoulder.webp",
+    "items": [
+      {
+        "title": "МРТ плечевого сустава",
+        "description": "230 кадров · T1 / PD-SPIR в трёх плоскостях",
+        "url": "shoulder-mri.html",
+        "type": "МРТ",
+        "thumb": "menu-thumbs/shoulder-mri.webp"
+      },
+      {
+        "title": "Сумки плеча",
+        "description": "Сумки, завороты и влагалище бицепса",
+        "url": "shoulder.html",
+        "type": "3D-МОДЕЛЬ",
+        "thumb": "menu-thumbs/shoulder.webp"
+      },
+      {
+        "title": "Вращательная манжета",
+        "description": "Варианты разрывов надостного сухожилия",
+        "url": "cuff.html",
+        "type": "3D-МОДЕЛЬ",
+        "thumb": "menu-thumbs/cuff.webp"
+      }
+    ]
+  },
+  {
+    "id": "elbow",
+    "name": "Локтевой сустав",
+    "description": "МРТ и исходные ракурсы",
+    "image": "menu-art/elbow.webp",
+    "items": [
+      {
+        "title": "МРТ локтевого сустава · исходный атлас",
+        "description": "321 кадр · T1 / PD-SPIR и 3D-ракурсы",
+        "url": "elbow-mri.html",
+        "type": "МРТ",
+        "thumb": "menu-thumbs/elbow-mri.webp"
+      }
+    ]
+  },
+  {
+    "id": "wrist",
+    "name": "Лучезапястный сустав",
+    "description": "МРТ, связки и ТФХК",
+    "image": "menu-art/wrist.webp",
+    "items": [
+      {
+        "title": "МРТ ЛЗС · исходный атлас",
+        "description": "T1 / PD-SPIR · три плоскости и 3D-ракурсы",
+        "url": "wrist-mri.html",
+        "type": "МРТ",
+        "thumb": "menu-thumbs/wrist-mri.webp"
+      },
+      {
+        "title": "Связки ЛЗС",
+        "description": "SL, LT и наружные связки запястья",
+        "url": "wrist.html?mode=ligaments",
+        "type": "3D-МОДЕЛЬ",
+        "thumb": "menu-thumbs/wrist-mode-ligaments.webp"
+      },
+      {
+        "title": "Сухожилия ЛЗС",
+        "description": "Каналы разгибателей, сгибатели и удерживатели",
+        "url": "wrist.html?mode=tendons",
+        "type": "3D-МОДЕЛЬ",
+        "thumb": "menu-thumbs/wrist-mode-tendons.webp"
+      },
+      {
+        "title": "TFCC · Palmer",
+        "description": "ТФХК: норма и варианты повреждений Palmer",
+        "url": "wrist.html?mode=tfcc",
+        "type": "3D-МОДЕЛЬ",
+        "thumb": "menu-thumbs/wrist-mode-tfcc.webp"
+      }
+    ]
+  },
+  {
+    "id": "knee",
+    "name": "Коленный сустав",
+    "description": "МРТ, анатомия и патология",
+    "image": "menu-art/knee.webp",
+    "items": [
+      {
+        "title": "МРТ коленного сустава",
+        "description": "Три плоскости · T1 и PD-SPIR · исходные метки.",
+        "url": "knee-mri.html",
+        "type": "МРТ",
+        "thumb": "menu-thumbs/knee-mri.webp"
+      },
+      {
+        "title": "Пателлофеморальный сустав",
+        "description": "Положение надколенника и форма блока",
+        "url": "patellofemoral.html",
+        "type": "3D-МОДЕЛЬ",
+        "thumb": "menu-thumbs/patellofemoral.webp"
+      },
+      {
+        "title": "Мениски",
+        "description": "Норма и семь вариантов разрывов менисков",
+        "url": "knee.html",
+        "type": "3D-МОДЕЛЬ",
+        "thumb": "menu-thumbs/knee.webp"
+      },
+      {
+        "title": "Связки",
+        "description": "ПКС, ЗКС, МКС и ЛКС: норма и разрывы",
+        "url": "ligaments.html",
+        "type": "3D-МОДЕЛЬ",
+        "thumb": "menu-thumbs/ligaments.webp"
+      },
+      {
+        "title": "Сумки и завороты",
+        "description": "Сумки, завороты и окружающие структуры",
+        "url": "knee-bursae.html",
+        "type": "3D-МОДЕЛЬ",
+        "thumb": "menu-thumbs/knee-bursae.webp"
+      },
+      {
+        "title": "Хрящ",
+        "description": "Хрящевые и костно-хрящевые дефекты",
+        "url": "cartilage.html",
+        "type": "3D-МОДЕЛЬ",
+        "thumb": "menu-thumbs/cartilage.webp"
+      }
+    ]
+  },
+  {
+    "id": "hip",
+    "name": "Тазобедренный сустав",
+    "description": "МРТ и анатомические ракурсы",
+    "image": "menu-art/hip.webp",
+    "items": [
+      {
+        "title": "МРТ тазобедренного сустава",
+        "description": "Три плоскости · T1 и PD-SPIR · исходные метки.",
+        "url": "hip-mri.html",
+        "type": "МРТ",
+        "thumb": "menu-thumbs/hip-mri.webp"
+      },
+      {
+        "title": "Анатомия · 3D-ракурсы",
+        "description": "60 исходных ракурсов с анатомическими подписями.",
+        "url": "hip-mri.html?set=vascular",
+        "type": "3D-РАКУРСЫ",
+        "thumb": "menu-thumbs/hip-mri-set-vascular.webp"
+      }
+    ]
+  },
+  {
+    "id": "pelvis",
+    "name": "Малый таз",
+    "description": "Мужской и женский таз",
+    "image": "menu-art/pelvis.webp",
+    "items": [
+      {
+        "title": "МРТ мужского таза · исходный атлас",
+        "description": "Предстательная железа, органы и структуры таза",
+        "url": "male-pelvis-mri.html",
+        "type": "МРТ",
+        "thumb": "menu-thumbs/male-pelvis-mri.webp"
+      },
+      {
+        "title": "МРТ женского таза · исходный атлас",
+        "description": "Матка, придатки и структуры таза · T1 / T2",
+        "url": "female-pelvis-mri.html",
+        "type": "МРТ",
+        "thumb": "menu-thumbs/female-pelvis-mri.webp"
+      },
+      {
+        "title": "Матка · миомы FIGO",
+        "description": "Миомы типов 0–8 и гибридный тип 2–5",
+        "url": "fibroids.html",
+        "type": "3D-МОДЕЛЬ",
+        "thumb": "menu-thumbs/fibroids.webp"
+      }
+    ]
+  },
+  {
+    "id": "foot",
+    "name": "Предплюсна · стопа",
+    "description": "МРТ и анатомические метки",
+    "image": "menu-art/foot.webp",
+    "items": [
+      {
+        "title": "МРТ предплюсны и стопы",
+        "description": "284 кадра · три плоскости и исходные метки",
+        "url": "foot-mri.html",
+        "type": "МРТ",
+        "thumb": "menu-thumbs/foot-mri.webp"
+      }
+    ]
+  }
+];

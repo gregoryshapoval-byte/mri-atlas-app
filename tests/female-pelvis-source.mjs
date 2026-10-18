@@ -18,5 +18,5 @@ assert.ok(Object.values(labels.slices).every(x=>x.masks.every(m=>existsSync(join
 const html=readFileSync(join(root,'female-pelvis-mri.html'),'utf8');
 assert.match(html,/data-module="female-pelvis-mri"/);
 assert.match(html,/src="source-mri-viewer.js"/);
-assert.match(readFileSync(join(root,'regions.js'),'utf8'),/female-pelvis-mri\.html/);
+const {regions}=await import('../app/src/main/assets/anatomy-regions.js');assert(regions.find(r=>r.id==='pelvis').items.some(i=>i.url==='female-pelvis-mri.html'));
 console.log('Female pelvis 1.30-style source viewer + labels: VERIFIED');

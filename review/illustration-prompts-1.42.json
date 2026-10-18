@@ -1,0 +1,47 @@
+{
+  "tool": "built-in image_gen",
+  "purpose": "decorative navigation artwork, not annotation truth",
+  "style": "Premium realistic normal adult medical 3D navigation illustration on graphite-black #10181e background, soft studio light and restrained teal/cyan rim light, ivory bone, natural muted tissue, centered isolated specimen with dark margins. No text, labels, watermarks, borders or UI. Decorative anatomical overview, not a diagnostic diagram.",
+  "assets": [
+    {
+      "file": "app/src/main/assets/menu-art/brain.webp",
+      "subject": "Three-quarter anterolateral brain, natural gyri and sulci, hemispheres, cerebellum and short brainstem."
+    },
+    {
+      "file": "app/src/main/assets/menu-art/spine.webp",
+      "subject": "Five lumbar vertebrae above sacrum, lordosis, discs, facet joints and posterior elements, three-quarter posterolateral view."
+    },
+    {
+      "file": "app/src/main/assets/menu-art/face-neck.webp",
+      "subject": "Three-quarter head and neck anatomical bust, facial and neck muscles, mandible, skull outlines, laryngeal cartilages, thyroid."
+    },
+    {
+      "file": "app/src/main/assets/menu-art/shoulder.webp",
+      "subject": "Anterolateral shoulder girdle and proximal humerus, clavicle, scapula, acromion, coracoid, glenoid, rotator cuff tendons."
+    },
+    {
+      "file": "app/src/main/assets/menu-art/elbow.webp",
+      "subject": "Slightly flexed elbow, distal humerus, proximal ulna with olecranon and trochlear notch, radial head, subtle collateral ligaments."
+    },
+    {
+      "file": "app/src/main/assets/menu-art/wrist.webp",
+      "subject": "Dorsal oblique distal radius/ulna, eight carpal bones in two rows, bases of five metacarpals, thin ligaments."
+    },
+    {
+      "file": "app/src/main/assets/menu-art/knee.webp",
+      "subject": "Slightly flexed knee, distal femur, proximal tibia and fibula, patella anterior to trochlea, cartilage, paired menisci and collateral ligaments."
+    },
+    {
+      "file": "app/src/main/assets/menu-art/hip.webp",
+      "subject": "One hip joint with hemipelvis, acetabulum and proximal femur, head seated in acetabulum, neck and trochanters, subtle capsule/labrum."
+    },
+    {
+      "file": "app/src/main/assets/menu-art/pelvis.webp",
+      "subject": "Bony pelvic ring with sacrum and female pelvic organs: uterus, paired ovaries/tubes, bladder anterior, rectum posterior."
+    },
+    {
+      "file": "app/src/main/assets/menu-art/foot.webp",
+      "subject": "Foot and ankle: tibia/fibula, talus, calcaneus, navicular/cuboid/cuneiforms, five metatarsals and exactly five toes, normal arch."
+    }
+  ]
+}

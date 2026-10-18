@@ -5,7 +5,7 @@ import {pathToFileURL} from 'node:url';
 const {Window}=await import(process.env.HAPPY_DOM_PATH||'/tmp/atlas-dom/node_modules/happy-dom/lib/index.js');
 const root=path.resolve('app/src/main/assets');
 const errors=[];
-for(const name of ['wrist-mri','elbow-mri','male-pelvis-mri','female-pelvis-mri','shoulder-mri','foot-mri','brain']){
+for(const name of ['wrist-mri','elbow-mri','male-pelvis-mri','female-pelvis-mri','shoulder-mri','foot-mri','knee-mri','face-neck-mri','hip-mri','spine-mri','brain']){
  const w=new Window({url:'https://appassets.androidplatform.net/assets/'+name+'.html'});
  w.document.write(await fs.readFile(path.join(root,name+'.html'),'utf8'));
  for(const key of ['window','document','location','localStorage'])globalThis[key]=key==='window'?w:w[key];
@@ -35,7 +35,7 @@ for(const name of ['wrist-mri','elbow-mri','male-pelvis-mri','female-pelvis-mri'
  first.querySelector('.anatomyMenuButton').click();
  assert.ok(first.querySelectorAll('.compactGroup').length>0);
  assert.ok(first.querySelectorAll('.compactGroup img').length>0);
- const search=first.querySelector('.search');search.value=name==='brain'?'мозг':['male-pelvis-mri','female-pelvis-mri'].includes(name)?'артер':'кость';search.oninput();
+ const search=first.querySelector('.search');search.value=name==='brain'?'мозг':name==='spine-mri'?'позвон':['male-pelvis-mri','female-pelvis-mri','face-neck-mri'].includes(name)?'артер':'кость';search.oninput();
  assert.ok(first.querySelectorAll('.searchResults button').length>0,name+' search');
  first.querySelector('.searchResults button').click();
  const mode=type=>first.querySelector('[data-mode="'+type+'"]').click();
