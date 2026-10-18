@@ -1,8 +1,12 @@
 name: Shoulder on exact 1.4-from-1.30 APK
 on:
   workflow_dispatch:
+  push:
+    branches: [work/shoulder-on-1-4-from-1-30]
+    paths: [.github/workflows/shoulder-on-exact-base.yml]
 permissions:
   contents: read
+  actions: read
 jobs:
   patch:
     runs-on: ubuntu-latest
@@ -11,13 +15,51 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install source recovery
         run: python3 -m pip install --quiet androguard sqlcipher3-binary pillow
-      - name: Download exact base and source release assets
+      - name: Recover exact base from existing GitHub releases or artifacts
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          set -euo pipefail
           mkdir -p /tmp/input
-          gh release download base-1.4-from-1.30 -R "$GITHUB_REPOSITORY" -p 'MRIAtlas-1.4-from-1.30.apk' -D /tmp/input || { echo 'Missing exact base APK in release base-1.4-from-1.30'; exit 1; }
-          gh release download source-archive-1 -R "$GITHUB_REPOSITORY" -p 'net.imaios.eanatomy.zip' -D /tmp/input
+          found=0
+          for tag in base-1.4-from-1.30 source-archive-1; do
+            if gh release download "$tag" -R "$GITHUB_REPOSITORY" -p 'MRIAtlas-1.4-from-1.30.apk' -D /tmp/input 2>/dev/null; then
+              echo "Exact base located in release: $tag"
+              found=1
+              break
+            fi
+          done
+          if [ "$found" -eq 0 ]; then
+            echo "Searching existing workflow artifacts for exact base APK..."
+            gh api --paginate "repos/$GITHUB_REPOSITORY/actions/artifacts?per_page=100" --jq '.artifacts[] | select(.expired == false) | [.id,.name] | @tsv' > /tmp/artifacts.tsv
+            while IFS="$(printf '\t')" read -r id name; do
+              case "$name" in
+                *1.4*|*1-4*|*from-1.30*|*from-1-30*)
+                  echo "Checking existing artifact: $name (#$id)"
+                  gh api "repos/$GITHUB_REPOSITORY/actions/artifacts/$id/zip" > /tmp/artifact.zip || continue
+                  if unzip -Z -1 /tmp/artifact.zip | grep -qE '(^|/)MRIAtlas-1[.]4-from-1[.]30[.]apk$'; then
+                    unzip -p /tmp/artifact.zip '*MRIAtlas-1.4-from-1.30.apk' > /tmp/input/MRIAtlas-1.4-from-1.30.apk || true
+                    if [ -s /tmp/input/MRIAtlas-1.4-from-1.30.apk ]; then found=1;break;fi
+                  fi
+                  ;;
+              esac
+            done < /tmp/artifacts.tsv
+          fi
+          if [ "$found" -eq 0 ]; then
+            echo "::error::EXACT_BASE_UNAVAILABLE: no unexpired GitHub artifact or release holds MRIAtlas-1.4-from-1.30.apk"
+            exit 1
+          fi
+          python3 - <<'PY'
+          import zipfile,hashlib
+          p='/tmp/input/MRIAtlas-1.4-from-1.30.apk'
+          with zipfile.ZipFile(p) as z:
+              assert 'assets/regions.js' in z.namelist(), 'Wrong APK: missing assets/regions.js'
+              print('Base APK verified by ZIP structure; SHA256=',hashlib.sha256(open(p,'rb').read()).hexdigest())
+          PY
+      - name: Download existing IMAIOS source archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release download source-archive-1 -R "$GITHUB_REPOSITORY" -p 'net.imaios.eanatomy.zip' -D /tmp/input
       - name: Verify and import shoulder anatomy
         run: |
           mkdir -p /tmp/shoulder-source
