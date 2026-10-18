@@ -1,0 +1,58 @@
+name: Build Shoulder MRI APK
+on:
+  workflow_dispatch:
+  push:
+    branches: [work/shoulder-mri-from-1-4]
+    paths:
+      - .github/workflows/build-shoulder-mri.yml
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Python recovery requirements
+        run: python3 -m pip install --quiet androguard sqlcipher3-binary pillow
+      - name: Download source release privately to runner
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p /tmp/shoulder-source
+          gh release download source-archive-1 -R "$GITHUB_REPOSITORY" -p 'net.imaios.eanatomy.zip' -D /tmp/shoulder-source
+      - name: Recover source assets and verified annotations
+        run: |
+          python3 tools/recover_shoulder_source.py /tmp/shoulder-source/net.imaios.eanatomy.zip /tmp/shoulder-source
+          python3 tools/import_shoulder_source.py /tmp/shoulder-source app/src/main/assets --report build/shoulder-import-report.json
+      - name: Validate source coverage and page references
+        run: |
+          python3 - <<'PY'
+          import json,pathlib
+          p=pathlib.Path('app/src/main/assets')
+          manifest=json.loads((p/'shoulder-mri-data.json').read_text())
+          labels=json.loads((p/'shoulder-mri-labels.json').read_text())
+          assert len(manifest['series'])>=3
+          assert len(labels['slices'])>=115
+          assert sum(len(s['points']) for s in labels['slices'].values())>=3151
+          assert all((p/f['src']).is_file() and f['annotation'] in labels['slices'] for s in manifest['series'] for f in s['frames'])
+          assert 'shoulder-mri.html' in (p/'regions.js').read_text()
+          print('Verified:',len(manifest['series']),'series',len(labels['slices']),'slices')
+          PY
+      - name: Install Android SDK
+        run: |
+          yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null || true
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'platforms;android-35' 'build-tools;35.0.0'
+      - name: Build APK
+        run: |
+          chmod +x build-apk.sh
+          ANDROID_SDK_ROOT="$ANDROID_HOME" ./build-apk.sh
+      - name: Upload APK and import report
+        uses: actions/upload-artifact@v4
+        with:
+          name: MRIAtlas-1.4-shoulder-mri-apk
+          path: |
+            build/MRIAtlas-1.4.apk
+            build/shoulder-import-report.json
+          if-no-files-found: error
+          retention-days: 14
