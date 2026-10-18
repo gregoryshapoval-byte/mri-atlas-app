@@ -34,11 +34,11 @@ jobs:
             gh api --paginate "repos/$GITHUB_REPOSITORY/actions/artifacts?per_page=100" --jq '.artifacts[] | select(.expired == false) | [.id,.name] | @tsv' > /tmp/artifacts.tsv
             while IFS="$(printf '\t')" read -r id name; do
               case "$name" in
-                *1.4*|*1-4*|*from-1.30*|*from-1-30*)
+                *)
                   echo "Checking existing artifact: $name (#$id)"
                   gh api "repos/$GITHUB_REPOSITORY/actions/artifacts/$id/zip" > /tmp/artifact.zip || continue
                   if unzip -Z -1 /tmp/artifact.zip | grep -qE '(^|/)MRIAtlas-1[.]4-from-1[.]30[.]apk$'; then
-                    unzip -p /tmp/artifact.zip '*MRIAtlas-1.4-from-1.30.apk' > /tmp/input/MRIAtlas-1.4-from-1.30.apk || true
+                    unzip -p /tmp/artifact.zip 'MRIAtlas-1.4-from-1.30.apk' > /tmp/input/MRIAtlas-1.4-from-1.30.apk || unzip -p /tmp/artifact.zip '*/MRIAtlas-1.4-from-1.30.apk' > /tmp/input/MRIAtlas-1.4-from-1.30.apk || true
                     if [ -s /tmp/input/MRIAtlas-1.4-from-1.30.apk ]; then found=1;break;fi
                   fi
                   ;;
