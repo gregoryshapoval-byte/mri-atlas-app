@@ -54,3 +54,14 @@ jobs:
           path: build/MRIAtlas-1.4-unsigned.apk
           if-no-files-found: error
           retention-days: 30
+
+      - name: Export Android signing utility for local release signing
+        run: cp "$ANDROID_HOME/build-tools/35.0.0/lib/apksigner.jar" apksigner.jar
+
+      - name: Upload Android signing utility
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-apksigner-jar
+          path: apksigner.jar
+          if-no-files-found: error
+          retention-days: 1
