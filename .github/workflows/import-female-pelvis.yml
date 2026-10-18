@@ -1,0 +1,40 @@
+name: Import female pelvis source images
+on:
+  push:
+    paths:
+      - '.github/workflows/import-female-pelvis.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Import images and viewer
+        run: python import-female-pelvis.py
+      - name: Validate imported assets
+        run: |
+          python - <<'PY'
+          import json,pathlib
+          base=pathlib.Path('app/src/main/assets')
+          data=json.loads((base/'female-pelvis-mri-data.json').read_text())
+          frames=data['series'][0]['frames']
+          assert len(frames)==270
+          assert all((base/f['src']).is_file() for f in frames)
+          assert 'female-pelvis-mri.html' in (base/'regions.js').read_text()
+          print('Verified 270 JPEGs, index, viewer, manifest and navigation')
+          PY
+      - name: Commit imported assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/src/main/assets/regions.js app/src/main/assets/female-pelvis-mri*
+          git diff --cached --quiet && exit 0
+          git commit -m "Import 270 female pelvis JPEGs with source-order viewer"
+          git push
