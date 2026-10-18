@@ -1,0 +1,27 @@
+name: Inspect female pelvis archive
+on:
+  push:
+    paths:
+      - '.github/workflows/inspect-female-pelvis.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect source archive
+        run: |
+          python - <<'PY'
+          import zipfile,collections
+          p='female-pelvis-source-minimal.zip'
+          with zipfile.ZipFile(p) as z:
+              files=z.infolist()
+              print('ARCHIVE FILES:',len(files))
+              print('TOTAL UNCOMPRESSED:',sum(f.file_size for f in files))
+              print('TOP-LEVEL:',collections.Counter(f.filename.split('/')[0] for f in files).most_common(30))
+              print('EXTENSIONS:',collections.Counter(f.filename.rsplit('.',1)[-1].lower() for f in files).most_common(30))
+              print('FIRST FILES:')
+              for f in files[:120]: print(f.filename, f.file_size)
+          PY
