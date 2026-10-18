@@ -59,8 +59,11 @@ for se,rows in AX.items():
 # Hide old bursal point labels in every PD frame, including frames without a region.
 for se,s in frames.items():
  for n in range(1,len(s['frames'])+1):frame(se,n)
+short={143101:'≈ SA–SD · сумка',143102:'≈ Сумка под клювовидным отростком',143103:'≈ Подлопат. область',143201:'≈ IGHL · нижняя капсула',143204:'≈ IGHL · лопаточная часть',143205:'≈ IGHL · плечевая часть',143206:'≈ Карман · нижняя складка'}
 for ss in series.values():
  for sl in ss.values():
+  for p in sl['points']+sl['regions']:
+   if p['structure'] in short:p['shortName']=short[p['structure']]
   if any(p['structure'] in [143202,143203] for p in sl['points']) or any(r['structure']==143201 for r in sl['regions']):sl['suppress'].append(9865)
 notes={**{str(k):v for k,v in NOTES.items()},**{str(k):v[3] for k,v in ST.items()}}
 out={'revision':'1.43','coordinates':'Original 458×554 JPEG pixel coordinates. Manual approximate teaching ribbons, not segmentation. PD only; explicit per-frame vertices; no interpolation.', 'filters':GROUPS,'structureNotes':notes,'displayNames':{'9863':'Верхняя суставно-плечевая связка · SGHL','9864':'Средняя суставно-плечевая связка · MGHL','9865':'Нижний суставно-плечевой комплекс · IGHL'},'seriesSlices':series,'sources':[

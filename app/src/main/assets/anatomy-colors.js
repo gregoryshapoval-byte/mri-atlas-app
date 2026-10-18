@@ -28,4 +28,4 @@ export function classifyPoint(point,filters){
  if([1640,1638].includes(point.structure))return 'ligaments';
  return category(point.name)||'organs';
 }
-export function paintPoint(point,filters){const category=classifyPoint(point,filters);return {...point,category,color:categories[category].color}}
+export function paintPoint(point,filters){const category=classifyPoint(point,filters);return {...point,fullName:point.name,name:point.shortName||point.name,category,color:categories[category].color}}

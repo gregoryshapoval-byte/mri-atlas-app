@@ -92,7 +92,7 @@ export class AnnotationLayer{
   this.labelPager.hidden=!this.names||(layout.pages<=1&&!layout.labels.some(p=>p.requiresFilter));this.labelPager.textContent=layout.labels.some(p=>p.requiresFilter)?'Плотная разметка · выберите группы в «Анатомии»':`Подписи ${layout.page+1}/${layout.pages} · ещё ›`;
   const selected=visible.find(p=>p.structure===this.selected);
   this.popup.hidden=!selected;
-  if(selected){this.popupText.replaceChildren();const title=document.createElement('strong');title.textContent=selected.name;const note=document.createElement('p');note.textContent=this.data.structureNotes?.[selected.structure]||categories[selected.category].name+' · '+(selected.approximate?'Ориентировочная учебная метка.':'Исходная метка атласа.');this.popupText.append(title,note);this.popup.style.borderColor=selected.color}
+  if(selected){this.popupText.replaceChildren();const title=document.createElement('strong');title.textContent=selected.fullName||selected.name;const note=document.createElement('p');note.textContent=this.data.structureNotes?.[selected.structure]||categories[selected.category].name+' · '+(selected.approximate?'Ориентировочная учебная метка.':'Исходная метка атласа.');this.popupText.append(title,note);this.popup.style.borderColor=selected.color}
   this.info.textContent=this.names?`В области: ${visible.filter(p=>!p.region).length} точек${visible.some(p=>p.region)?" · "+visible.filter(p=>p.region).length+" лент":""} · ${layout.total} структур`:'';
  }
  render(){

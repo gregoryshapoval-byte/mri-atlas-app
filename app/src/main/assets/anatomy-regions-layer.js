@@ -30,7 +30,7 @@ export function drawRegions(overlay,regions,frame,view,w,h,selected){
   }
   g.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();g.dispatchEvent(new MouseEvent('click',{bubbles:true}))}};
   overlay.append(g);
-  if(geom.anchor)anchors.push({...r,x:geom.anchor.x,y:geom.anchor.y,sx:geom.anchor.sx,sy:geom.anchor.sy,color,region:true});
+  if(geom.anchor)anchors.push({...r,fullName:r.name,name:r.shortName||r.name,x:geom.anchor.x,y:geom.anchor.y,sx:geom.anchor.sx,sy:geom.anchor.sy,color,region:true});
  }
  return anchors;
 }
