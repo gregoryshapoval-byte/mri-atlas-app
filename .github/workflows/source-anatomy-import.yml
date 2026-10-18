@@ -47,6 +47,8 @@ jobs:
           print('Pillow', version('pillow'))
           connection.close()
           PY
+      - name: Validate recovery scripts
+        run: python -m py_compile tools/recover_source_database.py tools/import_source_modules.py
       - name: Check prerequisites (without exposing database key)
         env:
           SOURCE_RUN_ID: ${{ github.event.inputs.source_run_id }}
@@ -72,3 +74,14 @@ jobs:
           python tools/recover_source_database.py /tmp/atlas-input/net.imaios.eanatomy.zip /tmp/atlas-recovery
           python tools/import_source_modules.py /tmp/atlas-recovery app/src/main/assets --modules pelvis --report /tmp/female-pelvis-source-report.json
           echo 'Import finished locally on runner. No decrypted database or source archive is published.'
+      - name: Save verified female pelvis annotation import
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.source_run_id != '' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: female-pelvis-verified-annotations
+          path: |
+            app/src/main/assets/female-pelvis-mri-data.json
+            app/src/main/assets/female-pelvis-mri-labels.json
+            app/src/main/assets/female-pelvis-mri-images/
+            /tmp/female-pelvis-source-report.json
+          retention-days: 7
