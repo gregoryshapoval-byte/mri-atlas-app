@@ -25,7 +25,7 @@ export function drawRegions(overlay,regions,frame,view,w,h,selected){
   const color=categories[r.category||'organs'].color;
   const g=document.createElementNS(NS,'g');g.dataset.structure=r.structure;g.classList.add('anatomyRegion');g.setAttribute('role','button');g.setAttribute('tabindex','0');g.setAttribute('aria-label',r.name);g.dataset.approximate=String(r.approximate);
   const path=geom.vertices.map((p,i)=>(i?'L':'M')+p.sx+','+p.sy).join(' ');
-  for(const [width,opacity,dash]of [[Math.max(2,geom.width),.28,null],[selected===r.structure?2:1,.85,r.approximate?'4 3':null]]){
+  for(const [width,opacity,dash]of [[Math.max(16,geom.width),0,null],[Math.max(2,geom.width),.28,null],[selected===r.structure?2:1,.85,r.approximate?'4 3':null]]){
    const p=document.createElementNS(NS,'path');for(const [k,v]of Object.entries({d:path,fill:'none',stroke:color,'stroke-width':width,'stroke-opacity':opacity,'stroke-linecap':'round','stroke-linejoin':'round','pointer-events':'stroke'}))p.setAttribute(k,v);if(dash)p.setAttribute('stroke-dasharray',dash);g.append(p);
   }
   g.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();g.dispatchEvent(new MouseEvent('click',{bubbles:true}))}};
