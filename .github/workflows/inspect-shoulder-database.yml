@@ -1,0 +1,37 @@
+name: Inspect Shoulder Database
+
+on:
+  push:
+    branches: [work/shoulder-mri-from-1-4]
+    paths:
+      - .github/workflows/inspect-shoulder-database.yml
+      - tools/recover_shoulder_source.py
+      - tools/inspect_shoulder_metadata.py
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install recovery dependencies
+        run: python3 -m pip install --quiet androguard sqlcipher3-binary
+      - name: Fetch source archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p /tmp/shoulder-source
+          gh release download source-archive-1 -R "$GITHUB_REPOSITORY" -p 'net.imaios.eanatomy.zip' -D /tmp/shoulder-source
+      - name: Recover source database and shoulder archives
+        run: python3 tools/recover_shoulder_source.py /tmp/shoulder-source/net.imaios.eanatomy.zip /tmp/shoulder-source
+      - name: Report source module metadata
+        run: python3 tools/inspect_shoulder_metadata.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: shoulder-source-metadata
+          path: shoulder-source-metadata.json
+          retention-days: 7
