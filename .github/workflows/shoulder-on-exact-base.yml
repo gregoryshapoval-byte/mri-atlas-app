@@ -1,0 +1,64 @@
+name: Shoulder on exact 1.4-from-1.30 APK
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install source recovery
+        run: python3 -m pip install --quiet androguard sqlcipher3-binary pillow
+      - name: Download exact base and source release assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p /tmp/input
+          gh release download base-1.4-from-1.30 -R "$GITHUB_REPOSITORY" -p 'MRIAtlas-1.4-from-1.30.apk' -D /tmp/input || { echo 'Missing exact base APK in release base-1.4-from-1.30'; exit 1; }
+          gh release download source-archive-1 -R "$GITHUB_REPOSITORY" -p 'net.imaios.eanatomy.zip' -D /tmp/input
+      - name: Verify and import shoulder anatomy
+        run: |
+          mkdir -p /tmp/shoulder-source
+          python3 tools/recover_shoulder_source.py /tmp/input/net.imaios.eanatomy.zip /tmp/shoulder-source
+          python3 tools/import_shoulder_source.py /tmp/shoulder-source app/src/main/assets --report /tmp/shoulder-import-report.json
+          python3 - <<'PY'
+          import json
+          r=json.load(open('/tmp/shoulder-import-report.json'))
+          assert r['uniqueSlices']==115 and r['points']==3151 and r['frames']>=230, r
+          print(r)
+          PY
+      - name: Patch only selected base APK
+        run: |
+          python3 tools/patch_shoulder_into_base_apk.py /tmp/input/MRIAtlas-1.4-from-1.30.apk app/src/main/assets /tmp/shoulder-unsigned.apk
+      - name: Configure Android Build Tools
+        run: |
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'build-tools;35.0.0'
+      - name: Sign and validate installable APK
+        env:
+          APK_KEYSTORE_B64: ${{ secrets.ATLAS_KEYSTORE_BASE64 }}
+          APK_KEYSTORE_PASS: ${{ secrets.ATLAS_KEYSTORE_PASSWORD }}
+          APK_KEY_ALIAS: ${{ secrets.ATLAS_KEY_ALIAS }}
+          APK_KEY_PASS: ${{ secrets.ATLAS_KEY_PASSWORD }}
+        run: |
+          set -euo pipefail
+          mkdir -p build
+          "$ANDROID_HOME/build-tools/35.0.0/zipalign" -f 4 /tmp/shoulder-unsigned.apk /tmp/shoulder-aligned.apk
+          if [ -n "$APK_KEYSTORE_B64" ] && [ -n "$APK_KEYSTORE_PASS" ] && [ -n "$APK_KEY_ALIAS" ] && [ -n "$APK_KEY_PASS" ]; then
+            printf '%s' "$APK_KEYSTORE_B64" | base64 -d > /tmp/atlas.jks
+            "$ANDROID_HOME/build-tools/35.0.0/apksigner" sign --ks /tmp/atlas.jks --ks-pass "pass:$APK_KEYSTORE_PASS" --key-pass "pass:$APK_KEY_PASS" --ks-key-alias "$APK_KEY_ALIAS" --out build/MRIAtlas-1.4-from-1.30-shoulder.apk /tmp/shoulder-aligned.apk
+          else
+            echo "Signing secrets absent: generating a test key. This APK cannot update an installation signed with another key."
+            keytool -genkeypair -keystore /tmp/test.jks -storepass android -keypass android -alias test -keyalg RSA -keysize 2048 -validity 3650 -dname 'CN=MRI Atlas Test' >/dev/null
+            "$ANDROID_HOME/build-tools/35.0.0/apksigner" sign --ks /tmp/test.jks --ks-pass pass:android --key-pass pass:android --ks-key-alias test --out build/MRIAtlas-1.4-from-1.30-shoulder.apk /tmp/shoulder-aligned.apk
+          fi
+          "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --verbose build/MRIAtlas-1.4-from-1.30-shoulder.apk
+          "$ANDROID_HOME/build-tools/35.0.0/aapt" dump badging build/MRIAtlas-1.4-from-1.30-shoulder.apk | head -8
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MRIAtlas-1.4-from-1.30-with-shoulder
+          path: |
+            build/MRIAtlas-1.4-from-1.30-shoulder.apk
+            /tmp/shoulder-import-report.json
+          retention-days: 14
