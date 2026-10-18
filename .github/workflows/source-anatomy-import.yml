@@ -6,6 +6,7 @@ on:
       - '.github/workflows/source-anatomy-import.yml'
       - 'tools/recover_source_database.py'
       - 'tools/import_source_modules.py'
+      - 'female-pelvis-source-minimal.zip'
   workflow_dispatch:
     inputs:
       source_run_id:
@@ -47,28 +48,19 @@ jobs:
           print('Pillow', version('pillow'))
           connection.close()
           PY
-      - name: Check prerequisites (without exposing database key)
-        env:
-          SOURCE_RUN_ID: ${{ github.event.inputs.source_run_id }}
+      - name: Validate recovery scripts
+        run: python -m py_compile tools/recover_source_database.py tools/import_source_modules.py
+      - name: Recover female pelvis source labels from repository archive
         run: |
-          if [ -z "$SOURCE_RUN_ID" ]; then
-            echo 'Dependency test completed. No private source archive requested.'
-            exit 0
-          fi
-          test -f tools/recover_source_database.py || { echo 'Missing tools/recover_source_database.py'; exit 1; }
-          test -f tools/import_source_modules.py || { echo 'Missing tools/import_source_modules.py'; exit 1; }
-      - name: Download private archive from an Actions artifact
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.source_run_id != '' }}
-        env:
-          GH_TOKEN: ${{ github.token }}
-          SOURCE_RUN_ID: ${{ inputs.source_run_id }}
-        run: |
-          mkdir -p /tmp/atlas-input
-          gh run download "$SOURCE_RUN_ID" --repo "$GITHUB_REPOSITORY" --name eanatomy-source --dir /tmp/atlas-input
-          test -f /tmp/atlas-input/net.imaios.eanatomy.zip || { echo 'Expected archive not found'; exit 1; }
-      - name: Recover female-pelvis source labels
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.source_run_id != '' }}
-        run: |
-          python tools/recover_source_database.py /tmp/atlas-input/net.imaios.eanatomy.zip /tmp/atlas-recovery
+          test -f female-pelvis-source-minimal.zip
+          python tools/recover_source_database.py female-pelvis-source-minimal.zip /tmp/atlas-recovery
           python tools/import_source_modules.py /tmp/atlas-recovery app/src/main/assets --modules pelvis --report /tmp/female-pelvis-source-report.json
-          echo 'Import finished locally on runner. No decrypted database or source archive is published.'
+      - name: Upload verified female pelvis data
+        uses: actions/upload-artifact@v4
+        with:
+          name: female-pelvis-verified-annotations
+          path: |
+            app/src/main/assets/female-pelvis-mri-data.json
+            app/src/main/assets/female-pelvis-mri-labels.json
+            app/src/main/assets/female-pelvis-mri-images/
+          retention-days: 7
