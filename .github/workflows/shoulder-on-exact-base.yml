@@ -1,4 +1,4 @@
-name: Shoulder on exact 1.4-from-1.30 APK
+name: Shoulder on first post-1.30 APK
 on:
   workflow_dispatch:
   push:
@@ -15,46 +15,24 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install source recovery
         run: python3 -m pip install --quiet androguard sqlcipher3-binary pillow
-      - name: Recover exact base from existing GitHub releases or artifacts
+      - name: Use first successful 1.4 artifact after 1.30
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
           mkdir -p /tmp/input
-          found=0
-          for tag in base-1.4-from-1.30 source-archive-1; do
-            if gh release download "$tag" -R "$GITHUB_REPOSITORY" -p 'MRIAtlas-1.4-from-1.30.apk' -D /tmp/input 2>/dev/null; then
-              echo "Exact base located in release: $tag"
-              found=1
-              break
-            fi
-          done
-          if [ "$found" -eq 0 ]; then
-            echo "Searching existing workflow artifacts for exact base APK..."
-            gh api --paginate "repos/$GITHUB_REPOSITORY/actions/artifacts?per_page=100" --jq '.artifacts[] | select(.expired == false) | [.id,.name] | @tsv' > /tmp/artifacts.tsv
-            while IFS="$(printf '\t')" read -r id name; do
-              case "$name" in
-                *)
-                  echo "Checking existing artifact: $name (#$id)"
-                  gh api "repos/$GITHUB_REPOSITORY/actions/artifacts/$id/zip" > /tmp/artifact.zip || continue
-                  if unzip -Z -1 /tmp/artifact.zip | grep -qE '(^|/)MRIAtlas-1[.]4-from-1[.]30[.]apk$'; then
-                    unzip -p /tmp/artifact.zip 'MRIAtlas-1.4-from-1.30.apk' > /tmp/input/MRIAtlas-1.4-from-1.30.apk || unzip -p /tmp/artifact.zip '*/MRIAtlas-1.4-from-1.30.apk' > /tmp/input/MRIAtlas-1.4-from-1.30.apk || true
-                    if [ -s /tmp/input/MRIAtlas-1.4-from-1.30.apk ]; then found=1;break;fi
-                  fi
-                  ;;
-              esac
-            done < /tmp/artifacts.tsv
-          fi
-          if [ "$found" -eq 0 ]; then
-            echo "::error::EXACT_BASE_UNAVAILABLE: no unexpired GitHub artifact or release holds MRIAtlas-1.4-from-1.30.apk"
-            exit 1
-          fi
+          gh api "repos/$GITHUB_REPOSITORY/actions/artifacts/12142397489/zip" > /tmp/base-artifact.zip
+          unzip -Z -1 /tmp/base-artifact.zip | tee /tmp/base-content.txt
+          BASE_ENTRY="$(grep -Ei '(^|/).*\\.apk$' /tmp/base-content.txt | head -n 1)"
+          test -n "$BASE_ENTRY" || { echo "::error::No APK in selected 1.4-from-1.30 artifact"; exit 1; }
+          unzip -p /tmp/base-artifact.zip "$BASE_ENTRY" > /tmp/input/MRIAtlas-1.4-from-1.30.apk
           python3 - <<'PY'
           import zipfile,hashlib
           p='/tmp/input/MRIAtlas-1.4-from-1.30.apk'
           with zipfile.ZipFile(p) as z:
               assert 'assets/regions.js' in z.namelist(), 'Wrong APK: missing assets/regions.js'
-              print('Base APK verified by ZIP structure; SHA256=',hashlib.sha256(open(p,'rb').read()).hexdigest())
+              print('Selected first successful post-1.30 1.4 APK:', p)
+              print('SHA256:', hashlib.sha256(open(p,'rb').read()).hexdigest())
           PY
       - name: Download existing IMAIOS source archive
         env:
