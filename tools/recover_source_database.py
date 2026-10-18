@@ -20,7 +20,7 @@ def extract_backup(archive, dest):
             raise ValueError("Expected exactly one Android Backup member")
         with z.open(members[0]) as f:
             prefix=b"".join(f.readline() for _ in range(4))
-            if prefix != b"ANDROID BACKUP\\n1\\n1\\nnone\\n":
+            if prefix != b"ANDROID BACKUP\n1\n1\nnone\n":
                 raise ValueError("Unexpected AB version or encrypted container")
             decomp=zlib.decompressobj()
             # Only these three exact paths are written. Streaming avoids large RAM use.
@@ -34,10 +34,10 @@ def extract_backup(archive, dest):
         found=set()
         while True:
             header=f.read(512)
-            if not header or header==b"\\x00"*512: break
-            name=header[:100].split(b"\\x00")[0].decode("utf-8")
-            size=int(header[124:136].strip(b"\\x00 ") or b"0",8)
-            prefix=header[345:500].split(b"\\x00")[0].decode("utf-8")
+            if not header or header==b"\x00"*512: break
+            name=header[:100].split(b"\x00")[0].decode("utf-8")
+            size=int(header[124:136].strip(b"\x00 ") or b"0",8)
+            prefix=header[345:500].split(b"\x00")[0].decode("utf-8")
             if prefix: name=prefix+"/"+name
             if size < 0 or size > 1024**3: raise ValueError("Invalid TAR entry size")
             if name in WANTED:
