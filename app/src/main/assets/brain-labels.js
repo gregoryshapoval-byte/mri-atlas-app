@@ -1,3 +1,5 @@
+import {annotationSlice,drawRegions} from './anatomy-regions-layer.js';
+import {shoulderGuide} from './shoulder-anatomy.js';
 import {paintPoint,categories} from './anatomy-colors.js';
 import {setupBlocks,syncBlocks,catalogMenu,catalogSearch} from './wrist-catalog.js';
 import {decodedImage,LatestFrame} from './brain-frame-cache.js';
@@ -48,17 +50,18 @@ export class AnnotationLayer{
  }
  setMode(mode){this.on=mode!=='off';this.names=mode==='labels';this.markers=mode!=='off';this.selected=null;this.syncSwitches();this.render()}
  updateModeButtons(){const mode=!this.on?'off':this.names?'labels':'points';for(const b of this.modeBar?.children||[])b.setAttribute('aria-pressed',String(b.dataset.mode===mode));this.v.el.dataset.labelMode=mode}
+ slice(frame,series=this.v.series){return annotationSlice(this.data,series,frame)}
  filters(){return this.data.filters[this.v.series.module]||[]}
  active(){const mod=this.v.series.module;if(!this.enabled.has(mod)){const fs=this.filters();this.enabled.set(mod,new Set(fs.filter(f=>(this.data.useSourceDefaults||mod==='cerveau'||mod.startsWith('vascular'))?f.default:(!f.parent&&(/Желудочки|Доли/.test(f.name)))).map(f=>f.id)))}return this.enabled.get(mod)}
  syncSwitches(){this.updateModeButtons();for(const key of ['show','names','masks','markers','regionOnly'])this.controls.querySelector('.'+key).checked=this[key==='show'?'on':key]}
  persist(){try{localStorage.setItem(this.storageKey,JSON.stringify({groups:Object.fromEntries([...this.enabled].map(([k,v])=>[k,[...v]])),hidden:[...this.hiddenStructures],on:this.on,names:this.names,masks:this.masks,markers:this.markers,regionOnly:this.regionOnly}))}catch{}}
  filtersUI(){
   const box=this.controls.querySelector('.filterList');box.replaceChildren();this.filterPath??=[];const fs=this.filters();
-  if(this.cacheSeries!==this.v.series.id){this.cacheSeries=this.v.series.id;this.structureCache=new Map();for(const frame of this.v.series.frames)for(const p of this.data.slices[frame.annotation]?.points||[]){if(!this.structureCache.has(p.filter))this.structureCache.set(p.filter,new Map());this.structureCache.get(p.filter).set(p.structure,p.name)}this.filterPath=[]}
+  if(this.cacheSeries!==this.v.series.id){this.cacheSeries=this.v.series.id;this.structureCache=new Map();for(const frame of this.v.series.frames)for(const p of [...(this.slice(frame)?.points||[]),...(this.slice(frame)?.regions||[])]){if(!this.structureCache.has(p.filter))this.structureCache.set(p.filter,new Map());this.structureCache.get(p.filter).set(p.structure,p.name)}this.filterPath=[]}
   const structures=this.structureCache,descendants=id=>fs.filter(x=>x.parent===id).flatMap(x=>[x,...descendants(x.id)]),parent=this.filterPath.at(-1);
   if(parent){const back=document.createElement('button');back.className='groupBack';back.textContent='‹ '+(fs.find(f=>f.id===parent)?.name||'Группы');back.onclick=()=>{this.filterPath.pop();this.filtersUI()};box.append(back)}
   if(parent===1003&&this.data.icaSegments){const nav=document.createElement('div');nav.className='icaNav';const caption=document.createElement('p');caption.textContent=this.v.series.group==='vascular'?'ВСА C1–C7: выбрать сегмент. ≈ — ручная учебная привязка C3, C5–C7; границы сегментов ориентировочные.':'ВСА: перейти к контрольному срезу. ≈ — ориентировочная учебная метка, не граница сегмента.';nav.append(caption);for(const item of this.data.icaSegments){const matches=[];this.v.series.frames.forEach((f,i)=>{if(this.data.slices[f.annotation]?.points.some(p=>p.structure===item.structure))matches.push(i)});const button=document.createElement('button');button.textContent=(item.approximate?'≈ ':'')+item.segment;button.title=matches.length+(this.v.series.group==='vascular'?' ракурсов':' срезов в этой плоскости');button.disabled=!matches.length;button.onclick=()=>{this.active().add(1003);this.hiddenStructures.delete(item.structure);this.on=this.names=this.markers=true;this.selected=item.structure;this.v.reset();this.v.move(matches[Math.floor(matches.length/2)]);this.syncSwitches();this.controls.close()};nav.append(button)}box.append(nav)}
-  if(!parent)catalogMenu(this,box);
+  if(!parent){catalogMenu(this,box);shoulderGuide(this,box)}
   for(const f of fs.filter(f=>parent?f.parent===parent:!f.parent)){
    const row=document.createElement('div');row.className='compactGroup';const open=document.createElement('button');open.className='groupOpen';if(f.icon){const im=document.createElement('img');im.src=f.icon;im.alt='';open.append(im)}const title=document.createElement('span');title.textContent=f.name;const chevron=document.createElement('span');chevron.className='chevron';chevron.textContent='›';open.append(title,chevron);open.onclick=()=>{this.filterPath.push(f.id);this.filtersUI()};
    const input=document.createElement('input');input.type='checkbox';input.setAttribute('role','switch');input.setAttribute('aria-label',f.name);const ids=[f.id,...descendants(f.id).map(x=>x.id)],selected=ids.filter(id=>this.active().has(id)).length;input.checked=selected===ids.length;input.indeterminate=selected>0&&selected<ids.length;
@@ -66,12 +69,13 @@ export class AnnotationLayer{
   }
   if(parent){const entries=[...(structures.get(parent)||new Map())].sort((a,b)=>{const order=id=>this.data.icaSegments?.findIndex(s=>s.structure===id)??-1;const x=order(a[0]),y=order(b[0]);return x>=0||y>=0?(x<0?99:x)-(y<0?99:y):a[1].localeCompare(b[1],'ru')});for(const [id,name]of entries){const label=document.createElement('label');label.className='individualRow';const check=document.createElement('input');check.type='checkbox';check.checked=this.active().has(parent)&&!this.hiddenStructures.has(id);check.onchange=()=>{if(check.checked){if(!this.active().has(parent))for(const [sid]of entries)this.hiddenStructures.add(sid);this.active().add(parent);this.hiddenStructures.delete(id)}else this.hiddenStructures.add(id);this.render()};label.append(check,document.createTextNode(name));box.append(label)}if(!entries.length&&!fs.some(f=>f.parent===parent)){const note=document.createElement('p');note.textContent='В этой серии структур группы нет.';box.append(note)}}
  }
- search(){if(this.data.catalog)return catalogSearch(this);const q=normalizeSearch(this.controls.querySelector('.search').value.trim()),box=this.controls.querySelector('.searchResults');box.replaceChildren();if(q.length<2)return;const found=new Map();for(let i=0;i<this.v.series.frames.length;i++){const a=this.data.slices[this.v.series.frames[i].annotation];for(const p of a?.points||[])if(normalizeSearch(p.name+' '+(this.data.searchAliases?.[p.structure]||'')).includes(q)&&!found.has(p.structure))found.set(p.structure,{...p,index:i})}for(const p of [...found.values()].slice(0,40)){const b=document.createElement('button');b.textContent=p.name+' · кадр '+(p.index+1);b.onclick=()=>{this.active().add(p.filter);this.hiddenStructures.delete(p.structure);this.selected=p.structure;this.v.move(p.index);this.filtersUI();this.controls.close()};box.append(b)}if(!found.size)box.textContent='В этой серии не найдено.'}
+ search(){if(this.data.catalog)return catalogSearch(this);const q=normalizeSearch(this.controls.querySelector('.search').value.trim()),box=this.controls.querySelector('.searchResults');box.replaceChildren();if(q.length<2)return;const found=new Map();for(let i=0;i<this.v.series.frames.length;i++){const a=this.slice(this.v.series.frames[i]);for(const p of [...(a?.points||[]),...(a?.regions||[])])if(normalizeSearch(p.name+' '+(this.data.searchAliases?.[p.structure]||'')).includes(q)&&!found.has(p.structure))found.set(p.structure,{...p,index:i})}for(const p of [...found.values()].slice(0,40)){const b=document.createElement('button');b.textContent=p.name+' · кадр '+(p.index+1);b.onclick=()=>{this.active().add(p.filter);this.hiddenStructures.delete(p.structure);this.selected=p.structure;this.v.move(p.index);this.filtersUI();this.controls.close()};box.append(b)}if(!found.size)box.textContent='В этой серии не найдено.'}
  transform(){this.scene.style.transform=this.v.img.style.transform;this.scene.style.filter=this.v.img.style.filter;this.drawOverlay()}
  drawOverlay(){
-  if(!this.overlay)return;const v=this.v,f=this.displayedFrame;if(!f)return;const a=this.data.slices[f.annotation];const w=v.stage.clientWidth||360,h=v.stage.clientHeight||500;
+  if(!this.overlay)return;const v=this.v,f=this.displayedFrame;if(!f)return;const a=this.slice(f,this.displayedSeries||v.series);this.overlay.dataset.frame=f.src;const w=v.stage.clientWidth||360,h=v.stage.clientHeight||500;
   this.overlay.replaceChildren();this.overlay.setAttribute('viewBox',`0 0 ${w} ${h}`);this.overlay.hidden=!this.on;this.overlay.style.display=this.on?'block':'none';this.labelPager.hidden=true;if(!this.on){this.popup.hidden=true;this.info.textContent='';return;}
   const pts=(a?.points||[]).filter(p=>this.active().has(p.filter)&&!this.hiddenStructures.has(p.structure)).map(p=>paintPoint(p,this.filters())),visible=visiblePoints(pts,f,v,w,h);
+  if(this.names&&this.masks)visible.push(...drawRegions(this.overlay,(a?.regions||[]).filter(r=>this.active().has(r.filter)&&!this.hiddenStructures.has(r.structure)),f,v,w,h,this.selected));
   if(this.lastFrame!==f.annotation){this.lastFrame=f.annotation;this.labelPage=0}
   this.textMeasure??=document.createElement('canvas').getContext('2d');this.textMeasure.font='12px sans-serif';
   const layout=screenLayout(visible,w,h,this.labelPage,this.selected,t=>this.textMeasure.measureText(t).width);this.labelPage=layout.page;this.totalPages=layout.pages;
@@ -84,24 +88,24 @@ export class AnnotationLayer{
    const text=svgEl('text',{x:tx,y:top+15,fill:p.color,'text-anchor':p.side?'end':'start','font-size':font,'font-family':'sans-serif',stroke:'#000','stroke-width':.7,'stroke-linejoin':'round','paint-order':'stroke'});
    lines.forEach((line,i)=>{const t=svgEl('tspan',{x:tx,dy:i?15:0});t.textContent=line;text.append(t)});g.append(text);g.onkeydown=e=>{if(e.key==='Enter'){this.selected=p.structure;this.drawOverlay()}};this.overlay.append(g);
   }
-  if(this.markers)for(const p of visible){const g=svgEl('g',{'data-structure':p.structure,'aria-label':p.name});g.append(svgEl('circle',{cx:p.sx,cy:p.sy,r:9,fill:'transparent'}),svgEl('circle',{cx:p.sx,cy:p.sy,r:p.approximate?6:(p.structure===this.selected?5:3.5),fill:p.approximate?'none':p.color,stroke:p.approximate?p.color:'#304039','stroke-width':p.approximate?2:1,'stroke-dasharray':p.approximate?'3 2':'none'}));this.overlay.append(g)}
+  if(this.markers)for(const p of visible.filter(p=>!p.region)){const g=svgEl('g',{'data-structure':p.structure,'aria-label':p.name});g.append(svgEl('circle',{cx:p.sx,cy:p.sy,r:9,fill:'transparent'}),svgEl('circle',{cx:p.sx,cy:p.sy,r:p.approximate?6:(p.structure===this.selected?5:3.5),fill:p.approximate?'none':p.color,stroke:p.approximate?p.color:'#304039','stroke-width':p.approximate?2:1,'stroke-dasharray':p.approximate?'3 2':'none'}));this.overlay.append(g)}
   this.labelPager.hidden=!this.names||(layout.pages<=1&&!layout.labels.some(p=>p.requiresFilter));this.labelPager.textContent=layout.labels.some(p=>p.requiresFilter)?'Плотная разметка · выберите группы в «Анатомии»':`Подписи ${layout.page+1}/${layout.pages} · ещё ›`;
   const selected=visible.find(p=>p.structure===this.selected);
   this.popup.hidden=!selected;
   if(selected){this.popupText.replaceChildren();const title=document.createElement('strong');title.textContent=selected.name;const note=document.createElement('p');note.textContent=this.data.structureNotes?.[selected.structure]||categories[selected.category].name+' · '+(selected.approximate?'Ориентировочная учебная метка.':'Исходная метка атласа.');this.popupText.append(title,note);this.popup.style.borderColor=selected.color}
-  this.info.textContent=this.names?`В области: ${visible.length} точек · ${layout.total} структур`:'';
+  this.info.textContent=this.names?`В области: ${visible.filter(p=>!p.region).length} точек${visible.some(p=>p.region)?" · "+visible.filter(p=>p.region).length+" лент":""} · ${layout.total} структур`:'';
  }
  render(){
-  const v=this.v,f=v.series.frames[v.index],a=this.data.slices[f.annotation];if(this.module!==v.series.module){this.module=v.series.module;this.filtersUI();this.controls.querySelector('.search').value='';this.controls.querySelector('.searchResults').replaceChildren();this.selected=null}
+  const v=this.v,series=v.series,f=series.frames[v.index],a=this.slice(f);if(this.module!==v.series.module){this.module=v.series.module;this.filtersUI();this.controls.querySelector('.search').value='';this.controls.querySelector('.searchResults').replaceChildren();this.selected=null}
   v.stage.style.touchAction='none';this.updateModeButtons();syncBlocks(this);this.persist();v.img.style.visibility='hidden';this.scene.style.display='block';v.stage.classList.toggle('annotated',this.on);
   const masks=this.on&&this.names&&this.masks?(a?.masks||[]).filter(m=>this.active().has(m.filter)):[];
   const key=f.src+'|'+masks.map(m=>m.src).join('|');
-  if(key===this.rasterKey){this.frameLoader.version++;this.displayedFrame=f;this.transform();return}
+  if(key===this.rasterKey){this.frameLoader.version++;this.displayedFrame=f;this.displayedSeries=series;this.transform();return}
   this.frameLoader.run(async()=>Promise.all([decodedImage(f.src),...masks.map(m=>decodedImage(m.src))]),images=>{
    const buffer=document.createElement('canvas');buffer.width=1400;buffer.height=1520;const ctx=buffer.getContext('2d');ctx.scale(2,2);
    const iw=400,ih=iw*f.height/f.width,ix=(700-iw)/2,iy=(760-ih)/2;ctx.drawImage(images[0],ix,iy,iw,ih);ctx.globalAlpha=.4;for(const mask of images.slice(1))ctx.drawImage(mask,ix,iy,iw,ih);
    const target=this.scene.getContext('2d');target.clearRect(0,0,1400,1520);target.drawImage(buffer,0,0);
-   this.rasterKey=key;this.displayedFrame=f;v.el.querySelector('.failed').hidden=true;this.transform();
+   this.rasterKey=key;this.displayedFrame=f;this.displayedSeries=series;v.el.querySelector('.failed').hidden=true;this.transform();
    for(const i of [v.index-1,v.index+1]){const next=v.series.frames[i];if(next)decodedImage(next.src).catch(()=>{})}
   },()=>{v.el.querySelector('.failed').hidden=false});
  }

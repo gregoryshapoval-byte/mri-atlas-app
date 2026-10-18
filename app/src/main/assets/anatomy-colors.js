@@ -14,6 +14,7 @@ function category(s){
  return null;
 }
 export function classifyPoint(point,filters){
+ if(categories[point.category])return point.category;
  const name=point.name.toLowerCase();
  if(/сумк|bursa/.test(name))return 'organs';
  const seen=new Set();let f=filters.find(f=>f.id===point.filter);
