@@ -13,8 +13,8 @@ try{
    const sid=se+'-contraste_dp',s=D.series.find(s=>s.id===sid),expected=E.seriesSlices[sid][s.frames[n-1].annotation];
    await page.locator('.panelHead select').selectOption(sid);await page.locator('.slice').fill(String(n-1));await page.locator('.slice').dispatchEvent('input');await page.waitForFunction(src=>document.querySelector('.screenLabels').dataset.frame===src,s.frames[n-1].src);
    await page.waitForFunction(count=>document.querySelectorAll('.anatomyRegion').length===count,expected.regions.length);await page.waitForTimeout(80);
-   assert.equal(await page.locator('.screenLabels circle[data-structure="2380"]').count(),0);assert(await page.locator('.screenLabels text').count()>0);
-   const geom=await page.locator('.anatomyRegion path').first().getAttribute('d');await page.locator('.plus').click();assert.notEqual(await page.locator('.anatomyRegion path').first().getAttribute('d'),geom);await page.locator('.fit').click();
+   assert.equal(await page.locator('.screenLabels g[data-structure="2380"] circle').count(),0);assert(await page.locator('.screenLabels text').count()>0);
+   const geom=await page.locator('.anatomyRegion path').first().getAttribute('d');await page.locator('.stage').dispatchEvent('wheel',{deltaY:-100,ctrlKey:true});assert.notEqual(await page.locator('.anatomyRegion path').first().getAttribute('d'),geom);await page.locator('.fit').click();
    if(viewport.width===393)await page.screenshot({path:out+'/pd-'+se+'.png'});
    await page.locator('.anatomyRegion').first().locator('path').last().click({force:true});assert(await page.locator('.pointPopup').isVisible());assert.match(await page.locator('.pointPopup').textContent(),/ожидаем|ориентир|сумк|капсул/i);await page.locator('.pointPopup button').click();
    await page.locator('[data-mode="points"]').click();assert.equal(await page.locator('.anatomyRegion').count(),0);assert.equal(await page.locator('.screenLabels text,.screenLabels polyline').count(),0);
