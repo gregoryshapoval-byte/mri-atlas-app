@@ -1,4 +1,4 @@
-import {setupViewerPage,fitZoom} from './viewer-ui.js';
+import {setupViewerPage,fitZoom,iconMarkup} from './viewer-ui.js';
 import {SliceGestures} from './brain-gestures.js';
 import {AnnotationLayer} from './brain-labels.js';
 setupViewerPage();
@@ -20,12 +20,12 @@ class Viewer{
   this.gestures=new SliceGestures(this);this.gestures.bind(this.stage);
   this.stage.onwheel=e=>{e.preventDefault();if(e.ctrlKey)this.scale(this.zoom*(e.deltaY<0?1.1:1/1.1));else this.move(this.index+(e.deltaY>0?1:-1))};
   this.stage.tabIndex=0;this.stage.setAttribute('aria-label','Изображение. Стрелки вверх и вниз листают кадры.');this.stage.onkeydown=e=>{if(['ArrowDown','ArrowUp','ArrowLeft','ArrowRight'].includes(e.key)){e.preventDefault();this.move(this.index+(['ArrowDown','ArrowRight'].includes(e.key)?1:-1))}};
-  this.fullButton=document.createElement('button');this.fullButton.className='fullscreenButton';this.fullButton.textContent='⛶';this.fullButton.setAttribute('aria-label','На весь экран');q('.panelHead').append(this.fullButton);this.fullButton.onclick=()=>this.setFullscreen(!this.el.classList.contains('fullscreenViewer'));
+  this.fullButton=document.createElement('button');this.fullButton.className='fullscreenButton';this.fullButton.innerHTML=iconMarkup('fullscreen');this.fullButton.setAttribute('aria-label','На весь экран');q('.panelHead').append(this.fullButton);this.fullButton.onclick=()=>this.setFullscreen(!this.el.classList.contains('fullscreenViewer'));
   this.render();
  }
  setFullscreen(on){
   if(on)for(const p of panels)if(p!==this)p.setFullscreen(false);
-  this.el.classList.toggle('fullscreenViewer',on);document.body.classList.toggle('viewerFullscreen',on);this.fullButton.textContent=on?'✕':'⛶';this.fullButton.setAttribute('aria-label',on?'Выйти из полного экрана':'На весь экран');this.fullButton.setAttribute('aria-pressed',String(on));
+  this.el.classList.toggle('fullscreenViewer',on);document.body.classList.toggle('viewerFullscreen',on);this.fullButton.innerHTML=iconMarkup(on?'close':'fullscreen');this.fullButton.setAttribute('aria-label',on?'Выйти из полного экрана':'На весь экран');this.fullButton.setAttribute('aria-pressed',String(on));
   window.AtlasNative?.setImmersive(true);requestAnimationFrame(()=>this.transform());
  }
  toggleZoom(){const base=fitZoom(this);if(this.zoom>base*1.1)this.reset();else this.scale(base*1.65)}

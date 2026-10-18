@@ -11,6 +11,7 @@ try{
   for(const name of ['brain','wrist-mri','elbow-mri','male-pelvis-mri','female-pelvis-mri','shoulder-mri','foot-mri']){
    await page.goto('http://127.0.0.1:8766/'+name+'.html');await page.waitForSelector('.screenLabels circle');
    const sizes=await page.evaluate(()=>({height:innerHeight,scroll:document.documentElement.scrollHeight,stage:document.querySelector('.stage').getBoundingClientRect().height}));assert(sizes.scroll<=sizes.height+1);assert(sizes.stage>sizes.height*.52);
+   const top=await page.locator('.infoButton').boundingBox();assert(top.x>=0&&top.x+top.width<=viewport.width+1);assert(await page.locator('.viewerBack').isVisible());
    const checks=await page.evaluate(()=>{const svg=document.querySelector('.screenLabels'),box=svg.getBoundingClientRect(),rects=[...svg.querySelectorAll('.labelBackdrop')].map(x=>x.getBoundingClientRect());return {inside:rects.every(r=>r.top>=box.top-1&&r.bottom<=box.bottom+1&&r.left>=box.left-1&&r.right<=box.right+1),overlap:rects.some((a,i)=>rects.some((b,j)=>i!==j&&a.left<b.right&&a.right>b.left&&a.top<b.bottom&&a.bottom>b.top))}});assert(checks.inside,name+' labels bounded');assert(!checks.overlap,name+' labels do not overlap');
    if(viewport.width===393)await page.screenshot({path:out+'/'+name+'-labels.png'});
    await page.locator('[data-mode="points"]').first().click();assert.equal(await page.locator('.screenLabels text,.screenLabels polyline').count(),0);assert(await page.locator('.screenLabels circle').count()>0);
