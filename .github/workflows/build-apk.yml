@@ -41,7 +41,7 @@ jobs:
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
-          name: MRIAtlas-1.30-apk
-          path: build/MRIAtlas-1.30.apk
+          name: MRIAtlas-1.4-apk
+          path: build/MRIAtlas-1.4.apk
           if-no-files-found: error
           retention-days: 30
