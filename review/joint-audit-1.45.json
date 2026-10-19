@@ -1,0 +1,3286 @@
+{
+  "version": "1.45",
+  "review": "Visual inspection of all 72 knee ribbons and 20 axillary ribbons on the 1.44 source slice contact sheets, with pixel-grid enlargement for retained paths. No independent expert verification.",
+  "edits": [
+    {
+      "module": "knee-mri",
+      "series": "652-contraste_dp",
+      "frame": 14,
+      "annotation": "17671",
+      "imageSha256": "ebf805a218562448697e40c8d58c45d9c466fc661fdf92ef89c49b1b06053edd",
+      "structure": 144201,
+      "before": [
+        [
+          157,
+          112
+        ],
+        [
+          177,
+          107
+        ],
+        [
+          197,
+          109
+        ],
+        [
+          217,
+          117
+        ]
+      ],
+      "beforeWidth": 5,
+      "after": [
+        [
+          184,
+          107
+        ],
+        [
+          195,
+          111
+        ],
+        [
+          205,
+          112
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "652-contraste_dp",
+      "frame": 15,
+      "annotation": "17672",
+      "imageSha256": "30dd0ea6ddedc2c9818bb939860bc5aa2cff4c8fbfc060e2830d269c654fff1f",
+      "structure": 144201,
+      "before": [
+        [
+          155,
+          109
+        ],
+        [
+          176,
+          104
+        ],
+        [
+          195,
+          106
+        ],
+        [
+          219,
+          115
+        ]
+      ],
+      "beforeWidth": 5,
+      "after": [
+        [
+          180,
+          104
+        ],
+        [
+          193,
+          108
+        ],
+        [
+          207,
+          109
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "652-contraste_dp",
+      "frame": 16,
+      "annotation": "17673",
+      "imageSha256": "a2d6ad139a9255950a27dc54749c7dc5cab2b1305b83b8249f3a3f8bb2a48008",
+      "structure": 144201,
+      "before": [
+        [
+          155,
+          106
+        ],
+        [
+          177,
+          102
+        ],
+        [
+          198,
+          104
+        ],
+        [
+          221,
+          114
+        ]
+      ],
+      "beforeWidth": 5,
+      "after": [
+        [
+          178,
+          103
+        ],
+        [
+          193,
+          107
+        ],
+        [
+          209,
+          108
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "652-contraste_dp",
+      "frame": 17,
+      "annotation": "17674",
+      "imageSha256": "7c5aa412ffe69618199bcc83291849e23a766f8ddfd6f05b061ea5357e8eb2b9",
+      "structure": 144201,
+      "before": [
+        [
+          155,
+          104
+        ],
+        [
+          178,
+          100
+        ],
+        [
+          200,
+          103
+        ],
+        [
+          222,
+          113
+        ]
+      ],
+      "beforeWidth": 5,
+      "after": [
+        [
+          176,
+          101
+        ],
+        [
+          190,
+          104
+        ],
+        [
+          208,
+          106
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "652-contraste_dp",
+      "frame": 18,
+      "annotation": "17675",
+      "imageSha256": "df72765d09ed356b34fb8ddd352fc67c07d1b10a43298f471a0c04b957f76d0e",
+      "structure": 144201,
+      "before": [
+        [
+          154,
+          103
+        ],
+        [
+          179,
+          99
+        ],
+        [
+          202,
+          101
+        ],
+        [
+          224,
+          113
+        ]
+      ],
+      "beforeWidth": 5,
+      "after": [
+        [
+          191,
+          103
+        ],
+        [
+          201,
+          104
+        ],
+        [
+          211,
+          104
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "652-contraste_dp",
+      "frame": 19,
+      "annotation": "17676",
+      "imageSha256": "f55f1eec765365e5994606d3ece280ce31053993d144dd8fdc667055b6dac872",
+      "structure": 144201,
+      "before": [
+        [
+          154,
+          101
+        ],
+        [
+          179,
+          97
+        ],
+        [
+          200,
+          100
+        ],
+        [
+          224,
+          111
+        ]
+      ],
+      "beforeWidth": 5,
+      "after": [
+        [
+          190,
+          103
+        ],
+        [
+          200,
+          104
+        ],
+        [
+          210,
+          104
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "652-contraste_dp",
+      "frame": 20,
+      "annotation": "17677",
+      "imageSha256": "7d477e29b5b7420b1f869ad4660d1b95b4f2bd2748622d8f9ef93d782776affb",
+      "structure": 144201,
+      "before": [
+        [
+          154,
+          100
+        ],
+        [
+          176,
+          97
+        ],
+        [
+          197,
+          100
+        ],
+        [
+          223,
+          112
+        ]
+      ],
+      "beforeWidth": 5,
+      "after": [
+        [
+          182,
+          102
+        ],
+        [
+          197,
+          108
+        ],
+        [
+          211,
+          110
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "652-contraste_dp",
+      "frame": 24,
+      "annotation": "17681",
+      "imageSha256": "4d709e9b673a78b3b21f643d389c3d7eb83d3b9f27bed70a282730f7eca3b9d6",
+      "structure": 144202,
+      "before": [
+        [
+          110,
+          133
+        ],
+        [
+          101,
+          153
+        ],
+        [
+          96,
+          175
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": [
+        [
+          123,
+          113
+        ],
+        [
+          117,
+          126
+        ],
+        [
+          112,
+          140
+        ],
+        [
+          109,
+          150
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "652-contraste_dp",
+      "frame": 24,
+      "annotation": "17681",
+      "imageSha256": "4d709e9b673a78b3b21f643d389c3d7eb83d3b9f27bed70a282730f7eca3b9d6",
+      "structure": 144203,
+      "before": [
+        [
+          306,
+          115
+        ],
+        [
+          321,
+          131
+        ],
+        [
+          329,
+          150
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": [
+        [
+          267,
+          100
+        ],
+        [
+          276,
+          103
+        ],
+        [
+          283,
+          109
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "652-contraste_dp",
+      "frame": 25,
+      "annotation": "17682",
+      "imageSha256": "8ab31c4547130acd6d82ff5aaab34a18e10e4a0f7849c43af1cdc48cd8299f82",
+      "structure": 144202,
+      "before": [
+        [
+          109,
+          133
+        ],
+        [
+          100,
+          152
+        ],
+        [
+          94,
+          176
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": [
+        [
+          120,
+          113
+        ],
+        [
+          115,
+          126
+        ],
+        [
+          111,
+          139
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "652-contraste_dp",
+      "frame": 25,
+      "annotation": "17682",
+      "imageSha256": "8ab31c4547130acd6d82ff5aaab34a18e10e4a0f7849c43af1cdc48cd8299f82",
+      "structure": 144203,
+      "before": [
+        [
+          310,
+          115
+        ],
+        [
+          325,
+          132
+        ],
+        [
+          333,
+          152
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": [
+        [
+          269,
+          103
+        ],
+        [
+          281,
+          111
+        ],
+        [
+          290,
+          120
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "652-contraste_dp",
+      "frame": 26,
+      "annotation": "17683",
+      "imageSha256": "5d3f57360ede2a92b63ac13b172f772db1ce7981fdc863c26f2d6edddec453cc",
+      "structure": 144202,
+      "before": [
+        [
+          107,
+          133
+        ],
+        [
+          98,
+          151
+        ],
+        [
+          93,
+          175
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": [
+        [
+          118,
+          113
+        ],
+        [
+          113,
+          126
+        ],
+        [
+          110,
+          139
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "652-contraste_dp",
+      "frame": 26,
+      "annotation": "17683",
+      "imageSha256": "5d3f57360ede2a92b63ac13b172f772db1ce7981fdc863c26f2d6edddec453cc",
+      "structure": 144203,
+      "before": [
+        [
+          313,
+          115
+        ],
+        [
+          328,
+          132
+        ],
+        [
+          337,
+          152
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": [
+        [
+          270,
+          106
+        ],
+        [
+          282,
+          116
+        ],
+        [
+          291,
+          125
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "652-contraste_dp",
+      "frame": 27,
+      "annotation": "17684",
+      "imageSha256": "5a97c3429aaa2fcfd1b1f994d96bed584c5fdb7b758267c17642df07ab6bd69e",
+      "structure": 144202,
+      "before": [
+        [
+          106,
+          132
+        ],
+        [
+          97,
+          151
+        ],
+        [
+          92,
+          175
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": [
+        [
+          116,
+          115
+        ],
+        [
+          111,
+          127
+        ],
+        [
+          108,
+          139
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "652-contraste_dp",
+      "frame": 27,
+      "annotation": "17684",
+      "imageSha256": "5a97c3429aaa2fcfd1b1f994d96bed584c5fdb7b758267c17642df07ab6bd69e",
+      "structure": 144203,
+      "before": [
+        [
+          316,
+          115
+        ],
+        [
+          332,
+          132
+        ],
+        [
+          341,
+          153
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": [
+        [
+          271,
+          108
+        ],
+        [
+          284,
+          119
+        ],
+        [
+          294,
+          131
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "652-contraste_dp",
+      "frame": 28,
+      "annotation": "17685",
+      "imageSha256": "2e68d18c5327d993615fc6b34fd283f57684eaffdb25a1dfb1a4bbbe9585f3ec",
+      "structure": 144202,
+      "before": [
+        [
+          104,
+          131
+        ],
+        [
+          96,
+          150
+        ],
+        [
+          91,
+          173
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": [
+        [
+          114,
+          117
+        ],
+        [
+          110,
+          128
+        ],
+        [
+          107,
+          139
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "652-contraste_dp",
+      "frame": 28,
+      "annotation": "17685",
+      "imageSha256": "2e68d18c5327d993615fc6b34fd283f57684eaffdb25a1dfb1a4bbbe9585f3ec",
+      "structure": 144203,
+      "before": [
+        [
+          319,
+          115
+        ],
+        [
+          335,
+          132
+        ],
+        [
+          344,
+          153
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": [
+        [
+          273,
+          111
+        ],
+        [
+          288,
+          123
+        ],
+        [
+          300,
+          138
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "652-contraste_dp",
+      "frame": 28,
+      "annotation": "17685",
+      "imageSha256": "2e68d18c5327d993615fc6b34fd283f57684eaffdb25a1dfb1a4bbbe9585f3ec",
+      "structure": 144204,
+      "before": [
+        [
+          278,
+          336
+        ],
+        [
+          301,
+          332
+        ],
+        [
+          320,
+          322
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "652-contraste_dp",
+      "frame": 29,
+      "annotation": "17686",
+      "imageSha256": "003a56cce5f74d280e91323b4ec7b1eaadd6c31a85ae442a55226c37be1e6a8e",
+      "structure": 144204,
+      "before": [
+        [
+          279,
+          337
+        ],
+        [
+          303,
+          332
+        ],
+        [
+          322,
+          321
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "652-contraste_dp",
+      "frame": 29,
+      "annotation": "17686",
+      "imageSha256": "003a56cce5f74d280e91323b4ec7b1eaadd6c31a85ae442a55226c37be1e6a8e",
+      "structure": 144209,
+      "before": [
+        [
+          328,
+          310
+        ],
+        [
+          340,
+          319
+        ],
+        [
+          347,
+          333
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "652-contraste_dp",
+      "frame": 30,
+      "annotation": "17687",
+      "imageSha256": "fd8b007a64585741c5e3e6cba81b427acc1d4c02ee2c03bf55dff4700173fde6",
+      "structure": 144204,
+      "before": [
+        [
+          280,
+          337
+        ],
+        [
+          305,
+          332
+        ],
+        [
+          324,
+          321
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "652-contraste_dp",
+      "frame": 30,
+      "annotation": "17687",
+      "imageSha256": "fd8b007a64585741c5e3e6cba81b427acc1d4c02ee2c03bf55dff4700173fde6",
+      "structure": 144209,
+      "before": [
+        [
+          327,
+          312
+        ],
+        [
+          339,
+          322
+        ],
+        [
+          347,
+          336
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "652-contraste_dp",
+      "frame": 31,
+      "annotation": "17688",
+      "imageSha256": "09b9d9d7b77a3c74c0d2375df754cb2130c12e8f95a363ac659c6f2dee95b5f6",
+      "structure": 144209,
+      "before": [
+        [
+          326,
+          314
+        ],
+        [
+          339,
+          324
+        ],
+        [
+          347,
+          339
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "652-contraste_dp",
+      "frame": 32,
+      "annotation": "17689",
+      "imageSha256": "89fe2203b294b59797336cfb2d422cdd965f3a3e87fd9e7f07dac46a54b0896c",
+      "structure": 144209,
+      "before": [
+        [
+          326,
+          316
+        ],
+        [
+          339,
+          326
+        ],
+        [
+          347,
+          341
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 5,
+      "annotation": "17712",
+      "imageSha256": "b77337ae476f80f01d2c40e6cb478c5be20a6cef481ebf12e804374323a0dd6f",
+      "structure": 144205,
+      "before": [
+        [
+          275,
+          340
+        ],
+        [
+          289,
+          347
+        ],
+        [
+          300,
+          359
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 6,
+      "annotation": "17713",
+      "imageSha256": "ef09b5b8a22a49671bd1b4aee8c56a48b9bea49b010a5eadbdd403b44f8805c8",
+      "structure": 144205,
+      "before": [
+        [
+          283,
+          340
+        ],
+        [
+          297,
+          349
+        ],
+        [
+          306,
+          363
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 7,
+      "annotation": "17714",
+      "imageSha256": "923fec221f0ffe65140043d91fb0df9e26831efbd17c7207789da11918c831e7",
+      "structure": 144205,
+      "before": [
+        [
+          292,
+          341
+        ],
+        [
+          305,
+          351
+        ],
+        [
+          313,
+          365
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 8,
+      "annotation": "17715",
+      "imageSha256": "40808f931ea8c296067210b53a1149afb404b89d125d2ee1661efa429569d7e7",
+      "structure": 144201,
+      "before": [
+        [
+          123,
+          220
+        ],
+        [
+          129,
+          238
+        ],
+        [
+          135,
+          259
+        ],
+        [
+          139,
+          283
+        ]
+      ],
+      "beforeWidth": 5,
+      "after": [
+        [
+          114,
+          220
+        ],
+        [
+          119,
+          234
+        ],
+        [
+          123,
+          251
+        ],
+        [
+          124,
+          261
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 8,
+      "annotation": "17715",
+      "imageSha256": "40808f931ea8c296067210b53a1149afb404b89d125d2ee1661efa429569d7e7",
+      "structure": 144204,
+      "before": [
+        [
+          303,
+          224
+        ],
+        [
+          316,
+          247
+        ],
+        [
+          324,
+          276
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 9,
+      "annotation": "17716",
+      "imageSha256": "3f7864b233aca46a3ed4913addfd18cd031c084fb54a07e4b8664eef1fb58959",
+      "structure": 144201,
+      "before": [
+        [
+          119,
+          215
+        ],
+        [
+          124,
+          236
+        ],
+        [
+          131,
+          260
+        ],
+        [
+          135,
+          283
+        ]
+      ],
+      "beforeWidth": 5,
+      "after": [
+        [
+          111,
+          220
+        ],
+        [
+          115,
+          234
+        ],
+        [
+          121,
+          251
+        ],
+        [
+          122,
+          261
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 9,
+      "annotation": "17716",
+      "imageSha256": "3f7864b233aca46a3ed4913addfd18cd031c084fb54a07e4b8664eef1fb58959",
+      "structure": 144204,
+      "before": [
+        [
+          301,
+          223
+        ],
+        [
+          316,
+          247
+        ],
+        [
+          325,
+          276
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 10,
+      "annotation": "17717",
+      "imageSha256": "79019f73acfd1b21afeefdb8a2607125caf171a3b78a79ccfb0e4cc09c0bfa7d",
+      "structure": 144201,
+      "before": [
+        [
+          115,
+          216
+        ],
+        [
+          122,
+          237
+        ],
+        [
+          129,
+          261
+        ],
+        [
+          133,
+          283
+        ]
+      ],
+      "beforeWidth": 5,
+      "after": [
+        [
+          109,
+          222
+        ],
+        [
+          114,
+          237
+        ],
+        [
+          120,
+          253
+        ],
+        [
+          121,
+          263
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 10,
+      "annotation": "17717",
+      "imageSha256": "79019f73acfd1b21afeefdb8a2607125caf171a3b78a79ccfb0e4cc09c0bfa7d",
+      "structure": 144204,
+      "before": [
+        [
+          299,
+          223
+        ],
+        [
+          316,
+          246
+        ],
+        [
+          326,
+          275
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 11,
+      "annotation": "17718",
+      "imageSha256": "9cefdd9bec2c73ce81c4383772b3650d9d20fdd4c55e50e2b0e1618eb8e92918",
+      "structure": 144201,
+      "before": [
+        [
+          112,
+          217
+        ],
+        [
+          120,
+          239
+        ],
+        [
+          127,
+          261
+        ],
+        [
+          132,
+          283
+        ]
+      ],
+      "beforeWidth": 5,
+      "after": [
+        [
+          109,
+          227
+        ],
+        [
+          115,
+          242
+        ],
+        [
+          120,
+          255
+        ],
+        [
+          121,
+          264
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 12,
+      "annotation": "17719",
+      "imageSha256": "5050f4acb72cf848527a8ad3596863052074d4b20be09a8a88302ba8d63ffb2f",
+      "structure": 144201,
+      "before": [
+        [
+          109,
+          223
+        ],
+        [
+          118,
+          245
+        ],
+        [
+          125,
+          270
+        ],
+        [
+          132,
+          289
+        ]
+      ],
+      "beforeWidth": 5,
+      "after": [
+        [
+          112,
+          236
+        ],
+        [
+          119,
+          245
+        ],
+        [
+          122,
+          253
+        ],
+        [
+          122,
+          261
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 12,
+      "annotation": "17719",
+      "imageSha256": "5050f4acb72cf848527a8ad3596863052074d4b20be09a8a88302ba8d63ffb2f",
+      "structure": 144206,
+      "before": [
+        [
+          60,
+          264
+        ],
+        [
+          60,
+          284
+        ],
+        [
+          65,
+          306
+        ],
+        [
+          75,
+          327
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 13,
+      "annotation": "17720",
+      "imageSha256": "62e22c84df1675b6b4b8492636ebdc4df2be7365af3ec816324a916973adc4f0",
+      "structure": 144201,
+      "before": [
+        [
+          108,
+          231
+        ],
+        [
+          117,
+          251
+        ],
+        [
+          124,
+          278
+        ],
+        [
+          134,
+          295
+        ]
+      ],
+      "beforeWidth": 5,
+      "after": [
+        [
+          111,
+          241
+        ],
+        [
+          116,
+          252
+        ],
+        [
+          120,
+          263
+        ],
+        [
+          121,
+          274
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 13,
+      "annotation": "17720",
+      "imageSha256": "62e22c84df1675b6b4b8492636ebdc4df2be7365af3ec816324a916973adc4f0",
+      "structure": 144206,
+      "before": [
+        [
+          59,
+          268
+        ],
+        [
+          59,
+          289
+        ],
+        [
+          65,
+          311
+        ],
+        [
+          77,
+          332
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 13,
+      "annotation": "17720",
+      "imageSha256": "62e22c84df1675b6b4b8492636ebdc4df2be7365af3ec816324a916973adc4f0",
+      "structure": 144207,
+      "before": [
+        [
+          128,
+          408
+        ],
+        [
+          140,
+          419
+        ],
+        [
+          150,
+          431
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 13,
+      "annotation": "17720",
+      "imageSha256": "62e22c84df1675b6b4b8492636ebdc4df2be7365af3ec816324a916973adc4f0",
+      "structure": 144208,
+      "before": [
+        [
+          107,
+          409
+        ],
+        [
+          119,
+          427
+        ],
+        [
+          132,
+          444
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 14,
+      "annotation": "17721",
+      "imageSha256": "d948f7acb96af6068c1dcc9766635e68ca24d62eda8b55af096427a5126dd122",
+      "structure": 144201,
+      "before": [
+        [
+          106,
+          237
+        ],
+        [
+          115,
+          256
+        ],
+        [
+          122,
+          282
+        ],
+        [
+          133,
+          300
+        ]
+      ],
+      "beforeWidth": 5,
+      "after": [
+        [
+          111,
+          247
+        ],
+        [
+          116,
+          258
+        ],
+        [
+          119,
+          272
+        ],
+        [
+          122,
+          284
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 14,
+      "annotation": "17721",
+      "imageSha256": "d948f7acb96af6068c1dcc9766635e68ca24d62eda8b55af096427a5126dd122",
+      "structure": 144206,
+      "before": [
+        [
+          59,
+          274
+        ],
+        [
+          60,
+          296
+        ],
+        [
+          66,
+          317
+        ],
+        [
+          79,
+          337
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 14,
+      "annotation": "17721",
+      "imageSha256": "d948f7acb96af6068c1dcc9766635e68ca24d62eda8b55af096427a5126dd122",
+      "structure": 144207,
+      "before": [
+        [
+          128,
+          408
+        ],
+        [
+          141,
+          420
+        ],
+        [
+          152,
+          433
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 14,
+      "annotation": "17721",
+      "imageSha256": "d948f7acb96af6068c1dcc9766635e68ca24d62eda8b55af096427a5126dd122",
+      "structure": 144208,
+      "before": [
+        [
+          108,
+          410
+        ],
+        [
+          121,
+          429
+        ],
+        [
+          134,
+          446
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 15,
+      "annotation": "17722",
+      "imageSha256": "50b08fac833f47a754b907c2538f6f73922c739b98e0cf57559f36192402e336",
+      "structure": 144201,
+      "before": [
+        [
+          107,
+          244
+        ],
+        [
+          113,
+          264
+        ],
+        [
+          121,
+          286
+        ],
+        [
+          134,
+          307
+        ]
+      ],
+      "beforeWidth": 5,
+      "after": [
+        [
+          112,
+          253
+        ],
+        [
+          117,
+          264
+        ],
+        [
+          120,
+          278
+        ],
+        [
+          124,
+          290
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 15,
+      "annotation": "17722",
+      "imageSha256": "50b08fac833f47a754b907c2538f6f73922c739b98e0cf57559f36192402e336",
+      "structure": 144206,
+      "before": [
+        [
+          60,
+          280
+        ],
+        [
+          62,
+          301
+        ],
+        [
+          69,
+          322
+        ],
+        [
+          81,
+          341
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 15,
+      "annotation": "17722",
+      "imageSha256": "50b08fac833f47a754b907c2538f6f73922c739b98e0cf57559f36192402e336",
+      "structure": 144207,
+      "before": [
+        [
+          130,
+          409
+        ],
+        [
+          143,
+          421
+        ],
+        [
+          154,
+          434
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 15,
+      "annotation": "17722",
+      "imageSha256": "50b08fac833f47a754b907c2538f6f73922c739b98e0cf57559f36192402e336",
+      "structure": 144208,
+      "before": [
+        [
+          110,
+          412
+        ],
+        [
+          123,
+          431
+        ],
+        [
+          136,
+          448
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 16,
+      "annotation": "17723",
+      "imageSha256": "c35476e20c248046372c5ec1aacd0febc20a4d16972452db6517e9c175baacfb",
+      "structure": 144201,
+      "before": [
+        [
+          108,
+          250
+        ],
+        [
+          114,
+          271
+        ],
+        [
+          121,
+          290
+        ],
+        [
+          136,
+          311
+        ]
+      ],
+      "beforeWidth": 5,
+      "after": [
+        [
+          111,
+          261
+        ],
+        [
+          117,
+          272
+        ],
+        [
+          122,
+          286
+        ],
+        [
+          127,
+          298
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 16,
+      "annotation": "17723",
+      "imageSha256": "c35476e20c248046372c5ec1aacd0febc20a4d16972452db6517e9c175baacfb",
+      "structure": 144206,
+      "before": [
+        [
+          62,
+          284
+        ],
+        [
+          65,
+          306
+        ],
+        [
+          72,
+          327
+        ],
+        [
+          84,
+          346
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 16,
+      "annotation": "17723",
+      "imageSha256": "c35476e20c248046372c5ec1aacd0febc20a4d16972452db6517e9c175baacfb",
+      "structure": 144207,
+      "before": [
+        [
+          132,
+          410
+        ],
+        [
+          145,
+          423
+        ],
+        [
+          156,
+          435
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 16,
+      "annotation": "17723",
+      "imageSha256": "c35476e20c248046372c5ec1aacd0febc20a4d16972452db6517e9c175baacfb",
+      "structure": 144208,
+      "before": [
+        [
+          112,
+          414
+        ],
+        [
+          125,
+          432
+        ],
+        [
+          139,
+          451
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 17,
+      "annotation": "17724",
+      "imageSha256": "51a296f000b347188fe1fe4e4d8fee99eff3b6733733de2933ed038d40500710",
+      "structure": 144201,
+      "before": [
+        [
+          109,
+          257
+        ],
+        [
+          113,
+          279
+        ],
+        [
+          121,
+          297
+        ],
+        [
+          136,
+          317
+        ]
+      ],
+      "beforeWidth": 5,
+      "after": [
+        [
+          110,
+          268
+        ],
+        [
+          116,
+          279
+        ],
+        [
+          122,
+          292
+        ],
+        [
+          128,
+          302
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 17,
+      "annotation": "17724",
+      "imageSha256": "51a296f000b347188fe1fe4e4d8fee99eff3b6733733de2933ed038d40500710",
+      "structure": 144207,
+      "before": [
+        [
+          135,
+          411
+        ],
+        [
+          148,
+          424
+        ],
+        [
+          160,
+          437
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 17,
+      "annotation": "17724",
+      "imageSha256": "51a296f000b347188fe1fe4e4d8fee99eff3b6733733de2933ed038d40500710",
+      "structure": 144208,
+      "before": [
+        [
+          114,
+          416
+        ],
+        [
+          128,
+          435
+        ],
+        [
+          142,
+          453
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 18,
+      "annotation": "17725",
+      "imageSha256": "2e7faab077e844ec07ac448c617b58d9f275c7e8f37d3b21a7d362eccf1a75bb",
+      "structure": 144201,
+      "before": [
+        [
+          110,
+          266
+        ],
+        [
+          114,
+          285
+        ],
+        [
+          121,
+          302
+        ],
+        [
+          137,
+          320
+        ]
+      ],
+      "beforeWidth": 5,
+      "after": [
+        [
+          111,
+          273
+        ],
+        [
+          116,
+          282
+        ],
+        [
+          120,
+          292
+        ],
+        [
+          124,
+          302
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 22,
+      "annotation": "17729",
+      "imageSha256": "32f13398c9711611d386dd058830b445f12d8afdfc185ada5195da5af8c736b7",
+      "structure": 144204,
+      "before": [
+        [
+          283,
+          216
+        ],
+        [
+          301,
+          235
+        ],
+        [
+          316,
+          261
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 23,
+      "annotation": "17730",
+      "imageSha256": "96d3a093964658b56185743b1795efb71093bfd6e0cdfe7e4d3e3e14b8bd0803",
+      "structure": 144204,
+      "before": [
+        [
+          281,
+          215
+        ],
+        [
+          300,
+          236
+        ],
+        [
+          317,
+          263
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 23,
+      "annotation": "17730",
+      "imageSha256": "96d3a093964658b56185743b1795efb71093bfd6e0cdfe7e4d3e3e14b8bd0803",
+      "structure": 144209,
+      "before": [
+        [
+          312,
+          297
+        ],
+        [
+          320,
+          314
+        ],
+        [
+          329,
+          331
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 24,
+      "annotation": "17731",
+      "imageSha256": "b8f59c9ad96de991d4a2241671f2444361f0fb7aa402de5c67dcae92eab28f10",
+      "structure": 144204,
+      "before": [
+        [
+          281,
+          217
+        ],
+        [
+          301,
+          238
+        ],
+        [
+          318,
+          266
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 24,
+      "annotation": "17731",
+      "imageSha256": "b8f59c9ad96de991d4a2241671f2444361f0fb7aa402de5c67dcae92eab28f10",
+      "structure": 144209,
+      "before": [
+        [
+          313,
+          299
+        ],
+        [
+          322,
+          316
+        ],
+        [
+          331,
+          333
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 25,
+      "annotation": "17732",
+      "imageSha256": "ab65bf2bda40d400455c968a08ad04c349e301b4f17fa0d2e4316a3a2a2ba876",
+      "structure": 144209,
+      "before": [
+        [
+          314,
+          301
+        ],
+        [
+          323,
+          318
+        ],
+        [
+          333,
+          335
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 25,
+      "annotation": "17732",
+      "imageSha256": "ab65bf2bda40d400455c968a08ad04c349e301b4f17fa0d2e4316a3a2a2ba876",
+      "structure": 144210,
+      "before": [
+        [
+          153,
+          404
+        ],
+        [
+          162,
+          421
+        ],
+        [
+          175,
+          437
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 26,
+      "annotation": "17733",
+      "imageSha256": "cca3a8ce2253797f584321b9dd1949e877b96eadb1ea330513904b5b05e5a4ba",
+      "structure": 144210,
+      "before": [
+        [
+          159,
+          406
+        ],
+        [
+          168,
+          423
+        ],
+        [
+          181,
+          439
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "653-contraste_dp",
+      "frame": 27,
+      "annotation": "17734",
+      "imageSha256": "8a57be2d14d9c8343d217faf8353f638b84c1f534220e8e0f71bb1373f3eb1d8",
+      "structure": 144210,
+      "before": [
+        [
+          166,
+          410
+        ],
+        [
+          175,
+          427
+        ],
+        [
+          187,
+          442
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "654-contraste_dp",
+      "frame": 6,
+      "annotation": "17745",
+      "imageSha256": "5116cf2333e782e44c67db0d0b6e5384649fb23ddc2670b7527a4b99ce3b7cdf",
+      "structure": 144201,
+      "before": [
+        [
+          154,
+          223
+        ],
+        [
+          176,
+          220
+        ],
+        [
+          198,
+          222
+        ]
+      ],
+      "beforeWidth": 5,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "654-contraste_dp",
+      "frame": 7,
+      "annotation": "17746",
+      "imageSha256": "6ccad4ec6b44dd0ec621d488905733d48ebc64202cacef44f3a960afac4fcf1d",
+      "structure": 144201,
+      "before": [
+        [
+          146,
+          237
+        ],
+        [
+          170,
+          233
+        ],
+        [
+          197,
+          238
+        ]
+      ],
+      "beforeWidth": 5,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "654-contraste_dp",
+      "frame": 8,
+      "annotation": "17747",
+      "imageSha256": "430c355e4deed2fb6a8866763585e1323b883723aef9143e209ecf46d86d5f83",
+      "structure": 144201,
+      "before": [
+        [
+          137,
+          247
+        ],
+        [
+          162,
+          247
+        ],
+        [
+          190,
+          253
+        ]
+      ],
+      "beforeWidth": 5,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "654-contraste_dp",
+      "frame": 15,
+      "annotation": "17754",
+      "imageSha256": "20ce99ecf7c7619aca23ff955b33dd4631a2e8f79993fb359aa4d7fd688d61bd",
+      "structure": 144210,
+      "before": [
+        [
+          351,
+          400
+        ],
+        [
+          353,
+          419
+        ],
+        [
+          351,
+          437
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "654-contraste_dp",
+      "frame": 16,
+      "annotation": "17755",
+      "imageSha256": "bf1f8826be0deb5d047eca09b7ca746d6111926619092c66801672361de75272",
+      "structure": 144210,
+      "before": [
+        [
+          351,
+          401
+        ],
+        [
+          353,
+          420
+        ],
+        [
+          351,
+          439
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "654-contraste_dp",
+      "frame": 17,
+      "annotation": "17756",
+      "imageSha256": "bdeb02557ec35f7bb4c7c85eda162068269e7d2609332eeafa7b41be35848156",
+      "structure": 144210,
+      "before": [
+        [
+          351,
+          402
+        ],
+        [
+          353,
+          421
+        ],
+        [
+          351,
+          440
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "knee-mri",
+      "series": "654-contraste_dp",
+      "frame": 18,
+      "annotation": "17757",
+      "imageSha256": "33f05e45a52f1a5f5d1bb60d580b1e4e942de5d68e521cc1fc3cae00952f75ee",
+      "structure": 144210,
+      "before": [
+        [
+          350,
+          403
+        ],
+        [
+          352,
+          422
+        ],
+        [
+          350,
+          441
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "shoulder-mri",
+      "series": "656-contraste_dp",
+      "frame": 25,
+      "annotation": "17802",
+      "imageSha256": "41954005a52baaea7b685b3010ffe7282b16878faf7bc6c5bdc2159839576593",
+      "structure": 143201,
+      "before": [
+        [
+          207,
+          266
+        ],
+        [
+          218,
+          269
+        ],
+        [
+          223,
+          281
+        ],
+        [
+          222,
+          299
+        ],
+        [
+          216,
+          310
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "shoulder-mri",
+      "series": "656-contraste_dp",
+      "frame": 26,
+      "annotation": "17803",
+      "imageSha256": "c7fcf00254cd83145b5ff36385c4465f02578b531c0e9b3f9b8cda31c4d3191d",
+      "structure": 143201,
+      "before": [
+        [
+          203,
+          274
+        ],
+        [
+          215,
+          278
+        ],
+        [
+          221,
+          289
+        ],
+        [
+          220,
+          305
+        ],
+        [
+          213,
+          315
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "shoulder-mri",
+      "series": "656-contraste_dp",
+      "frame": 27,
+      "annotation": "17804",
+      "imageSha256": "7bbb082f7f72b00b573705bb2b20e1fb4b9b2e1fc60b36464f8fa6c4df30fe1e",
+      "structure": 143201,
+      "before": [
+        [
+          199,
+          281
+        ],
+        [
+          211,
+          285
+        ],
+        [
+          218,
+          295
+        ],
+        [
+          217,
+          308
+        ],
+        [
+          208,
+          317
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "shoulder-mri",
+      "series": "656-contraste_dp",
+      "frame": 28,
+      "annotation": "17805",
+      "imageSha256": "13495b2da279007ea3481e5eae7549a6f9a1c49d0a333405098736a2a550d0df",
+      "structure": 143201,
+      "before": [
+        [
+          196,
+          279
+        ],
+        [
+          206,
+          284
+        ],
+        [
+          211,
+          295
+        ],
+        [
+          210,
+          307
+        ],
+        [
+          201,
+          315
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "shoulder-mri",
+      "series": "657-contraste_dp",
+      "frame": 14,
+      "annotation": "17833",
+      "imageSha256": "d55cfcc62aaa5e835b19e1d8b536e601fd391315ffffca98fc53503058900ba4",
+      "structure": 143201,
+      "before": [
+        [
+          247,
+          207
+        ],
+        [
+          253,
+          227
+        ],
+        [
+          267,
+          244
+        ],
+        [
+          284,
+          247
+        ],
+        [
+          303,
+          239
+        ],
+        [
+          319,
+          219
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "shoulder-mri",
+      "series": "657-contraste_dp",
+      "frame": 15,
+      "annotation": "17834",
+      "imageSha256": "a1f45d9c60245bb81a0db057541d3d9ff86bd59d4fed0efc51a4747ed0054451",
+      "structure": 143201,
+      "before": [
+        [
+          249,
+          210
+        ],
+        [
+          255,
+          231
+        ],
+        [
+          270,
+          247
+        ],
+        [
+          288,
+          250
+        ],
+        [
+          307,
+          241
+        ],
+        [
+          324,
+          219
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "shoulder-mri",
+      "series": "657-contraste_dp",
+      "frame": 16,
+      "annotation": "17835",
+      "imageSha256": "5a0eea3bde250046f1248fc52e973567fb608be6be820e0fbe199b62c00b868c",
+      "structure": 143201,
+      "before": [
+        [
+          252,
+          213
+        ],
+        [
+          259,
+          234
+        ],
+        [
+          274,
+          250
+        ],
+        [
+          292,
+          253
+        ],
+        [
+          312,
+          242
+        ],
+        [
+          329,
+          219
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "shoulder-mri",
+      "series": "657-contraste_dp",
+      "frame": 17,
+      "annotation": "17836",
+      "imageSha256": "75f3ade2f9202029fd44794bb6ec268c2e625e58f7e71ba17ff5d5ca519f3d38",
+      "structure": 143201,
+      "before": [
+        [
+          254,
+          214
+        ],
+        [
+          262,
+          235
+        ],
+        [
+          277,
+          251
+        ],
+        [
+          296,
+          254
+        ],
+        [
+          316,
+          242
+        ],
+        [
+          333,
+          219
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "shoulder-mri",
+      "series": "657-contraste_dp",
+      "frame": 18,
+      "annotation": "17837",
+      "imageSha256": "53e23c9a820905102038605ccb24f2fe5bab8c10bc733a36aa7bf12458a1ee25",
+      "structure": 143201,
+      "before": [
+        [
+          257,
+          214
+        ],
+        [
+          265,
+          234
+        ],
+        [
+          280,
+          250
+        ],
+        [
+          299,
+          253
+        ],
+        [
+          319,
+          241
+        ],
+        [
+          336,
+          218
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "shoulder-mri",
+      "series": "657-contraste_dp",
+      "frame": 19,
+      "annotation": "17838",
+      "imageSha256": "9e6eb2dc886788dfc970e7b17fd337f8d1a765d35f92de0e85d7b9f8a0eb210c",
+      "structure": 143201,
+      "before": [
+        [
+          259,
+          213
+        ],
+        [
+          267,
+          233
+        ],
+        [
+          282,
+          248
+        ],
+        [
+          301,
+          251
+        ],
+        [
+          321,
+          239
+        ],
+        [
+          338,
+          216
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "shoulder-mri",
+      "series": "657-contraste_dp",
+      "frame": 20,
+      "annotation": "17839",
+      "imageSha256": "74e46b5f5bbf5fa2f793d1a3b904a9488fb05226d2f8db511835d0d300142552",
+      "structure": 143201,
+      "before": [
+        [
+          262,
+          211
+        ],
+        [
+          269,
+          231
+        ],
+        [
+          284,
+          245
+        ],
+        [
+          302,
+          247
+        ],
+        [
+          322,
+          235
+        ],
+        [
+          338,
+          213
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "shoulder-mri",
+      "series": "658-contraste_dp",
+      "frame": 15,
+      "annotation": "17870",
+      "imageSha256": "72eeec68ae7fdc5bf0b0f71da253ec3199d2b4d5e95de6050d438d0868577468",
+      "structure": 143201,
+      "before": [
+        [
+          146,
+          205
+        ],
+        [
+          144,
+          221
+        ],
+        [
+          148,
+          234
+        ],
+        [
+          156,
+          237
+        ],
+        [
+          165,
+          223
+        ],
+        [
+          173,
+          203
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "shoulder-mri",
+      "series": "658-contraste_dp",
+      "frame": 16,
+      "annotation": "17871",
+      "imageSha256": "ee97ba062e7a442490a14325aa706b4ac9ecedc67f250b14d02d87f6c962ef22",
+      "structure": 143201,
+      "before": [
+        [
+          149,
+          205
+        ],
+        [
+          147,
+          225
+        ],
+        [
+          152,
+          239
+        ],
+        [
+          161,
+          238
+        ],
+        [
+          170,
+          221
+        ],
+        [
+          177,
+          202
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "shoulder-mri",
+      "series": "658-contraste_dp",
+      "frame": 17,
+      "annotation": "17872",
+      "imageSha256": "2f64cca35a92d46253cf440e3d8e38200f131534e7f9f70e561e4c9b5fa7888d",
+      "structure": 143201,
+      "before": [
+        [
+          153,
+          206
+        ],
+        [
+          151,
+          227
+        ],
+        [
+          157,
+          242
+        ],
+        [
+          165,
+          241
+        ],
+        [
+          174,
+          222
+        ],
+        [
+          180,
+          203
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": [
+        [
+          151,
+          207
+        ],
+        [
+          146,
+          216
+        ],
+        [
+          143,
+          226
+        ],
+        [
+          147,
+          231
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "shoulder-mri",
+      "series": "658-contraste_dp",
+      "frame": 18,
+      "annotation": "17873",
+      "imageSha256": "cec60be5a31c1c4805a096db0dedebebdec0dfa0cd2173cb67ca2fdb0479d2ba",
+      "structure": 143201,
+      "before": [
+        [
+          155,
+          207
+        ],
+        [
+          154,
+          229
+        ],
+        [
+          160,
+          243
+        ],
+        [
+          168,
+          242
+        ],
+        [
+          177,
+          223
+        ],
+        [
+          183,
+          204
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": [
+        [
+          155,
+          208
+        ],
+        [
+          150,
+          217
+        ],
+        [
+          147,
+          227
+        ],
+        [
+          151,
+          233
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "shoulder-mri",
+      "series": "658-contraste_dp",
+      "frame": 19,
+      "annotation": "17874",
+      "imageSha256": "2c74458e04a2a42ff2f27128972d57d48f5733ee318cfa5a791b03f500b8d366",
+      "structure": 143201,
+      "before": [
+        [
+          158,
+          208
+        ],
+        [
+          157,
+          229
+        ],
+        [
+          163,
+          243
+        ],
+        [
+          171,
+          241
+        ],
+        [
+          179,
+          222
+        ],
+        [
+          185,
+          204
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": [
+        [
+          154,
+          207
+        ],
+        [
+          149,
+          216
+        ],
+        [
+          145,
+          226
+        ],
+        [
+          149,
+          231
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "shoulder-mri",
+      "series": "658-contraste_dp",
+      "frame": 20,
+      "annotation": "17875",
+      "imageSha256": "ce87b521f7ff337c6f895f27661268c43b4b123d3d52818247b2951d83075128",
+      "structure": 143201,
+      "before": [
+        [
+          159,
+          209
+        ],
+        [
+          158,
+          228
+        ],
+        [
+          164,
+          242
+        ],
+        [
+          172,
+          240
+        ],
+        [
+          180,
+          221
+        ],
+        [
+          186,
+          204
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": [
+        [
+          153,
+          207
+        ],
+        [
+          147,
+          216
+        ],
+        [
+          143,
+          224
+        ],
+        [
+          147,
+          230
+        ]
+      ],
+      "afterWidth": 3,
+      "decision": "redrawn",
+      "reason": "Shortened to the visually reviewed cleft/fluid portion; no extension onto adjacent cortex, retinaculum or muscle."
+    },
+    {
+      "module": "shoulder-mri",
+      "series": "658-contraste_dp",
+      "frame": 21,
+      "annotation": "17876",
+      "imageSha256": "58b037cf392a264bed75910dce73dbf6d38fc3de6ba751cdd7b3fef973c9337e",
+      "structure": 143201,
+      "before": [
+        [
+          158,
+          210
+        ],
+        [
+          157,
+          229
+        ],
+        [
+          164,
+          242
+        ],
+        [
+          172,
+          240
+        ],
+        [
+          181,
+          223
+        ],
+        [
+          187,
+          207
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "shoulder-mri",
+      "series": "658-contraste_dp",
+      "frame": 22,
+      "annotation": "17877",
+      "imageSha256": "a6903f404bb02e6464504c5abc2d0368c4b781cad37270f32b420e5ac51a0878",
+      "structure": 143201,
+      "before": [
+        [
+          156,
+          210
+        ],
+        [
+          155,
+          230
+        ],
+        [
+          162,
+          243
+        ],
+        [
+          171,
+          241
+        ],
+        [
+          180,
+          224
+        ],
+        [
+          186,
+          208
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    },
+    {
+      "module": "shoulder-mri",
+      "series": "658-contraste_dp",
+      "frame": 23,
+      "annotation": "17878",
+      "imageSha256": "5bd5028ef2753cf97a05ec2acc5dafa9230565898d82232a98686594ff158c57",
+      "structure": 143201,
+      "before": [
+        [
+          153,
+          209
+        ],
+        [
+          153,
+          228
+        ],
+        [
+          160,
+          240
+        ],
+        [
+          169,
+          239
+        ],
+        [
+          178,
+          223
+        ],
+        [
+          183,
+          208
+        ]
+      ],
+      "beforeWidth": 4,
+      "after": null,
+      "afterWidth": null,
+      "decision": "removed",
+      "reason": "The old path crosses bone/other tissue or the collapsed bursa/recess cannot be separated confidently on this slice; no replacement contour inferred."
+    }
+  ]
+}

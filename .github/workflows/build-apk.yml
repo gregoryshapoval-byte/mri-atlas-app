@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [ main ]
   push:
-    branches: [ main, 'work/wrist-tfcc-1-30', 'work/female-pelvis-on-1-30', 'work/viewer-all-modules-1-41', 'work/design-and-mri-1-42', 'work/shoulder-pd-1-43', 'work/joint-recesses-1-44' ]
+    branches: [ main, 'work/wrist-tfcc-1-30', 'work/female-pelvis-on-1-30', 'work/viewer-all-modules-1-41', 'work/design-and-mri-1-42', 'work/shoulder-pd-1-43', 'work/joint-recesses-1-44', 'work/anatomy-audit-1-45' ]
     paths-ignore:
       - '**/*.md'
 
@@ -40,6 +40,7 @@ jobs:
       - name: Check annotation data and viewer math
         run: |
           node tests/joint-anatomy144.mjs
+          node tests/joint-anatomy145.mjs
           node tests/catalog142.mjs
           node tests/all-mri-data.mjs
           node tests/wrist-mri.mjs
@@ -66,7 +67,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: menu-thumbnails-1.44
+          name: menu-thumbnails-1.45
           path: app/src/main/assets/menu-thumbs/
           if-no-files-found: ignore
 
@@ -78,16 +79,16 @@ jobs:
           CHROME_PATH: /usr/bin/google-chrome
         run: |
           node tests/browser-viewer.mjs
-          node tests/browser-joints144.mjs
+          node tests/browser-joints145.mjs
 
       - name: Upload viewer screenshots
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: viewer-review-1.44
+          name: viewer-review-1.45
           path: |
             review/browser-1.42/
-            review/joints-1.44/
+            review/joints-1.45/
           if-no-files-found: ignore
 
       - name: Build APK
@@ -99,8 +100,8 @@ jobs:
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
-          name: MRIAtlas-1.44-unsigned
-          path: build/MRIAtlas-1.44-unsigned.apk
+          name: MRIAtlas-1.45-unsigned
+          path: build/MRIAtlas-1.45-unsigned.apk
           if-no-files-found: error
           retention-days: 30
 
