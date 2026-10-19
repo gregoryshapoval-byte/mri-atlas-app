@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [ main ]
   push:
-    branches: [ main, 'work/wrist-tfcc-1-30', 'work/female-pelvis-on-1-30', 'work/viewer-all-modules-1-41', 'work/design-and-mri-1-42', 'work/shoulder-pd-1-43', 'work/joint-recesses-1-44', 'work/anatomy-audit-1-45', 'work/ligaments-pd-1-46' ]
+    branches: [ main, 'work/wrist-tfcc-1-30', 'work/female-pelvis-on-1-30', 'work/viewer-all-modules-1-41', 'work/design-and-mri-1-42', 'work/shoulder-pd-1-43', 'work/joint-recesses-1-44', 'work/anatomy-audit-1-45', 'work/ligaments-pd-1-46', 'work/hip-insertions-1-47' ]
     paths-ignore:
       - '**/*.md'
 
@@ -42,6 +42,7 @@ jobs:
           node tests/joint-anatomy144.mjs
           node tests/joint-anatomy145.mjs
           node tests/ligaments146.mjs
+          node tests/hip147.mjs
           node tests/catalog142.mjs
           node tests/all-mri-data.mjs
           node tests/wrist-mri.mjs
@@ -68,7 +69,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: menu-thumbnails-1.46
+          name: menu-thumbnails-1.47
           path: app/src/main/assets/menu-thumbs/
           if-no-files-found: ignore
 
@@ -82,16 +83,18 @@ jobs:
           node tests/browser-viewer.mjs
           node tests/browser-joints145.mjs
           node tests/browser-ligaments146.mjs
+          node tests/browser-hip147.mjs
 
       - name: Upload viewer screenshots
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: viewer-review-1.46
+          name: viewer-review-1.47
           path: |
             review/browser-1.42/
             review/joints-1.45/
             review/ligaments-1.46/
+            review/hip-1.47/
           if-no-files-found: ignore
 
       - name: Build APK
@@ -103,8 +106,8 @@ jobs:
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
-          name: MRIAtlas-1.46-unsigned
-          path: build/MRIAtlas-1.46-unsigned.apk
+          name: MRIAtlas-1.47-unsigned
+          path: build/MRIAtlas-1.47-unsigned.apk
           if-no-files-found: error
           retention-days: 30
 
