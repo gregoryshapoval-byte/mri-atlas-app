@@ -2,10 +2,11 @@ import {projectPoint} from './brain-screen-labels.js';
 import {categories} from './anatomy-colors.js';
 const NS='http://www.w3.org/2000/svg';
 export function annotationSlice(data,series,frame){
+ const review=p=>{const shortName=data.pointReview?.shortNames?.[p.structure],coveredBy=data.pointReview?.coincident?.[series.id]?.[frame.annotation]?.[p.structure];return shortName||coveredBy?{...p,...(shortName?{shortName}:{}),...(coveredBy?{coveredBy}:{})}:p};
  const base=data.slices[frame.annotation]||{points:[],masks:[]},extra=data.seriesSlices?.[series.id]?.[frame.annotation];
  const points=base.points.map(p=>{const presentation=data.pointPresentation?.[p.structure];let q=(data.displayNames?.[p.structure]||data.shortNames?.[p.structure])?{...p,name:data.displayNames?.[p.structure]||p.name,shortName:data.shortNames?.[p.structure]||p.shortName}:p;if(presentation)q={...q,filter:presentation.filter??q.filter,category:presentation.category??q.category};return q});
- if(!extra)return {...base,points};
- return {...base,masks:(base.masks||[]).filter(m=>!extra.suppressMasks?.includes(m.filter)),points:[...points.filter(p=>!extra.suppress?.includes(p.structure)),...(extra.points||[])],regions:extra.regions||[]};
+ if(!extra)return {...base,points:points.map(review)};
+ return {...base,masks:(base.masks||[]).filter(m=>!extra.suppressMasks?.includes(m.filter)),points:[...points.filter(p=>!extra.suppress?.includes(p.structure)),...(extra.points||[])].map(review),regions:extra.regions||[]};
 }
 // Ribbons have explicit per-frame paths, stored in source pixel coordinates.
 // Project every vertex with exactly the same transform as the original points.

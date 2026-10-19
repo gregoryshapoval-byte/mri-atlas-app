@@ -3,7 +3,7 @@ import {shoulderGuide} from './shoulder-anatomy.js';
 import {paintPoint,categories} from './anatomy-colors.js';
 import {setupBlocks,syncBlocks,catalogMenu,catalogSearch} from './wrist-catalog.js';
 import {decodedImage,LatestFrame} from './brain-frame-cache.js';
-import {visiblePoints,screenLayout} from './brain-screen-labels.js';
+import {visiblePoints,screenLayout,distinctReviewPoints} from './brain-screen-labels.js';
 import {anatomyGroupIcon} from './anatomy-icons.js';
 const NS='http://www.w3.org/2000/svg';
 const normalizeSearch=s=>s.toLocaleLowerCase('ru').replace(/[асмр]/g,c=>({'а':'a','с':'c','м':'m','р':'p'}[c]));
@@ -76,7 +76,7 @@ export class AnnotationLayer{
  drawOverlay(){
   if(!this.overlay)return;const v=this.v,f=this.displayedFrame;if(!f)return;const a=this.slice(f,this.displayedSeries||v.series);this.overlay.dataset.frame=f.src;const w=v.stage.clientWidth||360,h=v.stage.clientHeight||500;
   this.overlay.replaceChildren();this.overlay.setAttribute('viewBox',`0 0 ${w} ${h}`);this.overlay.hidden=!this.on;this.overlay.style.display=this.on?'block':'none';this.labelPager.hidden=true;if(!this.on){this.popup.hidden=true;this.info.textContent='';return;}
-  const pts=(a?.points||[]).filter(p=>this.active().has(p.filter)&&!this.hiddenStructures.has(p.structure)).map(p=>paintPoint(p,this.filters())),visible=visiblePoints(pts,f,v,w,h);
+  const pts=(a?.points||[]).filter(p=>this.active().has(p.filter)&&!this.hiddenStructures.has(p.structure)).map(p=>paintPoint(p,this.filters())),visible=distinctReviewPoints(visiblePoints(pts,f,v,w,h),this.selected);
   visible.push(...drawRegions(this.overlay,(a?.regions||[]).filter(r=>(r.lineMarker?this.markers:this.names&&this.masks)&&this.active().has(r.filter)&&!this.hiddenStructures.has(r.structure)),f,v,w,h,this.selected));
   if(this.lastFrame!==f.annotation){this.lastFrame=f.annotation;this.labelPage=0}
   this.textMeasure??=document.createElement('canvas').getContext('2d');this.textMeasure.font='12px sans-serif';

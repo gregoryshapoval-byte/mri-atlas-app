@@ -4,6 +4,7 @@ export function projectPoint(p,frame,view,width,height){
  return {...p,sx:width/2+(x*Math.cos(a)-y*Math.sin(a))*view.zoom+view.x,sy:height/2+(x*Math.sin(a)+y*Math.cos(a))*view.zoom+view.y};
 }
 export function visiblePoints(points,frame,view,w,h){return points.filter(p=>p.x>=0&&p.y>=0&&p.x<=frame.width&&p.y<=frame.height).map(p=>projectPoint(p,frame,view,w,h)).filter(p=>p.sx>=8&&p.sx<=w-8&&p.sy>=8&&p.sy<=h-8)}
+export function distinctReviewPoints(points,selected){const ids=new Set(points.map(p=>p.structure));return points.filter(p=>p.structure===selected||!p.coveredBy?.some(id=>ids.has(id)))}
 export function wrapMeasured(text,width,measure){
  const lines=[];let line='';
  for(const word of text.split(/\s+/)){if(line&&measure(line+' '+word)>width){lines.push(line);line=''}for(const ch of word){if(measure(line+ch)>width&&line){lines.push(line);line=''}line+=ch}line+=' '}
