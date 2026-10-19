@@ -1,0 +1,20 @@
+{
+  "version": "1.70",
+  "baseCommit": "4824446fe77542b7fd650979f0bb94ab36e93a02",
+  "states": 11,
+  "newCase": "reverse Bankart, right posteroinferior 6–9",
+  "hours": "typical approximate sectors, not fixed limits of tear extension",
+  "checks": {
+    "dataMath": 33,
+    "clockGuideViewports": 3,
+    "clockNumbers": 12,
+    "physicalPhone": false,
+    "independentMedicalValidation": false,
+    "fullLabrumViewports": 5,
+    "fullLabrumCases": 11,
+    "deliveryRoundtripVerified": true
+  },
+  "apkSha256": "447cdb0e17b89671b662ae95541daf8312253d6af00cf2eb10b028d40f3bc6e1",
+  "apkBytes": 137576771,
+  "packagedAssetsVerified": 9058
+}
