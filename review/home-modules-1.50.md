@@ -1,6 +1,6 @@
 # MRI Atlas 1.50 — compact home and three source MRI modules
 
-Base: released 1.49 plus its handoff commit `7601bfafe6f03f655f365469d12783d972f634ad`. Runtime source commit: `78e06b9` (later documentation/ignore-only changes do not affect the APK).
+Base: released 1.49 plus its handoff commit `7601bfafe6f03f655f365469d12783d972f634ad`. Published runtime source commit: `d541ffbc16dd1221953c111bb51f921e1f926dc0`; asset bytes match the signed APK built from local `78e06b9`. PR #17 targets 1.49. Test-only commit b6bf10e disables cross-document transitions in the automated menus.css response to avoid aborted-navigation Chrome exceptions without masking application errors. Production assets and signed APK are unchanged.
 
 The home screen presents 13 compact cards with the anatomy menu's schematic icon style. The large hero and full-card illustrations are replaced by a header, search, labels and icon cards. Two columns in portrait, four in short landscape; fixed available viewport rows avoid scrolling at 393×852, 360×640, 320×568 and 852×393. Search preserves compact row sizes. Region → section → viewer routes and the search/return state remain intact. Existing decorative assets remain available to internal regions.
 
