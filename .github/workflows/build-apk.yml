@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [ main ]
   push:
-    branches: [ main, 'work/wrist-tfcc-1-30', 'work/female-pelvis-on-1-30', 'work/viewer-all-modules-1-41', 'work/design-and-mri-1-42', 'work/shoulder-pd-1-43', 'work/joint-recesses-1-44', 'work/anatomy-audit-1-45', 'work/ligaments-pd-1-46', 'work/hip-insertions-1-47', 'work/anatomy-icons-1-48', 'work/hip-knee-tendons-1-49', 'work/home-limbs-plexus-1-50', 'work/foot-joints-1-51', 'work/hand-brain-knee-1-52', 'work/hand-anatomy-1-53', 'work/joint-lines-1-54', 'work/wrist-capitate-ligaments-1-55', 'work/wrist-ligament-topography-1-56', 'work/wrist-review-1-57', 'work/perianal-module-1-58', 'work/viewer-fit-1-59', 'work/perianal-classification-1-60', 'work/perianal-training-1-61', 'work/female-pelvis-ligaments-1-62', 'work/home-icons-1-63' ]
+    branches: [ main, 'work/wrist-tfcc-1-30', 'work/female-pelvis-on-1-30', 'work/viewer-all-modules-1-41', 'work/design-and-mri-1-42', 'work/shoulder-pd-1-43', 'work/joint-recesses-1-44', 'work/anatomy-audit-1-45', 'work/ligaments-pd-1-46', 'work/hip-insertions-1-47', 'work/anatomy-icons-1-48', 'work/hip-knee-tendons-1-49', 'work/home-limbs-plexus-1-50', 'work/foot-joints-1-51', 'work/hand-brain-knee-1-52', 'work/hand-anatomy-1-53', 'work/joint-lines-1-54', 'work/wrist-capitate-ligaments-1-55', 'work/wrist-ligament-topography-1-56', 'work/wrist-review-1-57', 'work/perianal-module-1-58', 'work/viewer-fit-1-59', 'work/perianal-classification-1-60', 'work/perianal-training-1-61', 'work/female-pelvis-ligaments-1-62', 'work/home-icons-1-63', 'work/continuous-scroll-1-64' ]
     paths-ignore:
       - '**/*.md'
 
@@ -68,6 +68,8 @@ jobs:
           node tests/female-pelvis-source.mjs
           node tests/brain-screen-labels.mjs
           node tests/brain-frame-cache.mjs
+          node tests/brain-gestures.mjs
+          node tests/continuous-scroll164.mjs
 
       - name: Install viewer test dependencies
         run: npm install --prefix /tmp/atlas-dom happy-dom playwright --no-audit --no-fund
@@ -88,7 +90,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: menu-thumbnails-1.63
+          name: menu-thumbnails-1.64
           path: app/src/main/assets/menu-thumbs/
           if-no-files-found: ignore
 
@@ -117,12 +119,13 @@ jobs:
           node tests/browser-perianal-training161.mjs
           node tests/browser-female-pelvis162.mjs
           node tests/browser-viewer-fit159.mjs
+          node tests/browser-continuous-scroll164.mjs
 
       - name: Upload viewer screenshots
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: viewer-review-1.63
+          name: viewer-review-1.64
           path: |
             review/browser-1.42/
             review/browser-1.50/
@@ -138,6 +141,7 @@ jobs:
             review/browser-1.61/
             review/browser-1.62/
             review/browser-1.63/
+            review/browser-1.64/
             review/joints-1.45/
             review/ligaments-1.46/
             review/hip-1.47/
@@ -154,8 +158,8 @@ jobs:
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
-          name: MRIAtlas-1.63-unsigned
-          path: build/MRIAtlas-1.63-unsigned.apk
+          name: MRIAtlas-1.64-unsigned
+          path: build/MRIAtlas-1.64-unsigned.apk
           if-no-files-found: error
           retention-days: 30
 

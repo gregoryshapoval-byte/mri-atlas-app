@@ -1,3 +1,4 @@
+import {zoneSeries,resolveSeriesFrame,flowPosition} from './viewer-series-flow.js';
 import {setupViewerPage,fitZoom,iconMarkup,applySeriesFit,fitViewer,watchViewerSize} from './viewer-ui.js';
 import {SliceGestures} from './brain-gestures.js';
 import {AnnotationLayer} from './brain-labels.js';
@@ -35,8 +36,16 @@ class Viewer{
  scale(z){this.zoom=clamp(z,1,5);this.transform()}
  applyDefaultView(){const frontal=moduleName==='wrist-mri'&&this.series.sourceSeries===668;this.rotation=0;this.flipX=1;this.flipY=frontal?-1:1;this.x=this.y=0;if(this.stage)fitViewer(this);else this.zoom=frontal?2.14:1}
  reset(){if(this.gestures)this.gestures.lastTap=0;this.applyDefaultView();this.el.querySelector('.bright').value=this.el.querySelector('.ct').value=100;this.img.style.filter='none';this.transform()}
- move(i,sync=true){this.index=clamp(i,0,this.series.frames.length-1);this.render();if(sync&&$('#link').checked)for(const p of panels)if(p!==this&&p.series.sourceSeries===this.series.sourceSeries)p.move(this.index,false);save()}
- render(){const n=this.series.frames.length;if(!this.ann)this.img.src=this.series.frames[this.index].src;this.img.alt=`${this.series.title}, кадр ${this.index+1} из ${n}`;this.range.max=n-1;this.range.value=this.index;this.el.querySelector('.status').textContent=this.series.plane;this.el.querySelector('.pageCount').textContent=`${group==='vascular'?'Ракурс':'Кадр'} ${this.index+1} / ${n}`;this.el.querySelector('.prev').disabled=this.index===0;this.el.querySelector('.next').disabled=this.index===n-1;this.ann?.render();this.transform();if(moduleName==='perianal-mri')window.dispatchEvent(new CustomEvent('perianal-view-change'));}
+ applyFrame(target){
+  if(target.series!==this.series){const ratio=this.zoom/fitZoom(this);this.series=target.series;this.index=target.index;this.select.value=this.series.id;fitViewer(this);const fitted=this.zoom;this.zoom=clamp(fitted*ratio,1,5);const r=this.zoom/fitted;this.x*=r;this.y*=r;if(this.ann){this.ann.selected=null;this.ann.labelPage=0}}
+  else this.index=target.index;
+ }
+ neighborFrame(delta){const t=resolveSeriesFrame(data,moduleName,this.series,this.index+delta);return t.series.frames[t.index]}
+ move(i,sync=true){
+  this.applyFrame(resolveSeriesFrame(data,moduleName,this.series,i));this.render();
+  if(sync&&$('#link').checked)for(const p of panels)if(p!==this){if(zoneSeries(data,moduleName,this.series).includes(p.series)){p.applyFrame({series:this.series,index:this.index});p.render()}else if(p.series.sourceSeries===this.series.sourceSeries)p.move(this.index,false)}save()
+ }
+ render(){const n=this.series.frames.length;if(!this.ann)this.img.src=this.series.frames[this.index].src;this.img.alt=`${this.series.title}, кадр ${this.index+1} из ${n}`;this.range.max=n-1;this.range.value=this.index;this.el.querySelector('.status').textContent=this.series.plane;this.el.querySelector('.pageCount').textContent=`${group==='vascular'?'Ракурс':'Кадр'} ${this.index+1} / ${n}`;const position=flowPosition(data,moduleName,this.series,this.index);this.el.querySelector('.prev').disabled=position?position.index===0:this.index===0;this.el.querySelector('.next').disabled=position?position.index===position.total-1:this.index===n-1;this.el.querySelector('.pageCount').title=position?'Сквозной кадр '+(position.index+1)+' из '+position.total:'';this.el.dataset.flowIndex=position?position.index:'';this.ann?.render();this.transform();if(moduleName==='perianal-mri')window.dispatchEvent(new CustomEvent('perianal-view-change'));}
 }
 function build(restore){
  const ss=data.series.filter(s=>s.group===group),count=$('#compare').checked?2:1;for(const p of panels){p.sizeObserver?.disconnect();p.setFullscreen(false)}panels=[];$('#viewers').replaceChildren();$('#viewers').classList.toggle('compare',count===2);
