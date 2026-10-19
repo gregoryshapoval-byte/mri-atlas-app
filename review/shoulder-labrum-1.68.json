@@ -1,0 +1,41 @@
+{
+  "version": "1.68",
+  "baseCommit": "a82788ef82fd2d120f65f78dff35cec6f0a14e30",
+  "cases": [
+    "normal",
+    "bankart",
+    "bony",
+    "perthes",
+    "alpsa",
+    "glad",
+    "slap1",
+    "slap2",
+    "slap3",
+    "slap4"
+  ],
+  "clock": {
+    "side": "right",
+    "12": "superior",
+    "3": "anterior",
+    "6": "inferior",
+    "9": "posterior",
+    "numbers": 12
+  },
+  "source": "hand-authored generalized anatomy, not patient segmentation",
+  "apkSha256": "8175ab00fbd120a5cd6f8bfdd249d24187d5e1c1816dbea1eb77f5cd69cebfdf",
+  "apkBytes": 137572535,
+  "packagedAssetsVerified": 9056,
+  "checks": {
+    "dataMath": 31,
+    "sourceViewers": 18,
+    "menuRoutes": 37,
+    "menuViewports": 4,
+    "modelViewports": 5,
+    "modelCases": 10,
+    "clockUnobscured": true,
+    "pinchPan": true,
+    "offline": true,
+    "physicalPhone": false,
+    "independentMedicalValidation": false
+  }
+}

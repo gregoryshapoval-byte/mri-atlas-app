@@ -100,6 +100,13 @@ export const regions=[
         "thumb": "menu-thumbs/brachial-plexus-mri.webp"
       },
       {
+        "title": "Суставная губа · повреждения",
+        "description": "Bankart, Perthes, ALPSA, GLAD и SLAP I–IV · часы 1–12",
+        "url": "shoulder-labrum.html",
+        "type": "3D-МОДЕЛЬ",
+        "thumb": "menu-thumbs/shoulder-labrum.webp"
+      },
+      {
         "title": "Сумки плеча",
         "description": "Сумки, завороты и влагалище бицепса",
         "url": "shoulder.html",

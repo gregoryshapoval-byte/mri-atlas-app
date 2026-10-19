@@ -1,0 +1,74 @@
+import * as T from 'three';import {OrbitControls} from './vendor/OrbitControls.js';
+import {cases,sources,rim,inArc,labralPoint,labrumParts,labrumMesh,surfaceMesh,surfacePoint,arcWeight} from './labrum-data.js';
+const $=s=>document.querySelector(s),host=$('#canvas');let selected='bankart',compare=false;
+const scene=new T.Scene(),camera=new T.PerspectiveCamera(34,1,.05,120);let renderer;
+try{renderer=new T.WebGLRenderer({antialias:true,alpha:true});}catch(e){$('#failure').hidden=false;throw e;}
+renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.setClearColor(0x000000,0);renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=1.1;host.append(renderer.domElement);
+const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.minDistance=3;controls.maxDistance=45;controls.target.set(.2,.2,0);
+scene.add(new T.HemisphereLight(0xd6edff,0x343b41,2.4));for(const[p,intensity]of [[[10,8,-6],3],[[-6,4,8],2]]){const l=new T.DirectionalLight(0xffffff,intensity);l.position.set(...p);scene.add(l)}
+const model=new T.Group(),clockGroup=new T.Group(),headGroup=new T.Group();scene.add(model,clockGroup,headGroup);
+const mat=(color,opacity=1)=>new T.MeshStandardMaterial({color,roughness:.5,metalness:.025,side:T.DoubleSide,transparent:opacity<1,opacity,depthWrite:opacity>=1});
+const colors={labrum:'#5abfb9',tear:'#ef8876',bone:'#c5bda4',cartilage:'#6bb6d3',biceps:'#d9b777',periosteum:'#bccbda',cleft:'#a9e5f1'};
+function mesh(data,color,group=model,opacity=1){const g=new T.BufferGeometry();g.setAttribute('position',new T.Float32BufferAttribute(data.positions,3));g.setIndex(data.indices);g.computeVertexNormals();const m=new T.Mesh(g,mat(color,opacity));group.add(m);return m;}
+function tube(points,radius,color,group=model){const curve=new T.CatmullRomCurve3(points.map(p=>new T.Vector3(...p)),false,'centripetal'),g=new T.TubeGeometry(curve,64,radius,12,false),m=new T.Mesh(g,mat(color));m.userData.biceps=true;group.add(m);return m;}
+function patch(a,b,r0,r1,point,steps=72,widthSteps=8){const positions=[],indices=[];for(let i=0;i<=steps;i++){const h=a+(b-a)*i/steps;for(let j=0;j<=widthSteps;j++)positions.push(...point(h,r0+(r1-r0)*j/widthSteps));}for(let i=0;i<steps;i++)for(let j=0;j<widthSteps;j++){const a=i*(widthSteps+1)+j,b=a+1,c=a+widthSteps+1,d=c+1;indices.push(a,c,b,b,c,d)}return{positions,indices};}
+function dispose(group){for(const c of [...group.children]){c.traverse(m=>{m.geometry?.dispose();if(Array.isArray(m.material))m.material.forEach(x=>x.dispose());else m.material?.dispose()});group.remove(c)}}
+const head=new T.Mesh(new T.SphereGeometry(2.55,48,32),mat('#d0c6ad',.12));head.position.set(3.75,-.05,0);headGroup.add(head);headGroup.visible=false;
+const clockLine=[];for(let i=0;i<180;i++)clockLine.push(new T.Vector3(...rim(i/180*12,1.32,.6)));clockGroup.add(new T.LineLoop(new T.BufferGeometry().setFromPoints(clockLine),new T.LineBasicMaterial({color:'#718f9d',transparent:true,opacity:.5})));
+const clockLabels=[];for(let h=1;h<=12;h++){const line=new T.Line(new T.BufferGeometry().setFromPoints([new T.Vector3(...rim(h,1.28,.6)),new T.Vector3(...rim(h,1.36,.6))]),new T.LineBasicMaterial({color:h%3?'#8babb9':'#d6e3e8',transparent:true,opacity:.8}));clockGroup.add(line);const el=document.createElement('span');el.className='clockLabel'+(h%3?'':' cardinal');el.textContent=h;el.dataset.hour=h;$('#clockLabels').append(el);clockLabels.push({h,el,point:new T.Vector3(...rim(h,1.46,.6))})}
+const leaderSVG=document.createElementNS('http://www.w3.org/2000/svg','svg');leaderSVG.classList.add('labelLeaders');$('#anatomyLabels').append(leaderSVG);
+const anatomyLabels=[];function label(name,point){const el=document.createElement('span');el.className='anatomyLabel';el.textContent=name;$('#anatomyLabels').append(el);anatomyLabels.push({el,width:el.offsetWidth,point:new T.Vector3(...point)})}
+let current=cases.find(c=>c.id===selected);
+function rebuild(){current=cases.find(c=>c.id===(compare?'normal':selected));dispose(model);$('#anatomyLabels').replaceChildren(leaderSVG);anatomyLabels.length=0;
+ mesh(surfaceMesh(current),colors.bone);mesh(surfaceMesh(current,true),colors.cartilage);
+ // Bony neck supports the articular face without covering it in lateral view.
+ mesh(patch(0,12,0,1,(h,t)=>rim(h,.78+.22*t-(current.kind==='bone'?.18*arcWeight(h,current.hours)*t:0),-1.15+1.35*t)),colors.bone);
+ const back=new T.Mesh(new T.SphereGeometry(1,48,24),mat(colors.bone));back.position.set(-1.12,0,0);back.scale.set(.22,2.05,1.45);model.add(back);
+ if(current.kind==='bone'){
+  const point=(h,r)=>{const p=surfacePoint(h,r);return labralPoint(h,[p[0],r],current)};
+  mesh(patch(3,6,.82,1,point),colors.bone);mesh(patch(3,6,.82,1,(h,r)=>{const p=point(h,r);p[0]+=.065;return p}),colors.cartilage);
+  mesh(patch(3,6,0,1,(h,t)=>{const p=point(h,.82);p[0]-=.25*t;return p}),colors.bone);label('Костно-лабральный фрагмент',point(4.5,.95));
+ }
+ if(current.kind==='cartilage')mesh(patch(3,5,.64,.93,(h,r)=>{const p=surfacePoint(h,r,false);p[0]+=.012;return p}), '#bb917c');
+ for(const part of labrumParts(current)){const m=mesh(labrumMesh(part,current),part.affected?colors.tear:colors.labrum);m.userData.part=part;}
+ // Fluid in detachment clefts is an illustrative aid, not simulated MR signal.
+ if(['avulsion','small-gap','superior-detachment'].includes(current.kind))mesh(patch(...current.hours,.92,1.08,(h,r)=>{const p=surfacePoint(h,r,true);p[0]+=.018;return p}),colors.cleft,model,.7);
+ const sleeve=new T.Group();sleeve.name='periosteum';model.add(sleeve);
+ const sleeveData={positions:[],indices:[]};for(let i=0;i<144;i++){const a=i/12,b=(i+1)/12,broken=current.periosteum==='ruptured'&&inArc((a+b)/2,current.hours);for(const [t0,t1]of broken?[[0,.30],[.74,1]]:[[0,1]]){const data=patch(a,b,t0,t1,(h,t)=>{const root=rim(h,1.19,-1.06),end=labralPoint(h,[.25,1.12],current);return root.map((v,i)=>v+(end[i]-v)*t)},2,2),offset=sleeveData.positions.length/3;sleeveData.positions.push(...data.positions);sleeveData.indices.push(...data.indices.map(i=>i+offset));}}mesh(sleeveData,colors.periosteum,sleeve,.4);
+ sleeve.visible=$('#periosteum').checked;
+ const anchorShift=current.anchor==='detached'?.58:0,anchor=[.67+anchorShift,2.67,0];
+ const bicepsPoints=[anchor,[1.4+anchorShift*.5,3.10,0],[2.6,3.22,-.08],[3.7,2.7,-.45],[4.5,1.4,-.9]];tube(bicepsPoints,current.anchor==='split'?.085:.13,colors.biceps);
+ if(current.anchor==='split'){const fragment=labralPoint(12,[.68,.98],current,true);tube([fragment,[1.8,2.95,.1],[2.6,3.12,.03],[3.7,2.7,-.45]],.065,colors.tear);}
+ label('Длинная головка бицепса',bicepsPoints[2]);
+ if(current.hours){const h=(current.hours[0]+current.hours[1])/2;label(current.kind.startsWith('bucket')?'Смещённый фрагмент':'Зона повреждения',labralPoint(h,[.85,1.025],current,current.kind.startsWith('bucket')))}
+ const shown=cases.find(c=>c.id===selected);$('#title').textContent=compare?'Норма · сравнение':shown.name;$('#description').textContent=current.note;$('#sector').textContent=current.hours?'ПРИМЕР · '+formatHours(current.hours)+' ЧАСОВ':'ПРАВОЕ ПЛЕЧО · НОРМА';$('#periosteumStatus').textContent='Надкостница: '+(current.periosteum==='ruptured'?'разрыв':'сохранена');$('#anchorStatus').textContent='Якорь бицепса: '+({intact:'сохранён',detached:'отрыв',split:'разрыв в сухожилие'}[current.anchor]);$('#mr').textContent=current.mr;$('#report').textContent=current.report;$('#compare').setAttribute('aria-pressed',String(compare));$('#compare').textContent=compare?'К повреждению':'С нормой';$('#compare').disabled=selected==='normal';drawSection();updateLabels();}
+function formatHours(range){return range.map(h=>(h%12)||12).join('–')}
+const svgEl=(name,attrs={})=>{const e=document.createElementNS('http://www.w3.org/2000/svg',name);for(const[k,v]of Object.entries(attrs))e.setAttribute(k,v);return e};
+function drawSection(){
+ const h=current.hours?(current.hours[0]+current.hours[1])/2:4;$('#sectionTitle').textContent='На '+((h%12)||12)+' ч · пересечение поверхности 3D-модели, не МР-изображение';
+ const svg=$('#section');svg.replaceChildren();const radial=new T.Vector3(...rim(h,1,0)).normalize(),normal=new T.Vector3(0,-radial.z,radial.y),segments=[];
+ model.updateMatrixWorld(true);
+ model.traverse(m=>{if(!m.isMesh||m.userData.biceps||!m.visible||!m.parent.visible)return;const attr=m.geometry.attributes.position,idx=m.geometry.index;for(let i=0;i<idx.count;i+=3){const points=[0,1,2].map(n=>new T.Vector3().fromBufferAttribute(attr,idx.getX(i+n)).applyMatrix4(m.matrixWorld)),ds=points.map(p=>p.dot(normal)),hits=[];if(ds.every(d=>Math.abs(d)<1e-7))continue;
+  for(let j=0;j<3;j++){const k=(j+1)%3;if(Math.abs(ds[j])<1e-7)hits.push(points[j]);else if(ds[j]*ds[k]<0)hits.push(points[j].clone().lerp(points[k],ds[j]/(ds[j]-ds[k])));}
+  if(hits.length<2)continue;const mid=hits[0].clone().add(hits[1]).multiplyScalar(.5),r=mid.dot(radial);if(r<.5||r>3.6||mid.x>2.2)continue;
+  segments.push({points:hits.slice(0,2).map(p=>[115+p.x*70,180-p.dot(radial)*48]),color:m.material.color.getStyle()});
+ }});
+ for(const seg of segments)svg.append(svgEl('line',{x1:seg.points[0][0],y1:seg.points[0][1],x2:seg.points[1][0],y2:seg.points[1][1],stroke:seg.color,'stroke-width':1.3,'stroke-linecap':'round'}));
+ for(const[x,y,text]of [[12,16,'Медиально · шейка'],[204,16,'Латерально · сустав']]){const t=svgEl('text',{x,y,fill:'#bcd1db','font-size':9});t.textContent=text;svg.append(t);}
+}
+
+for(const c of cases){const o=document.createElement('option');o.value=c.id;o.textContent=c.name;$('#lesion').append(o)}$('#lesion').value=selected;$('#lesion').onchange=e=>{selected=e.target.value;compare=false;rebuild()};$('#compare').onclick=()=>{compare=!compare;rebuild()};
+$('#clock').onchange=e=>{clockGroup.visible=e.target.checked;updateLabels()};$('#names').onchange=updateLabels;$('#head').onchange=e=>headGroup.visible=e.target.checked;$('#periosteum').onchange=e=>{model.getObjectByName('periosteum').visible=e.target.checked};for(const s of sources){const a=document.createElement('a');a.href=s.url;a.textContent=s.name;$('#sources').append(a)}
+const views={lateral:[1,0,0],oblique:[1,.24,.38],anterior:[.24,.12,-1],superior:[.2,1,.1]};
+function frame(view='oblique'){const direction=new T.Vector3(...views[view]).normalize(),center=new T.Vector3(.55,.15,0),halfH=4.0,halfW=3.5;const tangent=Math.tan(T.MathUtils.degToRad(camera.fov/2)),distance=Math.max(halfH/(tangent*Math.max(.35,(host.clientHeight-145)/host.clientHeight)),halfW/(tangent*camera.aspect*.86));camera.position.copy(center).addScaledVector(direction,distance);camera.up.set(0,1,0);controls.target.copy(center);controls.update();for(const b of document.querySelectorAll('[data-view]'))b.setAttribute('aria-pressed',String(b.dataset.view===view));}
+for(const b of document.querySelectorAll('[data-view]'))b.onclick=()=>frame(b.dataset.view);$('#reset').onclick=()=>frame();
+function updateLabels(){
+ const w=host.clientWidth,h=host.clientHeight,occupied=[];leaderSVG.replaceChildren();leaderSVG.setAttribute('viewBox',`0 0 ${w} ${h}`);
+ for(const l of clockLabels){const p=l.point.clone().project(camera),x=(p.x+1)*w/2,y=(1-p.y)*h/2;l.el.hidden=!$('#clock').checked||p.z<-1||p.z>1||Math.abs(p.x)>1||Math.abs(p.y)>1;l.el.style.left=x+'px';l.el.style.top=y+'px';l.el.classList.toggle('affected',inArc(l.h,current.hours));if(!l.el.hidden)occupied.push({x,y,w:28,h:26});}
+ for(const l of anatomyLabels){const p=l.point.clone().project(camera),ax=(p.x+1)*w/2,ay=(1-p.y)*h/2;let position=null;if($('#names').checked&&p.z>-1&&p.z<1)for(const[dx,dy]of[[-75,-20],[75,-20],[-65,25],[65,25],[0,32],[0,-38],[-85,-45],[85,-45]]){const x=ax+dx,y=ay+dy;if(x-l.width/2<6||x+l.width/2>w-6||y<70||y>h-75)continue;if(occupied.some(q=>Math.abs(q.x-x)<(q.w+l.width)/2+4&&Math.abs(q.y-y)<(q.h+18)/2+3))continue;position={x,y};break;}
+  l.el.hidden=!position;if(!position)continue;l.el.style.left=position.x+'px';l.el.style.top=position.y+'px';occupied.push({x:position.x,y:position.y,w:l.width,h:18});leaderSVG.append(svgEl('line',{x1:ax,y1:ay,x2:position.x,y2:position.y,stroke:'#b1c8d0','stroke-width':1,'stroke-opacity':.6}));
+ }
+}
+
+let first=true;new ResizeObserver(()=>{const w=host.clientWidth,h=host.clientHeight;if(!w||!h)return;camera.aspect=w/h;camera.updateProjectionMatrix();renderer.setSize(w,h);if(first){first=false;frame()}updateLabels()}).observe(host);
+rebuild();renderer.setAnimationLoop(()=>{if(document.hidden)return;controls.update();renderer.render(scene,camera);updateLabels()});document.body.dataset.ready='true';window.labrum3D={scene,camera,renderer,controls,model,clockGroup,get lesion(){return current},get selected(){return selected},frame};
