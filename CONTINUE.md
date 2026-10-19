@@ -24,7 +24,7 @@
 - PR #17: https://github.com/gregoryshapoval-byte/mri-atlas-app/pull/17 — база work/hip-knee-tendons-1-49 (main устарел). PR не слит.
 - Код ветки сверён с локальным деревом: tree `4530c72ba24eb2eafffccf682e47bf6b3e720032` при первом опубликованном коммите d541ffb.
 - Первый CI 39229027151 прошёл данные/ресурсы/все маршруты, но поймал исключение Chrome при отмене cross-document animation в быстрой тестовой навигации. В b6bf10e добавлен только тестовый override `@view-transition{navigation:none}` в ответ menus.css; реальные ошибки приложения не подавляются. Локальный тест повторно прошёл.
-- Повторный CI: https://github.com/gregoryshapoval-byte/mri-atlas-app/actions/runs/39229311129 — выполняется; проверки данных, офлайн-меню и управления уже прошли, идёт проверка phone layouts.
+- Повторный CI: https://github.com/gregoryshapoval-byte/mri-atlas-app/actions/runs/39229311129 — успешно завершён; все data/math, офлайн-меню, управление и browser-регрессии прошли; APK-артефакт MRIAtlas-1.50-unsigned создан.
 - Подписанный APK остаётся прежним MRIAtlas-1.50.apk с указанным выше SHA256; CI собирает unsigned.
 
 Новая функциональная задача пока не выбрана. Продолжать с опубликованной ветки, сохранять новые модули/1.49 и materialize_assets150.py.
