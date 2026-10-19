@@ -1,0 +1,253 @@
+{
+  "revision": "1.55",
+  "base": "8b3b4d7e06718ca77acb929935dcbd16e50c4d6e",
+  "sourceHashes": {
+    "wrist-mri-data.json": "aca41cf414731714a6f0e3c2b4b30f75f2b34143c35687f27b7b7eda7a594def",
+    "wrist-mri-labels.json": "4660debcf668db061a1a2a91dbe04d702a9b3c1817c46b03ad8547266d09db7b",
+    "wrist-mri-anatomy146.json": "d3445883b0a5df261475cf839b2cfb8e690d89f7a01893716f0aed63f937c428",
+    "wrist-mri-joints154.json": "6d78ac04733e64c063faab67464c296b0f4b1653d9f9b3ee0845e2619a5cb47c"
+  },
+  "records": [
+    {
+      "series": "667-contraste_dpfs",
+      "sourceSeries": 667,
+      "frame": 13,
+      "annotation": "18675",
+      "imageSha256": "2c40c0af8dba5ed61f50f5c94aede84bb0d687f04df9321cf600f2f71e87292b",
+      "suppressedGeneric": [
+        1647
+      ],
+      "id": 155000000,
+      "structure": 155101,
+      "name": "≈ CH · головчато-крючковидные связки · область",
+      "shortName": "≈ CH · межкостная область",
+      "filter": 15501,
+      "x": 393,
+      "y": 405,
+      "category": "ligaments",
+      "approximate": true,
+      "provenance": "manual-capitate-topography-1.55"
+    },
+    {
+      "series": "667-contraste_dpfs",
+      "sourceSeries": 667,
+      "frame": 14,
+      "annotation": "18676",
+      "imageSha256": "770d98e052388d56c073edb9a18ff9757c6bdb36dfea6ead778e6c6b1379e4b1",
+      "suppressedGeneric": [
+        1647
+      ],
+      "id": 155000001,
+      "structure": 155101,
+      "name": "≈ CH · головчато-крючковидные связки · область",
+      "shortName": "≈ CH · межкостная область",
+      "filter": 15501,
+      "x": 396,
+      "y": 404,
+      "category": "ligaments",
+      "approximate": true,
+      "provenance": "manual-capitate-topography-1.55"
+    },
+    {
+      "series": "668-contraste_dpfs",
+      "sourceSeries": 668,
+      "frame": 13,
+      "annotation": "18699",
+      "imageSha256": "3a59f943df932c6f89036f316ed0a296ef9520186a14224f0f2b7257d1673a3b",
+      "suppressedGeneric": [
+        1647
+      ],
+      "id": 155000002,
+      "structure": 155101,
+      "name": "≈ CH · головчато-крючковидные связки · область",
+      "shortName": "≈ CH · межкостная область",
+      "filter": 15501,
+      "x": 417,
+      "y": 373,
+      "category": "ligaments",
+      "approximate": true,
+      "provenance": "manual-capitate-topography-1.55"
+    },
+    {
+      "series": "669-contraste_dpfs",
+      "sourceSeries": 669,
+      "frame": 11,
+      "annotation": "18717",
+      "imageSha256": "cda5107304bd06f2fe640ce0bd02aff67aa15b77b9ce382e8dcf2e3e878e421f",
+      "suppressedGeneric": [
+        1647
+      ],
+      "id": 155000003,
+      "structure": 155101,
+      "name": "≈ CH · головчато-крючковидные связки · область",
+      "shortName": "≈ CH · межкостная область",
+      "filter": 15501,
+      "x": 365,
+      "y": 340,
+      "category": "ligaments",
+      "approximate": true,
+      "provenance": "manual-capitate-topography-1.55"
+    },
+    {
+      "series": "667-contraste_dpfs",
+      "sourceSeries": 667,
+      "frame": 16,
+      "annotation": "18678",
+      "imageSha256": "c6a04d91a96ea2dfd5fe61696238d41b4c2747a2d7b1dc6df63cb847d2d62f3e",
+      "suppressedGeneric": [],
+      "id": 155000004,
+      "structure": 155102,
+      "name": "≈ CT · головчато-трапециевидные связки · область",
+      "shortName": "≈ CT · область",
+      "filter": 15501,
+      "x": 287,
+      "y": 366,
+      "category": "ligaments",
+      "approximate": true,
+      "provenance": "manual-capitate-topography-1.55"
+    },
+    {
+      "series": "668-contraste_dpfs",
+      "sourceSeries": 668,
+      "frame": 10,
+      "annotation": "18696",
+      "imageSha256": "2d7e44acbde7dc1f2bdeb50ccad6b62021ee68fa47fc9ff379942313a4e2a395",
+      "suppressedGeneric": [
+        1647
+      ],
+      "id": 155000005,
+      "structure": 155102,
+      "name": "≈ CT · головчато-трапециевидные связки · область",
+      "shortName": "≈ CT · область",
+      "filter": 15501,
+      "x": 338,
+      "y": 371,
+      "category": "ligaments",
+      "approximate": true,
+      "provenance": "manual-capitate-topography-1.55"
+    },
+    {
+      "series": "667-contraste_dpfs",
+      "sourceSeries": 667,
+      "frame": 13,
+      "annotation": "18675",
+      "imageSha256": "2c40c0af8dba5ed61f50f5c94aede84bb0d687f04df9321cf600f2f71e87292b",
+      "suppressedGeneric": [
+        1644
+      ],
+      "id": 155000006,
+      "structure": 155103,
+      "name": "≈ SC · ладьевидно-головчатая связка · область",
+      "shortName": "≈ SC · ладонная область",
+      "filter": 15501,
+      "x": 312,
+      "y": 333,
+      "category": "ligaments",
+      "approximate": true,
+      "provenance": "manual-capitate-topography-1.55"
+    },
+    {
+      "series": "668-contraste_dpfs",
+      "sourceSeries": 668,
+      "frame": 9,
+      "annotation": "18695",
+      "imageSha256": "9d38ac845d2807fdc85eb90e9daa79174e27780c8e01260655fabcf5086d0b1c",
+      "suppressedGeneric": [
+        1646
+      ],
+      "id": 155000007,
+      "structure": 155103,
+      "name": "≈ SC · ладьевидно-головчатая связка · область",
+      "shortName": "≈ SC · ладонная область",
+      "filter": 15501,
+      "x": 338,
+      "y": 354,
+      "category": "ligaments",
+      "approximate": true,
+      "provenance": "manual-capitate-topography-1.55"
+    }
+  ],
+  "addedPoints": 8,
+  "newLigamentIdentities": 3,
+  "unmarkedCatalogIdentities": [
+    155104,
+    155105,
+    155106
+  ],
+  "rejectedCandidates": [
+    {
+      "structure": 155102,
+      "sourceSeries": 669,
+      "frame": 16,
+      "x": 356,
+      "y": 330,
+      "decision": "not published: cannot separate ligament from bone, capsule or joint gap"
+    },
+    {
+      "structure": 155103,
+      "sourceSeries": 669,
+      "frame": 17,
+      "x": 354,
+      "y": 308,
+      "decision": "not published: cannot separate ligament from bone, capsule or joint gap"
+    },
+    {
+      "structure": 155104,
+      "sourceSeries": 667,
+      "frame": 12,
+      "x": 451,
+      "y": 343,
+      "decision": "not published: cannot separate ligament from bone, capsule or joint gap"
+    },
+    {
+      "structure": 155104,
+      "sourceSeries": 668,
+      "frame": 9,
+      "x": 444,
+      "y": 331,
+      "decision": "not published: cannot separate ligament from bone, capsule or joint gap"
+    }
+  ],
+  "limits": [
+    "≈ — приблизительный учебный ориентир ожидаемого участка связки по костным границам и капсулярной топографии. Отдельные волокна и их целость здесь не доказаны. Это не сегментация и не независимая врачебная верификация. Соседние кадры автоматически не размечаются.",
+    "TC не получила отдельной точки: уверенно отделить её от ладонной капсулы, UC, TH и суставной щели не удалось. SC и CT в сагиттале также не добавлены из-за неоднозначных костных границ. По три плоскости для каждой связки не заявляются."
+  ],
+  "reviewedPDFrames": 74,
+  "coverage": {
+    "155101": {
+      "667": [
+        13,
+        14
+      ],
+      "668": [
+        13
+      ],
+      "669": [
+        11
+      ]
+    },
+    "155102": {
+      "667": [
+        16
+      ],
+      "668": [
+        10
+      ],
+      "669": []
+    },
+    "155103": {
+      "667": [
+        13
+      ],
+      "668": [
+        9
+      ],
+      "669": []
+    },
+    "155104": {
+      "667": [],
+      "668": [],
+      "669": []
+    }
+  }
+}
