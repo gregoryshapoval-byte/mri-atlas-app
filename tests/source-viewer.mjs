@@ -26,9 +26,9 @@ for(const name of ['wrist-mri','elbow-mri','male-pelvis-mri','female-pelvis-mri'
   set(1,false);assert.equal(switches[0].checked,false);assert.equal(switches[1].checked,false);
   set(0,true);assert.equal(switches[1].checked,false);set(1,true);
   const q=first.querySelector('.search');q.value='DCSS';q.oninput();
-  assert.match(first.querySelector('.searchResults').textContent,/нет отдельной метки/);assert.equal(first.querySelectorAll('.searchResults button').length,0);
+  assert.match(first.querySelector('.searchResults').textContent,/≈ ориентир/);assert.equal(first.querySelectorAll('.searchResults button').length,1);first.querySelector('.searchResults button').click();assert.match(first.querySelector('select').value,/_dpfs$/);
   q.value='ладонная лучелоктевая';q.oninput();assert.ok(first.querySelector('.searchResults button'));first.querySelector('.searchResults button').click();
-  assert.match(first.querySelector('select').selectedOptions[0].textContent,/Аксиальный/i);
+  assert.match(first.querySelector('select').selectedOptions[0].textContent,/PD-SPIR/i);
   const sel=first.querySelector('select');sel.selectedIndex=3;sel.onchange();await new Promise(r=>setTimeout(r,20));
  }
 
