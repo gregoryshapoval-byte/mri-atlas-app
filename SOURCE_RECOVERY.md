@@ -166,3 +166,7 @@ ANDROID_SDK_ROOT=/path/android-sdk SIGNING_DIR="$PWD/release-signing" bash build
 ## 1.52 — кисть, 3D мозга и колена
 
 Точный whitelist tools/extract_mri152_media.py: hand-mr.zip, brain3dmri.zip, knee.zip. tools/import_mri152.py импортирует hand-mr, только серию571/кадры354–371 мозга и только655колена в отдельные файлы. Кадры372–379 мозга уже есть в сосудистом наборе с исправленными ВСА: не заменять сырой базой. Новые471медиа-файл сохраняются source-assets/mri152, восстанавливаются materialize_assets152.py с проверкой путей/SHA. Старые наборы и overlays остаются неизменными; отчёт review/hand-brain-knee-1.52.md.
+
+## 1.53 — ревизия кисти без нового импорта
+
+hand-mri-data/labels/source сохраняются. tools/hand_anatomy153.py читает этиJSON и создаёт отдельный hand-mri-anatomy153.json: имена/короткие имена/группы/поиск/справочник. Координаты не меняются. hand-anatomy.js подключается только кhand-mri,однократно мигрирует выбор дочерних групп. БлокиA1–A5 описаны без вымышленных отдельных точек. Исходный импорт1.52/материализация152 остаются прежними.
