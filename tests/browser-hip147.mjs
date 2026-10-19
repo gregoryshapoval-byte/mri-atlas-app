@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';import fs from 'node:fs';import {spawn} from 'node:child_process';
 const {chromium}=await import(process.env.PLAYWRIGHT_IMPORT||'/tmp/atlas-dom/node_modules/playwright/index.mjs');
 const A='app/src/main/assets/',out='review/hip-1.47',server=spawn('python3',['-m','http.server','8777','--bind','127.0.0.1'],{cwd:A,stdio:'ignore'});fs.mkdirSync(out,{recursive:true});let browser;
-const read=p=>JSON.parse(fs.readFileSync(p)),D=read(A+'hip-mri-data.json'),E=read(A+'hip-mri-anatomy147.json');
+const read=p=>JSON.parse(fs.readFileSync(p)),D=read(A+'hip-mri-data.json'),E=read(A+'hip-mri-anatomy149.json');
 try{browser=await chromium.launch({headless:true,...(process.env.CHROME_PATH?{executablePath:process.env.CHROME_PATH}:{}),args:['--no-sandbox']});
  for(const viewport of [{width:393,height:852},{width:360,height:640},{width:852,height:393}]){
   const page=await browser.newPage({viewport}),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.route('**/*',r=>r.request().url().startsWith('http://127.0.0.1:8777/')?r.continue():r.abort());
