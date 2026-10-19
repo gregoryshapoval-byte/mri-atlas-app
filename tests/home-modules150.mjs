@@ -5,7 +5,9 @@ const out='review/browser-1.50';fs.mkdirSync(out,{recursive:true});
 const server=spawn('python3',['-m','http.server','8770','--bind','127.0.0.1'],{cwd:'app/src/main/assets',stdio:'ignore'});let browser;
 try{
  browser=await chromium.launch({headless:true,...(process.env.CHROME_PATH?{executablePath:process.env.CHROME_PATH}:{}),args:['--no-sandbox']});const context=await browser.newContext();const errors=[];
- await context.route('**/*',r=>new URL(r.request().url()).hostname==='127.0.0.1'?r.continue():r.abort());
+ // Cross-document transitions can reject when automated navigation closes a page.
+ // Test layout/navigation with motion disabled; do not suppress application errors.
+ await context.route('**/*',async r=>{const u=new URL(r.request().url());if(u.hostname!=='127.0.0.1')return r.abort();if(u.pathname.endsWith('/menus.css')){const response=await r.fetch();return r.fulfill({response,body:(await response.text())+'\n@view-transition{navigation:none}'});}return r.continue();});
  for(const viewport of [{width:393,height:852},{width:360,height:640},{width:320,height:568},{width:852,height:393}]){
  const page=await context.newPage();await page.setViewportSize(viewport);page.on('pageerror',e=>errors.push(e.message));await page.goto('http://127.0.0.1:8770/index.html');await page.waitForSelector('.areaCard:visible');await page.evaluate(()=>Promise.all([...document.images].map(i=>i.decode())));
  assert.equal(await page.locator('.areaCard:visible').count(),13);
