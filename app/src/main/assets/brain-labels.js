@@ -1,3 +1,4 @@
+import {drawTraining} from './perianal-training.js';
 import {drawPerianalOrientation} from './perianal-orientation.js';
 import {annotationSlice,drawRegions} from './anatomy-regions-layer.js';
 import {shoulderGuide} from './shoulder-anatomy.js';
@@ -79,7 +80,7 @@ export class AnnotationLayer{
  transform(){this.scene.style.transform=this.v.img.style.transform;this.scene.style.filter=this.v.img.style.filter;this.drawOverlay()}
  drawOverlay(){
   if(!this.overlay)return;const v=this.v,f=this.displayedFrame;if(!f)return;const a=this.slice(f,this.displayedSeries||v.series);this.overlay.dataset.frame=f.src;const w=v.stage.clientWidth||360,h=v.stage.clientHeight||500;
-  this.overlay.replaceChildren();this.overlay.setAttribute('viewBox',`0 0 ${w} ${h}`);this.overlay.hidden=!this.on;this.overlay.style.display=this.on?'block':'none';this.labelPager.hidden=true;if(!this.on){this.popup.hidden=true;this.info.textContent='';return;}
+  this.overlay.replaceChildren();this.overlay.setAttribute('viewBox',`0 0 ${w} ${h}`);this.overlay.hidden=!this.on;this.overlay.style.display=this.on?'block':'none';this.labelPager.hidden=true;drawTraining(this,this.displayedSeries||v.series,f,w,h);if(!this.on){this.popup.hidden=true;this.info.textContent='';return;}
   drawPerianalOrientation(this.overlay,this.data,this.displayedSeries||v.series,f,v,w,h);
   const pts=(a?.points||[]).filter(p=>this.active().has(p.filter)&&!this.hiddenStructures.has(p.structure)).map(p=>paintPoint(p,this.filters())),visible=distinctReviewPoints(visiblePoints(pts,f,v,w,h),this.selected);
   visible.push(...drawRegions(this.overlay,(a?.regions||[]).filter(r=>(r.lineMarker?this.markers:this.names&&this.masks)&&this.active().has(r.filter)&&!this.hiddenStructures.has(r.structure)),f,v,w,h,this.selected));

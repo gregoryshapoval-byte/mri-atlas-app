@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {trainingCases,trainingState,targetForFrame} from '../app/src/main/assets/perianal-training-models.js';
+import {trainingPoint} from '../app/src/main/assets/perianal-training.js';
+import {orientationItems} from '../app/src/main/assets/perianal-orientation.js';
+import {projectPoint} from '../app/src/main/assets/brain-screen-labels.js';
+const A='app/src/main/assets/',D=JSON.parse(fs.readFileSync(A+'perianal-mri-data.json')),L=JSON.parse(fs.readFileSync(A+'perianal-mri-labels.json'));
+assert.equal(trainingState.key,'');assert.equal(trainingCases.length,9);assert.equal(new Set(trainingCases.map(c=>c.key)).size,9);
+for(const c of trainingCases){trainingState.key=c.key;assert.equal(c.targets.length,2);for(const t of c.targets){const s=D.series.find(s=>s.id===t.series),f=s.frames.find(f=>f.annotation===t.annotation);assert(f);assert.equal(f.sourceIndex,t.sourceIndex);assert.equal(t.approximate,true);assert.equal(t.observedFistula,false);assert.equal(targetForFrame(s,f),t);for(const p of [...t.tract,...(t.branch||[])])assert(p[0]>=f.crop[0]&&p[0]<f.crop[2]&&p[1]>=f.crop[1]&&p[1]<f.crop[3]);for(const rotation of[0,90,180,270])for(const flipX of[1,-1])for(const flipY of[1,-1]){const v={zoom:2.1,x:7,y:-13,rotation,flipX,flipY};for(const p of t.tract)assert.deepEqual(trainingPoint(p,f,v,393,500),projectPoint({x:p[0]-f.crop[0],y:p[1]-f.crop[1]},f,v,393,500))}const other=s.frames.find(f=>!c.targets.some(t=>t.annotation===f.annotation));assert.equal(targetForFrame(s,other),undefined)}}
+for(const[key,compartment]of[['james-2','intersphincteric'],['james-4','ischioanal'],['james-5','supralevator']])assert.equal(trainingCases.find(c=>c.key===key).targets[0].abscess.compartment,compartment);
+trainingState.key='';
+const s=D.series[0],config=L.perianalOrientation[s.id],f=s.frames.find(f=>config.clock[f.annotation]);for(const rotation of[0,90,180,270])for(const flipX of[1,-1])for(const flipY of[1,-1]){const v={zoom:1,x:0,y:0,rotation,flipX,flipY},items=orientationItems(config,f,v,700,760);assert.equal(items.length,12);assert.equal(items.find(p=>p.number===9).side,'R');assert.equal(items.find(p=>p.number===3).side,'L');for(const n of[3,9]){const c=config.clock[f.annotation],a=n*Math.PI/6,p=projectPoint({x:c.x+c.r*Math.sin(a),y:c.y-c.r*Math.cos(a)},f,v,700,760),actual=items.find(p=>p.number===n);assert.equal(actual.sx,p.sx);assert.equal(actual.sy,p.sy)}}
+console.log('PASS training161: 9 explicit models, 18 valid frame targets, no interpolation, crop and 16 transforms, R/L at exact clock positions. Geometry tests do not establish clinical accuracy.');
