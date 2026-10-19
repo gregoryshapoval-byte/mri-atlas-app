@@ -178,3 +178,7 @@ hand-mri-data/labels/source сохраняются. tools/hand_anatomy153.py ч�
 ## 1.55 — связки у головчатой кости, без импорта
 
 Исходные wrist-mri-data/labels,146и154 неизменны. tools/wrist_capitate155.py создаёт отдельный capitate155 и журнал. Runtime составляет points/regions/suppress/catalog со старыми слоями.8приблизительных PD-ориентиров,4отвергнутых кандидата. Не возвращать TC и сомнительные сагиттальные SC/CT по одному словесному описанию. TH/TT описаны без координат.
+
+## Дополнение 1.56
+
+Повторный импорт не нужен. wrist-mri-ligaments156.json накладывается после146/154/155 через wrist-ligaments.js.28новых PD-точек — только ожидаемая топография по разрешению пользователя, все approximate:true/observedFibres:false. Старые MRI, исходные labels и overlays не переписываются. Источники, хеши и отдельные координаты — review/wrist-ligaments-1.56.json.
