@@ -244,6 +244,7 @@ export const regions=[
     "description": "Мужской и женский таз",
     "image": "menu-art/pelvis.webp",
     "items": [
+      {"title":"Перианальная область · мужчина","description":"Сфинктеры, мышцы и пространства · анатомия для описания свищей","url":"perianal-mri.html","type":"МРТ","thumb":"menu-thumbs/perianal-mri.webp"},
       {
         "title": "МРТ мужского таза · исходный атлас",
         "description": "Предстательная железа, органы и структуры таза",

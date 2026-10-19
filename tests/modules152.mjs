@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict';import fs from 'node:fs';import crypto from 'node:crypto';import {regions} from '../app/src/main/assets/anatomy-regions.js';
 const A='app/src/main/assets/',sha=b=>crypto.createHash('sha256').update(b).digest('hex');
 // 1.57 adds optional wrist display metadata in this shared runtime; MRI/data/old overlays remain byte-protected.
-const runtime157=new Set(['app/src/main/assets/anatomy-regions-layer.js']);
+const runtime157=new Set(['app/src/main/assets/anatomy-regions-layer.js','app/src/main/assets/anatomy-colors.js']);
+// 1.58 adds three explicit colors; tests/perianal158.mjs protects all prior color entries.
 for(const [p,h] of Object.entries(JSON.parse(fs.readFileSync('review/preservation-1.52.json')).existingFiles))if(!runtime157.has(p))assert.equal(sha(fs.readFileSync(p)),h,'Preserved 1.51: '+p);
 for(const [mod,code,n,points] of [['hand-mri','hand-mr',280,7274],['brain-3d','brain3dmri',18,997],['knee-3d','knee',6,126]]){
  const d=JSON.parse(fs.readFileSync(A+mod+'-data.json')),l=JSON.parse(fs.readFileSync(A+mod+'-labels.json'));assert.equal(d.series.reduce((n,s)=>n+s.frames.length,0),n);assert.equal(Object.values(l.slices).reduce((n,s)=>n+s.points.length,0),points);

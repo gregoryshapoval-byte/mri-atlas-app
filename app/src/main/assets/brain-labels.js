@@ -1,3 +1,4 @@
+import {drawPerianalOrientation} from './perianal-orientation.js';
 import {annotationSlice,drawRegions} from './anatomy-regions-layer.js';
 import {shoulderGuide} from './shoulder-anatomy.js';
 import {paintPoint,categories} from './anatomy-colors.js';
@@ -32,6 +33,9 @@ export class AnnotationLayer{
   this.scene=document.createElement('canvas');this.scene.className='anatomyScene';this.scene.width=1400;this.scene.height=1520;this.scene.setAttribute('aria-label','МРТ и анатомические слои');this.frameLoader=new LatestFrame();viewer.stage.append(this.scene);
   this.overlay=svgEl('svg',{class:'screenLabels','aria-label':'Подписи видимых структур'});viewer.stage.append(this.overlay);this.labelPage=0;this.labelPager=document.createElement('button');this.labelPager.className='labelPager';this.labelPager.onclick=()=>{this.selected=null;this.labelPage=(this.labelPage+1)%this.totalPages;this.drawOverlay()};viewer.stage.after(this.labelPager);
   this.info=document.createElement('div');this.info.className='selectedStructure';viewer.stage.after(this.info);
+  if(data.perianalOrientation){
+   const label=document.createElement('label');label.className='orientationSetting';const input=document.createElement('input');input.type='checkbox';input.className='orientationToggle';try{viewer.orientation=localStorage.getItem(this.storageKey+'-orientation')!=='off'}catch{viewer.orientation=true}input.checked=viewer.orientation;label.append(document.createTextNode('Циферблат и стороны'),input);this.controls.querySelector('.annotationSwitches').append(label);input.onchange=()=>{viewer.orientation=input.checked;try{localStorage.setItem(this.storageKey+'-orientation',input.checked?'on':'off')}catch{}this.drawOverlay()};
+  }
   this.setupModes();this.syncSwitches();
   for(const key of ['show','names','masks','markers','regionOnly'])this.controls.querySelector('.'+key).onchange=e=>{this[key==='show'?'on':key]=e.target.checked;this.render()};
   this.controls.querySelector('.all').onclick=()=>{this.hiddenStructures.clear();for(const f of this.filters())this.active().add(f.id);this.filtersUI();this.render()};
@@ -76,6 +80,7 @@ export class AnnotationLayer{
  drawOverlay(){
   if(!this.overlay)return;const v=this.v,f=this.displayedFrame;if(!f)return;const a=this.slice(f,this.displayedSeries||v.series);this.overlay.dataset.frame=f.src;const w=v.stage.clientWidth||360,h=v.stage.clientHeight||500;
   this.overlay.replaceChildren();this.overlay.setAttribute('viewBox',`0 0 ${w} ${h}`);this.overlay.hidden=!this.on;this.overlay.style.display=this.on?'block':'none';this.labelPager.hidden=true;if(!this.on){this.popup.hidden=true;this.info.textContent='';return;}
+  drawPerianalOrientation(this.overlay,this.data,this.displayedSeries||v.series,f,v,w,h);
   const pts=(a?.points||[]).filter(p=>this.active().has(p.filter)&&!this.hiddenStructures.has(p.structure)).map(p=>paintPoint(p,this.filters())),visible=distinctReviewPoints(visiblePoints(pts,f,v,w,h),this.selected);
   visible.push(...drawRegions(this.overlay,(a?.regions||[]).filter(r=>(r.lineMarker?this.markers:this.names&&this.masks)&&this.active().has(r.filter)&&!this.hiddenStructures.has(r.structure)),f,v,w,h,this.selected));
   if(this.lastFrame!==f.annotation){this.lastFrame=f.annotation;this.labelPage=0}
@@ -101,11 +106,11 @@ export class AnnotationLayer{
   const v=this.v,series=v.series,f=series.frames[v.index],a=this.slice(f);if(this.module!==v.series.module){this.module=v.series.module;this.filtersUI();this.controls.querySelector('.search').value='';this.controls.querySelector('.searchResults').replaceChildren();this.selected=null}
   v.stage.style.touchAction='none';this.updateModeButtons();syncBlocks(this);this.persist();v.img.style.visibility='hidden';this.scene.style.display='block';v.stage.classList.toggle('annotated',this.on);
   const masks=this.on&&this.names&&this.masks?(a?.masks||[]).filter(m=>this.active().has(m.filter)):[];
-  const key=f.src+'|'+masks.map(m=>m.src).join('|');
+  const key=f.src+(f.crop?'|crop:'+f.crop.join(','):'')+'|'+masks.map(m=>m.src).join('|');
   if(key===this.rasterKey){this.frameLoader.version++;this.displayedFrame=f;this.displayedSeries=series;this.transform();return}
   this.frameLoader.run(async()=>Promise.all([decodedImage(f.src),...masks.map(m=>decodedImage(m.src))]),images=>{
    const buffer=document.createElement('canvas');buffer.width=1400;buffer.height=1520;const ctx=buffer.getContext('2d');ctx.scale(2,2);
-   const iw=400,ih=iw*f.height/f.width,ix=(700-iw)/2,iy=(760-ih)/2;ctx.drawImage(images[0],ix,iy,iw,ih);ctx.globalAlpha=.4;for(const mask of images.slice(1))ctx.drawImage(mask,ix,iy,iw,ih);
+   const iw=400,ih=iw*f.height/f.width,ix=(700-iw)/2,iy=(760-ih)/2;if(f.crop){const [x0,y0,x1,y1]=f.crop;ctx.drawImage(images[0],x0,y0,x1-x0,y1-y0,ix,iy,iw,ih)}else ctx.drawImage(images[0],ix,iy,iw,ih);ctx.globalAlpha=.4;for(const mask of images.slice(1))ctx.drawImage(mask,ix,iy,iw,ih);
    const target=this.scene.getContext('2d');target.clearRect(0,0,1400,1520);target.drawImage(buffer,0,0);
    this.rasterKey=key;this.displayedFrame=f;this.displayedSeries=series;v.el.querySelector('.failed').hidden=true;this.transform();
    for(const i of [v.index-1,v.index+1]){const next=v.series.frames[i];if(next)decodedImage(next.src).catch(()=>{})}

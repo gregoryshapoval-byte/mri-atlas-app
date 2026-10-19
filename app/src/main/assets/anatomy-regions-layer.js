@@ -25,13 +25,15 @@ export function drawRegions(overlay,regions,frame,view,w,h,selected){
   const geom=regionGeometry(r,frame,view,w,h);if(!geom.visible)continue;
   const color=categories[r.category||'organs'].color;
   const g=document.createElementNS(NS,'g');g.dataset.structure=r.structure;g.classList.add('anatomyRegion');g.setAttribute('role','button');g.setAttribute('tabindex','0');g.setAttribute('aria-label',r.name);g.dataset.approximate=String(r.approximate);
-  const path=geom.vertices.map((p,i)=>(i?'L':'M')+p.sx+','+p.sy).join(' ');
+  const outline=vs=>vs.map((p,i)=>(i?'L':'M')+p.sx+','+p.sy).join(' ');
+  const path=outline(geom.vertices)+(r.closed?' Z':'')+(r.holes||[]).map(hole=>' '+outline(hole.map(([x,y])=>projectPoint({x,y},frame,view,w,h)))+' Z').join('');
+  if(r.closed){const fill=document.createElementNS(NS,'path');for(const [k,v]of Object.entries({d:path,fill:color,'fill-opacity':.20,'fill-rule':'evenodd',stroke:'none','pointer-events':'visiblePainted'}))fill.setAttribute(k,v);g.append(fill)}
   for(const [width,opacity,dash]of [[Math.max(16,geom.width),0,null],[Math.max(2,geom.width),.28,null],[selected===r.structure?2:1,.85,r.approximate?'4 3':null]]){
    const p=document.createElementNS(NS,'path');for(const [k,v]of Object.entries({d:path,fill:'none',stroke:color,'stroke-width':width,'stroke-opacity':opacity,'stroke-linecap':'round','stroke-linejoin':'round','pointer-events':'stroke'}))p.setAttribute(k,v);if(dash)p.setAttribute('stroke-dasharray',dash);g.append(p);
   }
   g.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();g.dispatchEvent(new MouseEvent('click',{bubbles:true}))}};
   overlay.append(g);
-  if(geom.anchor)anchors.push({...r,fullName:r.name,name:r.shortName||r.name,x:geom.anchor.x,y:geom.anchor.y,sx:geom.anchor.sx,sy:geom.anchor.sy,color,region:true});
+  if(geom.anchor&&r.labelAnchor!==false)anchors.push({...r,fullName:r.name,name:r.shortName||r.name,x:geom.anchor.x,y:geom.anchor.y,sx:geom.anchor.sx,sy:geom.anchor.sy,color,region:true});
  }
  return anchors;
 }

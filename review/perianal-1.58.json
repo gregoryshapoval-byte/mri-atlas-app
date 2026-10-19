@@ -1,0 +1,1073 @@
+{
+  "sourceFiles": {
+    "male-pelvis-mri-data.json": "0ade0a8600393c8e1029f87dac984796b6d8627f6f83275f9eca661779b66ecd",
+    "male-pelvis-mri-labels.json": "55226b166efccd12fa5ba19a8e3d93ed08f66fa99b3d10d23c7a98388695e297"
+  },
+  "frames": 88,
+  "contours": 10,
+  "landmarks": 6,
+  "images": [
+    {
+      "src": "male-pelvis-mri-images/ax-017.jpg",
+      "source": "male-pelvis-mri-images/ax-017.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "e98819ea9198f1af6239c1f7f58b2c37c92abd37841e7c9ae81d729460bb6ddb",
+      "sha256": "e98819ea9198f1af6239c1f7f58b2c37c92abd37841e7c9ae81d729460bb6ddb"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-018.jpg",
+      "source": "male-pelvis-mri-images/ax-018.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "ba58eb3d82c2395b79e8e9160db69f55bfcd01952ff4e58ff7d59b3bfedc04b4",
+      "sha256": "ba58eb3d82c2395b79e8e9160db69f55bfcd01952ff4e58ff7d59b3bfedc04b4"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-019.jpg",
+      "source": "male-pelvis-mri-images/ax-019.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "e74bee6031561a5f12f4651ecfa3b351e3cd54ad2439ffe376d4613b6eab9b6c",
+      "sha256": "e74bee6031561a5f12f4651ecfa3b351e3cd54ad2439ffe376d4613b6eab9b6c"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-020.jpg",
+      "source": "male-pelvis-mri-images/ax-020.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "2de2858fc87f6ce27d1f2e9af2c8d658da6eaff8ae6f23c18b67e03e9a2e9ca7",
+      "sha256": "2de2858fc87f6ce27d1f2e9af2c8d658da6eaff8ae6f23c18b67e03e9a2e9ca7"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-021.jpg",
+      "source": "male-pelvis-mri-images/ax-021.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "d4eff5db1b9d23774d15d3b5e98839d9052b579dbe06bd5e4ad8f06f6d735647",
+      "sha256": "d4eff5db1b9d23774d15d3b5e98839d9052b579dbe06bd5e4ad8f06f6d735647"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-022.jpg",
+      "source": "male-pelvis-mri-images/ax-022.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "98a99d4593af425af1c2375465e5a01cc27215d2a477597549b841735545ea32",
+      "sha256": "98a99d4593af425af1c2375465e5a01cc27215d2a477597549b841735545ea32"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-023.jpg",
+      "source": "male-pelvis-mri-images/ax-023.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "553621b429d961272cd850fd17bf9626e0082d4208ec7783fb557053f9875c33",
+      "sha256": "553621b429d961272cd850fd17bf9626e0082d4208ec7783fb557053f9875c33"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-024.jpg",
+      "source": "male-pelvis-mri-images/ax-024.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "2a10aa8f72e558a11afc8994df8f57544e47527252cc68e6ff86509dbb30cf9f",
+      "sha256": "2a10aa8f72e558a11afc8994df8f57544e47527252cc68e6ff86509dbb30cf9f"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-025.jpg",
+      "source": "male-pelvis-mri-images/ax-025.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "290b92524f5ff2a079da23fd06a66b3d74562c85569bb963fcc46ea7d167dc88",
+      "sha256": "290b92524f5ff2a079da23fd06a66b3d74562c85569bb963fcc46ea7d167dc88"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-026.jpg",
+      "source": "male-pelvis-mri-images/ax-026.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "bb6e4a0478da87667ff3be28a43b52817cf83786e192b568f3bb556b48a2b250",
+      "sha256": "bb6e4a0478da87667ff3be28a43b52817cf83786e192b568f3bb556b48a2b250"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-027.jpg",
+      "source": "male-pelvis-mri-images/ax-027.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "ae77e0a757f6f4e43f06f73ab6786bbe8aab1fa7518fa8fd893a12125681de2d",
+      "sha256": "ae77e0a757f6f4e43f06f73ab6786bbe8aab1fa7518fa8fd893a12125681de2d"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-028.jpg",
+      "source": "male-pelvis-mri-images/ax-028.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "4030abe1838a19a0f7d683e583a827861a62fb854b9c21e901a7a748fd5e662b",
+      "sha256": "4030abe1838a19a0f7d683e583a827861a62fb854b9c21e901a7a748fd5e662b"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-029.jpg",
+      "source": "male-pelvis-mri-images/ax-029.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "2a09dc0462f01715a884f5dac940fa7931464b557b311eff1af46db2066de44a",
+      "sha256": "2a09dc0462f01715a884f5dac940fa7931464b557b311eff1af46db2066de44a"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-030.jpg",
+      "source": "male-pelvis-mri-images/ax-030.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "4b87932089aaf6cf68719bc43b45ac17baa9fc97a55c4b09e3f3f7d030556a02",
+      "sha256": "4b87932089aaf6cf68719bc43b45ac17baa9fc97a55c4b09e3f3f7d030556a02"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-031.jpg",
+      "source": "male-pelvis-mri-images/ax-031.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "5a1983a1ab09e0a31eac3a2ee4761e1d6aaddd092045582fa310df9a0829b71e",
+      "sha256": "5a1983a1ab09e0a31eac3a2ee4761e1d6aaddd092045582fa310df9a0829b71e"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-032.jpg",
+      "source": "male-pelvis-mri-images/ax-032.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "b465fcbbf50f35f6bff769022d0049fd8d9507fcbf72ec8fb070b2e6acb4eff7",
+      "sha256": "b465fcbbf50f35f6bff769022d0049fd8d9507fcbf72ec8fb070b2e6acb4eff7"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-033.jpg",
+      "source": "male-pelvis-mri-images/ax-033.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "acbed38ec5114a5203a49c7fc11c49e6be2905252b69227479a66708d3aca747",
+      "sha256": "acbed38ec5114a5203a49c7fc11c49e6be2905252b69227479a66708d3aca747"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-034.jpg",
+      "source": "male-pelvis-mri-images/ax-034.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "84ac965fecf5361b4afff9c08801a3c88ad84787b8d9b6ab00c7ff40e85fa181",
+      "sha256": "84ac965fecf5361b4afff9c08801a3c88ad84787b8d9b6ab00c7ff40e85fa181"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-035.jpg",
+      "source": "male-pelvis-mri-images/ax-035.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "5d9dd2dba062b7fd57612926432e66b2e0428d5a8ce825283bcf2afc3788446e",
+      "sha256": "5d9dd2dba062b7fd57612926432e66b2e0428d5a8ce825283bcf2afc3788446e"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-036.jpg",
+      "source": "male-pelvis-mri-images/ax-036.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "e10af9942ca615d358a1b4aac01a93025055357ca25426baac050bcf72244807",
+      "sha256": "e10af9942ca615d358a1b4aac01a93025055357ca25426baac050bcf72244807"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-037.jpg",
+      "source": "male-pelvis-mri-images/ax-037.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "82c9932f16a3bfd617d69e569f07baea496ca17b48422677f5a2cc3d4cef7e2c",
+      "sha256": "82c9932f16a3bfd617d69e569f07baea496ca17b48422677f5a2cc3d4cef7e2c"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-038.jpg",
+      "source": "male-pelvis-mri-images/ax-038.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "dd7e5e3d8e0a084120b6eea3e477cd1e3f03cd8ccae09384ad262b68dd683b37",
+      "sha256": "dd7e5e3d8e0a084120b6eea3e477cd1e3f03cd8ccae09384ad262b68dd683b37"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-039.jpg",
+      "source": "male-pelvis-mri-images/ax-039.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "6603099b5a05db7996549d28c813e53f3209b6dfcbc1946177eed81671c25c9c",
+      "sha256": "6603099b5a05db7996549d28c813e53f3209b6dfcbc1946177eed81671c25c9c"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-040.jpg",
+      "source": "male-pelvis-mri-images/ax-040.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "373e9e7bbf2ad1828cc9451f593725c1e252b2f31fae790ebd42eb1dd13fd7e5",
+      "sha256": "373e9e7bbf2ad1828cc9451f593725c1e252b2f31fae790ebd42eb1dd13fd7e5"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-041.jpg",
+      "source": "male-pelvis-mri-images/ax-041.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "a1f7952673f8576d82bc5e85fda8a80b90fa8bf70806239bbe5b7264cee2ae69",
+      "sha256": "a1f7952673f8576d82bc5e85fda8a80b90fa8bf70806239bbe5b7264cee2ae69"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-042.jpg",
+      "source": "male-pelvis-mri-images/ax-042.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "c002441b5307b8733018d7de51d1b4769d250ce6bd359e8c0403339e75447625",
+      "sha256": "c002441b5307b8733018d7de51d1b4769d250ce6bd359e8c0403339e75447625"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-043.jpg",
+      "source": "male-pelvis-mri-images/ax-043.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "44f64ec31900d8dc32566e5b1f4305b324cc1609f22e9b50686ec02b686f5d72",
+      "sha256": "44f64ec31900d8dc32566e5b1f4305b324cc1609f22e9b50686ec02b686f5d72"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-044.jpg",
+      "source": "male-pelvis-mri-images/ax-044.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "1aefc0f9b2cad2b4845c493eff25104c581f42ee6f34b68cb3ae5d15b72abe62",
+      "sha256": "1aefc0f9b2cad2b4845c493eff25104c581f42ee6f34b68cb3ae5d15b72abe62"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-045.jpg",
+      "source": "male-pelvis-mri-images/ax-045.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "36f78ec62e70b469daaa40d7269d6cbe97f91bc6aa1f5355c331734cfb107912",
+      "sha256": "36f78ec62e70b469daaa40d7269d6cbe97f91bc6aa1f5355c331734cfb107912"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-046.jpg",
+      "source": "male-pelvis-mri-images/ax-046.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "b89322010630e472d3f0e4318c7302cb1bfa6ffd836ae19000d99d9898fbc006",
+      "sha256": "b89322010630e472d3f0e4318c7302cb1bfa6ffd836ae19000d99d9898fbc006"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-047.jpg",
+      "source": "male-pelvis-mri-images/ax-047.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "94e28b3fe1be48136585a1e8c1b7e3f7ef825f557bf4c066e17fd4865739b57d",
+      "sha256": "94e28b3fe1be48136585a1e8c1b7e3f7ef825f557bf4c066e17fd4865739b57d"
+    },
+    {
+      "src": "male-pelvis-mri-images/ax-048.jpg",
+      "source": "male-pelvis-mri-images/ax-048.jpg",
+      "crop": [
+        145,
+        260,
+        505,
+        600
+      ],
+      "sourceSha256": "dacd64189d51cb39ef9a14423f880a482f27c60235e43ba555f1862c3587f75e",
+      "sha256": "dacd64189d51cb39ef9a14423f880a482f27c60235e43ba555f1862c3587f75e"
+    },
+    {
+      "src": "male-pelvis-mri-images/sag-001.jpg",
+      "source": "male-pelvis-mri-images/sag-001.jpg",
+      "crop": [
+        220,
+        180,
+        570,
+        510
+      ],
+      "sourceSha256": "8fb648c3355f0a381a69e2376e48639b70f1b1b48abdc47f0108a6f36a500080",
+      "sha256": "8fb648c3355f0a381a69e2376e48639b70f1b1b48abdc47f0108a6f36a500080"
+    },
+    {
+      "src": "male-pelvis-mri-images/sag-002.jpg",
+      "source": "male-pelvis-mri-images/sag-002.jpg",
+      "crop": [
+        220,
+        180,
+        570,
+        510
+      ],
+      "sourceSha256": "b80af0c49f8199121196e2f809ca6ac1750e39212505cc3e60ffeab4e638453f",
+      "sha256": "b80af0c49f8199121196e2f809ca6ac1750e39212505cc3e60ffeab4e638453f"
+    },
+    {
+      "src": "male-pelvis-mri-images/sag-003.jpg",
+      "source": "male-pelvis-mri-images/sag-003.jpg",
+      "crop": [
+        220,
+        180,
+        570,
+        510
+      ],
+      "sourceSha256": "4e0c33124d451942b577827f4f36a7f135c385806a427da039fb20084d003166",
+      "sha256": "4e0c33124d451942b577827f4f36a7f135c385806a427da039fb20084d003166"
+    },
+    {
+      "src": "male-pelvis-mri-images/sag-004.jpg",
+      "source": "male-pelvis-mri-images/sag-004.jpg",
+      "crop": [
+        220,
+        180,
+        570,
+        510
+      ],
+      "sourceSha256": "d693034c9b2245aa52946821a282b26636b7a90b392d358a660d252cc475bd7c",
+      "sha256": "d693034c9b2245aa52946821a282b26636b7a90b392d358a660d252cc475bd7c"
+    },
+    {
+      "src": "male-pelvis-mri-images/sag-005.jpg",
+      "source": "male-pelvis-mri-images/sag-005.jpg",
+      "crop": [
+        220,
+        180,
+        570,
+        510
+      ],
+      "sourceSha256": "7f99d89a737e9bc5af111086dbc7d363bc0c449f0159b53a94094a2388dde9d5",
+      "sha256": "7f99d89a737e9bc5af111086dbc7d363bc0c449f0159b53a94094a2388dde9d5"
+    },
+    {
+      "src": "male-pelvis-mri-images/sag-006.jpg",
+      "source": "male-pelvis-mri-images/sag-006.jpg",
+      "crop": [
+        220,
+        180,
+        570,
+        510
+      ],
+      "sourceSha256": "4fed5c9f14a342aaa82073b18fea07037545ec4d7bc81d6a0ce6230b7c4c6eed",
+      "sha256": "4fed5c9f14a342aaa82073b18fea07037545ec4d7bc81d6a0ce6230b7c4c6eed"
+    },
+    {
+      "src": "male-pelvis-mri-images/sag-007.jpg",
+      "source": "male-pelvis-mri-images/sag-007.jpg",
+      "crop": [
+        220,
+        180,
+        570,
+        510
+      ],
+      "sourceSha256": "a827aa83e6f4cafbaf2bce841b59cadb7827ed6c7f205b1e5192316ca0a5a8f3",
+      "sha256": "a827aa83e6f4cafbaf2bce841b59cadb7827ed6c7f205b1e5192316ca0a5a8f3"
+    },
+    {
+      "src": "male-pelvis-mri-images/sag-008.jpg",
+      "source": "male-pelvis-mri-images/sag-008.jpg",
+      "crop": [
+        220,
+        180,
+        570,
+        510
+      ],
+      "sourceSha256": "e5dd636cccb7644052c263bf595dfae95b855ac6f6e11e41d4ede0bdaa99604d",
+      "sha256": "e5dd636cccb7644052c263bf595dfae95b855ac6f6e11e41d4ede0bdaa99604d"
+    },
+    {
+      "src": "male-pelvis-mri-images/sag-009.jpg",
+      "source": "male-pelvis-mri-images/sag-009.jpg",
+      "crop": [
+        220,
+        180,
+        570,
+        510
+      ],
+      "sourceSha256": "b12a480ab6e34a1a230ff7ea088fc43a0ca2d8d2ae1e05bc3967683be564bcc0",
+      "sha256": "b12a480ab6e34a1a230ff7ea088fc43a0ca2d8d2ae1e05bc3967683be564bcc0"
+    },
+    {
+      "src": "male-pelvis-mri-images/sag-010.jpg",
+      "source": "male-pelvis-mri-images/sag-010.jpg",
+      "crop": [
+        220,
+        180,
+        570,
+        510
+      ],
+      "sourceSha256": "0291ff4890f1e05d3adb903209cdaf9f4ecf6129065d9f80c0de1c1d826c1aa6",
+      "sha256": "0291ff4890f1e05d3adb903209cdaf9f4ecf6129065d9f80c0de1c1d826c1aa6"
+    },
+    {
+      "src": "male-pelvis-mri-images/sag-011.jpg",
+      "source": "male-pelvis-mri-images/sag-011.jpg",
+      "crop": [
+        220,
+        180,
+        570,
+        510
+      ],
+      "sourceSha256": "0462711b79e3562e6b7a4ac33ddc37cc8ed15ef9ada0bb214a1890bb62adc404",
+      "sha256": "0462711b79e3562e6b7a4ac33ddc37cc8ed15ef9ada0bb214a1890bb62adc404"
+    },
+    {
+      "src": "male-pelvis-mri-images/sag-012.jpg",
+      "source": "male-pelvis-mri-images/sag-012.jpg",
+      "crop": [
+        220,
+        180,
+        570,
+        510
+      ],
+      "sourceSha256": "338866c48783f57ee67d86c2e41404410014bfee846e04e858a6b2b5785da86f",
+      "sha256": "338866c48783f57ee67d86c2e41404410014bfee846e04e858a6b2b5785da86f"
+    },
+    {
+      "src": "male-pelvis-mri-images/sag-013.jpg",
+      "source": "male-pelvis-mri-images/sag-013.jpg",
+      "crop": [
+        220,
+        180,
+        570,
+        510
+      ],
+      "sourceSha256": "d454a861ca3261bd4b8604dfd23d92532c867649da58cccc6ca7018a50cde00e",
+      "sha256": "d454a861ca3261bd4b8604dfd23d92532c867649da58cccc6ca7018a50cde00e"
+    },
+    {
+      "src": "male-pelvis-mri-images/sag-014.jpg",
+      "source": "male-pelvis-mri-images/sag-014.jpg",
+      "crop": [
+        220,
+        180,
+        570,
+        510
+      ],
+      "sourceSha256": "25ff380993cff93903adcd28372d8582ae27c6d6dd43ee8bdcba39daae1d8218",
+      "sha256": "25ff380993cff93903adcd28372d8582ae27c6d6dd43ee8bdcba39daae1d8218"
+    },
+    {
+      "src": "male-pelvis-mri-images/sag-015.jpg",
+      "source": "male-pelvis-mri-images/sag-015.jpg",
+      "crop": [
+        220,
+        180,
+        570,
+        510
+      ],
+      "sourceSha256": "431f3f01a7c8a4cc9fd851a23c26bcc0d3eabaab530b30ef401eaedca30ed281",
+      "sha256": "431f3f01a7c8a4cc9fd851a23c26bcc0d3eabaab530b30ef401eaedca30ed281"
+    },
+    {
+      "src": "male-pelvis-mri-images/sag-016.jpg",
+      "source": "male-pelvis-mri-images/sag-016.jpg",
+      "crop": [
+        220,
+        180,
+        570,
+        510
+      ],
+      "sourceSha256": "83dbea478dd0008ff12359d5a1aab88458b9d729e23a3c6bee77fb370ecc269c",
+      "sha256": "83dbea478dd0008ff12359d5a1aab88458b9d729e23a3c6bee77fb370ecc269c"
+    },
+    {
+      "src": "male-pelvis-mri-images/sag-017.jpg",
+      "source": "male-pelvis-mri-images/sag-017.jpg",
+      "crop": [
+        220,
+        180,
+        570,
+        510
+      ],
+      "sourceSha256": "bab8ea852f5f1fd1b5c280654b3d2c33e5904ca4e18dd9ccee88b60688af5c8f",
+      "sha256": "bab8ea852f5f1fd1b5c280654b3d2c33e5904ca4e18dd9ccee88b60688af5c8f"
+    },
+    {
+      "src": "male-pelvis-mri-images/sag-018.jpg",
+      "source": "male-pelvis-mri-images/sag-018.jpg",
+      "crop": [
+        220,
+        180,
+        570,
+        510
+      ],
+      "sourceSha256": "97184bf5b4c125b5fdfb657c44616675cae9d5c1a74ceeff7c30277a65175d67",
+      "sha256": "97184bf5b4c125b5fdfb657c44616675cae9d5c1a74ceeff7c30277a65175d67"
+    },
+    {
+      "src": "male-pelvis-mri-images/sag-019.jpg",
+      "source": "male-pelvis-mri-images/sag-019.jpg",
+      "crop": [
+        220,
+        180,
+        570,
+        510
+      ],
+      "sourceSha256": "92957ad711cf351fc78ae8716dec8862121608c6466a09076113c0a445f4a779",
+      "sha256": "92957ad711cf351fc78ae8716dec8862121608c6466a09076113c0a445f4a779"
+    },
+    {
+      "src": "male-pelvis-mri-images/sag-020.jpg",
+      "source": "male-pelvis-mri-images/sag-020.jpg",
+      "crop": [
+        220,
+        180,
+        570,
+        510
+      ],
+      "sourceSha256": "aa30630225f07ea9b75ed66e9b7ecb2b5b65ba3000837c021a10b51eeaf75adc",
+      "sha256": "aa30630225f07ea9b75ed66e9b7ecb2b5b65ba3000837c021a10b51eeaf75adc"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-032.jpg",
+      "source": "male-pelvis-mri-images/cor-032.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "b57bd8881c1fd2bc43ed2b0e7ce09152f77f8b590a68db0c4da78221c91263d8",
+      "sha256": "b57bd8881c1fd2bc43ed2b0e7ce09152f77f8b590a68db0c4da78221c91263d8"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-033.jpg",
+      "source": "male-pelvis-mri-images/cor-033.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "7706fa9155af9ba06a1062ac169c993e0940e20a4bf0b4d87ea197604c732bc8",
+      "sha256": "7706fa9155af9ba06a1062ac169c993e0940e20a4bf0b4d87ea197604c732bc8"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-034.jpg",
+      "source": "male-pelvis-mri-images/cor-034.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "449f7d6979ca900306574fea3279258278fc1e00a964506be72c652833724633",
+      "sha256": "449f7d6979ca900306574fea3279258278fc1e00a964506be72c652833724633"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-035.jpg",
+      "source": "male-pelvis-mri-images/cor-035.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "1c6095bff4200d060fc272229dcfa693e3916824dcb86d0883e6e46e128a80ce",
+      "sha256": "1c6095bff4200d060fc272229dcfa693e3916824dcb86d0883e6e46e128a80ce"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-036.jpg",
+      "source": "male-pelvis-mri-images/cor-036.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "05586943464edc5d160f077c569718cd6103088ce2f7177c94ede7d127a8ff8d",
+      "sha256": "05586943464edc5d160f077c569718cd6103088ce2f7177c94ede7d127a8ff8d"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-037.jpg",
+      "source": "male-pelvis-mri-images/cor-037.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "8006cb7f46ac668715d519d1b01c9bbb0fe9e8c9e275057026b647144f208352",
+      "sha256": "8006cb7f46ac668715d519d1b01c9bbb0fe9e8c9e275057026b647144f208352"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-038.jpg",
+      "source": "male-pelvis-mri-images/cor-038.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "77cb3e7f71a08963f29f8436d7f3ab219269a9fb93b3a13564bd2dd52f3fbe92",
+      "sha256": "77cb3e7f71a08963f29f8436d7f3ab219269a9fb93b3a13564bd2dd52f3fbe92"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-039.jpg",
+      "source": "male-pelvis-mri-images/cor-039.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "f650ffe702c0a03fa4b3a4685bb99c99923fed69f0a580c7eec72f52718ec940",
+      "sha256": "f650ffe702c0a03fa4b3a4685bb99c99923fed69f0a580c7eec72f52718ec940"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-040.jpg",
+      "source": "male-pelvis-mri-images/cor-040.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "9c7e89f0b9a6ce204d699e901e124255ed32c37e5d3692b15a701482bc287e67",
+      "sha256": "9c7e89f0b9a6ce204d699e901e124255ed32c37e5d3692b15a701482bc287e67"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-041.jpg",
+      "source": "male-pelvis-mri-images/cor-041.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "b06bce8094ab31f444612d6c61ad03640d4f07857be33f44624593f9a118fd05",
+      "sha256": "b06bce8094ab31f444612d6c61ad03640d4f07857be33f44624593f9a118fd05"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-042.jpg",
+      "source": "male-pelvis-mri-images/cor-042.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "b118e05a59fa064662fa34208725edc07539928b4cb49161637f0823aab576ee",
+      "sha256": "b118e05a59fa064662fa34208725edc07539928b4cb49161637f0823aab576ee"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-043.jpg",
+      "source": "male-pelvis-mri-images/cor-043.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "9459e82916e2f37f5c300072b5dc726d715d1c2adce7bc0c5cfb7712a941333f",
+      "sha256": "9459e82916e2f37f5c300072b5dc726d715d1c2adce7bc0c5cfb7712a941333f"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-044.jpg",
+      "source": "male-pelvis-mri-images/cor-044.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "1b80f0875db01cec4ca3ebe1818a21990c79b8968b44ec37d92a77b724ae9440",
+      "sha256": "1b80f0875db01cec4ca3ebe1818a21990c79b8968b44ec37d92a77b724ae9440"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-045.jpg",
+      "source": "male-pelvis-mri-images/cor-045.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "2a636a68c5085561de409a19e027b8f5de0505ca17e2ec385396acd3dd53db13",
+      "sha256": "2a636a68c5085561de409a19e027b8f5de0505ca17e2ec385396acd3dd53db13"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-046.jpg",
+      "source": "male-pelvis-mri-images/cor-046.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "d72e81f95f42bcf7edf6c8a549d2a74ab4d6883fd0292dbce87bab7fdd1b8535",
+      "sha256": "d72e81f95f42bcf7edf6c8a549d2a74ab4d6883fd0292dbce87bab7fdd1b8535"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-047.jpg",
+      "source": "male-pelvis-mri-images/cor-047.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "987c42687662a61519a5073d442806cdfcd09d585a524c8ba9b22e8223c78246",
+      "sha256": "987c42687662a61519a5073d442806cdfcd09d585a524c8ba9b22e8223c78246"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-048.jpg",
+      "source": "male-pelvis-mri-images/cor-048.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "5a1ca0eabecfb9c034f413645d66ae099e008740db743fc8333eceddc46218ff",
+      "sha256": "5a1ca0eabecfb9c034f413645d66ae099e008740db743fc8333eceddc46218ff"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-049.jpg",
+      "source": "male-pelvis-mri-images/cor-049.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "d95e083b017ba13e803d5a89bf8df61d0da18dd4a675535867b1fea4f76609a9",
+      "sha256": "d95e083b017ba13e803d5a89bf8df61d0da18dd4a675535867b1fea4f76609a9"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-050.jpg",
+      "source": "male-pelvis-mri-images/cor-050.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "7ac5d4ad2538a2e67383ddd77231687f226a1952b8a94cc716a3ddcfc713dc3b",
+      "sha256": "7ac5d4ad2538a2e67383ddd77231687f226a1952b8a94cc716a3ddcfc713dc3b"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-051.jpg",
+      "source": "male-pelvis-mri-images/cor-051.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "87977c0a169f5ab599b422c4bc78087533e38a455585142a1826d311d7ef5675",
+      "sha256": "87977c0a169f5ab599b422c4bc78087533e38a455585142a1826d311d7ef5675"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-052.jpg",
+      "source": "male-pelvis-mri-images/cor-052.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "13740a7b30bde2d5cd1741faec5b6dfe7c97548b409d55ea7b8efbfac3cae21b",
+      "sha256": "13740a7b30bde2d5cd1741faec5b6dfe7c97548b409d55ea7b8efbfac3cae21b"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-053.jpg",
+      "source": "male-pelvis-mri-images/cor-053.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "a3bc0edf5b818630d7e596f7730a5beac51b01ae4260b4e5d9e66a03fa1f06f4",
+      "sha256": "a3bc0edf5b818630d7e596f7730a5beac51b01ae4260b4e5d9e66a03fa1f06f4"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-054.jpg",
+      "source": "male-pelvis-mri-images/cor-054.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "42dbc165cb281d4c836b547918d491233a7aa2a21f190804c02feac6af3a6f29",
+      "sha256": "42dbc165cb281d4c836b547918d491233a7aa2a21f190804c02feac6af3a6f29"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-055.jpg",
+      "source": "male-pelvis-mri-images/cor-055.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "736eba924f3ea8a7505aebf51db6380a8404dd0249547d51f7cc986e543ce2f0",
+      "sha256": "736eba924f3ea8a7505aebf51db6380a8404dd0249547d51f7cc986e543ce2f0"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-056.jpg",
+      "source": "male-pelvis-mri-images/cor-056.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "ea8726ab079b531b35b8d63fe3a150a0e746575c903a912f32af0f606158a6ca",
+      "sha256": "ea8726ab079b531b35b8d63fe3a150a0e746575c903a912f32af0f606158a6ca"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-057.jpg",
+      "source": "male-pelvis-mri-images/cor-057.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "b08b6ed156647826602e8e42a3f85af79dc6ed281364580b9c45c3c35a49516a",
+      "sha256": "b08b6ed156647826602e8e42a3f85af79dc6ed281364580b9c45c3c35a49516a"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-058.jpg",
+      "source": "male-pelvis-mri-images/cor-058.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "d7e128e9af5797f93e47dc98219d9ac30a4f6a820a8cf9b53ae3b3976ea578a3",
+      "sha256": "d7e128e9af5797f93e47dc98219d9ac30a4f6a820a8cf9b53ae3b3976ea578a3"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-059.jpg",
+      "source": "male-pelvis-mri-images/cor-059.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "2922bb60fd61b7004e385a06b00380333fbd646ae5abcfe513dc10ee9dbc8557",
+      "sha256": "2922bb60fd61b7004e385a06b00380333fbd646ae5abcfe513dc10ee9dbc8557"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-060.jpg",
+      "source": "male-pelvis-mri-images/cor-060.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "87ed8ada2553195c6def5659ff663782b123e3c1b7108c55ea6f801468a2774e",
+      "sha256": "87ed8ada2553195c6def5659ff663782b123e3c1b7108c55ea6f801468a2774e"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-061.jpg",
+      "source": "male-pelvis-mri-images/cor-061.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "0ebbcd869e59fa38728a16ed62654ec04cd75fbc58ad5db4fac2f2d7e54fecf8",
+      "sha256": "0ebbcd869e59fa38728a16ed62654ec04cd75fbc58ad5db4fac2f2d7e54fecf8"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-062.jpg",
+      "source": "male-pelvis-mri-images/cor-062.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "dad3f7b854ef967e12a6da8f1d68ac3003fce6e3756a5f526e8f16ef44b4ba9a",
+      "sha256": "dad3f7b854ef967e12a6da8f1d68ac3003fce6e3756a5f526e8f16ef44b4ba9a"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-063.jpg",
+      "source": "male-pelvis-mri-images/cor-063.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "83174658dc67e6c42a6ee6386be40fdf350b846acdf05be697b0718b2627c62f",
+      "sha256": "83174658dc67e6c42a6ee6386be40fdf350b846acdf05be697b0718b2627c62f"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-064.jpg",
+      "source": "male-pelvis-mri-images/cor-064.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "b011c51840d1533373aa195989330dd592cdab5806d65c2d9f088b466f65f971",
+      "sha256": "b011c51840d1533373aa195989330dd592cdab5806d65c2d9f088b466f65f971"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-065.jpg",
+      "source": "male-pelvis-mri-images/cor-065.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "c4f0adf1196eb7b370881c237cd100d5d2cc9608ece22fec44f755b188847578",
+      "sha256": "c4f0adf1196eb7b370881c237cd100d5d2cc9608ece22fec44f755b188847578"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-066.jpg",
+      "source": "male-pelvis-mri-images/cor-066.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "9a2c46c7e86bd81d3a75fea96a2b7d40329bc049bee769b75b5ca9d937f69f7c",
+      "sha256": "9a2c46c7e86bd81d3a75fea96a2b7d40329bc049bee769b75b5ca9d937f69f7c"
+    },
+    {
+      "src": "male-pelvis-mri-images/cor-067.jpg",
+      "source": "male-pelvis-mri-images/cor-067.jpg",
+      "crop": [
+        145,
+        290,
+        505,
+        620
+      ],
+      "sourceSha256": "04a99e72ed3516a9d4e45b388335bd85fdcb5504860c7a078443b2e63810114b",
+      "sha256": "04a99e72ed3516a9d4e45b388335bd85fdcb5504860c7a078443b2e63810114b"
+    }
+  ],
+  "limitations": [
+    "Native pelvic JPEGs, sequence not confirmed by source metadata",
+    "No STIR, no dedicated oblique anal acquisition, no DICOM geometry",
+    "Contour positions approximate; no independent physician verification",
+    "Dentate line not marked on MRI"
+  ]
+}
