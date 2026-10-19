@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';import fs from 'node:fs';import crypto from 'node:crypto';
 import {categories,classifyPoint} from '../app/src/main/assets/anatomy-colors.js';
-const root='app/src/main/assets/',modules=['brain','wrist-mri','elbow-mri','male-pelvis-mri','female-pelvis-mri','shoulder-mri','foot-mri','knee-mri','face-neck-mri','hip-mri','spine-mri','upper-limb-mri','lower-limb-mri','brachial-plexus-mri','hand-mri','brain-3d','knee-3d'];
+const root='app/src/main/assets/',modules=['brain','wrist-mri','elbow-mri','male-pelvis-mri','female-pelvis-mri','shoulder-mri','foot-mri','knee-mri','face-neck-mri','hip-mri','spine-mri','upper-limb-mri','lower-limb-mri','brachial-plexus-mri','hand-mri','brain-3d','knee-3d','abdomen-ct','abdomen-pelvis-ct'];
 const digest=b=>crypto.createHash('sha256').update(b).digest('hex');
 const preserved=JSON.parse(fs.readFileSync('review/preservation-1.42.json'));
 for(const [p,sha]of Object.entries(preserved.existingFiles))assert.equal(digest(fs.readFileSync(p)),sha,p+' remains unchanged');

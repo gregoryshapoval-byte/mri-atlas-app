@@ -282,6 +282,28 @@ export const regions=[
     ]
   },
   {
+    "id": "abdomen",
+    "name": "Брюшная полость",
+    "description": "КТ · органы, сосуды и сегменты печени",
+    "image": "home-icons/abdomen.svg",
+    "items": [
+      {
+        "title": "КТ · сегменты печени",
+        "description": "182 среза · цветные сегменты I–VIII по Куино",
+        "url": "abdomen-ct.html",
+        "type": "КТ",
+        "thumb": "menu-thumbs/abdomen-ct.webp"
+      },
+      {
+        "title": "КТ брюшной полости и таза",
+        "description": "303 среза · три плоскости · органы, сосуды и брюшина",
+        "url": "abdomen-pelvis-ct.html",
+        "type": "КТ",
+        "thumb": "menu-thumbs/abdomen-pelvis-ct.webp"
+      }
+    ]
+  },
+  {
     "id": "foot",
     "name": "Предплюсна · стопа",
     "description": "МРТ и анатомические метки",
