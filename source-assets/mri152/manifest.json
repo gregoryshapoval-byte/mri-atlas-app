@@ -1,0 +1,2397 @@
+{
+  "files": [
+    {
+      "path": "hand-mri-source/001a21ac65a84cc1dfc9a81e29a84861070627a71d61f143d436fffcd8702332.jpg",
+      "size": 15818,
+      "sha256": "96742e8dca42344fddd5744c4c658cfa351e332ab1e7310ae96447bca625bfbc"
+    },
+    {
+      "path": "hand-mri-source/00e35164fd1a886757f42f84370e5ed3657ba1853958397db5e7c56ce718bb89.png",
+      "size": 3177,
+      "sha256": "9cf3d6d2a1f6a9313a5c84e578b153dca7aa5321da1598fa3aeac0be03c23c88"
+    },
+    {
+      "path": "hand-mri-source/01999c58765e9ee1a682c9982665dfbdddc0085dbb8fe6ee793599450f0fb081.jpg",
+      "size": 5811,
+      "sha256": "0ea17900312b5e0671552feee0d44a1f371c6d207677b77467dc32b2f9f39e38"
+    },
+    {
+      "path": "hand-mri-source/02683cf85fc58ddbf675a0986a8f285a0521b8a93e2faf3bb879f7dab8925d6b.jpg",
+      "size": 12983,
+      "sha256": "380f520f65b17497c6b0eeec2327d7e30c42b634e3daa2557b3f64bcdcbb8948"
+    },
+    {
+      "path": "hand-mri-source/03c493e26a11cbb57aa8883744e081833d603d9db3f0f715be42e9f4632fe1df.jpg",
+      "size": 16619,
+      "sha256": "77365c081272263d5aea61bed3aad029593e284b20657f898c962c37cf3e36ee"
+    },
+    {
+      "path": "hand-mri-source/05749070bfffb49caebcc2b8944e6a8e1795bf0b3089dd8e8791f57f7189aced.jpg",
+      "size": 6395,
+      "sha256": "c67ee9975eaee3e4136ea1133bfaea51691d83cb25010db3553c7ceec851a45e"
+    },
+    {
+      "path": "hand-mri-source/061e25dbea46055aee572285f0690d0474f3a22faedd28f02385181994451957.jpg",
+      "size": 9564,
+      "sha256": "a8481623876327feeaed73e6fdc7fe22e010c0367ea9fb7636e96ecd9f66f169"
+    },
+    {
+      "path": "hand-mri-source/064952b060fcb14dc7316766ff4ac953a2ddda87d2b5aab545498df5b455ea47.jpg",
+      "size": 14080,
+      "sha256": "702a88fdaebec06d72ac76f21f510e2b264c1049d3b9e9b094a3d4daab111022"
+    },
+    {
+      "path": "hand-mri-source/06ebfa3dc67a090834f8ed6ae4576dc605da5ba6f20b9b3620ad49bfcea38b9b.jpg",
+      "size": 16396,
+      "sha256": "f0fca925b5d9b8b7e2d51c854230b7ada956caf9485cfa6c39f9376a0e7180d6"
+    },
+    {
+      "path": "hand-mri-source/0714f9500bfe0cf3ab3c361baa834ec74fb7230cfa1d6978057b44dd93233c2d.jpg",
+      "size": 16882,
+      "sha256": "22c449f02ca3034e9de3c110fca8f98ac40cb6ec06ba02a1cdbe99c1600968fb"
+    },
+    {
+      "path": "hand-mri-source/07f1dc585bdf90e086725fd024708e447660ccfa3bb68bc74fae267765cecfbf.jpg",
+      "size": 5449,
+      "sha256": "05a4da5d393e2d98fbbc85fc1cd4f51c7e6f34dcb37b28e4310abc5ae7b01aed"
+    },
+    {
+      "path": "hand-mri-source/080a5bb052fc98abb0e6c0246f617971ac65ee37a1a118da01007a5a88d2f2ff.png",
+      "size": 4588,
+      "sha256": "e664bbbea343cd728147ddb95f546cfba8ade897b25b39e3c41dac2b79ddca77"
+    },
+    {
+      "path": "hand-mri-source/088290ecfc937188cd101df1f34cc8b6597c4fe02c0207f7f2fd813bfcbf06a1.png",
+      "size": 2389,
+      "sha256": "e05fd90b0c55ab5eae4be79a7509c3897f78602ef9af6c8ba5457d3db1db09c9"
+    },
+    {
+      "path": "hand-mri-source/08b80ff4d4791a4259a60dc3d42ba46fada93ae29198b913579dd68636d78db2.png",
+      "size": 2084,
+      "sha256": "18c0d2290a736a017e489f3b1c1b4e68bf9ed8840a9f19a80452b41f9159d670"
+    },
+    {
+      "path": "hand-mri-source/08c80ccd3d9d84afe0ae44e926fc04cac4484b0b1e7878e60e3a5e55ff0f2461.jpg",
+      "size": 9570,
+      "sha256": "b29569b3b621ca683b8438b6a84b029c2b0a52da5dce5eb69b3f7d31771b669c"
+    },
+    {
+      "path": "hand-mri-source/093f1d39711f8129878e38e0326c197d2890cb8b08718670369a8e1b121feff9.png",
+      "size": 3206,
+      "sha256": "98f3498ffb7c3aef1c73652bd231aa6e7f683b95a3e339bb77939e73c3f48344"
+    },
+    {
+      "path": "hand-mri-source/0c5b2f1a9ba59bd501935581d66d76e2bed3f66471ee7eaa20b2060c044fe485.jpg",
+      "size": 10091,
+      "sha256": "5cba19ecdc222a40106ab9dcb816904fcb271d2656a74a092063f313d382eaa3"
+    },
+    {
+      "path": "hand-mri-source/109397d819588bce0d2a4e95d85a2bab1df22bec2c57962022a739a48aea0eb4.jpg",
+      "size": 13231,
+      "sha256": "da73a1e5a49c79acd6857ed8f521188c3d134a0bac35d03d0a0663fe11483ee0"
+    },
+    {
+      "path": "hand-mri-source/123813ba8612e2daba9260fe2229724c4c7d8634beb5015d87ba47fd77c06564.png",
+      "size": 3515,
+      "sha256": "c345e00fd40e953f4981d15921df87de4f74cf639ca257ddbaa4a87b9e265c72"
+    },
+    {
+      "path": "hand-mri-source/12fcd95fcf35c1f80e01f08cc654787a43677447633fb7745162b28153e734ae.jpg",
+      "size": 14997,
+      "sha256": "6404caacf3e699452a88be3e73240a272c7897cf7c2f4dddfde0b25bdb34391c"
+    },
+    {
+      "path": "hand-mri-source/143b4abf6d4f6a7fe2958027f714d180eabacd375ff5f7fd5474f439800ef5c5.jpg",
+      "size": 13893,
+      "sha256": "8c1d6c1359a6dde48c1170802ab53cbc1c32465895492b4156303f7ff3e6e13a"
+    },
+    {
+      "path": "hand-mri-source/16776e78e04fbb6c50b5c3f786a31beb944fcb2e9f06bcbf8bb6cbdc63b17987.jpg",
+      "size": 18840,
+      "sha256": "f953ab07f1de718180f565d14df72d4868a14f71a9e942ac613c92a8d3eb09e5"
+    },
+    {
+      "path": "hand-mri-source/1681ed6f4445475939ffa9adb7f8552a7233ffcf935800dba577c5178ea9486b.jpg",
+      "size": 10229,
+      "sha256": "f21ae8b9e49a63462228197cc08d31cf917d5ead402f11ab23df99ebb70171a4"
+    },
+    {
+      "path": "hand-mri-source/17b015c95cafe4a41faf643d0937e0821a92f56618f566521da0aac6507b4d90.jpg",
+      "size": 10765,
+      "sha256": "64bd77f8663c30f7b34c58791ac8cf0f4148e9c483fcbad0ee540c565a12a687"
+    },
+    {
+      "path": "hand-mri-source/19954c086d24137777aa838f6fbff9df194c50df0717810b08bd4439e0ecd01a.jpg",
+      "size": 4509,
+      "sha256": "aa99947c65284bd013bb59a25fdbe1b7a631345844be89ae2b8940b48a3fbdda"
+    },
+    {
+      "path": "hand-mri-source/1a50923b2dad58ccbe88820116a34e24a6dc37f93cb7c7a557de55ee9d2413c6.png",
+      "size": 2075,
+      "sha256": "787d3247da10cc25d9c6c36474910c811f1597781b9c354dab97b697261deac9"
+    },
+    {
+      "path": "hand-mri-source/1a6ea8cd3891949a013b289e719ae54038554b0fb8ae7b53ee428f8695b7393e.jpg",
+      "size": 14555,
+      "sha256": "c6cd5b2f7170e15ef682f64f7b5ab6a768a59a14a2029cac02deec0e25d8fb2c"
+    },
+    {
+      "path": "hand-mri-source/1af4723c076ec7e8dd302421e6ec3eda8161f6a3b7aa8382dddce94956f63217.jpg",
+      "size": 15775,
+      "sha256": "d2b5b81c19c21068bdba026b28a8fdae2f7226c936e948da8ab60ef48989b8c0"
+    },
+    {
+      "path": "hand-mri-source/1ca92ea02f704e8f5bd2f2ea704018a4314c054be95aabae67725ebd8dc667f2.png",
+      "size": 2786,
+      "sha256": "e40a3029b9b353eb2a812acdddbcf84a2c675d87c102d18edcdf87915614ac61"
+    },
+    {
+      "path": "hand-mri-source/1cc3f449e45a125178c08dd178676b68270aad4cadf3d2ecb5181dfe1a67a512.jpg",
+      "size": 10522,
+      "sha256": "1949eeade1e3082d581337ab975ebdc82357a7044bbe6b3c18d20852385db85d"
+    },
+    {
+      "path": "hand-mri-source/1cdff051e1f6e92495c3af2c6512b0004cc948a39c8bdef345ac4360a4247077.jpg",
+      "size": 10666,
+      "sha256": "68422eccabae2698ea415f0c6a46e4b847fa20af307b2e70de8c9a8a8ab9eb20"
+    },
+    {
+      "path": "hand-mri-source/1f8af6fc1a07981a28d1b4214c048a79378d7eebb47757288e0758186d0a3ea7.jpg",
+      "size": 11858,
+      "sha256": "b0212df2034190b238837725aabb08f436bfb811f6e1a24458723f9fdae71ee2"
+    },
+    {
+      "path": "hand-mri-source/20192e1e32bad2639395ed97b6ef7aa7e7e8846604ff8947618dc838f375ced7.jpg",
+      "size": 5570,
+      "sha256": "a31b52702d30aa74269f65295532e0179f4579ca626c1d6d0afd1ffa50312bfc"
+    },
+    {
+      "path": "hand-mri-source/21ce9094b14a80f33b24bcdf1e0e46bf802d89b18af29fdd562aea683320c3e0.jpg",
+      "size": 16411,
+      "sha256": "1b8c7f61bc5c15b1cdeb5c06c9be1f58fa4bcc5eb256c5c4f3e036d78b01c3ff"
+    },
+    {
+      "path": "hand-mri-source/22397595030d42416806b9765b86866865725f213c02c289500c6498656b35b6.png",
+      "size": 3463,
+      "sha256": "fc4bf4865e305e4bb161f2130b1194e69c5fb1556f6c2e2c88ffbf8ec05de63d"
+    },
+    {
+      "path": "hand-mri-source/246ca35cff2ba8482ec6b07020a81384d91e4727768011167c559c3b75480ef8.jpg",
+      "size": 16569,
+      "sha256": "1dbc00b1d32364a8689f991fdb21ff12ad788bf11d3d8ee89f47fc1304c88cec"
+    },
+    {
+      "path": "hand-mri-source/2557f5062327e09ea5a58bf3a2fe4a96e31fa83f2ed3b1f5987cbac18ccd0aad.jpg",
+      "size": 14819,
+      "sha256": "54014677e68d8a0ff12ce3e2ecfc147d461ef859a70e515f7b8000462861affe"
+    },
+    {
+      "path": "hand-mri-source/25bc4da49b935e9aca2f4d0d7f6342ca822070a1a188e9748333cc29ca4df587.jpg",
+      "size": 14844,
+      "sha256": "94249b27bcd5f4ea6f8fb9f1a5bad921f64e4d9bf8c38b74f6c1734d39c4a184"
+    },
+    {
+      "path": "hand-mri-source/25d7ef796f2eb26171741bc5809cd6486572d2954ff508a33181eb13f31a9fe5.png",
+      "size": 3699,
+      "sha256": "9bcc0949d6bc0537b55b8fde84b5be91d53919533217d70103116a8efe5883c5"
+    },
+    {
+      "path": "hand-mri-source/2717712a1c10af480455cd2b43587970651616194476a91238ff530f59ccd82c.jpg",
+      "size": 14203,
+      "sha256": "fb281439111c8e870b120305a3f662b26e8aee27f0119e543a3ddeb0df3f9cdd"
+    },
+    {
+      "path": "hand-mri-source/2725cd82a749fa741ef6eb90d673ffc64d95111571bee0dc482313a90d786707.jpg",
+      "size": 6200,
+      "sha256": "5766c0958fbacf0203fa369e7e0b4961d856f366dd617a480baa885845ad3c67"
+    },
+    {
+      "path": "hand-mri-source/27b052542bd0676d1102d8eb0c73334a290509f0a3c03482882bc6fb8e810d26.jpg",
+      "size": 5274,
+      "sha256": "cee027f468597931ca997b57bdc46f10b6d8e668133137fba82a531b0289e4b6"
+    },
+    {
+      "path": "hand-mri-source/28834679909241acfb91beabc026b51d5663a260d8a8824e6b8c8a7ccbda7236.jpg",
+      "size": 15852,
+      "sha256": "8952946cef82be4a50a7f462afe8d665647d31313f26b181ee24346b3718eabd"
+    },
+    {
+      "path": "hand-mri-source/2891f129a593ff0fa31c37d7c11f34ce472ada1cec6a1a33d63d8d3d1570bfdd.jpg",
+      "size": 15491,
+      "sha256": "ac0bfa70990c0daff269584d493e41755c57aae5c2a43e47cdde8eb2076a73f7"
+    },
+    {
+      "path": "hand-mri-source/28e2ad2e971efed6e7118d495a539e15cd0098b3715ee166301a681c02a64c40.jpg",
+      "size": 11210,
+      "sha256": "c82d477d647fb21b75a9fb3269c9ddfd5ba2f90a48d862f108d3fa9969df5faf"
+    },
+    {
+      "path": "hand-mri-source/29cd25cc5d24e4fff16c928dc553410af708483c82ca7383af7fa603720209d3.jpg",
+      "size": 19390,
+      "sha256": "32b8975d6227b5b8464f0ff5416a11ae93107028d68c10198d6c8366242a0283"
+    },
+    {
+      "path": "hand-mri-source/2acfae015fc96808470c25f7d35859a4de428ea2b3ad6a984a6d7a4b237f81ad.jpg",
+      "size": 17285,
+      "sha256": "2a36f69c638d5dd7184acdbe5663e3d958093f1902d59202d4a28d1be64034f8"
+    },
+    {
+      "path": "hand-mri-source/2d8c9548547702820e99ae9f965a04c7373211f135733b0e9aedb9d55a222c19.jpg",
+      "size": 17381,
+      "sha256": "16865515176144b216b40aed27db146e1a3a5aa2425e1fee512bcc00639a5de0"
+    },
+    {
+      "path": "hand-mri-source/2da8723a98b530fc31de14a60e294403bbcf390cd1abe467f47449c8e7407601.jpg",
+      "size": 20371,
+      "sha256": "45e5eb5b95c16707a82612f050163c7e893211549870c602f1a655bdd835ca20"
+    },
+    {
+      "path": "hand-mri-source/2e342b8fb3ebccd82134fefa943c559d52c874ad0e0e9a8e65ec58582a88ef35.jpg",
+      "size": 10144,
+      "sha256": "d1934eeb453579ab1b07063120d827266d6927c3b125eab7545740683ad72c48"
+    },
+    {
+      "path": "hand-mri-source/2fdf00db22e5a4ac7f9db3662a631654199a031f94fde2af88838cc567bc7aec.jpg",
+      "size": 3952,
+      "sha256": "b1effca03708c41b64d1177e6b17d702de12a8c69115bc8d222a87b146562257"
+    },
+    {
+      "path": "hand-mri-source/2fe74874c1ef5fa128e19a0362416d12c353604f860bde959ec77e5890d5dfcf.jpg",
+      "size": 9124,
+      "sha256": "cdca406c05f9dd09682c29ce772f267a54500ab28ebdfad48931355589b28dac"
+    },
+    {
+      "path": "hand-mri-source/303f711222768125aa8d717dfe988c9468a8139480b63f8c82ee80aa4616e8ee.jpg",
+      "size": 4763,
+      "sha256": "a5025d17998fed433c0e6be3526a0f3d24916d8b2945c3a41f0dabdf0ad79a1e"
+    },
+    {
+      "path": "hand-mri-source/31df5d55a8c015d50350c2c7ab05a138cf0ec2302a1fb6fcf4bf207db57d2455.jpg",
+      "size": 4817,
+      "sha256": "18a877ce3e2220daa3e170a75d1883e30986d5d4f269b4a45c5acc8eb94c3aac"
+    },
+    {
+      "path": "hand-mri-source/3282fca484f45de34539a0d751cc31bf0a877b270f8f781a738a3963d3cd076c.jpg",
+      "size": 5356,
+      "sha256": "63cb2ba2c87dfddd5d3f021e15e7101122962c31fa680c4a96e662727c89deea"
+    },
+    {
+      "path": "hand-mri-source/32c3b3ef4d2844c0e6d2a7bbaff2f96cef1e6c5cd61f61909699ff5d85c8e15a.jpg",
+      "size": 14932,
+      "sha256": "d070ecbaa5c23f517e28e24e70e1e32abfa6f27f9212c0f06ae573283de46dd4"
+    },
+    {
+      "path": "hand-mri-source/335488fff83b72c349d965ae95aa4eed2a2219f6db54fc190bbd15ca75f73839.jpg",
+      "size": 15903,
+      "sha256": "121996b7794cc7143f536123b527da6e622ffb1b0933875c302db19405211bea"
+    },
+    {
+      "path": "hand-mri-source/33a39b2a6ed239da6a93fb3142f449b750b8df8714642fadac7ff82e22cd1c26.jpg",
+      "size": 10877,
+      "sha256": "7752876fc80a74796b6f48a53813f6ee1979efe9b99fc6ff882ec92543064cc2"
+    },
+    {
+      "path": "hand-mri-source/33bbb9b5e750105dfdc8c5b5042481498001cb5e73115850d11b47a03424cf72.png",
+      "size": 3419,
+      "sha256": "db7c3d800c0b7b0fc0b4a80c1b4ccdf4590fe33b31fcf65916eea1fb6688ba45"
+    },
+    {
+      "path": "hand-mri-source/3470f7b7c46e7cf03954446c396116008b343099b75ceb8df1bf3e1aab365ad0.jpg",
+      "size": 13691,
+      "sha256": "8d44533848988a5e7a727c62d5c4cd8e078168e9c8abcdfd591e79dc3da9a102"
+    },
+    {
+      "path": "hand-mri-source/35b5ef797e29dc5bebc1d2c0c204bf6a4c04d9db94edf82c0287811b90b02140.jpg",
+      "size": 15945,
+      "sha256": "1676b9f719a4d7473b10706638b0c5f81c20137b9d1b4f70335e0ccc5eab2fbd"
+    },
+    {
+      "path": "hand-mri-source/35cc95803d9ebba002835a65cd8d0b94bfc9c35d76c7a1bf91469d53a54cb738.jpg",
+      "size": 14694,
+      "sha256": "1beb0bd5e507b20222f8746cd6f77c4e01c3fcde92269f9118b4d7b11d6125b7"
+    },
+    {
+      "path": "hand-mri-source/373fabfc5ee534f77e619775ed518d4ce95998f41814404d07e0f858ad5c1848.jpg",
+      "size": 10024,
+      "sha256": "43f19da4006ae41e18aee0e5d74d77f3f04ae832ea931e9bb4220bec43852a76"
+    },
+    {
+      "path": "hand-mri-source/3b9385192bd56749ad26b00c57b6b76aa29b6e51b057ab25a32d2a2c368cb4cb.jpg",
+      "size": 7839,
+      "sha256": "7a8f3af58cc3c60bd56b9581380f2600ab9c5cc571f484d18ac9e106f6c4e2c2"
+    },
+    {
+      "path": "hand-mri-source/3d63a08f93ad5a8ef3e2ea7c7d79f00f0e63dcd237adf3239b3563d37cb1a184.png",
+      "size": 3749,
+      "sha256": "7e66e7921653c9adb22ca7cba6198999c67ad749f7db3c737b87a4e4375e61a3"
+    },
+    {
+      "path": "hand-mri-source/3e43f6b4aa6ad224a1a8a05998842e3d6adcedda5d1d9e7d07e568ff735229ea.jpg",
+      "size": 16956,
+      "sha256": "793bfd21e85c8d5631234b03132e3803a905816db6fbaf564540766a06375412"
+    },
+    {
+      "path": "hand-mri-source/3e6d8f60c22987ccc50413084e597086f6f7515863e53ad200ab2f3a3a7b6476.jpg",
+      "size": 5255,
+      "sha256": "c865517fda68ba8c6c57ac1ad3f9fa90f94818c24147529131c1193304985e7b"
+    },
+    {
+      "path": "hand-mri-source/3e8c80c025008238dcd5d6e5b1ae1c3f0aca2f46c70da0a50069f53825a70969.jpg",
+      "size": 16309,
+      "sha256": "09407873d0191f50be694eb61c8806683a96f4be965684203db8f87bdbaf7c77"
+    },
+    {
+      "path": "hand-mri-source/3efeafeb4d23e647eb5c16e5781d567a629d6b5d8f1f80848e26a433b67b223e.jpg",
+      "size": 7206,
+      "sha256": "eef6eaad5eceffcdff0f3b20fcf75ae066807cb9c87b7b2786787ed4e1c5f39c"
+    },
+    {
+      "path": "hand-mri-source/3f5fc449a2328d973158789b4b232865f428fd2cfb0b0d204fc8aaedc4f701a8.jpg",
+      "size": 9555,
+      "sha256": "87ef234718caed22896e106dd3a9d6b8da1b5c4b238437fccb698e1d66311ed6"
+    },
+    {
+      "path": "hand-mri-source/411be591de15c7a1249110f234c1a877964460e8a397bd910bb6172166d159d9.jpg",
+      "size": 15500,
+      "sha256": "0581e861cc888aa055f26beb55ecbd5ece38d92c7e7419d1bdc05f3679a90d1f"
+    },
+    {
+      "path": "hand-mri-source/42070fc9433e7daa124bf38ba3b453aaabeda390373290b3c0145b5b49f5fbbb.jpg",
+      "size": 17452,
+      "sha256": "e8320309ab0c32cd3f0b4ea0afb2f4b49086da3b1469ae2f5cb22cb2231b4a8f"
+    },
+    {
+      "path": "hand-mri-source/42b4f7e250dd3fdb79d9bc8066594a8633e3be9abc5cc283430b1fd73b7ed717.jpg",
+      "size": 7077,
+      "sha256": "8c01eeaa5efd43c9dfe60d9cabb6484e5de01d8d7f64f2d83dc465511df10215"
+    },
+    {
+      "path": "hand-mri-source/433b18f31b01779fca1ac3a5d28532f4083c1cc54fedaa46227ccf9850aed722.png",
+      "size": 3690,
+      "sha256": "f1a571bb19ad6b9a213dcd85436715027e8863a56d18f0590036556ae533c375"
+    },
+    {
+      "path": "hand-mri-source/43b697a2fa4fc1f821d5df09adefa326a05609635c3e231a47ef477f3fda0477.jpg",
+      "size": 10067,
+      "sha256": "d9417e05c9ff40f674b96b04aaf61dbdfb326f3200202d0b2d2df711f73d0fae"
+    },
+    {
+      "path": "hand-mri-source/4544f322ce4574e32fd8ffdbf0f4863b6caabda5973889dade52cff3602b414e.jpg",
+      "size": 15022,
+      "sha256": "19a829cc92d678e8d734d3e38c55908d3a5ed0ef5ae0c04cb1367c0d80baa72b"
+    },
+    {
+      "path": "hand-mri-source/455eeb2bc3eab9c85c27377fb06f5405fe9c64f4516aaa5d430f43a958d3922a.png",
+      "size": 3283,
+      "sha256": "9d36ce392d1b6fb780f2f83f4c2b7683bdd4e876ff86dcde7475d234f6081c30"
+    },
+    {
+      "path": "hand-mri-source/481d566f9f486e4e28fd39e4468a22da6d24ab39430b815fa30341670812a965.jpg",
+      "size": 13880,
+      "sha256": "aecb6641a8e2b373029a4215fc1b0ecfe8ad235825b7ad05cbf75bc8feb870d7"
+    },
+    {
+      "path": "hand-mri-source/489aa1b632e7837f8b471caefe3027cef9cd8d111f8789b8fd723c9277b6a97a.jpg",
+      "size": 9057,
+      "sha256": "3c7852700d05bb0f71a93c9180c57368513549817dec8ba63e4e2b7afc955e86"
+    },
+    {
+      "path": "hand-mri-source/49ca8caaeda14e09d5473ff51a4b21d25a64558d22d835000e298cb6603cabf7.jpg",
+      "size": 4683,
+      "sha256": "8fb2d90f674af91787e25b37453f81477ecd7352e0eefe9122881789991ae185"
+    },
+    {
+      "path": "hand-mri-source/4a0f14a2f226f46ac5bcc5292c694b6099148e2de422424ead7203a54a2603bb.png",
+      "size": 2966,
+      "sha256": "b0efcd52538a4296d0dc73dfd1d7ab2b28cae4a936d3cdc5cfdefcec41077994"
+    },
+    {
+      "path": "hand-mri-source/4aab690f80fa23a2b0a0b9d961b19bee3a49b183dd2a7681db2fd29e66b88a35.png",
+      "size": 3106,
+      "sha256": "f04705f4afa8aa1f61936b466af9ca2df4437b645111e3953355148ac8853fbe"
+    },
+    {
+      "path": "hand-mri-source/4abf0e065e768ffbbaa56046c6123502cb1979db1bb625dfe0f4f06023019c51.jpg",
+      "size": 14269,
+      "sha256": "5f7448a9e31d48c9f08a065970b8692447da0b6f63ddd80fe746ffe923dedb13"
+    },
+    {
+      "path": "hand-mri-source/4b9a274599bb0a373a025f1cb46821f72c8c0c70cbc96b91bd3b3a132c0d9bea.jpg",
+      "size": 15188,
+      "sha256": "ab25e2dd7b300eac92cf583ebae54ddc5cf14d17f0e1c4472c90d4d2f1d2f806"
+    },
+    {
+      "path": "hand-mri-source/4c1c47972a830cfc35481b6a5a132f0ba3c4879edcd3813f4a8bd16a67ebe023.jpg",
+      "size": 15978,
+      "sha256": "5656250b146cd0e8b625f3c02bffb144d8589f8e3f8d8aa2e5645cc5e0356d5a"
+    },
+    {
+      "path": "hand-mri-source/4d8ccf673629e8b44928970dd8ee8acd6106c9f04946bb516b397cbcfd1f4ce6.jpg",
+      "size": 8821,
+      "sha256": "2e60166edcd79ced0f62f486e4d42b17f3a64669191bb322bee4a3c5fed7a89f"
+    },
+    {
+      "path": "hand-mri-source/4e7fddcbfba431251592723dc8282d311cfdfe8e8981cde36a84cba52af9fb33.jpg",
+      "size": 13393,
+      "sha256": "a94dc8ccf3d961e95fc476933b930f21ac32a7a1ca8df198be41ec0237c74d98"
+    },
+    {
+      "path": "hand-mri-source/4e8bf2e4116f2169a9d5bba0960470c07bd9e50190d0e04ad64c3600a708d710.png",
+      "size": 2719,
+      "sha256": "0ee52d0b90f5627f807cd1eb9e45ba6b0d5c9efeaef204ba39ab1e785ac0e410"
+    },
+    {
+      "path": "hand-mri-source/4eb50d8bae1c9e4478074f9906f376d6d3c51f73924c8fbbf90e1b158a8ff526.jpg",
+      "size": 9495,
+      "sha256": "2281017c83715333e55def875a4a4b5f27ee8ac5bd902c74368e2d7511a7f580"
+    },
+    {
+      "path": "hand-mri-source/4ef73d8474f53a3c5e5fb6079637a5f2b4daf69e4abdcdb05c9774d056127442.jpg",
+      "size": 3354,
+      "sha256": "408d5b390f5a2bd1617da52eddd01fa73453c4ae7af085436c1717e55c097642"
+    },
+    {
+      "path": "hand-mri-source/4f1a86305e86a05d795f60080a419ee4d70673769fd3f550fe3f25af6524f231.jpg",
+      "size": 3075,
+      "sha256": "b5b8209c732877973f924cc0bcb0231b20bd8b5c49b3277dd516b384dea8c552"
+    },
+    {
+      "path": "hand-mri-source/4f4d56d9c622d3a5ea337fc83259140a94b496b0fbbff5541bd1f052695cbaf8.png",
+      "size": 3633,
+      "sha256": "65473f589086dab2abb0f96aadb981477a3f4ebe92647a0dd0feab2ccfa80934"
+    },
+    {
+      "path": "hand-mri-source/4ff571bb236fb433359a6172ea84874de075612c7294daed04274fe0b5fd1332.png",
+      "size": 2318,
+      "sha256": "0d4f2762ffe76cd7327f635c577233bc526c06734b8809156075b584bb78ec31"
+    },
+    {
+      "path": "hand-mri-source/50055a8a87adc1ff8c7cadb742ac3a25ba50ac1aca91fad4a5eaa8805636955b.jpg",
+      "size": 6324,
+      "sha256": "d45fe48434dcf766a178072ed537feb7d437dbb946da246144623c39aac74cd3"
+    },
+    {
+      "path": "hand-mri-source/514863c330a3f5fccad5f78506444d0cb4796b3df243d01aacf261cb1f206f9b.jpg",
+      "size": 5646,
+      "sha256": "0bf2eabf588430ac7cf7e59bcb1571f4c820d527def31d8927ba8270883d2472"
+    },
+    {
+      "path": "hand-mri-source/51cc3fab5275e907ac30aa87529cbbb0ae077178630816f4c225c23911c58ea5.jpg",
+      "size": 15473,
+      "sha256": "ade8252874bdd186fec8f4e34acebdad9a0177f08fac59a2c90cd95c60f2bf18"
+    },
+    {
+      "path": "hand-mri-source/528097a81bf860cdb07a2857469d8ffa237b684a77b19c01cd5c47f75b1aa8f2.jpg",
+      "size": 4347,
+      "sha256": "aa58301e5125eb0694d0a1f44ad7aa7d1a28dc02d022c97bb373855553e1392c"
+    },
+    {
+      "path": "hand-mri-source/54596d3120a85d5b8febcf699cfc7d84fa76409192b368ca3571a35d57f06e2a.jpg",
+      "size": 5061,
+      "sha256": "b127273c7248a21df096258c6d17e7beac12fead206692862e22a4e558aa413f"
+    },
+    {
+      "path": "hand-mri-source/54c0dbb13762e9911484d5fa845fc4c5d958eca960e6463fb302ef07c2b35c72.png",
+      "size": 3411,
+      "sha256": "806060056772022bbc2e427fd591eaeb01720a26aa2f8d5c3fa867316a40550e"
+    },
+    {
+      "path": "hand-mri-source/55fa2e44f61c4826fdd016fa1edd10ce57c10accacf32315a0c52ce9b05daeb8.jpg",
+      "size": 19727,
+      "sha256": "7b8b64dccb5c671661b55ab83c2fe5e53a30e1b3701eda607d1aef50a5015324"
+    },
+    {
+      "path": "hand-mri-source/561754f74c7c6f1f99ae3b356dd6e7e8e7dc0fba61a9dc94593dbdd79c581afa.png",
+      "size": 3642,
+      "sha256": "bfab1409c5e6b9d99efff6de386484b818e7aeb7f2f22a1bfa7cbf125936f0ed"
+    },
+    {
+      "path": "hand-mri-source/566c2d1b0b537943ec759495e78ea55edbb13d8a3116ac5ae6db11e4a31d32fe.jpg",
+      "size": 5395,
+      "sha256": "279375ae655bdec32fc4e06a73124580204243d41055d53a60ba6d2c70b8b882"
+    },
+    {
+      "path": "hand-mri-source/57c3ba6a00ef3ddef1d4b6c8bdf651715061f7a2d1aa60f17b391764fd119208.jpg",
+      "size": 12419,
+      "sha256": "41b9f50bb0cb6dcc114cb431f05778b6976ee1eb82d18f5a93f658677fcc655f"
+    },
+    {
+      "path": "hand-mri-source/59cd9d9d392b20ea2aecf892708491d565ab7a1af2355800b8f18a8b551aceb5.jpg",
+      "size": 9610,
+      "sha256": "71e7774b01fb7e9569eac2a8e67760238707ed7c2c6190995dda8f4d09a3f7fa"
+    },
+    {
+      "path": "hand-mri-source/5a0204b6359d6e1445ceda15d590cb6213ee0990b1c854c011a316a4bcf240e2.jpg",
+      "size": 14062,
+      "sha256": "cc174bdd955ff258596129b370c8146ed4dfa577da6187edf4c5e681dae70c4f"
+    },
+    {
+      "path": "hand-mri-source/5a0d6652359770e30bd53fd1736c93bb5d8b2ac479d8b4724cfa4b65797051b4.jpg",
+      "size": 16647,
+      "sha256": "0c1174670c2a5b1868d48544d530547d25371cfbe7a765b31f2a73886ef73c13"
+    },
+    {
+      "path": "hand-mri-source/5aabbd8a0776034132ea5e82187346c7a826674cba757baf69d2f9dacef38acc.jpg",
+      "size": 12360,
+      "sha256": "37571f836f64fbe4ba6823a45bbc2f71e9f9ec38e45fe5d3df8f85e65002f8cd"
+    },
+    {
+      "path": "hand-mri-source/5be0b0800b552f2db462da8594eb8a5661f74a532a82ca26745c64dd4f87ae45.png",
+      "size": 3783,
+      "sha256": "34df3b3278b676161ef72e01b4f85e26516f4560f12a3e726a46520d917cd484"
+    },
+    {
+      "path": "hand-mri-source/5cb859ce17b90cdc2fb17f467169fdad1b0bf8661452d01901172a650be7e3dc.jpg",
+      "size": 10442,
+      "sha256": "758cbd3a33e835e609de1a807f36c04b79dfd8c9fe34172e76076401b68ffd8e"
+    },
+    {
+      "path": "hand-mri-source/5ce998fc1da4a6c13189c206920ce7eff9ef511ce5c57c3ae3bc079dcdeb3173.jpg",
+      "size": 17553,
+      "sha256": "0dd1b36b86d1397608a2f0c83462141b054e8376122402dbfdb915fd742e387d"
+    },
+    {
+      "path": "hand-mri-source/5dd4e0d9c57ecd4937b21aa09bb9db9a345237d4d0eca323fddf7280eac5246f.jpg",
+      "size": 16911,
+      "sha256": "b1f52794fdbe02d3d0fa8cec491ef133bb921ef853607a29a09811acfc6c184c"
+    },
+    {
+      "path": "hand-mri-source/5ef97bfb5a2265f9af64606c501881e701cf5ee74240ecba46beb3cef2f8250a.jpg",
+      "size": 15046,
+      "sha256": "136d9abb7627ab6c04434749aa48d633b001036fc180cb334746540e9b243b0a"
+    },
+    {
+      "path": "hand-mri-source/5f0b7843097c3b38977991be7f19dbd811b38d9a71d625978cc5d4511b9ef62f.jpg",
+      "size": 18345,
+      "sha256": "5249f9a211c68e00423bee57632e4b54f8829f51b7b895d8206e076b8b4a3414"
+    },
+    {
+      "path": "hand-mri-source/618ec713f97ec73e0de7f406394aec19e41fd54ec8a36ef78f15cc9ea638e872.jpg",
+      "size": 15916,
+      "sha256": "f4ccf4e715899cb508bb2c38f290fc6a0059ae8a14965556f5ce2f5039de4717"
+    },
+    {
+      "path": "hand-mri-source/61b3a1d3b9f99d345bf9b21f1a40a77ef30b4747f18c19d2b90c075b37148bdd.jpg",
+      "size": 4807,
+      "sha256": "2d56fe1e56c09c95c2576ca96562b4271729810206e1ba79264a83eade917d3a"
+    },
+    {
+      "path": "hand-mri-source/61bbabd6e68f8b5942150901254c78f185ac82d679d34460fc303c31f6f37969.jpg",
+      "size": 13377,
+      "sha256": "d502d420f7056b12bbf56beb07c5cf13d992f923b90691cd8bdf1f56147e3613"
+    },
+    {
+      "path": "hand-mri-source/61f3784ddd595c12b81e9290ced462e9aa7567a7f8c351d3da9b4405507fbf67.png",
+      "size": 3739,
+      "sha256": "b6ffca0318e92b706c440f08dd6121adc8855cac135df625635eae67c8fefde6"
+    },
+    {
+      "path": "hand-mri-source/62344eb1dddc7a4a29ed4053a6dc6cda96a30f2a3c7ae2526cd3985f60b9604f.png",
+      "size": 3459,
+      "sha256": "53054c835ef50738a9fd441a890bff86d5d53bc11123d9cf72c91a82146e2f36"
+    },
+    {
+      "path": "hand-mri-source/62c72e007e9a3c98b11e6730b7aa6370f0363f9c0163a6928765f98e69dc5443.jpg",
+      "size": 15959,
+      "sha256": "63fac967d4ec8db45b24bbfc2d2bdcaad2a903dc00c76d575ca6c0fa3c4a9727"
+    },
+    {
+      "path": "hand-mri-source/637822a50dab6e51a74db7bfcf4133d171cd2aba66556a596881ccf138994a09.jpg",
+      "size": 17544,
+      "sha256": "7119f980aee7c142694eee196e234c271d5baf34ecf9fc6b7a08b67f9f0a25a2"
+    },
+    {
+      "path": "hand-mri-source/6443eac8a595f91c0d6883f32677fd22f3d1cffbe74195615c7f1773b73a6601.jpg",
+      "size": 4620,
+      "sha256": "9b189bdc7f8bc841491cd627b2b74336272c1f9a9fb40476c6907be0561a007f"
+    },
+    {
+      "path": "hand-mri-source/64f7b539552ae3b73b6d6058aaf28176450520acf94ff6f27681fbd38a3d832e.jpg",
+      "size": 15371,
+      "sha256": "fb0b9d0df37465fa8487aef8d29475f13f0983189c43c0bcd984acf948acb61d"
+    },
+    {
+      "path": "hand-mri-source/6544c3f31a45d25b7a8ec469ae43b0d805a30dd81f0a1deb039263806254fb24.jpg",
+      "size": 15656,
+      "sha256": "170145a4cda9283d76e162dee649befe048f005d7d656e644ef381389fd629d3"
+    },
+    {
+      "path": "hand-mri-source/67cdfaf7359772b4ff791d5fe252c81d9952bd2968aa21ca72bbb66878609b3e.jpg",
+      "size": 15837,
+      "sha256": "43be1b9c8c287958d387233f8083e672b785d7c00a25810bf91134352250d7bd"
+    },
+    {
+      "path": "hand-mri-source/685d1b27536af32fae9f5d781f569e169880a04c14eacbb666733eb725654323.jpg",
+      "size": 8579,
+      "sha256": "0c9ace379b1677dbcece2b5762af0195e3472d463eb33d601d4d524df10527ee"
+    },
+    {
+      "path": "hand-mri-source/68a28da788db6bd5f3d858b7c31672fbec8b9ee34a31723c1ad3c686ce049f7b.png",
+      "size": 2171,
+      "sha256": "28be584a419c08f753ecb58f779f9d6a0567ed28c054fd96a0a36712085716dd"
+    },
+    {
+      "path": "hand-mri-source/696ad625d683fafcac688ab5aab6ccd28478af9bd1065589c21df2f12b630074.jpg",
+      "size": 14374,
+      "sha256": "6fc8fc4d539e9c80dc97d071669fe780ea40b2be620cfb982b1f14abf0d4582e"
+    },
+    {
+      "path": "hand-mri-source/6a38eb2fec7ea4370d84e11dab41a681fa13c180fa9b0e5dc2c6489925163817.jpg",
+      "size": 13040,
+      "sha256": "d854ab13ed802a00ec48fe6f4ebdf0b4763a534ea6922faeebc970774e204429"
+    },
+    {
+      "path": "hand-mri-source/6a40699872f50971a8317aded948ef5e8a029c955632759ece242b9dfb7c6bc4.jpg",
+      "size": 10300,
+      "sha256": "51f292ef5bc0692bfcc431795c52778e822332b760e2d3e125b44f691d38c295"
+    },
+    {
+      "path": "hand-mri-source/6af07e048df9cb3a1f2d4f3c0229837f993645ed313ad4e60bffc615532219df.jpg",
+      "size": 6589,
+      "sha256": "447aecb0a63f8379bcfa04cfbdb487bd2a0c1a482fe9aceba4ad7b6adb71c4ae"
+    },
+    {
+      "path": "hand-mri-source/6b16959d43b7b8aa4f7b26835a27ec51169a245893a3c1dd69379d5dac8325e0.jpg",
+      "size": 14332,
+      "sha256": "308b93ce240e992013881d7729bffcfad67789361ce68af9ca019d1bbd4bbf80"
+    },
+    {
+      "path": "hand-mri-source/6b1b35310558bf300160760405bbc30ad9374b654b4cbdb4c984d8d1379f8fb9.jpg",
+      "size": 9902,
+      "sha256": "f5043966bc53aaff9f73524ba873edb94c59e07dabdcfbeb198a444c5a51d8b6"
+    },
+    {
+      "path": "hand-mri-source/6c0f4de07f7ee4405aedcf895eeb166f3d3383e3e7aac7f222b12db822a8948f.jpg",
+      "size": 15715,
+      "sha256": "0e341cfe81702cc984fc5e32cea9b1a96991b0889b45906472bfb5a0eca4afa8"
+    },
+    {
+      "path": "hand-mri-source/6dfb02b1ce7a878255052e38d4b637fab728dcbcd41b90ad53fa003a9b064d68.jpg",
+      "size": 12194,
+      "sha256": "ca0deffd6af157dd887cd810fb2f0c979a251382b4471764b8ed39f9405183c8"
+    },
+    {
+      "path": "hand-mri-source/6e4bbf95e5ce4095efbaea0dbd8eaeff8459a3989c633375ec80fe1441173249.jpg",
+      "size": 16415,
+      "sha256": "cc62a74a34b4506b4e13c89b06a30bdd09616dfd268a4eefcedda1ea527b3ac8"
+    },
+    {
+      "path": "hand-mri-source/6f509eb3301f3e7c1e70648f6d9aa83281415968030fa5ce37831b3796e793cd.jpg",
+      "size": 12452,
+      "sha256": "ed591784b8375f616af45133851cf8440949fbb1df8aece2d38a704c5af4e4bd"
+    },
+    {
+      "path": "hand-mri-source/70170f1f3ebc872856438fb0991fc24b2803b1bd9d48e20403b6a2d6b9a65870.jpg",
+      "size": 14416,
+      "sha256": "4ecb1e2a1acd0a89c9790db6014f2554c4ff74c3cba511ecb253628775be8a4d"
+    },
+    {
+      "path": "hand-mri-source/70a81c54ca3196f0451309b368e547f68effef8ff0b6e4d69fb294537d8137a3.jpg",
+      "size": 8930,
+      "sha256": "23c593166c966a6053e7a8e949e513c044be94268b0e48c2841b897da30105c3"
+    },
+    {
+      "path": "hand-mri-source/7107be6873f78777324827c8edb94cb4121853b31a106834c3272578acb7140f.jpg",
+      "size": 10814,
+      "sha256": "6ff3d78d4403b30796cbca0256d85b4a2eb2eee8df0e6293a416741a874daa71"
+    },
+    {
+      "path": "hand-mri-source/7130ee8d714a0d1f6f3b36dd0efafb8af1b437f5e7892adcc4e575d68fe58b0f.jpg",
+      "size": 7175,
+      "sha256": "73e68e18e68759a22d727d26edf3038ae1f57f63f5f95dd87ca39b2d59b3d4a1"
+    },
+    {
+      "path": "hand-mri-source/722e7a9fcdc4103a4f2b6375321d81e21267ea24aa476332bf28c34addf0205a.jpg",
+      "size": 14252,
+      "sha256": "d28a5493da8afdabb21726e077b030546115806dac8889e9aa7d67f930e5ef61"
+    },
+    {
+      "path": "hand-mri-source/72b497eb8a2f302f91bdf67b7d477ce8e5c9b834088c449baf0246ed6cf4f05a.jpg",
+      "size": 6262,
+      "sha256": "292ea50ccf5c982096a9547ed545aab5d2146a3f4d5053c1d6d33f110301009b"
+    },
+    {
+      "path": "hand-mri-source/731114ac9ce388e83d07ad7e9ddccfc08056dae441b9b80d3c559a7e9fefc6bd.jpg",
+      "size": 11122,
+      "sha256": "19b19ba77ba2946d82ec53a53536127834e269a56553600d768cf0e452701134"
+    },
+    {
+      "path": "hand-mri-source/73426bd50e1e28c271580755b428b6b133793f0f6306f192c5582dab6dbe43bf.png",
+      "size": 4053,
+      "sha256": "a0d534d9ad5335950f9c5ac7f2736a7c6120b4bb260454cb1a4df822ae786c9f"
+    },
+    {
+      "path": "hand-mri-source/73cb21411dda401e9c452b762a0fefd37c8aa1f785189d696d9adae3b6515c37.png",
+      "size": 2885,
+      "sha256": "fc6e3b9abb2b62a47c16ceb2e4ebd44e33f8f75ac2a322fdaa435594bfdc841f"
+    },
+    {
+      "path": "hand-mri-source/73d1c67bf755b99ab746029f01f640a403134372f0c409f5528f6522c5520204.jpg",
+      "size": 11310,
+      "sha256": "ccd80d2cde43ce14b1ef045d517936f303710b800c1bf7d8ab88282d806ef93f"
+    },
+    {
+      "path": "hand-mri-source/743bcff2a7ecabe64e7b7d56b282f540a4546fcbf1512956ab019c6842483217.jpg",
+      "size": 5480,
+      "sha256": "afa33181875cb6abeda405e9e7b8c8ba3bc61b62cb3a8d78202d9d2c75b6423b"
+    },
+    {
+      "path": "hand-mri-source/7457a874224dd9082d0d5ab9553d0e5ca2ef3e9ae28f57e91e48cbb2f665000d.jpg",
+      "size": 3833,
+      "sha256": "b44717356b488d8114b96d289b351dd4de99d4059cab67d9da9ff7df1ea59903"
+    },
+    {
+      "path": "hand-mri-source/7588216a3feafa34471c2a6abfbe813e8da81c106bdf17a8acc6ac4e99fbfaf6.jpg",
+      "size": 8921,
+      "sha256": "b467b9440cc51cb6828cb5ff5676cacffd956288aae8e50b4bb94131319e2c4f"
+    },
+    {
+      "path": "hand-mri-source/75946808e2044e95c26cfc3247b791cfa501cac534176de089db584158ab32c5.jpg",
+      "size": 9618,
+      "sha256": "74b21f93d4b5d38b5c14ef583678938f5e70fc5eaa7996caea2f1ada98e1abc9"
+    },
+    {
+      "path": "hand-mri-source/7630d179dc000389690aede485c2f053dbb5d7c966bf08cc46752ff30f134366.jpg",
+      "size": 5818,
+      "sha256": "3ade98c00ecbc2d2f22b8861c793040daefc3655070666d67ca3681a1cbb3851"
+    },
+    {
+      "path": "hand-mri-source/7750dde31fad87ad20823b327978a8b1dcd149966ffdb2942cbfe73474325036.jpg",
+      "size": 14397,
+      "sha256": "ad0086b393ccac1fe43845567c3b0b35cd45711241706aa54a9b51b1ab990f69"
+    },
+    {
+      "path": "hand-mri-source/775acc634ec482892be53e8e035f0e7a0127a81b31d4f69327bb5fb4de4fac6e.png",
+      "size": 3193,
+      "sha256": "cb11e45147403f0711d05080d5f6cc521c91305ae71883915130b966aa3c4daf"
+    },
+    {
+      "path": "hand-mri-source/780eb9e1a0d125a73ab5ab93a366579b7833fc419e2a4657f9d7b37cb8c5dc5c.png",
+      "size": 2381,
+      "sha256": "93dd0f6c55feacd8bf6201a77a44c566f78b0a497bfcd80f5eb28f360596675f"
+    },
+    {
+      "path": "hand-mri-source/784f239858df512c2a7f857c89d1ff0b0ef320a1162b66094dcd867d8abb5b99.jpg",
+      "size": 16834,
+      "sha256": "5725eae7d8f8b39c1e0fdcab6647a259d31728f8dcad9337a6c9d76aa874fd03"
+    },
+    {
+      "path": "hand-mri-source/78a34a45372e2e308b49ba255b5cbb5219442555b609c8f9979a836d9157b50a.jpg",
+      "size": 8376,
+      "sha256": "9649017e1492faa525d5283581971eb4d3b86c4fba531ffa28335d1c51b252a8"
+    },
+    {
+      "path": "hand-mri-source/78e7d01eaa477d34ffd88fe945fd3eb9373681e8cfe996e85f815ecc95aaea39.jpg",
+      "size": 11322,
+      "sha256": "7c466080bedd62f8f0bd8e0ff5f3b3987ecb89922cc2f09a56730f3e794ab8ae"
+    },
+    {
+      "path": "hand-mri-source/7b207eee8b212e9d8a807de8b924e1be0d1d5df124b477ac640516bbc877811b.jpg",
+      "size": 18105,
+      "sha256": "22719600cc6965059f934e85ff8e478ba20936bf72cdef060b39a5c7038c193f"
+    },
+    {
+      "path": "hand-mri-source/7c33d644774c7ac757171f47520d6be3151fc6fff18abb78fe20513a0415d04b.jpg",
+      "size": 16569,
+      "sha256": "acbc9f961d1cc8a94ed44a9e3982e9459633c1a254a2ae93a8db4023ca5ee96d"
+    },
+    {
+      "path": "hand-mri-source/7dfee0dbf83e93f85b50d3b0ea703794fd634646bf17881e1e2b09a33d884c2e.jpg",
+      "size": 5188,
+      "sha256": "37a36d2e38259dee44ce6bb31a00a2e63362c1cde0709cd2e2dcb14928443c10"
+    },
+    {
+      "path": "hand-mri-source/7e13d2972feec115ed7e9d97c5508ceaf0b475a4e041ecfd39c598a9f460fdd3.jpg",
+      "size": 15766,
+      "sha256": "7611ae07df818f5c3eec5b5f5386cce94232fd6a0ebc1a32e4b29efb6e654546"
+    },
+    {
+      "path": "hand-mri-source/7e25ce34199a4b1081ae54700b422a4311994661165f025344bb9f912eee29ab.jpg",
+      "size": 14904,
+      "sha256": "749dcbd161bbb0d76ca46b3738094abe28b50cf1fef1be62f4d3c5e1e21f34f2"
+    },
+    {
+      "path": "hand-mri-source/7e960ce149179819e2d746b0939f0e0d5641c7f9b15f8bfbfa787a24538052c5.jpg",
+      "size": 8667,
+      "sha256": "7618b78f5c80f96e84b2c924b8911fac55c8edafd03974fb04cbf029e71e39d4"
+    },
+    {
+      "path": "hand-mri-source/80399ee1b177cdd8f1ffb0bb1066ab3447f6968f0a9de7ccb81fd0f504b330e9.jpg",
+      "size": 3834,
+      "sha256": "a73e7a83415d645cd830e01a6a7f8f0267e905d2f062e6ae449b2fffade54ba6"
+    },
+    {
+      "path": "hand-mri-source/82859168fc50e7d17949b56ec22939a8c4d3f7e8ba2c0ac4e24afd41069af259.jpg",
+      "size": 5470,
+      "sha256": "b031bb84d0aa6e1ae7f3b494e6d8de2972cb9e5171f5aef6ecd9393ca9e7b6a9"
+    },
+    {
+      "path": "hand-mri-source/82d0f323809519632196f17351c5a53549fba513d47e3ac4f9d087947363c11c.png",
+      "size": 2795,
+      "sha256": "2d6a72df82f6c8ab74233fbb81765cfec67e775e50f406d038eaa9d104cacd3d"
+    },
+    {
+      "path": "hand-mri-source/82d3ee67fdd8882cdabcbe661cba990049d5ba64395aa9cd8811cb885082159a.jpg",
+      "size": 12984,
+      "sha256": "e29338f681a7eb3e65a146d12da6f2ca4f9fc1a327f883722987c2f45bdd4365"
+    },
+    {
+      "path": "hand-mri-source/82d96be8a814c2210b6fa84105975cecc0452832810be725afdaba4599e0853e.jpg",
+      "size": 15963,
+      "sha256": "02664f75bf5fa7f963b8bd705f86e28840560aeece225fd02ea3039a6be6e1ef"
+    },
+    {
+      "path": "hand-mri-source/82f80b0832d5ba18904e3bdbb6058284d7b7e5dac77815fa55780a0703ee9671.jpg",
+      "size": 17833,
+      "sha256": "a988bce1c95eadadd187bd7eed93eed2f52bda998bb2f895ee0fdfba58e32d92"
+    },
+    {
+      "path": "hand-mri-source/83cf70501a632077603eab2081c9a532cb4007b789e8a57c16c704a28c0b9a3a.jpg",
+      "size": 3330,
+      "sha256": "0ee13421198a7d01d470c064244b701a4450c61b36b8473fa004d11be586f6b5"
+    },
+    {
+      "path": "hand-mri-source/841baf30f25f3868945a3492a6d5c1f33bb8d27010d76013a9aa2b0be49421a5.jpg",
+      "size": 8182,
+      "sha256": "2e3e7b0a1bae07848affe1a23b13c377b63b59a4bf7fb06015e6cafc844da3e0"
+    },
+    {
+      "path": "hand-mri-source/85650a4b38d4771d713218c1d202588f059c920a50bdb18e077c635eb9758c76.png",
+      "size": 3146,
+      "sha256": "a3d2ddeacff8576614679a2536061f2980f6415431ab572c6499898c5619a3e7"
+    },
+    {
+      "path": "hand-mri-source/85fe02b4a9a0820d3703ed2a4f56f36807f516fd7381134f1fefa6c555f31ddf.jpg",
+      "size": 12345,
+      "sha256": "e00f8c68cfb451e4119c9092d6275fa8f02f7adc927e53f457adecb3c8e1e41e"
+    },
+    {
+      "path": "hand-mri-source/8609703a6d0287f7461038eb3dfb06c52d7e45e812054fb38ed8c2118ea57ef7.jpg",
+      "size": 8451,
+      "sha256": "b8bb554d48cebf0227688d466f4eaba9bb779c3b6be67de90bb0993d4f70194d"
+    },
+    {
+      "path": "hand-mri-source/8750307db14d75d1fc9a30813d0be4d36303333cbecc0fd526068e1c8305a95d.jpg",
+      "size": 17287,
+      "sha256": "9c3f898f71bfeca2d40bb93e54eca15f371d8b4e47a996bbce6ddafc4abfb9f2"
+    },
+    {
+      "path": "hand-mri-source/88414440f88b16e1390bb6f066f7f7103167582733cae75754aa2f47d77ca630.jpg",
+      "size": 13034,
+      "sha256": "e465d8c4046295773fe56f855c58eac6d9f8fce409d2913e9dbc99f1b6540774"
+    },
+    {
+      "path": "hand-mri-source/889e1ce201793f9bae1633da5a92a5cf27365d39152ac0e8b5339ea4f2c4950e.jpg",
+      "size": 14639,
+      "sha256": "0f60605844e6f8f44b551d2c560226120dd395ceae8408de9e52768f0536c93b"
+    },
+    {
+      "path": "hand-mri-source/8924a1052670fc91cd474005fea09728d17e0844630f9a35372071ad438de811.jpg",
+      "size": 16573,
+      "sha256": "463c7ec238aff1b0d430e7bab34d3fcfc19fcd2003c655284b9313bf1b030fa3"
+    },
+    {
+      "path": "hand-mri-source/8b02c325789077b6e061ac41c8aa13973eecb989ce7f659b61eb9e2a6d4b251c.jpg",
+      "size": 16828,
+      "sha256": "4d3a35806348082812c178da682ebcaa0491032f999b1e4680718b7af78fee91"
+    },
+    {
+      "path": "hand-mri-source/8b1107336b5477aecd4bdf5a28c37a4b2b8d49172cac0cfea410103c9a9116be.jpg",
+      "size": 14395,
+      "sha256": "0757a8485c2e5c9c9cf3ab3f8cca450ff84c5dc30ef0ca59a939b27983f6d34b"
+    },
+    {
+      "path": "hand-mri-source/8b1e91f1e4fa4d5230b54517e33981a7cb5a28ac3765cdf200c655a0c1328cbb.jpg",
+      "size": 8462,
+      "sha256": "4f33115a5519268a97ae96b4f880116c884843d7ae6bb3876b89a937e103a666"
+    },
+    {
+      "path": "hand-mri-source/8b8438dc63c78cb3241378a9593c51ca0078134bf5f6e539a317433287e04dde.jpg",
+      "size": 8852,
+      "sha256": "353025175941d3d81714cfce4b1f80a4a7ab10f2eaea32468749bded2d8839f3"
+    },
+    {
+      "path": "hand-mri-source/8c22a72058e0e65e30f230ede95f19f69a6c4782a506d626ded82358c6f2d232.jpg",
+      "size": 16134,
+      "sha256": "7091686d9c25734ee4174aa4f8cc4b4bdfd7fa4c05c8b3df8b3363aaa54435c6"
+    },
+    {
+      "path": "hand-mri-source/8c8f8d4dce164676d3059367f95b5e2a497048c52f3efa71764b527485e1e46b.jpg",
+      "size": 10721,
+      "sha256": "fa3f33f5df0e97e1abad861bee6db4b85d7d60f4484e5f346e1fd034a825d3a1"
+    },
+    {
+      "path": "hand-mri-source/8d8281e19b9146c9d4f5b4c90dde1f5ac9ba727e1fe3ab40e2af4734d3cd183f.jpg",
+      "size": 8968,
+      "sha256": "216add6c7ed3d71b8c3422acc5e9f7387425a1900dcfc86261268f7302148396"
+    },
+    {
+      "path": "hand-mri-source/8da9e94d377978307e4c25da5290c5043a7373fab5af0dd3ce034fe5738224d6.jpg",
+      "size": 15594,
+      "sha256": "bb5f5098bdd024974e651574225b12faf7e975a2e2fe476ce3b16a8bd9be2d0b"
+    },
+    {
+      "path": "hand-mri-source/8dcf275be8110467a2bea7590bd9ff3b87ef90ca7af9fbddade46a9ddee2be4f.jpg",
+      "size": 5601,
+      "sha256": "2ae6aa0227db6c69e7a91de7543bf898725fd12ecbf2babb42aba98075659e01"
+    },
+    {
+      "path": "hand-mri-source/8df530a804dacfe95724533ec9479b2a15f19fb61d37126d286c996bacf9623d.jpg",
+      "size": 10818,
+      "sha256": "9e8f384f64f101e7b354af814fc86061f28eaf96a70bf0c862e3abb9d4e5ba57"
+    },
+    {
+      "path": "hand-mri-source/8fd9823ab847d7ea233327bf3bcfc00ea9161d92362e71b080aff9bf662f7d92.jpg",
+      "size": 8956,
+      "sha256": "36d8ef2b10d6626738e5a582af1a428b6db23d0f762b1b4b3f8dbc58e3a37aa5"
+    },
+    {
+      "path": "hand-mri-source/8fdb4360c9368318e33560f15c95917d8c2e5a6cbf5eb88c0e167006f9bc9a10.jpg",
+      "size": 10295,
+      "sha256": "5b1928a88a4972792391c13b1008e9e6f0705b65eaef8ab9e69d914ac321e704"
+    },
+    {
+      "path": "hand-mri-source/9117fc7ea3a7bc162ee6531351f80078ba5a5fceca272c6b71e9a4726571d916.jpg",
+      "size": 9552,
+      "sha256": "3b4060ea190cba5216a761962bf0cba0585e984e1830ba5badbe939af34a7fd0"
+    },
+    {
+      "path": "hand-mri-source/9162297f888cac54c37fd8493fe0674a6f7b8a2193350aed63e0b2ddb7a8739c.jpg",
+      "size": 9175,
+      "sha256": "4f46a74e710ad91b1849b9fd6ffb08eecff472903e95960297f0e9aa0895bce2"
+    },
+    {
+      "path": "hand-mri-source/91ed59a4a741fa29ffe63abacf252b346dac5eb395d866173ca54bb4ffb7a827.jpg",
+      "size": 13474,
+      "sha256": "9e9853947a5aea9b9205b2d513e6ae70d8d9be8fa33d70d3434fca898460fa39"
+    },
+    {
+      "path": "hand-mri-source/9269296931397f7e8ed0a6984bda42cad0eb6c932efe6f85726313b5ccfcbe1a.png",
+      "size": 3360,
+      "sha256": "8d870fd06a2e16f6f4e84feb1588b74c248ea2f0760e9588cdd0af2f4847427e"
+    },
+    {
+      "path": "hand-mri-source/950bba965f2302518e9e3d57805f54fe5e8b5c49a97b32c4323fce19f4f9533c.jpg",
+      "size": 15450,
+      "sha256": "06061a8c617fc1317f511a8e797fdc608e2c6b68323f30841ce9dff9e14ab7b2"
+    },
+    {
+      "path": "hand-mri-source/97aea2a659e35bd4d6e3cce589ae13508e5702154c7bcc361479b86fcac0b801.jpg",
+      "size": 18195,
+      "sha256": "c1804de70cac78058abe6674a8caee5593f7d7952517021bc86e74cc5abe4c44"
+    },
+    {
+      "path": "hand-mri-source/98ff91bcb49f2796899dd20d3b08f97aaea9e704c94b88666edf02d7bd4d54e4.png",
+      "size": 2298,
+      "sha256": "3e39b943c33af132dcc4e0a8cd48f58120de38b828a4bc2e73e6996b5353543e"
+    },
+    {
+      "path": "hand-mri-source/9947a1e37fe98f1d07cc57a6d716d4e37bd7e5fadf0ff4e5897054be80d49153.jpg",
+      "size": 3817,
+      "sha256": "54bb60abbe016cb928ee215375a398a79dae7f09b2e8d8d22f9f85890b810139"
+    },
+    {
+      "path": "hand-mri-source/9bc84356066bc3f4064c71ad0567d53e87fc44f9bcb7eb2bb9a5e41db4be25a8.jpg",
+      "size": 15897,
+      "sha256": "3bffa69c681f8675dec317b5df55fc4cff36a47d129d9c7f23c2bf97f6fa5405"
+    },
+    {
+      "path": "hand-mri-source/9c6ee428646161e76d4994f4dbcc80ad214e45942be958765f7d9fa788285217.jpg",
+      "size": 16958,
+      "sha256": "af2a6b3527245c1bd738243f2414f1b0ede7af24b29c81e96dc9bb0a82c39d01"
+    },
+    {
+      "path": "hand-mri-source/9cc38f9992fd4cc45c86264b434873beedc167adbbe2790eeb9ccda9d4d82ad8.jpg",
+      "size": 17247,
+      "sha256": "c7464544b9dff6880624b3ca7db06c9999c1cb558e4e819aa6fb42fd09f0e6f0"
+    },
+    {
+      "path": "hand-mri-source/9d4295501b9bae69f024260f47cf2e2033867d3ab2ec1b83926d529a7f98b2bb.jpg",
+      "size": 5548,
+      "sha256": "b92769626758599b6d71ce9f93c9af9147df7f6eed036d97ff1fed7f7767ac25"
+    },
+    {
+      "path": "hand-mri-source/9d84dc89f1542785d1dc1bb743ce8ad16e38031cece6b17e1e497f90a8b5dadb.jpg",
+      "size": 9616,
+      "sha256": "99c2be5437cc41578de5fae1c51fa29a547d8b2ad5de12d489d0570d69e2ea9e"
+    },
+    {
+      "path": "hand-mri-source/9ef11d077495a48200743d697f7d9ebf71c61ea0ccd0cf00339442d249d29c90.jpg",
+      "size": 5543,
+      "sha256": "6f295d26cdc5ad6d06dfc5ef8b77c39d6182cebbafe74c6596a4ee69a8158971"
+    },
+    {
+      "path": "hand-mri-source/9fa19fff3b9c04bf86562d3b1af9fc38b31c79df0450946f88db0f3f025cbd00.jpg",
+      "size": 4990,
+      "sha256": "ae72538ac9fb5a491bff0f2a6e9a35bfb295870a4f365dc687f9330a0b595aa7"
+    },
+    {
+      "path": "hand-mri-source/9ffc8f8f8d3168c54a6f92331baa475bb5a22f670a29b7c8a628bb352d741939.jpg",
+      "size": 15339,
+      "sha256": "2c7c148cbb45b6220c3ad1b36d28bf050515e0cd490608c954df38f658fe9d8a"
+    },
+    {
+      "path": "hand-mri-source/a016011af419dcb20681fe9a4691386c440ff1d22611299055752d8e509dee24.jpg",
+      "size": 7357,
+      "sha256": "1da1aaea23bddd87771257ecf5446cc1730cba51e27c855a527573030c42b9d0"
+    },
+    {
+      "path": "hand-mri-source/a05de1ba9a401e94adba7fd76f5ade87fe1c3b51bf15fe7561909d51a30b9fd3.jpg",
+      "size": 5260,
+      "sha256": "d6935f5af6c2ed342042df65fd0ab4852170a980becf8cb5d2ffefeff43a4da1"
+    },
+    {
+      "path": "hand-mri-source/a0e2ab75ae9618e8d17180d6da14c704d2794e21499396bd3063c4a387069b3f.png",
+      "size": 3636,
+      "sha256": "7a270c2004b86d8e869820ee1ddacc9ba62dd12191970911161fd561153ced64"
+    },
+    {
+      "path": "hand-mri-source/a243617d1ff80c8fa62929dabd1799d209d90345729fafa7a6f0e4d1ac23f909.jpg",
+      "size": 8666,
+      "sha256": "ff3fb81314815aa0267ab343fb4c13d1ecd098f937a221b06f6a921eab64e49d"
+    },
+    {
+      "path": "hand-mri-source/a2b2784c9956e0538841fabcb2d40921f806a210f0e8981191889153216a1096.jpg",
+      "size": 14948,
+      "sha256": "90b6a9cb5a5e799b74e895ba0870655cdc31c6b62d43603eeef9195e73b96e74"
+    },
+    {
+      "path": "hand-mri-source/a30d038d89f599fd994cd6ef70743dc1182549e5e4e174fa17ee1e7327de9cf3.jpg",
+      "size": 15971,
+      "sha256": "a796aa2d85131a7018207c4ac13aa709437689a534aac9228e12802eab657189"
+    },
+    {
+      "path": "hand-mri-source/a598f43b87f7efebd08da086d912f6d5e38e657d2c23cbf6c0faf3960da8f857.jpg",
+      "size": 9074,
+      "sha256": "694f9f7f86bd9449a067d1534e7d21d13fd97568fa6e13e1c6f2160c89d9ef6a"
+    },
+    {
+      "path": "hand-mri-source/a5f0bce39e4d27540638a7abb10aaede7d02ffc54bfcbe8cbf82c154c6ffd7a0.jpg",
+      "size": 18854,
+      "sha256": "b1e265123769dd9842ce3f932875b95e1f604e264773e3e24f711053552a0d75"
+    },
+    {
+      "path": "hand-mri-source/a61b989b81f132e0991e8ca95129461034a3a4e79da007a86dd37b35a9abf51e.jpg",
+      "size": 15474,
+      "sha256": "891e4dab0c0f111a6f453ef84d683cfca799dc5ac9c71e7e821c3d47aece8d00"
+    },
+    {
+      "path": "hand-mri-source/a6bfd405d6a87b00b1984385b1fddeecd2163239132ede2d329584abd2ed2c70.png",
+      "size": 2292,
+      "sha256": "aaee5696fb2f9db76c7da804d5a2219fd313a4e4b39796ffa137c732e5de646f"
+    },
+    {
+      "path": "hand-mri-source/a77cd6bbc8316fe63815d714aff9da85e28f5d9110d255f1630cb311a5756f5c.jpg",
+      "size": 17205,
+      "sha256": "2aa914da3ff40b61a326d69a8bc882349cea685b49b2c2daa3f0c3ff19789069"
+    },
+    {
+      "path": "hand-mri-source/a85d455a1140307cbcb601914a99c514290054e8300d52e4695ce62da7669ea6.jpg",
+      "size": 6857,
+      "sha256": "42d3ccaeb131c5ee9d986eae16e671fab8452f73bec4686cab97525edad126f2"
+    },
+    {
+      "path": "hand-mri-source/a8afd78668e6d2ee02bceaf5b9d90553907771831671e8a249d838b048429eea.jpg",
+      "size": 16846,
+      "sha256": "e24bbaae7b854381dbb1020eac9e060da571d40b44a508680b428f5a7a232d32"
+    },
+    {
+      "path": "hand-mri-source/a8d61486ef0a51f0a6b10a6aa2b28408df13402dd5a46421dc68bbe343642eea.jpg",
+      "size": 16727,
+      "sha256": "49d2b5a531006f2381b93d9dec8b0176012e75f98e32fd87d2f0e81669e69f26"
+    },
+    {
+      "path": "hand-mri-source/aa509137fa226d1a57228233b9ae69ace2d06fc62f74d874ea424fee9f9e3ade.jpg",
+      "size": 9454,
+      "sha256": "a857e6e7cad4da7a34bb56f92df0b360dde0d8aabd177e6d3cf0205fc4be3273"
+    },
+    {
+      "path": "hand-mri-source/aa58d44be66212e0c12f560689129461f175e75e7f00e018df7d6ed9b33f4471.jpg",
+      "size": 5393,
+      "sha256": "15b8e8fb52a3f39b553e4deb52eacb5c73e09983b0aeec6dfa0f791f9ae1506b"
+    },
+    {
+      "path": "hand-mri-source/ab177fd54b3831b31299ce0b076b64f45519e6269e6c3debe89f63071591ed92.png",
+      "size": 3975,
+      "sha256": "04a934af9e51614c40488a7d53d0a75d0f3a0bb357377c287b77959d7fe9b3f7"
+    },
+    {
+      "path": "hand-mri-source/ab588d840b30bcdb880337e6dff4ae13e2c155da8af59f4688a5c1d429e92832.png",
+      "size": 2992,
+      "sha256": "f955c900d0db46dd549c9401b807dd864dec9e36a9d77a657b0debeaa55061e4"
+    },
+    {
+      "path": "hand-mri-source/acdb30039c597bf0121e1570d366a1057745dee2f5c849c3d3994715e17c6409.png",
+      "size": 3275,
+      "sha256": "75e5a7dbcff3278ee380cc9dc292afd51942a3ccf380637e6caf0f8cb9da60d8"
+    },
+    {
+      "path": "hand-mri-source/aceef92e5395dbcc1aa9278e2448fd88efc202d6bc96a78004dac694e4d794b4.jpg",
+      "size": 14538,
+      "sha256": "7ff66b60421a264e7beea15c8dfdfd362f89ddf6623ab0533ab83c6949d56ae0"
+    },
+    {
+      "path": "hand-mri-source/ae7a7107fe634b051b53ddf3ae674d16b852814c3b37869bcce787f1ad1e16ee.jpg",
+      "size": 8446,
+      "sha256": "19f0d1fddef2ccd6f9ba356ec4daae02d4d059f92db7641f3245925d1ac9ccf1"
+    },
+    {
+      "path": "hand-mri-source/af8b99c303ec79eae1703dacba02bd184f8cd6543f8ff1c226202d2fd43c74a7.jpg",
+      "size": 8579,
+      "sha256": "d091a5f259c3c6940385d2fcd2a16bf5f6462f0abeb51a8ed592a906b5331103"
+    },
+    {
+      "path": "hand-mri-source/b17a5f1eaa28cdf198147835df1be4091ef2749e887a92b66726f1477915c445.jpg",
+      "size": 11160,
+      "sha256": "acd234298ddbbf19b98124ac3e24393c30e94961a2bcad76bf9288afa45344d9"
+    },
+    {
+      "path": "hand-mri-source/b268b7857f5221c5ec1737c20ef879a8ebe07ba47ffa2e76fd82e590af59ce78.jpg",
+      "size": 17302,
+      "sha256": "bd5c757c25fff7da197271de40aca3e108f9650c2c1d7c4a0636f80a2eff1b61"
+    },
+    {
+      "path": "hand-mri-source/b2b9e51c79a559c21822ccc60a121562a1f2019d0a41f5e36cf1378c64cfc131.jpg",
+      "size": 17083,
+      "sha256": "8e75f82734e5c85d851d4cd341b0fd6fa0eaf0577fe58dcf74e0c4de4bcd1f53"
+    },
+    {
+      "path": "hand-mri-source/b44a19fe9f3f1ce5d26d1fa745600a75dbb980247d4b1591edc136b343435a43.jpg",
+      "size": 9189,
+      "sha256": "7bedcb585c0af486db97fc0cc1f200a921328185e31b814dfec15ab31add57f7"
+    },
+    {
+      "path": "hand-mri-source/b5a3b7d5154626475250739d75213af4cc1675a44996c3c7425fd106bc29a1bc.jpg",
+      "size": 16018,
+      "sha256": "56dd9b35d4be6cf10566191c67b4effa95529dc2d09e8d58953466895e57d2bb"
+    },
+    {
+      "path": "hand-mri-source/b6b2a384d0cbebc0b057e538c62898f59f1410b660ae93c355c5be0d3b728e15.png",
+      "size": 2082,
+      "sha256": "97e1bfd2d794a9785dbd80931d2e999dfb842fcbae235ef7b34d8a2b9acce642"
+    },
+    {
+      "path": "hand-mri-source/b75a67addd8e94f1a8689d291872fc4f4e53c744349715e8993cdb797d250b95.png",
+      "size": 2139,
+      "sha256": "665c53bdca70dbb02da48d1ef152c2eab238e2a73c97705f9c5a5dd8d27c7683"
+    },
+    {
+      "path": "hand-mri-source/ba3e2e2ea9b1628a5ab7c6970815d713e9dde1af14d59ae575d67472a7702019.jpg",
+      "size": 14414,
+      "sha256": "c31a35e21f8c90f3b179a5f338eb70c4776ebf744669156df827b04b196625ef"
+    },
+    {
+      "path": "hand-mri-source/baf3a2017bca50fdcb44f7cc80adf455ccc395f7a2c56e98d174b25f4a36e80b.png",
+      "size": 2684,
+      "sha256": "e8f2307c23f4f25c1eb812e3a351cf06584cbfc2c01eee5f59cfb9f8ac44c116"
+    },
+    {
+      "path": "hand-mri-source/bb250e2b2af4cd7c7c364bae8f08c8dbe9d106e16d8b9fd70cc4009e07db3295.png",
+      "size": 3594,
+      "sha256": "e64aebe8127ae665772d8d01244c105fe262d7475ed0a3713b90b4b981afee62"
+    },
+    {
+      "path": "hand-mri-source/bc6b2f00967f3196b604d9951aa56ac0a0f54435be6d30612bac6af2af6243cc.jpg",
+      "size": 11751,
+      "sha256": "c34d42f635506267f95e480bb842ec26e8c67300f6b6cdacbed743943be8578a"
+    },
+    {
+      "path": "hand-mri-source/be5224dbefbd8b7e8e66078cfb0848c624cb33f2cac70ea048ab79b160c02a32.jpg",
+      "size": 10491,
+      "sha256": "f2bb84819e70bdecf1df2f35370d9c82f1cc820d360f120f8aa61f904374a30d"
+    },
+    {
+      "path": "hand-mri-source/bf1aafadf7bd7d9e70c8e8c00f6dba83c8c47928f2df79e5f4a903b7a7274302.jpg",
+      "size": 9651,
+      "sha256": "ef5e9fe89a6597e5ea4ab8aa81d2258ecdbdd56c3bfd213e31a683864ca3601a"
+    },
+    {
+      "path": "hand-mri-source/c32b943873d8c229206b1091f4b4819680853882d0c06ccc4060c8b43d886755.jpg",
+      "size": 14708,
+      "sha256": "f3bdfc0e61928f064defdce48fe7fd35040974b175a949f84197f66b0f311e89"
+    },
+    {
+      "path": "hand-mri-source/c32c9778fb1edbfbbd019f472fe3a8faf4a888861119bd6ea878ded89061351c.jpg",
+      "size": 14172,
+      "sha256": "4de3242a270496d86577a4019261831addc2d39eb38640b60ca99be40b0f1303"
+    },
+    {
+      "path": "hand-mri-source/c353963e782a8926702f9ca9fc6b8bdfdd46d6e50413ec2c1076731f181981a3.jpg",
+      "size": 14593,
+      "sha256": "2b7700ec7eacc02c350d9214633fcbd1b59d58cbf779db7b52ee42df00b20da6"
+    },
+    {
+      "path": "hand-mri-source/c39daf415590d2e12ace98cb97bede6fce3d39f33dfee98956cb70db18fd4ce5.jpg",
+      "size": 8520,
+      "sha256": "7c5236dc7b3164982a10e6e5d5b89e5548af560855e3f53a95b692abe41dd9bb"
+    },
+    {
+      "path": "hand-mri-source/c424448cd21f833e4d9c7091f8932e83ac1e0e5ae6c98dc28b3c549bef6be99b.jpg",
+      "size": 14375,
+      "sha256": "620b178e7e0dcca7145d2acf5a74640914182d86360f60e9510bdc26bc0fd6f4"
+    },
+    {
+      "path": "hand-mri-source/c44b836d4d4906918dee0a1730d33f1055c085661c847310d66440dfd85ac6f4.jpg",
+      "size": 15783,
+      "sha256": "46a2fc49325fd08970f4d71ca2d74b2134e24d627c2514bc19b60376f20115ce"
+    },
+    {
+      "path": "hand-mri-source/c4bff7072c70fa6139168d48a731d30fd5b8b94449477a492eac57aa2dc51756.jpg",
+      "size": 4458,
+      "sha256": "54f8b13442d792f1b7b3e5356cc14e8bddd455d6826a560ccf35758b06daf7ec"
+    },
+    {
+      "path": "hand-mri-source/c650b8e1c576af88356decb9c7174fd126f9d394025cc628d77da4af584c0709.jpg",
+      "size": 14639,
+      "sha256": "a479a2c87e41f5530b393223c3c4963bbd23c04b3d072052067cc8fdaa793214"
+    },
+    {
+      "path": "hand-mri-source/c695a44cb1b0f45de1b5020df1bc79cbbe2aade4a7facc078d40e6bfd59a24cc.jpg",
+      "size": 16949,
+      "sha256": "e5a6d920fa70b34ce543b836445874ce3e1554ad41f0ece3c5b78b7d5ede8c96"
+    },
+    {
+      "path": "hand-mri-source/c69d92330c153878a42f8768698c1c8912e6c2c440bdd28f734e5c06559626ca.jpg",
+      "size": 6922,
+      "sha256": "7966dc17626c812329f642000c895754ab9a55f91548a6c58d04246d3fcf0d37"
+    },
+    {
+      "path": "hand-mri-source/c744d36f9613b3c57a939fe4bc40627c2f3bee489f1e2f8c1c962c22e4321079.jpg",
+      "size": 18213,
+      "sha256": "0bcaf9f1a93c65f19a4d98a82bb8ed511e821431e5268c4774839e157b6aaade"
+    },
+    {
+      "path": "hand-mri-source/c74fabddaf8c3c93016f10a5eb2f8afc39513c1a0214407940b9d35fc92fff01.png",
+      "size": 3268,
+      "sha256": "6e2c2ef725d73d55e5f7e2a67d697a322bd9bcea5c099d409d0a1985cf8fd3a4"
+    },
+    {
+      "path": "hand-mri-source/c7e143c39057f5c91dc38270f438db70ee93abc6f5baf369b185bb7c92f7e532.jpg",
+      "size": 15098,
+      "sha256": "87569e2cdffa956e36605db658f4f4db500206b1603ecdb62f22aca7f351e1bf"
+    },
+    {
+      "path": "hand-mri-source/c89995fcc048a895721e9d5b1a1843090246dd9a311a8704818b115f8c7c8917.jpg",
+      "size": 10908,
+      "sha256": "212f25fa7c0a7118b0e3c0cec4cf69b631036f3fe5cddadb9d869add18a3ec50"
+    },
+    {
+      "path": "hand-mri-source/ca0976e41923a4f5efd60140aa467c5f0182acf594cc9392f901a4b1ea3b7621.jpg",
+      "size": 16531,
+      "sha256": "2bdc3c2a538ef9623b96eef779f36da1b01a34a940359656d0672dbf88a21084"
+    },
+    {
+      "path": "hand-mri-source/ca1d079a143f5af72d2f7691012b48500eaf54818ba6019e37ff5c7960a5a6b3.png",
+      "size": 3395,
+      "sha256": "075e7adfb7991373e33dd018fe85eee49edba24a195895c337bcbb30483c2a5b"
+    },
+    {
+      "path": "hand-mri-source/cb6a528ef0cb9e5cb1d1cc37fd3d328d34dfb6aec9699ea35e0bb9b3acff8067.jpg",
+      "size": 8148,
+      "sha256": "d840b1c32c16f1d9a60b81fe267affb3d93c7f6cf25375d9a7ed4e28a244889f"
+    },
+    {
+      "path": "hand-mri-source/cbb711cac127e09cf21ab945144f4d1a111a796c7a32b80378fa5105f5b57fc4.jpg",
+      "size": 14384,
+      "sha256": "cd488e66bb1b367cdc48c74505794fc7da997ca2d523aba660943b62943cafac"
+    },
+    {
+      "path": "hand-mri-source/cbdc1f1e346ca85eb6dd9656736f43b24a839b8a5ae98e76c99d28318539f06a.jpg",
+      "size": 6634,
+      "sha256": "32cd37cc17e9ece439a785cc27dbb3f0edf4e49c391adf46c1173edd6aad4685"
+    },
+    {
+      "path": "hand-mri-source/cc27425919294d30b2c08ff857109ffba4928a782fb3b7f11a3fed6bb801e1b0.png",
+      "size": 3286,
+      "sha256": "b26dcb9806c395969679b915379804b7e1a9192320d7fba67ae9a6e1dd7846dd"
+    },
+    {
+      "path": "hand-mri-source/cc3e74ccbba253f2483ca41560f74a6831c5950d289a36e36e1bde980dd99e81.jpg",
+      "size": 15684,
+      "sha256": "36eb4285fb12c28b6cb507ecc7dace98850a25aa8c69eab0996b0e016db6a4bb"
+    },
+    {
+      "path": "hand-mri-source/cd0fc662d268c7bf4ab85f16ca3966c5ca1a30cd63bf6665662f0227fe411720.jpg",
+      "size": 13644,
+      "sha256": "928c50405c06045bdbb1d57a06814e2ea34f457e6992c402207764ac91cb2532"
+    },
+    {
+      "path": "hand-mri-source/ce5d6508ebed3167a1dc157a34381a94f71a768d3e80e3fcf0b530ffbe61fa61.jpg",
+      "size": 7861,
+      "sha256": "b564b35711c66af6e718f22f7da043e401610b5abb72a017c3eb9b8471491179"
+    },
+    {
+      "path": "hand-mri-source/ce89a5c48d10681cf49637021f6e2f17f9cc008134a7883acff7b0eff02a0470.jpg",
+      "size": 16881,
+      "sha256": "8573fa39b2f659d1469b38c9b5daaaa5bf8c24097b9443b3f176bf26f889cc54"
+    },
+    {
+      "path": "hand-mri-source/cedeba47b3a73da5827693e929da3c5506d5de3c72563d3c6c9ecc1c177a24a0.jpg",
+      "size": 5405,
+      "sha256": "97633f8f77b819f604aefd901b39eade7aa83ece0e1179dec91897e8274f4bf9"
+    },
+    {
+      "path": "hand-mri-source/d08e6bed5f6604eeb913fade8a86586c68aebcd60df65270e646e578437f005b.jpg",
+      "size": 6184,
+      "sha256": "4058818f25b0d5223040109488efc16e179bdb1de40c89f92daa9d4f8ae6b36b"
+    },
+    {
+      "path": "hand-mri-source/d0d8194e87be80d838c12eda2e7999736daae4e7ed5d7d3abb1c0350cca4bf24.jpg",
+      "size": 17881,
+      "sha256": "99c36a7b55d90b11339b6ca9d14d8ff7aebbd2f55a1f86018b3ab0ad3efc15a1"
+    },
+    {
+      "path": "hand-mri-source/d15dc8130a33d58058a50a977a47dcd260b22b42736f26a646caccedefa152fa.jpg",
+      "size": 16640,
+      "sha256": "ad8cb05224c23a4531c5fc4002530cdd32411dd356f5b6ad98c16d3f7a5026f7"
+    },
+    {
+      "path": "hand-mri-source/d162025a3cd852dc7b67876650870c60e092403d3b6afce76b2e9604f682b655.png",
+      "size": 3284,
+      "sha256": "82877612f534be90b1e4d567a7feee083979f560677c7551d3752ee3a9286ae3"
+    },
+    {
+      "path": "hand-mri-source/d1c6a64c29e5511fccb1aae863c6a16298e4545af71111f0791b9f6f04528693.jpg",
+      "size": 10043,
+      "sha256": "66885e90cf434b8de0d447efb0278361ad678c0cdc67949acaa8bf7e1125ead5"
+    },
+    {
+      "path": "hand-mri-source/d215fe19352e427fd31948b2f3c0160b46f2302c5c3085fe9886f9290bf265f8.jpg",
+      "size": 18335,
+      "sha256": "a10fda082ce516e20b93960c2a4f4fca4539d7e851d00233b8d7316b9f8d37c0"
+    },
+    {
+      "path": "hand-mri-source/d2cd2b7757871427e62e700a93e4eb8643fe7aee1390587e44bc4a1689bce44e.png",
+      "size": 2201,
+      "sha256": "d3238319588067ad032eb5b14edf775fc0bc4e7ae0efcf951e2550220adcf999"
+    },
+    {
+      "path": "hand-mri-source/d2f5d276f52df1e841e402b1f8d305956b3531d3164e7e6099ee8263b5d3d7d5.jpg",
+      "size": 10998,
+      "sha256": "01d4683c4851d7c5e81438dee98d35272aa11130c16904dbde97324a640f988c"
+    },
+    {
+      "path": "hand-mri-source/d31abf44bd068db4900101442cc8b56935be4b6eb609d7be46c73f39829e7a95.png",
+      "size": 3792,
+      "sha256": "46a6d465f1b3a27f67de46acf1f21fdf0e95720f9898ca7f11aea46d1a2a0a77"
+    },
+    {
+      "path": "hand-mri-source/d3acfa890c60fc901b2892857bb00b8d6e76c67629be76254bfd99583c2dfa2f.jpg",
+      "size": 13490,
+      "sha256": "95c99bc106c5457647fe1eaa71927e13042e51a5e2aec9ce3e945bb1c9fd7abb"
+    },
+    {
+      "path": "hand-mri-source/d4083278e0de9069a1ef0fdafee25af01cac343a22c47dd6990497ea8fbe7658.jpg",
+      "size": 16648,
+      "sha256": "bb186343f2556c6ae6073422be67e7d4cda77fe6ad9e843e2fe7792024ffc736"
+    },
+    {
+      "path": "hand-mri-source/d5baef8903c8b1d614fb2325ffd255d1bd22a4e05e06a46d22f802ca7e58bb8a.jpg",
+      "size": 7450,
+      "sha256": "e03170fcd6492728d71e98a3bf3ebdb5e729c8215524b859b2d53a358642e873"
+    },
+    {
+      "path": "hand-mri-source/d8aac3cf171bc38a86e2fd5a68bc9e53a099d23dab7b139f7b3b410545078666.png",
+      "size": 3387,
+      "sha256": "39917399fe906845deb2b052f2d5f9afe1e1f5c3194f7abf394d2424715ea20e"
+    },
+    {
+      "path": "hand-mri-source/d933291f38dcaa79e465ad03e8ef7e2ddf07392c0ffd5040011fb84157f55706.jpg",
+      "size": 6893,
+      "sha256": "cbddf746258127fbd63017de9490223a2028f93514e9e6d5f5d099318053933e"
+    },
+    {
+      "path": "hand-mri-source/d9361fb23b5b2d77d004b68b9ac63dd73d4967cbd7b7c10cbce6706dd1444468.jpg",
+      "size": 15211,
+      "sha256": "70779414eabf732e46c28069e7fb4f67291049c6926a954af7b37a55f81f02f0"
+    },
+    {
+      "path": "hand-mri-source/d9db0d16797d5c3f2eb1d031736d3276947367e043672c864292178257128d51.jpg",
+      "size": 14956,
+      "sha256": "ce0c4fbce030141d7c4a97ada9b640d189c560bce5e2e021d380f59272e16e9f"
+    },
+    {
+      "path": "hand-mri-source/da6cea800bcb86530d37be58a651d5fb08d59cbb97f34d5ab76656c8aba007e3.jpg",
+      "size": 17828,
+      "sha256": "ae2cf42bc2d3bde99cedb52d31ddd85866e51d7e70c7b43beed8854377f60327"
+    },
+    {
+      "path": "hand-mri-source/dbca712cbf9967759971715a4e4e786b2da776972772a0e85f512c155ded50c4.jpg",
+      "size": 12687,
+      "sha256": "b53f2c4bc1df1f4500d88621e091f8eff4f318e6c729486bc039420679e81431"
+    },
+    {
+      "path": "hand-mri-source/dbffae4dda0b054a37558c987a1bf716bf619f1998b39a4cc0f509bd3193c87b.jpg",
+      "size": 16521,
+      "sha256": "e342e0057d766f6207d5701d603d34a8053719cdca0a38e81f4d32d13e63cab4"
+    },
+    {
+      "path": "hand-mri-source/dc1c0a9a682f26ad136a633e63e3c4c88d03077f81324484330ab28ffaaae752.jpg",
+      "size": 8875,
+      "sha256": "57ccc9f867457c18d63f6527aea83691bc4547b098a72bda72fe04d3cea2afef"
+    },
+    {
+      "path": "hand-mri-source/dc88f6b38aae537db6548606b82ffe16fba38c84548fd015ffe840a41bcd19a3.jpg",
+      "size": 15404,
+      "sha256": "b1939ad0f43d2468375155474fe5c14b829af8bb8d6c53a519ace3fe3e59a6c0"
+    },
+    {
+      "path": "hand-mri-source/ddbec3d8adcc4b2a4722a5d3ba2d340cacdffb6c778d0792d4dea054a65a488c.jpg",
+      "size": 12760,
+      "sha256": "fc69e5dffaa2866fa89cae08e7632f62f8886898f0b8430bcad78d6e82e97297"
+    },
+    {
+      "path": "hand-mri-source/de74e41c7d9d5c983cddc408784f42a8593a76ff55b23b3fde2653a009c56b1c.jpg",
+      "size": 14093,
+      "sha256": "90b6beba8db7f778726e1002a6e7e85df710ae1ea03ece670bfbbc2094967737"
+    },
+    {
+      "path": "hand-mri-source/df191557cac62df0fbfdef0ec81861b16c9d691b2546ab7cdf5fbbe5e8d259a3.jpg",
+      "size": 9493,
+      "sha256": "c784672ae380f29cc3be2267ab82c3248aa8a0ee6ac95e813341013b8cb284bf"
+    },
+    {
+      "path": "hand-mri-source/dfb266f9c48b21ecbc6d5d58088a679fe82df581fa715ad6b1f933bd9003b2d9.jpg",
+      "size": 3871,
+      "sha256": "47086391220b80e703502080d33847f3a0c963eba07b05eb98bd8050dd4a796b"
+    },
+    {
+      "path": "hand-mri-source/e15598ff7629c55afdae9cee275b8b3323045c05580d3c7a7cc2842f635e39a1.jpg",
+      "size": 14201,
+      "sha256": "2aaeb988d1fb82e5b91daf75af8cd3de5399a6eaaeaedfeb9546584e774f0ebe"
+    },
+    {
+      "path": "hand-mri-source/e1dea9eb7308cc69e0ece10d807d014639178c9239fa4221227ee4092cd8c4e7.jpg",
+      "size": 9358,
+      "sha256": "7124d0eb3569310f62830e00dff9937babe7a649b3c0a8c8fc6ac70eae1ef9af"
+    },
+    {
+      "path": "hand-mri-source/e2316422085683e1aca51bba366a20ff1fedf2bf9c3544bb965fb018a7e6fc88.png",
+      "size": 3443,
+      "sha256": "5aa5c6429b90794bbec94ba58382bfe4c99ad2c3e3c1a2d8b775a800f1165b28"
+    },
+    {
+      "path": "hand-mri-source/e267ac435567b7348678b7ec6f42d5d564e9317afc7109167a8c91b25be756ea.jpg",
+      "size": 17789,
+      "sha256": "17cabd288357a3d8454f9780f7a2c61ec1cea88d621582ce866d57725368667c"
+    },
+    {
+      "path": "hand-mri-source/e3519bc9f1aac2dcd69d98d617303220e703f273107a9670d0a0315da2892b59.jpg",
+      "size": 13604,
+      "sha256": "f693396a25b3ecdc0992748e261f337b6ce6599add2ccacea2382bbf34c05eaa"
+    },
+    {
+      "path": "hand-mri-source/e38c96ea2c62ce12076d1599cfe10d71a76e2e556995f0c62554f6f798a44f37.jpg",
+      "size": 5289,
+      "sha256": "73a6cf514814e0a2e3d9a9b99e77c10f36be99bd950f50f6aec9e2a490862d86"
+    },
+    {
+      "path": "hand-mri-source/e4daa2c454e5af655cfb3274d59ba53e802934e8f4aea52c99bdec6246a3f90c.jpg",
+      "size": 17288,
+      "sha256": "63ab1a20098874c18fa4c9f868a0bb73dff4f7f6040695a902fe2d0a5a254ea9"
+    },
+    {
+      "path": "hand-mri-source/e7200d38f3ce580d66109df0322288c7b64e51b69964d8e08f2ae4d6b0e93b6c.png",
+      "size": 3697,
+      "sha256": "713248dde1a272ec6c21dede4b65f628f4d44cdbad4bfe0d931063010edb42ce"
+    },
+    {
+      "path": "hand-mri-source/e8080ca5a36a0ff66de060c69aeba2db473d7ca99f75af1dc075de2df7d41554.jpg",
+      "size": 11216,
+      "sha256": "aeabab301a91d05b91428e132666156a1ff7dd81e29f7950980471fad7c1a63c"
+    },
+    {
+      "path": "hand-mri-source/e8b55b13786fefc6f546e9f0aaa4b6b31f535ec11eaa29602fe43f4209853088.png",
+      "size": 2571,
+      "sha256": "940a179066b8ad1c7a1a5b92d9533ee0138a3b853964fda9b2e63b754750ea29"
+    },
+    {
+      "path": "hand-mri-source/e92bf685bd490d112ff30664ec44d15ade178bd86ade8b2c21debb7553f231c9.jpg",
+      "size": 7731,
+      "sha256": "5727d551ed24a4c6879b93133edca2ff01e31c11af5542f7bc6324a560da448c"
+    },
+    {
+      "path": "hand-mri-source/ea752a1de4f1abef0fe6372b1a68534520e26d7012e6f7cea7b4d215badf3f53.png",
+      "size": 3485,
+      "sha256": "924b95371f76692e41b82b6e18299fd8c331f17bd5e3cf01c0e0e050285df6fc"
+    },
+    {
+      "path": "hand-mri-source/eac873424839fc1c0b2b34ad600f221588eab3f45fbd3c1862e0972bf7fa489a.jpg",
+      "size": 19092,
+      "sha256": "e579f387769813556f27edcd22cd2d4e9de2d9d06dfdbf3b964a11d796c4bea5"
+    },
+    {
+      "path": "hand-mri-source/ebc3aa894bb05109a35982614780f315c73aaddf7492acc4fdf890ae0366624c.jpg",
+      "size": 14174,
+      "sha256": "3e01d397c346cd704bf3ecf15a551df84dd7d32d295f894637d31f730f6cea6b"
+    },
+    {
+      "path": "hand-mri-source/ebdb27add575b987067cb2d24d412a8451ec77aa0bf8eeec08e44fdc1df32070.jpg",
+      "size": 8430,
+      "sha256": "9668c3737bcb4390b05dc134dc3fe463f3e202ac3e36ef57752adf38901e1c6b"
+    },
+    {
+      "path": "hand-mri-source/ec6b8d9e5b4f59770f582bb3e2bfa3133ce44c3557ef4637fac9aafb9359d72b.png",
+      "size": 3603,
+      "sha256": "9c5455e84ce6e818c615affeb3f87c38d2a11cccbed5b2d983d31d66e9175ad2"
+    },
+    {
+      "path": "hand-mri-source/ee5ce8176da76024af197b727ecb18b1cae063b412f48d70810a180c31a05406.jpg",
+      "size": 12818,
+      "sha256": "d28bab7486169d92a4c5562aa3ff681358250a07ff6b224053a80710de29ee67"
+    },
+    {
+      "path": "hand-mri-source/eed3ccaac97ca5ce73c08939265b03b02f9928bb4c722b99869f82d69d7ae2dc.png",
+      "size": 4435,
+      "sha256": "138e2d02f3f38a4fbc04730f99b25b0bb68deea312553074e4208021a23d5ac3"
+    },
+    {
+      "path": "hand-mri-source/eeeb808cbbb72c62933e9472582e051866ca171b7cb949e371342550bf2a8bce.jpg",
+      "size": 10429,
+      "sha256": "3380a62cf987ed0bf718cb9f192fade022670616284b5e26626bf9ee8ceb0c09"
+    },
+    {
+      "path": "hand-mri-source/efa9fd4e68cb43ba53b71647954900abb9ea67e63e4dabc21eb8202dedbc4e23.jpg",
+      "size": 8286,
+      "sha256": "ea9d5712e5ce80b4a5bd1dd7762271b7c44533cfd7057df0d7ffbcca13f48c7e"
+    },
+    {
+      "path": "hand-mri-source/efeb950b05a88fdba09aab5cb067302928f1cdb7f59608c9fa4943857288be5e.jpg",
+      "size": 10154,
+      "sha256": "96c4d5b0f48d0abde9cc18f586e648046313d5217202cdbb3c04836731f13fb0"
+    },
+    {
+      "path": "hand-mri-source/f0bea4a7a0d9dae1cc4c6b5f24fa78ca3fe17593ca3fc7064f5cd8f2ddf4f38f.png",
+      "size": 3995,
+      "sha256": "5d6fb840a4c47d623418a7f478cd9093aa1403cbf0d741b1b1ec590ed056cc25"
+    },
+    {
+      "path": "hand-mri-source/f0e8b8607b68b66ad37840da4dfcc6f49882b32a4d63ffb97dccba2c12d0aa64.jpg",
+      "size": 17500,
+      "sha256": "8144a1402fe4aa6f151de50131c8a49b369da23afc7560d739e8a3a11aa4213e"
+    },
+    {
+      "path": "hand-mri-source/f1c4c751fcff6713382a1e3db152388a3632152c73963317144b8557451b0c90.jpg",
+      "size": 21173,
+      "sha256": "637de3f1b51787dcb334347feb1158dd3ee4b74b8a184427e5458f76c33d928c"
+    },
+    {
+      "path": "hand-mri-source/f201e6115e904d908c9d635961fc65e6189c40134a36a80f40ab7fe7d01e90ff.jpg",
+      "size": 12195,
+      "sha256": "e1f7d1990db0f42404b2c4ac797197eb01a73e17a8242ae66efeb1f952d7c2ff"
+    },
+    {
+      "path": "hand-mri-source/f249f596ffa1e1513d5b0c1ad4b19d27c0887ee575d141040ce3edac3ec8537c.jpg",
+      "size": 16556,
+      "sha256": "f349bfe5b87679161ee37b6a3c97826527225afd526d8f4ef28960a56c5a0a37"
+    },
+    {
+      "path": "hand-mri-source/f381a3acc4e53ad80553713616696ee508984407b10a6eab038daef07fd9c6d8.jpg",
+      "size": 16699,
+      "sha256": "734c14e7585f924d291d0249d97416dd38b24e81df4797b39f234351f9e59692"
+    },
+    {
+      "path": "hand-mri-source/f3f4f446771d4c145cb760ea3764249bf536b801ff1244ccfac096fbbe034da8.jpg",
+      "size": 13911,
+      "sha256": "5ec929d460afcf7e50213eb1f7f0605aa1090ca41ee1a5261f66e10c24c92f7f"
+    },
+    {
+      "path": "hand-mri-source/f53507ebd3513e5229d883e51c1671874c707a3f857d52926b2e93ee7bed3d9a.jpg",
+      "size": 7925,
+      "sha256": "44e68bda332f3bb9a0037df21455fab21f02fc4293329dd9d90872cc02452de1"
+    },
+    {
+      "path": "hand-mri-source/f58152d0a1b0c6a6c2ff3f734662d686265b184373f6b81af4a1d7b239b37599.jpg",
+      "size": 5663,
+      "sha256": "5df493babfb769b5a17f664ddd0a28bcd65b9c5d0f87ee5f76f18bc43a86bf61"
+    },
+    {
+      "path": "hand-mri-source/f639d8c39f5ad99ea4aecc9436b966ea2ff74f72a58c1e67a3845aa381a1e090.jpg",
+      "size": 5003,
+      "sha256": "f8de2669f0b23ea5aa5e7707e9aa7d6bbfcbf4fa2ce6b5a6ec223e52211884ce"
+    },
+    {
+      "path": "hand-mri-source/f63fc3b530ea4f48485ad369d6e766b766dd98dc39c99de0301d6cbaafe1c06d.jpg",
+      "size": 5805,
+      "sha256": "39650d2e56a35723722b7828613637094587fd430cb232cb10324f5ac5fd48f4"
+    },
+    {
+      "path": "hand-mri-source/f662e48c62e9f047b1cc4a531a7fca74bf9decd507eabb49b957f3de69436526.jpg",
+      "size": 10575,
+      "sha256": "498c834a97174447f79142572b08f07f4eb53399ec35513d993c6b2ed5e48d57"
+    },
+    {
+      "path": "hand-mri-source/f7ea1a0096ea4146e1aea86607bb7246c5465a3e724d2176656099068fe0d979.jpg",
+      "size": 15431,
+      "sha256": "92b423cc084ee3054224594de3191c930638ef6d32f028d93aa2f2d9d2bc2ff6"
+    },
+    {
+      "path": "hand-mri-source/f86e058221d3a422e631098d613e4e1061a4b03fd764d6da6252a354f3b71f13.png",
+      "size": 3031,
+      "sha256": "7d00a7416a9e12ecfd970062d7aa6c5e673666b8927ea7c298e45b99fd18bb1e"
+    },
+    {
+      "path": "hand-mri-source/f89c6d704a098fa9813939fc93104320c9c9c7fac0171e6b7e6d4dcee1bc68c7.jpg",
+      "size": 20159,
+      "sha256": "fdc84775334524021a8ff746fb2161dd70b127c02374e11f57cb13c51b5c1f6c"
+    },
+    {
+      "path": "hand-mri-source/f9d3c2f5abd80506c3a6385bc7152b24309bd441f5bff6b40524fbdbbecc958d.jpg",
+      "size": 10473,
+      "sha256": "c8d428b0bac3200be932ae18be19740ef043e2e94cf644e71294f6d3b855b9ef"
+    },
+    {
+      "path": "hand-mri-source/f9fdad0aafc6bfd25414736c09da68a7f6d8340bce5f00359e16df756fcd13b6.jpg",
+      "size": 17976,
+      "sha256": "ced64455cf062386de2575de9350c167e2c6640fda6f264729dad26984c73aef"
+    },
+    {
+      "path": "hand-mri-source/fb7d7d06596a0237cf735683d5c35c4296b5befb0772c6cc79c8a2cab857b086.jpg",
+      "size": 12974,
+      "sha256": "e94ceaa949b5b712e5d8b110d997eca1ad9f05a9e4db76d72e9fdbc255f4fca8"
+    },
+    {
+      "path": "hand-mri-source/fbd78959a7056b19452c6646faf71ae736cca5dc729991c7ad1a8f41885947f9.jpg",
+      "size": 15611,
+      "sha256": "bc092730ad70ec777f99d048656b086ab24e2184fd4051116a324b351f6696c0"
+    },
+    {
+      "path": "hand-mri-source/fcc7c1c67aff302d22576402755788d3f4dd9d70f2a8452fbf3d8d8e9dfa7daa.jpg",
+      "size": 18360,
+      "sha256": "df837fcc79714c797fdcb7f84bc7b90b8ef4cdcd155f5526bdd19c630547ead0"
+    },
+    {
+      "path": "hand-mri-source/fd304315a65ff8524ea98641daca8237082b0720d4a9c3cb4ce7b491578af6ca.jpg",
+      "size": 17785,
+      "sha256": "83fd38c88292fcd58cf76bf23586ba61ba97eeef7cde6a8b434b27b81fefa4c8"
+    },
+    {
+      "path": "hand-mri-source/fd3ce7aa208b05ca50a3e0ce89222760c6309986c28c45ac378ddd12e74cedd3.jpg",
+      "size": 16497,
+      "sha256": "602c7df19e2e09ee4561510765ce0011c5b92843d2ad1dcc7b09f80f52f54b9b"
+    },
+    {
+      "path": "hand-mri-source/fd903784c1f567f551d85a0e3b16062cddcde3ec7d3e49d3f42cba211dde756e.jpg",
+      "size": 13944,
+      "sha256": "0a15d73167f3283bc12651c92789cf0e89e32c4952d5f617b9d5b21f30485488"
+    },
+    {
+      "path": "hand-mri-source/fe8f73555f3936ef0ba1e3097bcd561d2368a5765f9269a74445b0d3c48a67de.jpg",
+      "size": 8902,
+      "sha256": "65dcbbb10f4540191c9373c3f9e9a61106db1c4a44b511f35fc30109a3ad355a"
+    },
+    {
+      "path": "hand-mri-source/ff78820a89be60665a5cbd3f86f4124df824f9c900d358e8dd9a302ace2081c4.jpg",
+      "size": 15168,
+      "sha256": "89621a129a1f47dd8e7fa3ea2e5004eb433ae07cee45c1080b1cde38d6b2b904"
+    },
+    {
+      "path": "hand-mri-source/group-402.png",
+      "size": 1860,
+      "sha256": "1ea01e511bb369bced7218ee25c91e8fee32f8d53f7adcd21100e64ede52e888"
+    },
+    {
+      "path": "hand-mri-source/group-403.png",
+      "size": 1511,
+      "sha256": "c29db824941b770ec429a32a029ab01b1b8080afaa9a5104a199e2da5c1c2d65"
+    },
+    {
+      "path": "hand-mri-source/group-404.png",
+      "size": 2534,
+      "sha256": "6d8023aa12635f38908c5918098cca512f4a3f31acb652a3f12ea6d2761fcc9e"
+    },
+    {
+      "path": "hand-mri-source/group-405.png",
+      "size": 2534,
+      "sha256": "6d8023aa12635f38908c5918098cca512f4a3f31acb652a3f12ea6d2761fcc9e"
+    },
+    {
+      "path": "hand-mri-source/group-406.png",
+      "size": 4613,
+      "sha256": "0fe359b709663c45b2757505735b5ca7e6ce38c9c19e6cdb6adb3bcecc6633bc"
+    },
+    {
+      "path": "hand-mri-source/group-407.png",
+      "size": 5225,
+      "sha256": "421c1edd847c98dde248357d9f4301fee0ef016bc9a0693cc88bb374bb681703"
+    },
+    {
+      "path": "hand-mri-source/group-408.png",
+      "size": 3795,
+      "sha256": "8c9df9f63256998ab197a32986da1e61bf09a00feb4492528d36df44f4138801"
+    },
+    {
+      "path": "hand-mri-source/group-409.png",
+      "size": 2438,
+      "sha256": "835bce0430246dfc69e9a9822e9185201485ab11186901ce387fb14bfa4fdf68"
+    },
+    {
+      "path": "hand-mri-source/group-410.png",
+      "size": 2669,
+      "sha256": "7d5e508250367306c61152b95459d8e4e17a776656c7751979e93440c7951ee4"
+    },
+    {
+      "path": "hand-mri-source/group-411.png",
+      "size": 2114,
+      "sha256": "fcedf0f1f184a1f182e23dc81c38a4d8284c674745e4b5efad11c38d0a20bc92"
+    },
+    {
+      "path": "hand-mri-source/group-412.png",
+      "size": 2263,
+      "sha256": "20c72dc697edb012af966ca2e4150e58663bfa032bfef6f65fddd3efb809a0e2"
+    },
+    {
+      "path": "hand-mri-source/group-413.png",
+      "size": 2114,
+      "sha256": "fcedf0f1f184a1f182e23dc81c38a4d8284c674745e4b5efad11c38d0a20bc92"
+    },
+    {
+      "path": "hand-mri-source/group-414.png",
+      "size": 2762,
+      "sha256": "d7de6f8bd3bf4c88ade65c6bc83bceb724bc9fc4a760e9318db9461caf314ad2"
+    },
+    {
+      "path": "hand-mri-source/group-415.png",
+      "size": 2438,
+      "sha256": "3c383120886a314d04a2bc3118668a571fd1ffd04768759c5fd853dfa80ff1bb"
+    },
+    {
+      "path": "hand-mri-source/group-416.png",
+      "size": 3121,
+      "sha256": "15f99aca689240d1e5cdf9cbe7298e7b328b4cf18e074f3e3c073bbe04a0a7c3"
+    },
+    {
+      "path": "brain-3d-source/028a8f3adfe49187ef16b231cd43c837d009b18ae9de06f1bcd14254695328c4.jpg",
+      "size": 24032,
+      "sha256": "bd0b880dcaee45d81c23a04284dbabe87170b911f30d4a47749c55073961319c"
+    },
+    {
+      "path": "brain-3d-source/02cf5f5b6181f8d340bb66cb3e2b4c2fbe7d44c907e72efb232c3fe3423e54f1.png",
+      "size": 4043,
+      "sha256": "b9c874b1e527d6dff25ea49cf418b2fbc79cc2b4d47b932bf9452d36bd61e81f"
+    },
+    {
+      "path": "brain-3d-source/044bf668abbf4a34bbd066525ffbf7a62c610cbf4bcec9c0bd38f0c74edefa02.jpg",
+      "size": 18545,
+      "sha256": "20b18e563e392ff11cd8bc9bce6a00413a6c468e9aa3ef2699def62e3008be23"
+    },
+    {
+      "path": "brain-3d-source/09dc918276857668031c188fbd93885c453f6e5473db8ce7a14627af9766fb53.jpg",
+      "size": 25181,
+      "sha256": "ce0300c81af91821ad49a3b5b1d2403875386dd8d06d3c141d228a7980fd32ea"
+    },
+    {
+      "path": "brain-3d-source/0a1fc561a00fc7da531c348316897070ed694941ad273d1165398fba4bb6ae55.jpg",
+      "size": 41962,
+      "sha256": "57fb3f6251efe6235221920c8dd2cca4725d2c7af8b29a24b48eb37fbaa100e1"
+    },
+    {
+      "path": "brain-3d-source/0a358fba12b2156b23cb6cdd6d8cc70eee68071edae3aa2c49af55550eaba08b.png",
+      "size": 24280,
+      "sha256": "2921232ea1b5e7170a63501dce3cd4af2112fc818ec2732176f105e7d1b837af"
+    },
+    {
+      "path": "brain-3d-source/13a1f0d25f5455b1a6a5d9aa211709bb7f6958ebf5a1737121cef5a42690c1f1.png",
+      "size": 20163,
+      "sha256": "e61e629bf5e988d3eb7ebf3e1a5abbfb67ebbcd8e7e22d69cefb1e9d7aa3851e"
+    },
+    {
+      "path": "brain-3d-source/13bd0116f875361f892c364364f7c917263a6baa87ff83f5b2399d8647364765.png",
+      "size": 11468,
+      "sha256": "fa608f921928440df31ab40da47e632191c51a2156398891a7340494c5bfead3"
+    },
+    {
+      "path": "brain-3d-source/15a75ad36264972aaa9fdcb07fd213b9d579eef368367c6c8456fca3e3d82a10.png",
+      "size": 9786,
+      "sha256": "d42ba4f73c78a609bfb3ab509c3b87e11bff9ed28a8494535ae85695800397c6"
+    },
+    {
+      "path": "brain-3d-source/1965da36cf91365a5f2b78ea39eea25afee5a7061a71a7ea0c605b4520f3fe21.png",
+      "size": 6521,
+      "sha256": "9124be17ba9ca9b6bfa60f5069085733e559fb38377e9864de6e67b293e14793"
+    },
+    {
+      "path": "brain-3d-source/1a608487d1aac6668f9e62dc6ca5c74f3a79e81c4a76e4821a3d425fc93bdc95.jpg",
+      "size": 19781,
+      "sha256": "8ee1857da9378bc918b53f343c9e1933edf73d630b2e9099d1fd4e3fa451bf0d"
+    },
+    {
+      "path": "brain-3d-source/1dea05b9598246135405802bd6145b492a8684478ce8ab8780a598b443298415.png",
+      "size": 13085,
+      "sha256": "3063f99911a510531974b344df5e4b5dbe870f778a419edd43f64dbac49c6966"
+    },
+    {
+      "path": "brain-3d-source/247ae6c608c290a94c798a9064f4a1e041abed5e2e2868dfb1a89e2445aac24f.png",
+      "size": 7997,
+      "sha256": "1f2d2d950ff56d604f4adf35ef8e9e95d3090e8eac7b9d26e0ec5ddf68b91331"
+    },
+    {
+      "path": "brain-3d-source/247e806cba61fb2fd9fb595de89b52f05f07888ae57512fda45fa8ebbe26a8da.png",
+      "size": 9511,
+      "sha256": "4ff0cb02af1c98da30f84108442c22f2c47a0d9d1152b062eb01faebc7c4a9b3"
+    },
+    {
+      "path": "brain-3d-source/2cb11df8d5bb7036e24ab15e5f64e7dc0dfe817b8e28e37e6eb7baea11ea1278.jpg",
+      "size": 17237,
+      "sha256": "1b71d2d79072a278a73203b69c3f323ceb8d0783a8a4fad02e8121ea6eeb254e"
+    },
+    {
+      "path": "brain-3d-source/319758678b1846b64ec621e2d1f68811715f6bb06f9044cf0797bb955c72ecee.jpg",
+      "size": 21193,
+      "sha256": "aa06087c5b44bdd738f16d1265edf25f10408d7d1e524dc3ce0b890a97aa6167"
+    },
+    {
+      "path": "brain-3d-source/32e620f71037c743b09401df343150b35d861f5c9a12a142f678a0ef9c3e8df9.jpg",
+      "size": 36199,
+      "sha256": "69be3d4f67883e678fccc7c0374553229d850e9e7fc5b08a3862f0b37154a8e3"
+    },
+    {
+      "path": "brain-3d-source/352b8b10d73aca9d2856bcbb3f6fbe7fa1e0f54f422d9115efe268b8072a82df.png",
+      "size": 9276,
+      "sha256": "77b286c8a41fc02fef7d8b59fcfa73527226fec7cd5b74d31bcc71ddec34990a"
+    },
+    {
+      "path": "brain-3d-source/422f23b3a7d89d81a51a44d0f6000277d993513c3bfa810144a70f86ca88a25e.png",
+      "size": 5281,
+      "sha256": "f7256a60b54a9f559a1fd8857bc14e0ec8245a77ec33dff5135f52a1a08fe7d4"
+    },
+    {
+      "path": "brain-3d-source/46c89230c172b153408767dccc3b9d0c2c89c7afe2c44d26c76a9f4ceec1f963.png",
+      "size": 8886,
+      "sha256": "a821cedb05332b45ab3833ad011f0c8b77d8a61605cfa16fea28ffbc8bbb53a8"
+    },
+    {
+      "path": "brain-3d-source/48de773b9334524a030bad928dc07fc55e6630836d536eb09e0de20e697f03f3.jpg",
+      "size": 17429,
+      "sha256": "05106175c837161e3cc700c2a8a7db269b029e8ca7f4983b7fd0f9bdd9a26455"
+    },
+    {
+      "path": "brain-3d-source/491267aa46462e75bb7647e453db1f36ef82ce4a2e4da8d03b3005d583a5c2a0.jpg",
+      "size": 19571,
+      "sha256": "367f30108418a00abbb495cefc87c80d92186c993d065022aec699d451879186"
+    },
+    {
+      "path": "brain-3d-source/4b3e5c6961a5821e2bb151c65bc3cdac149dc9441c9e963261d66b5c2488886a.png",
+      "size": 8478,
+      "sha256": "a321493ab320e4a1345909d113cb8d176d83a8828f3cc2755c60ba0867ff1c4d"
+    },
+    {
+      "path": "brain-3d-source/4db5ed600f9ec4b8eed23ab1d4014822d18343a3b252e13a5bb959e6965d5bd3.png",
+      "size": 8880,
+      "sha256": "965371d1107a552580e745cda42e999b3bb0bad529de06277cb09a1cd5b97c2d"
+    },
+    {
+      "path": "brain-3d-source/4e0f3c611abef9f857d6100a1b726e22b8a278c5f3fc69de88978a69fe94f971.png",
+      "size": 5361,
+      "sha256": "489bca92a211dba3ba96a9d0c4449abda3ff8e2d83f52b9f4e930285569218b1"
+    },
+    {
+      "path": "brain-3d-source/518c6dd66bac0646c2bc8957340cc9702f7a08c8923126e0db202b6d05447e0e.png",
+      "size": 19129,
+      "sha256": "0280a135c2499d1b8c983a105fd0cf25bffd9a584d9311bbc02e6a24b9efeb05"
+    },
+    {
+      "path": "brain-3d-source/5c002d7c06c979146235bf3018cfc9143707dcead2d3f745ba72d222ec648483.jpg",
+      "size": 24812,
+      "sha256": "cb0458e6211517fc35763a59d5c99b94e5b76f4748396470c032b412c6066ee3"
+    },
+    {
+      "path": "brain-3d-source/5d3f1be67ad46c85270ca6b66c6a88e97342442153986428a9b617f07f62a4e5.jpg",
+      "size": 24876,
+      "sha256": "3e19237977b8ec87cbee79d641a1ab6050a092769ce2eb8d1e34cd5577380345"
+    },
+    {
+      "path": "brain-3d-source/624774aa8fba453e8c082334385ec1ed6ff9524097a9eb6032c037ba2ac2cbd3.jpg",
+      "size": 15155,
+      "sha256": "f3bc6d0f4dd03eb94495c68de266932d12b31e8ae11562f483200f0e312a8204"
+    },
+    {
+      "path": "brain-3d-source/671daf963157bb6dad8130a1e7d99c63f8a40e49b0c34abbfe89b8ef91531fa8.jpg",
+      "size": 23993,
+      "sha256": "dbc29a4537a9fc12c914041c587f3c0a3f5ecafa8d261f157496dc2b7ff1fd09"
+    },
+    {
+      "path": "brain-3d-source/6e166c15d0062facefa461972c76ba1b1cba33b3e9dee43448caaad6332fee04.png",
+      "size": 11773,
+      "sha256": "a97949bdc9a4971ff1cd9310473400e3406bb10b0c5e8b1ed941104c96e73e5a"
+    },
+    {
+      "path": "brain-3d-source/71e9ba91ab2d907388a538ee4ad746a493365918b8aa84a430b8065f094946ec.png",
+      "size": 13092,
+      "sha256": "85e6001f9a35939291aa263736bbc8ec43efdf624e121507a9e167900b922693"
+    },
+    {
+      "path": "brain-3d-source/72b973ba98aad0e5c6c9b1694c9a1d83a9341c84b293b3a13c054cb8620986fa.png",
+      "size": 25609,
+      "sha256": "80fa7602062515b5629b97c75c703032f5dba9f373ff29d48d61d5c0117fb25a"
+    },
+    {
+      "path": "brain-3d-source/72c1890d44a2296fe10a6a50d63af5d9a95425c46030d06528db23fe81af10ad.png",
+      "size": 14686,
+      "sha256": "67fbd4e85010f047aebb2752af26511bd2c3ccc30e4858d5f4df9a2902015b0a"
+    },
+    {
+      "path": "brain-3d-source/73594e8003c5f76e421417bd6e22a23ba660989b6695fe76ae3ad64990a142c9.png",
+      "size": 16610,
+      "sha256": "dcb69a62d7416c1e73390fe01cf47b5717dcce902355d3c47a19586364c8a9e2"
+    },
+    {
+      "path": "brain-3d-source/7ea27e970553d6b048a05975d3771f2654ee2c2a5193cc2496f1f2f333a2304f.png",
+      "size": 12052,
+      "sha256": "59c8e933678524bb3f8b6a9ea91640017d2e2177d8417856bc13a21e0fd44839"
+    },
+    {
+      "path": "brain-3d-source/80a9ccf224edc95bb963bb2fda0ff3e7af2a21da67fd9f15206071edb1faa577.png",
+      "size": 16544,
+      "sha256": "cf72546c4f4707aec176c0344ccc75fd70e375b8c1ae31a50afd00ebe11ba550"
+    },
+    {
+      "path": "brain-3d-source/8c95bcae399a196a4060629da4b638180fa4a07b4ff8abfee4643ab421cd8f1b.png",
+      "size": 20255,
+      "sha256": "e710b71303342df103f4b958b72593e0c6bbf61d5fe2e36e39e058edb57d9a1f"
+    },
+    {
+      "path": "brain-3d-source/8f8386d55c8b274b36e224e01dbc58e2c7b865c1ab27b9a52baddc1062dfeccf.png",
+      "size": 13048,
+      "sha256": "0853dfc1683d020cbf9f86fa2106d46e9309963c7b6a691fe5410045721ecab1"
+    },
+    {
+      "path": "brain-3d-source/957396178b39ce7564bfde21a4b935d78d7dae1972e64b29fb957084918aab4a.png",
+      "size": 17163,
+      "sha256": "3c774e34a99cc6889342addfe0604ffb9b7299271ab9e56a134cc932e25151c0"
+    },
+    {
+      "path": "brain-3d-source/96a5ac5845eea0436c831b71980863c0417a51ebdc094bbc684919a481bdf566.png",
+      "size": 5360,
+      "sha256": "efed5983e7824c7deb86ad0332e95ea4a4a55d6f8a00bd41546337e42d9f77d0"
+    },
+    {
+      "path": "brain-3d-source/9b6364f0c613d8f87e2464ccee3f8f5cef4e948557e9bf26c0fb0e3a881184d1.png",
+      "size": 9978,
+      "sha256": "6f036cd90fc78610768492405133acaa23870f5f6c1d969a47a9967e15c7b251"
+    },
+    {
+      "path": "brain-3d-source/9d089813d2400642e991150f9f87d63894bcf72f6977941d14d0bc2e50b26f39.png",
+      "size": 17739,
+      "sha256": "b544466385cc6ee509a5f927237708a672850fb16a3599426296b1e834c29b9e"
+    },
+    {
+      "path": "brain-3d-source/9d0accfc57095f54c065f3b111fffcb1d3c64624acb2155b98db8240ee02ff39.png",
+      "size": 6444,
+      "sha256": "4447d3d0b125b5dc28a037ddc77bc60f12c78e9a708e4c912f272d5d3f3a55d1"
+    },
+    {
+      "path": "brain-3d-source/a1c472d053bdee437914f25200ecddd2027892248fa4f091a38a9bc26906b927.jpg",
+      "size": 15414,
+      "sha256": "c2bd619c8344541e43ed727856b342d4f51de80ae8de41e58ec2b0f0147ceb3f"
+    },
+    {
+      "path": "brain-3d-source/a1e1d58f97854e62d654a9d12f97264436a9ad628ecad55d8e23b09da46d7abd.png",
+      "size": 11858,
+      "sha256": "0b8ce0a811f5ea06087ec60e7c3a0883b186189be8fb2295f8229a1122243bfe"
+    },
+    {
+      "path": "brain-3d-source/a43829637b1465288324edcebf315b6b1d69cc15d2324db0e350f1a9d8a0f14d.jpg",
+      "size": 42498,
+      "sha256": "1b177a8ec154bdc8e1bb75d94912d964548e17e4ea0a5730161fffb133bd1ace"
+    },
+    {
+      "path": "brain-3d-source/a95f8f9d2ecdd93ec84d8a27a484ce38a5975a67e938ae4ded4d8eda91cb1c20.png",
+      "size": 14832,
+      "sha256": "9d460357f11e51e27de3ae8360728864e4c7999c714ffbd41fbb382bf71f26b2"
+    },
+    {
+      "path": "brain-3d-source/ad2b3d8c2c9bfc8ff8e85871f97b8146f5fa8d17ec462add5d1cfb108f7e3147.png",
+      "size": 5146,
+      "sha256": "f419fdca1d52adcc6f563871f4eab09ef965d36ca2d730c2dba15764b50a0f52"
+    },
+    {
+      "path": "brain-3d-source/af5b52e7ed354a00d82bc6a9783924852088e216235ce00a10af5f7cd667b63f.png",
+      "size": 11910,
+      "sha256": "d53a58215c942dc5013fd98a76c2df99d87a1450a714d16e7b03e7c5c3674579"
+    },
+    {
+      "path": "brain-3d-source/b228cbe6b71717a48f3a184dbd634a76b2bf09627c2153c4dafa3f52d1866f9d.png",
+      "size": 13000,
+      "sha256": "cd9563d11a5c091f966ef22839b3e1cba5f0a93869bb002171577b4f11624a2f"
+    },
+    {
+      "path": "brain-3d-source/b45b31279aa49d2e6029914b885adce2e61faf8fb10cbfcf6745fe40cd6c77ec.png",
+      "size": 8442,
+      "sha256": "5412bc75b82cf6e963b0b42d4a1667047bb6800072ceaf0c1abb78d48a8dde63"
+    },
+    {
+      "path": "brain-3d-source/b45eb2c7b423a6738d2856291093a420a8ef1d2edbf55dbb5b01d923de809e59.png",
+      "size": 6120,
+      "sha256": "4128197549d654701706e6a443f3e5e130a9ffeb5c8751f7ede48ab845c08d39"
+    },
+    {
+      "path": "brain-3d-source/bb2615bc1b0eb6dd926dcac0439354566f27ce96e2e30367e4beef09683438e7.jpg",
+      "size": 34693,
+      "sha256": "24d4377162e45a1e3e217ae7185b6e437ce7befaf1b77493af3a24a710a13dfd"
+    },
+    {
+      "path": "brain-3d-source/bf814e5e6dc716e188f6e64836ef7c55ed4f9a986dd043eb535c5ececb7b1919.png",
+      "size": 12828,
+      "sha256": "4ea9adfee8bb1661df473a398a8d98fedbf4020f34b511f3fe848bed8c02f042"
+    },
+    {
+      "path": "brain-3d-source/d0b35ff37de1683fa6a0b4ea07ba3ab897eadee953c05a788a4b06712e4575d4.png",
+      "size": 12285,
+      "sha256": "d2495fa8e0128fb326286235cc351e24aef67a084205b8ae2434d91cda1e623d"
+    },
+    {
+      "path": "brain-3d-source/d590f2738c0c77c999b3a7a710701ede77f220c36a7e99d1c53ccd6137d8f91f.png",
+      "size": 5784,
+      "sha256": "d7c4b178f1a75985fb37d92e517beda319dce9f841f19677b5d84310bf652cab"
+    },
+    {
+      "path": "brain-3d-source/e2240e6246dab3e450fe536d8fb5f59085e7f3242ba278bc2d3251399755e2b5.png",
+      "size": 25339,
+      "sha256": "73e48123fbfbdc57178da3aa657c0764c48d5dfce79ecb5120960f9e20df32ac"
+    },
+    {
+      "path": "brain-3d-source/e40d402997c06f3aec4cd773f282dc13967e1bd31a6ab1a6d06d04e15cf3a9cb.png",
+      "size": 13987,
+      "sha256": "a27238e7bdc04935752611ac445025a1b09a6b6052fa8125c1aee3d395f1f1c4"
+    },
+    {
+      "path": "brain-3d-source/e8098f8a84574bdd8530b98674f9cdc2fd23766429b484539b6d4a665397e108.png",
+      "size": 6879,
+      "sha256": "01ca2f23f0126804a7dac21c26b32973fa1e411410478cd916fc66312b62b447"
+    },
+    {
+      "path": "brain-3d-source/e8bbd2935f13acf005e8c1a287f37c7accad63fd5dd8f8c12f7c78410bdba5c6.png",
+      "size": 8585,
+      "sha256": "4dd2d69ff8e35df42f6a2dbaf1dfffd52e6befdeb7075c7728b28724e8e43849"
+    },
+    {
+      "path": "brain-3d-source/f2626b3bf6e3ba2b42be4bf5ed809b7abf5288c2552d60e6c6eb2d9c19c368e0.png",
+      "size": 12200,
+      "sha256": "f6cfbe33677ec0324e3d88fd1603928d8fe25c6c907eef7c85df8304832f7e34"
+    },
+    {
+      "path": "brain-3d-source/f4590607717966d35342a36323c868db27cf04304a60389b417475a477e33382.png",
+      "size": 12157,
+      "sha256": "ca29acc53b334f370e73abea6879f2cb0931375766cd11b21c47b729836b4686"
+    },
+    {
+      "path": "brain-3d-source/f5a1a1e1e127851051a9e525ce6e413dd964dddf776f843cf5e342e9a302495e.png",
+      "size": 4413,
+      "sha256": "f5e387e36744cac48e53f52c5f723c3986274ed06a7e6ba54e17d75d234f2717"
+    },
+    {
+      "path": "brain-3d-source/f8c76119c6a9c9349d9f78b67dfb3218dfc74ae44ef49b5a3438f538a0a4eebd.png",
+      "size": 18911,
+      "sha256": "d751c73fb62e70ba62f77a6b37cc235443c4d9162bacc2864d2bb06005d9f079"
+    },
+    {
+      "path": "brain-3d-source/fc9238ef3bf8f7a1644b347a0b701e8cf45d6e7328e6ed8f1e74e8df66362484.jpg",
+      "size": 18093,
+      "sha256": "71783b63fe8f8e453ce99d738b3a6a311431a22d16ec45702057227cba079c31"
+    },
+    {
+      "path": "brain-3d-source/fe941b3aadecb7a3c63902b0b67754fb52d8e84387f907419002a9b3b987d183.png",
+      "size": 9247,
+      "sha256": "d562bda625ce129698beb069db43ec026785e53e8d2f9b98cc568b0f10f1fbb2"
+    },
+    {
+      "path": "brain-3d-source/group-1000.png",
+      "size": 3767,
+      "sha256": "ab730045621c2b08f186497b6bc945ac91b4b23f55773c0bd8318acebe12acdd"
+    },
+    {
+      "path": "brain-3d-source/group-1001.png",
+      "size": 6258,
+      "sha256": "6d02c81b0cabdbceefafb748c113f6f73386c017cf0d2aa8912da5b35a02fdd5"
+    },
+    {
+      "path": "brain-3d-source/group-1002.png",
+      "size": 6258,
+      "sha256": "6d02c81b0cabdbceefafb748c113f6f73386c017cf0d2aa8912da5b35a02fdd5"
+    },
+    {
+      "path": "brain-3d-source/group-1003.png",
+      "size": 2762,
+      "sha256": "d7de6f8bd3bf4c88ade65c6bc83bceb724bc9fc4a760e9318db9461caf314ad2"
+    },
+    {
+      "path": "brain-3d-source/group-1004.png",
+      "size": 2382,
+      "sha256": "1e2329b8b308184d0b3caab6efe50502a1c84c90874ef46603673fd4b59a84e0"
+    },
+    {
+      "path": "brain-3d-source/group-1005.png",
+      "size": 2438,
+      "sha256": "3c383120886a314d04a2bc3118668a571fd1ffd04768759c5fd853dfa80ff1bb"
+    },
+    {
+      "path": "brain-3d-source/group-1006.png",
+      "size": 2438,
+      "sha256": "3c383120886a314d04a2bc3118668a571fd1ffd04768759c5fd853dfa80ff1bb"
+    },
+    {
+      "path": "brain-3d-source/group-1007.png",
+      "size": 2438,
+      "sha256": "3c383120886a314d04a2bc3118668a571fd1ffd04768759c5fd853dfa80ff1bb"
+    },
+    {
+      "path": "brain-3d-source/group-1008.png",
+      "size": 2438,
+      "sha256": "3c383120886a314d04a2bc3118668a571fd1ffd04768759c5fd853dfa80ff1bb"
+    },
+    {
+      "path": "brain-3d-source/group-1009.png",
+      "size": 2438,
+      "sha256": "3c383120886a314d04a2bc3118668a571fd1ffd04768759c5fd853dfa80ff1bb"
+    },
+    {
+      "path": "brain-3d-source/group-1010.png",
+      "size": 2438,
+      "sha256": "3c383120886a314d04a2bc3118668a571fd1ffd04768759c5fd853dfa80ff1bb"
+    },
+    {
+      "path": "brain-3d-source/group-1011.png",
+      "size": 2447,
+      "sha256": "beff8f382b101fff6e9cbca2d81446f8d239ee1fae52a5e9647e2e21203ed209"
+    },
+    {
+      "path": "brain-3d-source/group-1012.png",
+      "size": 3958,
+      "sha256": "ea9c40a68d545d98bb5dc55569095e9fc4e2f58f4bea458991e460b5508dd5ed"
+    },
+    {
+      "path": "brain-3d-source/group-976.png",
+      "size": 2447,
+      "sha256": "beff8f382b101fff6e9cbca2d81446f8d239ee1fae52a5e9647e2e21203ed209"
+    },
+    {
+      "path": "brain-3d-source/group-977.png",
+      "size": 2625,
+      "sha256": "6b38ec57d12a8a6072aed2b2df2a1420eca5d0af2d99d6ec76ac7f8ae0ffd2e9"
+    },
+    {
+      "path": "brain-3d-source/group-978.png",
+      "size": 3547,
+      "sha256": "94cfbe027b91fca36ad37187b117c68cc7b4d8a87368d39d939ee261a746ce13"
+    },
+    {
+      "path": "brain-3d-source/group-979.png",
+      "size": 2447,
+      "sha256": "beff8f382b101fff6e9cbca2d81446f8d239ee1fae52a5e9647e2e21203ed209"
+    },
+    {
+      "path": "brain-3d-source/group-980.png",
+      "size": 2447,
+      "sha256": "beff8f382b101fff6e9cbca2d81446f8d239ee1fae52a5e9647e2e21203ed209"
+    },
+    {
+      "path": "brain-3d-source/group-981.png",
+      "size": 2447,
+      "sha256": "beff8f382b101fff6e9cbca2d81446f8d239ee1fae52a5e9647e2e21203ed209"
+    },
+    {
+      "path": "brain-3d-source/group-982.png",
+      "size": 3931,
+      "sha256": "8695d531f26b16b8432d63cd1f6fcaba82924778195d0e69b671cd2f0f639a77"
+    },
+    {
+      "path": "brain-3d-source/group-983.png",
+      "size": 2447,
+      "sha256": "beff8f382b101fff6e9cbca2d81446f8d239ee1fae52a5e9647e2e21203ed209"
+    },
+    {
+      "path": "brain-3d-source/group-984.png",
+      "size": 3059,
+      "sha256": "dec80799757a3e1cc27eb01f2456caa1b0625610e1490b4744a3c66e6317b0b2"
+    },
+    {
+      "path": "brain-3d-source/group-985.png",
+      "size": 3958,
+      "sha256": "ea9c40a68d545d98bb5dc55569095e9fc4e2f58f4bea458991e460b5508dd5ed"
+    },
+    {
+      "path": "brain-3d-source/group-986.png",
+      "size": 3958,
+      "sha256": "ea9c40a68d545d98bb5dc55569095e9fc4e2f58f4bea458991e460b5508dd5ed"
+    },
+    {
+      "path": "brain-3d-source/group-987.png",
+      "size": 3661,
+      "sha256": "67816f5c045d6d4d0b465f0a6fbfa69f8c2b5441d39154993a681c55ec4ffd2d"
+    },
+    {
+      "path": "brain-3d-source/group-988.png",
+      "size": 2625,
+      "sha256": "6b38ec57d12a8a6072aed2b2df2a1420eca5d0af2d99d6ec76ac7f8ae0ffd2e9"
+    },
+    {
+      "path": "brain-3d-source/group-989.png",
+      "size": 2194,
+      "sha256": "b05845bc8240b7876522b8ee10401822bc7873cea73d20d373d790f3daea1d2f"
+    },
+    {
+      "path": "brain-3d-source/group-990.png",
+      "size": 2194,
+      "sha256": "b05845bc8240b7876522b8ee10401822bc7873cea73d20d373d790f3daea1d2f"
+    },
+    {
+      "path": "brain-3d-source/group-991.png",
+      "size": 2194,
+      "sha256": "b05845bc8240b7876522b8ee10401822bc7873cea73d20d373d790f3daea1d2f"
+    },
+    {
+      "path": "brain-3d-source/group-992.png",
+      "size": 2194,
+      "sha256": "b05845bc8240b7876522b8ee10401822bc7873cea73d20d373d790f3daea1d2f"
+    },
+    {
+      "path": "brain-3d-source/group-993.png",
+      "size": 2625,
+      "sha256": "6b38ec57d12a8a6072aed2b2df2a1420eca5d0af2d99d6ec76ac7f8ae0ffd2e9"
+    },
+    {
+      "path": "brain-3d-source/group-994.png",
+      "size": 2625,
+      "sha256": "6b38ec57d12a8a6072aed2b2df2a1420eca5d0af2d99d6ec76ac7f8ae0ffd2e9"
+    },
+    {
+      "path": "brain-3d-source/group-995.png",
+      "size": 2625,
+      "sha256": "6b38ec57d12a8a6072aed2b2df2a1420eca5d0af2d99d6ec76ac7f8ae0ffd2e9"
+    },
+    {
+      "path": "brain-3d-source/group-996.png",
+      "size": 2625,
+      "sha256": "6b38ec57d12a8a6072aed2b2df2a1420eca5d0af2d99d6ec76ac7f8ae0ffd2e9"
+    },
+    {
+      "path": "brain-3d-source/group-997.png",
+      "size": 2625,
+      "sha256": "6b38ec57d12a8a6072aed2b2df2a1420eca5d0af2d99d6ec76ac7f8ae0ffd2e9"
+    },
+    {
+      "path": "brain-3d-source/group-998.png",
+      "size": 2301,
+      "sha256": "2263927625d984803d500ebfb462ba8de5fb38c60fa12d06b622cadd8eea70a2"
+    },
+    {
+      "path": "brain-3d-source/group-999.png",
+      "size": 3121,
+      "sha256": "15f99aca689240d1e5cdf9cbe7298e7b328b4cf18e074f3e3c073bbe04a0a7c3"
+    },
+    {
+      "path": "knee-3d-source/02068b4e6700728c2df32c28fb7e91be625869521eed46e65dbc9a70f1f18df4.jpg",
+      "size": 17497,
+      "sha256": "27bac3a105586e8ebad29565fea0c1e726bbcc77dadc90d6f2329bd02331e8d6"
+    },
+    {
+      "path": "knee-3d-source/11bcbdc887e3c14e542d57160376404bb4cb2435937215df4132b95785c4d655.jpg",
+      "size": 18564,
+      "sha256": "2753b3bc42d7dceee16278d1cf5f2c6a2c17709cae0234eee3c9832e0427bf28"
+    },
+    {
+      "path": "knee-3d-source/1451a173d472c02eb5adb532ac3725c8dd1e0d78a43d5f75f9f3455aef6b4574.jpg",
+      "size": 17009,
+      "sha256": "797cfea35b66b9992acef3de0bafc52e46594798b100a525d6789e29228d031b"
+    },
+    {
+      "path": "knee-3d-source/28def5dfc798387f753c4ba963617f4de1a7070e203caf6c48232a896561f865.jpg",
+      "size": 21348,
+      "sha256": "4bf1414ad643fa3aad092985ef8a95d2c49b4141f5708dc47189945a23bf1b7b"
+    },
+    {
+      "path": "knee-3d-source/4fcff607dfc5d082d58adea5d7f24f7efc8d5fe518d77d6678f1c616a5ae47fe.jpg",
+      "size": 19106,
+      "sha256": "f9450f32b4c811d49afee3aa8cbe088ce2ca37c67ff3d1475405e5b86016c69d"
+    },
+    {
+      "path": "knee-3d-source/636dfdf961464bea85dfed23900d835ee033e8b24d7a1150e3a32a7269cf6f22.jpg",
+      "size": 19868,
+      "sha256": "b85a944b247f83ac111e5086dd920125eed597f3b7a203b99549ca7a3c44de5b"
+    },
+    {
+      "path": "knee-3d-source/group-1218.png",
+      "size": 1511,
+      "sha256": "c29db824941b770ec429a32a029ab01b1b8080afaa9a5104a199e2da5c1c2d65"
+    },
+    {
+      "path": "knee-3d-source/group-1219.png",
+      "size": 2438,
+      "sha256": "835bce0430246dfc69e9a9822e9185201485ab11186901ce387fb14bfa4fdf68"
+    },
+    {
+      "path": "knee-3d-source/group-1220.png",
+      "size": 2669,
+      "sha256": "7d5e508250367306c61152b95459d8e4e17a776656c7751979e93440c7951ee4"
+    },
+    {
+      "path": "knee-3d-source/group-1221.png",
+      "size": 2114,
+      "sha256": "fcedf0f1f184a1f182e23dc81c38a4d8284c674745e4b5efad11c38d0a20bc92"
+    },
+    {
+      "path": "knee-3d-source/group-1222.png",
+      "size": 2263,
+      "sha256": "20c72dc697edb012af966ca2e4150e58663bfa032bfef6f65fddd3efb809a0e2"
+    },
+    {
+      "path": "knee-3d-source/group-1223.png",
+      "size": 3085,
+      "sha256": "e906f458634aabf6899e681e505c72c5b0bdee9c94498518ba4af4e49ac3b05d"
+    },
+    {
+      "path": "knee-3d-source/group-1224.png",
+      "size": 2762,
+      "sha256": "d7de6f8bd3bf4c88ade65c6bc83bceb724bc9fc4a760e9318db9461caf314ad2"
+    },
+    {
+      "path": "knee-3d-source/group-1225.png",
+      "size": 2438,
+      "sha256": "3c383120886a314d04a2bc3118668a571fd1ffd04768759c5fd853dfa80ff1bb"
+    },
+    {
+      "path": "knee-3d-source/group-1226.png",
+      "size": 2239,
+      "sha256": "b3a7106e98cf7b821e32cf0cb6a89b34072aad3424a8eabeefce286d267fc605"
+    }
+  ],
+  "parts": [
+    {
+      "file": "part-000.bin",
+      "size": 768000,
+      "sha256": "c3142a6c504f976d03d1370b4bf74bd98369de1fb01e18bfd8761e1125e4537b"
+    },
+    {
+      "file": "part-001.bin",
+      "size": 768000,
+      "sha256": "a0bf9ddece9d2134584eaacd6d5739e669453bbc6948ddf34b272a11137ca2f4"
+    },
+    {
+      "file": "part-002.bin",
+      "size": 768000,
+      "sha256": "48801f533994cd83f6c31dd0be5836f0a31c874bdf84b4926df4d8c05202f563"
+    },
+    {
+      "file": "part-003.bin",
+      "size": 768000,
+      "sha256": "8503ee02ff1e2e91edd1b1e25d8736faaa511e5a8239d20643b80a01fb34b45d"
+    },
+    {
+      "file": "part-004.bin",
+      "size": 768000,
+      "sha256": "71b1025190f50e9a3939d86314168ac6c6b76c6f5c647d14f2e61ae74a95d76d"
+    },
+    {
+      "file": "part-005.bin",
+      "size": 768000,
+      "sha256": "f0f6746084b9df5b03e0a13612588b729546d8925c4946fd32c54044e97bf6de"
+    },
+    {
+      "file": "part-006.bin",
+      "size": 375762,
+      "sha256": "84103e67b9c8f4837c53941738fb464b30837884eb5de065ed6aac538b3ced73"
+    }
+  ],
+  "zipSha256": "db5692f671374f0966f35b74784daad7adaaf396c32827122749e55532c20989"
+}

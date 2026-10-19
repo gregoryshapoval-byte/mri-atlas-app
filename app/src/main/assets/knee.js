@@ -12,7 +12,7 @@ bucket:['Ручка лейки','Разрыв по типу «ручки лей�
 complex:['Сложный','Сложный многоплоскостной разрыв','Сочетание нескольких направлений. Здесь совмещены горизонтальное расслоение и радиальный компонент.','Перечисли компоненты, поражённые отделы и смещённые фрагменты. Слово «сложный» без уточнения не описывает весь объём изменений.'],
 root:['Корневой','Разрыв у заднего корня','На модели — радиальный дефект рядом с задним корневым прикреплением. Корневые повреждения включают радиальные разрывы в пределах 1 см от прикрепления и отрыв корня.','Ищи дефект корня в трёх плоскостях, ghost sign и усечение. Экструзия — косвенный признак, не обязательный и не специфичный. Здесь отрыв костного фрагмента не моделируется.']};
 let type='radial',side='medial',amount=.6;
-const scene=new T.Scene();scene.background=new T.Color('#e6eeea');
+const scene=new T.Scene();scene.background=new T.Color('#111a22');
 const camera=new T.PerspectiveCamera(35,1,.1,60);camera.position.set(5,6,7);
 let renderer;try{renderer=new T.WebGLRenderer({antialias:true});}catch(e){$('#failure').hidden=false;throw e;}renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=1.2;host.appendChild(renderer.domElement);
 const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.target.set(0,0,0);controls.minDistance=4;controls.maxDistance=15;controls.autoRotateSpeed=.7;

@@ -1,0 +1,378 @@
+{
+  "date": "2026-10-19",
+  "purpose": "Pre-cleanup branch checkpoints; each listed head is a parent of the consolidation commit and remains reachable from main.",
+  "release": "1.65",
+  "sourceTree": "ebefe66e6184684711f8fcbbba4299f22e915270",
+  "branches": [
+    {
+      "name": "anatomy-sections-safe-20261018",
+      "sha": "9a2194c4b58bb82ba803fdf19ded09b38fd8bba9"
+    },
+    {
+      "name": "female-pelvis-import-with-archive",
+      "sha": "3b3ab183995acca877009d30f9230d9006399761"
+    },
+    {
+      "name": "female-pelvis-source-import-ci-20261018-v2",
+      "sha": "b98c8eebcfe342b2b10e3381aac067f48eb608fa"
+    },
+    {
+      "name": "female-pelvis-source-import-ci-20261018",
+      "sha": "0d44c12e70f9e173fa0de8a317dee4f272aa4cf1"
+    },
+    {
+      "name": "fix-default-mri-viewer-init-20261018",
+      "sha": "19b224e50f2185f77e49003cc60547e410adffbd"
+    },
+    {
+      "name": "fix-mri-viewer-braces-20261018",
+      "sha": "fe1f93aa35e9e1c9a4e61783679551c31d4769d7"
+    },
+    {
+      "name": "main",
+      "sha": "7649439bc24b64055dda1734e35ef1da65aa0a9c"
+    },
+    {
+      "name": "work/abdomen-ct-1-65",
+      "sha": "7d1a47c9132dafa85bf32d8dbbd4735543a7d731"
+    },
+    {
+      "name": "work/anatomy-audit-1-45",
+      "sha": "1d50e47bcef8becd7955cbfb5e5810991a445906"
+    },
+    {
+      "name": "work/anatomy-icons-1-48",
+      "sha": "0c1f172a550484a3011d28e3e010235ffd5cd47e"
+    },
+    {
+      "name": "work/continuous-scroll-1-64",
+      "sha": "870ecbeb01d82a93965639ff47f341e65debfc67"
+    },
+    {
+      "name": "work/design-and-mri-1-42",
+      "sha": "eadfea60b8e0eb5f5be835c7293de2072376eb4b"
+    },
+    {
+      "name": "work/female-pelvis-ligaments-1-62",
+      "sha": "5fbc9107598333adcc6d60cf5ddd1ae79f419c7f"
+    },
+    {
+      "name": "work/female-pelvis-on-1-30",
+      "sha": "4a831f59a2f4e3a12d32c37bb6db6f99588ff11e"
+    },
+    {
+      "name": "work/foot-joints-1-51",
+      "sha": "c159394e24d6201de314f7cd32bae528c6680dcd"
+    },
+    {
+      "name": "work/hand-anatomy-1-53",
+      "sha": "93517041f99e387a714722527c25742c26596590"
+    },
+    {
+      "name": "work/hand-brain-knee-1-52",
+      "sha": "af27ec5de6918ad05147e2b92db025a111330e6a"
+    },
+    {
+      "name": "work/hip-insertions-1-47",
+      "sha": "f7ef1d0877e186edb56481d8997a933da849e638"
+    },
+    {
+      "name": "work/hip-knee-tendons-1-49",
+      "sha": "7601bfafe6f03f655f365469d12783d972f634ad"
+    },
+    {
+      "name": "work/home-icons-1-63",
+      "sha": "8c5cfc6834ecb72cbe1e1271ad1fba683c6c5a8b"
+    },
+    {
+      "name": "work/home-limbs-plexus-1-50",
+      "sha": "6edd4291bc11f89910f09be266779ae413c56fe4"
+    },
+    {
+      "name": "work/joint-lines-1-54",
+      "sha": "8b3b4d7e06718ca77acb929935dcbd16e50c4d6e"
+    },
+    {
+      "name": "work/joint-recesses-1-44",
+      "sha": "40e66a9ee26b36c9b9a8f5753ce244a6736b7c68"
+    },
+    {
+      "name": "work/ligaments-pd-1-46",
+      "sha": "ab09106f17328f28f7c1a25eba3774a8295ce423"
+    },
+    {
+      "name": "work/perianal-classification-1-60",
+      "sha": "3b1219ed6bf6f86bc01a5c0ebcb2a2c7546a8c7e"
+    },
+    {
+      "name": "work/perianal-module-1-58",
+      "sha": "290de41ef8a48fff37fc0491ff3f092003a16788"
+    },
+    {
+      "name": "work/perianal-training-1-61",
+      "sha": "5b32228fb0cb1b91a27e287102a1e1da5e1d3444"
+    },
+    {
+      "name": "work/shoulder-mri-from-1-4",
+      "sha": "830dc3e237961fe5b000021d43d45be2d0ebbff2"
+    },
+    {
+      "name": "work/shoulder-on-1-4-from-1-30",
+      "sha": "4ff68f763f139a162b24b0e0ff698787614b2aa6"
+    },
+    {
+      "name": "work/shoulder-pd-1-43",
+      "sha": "fca815ce24a04c7eafb2ffe2628da777c5c47a8e"
+    },
+    {
+      "name": "work/viewer-all-modules-1-41",
+      "sha": "0edf9ca9547b8f941fe005209296094d92eed98d"
+    },
+    {
+      "name": "work/viewer-fit-1-59",
+      "sha": "284c6718dd453b33b9916243f2d7cc3721f26c0e"
+    },
+    {
+      "name": "work/wrist-capitate-ligaments-1-55",
+      "sha": "c3f5d8dca2b449f5214381f802c265db8c637aeb"
+    },
+    {
+      "name": "work/wrist-ligament-topography-1-56",
+      "sha": "bdc9407db93fa929db8798adecc8b553e5363b35"
+    },
+    {
+      "name": "work/wrist-review-1-57",
+      "sha": "2b69305947bba71a6108147c791578a13cd42e26"
+    },
+    {
+      "name": "work/wrist-tfcc-1-30",
+      "sha": "a33e8cac7f3f3eaef604961d604e858aa0edbab0"
+    }
+  ],
+  "openPullRequestsBefore": [
+    {
+      "number": 32,
+      "title": "1.65 — КТ брюшной полости и номера сегментов печени по Куино",
+      "head": "work/abdomen-ct-1-65",
+      "headSha": "7d1a47c9132dafa85bf32d8dbbd4735543a7d731",
+      "base": "work/continuous-scroll-1-64",
+      "baseSha": "870ecbeb01d82a93965639ff47f341e65debfc67"
+    },
+    {
+      "number": 31,
+      "title": "1.64: ускорение свайпа и непрерывное листание зон конечностей",
+      "head": "work/continuous-scroll-1-64",
+      "headSha": "870ecbeb01d82a93965639ff47f341e65debfc67",
+      "base": "work/home-icons-1-63",
+      "baseSha": "8c5cfc6834ecb72cbe1e1271ad1fba683c6c5a8b"
+    },
+    {
+      "number": 30,
+      "title": "1.63: единые анатомические иконки и плечевое сплетение внутри плеча",
+      "head": "work/home-icons-1-63",
+      "headSha": "8c5cfc6834ecb72cbe1e1271ad1fba683c6c5a8b",
+      "base": "work/female-pelvis-ligaments-1-62",
+      "baseSha": "5fbc9107598333adcc6d60cf5ddd1ae79f419c7f"
+    },
+    {
+      "number": 29,
+      "title": "1.62: связки женского таза и исправление смешанной мужской подписи",
+      "head": "work/female-pelvis-ligaments-1-62",
+      "headSha": "5fbc9107598333adcc6d60cf5ddd1ae79f419c7f",
+      "base": "work/perianal-training-1-61",
+      "baseSha": "5b32228fb0cb1b91a27e287102a1e1da5e1d3444"
+    },
+    {
+      "number": 28,
+      "title": "1.61: учебные ходы Parks/St James на МРТ и R/L у 9/3 часов",
+      "head": "work/perianal-training-1-61",
+      "headSha": "5b32228fb0cb1b91a27e287102a1e1da5e1d3444",
+      "base": "work/perianal-classification-1-60",
+      "baseSha": "3b1219ed6bf6f86bc01a5c0ebcb2a2c7546a8c7e"
+    },
+    {
+      "number": 27,
+      "title": "Подписать типы Parks и добавить схемы St James · 1.60",
+      "head": "work/perianal-classification-1-60",
+      "headSha": "3b1219ed6bf6f86bc01a5c0ebcb2a2c7546a8c7e",
+      "base": "work/viewer-fit-1-59",
+      "baseSha": "284c6718dd453b33b9916243f2d7cc3721f26c0e"
+    },
+    {
+      "number": 26,
+      "title": "Исправить начальный масштаб и центрирование MRI · 1.59",
+      "head": "work/viewer-fit-1-59",
+      "headSha": "284c6718dd453b33b9916243f2d7cc3721f26c0e",
+      "base": "work/perianal-module-1-58",
+      "baseSha": "290de41ef8a48fff37fc0491ff3f092003a16788"
+    },
+    {
+      "number": 25,
+      "title": "Перианальная область мужчины: сфинктеры, пространства и циферблат · 1.58",
+      "head": "work/perianal-module-1-58",
+      "headSha": "290de41ef8a48fff37fc0491ff3f092003a16788",
+      "base": "work/wrist-review-1-57",
+      "baseSha": "2b69305947bba71a6108147c791578a13cd42e26"
+    },
+    {
+      "number": 24,
+      "title": "1.57: совместная ревизия разметки ЛЗС и читаемые подписи",
+      "head": "work/wrist-review-1-57",
+      "headSha": "2b69305947bba71a6108147c791578a13cd42e26",
+      "base": "work/wrist-ligament-topography-1-56",
+      "baseSha": "bdc9407db93fa929db8798adecc8b553e5363b35"
+    },
+    {
+      "number": 23,
+      "title": "1.56: ожидаемые ориентиры недостающих связок запястья",
+      "head": "work/wrist-ligament-topography-1-56",
+      "headSha": "bdc9407db93fa929db8798adecc8b553e5363b35",
+      "base": "work/wrist-capitate-ligaments-1-55",
+      "baseSha": "c3f5d8dca2b449f5214381f802c265db8c637aeb"
+    },
+    {
+      "number": 22,
+      "title": "1.55: проверка связок вокруг головчатой кости",
+      "head": "work/wrist-capitate-ligaments-1-55",
+      "headSha": "c3f5d8dca2b449f5214381f802c265db8c637aeb",
+      "base": "work/joint-lines-1-54",
+      "baseSha": "8b3b4d7e06718ca77acb929935dcbd16e50c4d6e"
+    },
+    {
+      "number": 21,
+      "title": "1.54: суставные линии пяти MRI-областей",
+      "head": "work/joint-lines-1-54",
+      "headSha": "8b3b4d7e06718ca77acb929935dcbd16e50c4d6e",
+      "base": "work/hand-anatomy-1-53",
+      "baseSha": "93517041f99e387a714722527c25742c26596590"
+    },
+    {
+      "number": 20,
+      "title": "1.53 — ревизия анатомии кисти: названия, группы и поиск",
+      "head": "work/hand-anatomy-1-53",
+      "headSha": "93517041f99e387a714722527c25742c26596590",
+      "base": "work/hand-brain-knee-1-52",
+      "baseSha": "af27ec5de6918ad05147e2b92db025a111330e6a"
+    },
+    {
+      "number": 19,
+      "title": "1.52 — МРТ кисти и недостающие 3D-ракурсы мозга и колена",
+      "head": "work/hand-brain-knee-1-52",
+      "headSha": "af27ec5de6918ad05147e2b92db025a111330e6a",
+      "base": "work/foot-joints-1-51",
+      "baseSha": "c159394e24d6201de314f7cd32bae528c6680dcd"
+    },
+    {
+      "number": 18,
+      "title": "MRI Atlas 1.51: суставы предплюсны и голеностопа — названия и линии",
+      "head": "work/foot-joints-1-51",
+      "headSha": "c159394e24d6201de314f7cd32bae528c6680dcd",
+      "base": "work/home-limbs-plexus-1-50",
+      "baseSha": "6edd4291bc11f89910f09be266779ae413c56fe4"
+    },
+    {
+      "number": 17,
+      "title": "MRI Atlas 1.50: компактный главный экран и МРТ конечностей/плечевого сплетения",
+      "head": "work/home-limbs-plexus-1-50",
+      "headSha": "6edd4291bc11f89910f09be266779ae413c56fe4",
+      "base": "work/hip-knee-tendons-1-49",
+      "baseSha": "7601bfafe6f03f655f365469d12783d972f634ad"
+    },
+    {
+      "number": 16,
+      "title": "ТБС и колено: сухожилия, прикрепления и восстановленные ленты · 1.49",
+      "head": "work/hip-knee-tendons-1-49",
+      "headSha": "7601bfafe6f03f655f365469d12783d972f634ad",
+      "base": "work/anatomy-icons-1-48",
+      "baseSha": "0c1f172a550484a3011d28e3e010235ffd5cd47e"
+    },
+    {
+      "number": 15,
+      "title": "Новые схемы для меню «Анатомия» во всех МРТ-модулях · 1.48",
+      "head": "work/anatomy-icons-1-48",
+      "headSha": "0c1f172a550484a3011d28e3e010235ffd5cd47e",
+      "base": "work/hip-insertions-1-47",
+      "baseSha": "f7ef1d0877e186edb56481d8997a933da849e638"
+    },
+    {
+      "number": 14,
+      "title": "ТБС: прикрепления сухожилий и элементы суставной губы · 1.47",
+      "head": "work/hip-insertions-1-47",
+      "headSha": "f7ef1d0877e186edb56481d8997a933da849e638",
+      "base": "work/ligaments-pd-1-46",
+      "baseSha": "ab09106f17328f28f7c1a25eba3774a8295ce423"
+    },
+    {
+      "number": 13,
+      "title": "1.46: PD ligament landmarks in three planes and axial IGHL components",
+      "head": "work/ligaments-pd-1-46",
+      "headSha": "ab09106f17328f28f7c1a25eba3774a8295ce423",
+      "base": "work/anatomy-audit-1-45",
+      "baseSha": "1d50e47bcef8becd7955cbfb5e5810991a445906"
+    },
+    {
+      "number": 12,
+      "title": "1.45: correct knee and axillary recess ribbons",
+      "head": "work/anatomy-audit-1-45",
+      "headSha": "1d50e47bcef8becd7955cbfb5e5810991a445906",
+      "base": "work/joint-recesses-1-44",
+      "baseSha": "40e66a9ee26b36c9b9a8f5753ce244a6736b7c68"
+    },
+    {
+      "number": 11,
+      "title": "MRI Atlas 1.44: завороты, сумки и связки плеча, колена и стопы",
+      "head": "work/joint-recesses-1-44",
+      "headSha": "40e66a9ee26b36c9b9a8f5753ce244a6736b7c68",
+      "base": "work/shoulder-pd-1-43",
+      "baseSha": "fca815ce24a04c7eafb2ffe2628da777c5c47a8e"
+    },
+    {
+      "number": 10,
+      "title": "MRI Atlas 1.43: подробная анатомия плеча и цветные ориентиры сумок на PD",
+      "head": "work/shoulder-pd-1-43",
+      "headSha": "fca815ce24a04c7eafb2ffe2628da777c5c47a8e",
+      "base": "work/design-and-mri-1-42",
+      "baseSha": "eadfea60b8e0eb5f5be835c7293de2072376eb4b"
+    },
+    {
+      "number": 9,
+      "title": "MRI Atlas 1.42: иллюстрированные тёмные меню и новые МРТ-области",
+      "head": "work/design-and-mri-1-42",
+      "headSha": "eadfea60b8e0eb5f5be835c7293de2072376eb4b",
+      "base": "work/viewer-all-modules-1-41",
+      "baseSha": "0edf9ca9547b8f941fe005209296094d92eed98d"
+    },
+    {
+      "number": 8,
+      "title": "MRI Atlas 1.41: просмотр во весь экран, три режима меток, плечо и предплюсна",
+      "head": "work/viewer-all-modules-1-41",
+      "headSha": "0edf9ca9547b8f941fe005209296094d92eed98d",
+      "base": "work/female-pelvis-on-1-30",
+      "baseSha": "4a831f59a2f4e3a12d32c37bb6db6f99588ff11e"
+    },
+    {
+      "number": 7,
+      "title": "MRI Atlas 1.30: независимые блоки ТФХК и связок запястья",
+      "head": "work/wrist-tfcc-1-30",
+      "headSha": "a33e8cac7f3f3eaef604961d604e858aa0edbab0",
+      "base": "main",
+      "baseSha": "65d21e8aaca13e27f8bfed569b3f8731f35701f8"
+    },
+    {
+      "number": 6,
+      "title": "Add female pelvic MRI viewer with 2737 recovered source annotations",
+      "head": "female-pelvis-import-with-archive",
+      "headSha": "3b3ab183995acca877009d30f9230d9006399761",
+      "base": "main",
+      "baseSha": "65d21e8aaca13e27f8bfed569b3f8731f35701f8"
+    },
+    {
+      "number": 5,
+      "title": "Add female pelvis source database recovery and annotation import scripts",
+      "head": "female-pelvis-source-import-ci-20261018-v2",
+      "headSha": "b98c8eebcfe342b2b10e3381aac067f48eb608fa",
+      "base": "main",
+      "baseSha": "7e8bbddb047a65741bbf67f2c44645c1c48ba577"
+    }
+  ]
+}

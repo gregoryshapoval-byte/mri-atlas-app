@@ -1,0 +1,37 @@
+{
+  "foot": [
+    "foot-mri.html"
+  ],
+  "brain": [
+    "brain.html?set=vascular&series=arteries3d",
+    "brain.html?set=vascular&series=veins3d",
+    "brain.html?set=multiplanar",
+    "brain.html?set=contrast"
+  ],
+  "wrist": [
+    "wrist-mri.html",
+    "wrist.html?mode=ligaments",
+    "wrist.html?mode=tendons",
+    "wrist.html?mode=tfcc"
+  ],
+  "elbow": [
+    "elbow-mri.html"
+  ],
+  "knee": [
+    "patellofemoral.html",
+    "knee.html",
+    "ligaments.html",
+    "knee-bursae.html",
+    "cartilage.html"
+  ],
+  "shoulder": [
+    "shoulder-mri.html",
+    "shoulder.html",
+    "cuff.html"
+  ],
+  "pelvis": [
+    "male-pelvis-mri.html",
+    "female-pelvis-mri.html",
+    "fibroids.html"
+  ]
+}

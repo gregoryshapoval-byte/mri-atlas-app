@@ -1,0 +1,1713 @@
+{
+  "sourceHashes": {
+    "hand-mri-data.json": "c130b3e6fe70e485546bccaf90b8240477fd2d9adaf75b535286338ac684cd2d",
+    "hand-mri-labels.json": "e615c7bfb52eb7cd32797a2238b4755d5f8c891de76091a867be621f6df92ea9",
+    "wrist-mri-data.json": "aca41cf414731714a6f0e3c2b4b30f75f2b34143c35687f27b7b7eda7a594def",
+    "wrist-mri-labels.json": "4660debcf668db061a1a2a91dbe04d702a9b3c1817c46b03ad8547266d09db7b",
+    "brain-data.json": "bb95afb02b39b2f987c0abc849119d14e64517a9073807d95c70e4a0a25ca1e6",
+    "brain-labels.json": "0d4bd8f085fc23602e6027134226b7b67d664d7bd5a9d0464b751a4bb10ac1ca"
+  },
+  "frames": 280,
+  "sourceSlices": 140,
+  "sourcePoints": 7274,
+  "sourceStructures": 188,
+  "renamedStructures": 56,
+  "exactDuplicatePoints": 0,
+  "newPoints": 0,
+  "coordinateChanges": 0,
+  "newFilters": 11,
+  "inventory": [
+    {
+      "id": 221,
+      "sourceName": "Область предплечья",
+      "sourceFilter": 402,
+      "points": 50,
+      "displayName": "Область предплечья",
+      "displayFilter": 402,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1106,
+      "sourceName": "Лучевая кость",
+      "sourceFilter": 404,
+      "points": 29,
+      "displayName": "Лучевая кость",
+      "displayFilter": 404,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1122,
+      "sourceName": "Дорсальный бугорок",
+      "sourceFilter": 404,
+      "points": 8,
+      "displayName": "Тыльный бугорок лучевой кости (Листера)",
+      "displayFilter": 404,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1123,
+      "sourceName": "Борозды сухожилий мышц-разгибателей",
+      "sourceFilter": 404,
+      "points": 6,
+      "displayName": "Борозды сухожилий мышц-разгибателей",
+      "displayFilter": 404,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1126,
+      "sourceName": "Локтевая кость",
+      "sourceFilter": 405,
+      "points": 26,
+      "displayName": "Локтевая кость",
+      "displayFilter": 405,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2182,
+      "sourceName": "Локтевой сгибатель запястья",
+      "sourceFilter": 411,
+      "points": 23,
+      "displayName": "Локтевой сгибатель запястья",
+      "displayFilter": 15312,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2185,
+      "sourceName": "Поверхностный сгибатель пальцев",
+      "sourceFilter": 411,
+      "points": 24,
+      "displayName": "Поверхностный сгибатель пальцев",
+      "displayFilter": 15312,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2190,
+      "sourceName": "Квадратный пронатор",
+      "sourceFilter": 411,
+      "points": 26,
+      "displayName": "Квадратный пронатор",
+      "displayFilter": 15312,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2194,
+      "sourceName": "Разгибатель пальцев",
+      "sourceFilter": 411,
+      "points": 18,
+      "displayName": "Разгибатель пальцев",
+      "displayFilter": 15312,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2197,
+      "sourceName": "Локтевой разгибатель запястья",
+      "sourceFilter": 411,
+      "points": 6,
+      "displayName": "Локтевой разгибатель запястья",
+      "displayFilter": 15312,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2204,
+      "sourceName": "Разгибатель указательного пальца",
+      "sourceFilter": 411,
+      "points": 8,
+      "displayName": "Разгибатель указательного пальца",
+      "displayFilter": 15312,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9312,
+      "sourceName": "Лучевой сгибатель запястья - Сухожилие",
+      "sourceFilter": 412,
+      "points": 32,
+      "displayName": "Сухожилие лучевого сгибателя запястья (FCR)",
+      "displayFilter": 15304,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9313,
+      "sourceName": "Длинная ладонная мышца - Сухожилие",
+      "sourceFilter": 412,
+      "points": 32,
+      "displayName": "Сухожилие длинной ладонной мышцы (PL)",
+      "displayFilter": 15304,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9315,
+      "sourceName": "Локтевой сгибатель запястья - Сухожилие",
+      "sourceFilter": 412,
+      "points": 37,
+      "displayName": "Сухожилие локтевого сгибателя запястья (FCU)",
+      "displayFilter": 15304,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2188,
+      "sourceName": "Глубокий сгибатель пальцев",
+      "sourceFilter": 411,
+      "points": 27,
+      "displayName": "Глубокий сгибатель пальцев",
+      "displayFilter": 15312,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9286,
+      "sourceName": "Длинный сгибатель большого пальца кисти - Сухожилие",
+      "sourceFilter": 412,
+      "points": 71,
+      "displayName": "Сухожилие длинного сгибателя большого пальца (FPL)",
+      "displayFilter": 15304,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9274,
+      "sourceName": "Длинный лучевой разгибатель запястья - Сухожилие",
+      "sourceFilter": 412,
+      "points": 32,
+      "displayName": "Сухожилие длинного лучевого разгибателя запястья (ECRL)",
+      "displayFilter": 15305,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9275,
+      "sourceName": "Короткий лучевой разгибатель запястья - Сухожилие",
+      "sourceFilter": 412,
+      "points": 28,
+      "displayName": "Сухожилие короткого лучевого разгибателя запястья (ECRB)",
+      "displayFilter": 15305,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9278,
+      "sourceName": "Разгибатель мизинца - Сухожилие",
+      "sourceFilter": 412,
+      "points": 61,
+      "displayName": "Сухожилие разгибателя мизинца (EDM)",
+      "displayFilter": 15305,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9279,
+      "sourceName": "Локтевой разгибатель запястья - Сухожилие",
+      "sourceFilter": 412,
+      "points": 33,
+      "displayName": "Сухожилие локтевого разгибателя запястья (ECU)",
+      "displayFilter": 15305,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9280,
+      "sourceName": "Длинная мышца, отводящая большой палец кисти - Сухожилие",
+      "sourceFilter": 412,
+      "points": 38,
+      "displayName": "Сухожилие длинной мышцы, отводящей большой палец (APL)",
+      "displayFilter": 15305,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9281,
+      "sourceName": "Короткий разгибатель большого пальца кисти - Сухожилие",
+      "sourceFilter": 412,
+      "points": 59,
+      "displayName": "Сухожилие короткого разгибателя большого пальца (EPB)",
+      "displayFilter": 15305,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9282,
+      "sourceName": "Длинный разгибатель большого пальца кисти - Сухожилие",
+      "sourceFilter": 412,
+      "points": 64,
+      "displayName": "Сухожилие длинного разгибателя большого пальца (EPL)",
+      "displayFilter": 15305,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9283,
+      "sourceName": "Разгибатель указательного пальца - Сухожилие",
+      "sourceFilter": 412,
+      "points": 52,
+      "displayName": "Сухожилие разгибателя указательного пальца (EIP)",
+      "displayFilter": 15305,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9680,
+      "sourceName": "Поверхностный сгибатель пальцев - Сухожилие [II]",
+      "sourceFilter": 412,
+      "points": 72,
+      "displayName": "Сухожилие поверхностного сгибателя пальцев (FDS) · II палец",
+      "displayFilter": 15304,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9666,
+      "sourceName": "Поверхностный сгибатель пальцев - Сухожилие [III]",
+      "sourceFilter": 412,
+      "points": 65,
+      "displayName": "Сухожилие поверхностного сгибателя пальцев (FDS) · III палец",
+      "displayFilter": 15304,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9671,
+      "sourceName": "Поверхностный сгибатель пальцев - Сухожилие [IV]",
+      "sourceFilter": 412,
+      "points": 68,
+      "displayName": "Сухожилие поверхностного сгибателя пальцев (FDS) · IV палец",
+      "displayFilter": 15304,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9674,
+      "sourceName": "Поверхностный сгибатель пальцев - Сухожилие [V]",
+      "sourceFilter": 412,
+      "points": 68,
+      "displayName": "Сухожилие поверхностного сгибателя пальцев (FDS) · V палец",
+      "displayFilter": 15304,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9679,
+      "sourceName": "Глубокий сгибатель пальцев - Сухожилие [II]",
+      "sourceFilter": 412,
+      "points": 80,
+      "displayName": "Сухожилие глубокого сгибателя пальцев (FDP) · II палец",
+      "displayFilter": 15304,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9667,
+      "sourceName": "Глубокий сгибатель пальцев - Сухожилие [III]",
+      "sourceFilter": 412,
+      "points": 75,
+      "displayName": "Сухожилие глубокого сгибателя пальцев (FDP) · III палец",
+      "displayFilter": 15304,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9668,
+      "sourceName": "Глубокий сгибатель пальцев - Сухожилие [IV]",
+      "sourceFilter": 412,
+      "points": 68,
+      "displayName": "Сухожилие глубокого сгибателя пальцев (FDP) · IV палец",
+      "displayFilter": 15304,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9672,
+      "sourceName": "Глубокий сгибатель пальцев - Сухожилие [V]",
+      "sourceFilter": 412,
+      "points": 67,
+      "displayName": "Сухожилие глубокого сгибателя пальцев (FDP) · V палец",
+      "displayFilter": 15304,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9677,
+      "sourceName": "Разгибатель пальцев - Сухожилие [II]",
+      "sourceFilter": 412,
+      "points": 74,
+      "displayName": "Сухожилие разгибателя пальцев (EDC) · II палец",
+      "displayFilter": 15305,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9670,
+      "sourceName": "Разгибатель пальцев - Сухожилие [III]",
+      "sourceFilter": 412,
+      "points": 72,
+      "displayName": "Сухожилие разгибателя пальцев (EDC) · III палец",
+      "displayFilter": 15305,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9669,
+      "sourceName": "Разгибатель пальцев - Сухожилие [IV]",
+      "sourceFilter": 412,
+      "points": 65,
+      "displayName": "Сухожилие разгибателя пальцев (EDC) · IV палец",
+      "displayFilter": 15305,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9665,
+      "sourceName": "Разгибатель пальцев - Сухожилие [V]",
+      "sourceFilter": 412,
+      "points": 43,
+      "displayName": "Сухожилие разгибателя пальцев (EDC) · V палец",
+      "displayFilter": 15305,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 4557,
+      "sourceName": "Лучевая артерия",
+      "sourceFilter": 414,
+      "points": 36,
+      "displayName": "Лучевая артерия",
+      "displayFilter": 414,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 4571,
+      "sourceName": "Локтевая артерия",
+      "sourceFilter": 414,
+      "points": 30,
+      "displayName": "Локтевая артерия",
+      "displayFilter": 414,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 5157,
+      "sourceName": "Тыльная венозная сеть кисти",
+      "sourceFilter": 415,
+      "points": 50,
+      "displayName": "Тыльная венозная сеть кисти",
+      "displayFilter": 415,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 5164,
+      "sourceName": "Локтевые вены",
+      "sourceFilter": 415,
+      "points": 32,
+      "displayName": "Локтевые вены",
+      "displayFilter": 415,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 5165,
+      "sourceName": "Лучевые вены",
+      "sourceFilter": 415,
+      "points": 37,
+      "displayName": "Лучевые вены",
+      "displayFilter": 415,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 7334,
+      "sourceName": "Срединный нерв",
+      "sourceFilter": 416,
+      "points": 26,
+      "displayName": "Срединный нерв",
+      "displayFilter": 416,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 7343,
+      "sourceName": "Локтевой нерв",
+      "sourceFilter": 416,
+      "points": 25,
+      "displayName": "Локтевой нерв",
+      "displayFilter": 416,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9293,
+      "sourceName": "Тыльная ветвь (Локтевой нерв)",
+      "sourceFilter": 416,
+      "points": 39,
+      "displayName": "Тыльная ветвь (Локтевой нерв)",
+      "displayFilter": 416,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9295,
+      "sourceName": "Ладонная ветвь (Локтевой нерв)",
+      "sourceFilter": 416,
+      "points": 52,
+      "displayName": "Ладонная ветвь (Локтевой нерв)",
+      "displayFilter": 416,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9302,
+      "sourceName": "Поверхностная ветвь (Лучевой нерв)",
+      "sourceFilter": 416,
+      "points": 23,
+      "displayName": "Поверхностная ветвь (Лучевой нерв)",
+      "displayFilter": 416,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9410,
+      "sourceName": "Тыльные пальцевые нервы (Лучевой нерв)",
+      "sourceFilter": 416,
+      "points": 395,
+      "displayName": "Тыльные пальцевые нервы (Лучевой нерв)",
+      "displayFilter": 416,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1140,
+      "sourceName": "Головка локтевой кости",
+      "sourceFilter": 405,
+      "points": 20,
+      "displayName": "Головка локтевой кости",
+      "displayFilter": 405,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1639,
+      "sourceName": "Ладонная локтезапястная связка",
+      "sourceFilter": 410,
+      "points": 15,
+      "displayName": "Ладонная локтезапястная связка",
+      "displayFilter": 15302,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2244,
+      "sourceName": "Удерживатель мышц-разгибателей",
+      "sourceFilter": 413,
+      "points": 32,
+      "displayName": "Удерживатель сухожилий разгибателей",
+      "displayFilter": 413,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 82,
+      "sourceName": "Кисть",
+      "sourceFilter": 402,
+      "points": 137,
+      "displayName": "Кисть",
+      "displayFilter": 402,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 83,
+      "sourceName": "Запястье",
+      "sourceFilter": 402,
+      "points": 67,
+      "displayName": "Запястье",
+      "displayFilter": 402,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1124,
+      "sourceName": "Локтевая вырезка",
+      "sourceFilter": 404,
+      "points": 7,
+      "displayName": "Локтевая вырезка",
+      "displayFilter": 404,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1141,
+      "sourceName": "Суставная окружность",
+      "sourceFilter": 405,
+      "points": 16,
+      "displayName": "Суставная окружность",
+      "displayFilter": 405,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1631,
+      "sourceName": "Дистальный лучелоктевой сустав",
+      "sourceFilter": 409,
+      "points": 12,
+      "displayName": "Дистальный лучелоктевой сустав",
+      "displayFilter": 409,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1120,
+      "sourceName": "Шиловидный отросток лучевой кости",
+      "sourceFilter": 404,
+      "points": 8,
+      "displayName": "Шиловидный отросток лучевой кости",
+      "displayFilter": 404,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 86,
+      "sourceName": "Тыл кисти",
+      "sourceFilter": 402,
+      "points": 75,
+      "displayName": "Тыл кисти",
+      "displayFilter": 402,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1125,
+      "sourceName": "Запястная суставная поверхность",
+      "sourceFilter": 404,
+      "points": 22,
+      "displayName": "Запястная суставная поверхность",
+      "displayFilter": 404,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1632,
+      "sourceName": "Суставной диск",
+      "sourceFilter": 410,
+      "points": 17,
+      "displayName": "Суставной диск дистального лучелоктевого сустава",
+      "displayFilter": 15302,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1637,
+      "sourceName": "Ладонная лучезапястная связка",
+      "sourceFilter": 410,
+      "points": 22,
+      "displayName": "Ладонная лучезапястная связка",
+      "displayFilter": 15302,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1641,
+      "sourceName": "Лучевая коллатеральная связка запястья",
+      "sourceFilter": 410,
+      "points": 11,
+      "displayName": "Лучевая коллатеральная связка запястья",
+      "displayFilter": 15302,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9409,
+      "sourceName": "Ладонная ветвь (Срединный нерв)",
+      "sourceFilter": 416,
+      "points": 45,
+      "displayName": "Ладонная ветвь (Срединный нерв)",
+      "displayFilter": 416,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1142,
+      "sourceName": "Шиловидный отросток локтевой кости",
+      "sourceFilter": 405,
+      "points": 8,
+      "displayName": "Шиловидный отросток локтевой кости",
+      "displayFilter": 405,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1146,
+      "sourceName": "Ладьевидная кость",
+      "sourceFilter": 406,
+      "points": 27,
+      "displayName": "Ладьевидная кость",
+      "displayFilter": 406,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1636,
+      "sourceName": "Тыльная лучезапястная связка",
+      "sourceFilter": 410,
+      "points": 15,
+      "displayName": "Тыльная лучезапястная связка",
+      "displayFilter": 15302,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 228,
+      "sourceName": "Передняя область запястья",
+      "sourceFilter": 402,
+      "points": 51,
+      "displayName": "Передняя область запястья",
+      "displayFilter": 402,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 229,
+      "sourceName": "Задняя область запястья",
+      "sourceFilter": 402,
+      "points": 44,
+      "displayName": "Задняя область запястья",
+      "displayFilter": 402,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1148,
+      "sourceName": "Полулунная кость",
+      "sourceFilter": 406,
+      "points": 23,
+      "displayName": "Полулунная кость",
+      "displayFilter": 406,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1638,
+      "sourceName": "Тыльная локтезапястная связка",
+      "sourceFilter": 410,
+      "points": 9,
+      "displayName": "Тыльная локтезапястная связка",
+      "displayFilter": 15302,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1149,
+      "sourceName": "Трехгранная кость",
+      "sourceFilter": 406,
+      "points": 21,
+      "displayName": "Трехгранная кость",
+      "displayFilter": 406,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1150,
+      "sourceName": "Гороховидная кость",
+      "sourceFilter": 406,
+      "points": 17,
+      "displayName": "Гороховидная кость",
+      "displayFilter": 406,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1640,
+      "sourceName": "Локтевая коллатеральная связка запястья",
+      "sourceFilter": 410,
+      "points": 12,
+      "displayName": "Локтевая коллатеральная связка запястья",
+      "displayFilter": 15302,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1651,
+      "sourceName": "Канал запястья",
+      "sourceFilter": 409,
+      "points": 28,
+      "displayName": "Запястный канал",
+      "displayFilter": 15301,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1652,
+      "sourceName": "Локтевой канал",
+      "sourceFilter": 409,
+      "points": 23,
+      "displayName": "Локтевой канал (Гийона)",
+      "displayFilter": 15301,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 233,
+      "sourceName": "Гипотенар; возвышение мизинца",
+      "sourceFilter": 402,
+      "points": 49,
+      "displayName": "Гипотенар; возвышение мизинца",
+      "displayFilter": 402,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1147,
+      "sourceName": "Бугорок ладьевидной кости",
+      "sourceFilter": 406,
+      "points": 11,
+      "displayName": "Бугорок ладьевидной кости",
+      "displayFilter": 406,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1154,
+      "sourceName": "Головчатая кость",
+      "sourceFilter": 406,
+      "points": 24,
+      "displayName": "Головчатая кость",
+      "displayFilter": 406,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1643,
+      "sourceName": "Среднезапястный сустав",
+      "sourceFilter": 409,
+      "points": 35,
+      "displayName": "Среднезапястный сустав",
+      "displayFilter": 409,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2214,
+      "sourceName": "Мышца, отводящая мизинец",
+      "sourceFilter": 411,
+      "points": 45,
+      "displayName": "Мышца, отводящая мизинец",
+      "displayFilter": 15309,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2243,
+      "sourceName": "Тыльная фасция кисти",
+      "sourceFilter": 413,
+      "points": 74,
+      "displayName": "Тыльная фасция кисти",
+      "displayFilter": 413,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 232,
+      "sourceName": "Тенар; возвышение большого пальца",
+      "sourceFilter": 402,
+      "points": 45,
+      "displayName": "Тенар; возвышение большого пальца",
+      "displayFilter": 402,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1151,
+      "sourceName": "Кость-трапеция",
+      "sourceFilter": 406,
+      "points": 22,
+      "displayName": "Кость-трапеция",
+      "displayFilter": 406,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1152,
+      "sourceName": "Бугорок кости-трапеции",
+      "sourceFilter": 406,
+      "points": 9,
+      "displayName": "Бугорок кости-трапеции",
+      "displayFilter": 406,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1155,
+      "sourceName": "Крючковидная кость",
+      "sourceFilter": 406,
+      "points": 21,
+      "displayName": "Крючковидная кость",
+      "displayFilter": 406,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2210,
+      "sourceName": "Мышца, противопоставляющая большой палец кисти",
+      "sourceFilter": 411,
+      "points": 39,
+      "displayName": "Мышца, противопоставляющая большой палец кисти",
+      "displayFilter": 15308,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2247,
+      "sourceName": "Удерживатель мышц-сгибателей",
+      "sourceFilter": 413,
+      "points": 32,
+      "displayName": "Удерживатель сухожилий сгибателей",
+      "displayFilter": 413,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1153,
+      "sourceName": "Трапециевидная кость",
+      "sourceFilter": 406,
+      "points": 16,
+      "displayName": "Трапециевидная кость",
+      "displayFilter": 406,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 5159,
+      "sourceName": "Дорсальные пястные вены",
+      "sourceFilter": 415,
+      "points": 39,
+      "displayName": "Дорсальные пястные вены",
+      "displayFilter": 415,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2205,
+      "sourceName": "Короткая ладонная мышца",
+      "sourceFilter": 411,
+      "points": 24,
+      "displayName": "Короткая ладонная мышца",
+      "displayFilter": 15309,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2206,
+      "sourceName": "Короткая мышца, отводящая большой палец кисти",
+      "sourceFilter": 411,
+      "points": 47,
+      "displayName": "Короткая мышца, отводящая большой палец кисти",
+      "displayFilter": 15308,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1156,
+      "sourceName": "Крючок крючковидной кости",
+      "sourceFilter": 406,
+      "points": 10,
+      "displayName": "Крючок крючковидной кости",
+      "displayFilter": 406,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1161,
+      "sourceName": "Пястная кость [I]",
+      "sourceFilter": 407,
+      "points": 38,
+      "displayName": "Пястная кость [I]",
+      "displayFilter": 407,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1169,
+      "sourceName": "Шиловидный отросток третьей [III] пястной кости",
+      "sourceFilter": 407,
+      "points": 7,
+      "displayName": "Шиловидный отросток третьей [III] пястной кости",
+      "displayFilter": 407,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1654,
+      "sourceName": "Тыльные запястно-пястные связки",
+      "sourceFilter": 410,
+      "points": 30,
+      "displayName": "Тыльные запястно-пястные связки",
+      "displayFilter": 15302,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1656,
+      "sourceName": "Запястно-пястный сустав большого пальца кисти",
+      "sourceFilter": 409,
+      "points": 13,
+      "displayName": "Запястно-пястный сустав большого пальца кисти",
+      "displayFilter": 409,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9296,
+      "sourceName": "Поверхностная ветвь (Локтевой нерв)",
+      "sourceFilter": 416,
+      "points": 13,
+      "displayName": "Поверхностная ветвь (Локтевой нерв)",
+      "displayFilter": 416,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9299,
+      "sourceName": "Глубокая ветвь (Локтевой нерв)",
+      "sourceFilter": 416,
+      "points": 43,
+      "displayName": "Глубокая ветвь (Локтевой нерв)",
+      "displayFilter": 416,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1162,
+      "sourceName": "Пястная кость [II]",
+      "sourceFilter": 407,
+      "points": 41,
+      "displayName": "Пястная кость [II]",
+      "displayFilter": 407,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1163,
+      "sourceName": "Пястная кость [III]",
+      "sourceFilter": 407,
+      "points": 33,
+      "displayName": "Пястная кость [III]",
+      "displayFilter": 407,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1165,
+      "sourceName": "Пястная кость [V]",
+      "sourceFilter": 407,
+      "points": 38,
+      "displayName": "Пястная кость [V]",
+      "displayFilter": 407,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 85,
+      "sourceName": "Ладонь",
+      "sourceFilter": 402,
+      "points": 79,
+      "displayName": "Ладонь",
+      "displayFilter": 402,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1166,
+      "sourceName": "Основание пястной кости",
+      "sourceFilter": 407,
+      "points": 46,
+      "displayName": "Основание пястной кости",
+      "displayFilter": 407,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1653,
+      "sourceName": "Запястно-пястные суставы",
+      "sourceFilter": 409,
+      "points": 31,
+      "displayName": "Запястно-пястные суставы",
+      "displayFilter": 409,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1655,
+      "sourceName": "Ладонные запястно-пястные связки",
+      "sourceFilter": 410,
+      "points": 30,
+      "displayName": "Ладонные запястно-пястные связки",
+      "displayFilter": 15302,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2215,
+      "sourceName": "Короткий сгибатель мизинца",
+      "sourceFilter": 411,
+      "points": 38,
+      "displayName": "Короткий сгибатель мизинца",
+      "displayFilter": 15309,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2246,
+      "sourceName": "Ладонный апоневроз",
+      "sourceFilter": 413,
+      "points": 36,
+      "displayName": "Ладонный апоневроз",
+      "displayFilter": 413,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 4566,
+      "sourceName": "Артерия большого пальца кисти",
+      "sourceFilter": 414,
+      "points": 30,
+      "displayName": "Артерия большого пальца кисти",
+      "displayFilter": 414,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 4568,
+      "sourceName": "Глубокая ладонная дуга",
+      "sourceFilter": 414,
+      "points": 32,
+      "displayName": "Глубокая ладонная дуга",
+      "displayFilter": 414,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 4570,
+      "sourceName": "Прободающие ветви",
+      "sourceFilter": 414,
+      "points": 14,
+      "displayName": "Прободающие ветви",
+      "displayFilter": 414,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 5168,
+      "sourceName": "Глубокая ладонная венозная дуга",
+      "sourceFilter": 415,
+      "points": 23,
+      "displayName": "Глубокая ладонная венозная дуга",
+      "displayFilter": 415,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1164,
+      "sourceName": "Пястная кость [IV]",
+      "sourceFilter": 407,
+      "points": 32,
+      "displayName": "Пястная кость [IV]",
+      "displayFilter": 407,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1657,
+      "sourceName": "Межпястные суставы",
+      "sourceFilter": 409,
+      "points": 9,
+      "displayName": "Межпястные суставы",
+      "displayFilter": 409,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1658,
+      "sourceName": "Тыльные пястные связки",
+      "sourceFilter": 410,
+      "points": 9,
+      "displayName": "Тыльные пястные связки",
+      "displayFilter": 15302,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1659,
+      "sourceName": "Ладонные пястные связки",
+      "sourceFilter": 410,
+      "points": 16,
+      "displayName": "Ладонные пястные связки",
+      "displayFilter": 15302,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9673,
+      "sourceName": "Короткий сгибатель большого пальца кисти: Поверхностная головка",
+      "sourceFilter": 411,
+      "points": 39,
+      "displayName": "Короткий сгибатель большого пальца кисти: поверхностная головка",
+      "displayFilter": 15308,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9678,
+      "sourceName": "Короткий сгибатель большого пальца кисти: Глубокая головка",
+      "sourceFilter": 411,
+      "points": 30,
+      "displayName": "Короткий сгибатель большого пальца кисти: глубокая головка",
+      "displayFilter": 15308,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2211,
+      "sourceName": "Мышца, приводящая большой палец кисти",
+      "sourceFilter": 411,
+      "points": 46,
+      "displayName": "Мышца, приводящая большой палец кисти",
+      "displayFilter": 15308,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2216,
+      "sourceName": "Мышца,противопоставляющая мизинец",
+      "sourceFilter": 411,
+      "points": 30,
+      "displayName": "Мышца, противопоставляющая мизинец",
+      "displayFilter": 15309,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9291,
+      "sourceName": "Собственные ладонные пальцевые нервы (Срединный нерв)",
+      "sourceFilter": 416,
+      "points": 198,
+      "displayName": "Собственные ладонные пальцевые нервы (Срединный нерв)",
+      "displayFilter": 416,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2223,
+      "sourceName": "Тыльные межкостные мышцы (1)",
+      "sourceFilter": 411,
+      "points": 37,
+      "displayName": "Тыльная межкостная мышца · 1",
+      "displayFilter": 15310,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2224,
+      "sourceName": "Тыльные межкостные мышцы (2)",
+      "sourceFilter": 411,
+      "points": 30,
+      "displayName": "Тыльная межкостная мышца · 2",
+      "displayFilter": 15310,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2231,
+      "sourceName": "Ладонные межкостные мышцы (3)",
+      "sourceFilter": 411,
+      "points": 22,
+      "displayName": "Ладонная межкостная мышца · 3",
+      "displayFilter": 15310,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1661,
+      "sourceName": "Межкостные промежутки пястья",
+      "sourceFilter": 409,
+      "points": 41,
+      "displayName": "Межкостные промежутки пясти",
+      "displayFilter": 15301,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2226,
+      "sourceName": "Тыльные межкостные мышцы (4)",
+      "sourceFilter": 411,
+      "points": 28,
+      "displayName": "Тыльная межкостная мышца · 4",
+      "displayFilter": 15310,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 4564,
+      "sourceName": "Тыльные пястные артерии",
+      "sourceFilter": 414,
+      "points": 28,
+      "displayName": "Тыльные пястные артерии",
+      "displayFilter": 414,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 4569,
+      "sourceName": "Ладонные пястные артерии",
+      "sourceFilter": 414,
+      "points": 25,
+      "displayName": "Ладонные пястные артерии",
+      "displayFilter": 414,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1167,
+      "sourceName": "Тело пястной кости",
+      "sourceFilter": 407,
+      "points": 52,
+      "displayName": "Тело пястной кости",
+      "displayFilter": 407,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2225,
+      "sourceName": "Тыльные межкостные мышцы (3)",
+      "sourceFilter": 411,
+      "points": 28,
+      "displayName": "Тыльная межкостная мышца · 3",
+      "displayFilter": 15310,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2229,
+      "sourceName": "Ладонные межкостные мышцы (1)",
+      "sourceFilter": 411,
+      "points": 24,
+      "displayName": "Ладонная межкостная мышца · 1",
+      "displayFilter": 15310,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2230,
+      "sourceName": "Ладонные межкостные мышцы (2)",
+      "sourceFilter": 411,
+      "points": 25,
+      "displayName": "Ладонная межкостная мышца · 2",
+      "displayFilter": 15310,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 4586,
+      "sourceName": "Поверхностная ладонная дуга",
+      "sourceFilter": 414,
+      "points": 20,
+      "displayName": "Поверхностная ладонная дуга",
+      "displayFilter": 414,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9290,
+      "sourceName": "Общие ладонные пальцевые нервы (Срединный нерв)",
+      "sourceFilter": 416,
+      "points": 77,
+      "displayName": "Общие ладонные пальцевые нервы (Срединный нерв)",
+      "displayFilter": 416,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 5169,
+      "sourceName": "Ладонные пястные вены",
+      "sourceFilter": 415,
+      "points": 24,
+      "displayName": "Ладонные пястные вены",
+      "displayFilter": 415,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9294,
+      "sourceName": "Тыльные пальцевые нервы (Локтевой нерв)",
+      "sourceFilter": 416,
+      "points": 101,
+      "displayName": "Тыльные пальцевые нервы (Локтевой нерв)",
+      "displayFilter": 416,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2217,
+      "sourceName": "Червеобразные мышцы (1)",
+      "sourceFilter": 411,
+      "points": 39,
+      "displayName": "Червеобразная мышца · 1",
+      "displayFilter": 15311,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2218,
+      "sourceName": "Червеобразные мышцы (2)",
+      "sourceFilter": 411,
+      "points": 27,
+      "displayName": "Червеобразная мышца · 2",
+      "displayFilter": 15311,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2219,
+      "sourceName": "Червеобразные мышцы (3)",
+      "sourceFilter": 411,
+      "points": 22,
+      "displayName": "Червеобразная мышца · 3",
+      "displayFilter": 15311,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 5160,
+      "sourceName": "Поверхностная ладонная венозная дуга",
+      "sourceFilter": 415,
+      "points": 18,
+      "displayName": "Поверхностная ладонная венозная дуга",
+      "displayFilter": 415,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9297,
+      "sourceName": "Общие ладонные пальцевые нервы (Локтевой нерв)",
+      "sourceFilter": 416,
+      "points": 13,
+      "displayName": "Общие ладонные пальцевые нервы (Локтевой нерв)",
+      "displayFilter": 416,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9298,
+      "sourceName": "Собственные ладонные пальцевые нервы (Локтевой нерв)",
+      "sourceFilter": 416,
+      "points": 74,
+      "displayName": "Собственные ладонные пальцевые нервы (Локтевой нерв)",
+      "displayFilter": 416,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2220,
+      "sourceName": "Червеобразные мышцы (4)",
+      "sourceFilter": 411,
+      "points": 22,
+      "displayName": "Червеобразная мышца · 4",
+      "displayFilter": 15311,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 4567,
+      "sourceName": "Лучевая артерия указательного пальца",
+      "sourceFilter": 414,
+      "points": 26,
+      "displayName": "Лучевая артерия указательного пальца",
+      "displayFilter": 414,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2195,
+      "sourceName": "Межсухожильные соединения",
+      "sourceFilter": 411,
+      "points": 11,
+      "displayName": "Межсухожильные соединения разгибателей (juncturae tendinum)",
+      "displayFilter": 413,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 4587,
+      "sourceName": "Общие ладонные пальцевые артерии",
+      "sourceFilter": 414,
+      "points": 26,
+      "displayName": "Общие ладонные пальцевые артерии",
+      "displayFilter": 414,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1179,
+      "sourceName": "Сесамовидные кости",
+      "sourceFilter": 408,
+      "points": 12,
+      "displayName": "Сесамовидные кости",
+      "displayFilter": 408,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9617,
+      "sourceName": "Кости пальцев; фаланги [I]",
+      "sourceFilter": 408,
+      "points": 26,
+      "displayName": "Кости пальцев; фаланги [I]",
+      "displayFilter": 408,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1171,
+      "sourceName": "Проксимальная фаланга",
+      "sourceFilter": 408,
+      "points": 50,
+      "displayName": "Проксимальная фаланга",
+      "displayFilter": 408,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 236,
+      "sourceName": "Большой палец I",
+      "sourceFilter": 402,
+      "points": 37,
+      "displayName": "Большой палец I",
+      "displayFilter": 402,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1168,
+      "sourceName": "Головка пястной кости",
+      "sourceFilter": 407,
+      "points": 46,
+      "displayName": "Головка пястной кости",
+      "displayFilter": 407,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9621,
+      "sourceName": "Кости пальцев; фаланги [V]",
+      "sourceFilter": 408,
+      "points": 31,
+      "displayName": "Кости пальцев; фаланги [V]",
+      "displayFilter": 408,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1663,
+      "sourceName": "Коллатеральные связки",
+      "sourceFilter": 410,
+      "points": 38,
+      "displayName": "Коллатеральные связки пястно-фаланговых суставов",
+      "displayFilter": 15303,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1665,
+      "sourceName": "Глубокая поперечная пястная связка",
+      "sourceFilter": 410,
+      "points": 20,
+      "displayName": "Глубокая поперечная пястная связка",
+      "displayFilter": 15303,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2245,
+      "sourceName": "Поверхностная поперечная пястная связка",
+      "sourceFilter": 413,
+      "points": 43,
+      "displayName": "Поверхностная поперечная пястная связка",
+      "displayFilter": 413,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9620,
+      "sourceName": "Кости пальцев; фаланги [IV]",
+      "sourceFilter": 408,
+      "points": 39,
+      "displayName": "Кости пальцев; фаланги [IV]",
+      "displayFilter": 408,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2406,
+      "sourceName": "Фиброзные влагалища пальцев кисти",
+      "sourceFilter": 413,
+      "points": 56,
+      "displayName": "Фиброзные влагалища сухожилий сгибателей пальцев",
+      "displayFilter": 15307,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9623,
+      "sourceName": "Dorsal digital veins",
+      "sourceFilter": 415,
+      "points": 66,
+      "displayName": "Тыльные пальцевые вены",
+      "displayFilter": 415,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1662,
+      "sourceName": "Пястно-фаланговые суставы",
+      "sourceFilter": 409,
+      "points": 50,
+      "displayName": "Пястно-фаланговые суставы",
+      "displayFilter": 409,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1664,
+      "sourceName": "Ладонные связки",
+      "sourceFilter": 410,
+      "points": 22,
+      "displayName": "Ладонные пластинки пястно-фаланговых суставов",
+      "displayFilter": 15303,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1668,
+      "sourceName": "Ладонные связки",
+      "sourceFilter": 410,
+      "points": 54,
+      "displayName": "Ладонные пластинки межфаланговых суставов",
+      "displayFilter": 15303,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 4565,
+      "sourceName": "Тыльные пальцевые артерии",
+      "sourceFilter": 414,
+      "points": 71,
+      "displayName": "Тыльные пальцевые артерии",
+      "displayFilter": 414,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 5158,
+      "sourceName": "Межголовковые вены",
+      "sourceFilter": 415,
+      "points": 14,
+      "displayName": "Межголовковые вены",
+      "displayFilter": 415,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 237,
+      "sourceName": "Указательный палец II",
+      "sourceFilter": 402,
+      "points": 50,
+      "displayName": "Указательный палец II",
+      "displayFilter": 402,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 239,
+      "sourceName": "Безымянный палец IV",
+      "sourceFilter": 402,
+      "points": 45,
+      "displayName": "Безымянный палец IV",
+      "displayFilter": 402,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9618,
+      "sourceName": "Кости пальцев; фаланги [II]",
+      "sourceFilter": 408,
+      "points": 42,
+      "displayName": "Кости пальцев; фаланги [II]",
+      "displayFilter": 408,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9619,
+      "sourceName": "Кости пальцев; фаланги [III]",
+      "sourceFilter": 408,
+      "points": 43,
+      "displayName": "Кости пальцев; фаланги [III]",
+      "displayFilter": 408,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1175,
+      "sourceName": "Основание фаланги",
+      "sourceFilter": 408,
+      "points": 52,
+      "displayName": "Основание фаланги",
+      "displayFilter": 408,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1667,
+      "sourceName": "Коллатеральные связки",
+      "sourceFilter": 410,
+      "points": 37,
+      "displayName": "Коллатеральные связки межфаланговых суставов",
+      "displayFilter": 15303,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 2410,
+      "sourceName": "Связки сухожилий",
+      "sourceFilter": 413,
+      "points": 30,
+      "displayName": "Удерживающие связочки сухожилий (vincula tendinum)",
+      "displayFilter": 15307,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 238,
+      "sourceName": "Средний палец III",
+      "sourceFilter": 402,
+      "points": 47,
+      "displayName": "Средний палец III",
+      "displayFilter": 402,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 240,
+      "sourceName": "Мизинец V",
+      "sourceFilter": 402,
+      "points": 34,
+      "displayName": "Мизинец V",
+      "displayFilter": 402,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1173,
+      "sourceName": "Дистальная фаланга",
+      "sourceFilter": 408,
+      "points": 39,
+      "displayName": "Дистальная фаланга",
+      "displayFilter": 408,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9622,
+      "sourceName": "Межфаланговые суставы кисти",
+      "sourceFilter": 409,
+      "points": 13,
+      "displayName": "Межфаланговые суставы кисти",
+      "displayFilter": 409,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 4588,
+      "sourceName": "Собственные ладонные пальцевые артерии",
+      "sourceFilter": 414,
+      "points": 61,
+      "displayName": "Собственные ладонные пальцевые артерии",
+      "displayFilter": 414,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 5161,
+      "sourceName": "Ладонные пальцевые вены",
+      "sourceFilter": 415,
+      "points": 64,
+      "displayName": "Ладонные пальцевые вены",
+      "displayFilter": 415,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 8156,
+      "sourceName": "Ноготь",
+      "sourceFilter": 402,
+      "points": 45,
+      "displayName": "Ноготь",
+      "displayFilter": 402,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 8161,
+      "sourceName": "Скрытый край",
+      "sourceFilter": 402,
+      "points": 29,
+      "displayName": "Скрытый край",
+      "displayFilter": 402,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1176,
+      "sourceName": "Тело фаланги",
+      "sourceFilter": 408,
+      "points": 42,
+      "displayName": "Тело фаланги",
+      "displayFilter": 408,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 241,
+      "sourceName": "Ладонные поверхности пальцев",
+      "sourceFilter": 402,
+      "points": 73,
+      "displayName": "Ладонные поверхности пальцев",
+      "displayFilter": 402,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 242,
+      "sourceName": "Тыльные поверхности пальцев",
+      "sourceFilter": 402,
+      "points": 72,
+      "displayName": "Тыльные поверхности пальцев",
+      "displayFilter": 402,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 8162,
+      "sourceName": "Латеральный край",
+      "sourceFilter": 402,
+      "points": 18,
+      "displayName": "Латеральный край",
+      "displayFilter": 402,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1174,
+      "sourceName": "Бугристость дистальной фаланги",
+      "sourceFilter": 408,
+      "points": 21,
+      "displayName": "Бугристость дистальной фаланги",
+      "displayFilter": 408,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 8163,
+      "sourceName": "Свободный край",
+      "sourceFilter": 402,
+      "points": 26,
+      "displayName": "Свободный край",
+      "displayFilter": 402,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1177,
+      "sourceName": "Головка фаланги",
+      "sourceFilter": 408,
+      "points": 38,
+      "displayName": "Головка фаланги",
+      "displayFilter": 408,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9675,
+      "sourceName": "Межфаланговые суставы кисти - Проксимальный",
+      "sourceFilter": 409,
+      "points": 28,
+      "displayName": "Проксимальные межфаланговые суставы (PIP)",
+      "displayFilter": 409,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1178,
+      "sourceName": "Блок фаланги",
+      "sourceFilter": 408,
+      "points": 30,
+      "displayName": "Блок фаланги",
+      "displayFilter": 408,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1172,
+      "sourceName": "Средняя фаланга",
+      "sourceFilter": 408,
+      "points": 27,
+      "displayName": "Средняя фаланга",
+      "displayFilter": 408,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 9676,
+      "sourceName": "Межфаланговые суставы кисти - Дистальный",
+      "sourceFilter": 409,
+      "points": 21,
+      "displayName": "Дистальные межфаланговые суставы (DIP)",
+      "displayFilter": 409,
+      "decision": "presentation-only; original coordinates retained"
+    },
+    {
+      "id": 1635,
+      "sourceName": "Лучезапястный сустав",
+      "sourceFilter": 409,
+      "points": 30,
+      "displayName": "Лучезапястный сустав",
+      "displayFilter": 409,
+      "decision": "presentation-only; original coordinates retained"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "revision": "1.63",
+  "beforeAreas": 13,
+  "afterAreas": 12,
+  "beforeRoutes": {
+    "brain": [
+      "brain.html?set=vascular&series=arteries3d",
+      "brain.html?set=vascular&series=veins3d",
+      "brain.html?set=multiplanar",
+      "brain.html?set=contrast",
+      "brain-3d.html?set=vascular"
+    ],
+    "spine": [
+      "spine-mri.html"
+    ],
+    "face-neck": [
+      "face-neck-mri.html"
+    ],
+    "shoulder": [
+      "shoulder-mri.html",
+      "shoulder.html",
+      "cuff.html"
+    ],
+    "elbow": [
+      "elbow-mri.html"
+    ],
+    "wrist": [
+      "hand-mri.html",
+      "wrist-mri.html",
+      "wrist.html?mode=ligaments",
+      "wrist.html?mode=tendons",
+      "wrist.html?mode=tfcc"
+    ],
+    "knee": [
+      "knee-mri.html",
+      "patellofemoral.html",
+      "knee.html",
+      "ligaments.html",
+      "knee-bursae.html",
+      "cartilage.html",
+      "knee-3d.html?set=vascular"
+    ],
+    "hip": [
+      "hip-mri.html",
+      "hip-mri.html?set=vascular"
+    ],
+    "pelvis": [
+      "perianal-mri.html",
+      "male-pelvis-mri.html",
+      "female-pelvis-mri.html",
+      "fibroids.html"
+    ],
+    "foot": [
+      "foot-mri.html"
+    ],
+    "upper-limb": [
+      "upper-limb-mri.html"
+    ],
+    "lower-limb": [
+      "lower-limb-mri.html"
+    ],
+    "brachial-plexus": [
+      "brachial-plexus-mri.html"
+    ]
+  },
+  "iconCount": 12,
+  "icons": {
+    "brain.svg": "c1fc9d74102143e3d8757019fbd1fc944fff3d4f06290a458919844953a61c82",
+    "elbow.svg": "7787e8b1138e2ae5eee48a32147f151bf6c6114dc85719e5d90e71c6cd6879d9",
+    "face-neck.svg": "173c41c5dd77b45b91125d9bec78de0a7c09863159062201a7c4d955495f6b50",
+    "foot.svg": "3333e145669f6c6f47bd3a03da2823389cdc23822629f4c451becedf3b0c132a",
+    "hip.svg": "77dfb1efdc8c1d5eb96a2083dc9c8dc59e1b9d38364de64966a9c6ee0f011b68",
+    "knee.svg": "7072955f322358af112872fb697162210f8bfe670cefd44801f0fe3f3112a772",
+    "lower-limb.svg": "1aefe0ea0a56962b075b13204bd704d39976f9da239ee0ce2e14842795c2c42d",
+    "pelvis.svg": "7a52e32d5169a59b1da4355431f786968789cad97af25e35c2a1f89386e58019",
+    "shoulder.svg": "80850f90d1e2d7f942e882b22276d2ca3998e1cb77c80bd5b40d6d32ba5eee3d",
+    "spine.svg": "97332c238f73085cdaf70bb7b57b878c2e3ea59d1ec3d405ee1fb0f84397b7a1",
+    "upper-limb.svg": "ca0dcef3d8d636fddc16b7f436abd5d8ef90787ef0c5d3551973e33ab804e25a",
+    "wrist.svg": "54bb8c1e36367b94f7195c2fac1a7f4dbbe1c4f89c25722c4ab0983459e9455c"
+  },
+  "sourceDataHashes": {
+    "app/src/main/assets/brachial-plexus-mri-data.json": "4ae0b78ab3c0c6d33a10c4ac41139564f250aaf6504f6da8e2c4732d31b26cc7",
+    "app/src/main/assets/brain-3d-data.json": "f45db3aa78ef79bab92144c971941ce432839c04df52c871199a71a0ba1cab38",
+    "app/src/main/assets/brain-data.json": "bb95afb02b39b2f987c0abc849119d14e64517a9073807d95c70e4a0a25ca1e6",
+    "app/src/main/assets/elbow-mri-data.json": "42f3c048025e4748072f24db33fe1ff52271195fee6141d56dbd7e70b4c22a80",
+    "app/src/main/assets/face-neck-mri-data.json": "17443ed7b5ca48a1972ba6d46ba0f318a15aafac98b1a3458a8c3b31fea42bc3",
+    "app/src/main/assets/female-pelvis-mri-data.json": "c03d5a71c45eff5a22b0ef47b9fca2e6d1b16dffb130bfad394f6632e0680b77",
+    "app/src/main/assets/foot-mri-data.json": "cf627ffe4815255ef7c216a36e94b26c0fcfc21e2ac6e0c025e9cd843f460aa4",
+    "app/src/main/assets/hand-mri-data.json": "c130b3e6fe70e485546bccaf90b8240477fd2d9adaf75b535286338ac684cd2d",
+    "app/src/main/assets/hip-mri-data.json": "72237d638773c160bdcc9ec94acf71d02e95e5c79500fe6d3f5530d23034f526",
+    "app/src/main/assets/knee-3d-data.json": "4da91ae3c199606889861e6318aebb5a7dc9c28a39cca4213b033fc40fb26026",
+    "app/src/main/assets/knee-mri-data.json": "10de14ba67ff748c32ee911178a8ba7b461ccb6afe933b0ced570e03eaaba413",
+    "app/src/main/assets/lower-limb-mri-data.json": "902a98f3e980492904d7b4bf594ec2a252b613ff3ea8c27fb7f5ebad292c4a64",
+    "app/src/main/assets/male-pelvis-mri-data.json": "0ade0a8600393c8e1029f87dac984796b6d8627f6f83275f9eca661779b66ecd",
+    "app/src/main/assets/perianal-mri-data.json": "269e19b7482c5bd6a9d2e89199b2bd48b3980eb4b4214c928fe91c359f840590",
+    "app/src/main/assets/shoulder-mri-data.json": "97280dc1df1bab7ad748c4a445e33b87c6e79f26c3531cb1b5eeff822bf27b48",
+    "app/src/main/assets/spine-mri-data.json": "f206dc8b00ffa08273b9c697be75c701c9a13c9f0d65df136c4b7088ceb08565",
+    "app/src/main/assets/upper-limb-mri-data.json": "030c76554e7d088ad69e129ce4b9eb506a57dc54c5651bb6547cad4d7fc7a775",
+    "app/src/main/assets/wrist-mri-data.json": "aca41cf414731714a6f0e3c2b4b30f75f2b34143c35687f27b7b7eda7a594def"
+  },
+  "sourceLabelsHashes": {
+    "app/src/main/assets/brachial-plexus-mri-labels.json": "bf2e47a005addec44c8294fcb5d53c027d9f2972572e28b2c35e98aa0ec6367c",
+    "app/src/main/assets/brain-3d-labels.json": "a492e5aea6dcaf732adf972c2f72e80f512d7dea76a368cec1c989c76962b8b7",
+    "app/src/main/assets/brain-labels.json": "0d4bd8f085fc23602e6027134226b7b67d664d7bd5a9d0464b751a4bb10ac1ca",
+    "app/src/main/assets/elbow-mri-labels.json": "ad252f1225c17b880da0fe86d8c77e7f37f1229d1a190ff41a708e9b50a750db",
+    "app/src/main/assets/face-neck-mri-labels.json": "b95dab6092fdbe4132e51b906172b0bca8033ce48b1e27ed747bb23889c4deaf",
+    "app/src/main/assets/female-pelvis-mri-labels.json": "9d8e5addd0809e6b27867137690835a84754d108d6279f28f984581410792412",
+    "app/src/main/assets/foot-mri-labels.json": "9c75261df517f84aff7d9e02267852190aa08ee9c8a266007c2340ee825dc8fe",
+    "app/src/main/assets/hand-mri-labels.json": "e615c7bfb52eb7cd32797a2238b4755d5f8c891de76091a867be621f6df92ea9",
+    "app/src/main/assets/hip-mri-labels.json": "00760d01b5db17798245f87fa33d30eedfcfa43c43f92dd17cb04e6b437b0687",
+    "app/src/main/assets/knee-3d-labels.json": "b09609dd68e5fc63d3bf0b18cfa1da12a167cead3ab2d18df9890d96ed489aa1",
+    "app/src/main/assets/knee-mri-labels.json": "81669880fda2b0aa8f05d88664b5aa5572872d5218a7e753126471fb2b2006df",
+    "app/src/main/assets/lower-limb-mri-labels.json": "41bf9e37e07925ba30906a516c3360f1681937396b36f0f8006b0157a360bb0c",
+    "app/src/main/assets/male-pelvis-mri-labels.json": "55226b166efccd12fa5ba19a8e3d93ed08f66fa99b3d10d23c7a98388695e297",
+    "app/src/main/assets/perianal-mri-labels.json": "1e229e33ad525ae7c5388e46820675119822ee246e5d4c65e6b58533bc0b720b",
+    "app/src/main/assets/shoulder-mri-labels.json": "2a54bf0ccc8ff32825dddf70b7f2bf249c59066e86b53615821bebb44a3c4537",
+    "app/src/main/assets/spine-mri-labels.json": "80c8760cd7954dfed34cb7ace1354e6553965242584fbe3a1dae43af9f349df5",
+    "app/src/main/assets/upper-limb-mri-labels.json": "e8b040328a4c7a56d385eaaf9988d4f3005c9c37c5f0dd6714f1906df7612c80",
+    "app/src/main/assets/wrist-mri-labels.json": "4660debcf668db061a1a2a91dbe04d702a9b3c1817c46b03ad8547266d09db7b"
+  }
+}

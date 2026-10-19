@@ -1,0 +1,46 @@
+[
+  {
+    "url": "shoulder.html",
+    "thumb": "menu-thumbs/shoulder.webp"
+  },
+  {
+    "url": "cuff.html",
+    "thumb": "menu-thumbs/cuff.webp"
+  },
+  {
+    "url": "wrist.html?mode=ligaments",
+    "thumb": "menu-thumbs/wrist-mode-ligaments.webp"
+  },
+  {
+    "url": "wrist.html?mode=tendons",
+    "thumb": "menu-thumbs/wrist-mode-tendons.webp"
+  },
+  {
+    "url": "wrist.html?mode=tfcc",
+    "thumb": "menu-thumbs/wrist-mode-tfcc.webp"
+  },
+  {
+    "url": "patellofemoral.html",
+    "thumb": "menu-thumbs/patellofemoral.webp"
+  },
+  {
+    "url": "knee.html",
+    "thumb": "menu-thumbs/knee.webp"
+  },
+  {
+    "url": "ligaments.html",
+    "thumb": "menu-thumbs/ligaments.webp"
+  },
+  {
+    "url": "knee-bursae.html",
+    "thumb": "menu-thumbs/knee-bursae.webp"
+  },
+  {
+    "url": "cartilage.html",
+    "thumb": "menu-thumbs/cartilage.webp"
+  },
+  {
+    "url": "fibroids.html",
+    "thumb": "menu-thumbs/fibroids.webp"
+  }
+]

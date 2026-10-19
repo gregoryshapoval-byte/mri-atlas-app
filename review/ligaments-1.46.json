@@ -1,0 +1,4649 @@
+{
+  "version": "1.46",
+  "limitations": "≈, контурная точка и пунктир — ориентировочная область ожидаемого хода или прикрепления, а не доказанная визуализация отдельного пучка. Разметка учебная; тонкие компоненты могут сливаться с капсулой. Не использовать точку для оценки целости связки. Независимая врачебная верификация не выполнена.",
+  "modules": [
+    {
+      "module": "shoulder-mri",
+      "sourceDataSha256": "97280dc1df1bab7ad748c4a445e33b87c6e79f26c3531cb1b5eeff822bf27b48",
+      "sourceLabelsSha256": "2a54bf0ccc8ff32825dddf70b7f2bf249c59066e86b53615821bebb44a3c4537",
+      "added": [
+        {
+          "series": "656-contraste_dp",
+          "frame": 24,
+          "annotation": "17801",
+          "imageSha256": "64ba8541f848918a5245b2c56316aa1544c474670aa5ac62952cdc5b026321be",
+          "id": 146000000,
+          "structure": 143202,
+          "name": "≈ IGHL · передний пучок · ориентировочно",
+          "shortName": "≈ IGHL · передний пучок",
+          "filter": 14302,
+          "x": 225,
+          "y": 258,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "656-contraste_dp",
+          "frame": 25,
+          "annotation": "17802",
+          "imageSha256": "41954005a52baaea7b685b3010ffe7282b16878faf7bc6c5bdc2159839576593",
+          "id": 146000001,
+          "structure": 143202,
+          "name": "≈ IGHL · передний пучок · ориентировочно",
+          "shortName": "≈ IGHL · передний пучок",
+          "filter": 14302,
+          "x": 222,
+          "y": 264,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "656-contraste_dp",
+          "frame": 26,
+          "annotation": "17803",
+          "imageSha256": "c7fcf00254cd83145b5ff36385c4465f02578b531c0e9b3f9b8cda31c4d3191d",
+          "id": 146000002,
+          "structure": 143202,
+          "name": "≈ IGHL · передний пучок · ориентировочно",
+          "shortName": "≈ IGHL · передний пучок",
+          "filter": 14302,
+          "x": 217,
+          "y": 270,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "656-contraste_dp",
+          "frame": 24,
+          "annotation": "17801",
+          "imageSha256": "64ba8541f848918a5245b2c56316aa1544c474670aa5ac62952cdc5b026321be",
+          "id": 146000003,
+          "structure": 143203,
+          "name": "≈ IGHL · задний пучок · ориентировочно",
+          "shortName": "≈ IGHL · задний пучок",
+          "filter": 14302,
+          "x": 216,
+          "y": 326,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "656-contraste_dp",
+          "frame": 25,
+          "annotation": "17802",
+          "imageSha256": "41954005a52baaea7b685b3010ffe7282b16878faf7bc6c5bdc2159839576593",
+          "id": 146000004,
+          "structure": 143203,
+          "name": "≈ IGHL · задний пучок · ориентировочно",
+          "shortName": "≈ IGHL · задний пучок",
+          "filter": 14302,
+          "x": 213,
+          "y": 326,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "656-contraste_dp",
+          "frame": 26,
+          "annotation": "17803",
+          "imageSha256": "c7fcf00254cd83145b5ff36385c4465f02578b531c0e9b3f9b8cda31c4d3191d",
+          "id": 146000005,
+          "structure": 143203,
+          "name": "≈ IGHL · задний пучок · ориентировочно",
+          "shortName": "≈ IGHL · задний пучок",
+          "filter": 14302,
+          "x": 209,
+          "y": 327,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "656-contraste_dp",
+          "frame": 24,
+          "annotation": "17801",
+          "imageSha256": "64ba8541f848918a5245b2c56316aa1544c474670aa5ac62952cdc5b026321be",
+          "id": 146000006,
+          "structure": 143204,
+          "name": "≈ Аксиллярная капсула · лопаточное прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · лопаточное прикрепление",
+          "filter": 14302,
+          "x": 233,
+          "y": 312,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "656-contraste_dp",
+          "frame": 25,
+          "annotation": "17802",
+          "imageSha256": "41954005a52baaea7b685b3010ffe7282b16878faf7bc6c5bdc2159839576593",
+          "id": 146000007,
+          "structure": 143204,
+          "name": "≈ Аксиллярная капсула · лопаточное прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · лопаточное прикрепление",
+          "filter": 14302,
+          "x": 231,
+          "y": 318,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "656-contraste_dp",
+          "frame": 26,
+          "annotation": "17803",
+          "imageSha256": "c7fcf00254cd83145b5ff36385c4465f02578b531c0e9b3f9b8cda31c4d3191d",
+          "id": 146000008,
+          "structure": 143204,
+          "name": "≈ Аксиллярная капсула · лопаточное прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · лопаточное прикрепление",
+          "filter": 14302,
+          "x": 229,
+          "y": 320,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "656-contraste_dp",
+          "frame": 24,
+          "annotation": "17801",
+          "imageSha256": "64ba8541f848918a5245b2c56316aa1544c474670aa5ac62952cdc5b026321be",
+          "id": 146000009,
+          "structure": 143205,
+          "name": "≈ Аксиллярная капсула · плечевое прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · плечевое прикрепление",
+          "filter": 14302,
+          "x": 207,
+          "y": 302,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "656-contraste_dp",
+          "frame": 25,
+          "annotation": "17802",
+          "imageSha256": "41954005a52baaea7b685b3010ffe7282b16878faf7bc6c5bdc2159839576593",
+          "id": 146000010,
+          "structure": 143205,
+          "name": "≈ Аксиллярная капсула · плечевое прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · плечевое прикрепление",
+          "filter": 14302,
+          "x": 203,
+          "y": 301,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "656-contraste_dp",
+          "frame": 26,
+          "annotation": "17803",
+          "imageSha256": "c7fcf00254cd83145b5ff36385c4465f02578b531c0e9b3f9b8cda31c4d3191d",
+          "id": 146000011,
+          "structure": 143205,
+          "name": "≈ Аксиллярная капсула · плечевое прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · плечевое прикрепление",
+          "filter": 14302,
+          "x": 200,
+          "y": 299,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "656-contraste_dp",
+          "frame": 24,
+          "annotation": "17801",
+          "imageSha256": "64ba8541f848918a5245b2c56316aa1544c474670aa5ac62952cdc5b026321be",
+          "id": 146000012,
+          "structure": 143206,
+          "name": "≈ Аксиллярный карман · капсулярная складка · ориентировочно",
+          "shortName": "≈ Аксиллярный карман · капсулярная складка",
+          "filter": 14302,
+          "x": 224,
+          "y": 297,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "656-contraste_dp",
+          "frame": 25,
+          "annotation": "17802",
+          "imageSha256": "41954005a52baaea7b685b3010ffe7282b16878faf7bc6c5bdc2159839576593",
+          "id": 146000013,
+          "structure": 143206,
+          "name": "≈ Аксиллярный карман · капсулярная складка · ориентировочно",
+          "shortName": "≈ Аксиллярный карман · капсулярная складка",
+          "filter": 14302,
+          "x": 218,
+          "y": 303,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "656-contraste_dp",
+          "frame": 26,
+          "annotation": "17803",
+          "imageSha256": "c7fcf00254cd83145b5ff36385c4465f02578b531c0e9b3f9b8cda31c4d3191d",
+          "id": 146000014,
+          "structure": 143206,
+          "name": "≈ Аксиллярный карман · капсулярная складка · ориентировочно",
+          "shortName": "≈ Аксиллярный карман · капсулярная складка",
+          "filter": 14302,
+          "x": 213,
+          "y": 307,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 15,
+          "annotation": "17870",
+          "imageSha256": "72eeec68ae7fdc5bf0b0f71da253ec3199d2b4d5e95de6050d438d0868577468",
+          "id": 146000015,
+          "structure": 143202,
+          "name": "≈ IGHL · передний пучок · ориентировочно",
+          "shortName": "≈ IGHL · передний пучок",
+          "filter": 14302,
+          "x": 155,
+          "y": 208,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 16,
+          "annotation": "17871",
+          "imageSha256": "ee97ba062e7a442490a14325aa706b4ac9ecedc67f250b14d02d87f6c962ef22",
+          "id": 146000016,
+          "structure": 143202,
+          "name": "≈ IGHL · передний пучок · ориентировочно",
+          "shortName": "≈ IGHL · передний пучок",
+          "filter": 14302,
+          "x": 158,
+          "y": 207,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 22,
+          "annotation": "17877",
+          "imageSha256": "a6903f404bb02e6464504c5abc2d0368c4b781cad37270f32b420e5ac51a0878",
+          "id": 146000017,
+          "structure": 143203,
+          "name": "≈ IGHL · задний пучок · ориентировочно",
+          "shortName": "≈ IGHL · задний пучок",
+          "filter": 14302,
+          "x": 148,
+          "y": 209,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 23,
+          "annotation": "17878",
+          "imageSha256": "5bd5028ef2753cf97a05ec2acc5dafa9230565898d82232a98686594ff158c57",
+          "id": 146000018,
+          "structure": 143203,
+          "name": "≈ IGHL · задний пучок · ориентировочно",
+          "shortName": "≈ IGHL · задний пучок",
+          "filter": 14302,
+          "x": 145,
+          "y": 210,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "657-contraste_dp",
+          "frame": 19,
+          "annotation": "17838",
+          "imageSha256": "9e6eb2dc886788dfc970e7b17fd337f8d1a765d35f92de0e85d7b9f8a0eb210c",
+          "id": 146000019,
+          "structure": 143204,
+          "name": "≈ Аксиллярная капсула · лопаточное прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · лопаточное прикрепление",
+          "filter": 14302,
+          "x": 252,
+          "y": 224,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "657-contraste_dp",
+          "frame": 20,
+          "annotation": "17839",
+          "imageSha256": "74e46b5f5bbf5fa2f793d1a3b904a9488fb05226d2f8db511835d0d300142552",
+          "id": 146000020,
+          "structure": 143204,
+          "name": "≈ Аксиллярная капсула · лопаточное прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · лопаточное прикрепление",
+          "filter": 14302,
+          "x": 251,
+          "y": 221,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "657-contraste_dp",
+          "frame": 15,
+          "annotation": "17834",
+          "imageSha256": "a1f45d9c60245bb81a0db057541d3d9ff86bd59d4fed0efc51a4747ed0054451",
+          "id": 146000021,
+          "structure": 143205,
+          "name": "≈ Аксиллярная капсула · плечевое прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · плечевое прикрепление",
+          "filter": 14302,
+          "x": 245,
+          "y": 216,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "657-contraste_dp",
+          "frame": 16,
+          "annotation": "17835",
+          "imageSha256": "5a0eea3bde250046f1248fc52e973567fb608be6be820e0fbe199b62c00b868c",
+          "id": 146000022,
+          "structure": 143205,
+          "name": "≈ Аксиллярная капсула · плечевое прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · плечевое прикрепление",
+          "filter": 14302,
+          "x": 249,
+          "y": 219,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "657-contraste_dp",
+          "frame": 18,
+          "annotation": "17837",
+          "imageSha256": "53e23c9a820905102038605ccb24f2fe5bab8c10bc733a36aa7bf12458a1ee25",
+          "id": 146000023,
+          "structure": 143206,
+          "name": "≈ Аксиллярный карман · капсулярная складка · ориентировочно",
+          "shortName": "≈ Аксиллярный карман · капсулярная складка",
+          "filter": 14302,
+          "x": 279,
+          "y": 237,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "657-contraste_dp",
+          "frame": 19,
+          "annotation": "17838",
+          "imageSha256": "9e6eb2dc886788dfc970e7b17fd337f8d1a765d35f92de0e85d7b9f8a0eb210c",
+          "id": 146000024,
+          "structure": 143206,
+          "name": "≈ Аксиллярный карман · капсулярная складка · ориентировочно",
+          "shortName": "≈ Аксиллярный карман · капсулярная складка",
+          "filter": 14302,
+          "x": 282,
+          "y": 233,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 15,
+          "annotation": "17870",
+          "imageSha256": "72eeec68ae7fdc5bf0b0f71da253ec3199d2b4d5e95de6050d438d0868577468",
+          "id": 146000025,
+          "structure": 143205,
+          "name": "≈ Аксиллярная капсула · плечевое прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · плечевое прикрепление",
+          "filter": 14302,
+          "x": 143,
+          "y": 216,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 16,
+          "annotation": "17871",
+          "imageSha256": "ee97ba062e7a442490a14325aa706b4ac9ecedc67f250b14d02d87f6c962ef22",
+          "id": 146000026,
+          "structure": 143205,
+          "name": "≈ Аксиллярная капсула · плечевое прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · плечевое прикрепление",
+          "filter": 14302,
+          "x": 145,
+          "y": 216,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 17,
+          "annotation": "17872",
+          "imageSha256": "2f64cca35a92d46253cf440e3d8e38200f131534e7f9f70e561e4c9b5fa7888d",
+          "id": 146000027,
+          "structure": 143205,
+          "name": "≈ Аксиллярная капсула · плечевое прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · плечевое прикрепление",
+          "filter": 14302,
+          "x": 143,
+          "y": 221,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 18,
+          "annotation": "17873",
+          "imageSha256": "cec60be5a31c1c4805a096db0dedebebdec0dfa0cd2173cb67ca2fdb0479d2ba",
+          "id": 146000028,
+          "structure": 143205,
+          "name": "≈ Аксиллярная капсула · плечевое прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · плечевое прикрепление",
+          "filter": 14302,
+          "x": 147,
+          "y": 222,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 19,
+          "annotation": "17874",
+          "imageSha256": "2c74458e04a2a42ff2f27128972d57d48f5733ee318cfa5a791b03f500b8d366",
+          "id": 146000029,
+          "structure": 143205,
+          "name": "≈ Аксиллярная капсула · плечевое прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · плечевое прикрепление",
+          "filter": 14302,
+          "x": 145,
+          "y": 221,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 20,
+          "annotation": "17875",
+          "imageSha256": "ce87b521f7ff337c6f895f27661268c43b4b123d3d52818247b2951d83075128",
+          "id": 146000030,
+          "structure": 143205,
+          "name": "≈ Аксиллярная капсула · плечевое прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · плечевое прикрепление",
+          "filter": 14302,
+          "x": 143,
+          "y": 219,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 21,
+          "annotation": "17876",
+          "imageSha256": "58b037cf392a264bed75910dce73dbf6d38fc3de6ba751cdd7b3fef973c9337e",
+          "id": 146000031,
+          "structure": 143205,
+          "name": "≈ Аксиллярная капсула · плечевое прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · плечевое прикрепление",
+          "filter": 14302,
+          "x": 142,
+          "y": 219,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 22,
+          "annotation": "17877",
+          "imageSha256": "a6903f404bb02e6464504c5abc2d0368c4b781cad37270f32b420e5ac51a0878",
+          "id": 146000032,
+          "structure": 143205,
+          "name": "≈ Аксиллярная капсула · плечевое прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · плечевое прикрепление",
+          "filter": 14302,
+          "x": 140,
+          "y": 218,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 23,
+          "annotation": "17878",
+          "imageSha256": "5bd5028ef2753cf97a05ec2acc5dafa9230565898d82232a98686594ff158c57",
+          "id": 146000033,
+          "structure": 143205,
+          "name": "≈ Аксиллярная капсула · плечевое прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · плечевое прикрепление",
+          "filter": 14302,
+          "x": 139,
+          "y": 217,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 15,
+          "annotation": "17870",
+          "imageSha256": "72eeec68ae7fdc5bf0b0f71da253ec3199d2b4d5e95de6050d438d0868577468",
+          "id": 146000034,
+          "structure": 143206,
+          "name": "≈ Аксиллярный карман · капсулярная складка · ориентировочно",
+          "shortName": "≈ Аксиллярный карман · капсулярная складка",
+          "filter": 14302,
+          "x": 147,
+          "y": 232,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 16,
+          "annotation": "17871",
+          "imageSha256": "ee97ba062e7a442490a14325aa706b4ac9ecedc67f250b14d02d87f6c962ef22",
+          "id": 146000035,
+          "structure": 143206,
+          "name": "≈ Аксиллярный карман · капсулярная складка · ориентировочно",
+          "shortName": "≈ Аксиллярный карман · капсулярная складка",
+          "filter": 14302,
+          "x": 148,
+          "y": 233,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 17,
+          "annotation": "17872",
+          "imageSha256": "2f64cca35a92d46253cf440e3d8e38200f131534e7f9f70e561e4c9b5fa7888d",
+          "id": 146000036,
+          "structure": 143206,
+          "name": "≈ Аксиллярный карман · капсулярная складка · ориентировочно",
+          "shortName": "≈ Аксиллярный карман · капсулярная складка",
+          "filter": 14302,
+          "x": 147,
+          "y": 231,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 18,
+          "annotation": "17873",
+          "imageSha256": "cec60be5a31c1c4805a096db0dedebebdec0dfa0cd2173cb67ca2fdb0479d2ba",
+          "id": 146000037,
+          "structure": 143206,
+          "name": "≈ Аксиллярный карман · капсулярная складка · ориентировочно",
+          "shortName": "≈ Аксиллярный карман · капсулярная складка",
+          "filter": 14302,
+          "x": 151,
+          "y": 233,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 19,
+          "annotation": "17874",
+          "imageSha256": "2c74458e04a2a42ff2f27128972d57d48f5733ee318cfa5a791b03f500b8d366",
+          "id": 146000038,
+          "structure": 143206,
+          "name": "≈ Аксиллярный карман · капсулярная складка · ориентировочно",
+          "shortName": "≈ Аксиллярный карман · капсулярная складка",
+          "filter": 14302,
+          "x": 149,
+          "y": 231,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 20,
+          "annotation": "17875",
+          "imageSha256": "ce87b521f7ff337c6f895f27661268c43b4b123d3d52818247b2951d83075128",
+          "id": 146000039,
+          "structure": 143206,
+          "name": "≈ Аксиллярный карман · капсулярная складка · ориентировочно",
+          "shortName": "≈ Аксиллярный карман · капсулярная складка",
+          "filter": 14302,
+          "x": 147,
+          "y": 230,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 21,
+          "annotation": "17876",
+          "imageSha256": "58b037cf392a264bed75910dce73dbf6d38fc3de6ba751cdd7b3fef973c9337e",
+          "id": 146000040,
+          "structure": 143206,
+          "name": "≈ Аксиллярный карман · капсулярная складка · ориентировочно",
+          "shortName": "≈ Аксиллярный карман · капсулярная складка",
+          "filter": 14302,
+          "x": 146,
+          "y": 230,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 22,
+          "annotation": "17877",
+          "imageSha256": "a6903f404bb02e6464504c5abc2d0368c4b781cad37270f32b420e5ac51a0878",
+          "id": 146000041,
+          "structure": 143206,
+          "name": "≈ Аксиллярный карман · капсулярная складка · ориентировочно",
+          "shortName": "≈ Аксиллярный карман · капсулярная складка",
+          "filter": 14302,
+          "x": 144,
+          "y": 230,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 23,
+          "annotation": "17878",
+          "imageSha256": "5bd5028ef2753cf97a05ec2acc5dafa9230565898d82232a98686594ff158c57",
+          "id": 146000042,
+          "structure": 143206,
+          "name": "≈ Аксиллярный карман · капсулярная складка · ориентировочно",
+          "shortName": "≈ Аксиллярный карман · капсулярная складка",
+          "filter": 14302,
+          "x": 143,
+          "y": 229,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 15,
+          "annotation": "17870",
+          "imageSha256": "72eeec68ae7fdc5bf0b0f71da253ec3199d2b4d5e95de6050d438d0868577468",
+          "id": 146000043,
+          "structure": 143204,
+          "name": "≈ Аксиллярная капсула · лопаточное прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · лопаточное прикрепление",
+          "filter": 14302,
+          "x": 178,
+          "y": 203,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 16,
+          "annotation": "17871",
+          "imageSha256": "ee97ba062e7a442490a14325aa706b4ac9ecedc67f250b14d02d87f6c962ef22",
+          "id": 146000044,
+          "structure": 143204,
+          "name": "≈ Аксиллярная капсула · лопаточное прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · лопаточное прикрепление",
+          "filter": 14302,
+          "x": 181,
+          "y": 204,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 17,
+          "annotation": "17872",
+          "imageSha256": "2f64cca35a92d46253cf440e3d8e38200f131534e7f9f70e561e4c9b5fa7888d",
+          "id": 146000045,
+          "structure": 143204,
+          "name": "≈ Аксиллярная капсула · лопаточное прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · лопаточное прикрепление",
+          "filter": 14302,
+          "x": 184,
+          "y": 207,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 18,
+          "annotation": "17873",
+          "imageSha256": "cec60be5a31c1c4805a096db0dedebebdec0dfa0cd2173cb67ca2fdb0479d2ba",
+          "id": 146000046,
+          "structure": 143204,
+          "name": "≈ Аксиллярная капсула · лопаточное прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · лопаточное прикрепление",
+          "filter": 14302,
+          "x": 188,
+          "y": 209,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 19,
+          "annotation": "17874",
+          "imageSha256": "2c74458e04a2a42ff2f27128972d57d48f5733ee318cfa5a791b03f500b8d366",
+          "id": 146000047,
+          "structure": 143204,
+          "name": "≈ Аксиллярная капсула · лопаточное прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · лопаточное прикрепление",
+          "filter": 14302,
+          "x": 187,
+          "y": 208,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 20,
+          "annotation": "17875",
+          "imageSha256": "ce87b521f7ff337c6f895f27661268c43b4b123d3d52818247b2951d83075128",
+          "id": 146000048,
+          "structure": 143204,
+          "name": "≈ Аксиллярная капсула · лопаточное прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · лопаточное прикрепление",
+          "filter": 14302,
+          "x": 184,
+          "y": 207,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 21,
+          "annotation": "17876",
+          "imageSha256": "58b037cf392a264bed75910dce73dbf6d38fc3de6ba751cdd7b3fef973c9337e",
+          "id": 146000049,
+          "structure": 143204,
+          "name": "≈ Аксиллярная капсула · лопаточное прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · лопаточное прикрепление",
+          "filter": 14302,
+          "x": 182,
+          "y": 206,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 22,
+          "annotation": "17877",
+          "imageSha256": "a6903f404bb02e6464504c5abc2d0368c4b781cad37270f32b420e5ac51a0878",
+          "id": 146000050,
+          "structure": 143204,
+          "name": "≈ Аксиллярная капсула · лопаточное прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · лопаточное прикрепление",
+          "filter": 14302,
+          "x": 180,
+          "y": 205,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "658-contraste_dp",
+          "frame": 23,
+          "annotation": "17878",
+          "imageSha256": "5bd5028ef2753cf97a05ec2acc5dafa9230565898d82232a98686594ff158c57",
+          "id": 146000051,
+          "structure": 143204,
+          "name": "≈ Аксиллярная капсула · лопаточное прикрепление · ориентировочно",
+          "shortName": "≈ Аксиллярная капсула · лопаточное прикрепление",
+          "filter": 14302,
+          "x": 178,
+          "y": 205,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        }
+      ],
+      "coverage": {
+        "1596": {
+          "Аксиальный": [
+            9,
+            10
+          ],
+          "Сагиттальный": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24
+          ],
+          "Фронтальный": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        },
+        "1597": {
+          "Аксиальный": [
+            13,
+            14
+          ],
+          "Сагиттальный": [
+            29,
+            30,
+            31
+          ],
+          "Фронтальный": [
+            20
+          ]
+        },
+        "1601": {
+          "Аксиальный": [
+            5,
+            6,
+            7
+          ],
+          "Сагиттальный": [
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "Фронтальный": [
+            18,
+            19,
+            20,
+            21,
+            22
+          ]
+        },
+        "1604": {
+          "Аксиальный": [
+            9,
+            10,
+            11
+          ],
+          "Сагиттальный": [
+            21,
+            22,
+            23,
+            24,
+            25
+          ],
+          "Фронтальный": [
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        },
+        "1605": {
+          "Аксиальный": [
+            11,
+            12
+          ],
+          "Сагиттальный": [
+            26,
+            27,
+            28
+          ],
+          "Фронтальный": [
+            13,
+            14
+          ]
+        },
+        "1620": {
+          "Аксиальный": [
+            12,
+            13,
+            14,
+            15
+          ],
+          "Сагиттальный": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "Фронтальный": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "1621": {
+          "Аксиальный": [
+            16,
+            17,
+            18,
+            19
+          ],
+          "Сагиттальный": [],
+          "Фронтальный": [
+            17
+          ]
+        },
+        "9863": {
+          "Аксиальный": [
+            15,
+            16,
+            17,
+            18
+          ],
+          "Сагиттальный": [
+            18,
+            19,
+            20
+          ],
+          "Фронтальный": [
+            14
+          ]
+        },
+        "9864": {
+          "Аксиальный": [
+            20,
+            21,
+            22,
+            23
+          ],
+          "Сагиттальный": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "Фронтальный": [
+            14
+          ]
+        },
+        "9865": {
+          "Аксиальный": [],
+          "Сагиттальный": [
+            12,
+            13
+          ],
+          "Фронтальный": []
+        },
+        "143202": {
+          "Аксиальный": [
+            24,
+            25,
+            26
+          ],
+          "Сагиттальный": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "Фронтальный": [
+            15,
+            16
+          ]
+        },
+        "143203": {
+          "Аксиальный": [
+            24,
+            25,
+            26
+          ],
+          "Сагиттальный": [
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "Фронтальный": [
+            22,
+            23
+          ]
+        },
+        "143204": {
+          "Аксиальный": [
+            24,
+            25,
+            26
+          ],
+          "Сагиттальный": [
+            19,
+            20
+          ],
+          "Фронтальный": [
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ]
+        },
+        "143205": {
+          "Аксиальный": [
+            24,
+            25,
+            26
+          ],
+          "Сагиттальный": [
+            15,
+            16
+          ],
+          "Фронтальный": [
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ]
+        },
+        "143206": {
+          "Аксиальный": [
+            24,
+            25,
+            26
+          ],
+          "Сагиттальный": [
+            18,
+            19
+          ],
+          "Фронтальный": [
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ]
+        }
+      }
+    },
+    {
+      "module": "wrist-mri",
+      "sourceDataSha256": "aca41cf414731714a6f0e3c2b4b30f75f2b34143c35687f27b7b7eda7a594def",
+      "sourceLabelsSha256": "4660debcf668db061a1a2a91dbe04d702a9b3c1817c46b03ad8547266d09db7b",
+      "added": [
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 9,
+          "annotation": "18695",
+          "imageSha256": "9d38ac845d2807fdc85eb90e9daa79174e27780c8e01260655fabcf5086d0b1c",
+          "id": 146000000,
+          "structure": 913001,
+          "name": "≈ Ладонная лучелоктевая связка · ориентировочно",
+          "shortName": "≈ Ладонная лучелоктевая связка",
+          "filter": 91312,
+          "x": 454,
+          "y": 222,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 10,
+          "annotation": "18696",
+          "imageSha256": "2d7e44acbde7dc1f2bdeb50ccad6b62021ee68fa47fc9ff379942313a4e2a395",
+          "id": 146000001,
+          "structure": 913001,
+          "name": "≈ Ладонная лучелоктевая связка · ориентировочно",
+          "shortName": "≈ Ладонная лучелоктевая связка",
+          "filter": 91312,
+          "x": 456,
+          "y": 221,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 4,
+          "annotation": "18710",
+          "imageSha256": "4c5480898ea8004d58a4d2f9a3b5cd00a6eabf01e8b916b6c0e13d269ed5441d",
+          "id": 146000002,
+          "structure": 913001,
+          "name": "≈ Ладонная лучелоктевая связка · ориентировочно",
+          "shortName": "≈ Ладонная лучелоктевая связка",
+          "filter": 91312,
+          "x": 379,
+          "y": 211,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 5,
+          "annotation": "18711",
+          "imageSha256": "dd19a3813982768c64481636d4ef69d9d8b8c40937dec218844797a816bdcb3a",
+          "id": 146000003,
+          "structure": 913001,
+          "name": "≈ Ладонная лучелоктевая связка · ориентировочно",
+          "shortName": "≈ Ладонная лучелоктевая связка",
+          "filter": 91312,
+          "x": 374,
+          "y": 214,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 15,
+          "annotation": "18701",
+          "imageSha256": "66e02ab54795de9f86db0bb41bffaf75047ce37a32094101b79575827e8cb235",
+          "id": 146000004,
+          "structure": 913002,
+          "name": "≈ Тыльная лучелоктевая связка · ориентировочно",
+          "shortName": "≈ Тыльная лучелоктевая связка",
+          "filter": 91312,
+          "x": 450,
+          "y": 223,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 16,
+          "annotation": "18702",
+          "imageSha256": "e678e475d4c18ae0038b47f34f756ab7ad0819b9007066f40d57bee10fb23a10",
+          "id": 146000005,
+          "structure": 913002,
+          "name": "≈ Тыльная лучелоктевая связка · ориентировочно",
+          "shortName": "≈ Тыльная лучелоктевая связка",
+          "filter": 91312,
+          "x": 439,
+          "y": 225,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 4,
+          "annotation": "18710",
+          "imageSha256": "4c5480898ea8004d58a4d2f9a3b5cd00a6eabf01e8b916b6c0e13d269ed5441d",
+          "id": 146000006,
+          "structure": 913002,
+          "name": "≈ Тыльная лучелоктевая связка · ориентировочно",
+          "shortName": "≈ Тыльная лучелоктевая связка",
+          "filter": 91312,
+          "x": 432,
+          "y": 218,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 5,
+          "annotation": "18711",
+          "imageSha256": "dd19a3813982768c64481636d4ef69d9d8b8c40937dec218844797a816bdcb3a",
+          "id": 146000007,
+          "structure": 913002,
+          "name": "≈ Тыльная лучелоктевая связка · ориентировочно",
+          "shortName": "≈ Тыльная лучелоктевая связка",
+          "filter": 91312,
+          "x": 434,
+          "y": 215,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 9,
+          "annotation": "18695",
+          "imageSha256": "9d38ac845d2807fdc85eb90e9daa79174e27780c8e01260655fabcf5086d0b1c",
+          "id": 146000008,
+          "structure": 913003,
+          "name": "≈ SL · ладонный компонент · ориентировочно",
+          "shortName": "≈ SL · ладонный компонент",
+          "filter": 91301,
+          "x": 347,
+          "y": 276,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 10,
+          "annotation": "18696",
+          "imageSha256": "2d7e44acbde7dc1f2bdeb50ccad6b62021ee68fa47fc9ff379942313a4e2a395",
+          "id": 146000009,
+          "structure": 913003,
+          "name": "≈ SL · ладонный компонент · ориентировочно",
+          "shortName": "≈ SL · ладонный компонент",
+          "filter": 91301,
+          "x": 346,
+          "y": 273,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 16,
+          "annotation": "18722",
+          "imageSha256": "720b09bff761534eb721aa3ae70310a4f29355d4371a561f0f8126692db18252",
+          "id": 146000010,
+          "structure": 913003,
+          "name": "≈ SL · ладонный компонент · ориентировочно",
+          "shortName": "≈ SL · ладонный компонент",
+          "filter": 91301,
+          "x": 342,
+          "y": 242,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 17,
+          "annotation": "18723",
+          "imageSha256": "98bc7a7af45ae1831fd73bbd825e96e808c90e4fcf9a553749aca3f9710a2587",
+          "id": 146000011,
+          "structure": 913003,
+          "name": "≈ SL · ладонный компонент · ориентировочно",
+          "shortName": "≈ SL · ладонный компонент",
+          "filter": 91301,
+          "x": 340,
+          "y": 240,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 15,
+          "annotation": "18701",
+          "imageSha256": "66e02ab54795de9f86db0bb41bffaf75047ce37a32094101b79575827e8cb235",
+          "id": 146000012,
+          "structure": 913004,
+          "name": "≈ SL · тыльный компонент · ориентировочно",
+          "shortName": "≈ SL · тыльный компонент",
+          "filter": 91301,
+          "x": 371,
+          "y": 253,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 16,
+          "annotation": "18702",
+          "imageSha256": "e678e475d4c18ae0038b47f34f756ab7ad0819b9007066f40d57bee10fb23a10",
+          "id": 146000013,
+          "structure": 913004,
+          "name": "≈ SL · тыльный компонент · ориентировочно",
+          "shortName": "≈ SL · тыльный компонент",
+          "filter": 91301,
+          "x": 369,
+          "y": 258,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 16,
+          "annotation": "18722",
+          "imageSha256": "720b09bff761534eb721aa3ae70310a4f29355d4371a561f0f8126692db18252",
+          "id": 146000014,
+          "structure": 913004,
+          "name": "≈ SL · тыльный компонент · ориентировочно",
+          "shortName": "≈ SL · тыльный компонент",
+          "filter": 91301,
+          "x": 431,
+          "y": 249,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 17,
+          "annotation": "18723",
+          "imageSha256": "98bc7a7af45ae1831fd73bbd825e96e808c90e4fcf9a553749aca3f9710a2587",
+          "id": 146000015,
+          "structure": 913004,
+          "name": "≈ SL · тыльный компонент · ориентировочно",
+          "shortName": "≈ SL · тыльный компонент",
+          "filter": 91301,
+          "x": 428,
+          "y": 247,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 9,
+          "annotation": "18695",
+          "imageSha256": "9d38ac845d2807fdc85eb90e9daa79174e27780c8e01260655fabcf5086d0b1c",
+          "id": 146000016,
+          "structure": 913005,
+          "name": "≈ LT · ладонный компонент · ориентировочно",
+          "shortName": "≈ LT · ладонный компонент",
+          "filter": 91301,
+          "x": 442,
+          "y": 285,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 10,
+          "annotation": "18696",
+          "imageSha256": "2d7e44acbde7dc1f2bdeb50ccad6b62021ee68fa47fc9ff379942313a4e2a395",
+          "id": 146000017,
+          "structure": 913005,
+          "name": "≈ LT · ладонный компонент · ориентировочно",
+          "shortName": "≈ LT · ладонный компонент",
+          "filter": 91301,
+          "x": 444,
+          "y": 281,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 6,
+          "annotation": "18712",
+          "imageSha256": "7a88c177e9f2afb086b7857489d7b6c82c9802963d92d8b55908c3055275081c",
+          "id": 146000018,
+          "structure": 913005,
+          "name": "≈ LT · ладонный компонент · ориентировочно",
+          "shortName": "≈ LT · ладонный компонент",
+          "filter": 91301,
+          "x": 366,
+          "y": 246,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 7,
+          "annotation": "18713",
+          "imageSha256": "15ff1604a61839785441d711493bb8fbf2e8952ea93185d8d8ddc1cedbfff387",
+          "id": 146000019,
+          "structure": 913005,
+          "name": "≈ LT · ладонный компонент · ориентировочно",
+          "shortName": "≈ LT · ладонный компонент",
+          "filter": 91301,
+          "x": 365,
+          "y": 250,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 15,
+          "annotation": "18701",
+          "imageSha256": "66e02ab54795de9f86db0bb41bffaf75047ce37a32094101b79575827e8cb235",
+          "id": 146000020,
+          "structure": 913006,
+          "name": "≈ LT · тыльный компонент · ориентировочно",
+          "shortName": "≈ LT · тыльный компонент",
+          "filter": 91301,
+          "x": 448,
+          "y": 260,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 16,
+          "annotation": "18702",
+          "imageSha256": "e678e475d4c18ae0038b47f34f756ab7ad0819b9007066f40d57bee10fb23a10",
+          "id": 146000021,
+          "structure": 913006,
+          "name": "≈ LT · тыльный компонент · ориентировочно",
+          "shortName": "≈ LT · тыльный компонент",
+          "filter": 91301,
+          "x": 444,
+          "y": 271,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 6,
+          "annotation": "18712",
+          "imageSha256": "7a88c177e9f2afb086b7857489d7b6c82c9802963d92d8b55908c3055275081c",
+          "id": 146000022,
+          "structure": 913006,
+          "name": "≈ LT · тыльный компонент · ориентировочно",
+          "shortName": "≈ LT · тыльный компонент",
+          "filter": 91301,
+          "x": 432,
+          "y": 248,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 7,
+          "annotation": "18713",
+          "imageSha256": "15ff1604a61839785441d711493bb8fbf2e8952ea93185d8d8ddc1cedbfff387",
+          "id": 146000023,
+          "structure": 913006,
+          "name": "≈ LT · тыльный компонент · ориентировочно",
+          "shortName": "≈ LT · тыльный компонент",
+          "filter": 91301,
+          "x": 430,
+          "y": 244,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 15,
+          "annotation": "18701",
+          "imageSha256": "66e02ab54795de9f86db0bb41bffaf75047ce37a32094101b79575827e8cb235",
+          "id": 146000024,
+          "structure": 913007,
+          "name": "≈ ECU subsheath · фиброзный футляр · ориентировочно",
+          "shortName": "≈ ECU subsheath · фиброзный футляр",
+          "filter": 91315,
+          "x": 508,
+          "y": 244,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 16,
+          "annotation": "18702",
+          "imageSha256": "e678e475d4c18ae0038b47f34f756ab7ad0819b9007066f40d57bee10fb23a10",
+          "id": 146000025,
+          "structure": 913007,
+          "name": "≈ ECU subsheath · фиброзный футляр · ориентировочно",
+          "shortName": "≈ ECU subsheath · фиброзный футляр",
+          "filter": 91315,
+          "x": 502,
+          "y": 247,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 2,
+          "annotation": "18708",
+          "imageSha256": "dbc08525abbb0880b5cbc835d094fe2492d532ee72e3e9043e565e2c9609ecfc",
+          "id": 146000026,
+          "structure": 913007,
+          "name": "≈ ECU subsheath · фиброзный футляр · ориентировочно",
+          "shortName": "≈ ECU subsheath · фиброзный футляр",
+          "filter": 91315,
+          "x": 427,
+          "y": 235,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 3,
+          "annotation": "18709",
+          "imageSha256": "57bd810f83da51714b50f6b2b46eff6ac7369ef2343d08a70af4318d9c95adc2",
+          "id": 146000027,
+          "structure": 913007,
+          "name": "≈ ECU subsheath · фиброзный футляр · ориентировочно",
+          "shortName": "≈ ECU subsheath · фиброзный футляр",
+          "filter": 91315,
+          "x": 446,
+          "y": 231,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 9,
+          "annotation": "18671",
+          "imageSha256": "3c98a9995f051005df0255681323878417200515408f68834e45c460bc0c7c75",
+          "id": 146000028,
+          "structure": 913008,
+          "name": "≈ UT · локтево-трёхгранная связка · ориентировочно",
+          "shortName": "≈ UT · локтево-трёхгранная связка",
+          "filter": 91314,
+          "x": 451,
+          "y": 343,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 10,
+          "annotation": "18672",
+          "imageSha256": "546e46b564f226227893acf058d7f306e5c5cb2c4ddbf4275f7d2b104fe5d82d",
+          "id": 146000029,
+          "structure": 913008,
+          "name": "≈ UT · локтево-трёхгранная связка · ориентировочно",
+          "shortName": "≈ UT · локтево-трёхгранная связка",
+          "filter": 91314,
+          "x": 444,
+          "y": 337,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 8,
+          "annotation": "18694",
+          "imageSha256": "a1485ce1079611aa09cabfe28059937fa8a3de8d1400e3481c09898e13984dd1",
+          "id": 146000030,
+          "structure": 913008,
+          "name": "≈ UT · локтево-трёхгранная связка · ориентировочно",
+          "shortName": "≈ UT · локтево-трёхгранная связка",
+          "filter": 91314,
+          "x": 437,
+          "y": 303,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 9,
+          "annotation": "18695",
+          "imageSha256": "9d38ac845d2807fdc85eb90e9daa79174e27780c8e01260655fabcf5086d0b1c",
+          "id": 146000031,
+          "structure": 913008,
+          "name": "≈ UT · локтево-трёхгранная связка · ориентировочно",
+          "shortName": "≈ UT · локтево-трёхгранная связка",
+          "filter": 91314,
+          "x": 452,
+          "y": 313,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 9,
+          "annotation": "18671",
+          "imageSha256": "3c98a9995f051005df0255681323878417200515408f68834e45c460bc0c7c75",
+          "id": 146000032,
+          "structure": 913009,
+          "name": "≈ UL · локтево-полулунная связка · ориентировочно",
+          "shortName": "≈ UL · локтево-полулунная связка",
+          "filter": 91314,
+          "x": 413,
+          "y": 338,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 10,
+          "annotation": "18672",
+          "imageSha256": "546e46b564f226227893acf058d7f306e5c5cb2c4ddbf4275f7d2b104fe5d82d",
+          "id": 146000033,
+          "structure": 913009,
+          "name": "≈ UL · локтево-полулунная связка · ориентировочно",
+          "shortName": "≈ UL · локтево-полулунная связка",
+          "filter": 91314,
+          "x": 405,
+          "y": 333,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 8,
+          "annotation": "18694",
+          "imageSha256": "a1485ce1079611aa09cabfe28059937fa8a3de8d1400e3481c09898e13984dd1",
+          "id": 146000034,
+          "structure": 913009,
+          "name": "≈ UL · локтево-полулунная связка · ориентировочно",
+          "shortName": "≈ UL · локтево-полулунная связка",
+          "filter": 91314,
+          "x": 405,
+          "y": 284,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 9,
+          "annotation": "18695",
+          "imageSha256": "9d38ac845d2807fdc85eb90e9daa79174e27780c8e01260655fabcf5086d0b1c",
+          "id": 146000035,
+          "structure": 913009,
+          "name": "≈ UL · локтево-полулунная связка · ориентировочно",
+          "shortName": "≈ UL · локтево-полулунная связка",
+          "filter": 91314,
+          "x": 408,
+          "y": 287,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 9,
+          "annotation": "18671",
+          "imageSha256": "3c98a9995f051005df0255681323878417200515408f68834e45c460bc0c7c75",
+          "id": 146000036,
+          "structure": 912701,
+          "name": "≈ SL · мембранозный компонент · ориентировочно",
+          "shortName": "≈ SL · мембранозный компонент",
+          "filter": 91301,
+          "x": 348,
+          "y": 389,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 10,
+          "annotation": "18672",
+          "imageSha256": "546e46b564f226227893acf058d7f306e5c5cb2c4ddbf4275f7d2b104fe5d82d",
+          "id": 146000037,
+          "structure": 912701,
+          "name": "≈ SL · мембранозный компонент · ориентировочно",
+          "shortName": "≈ SL · мембранозный компонент",
+          "filter": 91301,
+          "x": 334,
+          "y": 390,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 16,
+          "annotation": "18722",
+          "imageSha256": "720b09bff761534eb721aa3ae70310a4f29355d4371a561f0f8126692db18252",
+          "id": 146000038,
+          "structure": 912701,
+          "name": "≈ SL · мембранозный компонент · ориентировочно",
+          "shortName": "≈ SL · мембранозный компонент",
+          "filter": 91301,
+          "x": 343,
+          "y": 236,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 17,
+          "annotation": "18723",
+          "imageSha256": "98bc7a7af45ae1831fd73bbd825e96e808c90e4fcf9a553749aca3f9710a2587",
+          "id": 146000039,
+          "structure": 912701,
+          "name": "≈ SL · мембранозный компонент · ориентировочно",
+          "shortName": "≈ SL · мембранозный компонент",
+          "filter": 91301,
+          "x": 341,
+          "y": 234,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 9,
+          "annotation": "18671",
+          "imageSha256": "3c98a9995f051005df0255681323878417200515408f68834e45c460bc0c7c75",
+          "id": 146000040,
+          "structure": 912702,
+          "name": "≈ LT · мембранозный компонент · ориентировочно",
+          "shortName": "≈ LT · мембранозный компонент",
+          "filter": 91301,
+          "x": 425,
+          "y": 396,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 10,
+          "annotation": "18672",
+          "imageSha256": "546e46b564f226227893acf058d7f306e5c5cb2c4ddbf4275f7d2b104fe5d82d",
+          "id": 146000041,
+          "structure": 912702,
+          "name": "≈ LT · мембранозный компонент · ориентировочно",
+          "shortName": "≈ LT · мембранозный компонент",
+          "filter": 91301,
+          "x": 420,
+          "y": 398,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 6,
+          "annotation": "18712",
+          "imageSha256": "7a88c177e9f2afb086b7857489d7b6c82c9802963d92d8b55908c3055275081c",
+          "id": 146000042,
+          "structure": 912702,
+          "name": "≈ LT · мембранозный компонент · ориентировочно",
+          "shortName": "≈ LT · мембранозный компонент",
+          "filter": 91301,
+          "x": 402,
+          "y": 247,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 7,
+          "annotation": "18713",
+          "imageSha256": "15ff1604a61839785441d711493bb8fbf2e8952ea93185d8d8ddc1cedbfff387",
+          "id": 146000043,
+          "structure": 912702,
+          "name": "≈ LT · мембранозный компонент · ориентировочно",
+          "shortName": "≈ LT · мембранозный компонент",
+          "filter": 91301,
+          "x": 401,
+          "y": 245,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 7,
+          "annotation": "18669",
+          "imageSha256": "a2bb3fd93a6ddae35b6f4f87450511d1cca21a3c3156941936c7357e43f145a3",
+          "id": 146000044,
+          "structure": 912703,
+          "name": "≈ Диск ТФХК · центральная часть · ориентировочно",
+          "shortName": "≈ Диск ТФХК · центральная часть",
+          "filter": 91311,
+          "x": 477,
+          "y": 404,
+          "category": "cartilage",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 8,
+          "annotation": "18670",
+          "imageSha256": "aa85242541b428ad297617830db5a5dde0e0730487575e9c8537b40fe91c8c51",
+          "id": 146000045,
+          "structure": 912703,
+          "name": "≈ Диск ТФХК · центральная часть · ориентировочно",
+          "shortName": "≈ Диск ТФХК · центральная часть",
+          "filter": 91311,
+          "x": 475,
+          "y": 395,
+          "category": "cartilage",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 4,
+          "annotation": "18710",
+          "imageSha256": "4c5480898ea8004d58a4d2f9a3b5cd00a6eabf01e8b916b6c0e13d269ed5441d",
+          "id": 146000046,
+          "structure": 912703,
+          "name": "≈ Диск ТФХК · центральная часть · ориентировочно",
+          "shortName": "≈ Диск ТФХК · центральная часть",
+          "filter": 91311,
+          "x": 406,
+          "y": 218,
+          "category": "cartilage",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 5,
+          "annotation": "18711",
+          "imageSha256": "dd19a3813982768c64481636d4ef69d9d8b8c40937dec218844797a816bdcb3a",
+          "id": 146000047,
+          "structure": 912703,
+          "name": "≈ Диск ТФХК · центральная часть · ориентировочно",
+          "shortName": "≈ Диск ТФХК · центральная часть",
+          "filter": 91311,
+          "x": 407,
+          "y": 214,
+          "category": "cartilage",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 7,
+          "annotation": "18669",
+          "imageSha256": "a2bb3fd93a6ddae35b6f4f87450511d1cca21a3c3156941936c7357e43f145a3",
+          "id": 146000048,
+          "structure": 912704,
+          "name": "≈ Диск ТФХК · лучевое прикрепление · ориентировочно",
+          "shortName": "≈ Диск ТФХК · лучевое прикрепление",
+          "filter": 91311,
+          "x": 424,
+          "y": 405,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 8,
+          "annotation": "18670",
+          "imageSha256": "aa85242541b428ad297617830db5a5dde0e0730487575e9c8537b40fe91c8c51",
+          "id": 146000049,
+          "structure": 912704,
+          "name": "≈ Диск ТФХК · лучевое прикрепление · ориентировочно",
+          "shortName": "≈ Диск ТФХК · лучевое прикрепление",
+          "filter": 91311,
+          "x": 430,
+          "y": 395,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 8,
+          "annotation": "18714",
+          "imageSha256": "c0f60e1ee1321cf979cec3392ec223575c216f0033cfa9a9c4d487739a3fc27b",
+          "id": 146000050,
+          "structure": 912704,
+          "name": "≈ Диск ТФХК · лучевое прикрепление · ориентировочно",
+          "shortName": "≈ Диск ТФХК · лучевое прикрепление",
+          "filter": 91311,
+          "x": 418,
+          "y": 195,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 9,
+          "annotation": "18715",
+          "imageSha256": "c310a88d6de925c6b58f71ad337f799d4ceb5097b61945dc7b9c9d6c65fbe771",
+          "id": 146000051,
+          "structure": 912704,
+          "name": "≈ Диск ТФХК · лучевое прикрепление · ориентировочно",
+          "shortName": "≈ Диск ТФХК · лучевое прикрепление",
+          "filter": 91311,
+          "x": 416,
+          "y": 195,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 7,
+          "annotation": "18669",
+          "imageSha256": "a2bb3fd93a6ddae35b6f4f87450511d1cca21a3c3156941936c7357e43f145a3",
+          "id": 146000052,
+          "structure": 912706,
+          "name": "≈ ТФХК · фовеальное прикрепление · ориентировочно",
+          "shortName": "≈ ТФХК · фовеальное прикрепление",
+          "filter": 91311,
+          "x": 448,
+          "y": 400,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 8,
+          "annotation": "18670",
+          "imageSha256": "aa85242541b428ad297617830db5a5dde0e0730487575e9c8537b40fe91c8c51",
+          "id": 146000053,
+          "structure": 912706,
+          "name": "≈ ТФХК · фовеальное прикрепление · ориентировочно",
+          "shortName": "≈ ТФХК · фовеальное прикрепление",
+          "filter": 91311,
+          "x": 453,
+          "y": 389,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 3,
+          "annotation": "18709",
+          "imageSha256": "57bd810f83da51714b50f6b2b46eff6ac7369ef2343d08a70af4318d9c95adc2",
+          "id": 146000054,
+          "structure": 912706,
+          "name": "≈ ТФХК · фовеальное прикрепление · ориентировочно",
+          "shortName": "≈ ТФХК · фовеальное прикрепление",
+          "filter": 91311,
+          "x": 406,
+          "y": 219,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 4,
+          "annotation": "18710",
+          "imageSha256": "4c5480898ea8004d58a4d2f9a3b5cd00a6eabf01e8b916b6c0e13d269ed5441d",
+          "id": 146000055,
+          "structure": 912706,
+          "name": "≈ ТФХК · фовеальное прикрепление · ориентировочно",
+          "shortName": "≈ ТФХК · фовеальное прикрепление",
+          "filter": 91311,
+          "x": 406,
+          "y": 216,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 7,
+          "annotation": "18669",
+          "imageSha256": "a2bb3fd93a6ddae35b6f4f87450511d1cca21a3c3156941936c7357e43f145a3",
+          "id": 146000056,
+          "structure": 912707,
+          "name": "≈ ТФХК · шиловидное прикрепление · ориентировочно",
+          "shortName": "≈ ТФХК · шиловидное прикрепление",
+          "filter": 91311,
+          "x": 507,
+          "y": 397,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 8,
+          "annotation": "18670",
+          "imageSha256": "aa85242541b428ad297617830db5a5dde0e0730487575e9c8537b40fe91c8c51",
+          "id": 146000057,
+          "structure": 912707,
+          "name": "≈ ТФХК · шиловидное прикрепление · ориентировочно",
+          "shortName": "≈ ТФХК · шиловидное прикрепление",
+          "filter": 91311,
+          "x": 506,
+          "y": 388,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 2,
+          "annotation": "18708",
+          "imageSha256": "dbc08525abbb0880b5cbc835d094fe2492d532ee72e3e9043e565e2c9609ecfc",
+          "id": 146000058,
+          "structure": 912707,
+          "name": "≈ ТФХК · шиловидное прикрепление · ориентировочно",
+          "shortName": "≈ ТФХК · шиловидное прикрепление",
+          "filter": 91311,
+          "x": 417,
+          "y": 240,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 3,
+          "annotation": "18709",
+          "imageSha256": "57bd810f83da51714b50f6b2b46eff6ac7369ef2343d08a70af4318d9c95adc2",
+          "id": 146000059,
+          "structure": 912707,
+          "name": "≈ ТФХК · шиловидное прикрепление · ориентировочно",
+          "shortName": "≈ ТФХК · шиловидное прикрепление",
+          "filter": 91311,
+          "x": 424,
+          "y": 235,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 8,
+          "annotation": "18670",
+          "imageSha256": "aa85242541b428ad297617830db5a5dde0e0730487575e9c8537b40fe91c8c51",
+          "id": 146000060,
+          "structure": 146101,
+          "name": "≈ RSC · лучеладьевидно-головчатая связка · ориентировочно",
+          "shortName": "≈ RSC · лучеладьевидно-головчатая связка",
+          "filter": 91302,
+          "x": 290,
+          "y": 320,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 9,
+          "annotation": "18671",
+          "imageSha256": "3c98a9995f051005df0255681323878417200515408f68834e45c460bc0c7c75",
+          "id": 146000061,
+          "structure": 146101,
+          "name": "≈ RSC · лучеладьевидно-головчатая связка · ориентировочно",
+          "shortName": "≈ RSC · лучеладьевидно-головчатая связка",
+          "filter": 91302,
+          "x": 291,
+          "y": 334,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 7,
+          "annotation": "18693",
+          "imageSha256": "b8045575ab4b47b0dea5aa118f6ca3000c2ad89c35625e97442d5c31a0562f39",
+          "id": 146000062,
+          "structure": 146101,
+          "name": "≈ RSC · лучеладьевидно-головчатая связка · ориентировочно",
+          "shortName": "≈ RSC · лучеладьевидно-головчатая связка",
+          "filter": 91302,
+          "x": 313,
+          "y": 278,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 8,
+          "annotation": "18694",
+          "imageSha256": "a1485ce1079611aa09cabfe28059937fa8a3de8d1400e3481c09898e13984dd1",
+          "id": 146000063,
+          "structure": 146101,
+          "name": "≈ RSC · лучеладьевидно-головчатая связка · ориентировочно",
+          "shortName": "≈ RSC · лучеладьевидно-головчатая связка",
+          "filter": 91302,
+          "x": 319,
+          "y": 280,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 18,
+          "annotation": "18724",
+          "imageSha256": "7df7d9c5fa4df404c54d99419ca017810f024210b9de2d8a87597bf41d497e95",
+          "id": 146000064,
+          "structure": 146101,
+          "name": "≈ RSC · лучеладьевидно-головчатая связка · ориентировочно",
+          "shortName": "≈ RSC · лучеладьевидно-головчатая связка",
+          "filter": 91302,
+          "x": 310,
+          "y": 239,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 19,
+          "annotation": "18725",
+          "imageSha256": "21a5f5a7b9b80d5d62c6a790751560fd043083cbec786d060271faf15fa7c19b",
+          "id": 146000065,
+          "structure": 146101,
+          "name": "≈ RSC · лучеладьевидно-головчатая связка · ориентировочно",
+          "shortName": "≈ RSC · лучеладьевидно-головчатая связка",
+          "filter": 91302,
+          "x": 313,
+          "y": 236,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 8,
+          "annotation": "18670",
+          "imageSha256": "aa85242541b428ad297617830db5a5dde0e0730487575e9c8537b40fe91c8c51",
+          "id": 146000066,
+          "structure": 146102,
+          "name": "≈ LRL · длинная лучеполулунная связка · ориентировочно",
+          "shortName": "≈ LRL · длинная лучеполулунная связка",
+          "filter": 91302,
+          "x": 340,
+          "y": 316,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 9,
+          "annotation": "18671",
+          "imageSha256": "3c98a9995f051005df0255681323878417200515408f68834e45c460bc0c7c75",
+          "id": 146000067,
+          "structure": 146102,
+          "name": "≈ LRL · длинная лучеполулунная связка · ориентировочно",
+          "shortName": "≈ LRL · длинная лучеполулунная связка",
+          "filter": 91302,
+          "x": 348,
+          "y": 332,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 8,
+          "annotation": "18694",
+          "imageSha256": "a1485ce1079611aa09cabfe28059937fa8a3de8d1400e3481c09898e13984dd1",
+          "id": 146000068,
+          "structure": 146102,
+          "name": "≈ LRL · длинная лучеполулунная связка · ориентировочно",
+          "shortName": "≈ LRL · длинная лучеполулунная связка",
+          "filter": 91302,
+          "x": 362,
+          "y": 263,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 9,
+          "annotation": "18695",
+          "imageSha256": "9d38ac845d2807fdc85eb90e9daa79174e27780c8e01260655fabcf5086d0b1c",
+          "id": 146000069,
+          "structure": 146102,
+          "name": "≈ LRL · длинная лучеполулунная связка · ориентировочно",
+          "shortName": "≈ LRL · длинная лучеполулунная связка",
+          "filter": 91302,
+          "x": 365,
+          "y": 254,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 13,
+          "annotation": "18719",
+          "imageSha256": "700f91431e51aff23dc56632c5c976311a393eccd75cf6077e8373247754bca0",
+          "id": 146000070,
+          "structure": 146102,
+          "name": "≈ LRL · длинная лучеполулунная связка · ориентировочно",
+          "shortName": "≈ LRL · длинная лучеполулунная связка",
+          "filter": 91302,
+          "x": 329,
+          "y": 251,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 14,
+          "annotation": "18720",
+          "imageSha256": "cb08d44e736c7043f6d81450fa6eb0cb1d53f31bde2bdc2d15f5d7cc8fb1e41e",
+          "id": 146000071,
+          "structure": 146102,
+          "name": "≈ LRL · длинная лучеполулунная связка · ориентировочно",
+          "shortName": "≈ LRL · длинная лучеполулунная связка",
+          "filter": 91302,
+          "x": 328,
+          "y": 242,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 8,
+          "annotation": "18670",
+          "imageSha256": "aa85242541b428ad297617830db5a5dde0e0730487575e9c8537b40fe91c8c51",
+          "id": 146000072,
+          "structure": 146103,
+          "name": "≈ SRL · короткая лучеполулунная связка · ориентировочно",
+          "shortName": "≈ SRL · короткая лучеполулунная связка",
+          "filter": 91302,
+          "x": 387,
+          "y": 326,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 9,
+          "annotation": "18671",
+          "imageSha256": "3c98a9995f051005df0255681323878417200515408f68834e45c460bc0c7c75",
+          "id": 146000073,
+          "structure": 146103,
+          "name": "≈ SRL · короткая лучеполулунная связка · ориентировочно",
+          "shortName": "≈ SRL · короткая лучеполулунная связка",
+          "filter": 91302,
+          "x": 389,
+          "y": 334,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 8,
+          "annotation": "18694",
+          "imageSha256": "a1485ce1079611aa09cabfe28059937fa8a3de8d1400e3481c09898e13984dd1",
+          "id": 146000074,
+          "structure": 146103,
+          "name": "≈ SRL · короткая лучеполулунная связка · ориентировочно",
+          "shortName": "≈ SRL · короткая лучеполулунная связка",
+          "filter": 91302,
+          "x": 389,
+          "y": 254,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 9,
+          "annotation": "18695",
+          "imageSha256": "9d38ac845d2807fdc85eb90e9daa79174e27780c8e01260655fabcf5086d0b1c",
+          "id": 146000075,
+          "structure": 146103,
+          "name": "≈ SRL · короткая лучеполулунная связка · ориентировочно",
+          "shortName": "≈ SRL · короткая лучеполулунная связка",
+          "filter": 91302,
+          "x": 391,
+          "y": 245,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 12,
+          "annotation": "18718",
+          "imageSha256": "6ced0d45b97d6e4db2913489607c186b80e33e42c91ef2a6cfdf1f9b853806ff",
+          "id": 146000076,
+          "structure": 146103,
+          "name": "≈ SRL · короткая лучеполулунная связка · ориентировочно",
+          "shortName": "≈ SRL · короткая лучеполулунная связка",
+          "filter": 91302,
+          "x": 332,
+          "y": 250,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 13,
+          "annotation": "18719",
+          "imageSha256": "700f91431e51aff23dc56632c5c976311a393eccd75cf6077e8373247754bca0",
+          "id": 146000077,
+          "structure": 146103,
+          "name": "≈ SRL · короткая лучеполулунная связка · ориентировочно",
+          "shortName": "≈ SRL · короткая лучеполулунная связка",
+          "filter": 91302,
+          "x": 333,
+          "y": 244,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 8,
+          "annotation": "18670",
+          "imageSha256": "aa85242541b428ad297617830db5a5dde0e0730487575e9c8537b40fe91c8c51",
+          "id": 146000078,
+          "structure": 146104,
+          "name": "≈ RSL · связка Тестю · ориентировочно",
+          "shortName": "≈ RSL · связка Тестю",
+          "filter": 91302,
+          "x": 325,
+          "y": 343,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 9,
+          "annotation": "18671",
+          "imageSha256": "3c98a9995f051005df0255681323878417200515408f68834e45c460bc0c7c75",
+          "id": 146000079,
+          "structure": 146104,
+          "name": "≈ RSL · связка Тестю · ориентировочно",
+          "shortName": "≈ RSL · связка Тестю",
+          "filter": 91302,
+          "x": 326,
+          "y": 352,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 9,
+          "annotation": "18695",
+          "imageSha256": "9d38ac845d2807fdc85eb90e9daa79174e27780c8e01260655fabcf5086d0b1c",
+          "id": 146000080,
+          "structure": 146104,
+          "name": "≈ RSL · связка Тестю · ориентировочно",
+          "shortName": "≈ RSL · связка Тестю",
+          "filter": 91302,
+          "x": 349,
+          "y": 254,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 10,
+          "annotation": "18696",
+          "imageSha256": "2d7e44acbde7dc1f2bdeb50ccad6b62021ee68fa47fc9ff379942313a4e2a395",
+          "id": 146000081,
+          "structure": 146104,
+          "name": "≈ RSL · связка Тестю · ориентировочно",
+          "shortName": "≈ RSL · связка Тестю",
+          "filter": 91302,
+          "x": 348,
+          "y": 250,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 16,
+          "annotation": "18722",
+          "imageSha256": "720b09bff761534eb721aa3ae70310a4f29355d4371a561f0f8126692db18252",
+          "id": 146000082,
+          "structure": 146104,
+          "name": "≈ RSL · связка Тестю · ориентировочно",
+          "shortName": "≈ RSL · связка Тестю",
+          "filter": 91302,
+          "x": 336,
+          "y": 228,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 17,
+          "annotation": "18723",
+          "imageSha256": "98bc7a7af45ae1831fd73bbd825e96e808c90e4fcf9a553749aca3f9710a2587",
+          "id": 146000083,
+          "structure": 146104,
+          "name": "≈ RSL · связка Тестю · ориентировочно",
+          "shortName": "≈ RSL · связка Тестю",
+          "filter": 91302,
+          "x": 335,
+          "y": 227,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 10,
+          "annotation": "18672",
+          "imageSha256": "546e46b564f226227893acf058d7f306e5c5cb2c4ddbf4275f7d2b104fe5d82d",
+          "id": 146000084,
+          "structure": 146105,
+          "name": "≈ DIC · тыльная межзапястная связка · ориентировочно",
+          "shortName": "≈ DIC · тыльная межзапястная связка",
+          "filter": 91303,
+          "x": 428,
+          "y": 438,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 11,
+          "annotation": "18673",
+          "imageSha256": "e7465c0cd208614838e9d887706903e1bdbb791b3db5de3843277c700ae0b178",
+          "id": 146000085,
+          "structure": 146105,
+          "name": "≈ DIC · тыльная межзапястная связка · ориентировочно",
+          "shortName": "≈ DIC · тыльная межзапястная связка",
+          "filter": 91303,
+          "x": 420,
+          "y": 433,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 15,
+          "annotation": "18701",
+          "imageSha256": "66e02ab54795de9f86db0bb41bffaf75047ce37a32094101b79575827e8cb235",
+          "id": 146000086,
+          "structure": 146105,
+          "name": "≈ DIC · тыльная межзапястная связка · ориентировочно",
+          "shortName": "≈ DIC · тыльная межзапястная связка",
+          "filter": 91303,
+          "x": 404,
+          "y": 309,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 16,
+          "annotation": "18702",
+          "imageSha256": "e678e475d4c18ae0038b47f34f756ab7ad0819b9007066f40d57bee10fb23a10",
+          "id": 146000087,
+          "structure": 146105,
+          "name": "≈ DIC · тыльная межзапястная связка · ориентировочно",
+          "shortName": "≈ DIC · тыльная межзапястная связка",
+          "filter": 91303,
+          "x": 411,
+          "y": 312,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 10,
+          "annotation": "18716",
+          "imageSha256": "eeea0b6def03b756e08df264c9ca3b0f518c5ffca82e7965dcdd3f83f502a7c0",
+          "id": 146000088,
+          "structure": 146105,
+          "name": "≈ DIC · тыльная межзапястная связка · ориентировочно",
+          "shortName": "≈ DIC · тыльная межзапястная связка",
+          "filter": 91303,
+          "x": 433,
+          "y": 288,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 11,
+          "annotation": "18717",
+          "imageSha256": "cda5107304bd06f2fe640ce0bd02aff67aa15b77b9ce382e8dcf2e3e878e421f",
+          "id": 146000089,
+          "structure": 146105,
+          "name": "≈ DIC · тыльная межзапястная связка · ориентировочно",
+          "shortName": "≈ DIC · тыльная межзапястная связка",
+          "filter": 91303,
+          "x": 432,
+          "y": 285,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 9,
+          "annotation": "18671",
+          "imageSha256": "3c98a9995f051005df0255681323878417200515408f68834e45c460bc0c7c75",
+          "id": 146000090,
+          "structure": 146106,
+          "name": "≈ DCSS · тыльная капсулярная SL-перегородка · ориентировочно",
+          "shortName": "≈ DCSS · тыльная капсулярная SL-перегородка",
+          "filter": 91303,
+          "x": 337,
+          "y": 441,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 10,
+          "annotation": "18672",
+          "imageSha256": "546e46b564f226227893acf058d7f306e5c5cb2c4ddbf4275f7d2b104fe5d82d",
+          "id": 146000091,
+          "structure": 146106,
+          "name": "≈ DCSS · тыльная капсулярная SL-перегородка · ориентировочно",
+          "shortName": "≈ DCSS · тыльная капсулярная SL-перегородка",
+          "filter": 91303,
+          "x": 338,
+          "y": 440,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 15,
+          "annotation": "18701",
+          "imageSha256": "66e02ab54795de9f86db0bb41bffaf75047ce37a32094101b79575827e8cb235",
+          "id": 146000092,
+          "structure": 146106,
+          "name": "≈ DCSS · тыльная капсулярная SL-перегородка · ориентировочно",
+          "shortName": "≈ DCSS · тыльная капсулярная SL-перегородка",
+          "filter": 91303,
+          "x": 371,
+          "y": 266,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 16,
+          "annotation": "18702",
+          "imageSha256": "e678e475d4c18ae0038b47f34f756ab7ad0819b9007066f40d57bee10fb23a10",
+          "id": 146000093,
+          "structure": 146106,
+          "name": "≈ DCSS · тыльная капсулярная SL-перегородка · ориентировочно",
+          "shortName": "≈ DCSS · тыльная капсулярная SL-перегородка",
+          "filter": 91303,
+          "x": 374,
+          "y": 273,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 16,
+          "annotation": "18722",
+          "imageSha256": "720b09bff761534eb721aa3ae70310a4f29355d4371a561f0f8126692db18252",
+          "id": 146000094,
+          "structure": 146106,
+          "name": "≈ DCSS · тыльная капсулярная SL-перегородка · ориентировочно",
+          "shortName": "≈ DCSS · тыльная капсулярная SL-перегородка",
+          "filter": 91303,
+          "x": 438,
+          "y": 261,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 17,
+          "annotation": "18723",
+          "imageSha256": "98bc7a7af45ae1831fd73bbd825e96e808c90e4fcf9a553749aca3f9710a2587",
+          "id": 146000095,
+          "structure": 146106,
+          "name": "≈ DCSS · тыльная капсулярная SL-перегородка · ориентировочно",
+          "shortName": "≈ DCSS · тыльная капсулярная SL-перегородка",
+          "filter": 91303,
+          "x": 435,
+          "y": 259,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 13,
+          "annotation": "18675",
+          "imageSha256": "2c40c0af8dba5ed61f50f5c94aede84bb0d687f04df9321cf600f2f71e87292b",
+          "id": 146000096,
+          "structure": 146107,
+          "name": "≈ STT · связочный комплекс · ориентировочно",
+          "shortName": "≈ STT · связочный комплекс",
+          "filter": 91304,
+          "x": 267,
+          "y": 286,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 14,
+          "annotation": "18676",
+          "imageSha256": "770d98e052388d56c073edb9a18ff9757c6bdb36dfea6ead778e6c6b1379e4b1",
+          "id": 146000097,
+          "structure": 146107,
+          "name": "≈ STT · связочный комплекс · ориентировочно",
+          "shortName": "≈ STT · связочный комплекс",
+          "filter": 91304,
+          "x": 274,
+          "y": 295,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 8,
+          "annotation": "18694",
+          "imageSha256": "a1485ce1079611aa09cabfe28059937fa8a3de8d1400e3481c09898e13984dd1",
+          "id": 146000098,
+          "structure": 146107,
+          "name": "≈ STT · связочный комплекс · ориентировочно",
+          "shortName": "≈ STT · связочный комплекс",
+          "filter": 91304,
+          "x": 300,
+          "y": 350,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 9,
+          "annotation": "18695",
+          "imageSha256": "9d38ac845d2807fdc85eb90e9daa79174e27780c8e01260655fabcf5086d0b1c",
+          "id": 146000099,
+          "structure": 146107,
+          "name": "≈ STT · связочный комплекс · ориентировочно",
+          "shortName": "≈ STT · связочный комплекс",
+          "filter": 91304,
+          "x": 302,
+          "y": 353,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 19,
+          "annotation": "18725",
+          "imageSha256": "21a5f5a7b9b80d5d62c6a790751560fd043083cbec786d060271faf15fa7c19b",
+          "id": 146000100,
+          "structure": 146107,
+          "name": "≈ STT · связочный комплекс · ориентировочно",
+          "shortName": "≈ STT · связочный комплекс",
+          "filter": 91304,
+          "x": 316,
+          "y": 317,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 20,
+          "annotation": "18726",
+          "imageSha256": "3d7ba5f6a941b5a36fa54dd9f1793ef684d3a59f46036900587dfe65686dbe9a",
+          "id": 146000101,
+          "structure": 146107,
+          "name": "≈ STT · связочный комплекс · ориентировочно",
+          "shortName": "≈ STT · связочный комплекс",
+          "filter": 91304,
+          "x": 315,
+          "y": 320,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 12,
+          "annotation": "18674",
+          "imageSha256": "cf9cf01d19134ac93ac503f753098e94d7fb203dd9c31cf8ea7ff05899086616",
+          "id": 146000102,
+          "structure": 146108,
+          "name": "≈ Ладонная ладьевидно-трёхгранная связка · ориентировочно",
+          "shortName": "≈ Ладонная ладьевидно-трёхгранная связка",
+          "filter": 91302,
+          "x": 343,
+          "y": 327,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 13,
+          "annotation": "18675",
+          "imageSha256": "2c40c0af8dba5ed61f50f5c94aede84bb0d687f04df9321cf600f2f71e87292b",
+          "id": 146000103,
+          "structure": 146108,
+          "name": "≈ Ладонная ладьевидно-трёхгранная связка · ориентировочно",
+          "shortName": "≈ Ладонная ладьевидно-трёхгранная связка",
+          "filter": 91302,
+          "x": 345,
+          "y": 329,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 8,
+          "annotation": "18694",
+          "imageSha256": "a1485ce1079611aa09cabfe28059937fa8a3de8d1400e3481c09898e13984dd1",
+          "id": 146000104,
+          "structure": 146108,
+          "name": "≈ Ладонная ладьевидно-трёхгранная связка · ориентировочно",
+          "shortName": "≈ Ладонная ладьевидно-трёхгранная связка",
+          "filter": 91302,
+          "x": 364,
+          "y": 315,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 9,
+          "annotation": "18695",
+          "imageSha256": "9d38ac845d2807fdc85eb90e9daa79174e27780c8e01260655fabcf5086d0b1c",
+          "id": 146000105,
+          "structure": 146108,
+          "name": "≈ Ладонная ладьевидно-трёхгранная связка · ориентировочно",
+          "shortName": "≈ Ладонная ладьевидно-трёхгранная связка",
+          "filter": 91302,
+          "x": 365,
+          "y": 316,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 11,
+          "annotation": "18717",
+          "imageSha256": "cda5107304bd06f2fe640ce0bd02aff67aa15b77b9ce382e8dcf2e3e878e421f",
+          "id": 146000106,
+          "structure": 146108,
+          "name": "≈ Ладонная ладьевидно-трёхгранная связка · ориентировочно",
+          "shortName": "≈ Ладонная ладьевидно-трёхгранная связка",
+          "filter": 91302,
+          "x": 342,
+          "y": 279,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 12,
+          "annotation": "18718",
+          "imageSha256": "6ced0d45b97d6e4db2913489607c186b80e33e42c91ef2a6cfdf1f9b853806ff",
+          "id": 146000107,
+          "structure": 146108,
+          "name": "≈ Ладонная ладьевидно-трёхгранная связка · ориентировочно",
+          "shortName": "≈ Ладонная ладьевидно-трёхгранная связка",
+          "filter": 91302,
+          "x": 340,
+          "y": 272,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 11,
+          "annotation": "18673",
+          "imageSha256": "e7465c0cd208614838e9d887706903e1bdbb791b3db5de3843277c700ae0b178",
+          "id": 146000108,
+          "structure": 146109,
+          "name": "≈ UC · локтево-головчатая связка · ориентировочно",
+          "shortName": "≈ UC · локтево-головчатая связка",
+          "filter": 91314,
+          "x": 403,
+          "y": 331,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 12,
+          "annotation": "18674",
+          "imageSha256": "cf9cf01d19134ac93ac503f753098e94d7fb203dd9c31cf8ea7ff05899086616",
+          "id": 146000109,
+          "structure": 146109,
+          "name": "≈ UC · локтево-головчатая связка · ориентировочно",
+          "shortName": "≈ UC · локтево-головчатая связка",
+          "filter": 91314,
+          "x": 395,
+          "y": 329,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 8,
+          "annotation": "18694",
+          "imageSha256": "a1485ce1079611aa09cabfe28059937fa8a3de8d1400e3481c09898e13984dd1",
+          "id": 146000110,
+          "structure": 146109,
+          "name": "≈ UC · локтево-головчатая связка · ориентировочно",
+          "shortName": "≈ UC · локтево-головчатая связка",
+          "filter": 91314,
+          "x": 413,
+          "y": 340,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 9,
+          "annotation": "18695",
+          "imageSha256": "9d38ac845d2807fdc85eb90e9daa79174e27780c8e01260655fabcf5086d0b1c",
+          "id": 146000111,
+          "structure": 146109,
+          "name": "≈ UC · локтево-головчатая связка · ориентировочно",
+          "shortName": "≈ UC · локтево-головчатая связка",
+          "filter": 91314,
+          "x": 409,
+          "y": 344,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 9,
+          "annotation": "18715",
+          "imageSha256": "c310a88d6de925c6b58f71ad337f799d4ceb5097b61945dc7b9c9d6c65fbe771",
+          "id": 146000112,
+          "structure": 146109,
+          "name": "≈ UC · локтево-головчатая связка · ориентировочно",
+          "shortName": "≈ UC · локтево-головчатая связка",
+          "filter": 91314,
+          "x": 345,
+          "y": 289,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 10,
+          "annotation": "18716",
+          "imageSha256": "eeea0b6def03b756e08df264c9ca3b0f518c5ffca82e7965dcdd3f83f502a7c0",
+          "id": 146000113,
+          "structure": 146109,
+          "name": "≈ UC · локтево-головчатая связка · ориентировочно",
+          "shortName": "≈ UC · локтево-головчатая связка",
+          "filter": 91314,
+          "x": 345,
+          "y": 299,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 8,
+          "annotation": "18670",
+          "imageSha256": "aa85242541b428ad297617830db5a5dde0e0730487575e9c8537b40fe91c8c51",
+          "id": 146000114,
+          "structure": 146110,
+          "name": "≈ Гомолог мениска · периферическая область · ориентировочно",
+          "shortName": "≈ Гомолог мениска · периферическая область",
+          "filter": 91313,
+          "x": 499,
+          "y": 388,
+          "category": "cartilage",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "667-contraste_dpfs",
+          "frame": 9,
+          "annotation": "18671",
+          "imageSha256": "3c98a9995f051005df0255681323878417200515408f68834e45c460bc0c7c75",
+          "id": 146000115,
+          "structure": 146110,
+          "name": "≈ Гомолог мениска · периферическая область · ориентировочно",
+          "shortName": "≈ Гомолог мениска · периферическая область",
+          "filter": 91313,
+          "x": 500,
+          "y": 377,
+          "category": "cartilage",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 9,
+          "annotation": "18695",
+          "imageSha256": "9d38ac845d2807fdc85eb90e9daa79174e27780c8e01260655fabcf5086d0b1c",
+          "id": 146000116,
+          "structure": 146110,
+          "name": "≈ Гомолог мениска · периферическая область · ориентировочно",
+          "shortName": "≈ Гомолог мениска · периферическая область",
+          "filter": 91313,
+          "x": 494,
+          "y": 260,
+          "category": "cartilage",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "668-contraste_dpfs",
+          "frame": 10,
+          "annotation": "18696",
+          "imageSha256": "2d7e44acbde7dc1f2bdeb50ccad6b62021ee68fa47fc9ff379942313a4e2a395",
+          "id": 146000117,
+          "structure": 146110,
+          "name": "≈ Гомолог мениска · периферическая область · ориентировочно",
+          "shortName": "≈ Гомолог мениска · периферическая область",
+          "filter": 91313,
+          "x": 497,
+          "y": 258,
+          "category": "cartilage",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 2,
+          "annotation": "18708",
+          "imageSha256": "dbc08525abbb0880b5cbc835d094fe2492d532ee72e3e9043e565e2c9609ecfc",
+          "id": 146000118,
+          "structure": 146110,
+          "name": "≈ Гомолог мениска · периферическая область · ориентировочно",
+          "shortName": "≈ Гомолог мениска · периферическая область",
+          "filter": 91313,
+          "x": 409,
+          "y": 245,
+          "category": "cartilage",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "669-contraste_dpfs",
+          "frame": 3,
+          "annotation": "18709",
+          "imageSha256": "57bd810f83da51714b50f6b2b46eff6ac7369ef2343d08a70af4318d9c95adc2",
+          "id": 146000119,
+          "structure": 146110,
+          "name": "≈ Гомолог мениска · периферическая область · ориентировочно",
+          "shortName": "≈ Гомолог мениска · периферическая область",
+          "filter": 91313,
+          "x": 418,
+          "y": 244,
+          "category": "cartilage",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        }
+      ],
+      "coverage": {
+        "1614": {
+          "Аксиальный": [
+            1,
+            2
+          ],
+          "Фронтальный": [
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "Сагиттальный": [
+            7,
+            8,
+            9
+          ]
+        },
+        "1632": {
+          "Аксиальный": [
+            6
+          ],
+          "Фронтальный": [
+            9,
+            10,
+            11,
+            15,
+            16
+          ],
+          "Сагиттальный": [
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        "1636": {
+          "Аксиальный": [
+            8,
+            9,
+            10,
+            11
+          ],
+          "Фронтальный": [
+            16,
+            17
+          ],
+          "Сагиттальный": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "1637": {
+          "Аксиальный": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "Фронтальный": [
+            9,
+            10,
+            11
+          ],
+          "Сагиттальный": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+          ]
+        },
+        "1638": {
+          "Аксиальный": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "Фронтальный": [
+            15,
+            16,
+            17
+          ],
+          "Сагиттальный": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        "1639": {
+          "Аксиальный": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "Фронтальный": [
+            7,
+            8,
+            9,
+            10
+          ],
+          "Сагиттальный": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        "1640": {
+          "Аксиальный": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "Фронтальный": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "Сагиттальный": [
+            2,
+            3
+          ]
+        },
+        "1641": {
+          "Аксиальный": [
+            10,
+            11,
+            12
+          ],
+          "Фронтальный": [
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "Сагиттальный": [
+            20,
+            21,
+            22
+          ]
+        },
+        "1644": {
+          "Аксиальный": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "Фронтальный": [
+            8,
+            9
+          ],
+          "Сагиттальный": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "1645": {
+          "Аксиальный": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "Фронтальный": [
+            16
+          ],
+          "Сагиттальный": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ]
+        },
+        "1646": {
+          "Аксиальный": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "Фронтальный": [
+            7,
+            8,
+            9
+          ],
+          "Сагиттальный": [
+            16,
+            17,
+            18
+          ]
+        },
+        "1647": {
+          "Аксиальный": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "Фронтальный": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "Сагиттальный": [
+            10,
+            11,
+            16,
+            17
+          ]
+        },
+        "1649": {
+          "Аксиальный": [
+            13,
+            14,
+            15
+          ],
+          "Фронтальный": [
+            5,
+            6
+          ],
+          "Сагиттальный": [
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        "1650": {
+          "Аксиальный": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ],
+          "Фронтальный": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "Сагиттальный": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        "1654": {
+          "Аксиальный": [
+            16,
+            17,
+            18,
+            19
+          ],
+          "Фронтальный": [
+            17
+          ],
+          "Сагиттальный": [
+            4,
+            6,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
+          ]
+        },
+        "1655": {
+          "Аксиальный": [
+            17,
+            18,
+            19
+          ],
+          "Фронтальный": [
+            9
+          ],
+          "Сагиттальный": [
+            4,
+            5,
+            6,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ]
+        },
+        "1658": {
+          "Аксиальный": [
+            18,
+            19,
+            20
+          ],
+          "Фронтальный": [
+            13,
+            15,
+            16,
+            17
+          ],
+          "Сагиттальный": [
+            5,
+            11,
+            18,
+            19
+          ]
+        },
+        "1659": {
+          "Аксиальный": [
+            19,
+            20
+          ],
+          "Фронтальный": [
+            10
+          ],
+          "Сагиттальный": [
+            6,
+            7,
+            16,
+            17
+          ]
+        },
+        "1660": {
+          "Аксиальный": [
+            18,
+            19,
+            20
+          ],
+          "Фронтальный": [
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "Сагиттальный": [
+            7,
+            12,
+            17
+          ]
+        },
+        "146101": {
+          "Аксиальный": [
+            8,
+            9
+          ],
+          "Фронтальный": [
+            7,
+            8
+          ],
+          "Сагиттальный": [
+            18,
+            19
+          ]
+        },
+        "146102": {
+          "Аксиальный": [
+            8,
+            9
+          ],
+          "Фронтальный": [
+            8,
+            9
+          ],
+          "Сагиттальный": [
+            13,
+            14
+          ]
+        },
+        "146103": {
+          "Аксиальный": [
+            8,
+            9
+          ],
+          "Фронтальный": [
+            8,
+            9
+          ],
+          "Сагиттальный": [
+            12,
+            13
+          ]
+        },
+        "146104": {
+          "Аксиальный": [
+            8,
+            9
+          ],
+          "Фронтальный": [
+            9,
+            10
+          ],
+          "Сагиттальный": [
+            16,
+            17
+          ]
+        },
+        "146105": {
+          "Аксиальный": [
+            10,
+            11
+          ],
+          "Фронтальный": [
+            15,
+            16
+          ],
+          "Сагиттальный": [
+            10,
+            11
+          ]
+        },
+        "146106": {
+          "Аксиальный": [
+            9,
+            10
+          ],
+          "Фронтальный": [
+            15,
+            16
+          ],
+          "Сагиттальный": [
+            16,
+            17
+          ]
+        },
+        "146107": {
+          "Аксиальный": [
+            13,
+            14
+          ],
+          "Фронтальный": [
+            8,
+            9
+          ],
+          "Сагиттальный": [
+            19,
+            20
+          ]
+        },
+        "146108": {
+          "Аксиальный": [
+            12,
+            13
+          ],
+          "Фронтальный": [
+            8,
+            9
+          ],
+          "Сагиттальный": [
+            11,
+            12
+          ]
+        },
+        "146109": {
+          "Аксиальный": [
+            11,
+            12
+          ],
+          "Фронтальный": [
+            8,
+            9
+          ],
+          "Сагиттальный": [
+            9,
+            10
+          ]
+        },
+        "146110": {
+          "Аксиальный": [
+            8,
+            9
+          ],
+          "Фронтальный": [
+            9,
+            10
+          ],
+          "Сагиттальный": [
+            2,
+            3
+          ]
+        },
+        "912701": {
+          "Аксиальный": [
+            9,
+            10
+          ],
+          "Фронтальный": [
+            12,
+            13,
+            14
+          ],
+          "Сагиттальный": [
+            16,
+            17
+          ]
+        },
+        "912702": {
+          "Аксиальный": [
+            9,
+            10
+          ],
+          "Фронтальный": [
+            12,
+            13,
+            14
+          ],
+          "Сагиттальный": [
+            6,
+            7
+          ]
+        },
+        "912703": {
+          "Аксиальный": [
+            7,
+            8
+          ],
+          "Фронтальный": [
+            12,
+            13,
+            14
+          ],
+          "Сагиттальный": [
+            4,
+            5
+          ]
+        },
+        "912704": {
+          "Аксиальный": [
+            7,
+            8
+          ],
+          "Фронтальный": [
+            12,
+            13,
+            14
+          ],
+          "Сагиттальный": [
+            8,
+            9
+          ]
+        },
+        "912706": {
+          "Аксиальный": [
+            7,
+            8
+          ],
+          "Фронтальный": [
+            12,
+            13,
+            14
+          ],
+          "Сагиттальный": [
+            3,
+            4
+          ]
+        },
+        "912707": {
+          "Аксиальный": [
+            7,
+            8
+          ],
+          "Фронтальный": [
+            12,
+            13,
+            14
+          ],
+          "Сагиттальный": [
+            2,
+            3
+          ]
+        },
+        "913001": {
+          "Аксиальный": [
+            5,
+            6
+          ],
+          "Фронтальный": [
+            9,
+            10
+          ],
+          "Сагиттальный": [
+            4,
+            5
+          ]
+        },
+        "913002": {
+          "Аксиальный": [
+            5,
+            6
+          ],
+          "Фронтальный": [
+            15,
+            16
+          ],
+          "Сагиттальный": [
+            4,
+            5
+          ]
+        },
+        "913003": {
+          "Аксиальный": [
+            9,
+            10
+          ],
+          "Фронтальный": [
+            9,
+            10
+          ],
+          "Сагиттальный": [
+            16,
+            17
+          ]
+        },
+        "913004": {
+          "Аксиальный": [
+            9,
+            10
+          ],
+          "Фронтальный": [
+            15,
+            16
+          ],
+          "Сагиттальный": [
+            16,
+            17
+          ]
+        },
+        "913005": {
+          "Аксиальный": [
+            9,
+            10
+          ],
+          "Фронтальный": [
+            9,
+            10
+          ],
+          "Сагиттальный": [
+            6,
+            7
+          ]
+        },
+        "913006": {
+          "Аксиальный": [
+            9,
+            10
+          ],
+          "Фронтальный": [
+            15,
+            16
+          ],
+          "Сагиттальный": [
+            6,
+            7
+          ]
+        },
+        "913007": {
+          "Аксиальный": [
+            5,
+            6
+          ],
+          "Фронтальный": [
+            15,
+            16
+          ],
+          "Сагиттальный": [
+            2,
+            3
+          ]
+        },
+        "913008": {
+          "Аксиальный": [
+            9,
+            10
+          ],
+          "Фронтальный": [
+            8,
+            9
+          ],
+          "Сагиттальный": [
+            6,
+            7
+          ]
+        },
+        "913009": {
+          "Аксиальный": [
+            9,
+            10
+          ],
+          "Фронтальный": [
+            8,
+            9
+          ],
+          "Сагиттальный": [
+            8
+          ]
+        }
+      }
+    },
+    {
+      "module": "elbow-mri",
+      "sourceDataSha256": "42f3c048025e4748072f24db33fe1ff52271195fee6141d56dbd7e70b4c22a80",
+      "sourceLabelsSha256": "ad252f1225c17b880da0fe86d8c77e7f37f1229d1a190ff41a708e9b50a750db",
+      "added": [
+        {
+          "series": "642-contraste_dpfs",
+          "frame": 34,
+          "annotation": "17170",
+          "imageSha256": "9a03dbfff01e5c87a9db68b600937b4d6f770a04da8bc03c5724cf277f855d9a",
+          "id": 146000000,
+          "structure": 146201,
+          "name": "≈ UCL · передний пучок · ориентировочно",
+          "shortName": "≈ UCL · передний пучок",
+          "filter": 14621,
+          "x": 519,
+          "y": 341,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "642-contraste_dpfs",
+          "frame": 35,
+          "annotation": "17171",
+          "imageSha256": "3cec27f6bc22c0cbf928f9918bfdace6e48fd660d7f9ab400c77d544e2d18605",
+          "id": 146000001,
+          "structure": 146201,
+          "name": "≈ UCL · передний пучок · ориентировочно",
+          "shortName": "≈ UCL · передний пучок",
+          "filter": 14621,
+          "x": 513,
+          "y": 345,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "642-contraste_dpfs",
+          "frame": 36,
+          "annotation": "17172",
+          "imageSha256": "1beef95aaec8d94079a0d7a9ff0fb44483cc4131d371ee84a80da742faf0672a",
+          "id": 146000002,
+          "structure": 146201,
+          "name": "≈ UCL · передний пучок · ориентировочно",
+          "shortName": "≈ UCL · передний пучок",
+          "filter": 14621,
+          "x": 508,
+          "y": 349,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "643-contraste_dpfs",
+          "frame": 17,
+          "annotation": "17218",
+          "imageSha256": "b80eb682299a663fc57bb1c4aae715c262a1db0b17af06dce368e296cde38190",
+          "id": 146000003,
+          "structure": 146201,
+          "name": "≈ UCL · передний пучок · ориентировочно",
+          "shortName": "≈ UCL · передний пучок",
+          "filter": 14621,
+          "x": 459,
+          "y": 363,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "643-contraste_dpfs",
+          "frame": 18,
+          "annotation": "17219",
+          "imageSha256": "b50f14fac9fda3d5e0ef9dfe2e4cb69163a5acac758b7e31818e832ca359e201",
+          "id": 146000004,
+          "structure": 146201,
+          "name": "≈ UCL · передний пучок · ориентировочно",
+          "shortName": "≈ UCL · передний пучок",
+          "filter": 14621,
+          "x": 466,
+          "y": 344,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "643-contraste_dpfs",
+          "frame": 19,
+          "annotation": "17220",
+          "imageSha256": "7bdf7d9e33819085ba22d2e4daa9aac6cf2681665130817337e9a90ce2204c07",
+          "id": 146000005,
+          "structure": 146201,
+          "name": "≈ UCL · передний пучок · ориентировочно",
+          "shortName": "≈ UCL · передний пучок",
+          "filter": 14621,
+          "x": 466,
+          "y": 344,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "644-contraste_dpfs",
+          "frame": 28,
+          "annotation": "17261",
+          "imageSha256": "1bccdbc8e6e5e84c3b502708659b91cb52ed863507b0061c1c28edd226aca135",
+          "id": 146000006,
+          "structure": 146201,
+          "name": "≈ UCL · передний пучок · ориентировочно",
+          "shortName": "≈ UCL · передний пучок",
+          "filter": 14621,
+          "x": 313,
+          "y": 306,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "644-contraste_dpfs",
+          "frame": 29,
+          "annotation": "17262",
+          "imageSha256": "586cbbb7a534476080e3f218b12eafcb2c1051059a0b61b2890b8d59e7b8deec",
+          "id": 146000007,
+          "structure": 146201,
+          "name": "≈ UCL · передний пучок · ориентировочно",
+          "shortName": "≈ UCL · передний пучок",
+          "filter": 14621,
+          "x": 329,
+          "y": 291,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "642-contraste_dpfs",
+          "frame": 33,
+          "annotation": "17169",
+          "imageSha256": "30d247f68d6fbc91e67650f38c9cb0f501c49c4269bf8daac8d8ebd803d86f1e",
+          "id": 146000008,
+          "structure": 146202,
+          "name": "≈ UCL · задний пучок · ориентировочно",
+          "shortName": "≈ UCL · задний пучок",
+          "filter": 14621,
+          "x": 497,
+          "y": 404,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "642-contraste_dpfs",
+          "frame": 34,
+          "annotation": "17170",
+          "imageSha256": "9a03dbfff01e5c87a9db68b600937b4d6f770a04da8bc03c5724cf277f855d9a",
+          "id": 146000009,
+          "structure": 146202,
+          "name": "≈ UCL · задний пучок · ориентировочно",
+          "shortName": "≈ UCL · задний пучок",
+          "filter": 14621,
+          "x": 495,
+          "y": 401,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "642-contraste_dpfs",
+          "frame": 35,
+          "annotation": "17171",
+          "imageSha256": "3cec27f6bc22c0cbf928f9918bfdace6e48fd660d7f9ab400c77d544e2d18605",
+          "id": 146000010,
+          "structure": 146202,
+          "name": "≈ UCL · задний пучок · ориентировочно",
+          "shortName": "≈ UCL · задний пучок",
+          "filter": 14621,
+          "x": 491,
+          "y": 394,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "643-contraste_dpfs",
+          "frame": 22,
+          "annotation": "17223",
+          "imageSha256": "3ba538499c7aad928319269e2ed7f96d1f837d03c8a8b5108fe2d86087c5472e",
+          "id": 146000011,
+          "structure": 146202,
+          "name": "≈ UCL · задний пучок · ориентировочно",
+          "shortName": "≈ UCL · задний пучок",
+          "filter": 14621,
+          "x": 465,
+          "y": 349,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "643-contraste_dpfs",
+          "frame": 23,
+          "annotation": "17224",
+          "imageSha256": "21744ae92834ca657c98095f20b9b251fa633b3f3f08dcdf27f8f772c4c3237a",
+          "id": 146000012,
+          "structure": 146202,
+          "name": "≈ UCL · задний пучок · ориентировочно",
+          "shortName": "≈ UCL · задний пучок",
+          "filter": 14621,
+          "x": 464,
+          "y": 351,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "644-contraste_dpfs",
+          "frame": 28,
+          "annotation": "17261",
+          "imageSha256": "1bccdbc8e6e5e84c3b502708659b91cb52ed863507b0061c1c28edd226aca135",
+          "id": 146000013,
+          "structure": 146202,
+          "name": "≈ UCL · задний пучок · ориентировочно",
+          "shortName": "≈ UCL · задний пучок",
+          "filter": 14621,
+          "x": 383,
+          "y": 265,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "644-contraste_dpfs",
+          "frame": 29,
+          "annotation": "17262",
+          "imageSha256": "586cbbb7a534476080e3f218b12eafcb2c1051059a0b61b2890b8d59e7b8deec",
+          "id": 146000014,
+          "structure": 146202,
+          "name": "≈ UCL · задний пучок · ориентировочно",
+          "shortName": "≈ UCL · задний пучок",
+          "filter": 14621,
+          "x": 383,
+          "y": 252,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "642-contraste_dpfs",
+          "frame": 36,
+          "annotation": "17172",
+          "imageSha256": "1beef95aaec8d94079a0d7a9ff0fb44483cc4131d371ee84a80da742faf0672a",
+          "id": 146000015,
+          "structure": 146203,
+          "name": "≈ UCL · поперечный пучок · ориентировочно",
+          "shortName": "≈ UCL · поперечный пучок",
+          "filter": 14621,
+          "x": 487,
+          "y": 417,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "642-contraste_dpfs",
+          "frame": 37,
+          "annotation": "17173",
+          "imageSha256": "eb5c39735d49d1ef14c38af16fda5c4313792e4663dc2945e36755b215ccb714",
+          "id": 146000016,
+          "structure": 146203,
+          "name": "≈ UCL · поперечный пучок · ориентировочно",
+          "shortName": "≈ UCL · поперечный пучок",
+          "filter": 14621,
+          "x": 483,
+          "y": 415,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "643-contraste_dpfs",
+          "frame": 22,
+          "annotation": "17223",
+          "imageSha256": "3ba538499c7aad928319269e2ed7f96d1f837d03c8a8b5108fe2d86087c5472e",
+          "id": 146000017,
+          "structure": 146203,
+          "name": "≈ UCL · поперечный пучок · ориентировочно",
+          "shortName": "≈ UCL · поперечный пучок",
+          "filter": 14621,
+          "x": 435,
+          "y": 385,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "643-contraste_dpfs",
+          "frame": 23,
+          "annotation": "17224",
+          "imageSha256": "21744ae92834ca657c98095f20b9b251fa633b3f3f08dcdf27f8f772c4c3237a",
+          "id": 146000018,
+          "structure": 146203,
+          "name": "≈ UCL · поперечный пучок · ориентировочно",
+          "shortName": "≈ UCL · поперечный пучок",
+          "filter": 14621,
+          "x": 432,
+          "y": 385,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "644-contraste_dpfs",
+          "frame": 28,
+          "annotation": "17261",
+          "imageSha256": "1bccdbc8e6e5e84c3b502708659b91cb52ed863507b0061c1c28edd226aca135",
+          "id": 146000019,
+          "structure": 146203,
+          "name": "≈ UCL · поперечный пучок · ориентировочно",
+          "shortName": "≈ UCL · поперечный пучок",
+          "filter": 14621,
+          "x": 385,
+          "y": 318,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "644-contraste_dpfs",
+          "frame": 29,
+          "annotation": "17262",
+          "imageSha256": "586cbbb7a534476080e3f218b12eafcb2c1051059a0b61b2890b8d59e7b8deec",
+          "id": 146000020,
+          "structure": 146203,
+          "name": "≈ UCL · поперечный пучок · ориентировочно",
+          "shortName": "≈ UCL · поперечный пучок",
+          "filter": 14621,
+          "x": 385,
+          "y": 307,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "642-contraste_dpfs",
+          "frame": 36,
+          "annotation": "17172",
+          "imageSha256": "1beef95aaec8d94079a0d7a9ff0fb44483cc4131d371ee84a80da742faf0672a",
+          "id": 146000021,
+          "structure": 146204,
+          "name": "≈ LUCL · латеральная локтевая коллатеральная · ориентировочно",
+          "shortName": "≈ LUCL · латеральная локтевая коллатеральная",
+          "filter": 14622,
+          "x": 335,
+          "y": 453,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "642-contraste_dpfs",
+          "frame": 37,
+          "annotation": "17173",
+          "imageSha256": "eb5c39735d49d1ef14c38af16fda5c4313792e4663dc2945e36755b215ccb714",
+          "id": 146000022,
+          "structure": 146204,
+          "name": "≈ LUCL · латеральная локтевая коллатеральная · ориентировочно",
+          "shortName": "≈ LUCL · латеральная локтевая коллатеральная",
+          "filter": 14622,
+          "x": 339,
+          "y": 453,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "642-contraste_dpfs",
+          "frame": 38,
+          "annotation": "17174",
+          "imageSha256": "8f890cd4b60a676beda84c9e37ea5eb31b23c519139fb932cbb0d729df513105",
+          "id": 146000023,
+          "structure": 146204,
+          "name": "≈ LUCL · латеральная локтевая коллатеральная · ориентировочно",
+          "shortName": "≈ LUCL · латеральная локтевая коллатеральная",
+          "filter": 14622,
+          "x": 342,
+          "y": 450,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "643-contraste_dpfs",
+          "frame": 21,
+          "annotation": "17222",
+          "imageSha256": "ee3c42794efa598d099d57804dc44c734033dcb826ed7556178467175f8457db",
+          "id": 146000024,
+          "structure": 146204,
+          "name": "≈ LUCL · латеральная локтевая коллатеральная · ориентировочно",
+          "shortName": "≈ LUCL · латеральная локтевая коллатеральная",
+          "filter": 14622,
+          "x": 337,
+          "y": 441,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "643-contraste_dpfs",
+          "frame": 22,
+          "annotation": "17223",
+          "imageSha256": "3ba538499c7aad928319269e2ed7f96d1f837d03c8a8b5108fe2d86087c5472e",
+          "id": 146000025,
+          "structure": 146204,
+          "name": "≈ LUCL · латеральная локтевая коллатеральная · ориентировочно",
+          "shortName": "≈ LUCL · латеральная локтевая коллатеральная",
+          "filter": 14622,
+          "x": 335,
+          "y": 438,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "643-contraste_dpfs",
+          "frame": 23,
+          "annotation": "17224",
+          "imageSha256": "21744ae92834ca657c98095f20b9b251fa633b3f3f08dcdf27f8f772c4c3237a",
+          "id": 146000026,
+          "structure": 146204,
+          "name": "≈ LUCL · латеральная локтевая коллатеральная · ориентировочно",
+          "shortName": "≈ LUCL · латеральная локтевая коллатеральная",
+          "filter": 14622,
+          "x": 334,
+          "y": 431,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "644-contraste_dpfs",
+          "frame": 10,
+          "annotation": "17243",
+          "imageSha256": "de832889bdab5250b8b4f093519922370bd79170aaa5630f1f78e25ffeb29c2e",
+          "id": 146000027,
+          "structure": 146204,
+          "name": "≈ LUCL · латеральная локтевая коллатеральная · ориентировочно",
+          "shortName": "≈ LUCL · латеральная локтевая коллатеральная",
+          "filter": 14622,
+          "x": 408,
+          "y": 370,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "644-contraste_dpfs",
+          "frame": 11,
+          "annotation": "17244",
+          "imageSha256": "c91dd216d1c33dce6dba3506d136795d3e06fb4aa100ee20134027c4c52e4e3e",
+          "id": 146000028,
+          "structure": 146204,
+          "name": "≈ LUCL · латеральная локтевая коллатеральная · ориентировочно",
+          "shortName": "≈ LUCL · латеральная локтевая коллатеральная",
+          "filter": 14622,
+          "x": 402,
+          "y": 377,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "642-contraste_dpfs",
+          "frame": 39,
+          "annotation": "17175",
+          "imageSha256": "524c933b731b6a1307a71b83229553087386274eab78294e977e4e5e3087da33",
+          "id": 146000029,
+          "structure": 146205,
+          "name": "≈ Добавочная латеральная коллатеральная · область · ориентировочно",
+          "shortName": "≈ Добавочная латеральная коллатеральная · область",
+          "filter": 14622,
+          "x": 345,
+          "y": 431,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "642-contraste_dpfs",
+          "frame": 40,
+          "annotation": "17176",
+          "imageSha256": "2b0e0a44459d27ac4d9f5fcf1dc21b25dab26519f052ee75f5158dae738b17f2",
+          "id": 146000030,
+          "structure": 146205,
+          "name": "≈ Добавочная латеральная коллатеральная · область · ориентировочно",
+          "shortName": "≈ Добавочная латеральная коллатеральная · область",
+          "filter": 14622,
+          "x": 348,
+          "y": 432,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "643-contraste_dpfs",
+          "frame": 21,
+          "annotation": "17222",
+          "imageSha256": "ee3c42794efa598d099d57804dc44c734033dcb826ed7556178467175f8457db",
+          "id": 146000031,
+          "structure": 146205,
+          "name": "≈ Добавочная латеральная коллатеральная · область · ориентировочно",
+          "shortName": "≈ Добавочная латеральная коллатеральная · область",
+          "filter": 14622,
+          "x": 323,
+          "y": 423,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "643-contraste_dpfs",
+          "frame": 22,
+          "annotation": "17223",
+          "imageSha256": "3ba538499c7aad928319269e2ed7f96d1f837d03c8a8b5108fe2d86087c5472e",
+          "id": 146000032,
+          "structure": 146205,
+          "name": "≈ Добавочная латеральная коллатеральная · область · ориентировочно",
+          "shortName": "≈ Добавочная латеральная коллатеральная · область",
+          "filter": 14622,
+          "x": 322,
+          "y": 419,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "644-contraste_dpfs",
+          "frame": 18,
+          "annotation": "17251",
+          "imageSha256": "536d640ec546ce0236526e780b12277b5f1b3c572b105ab9ab56f5ce279ec843",
+          "id": 146000033,
+          "structure": 146205,
+          "name": "≈ Добавочная латеральная коллатеральная · область · ориентировочно",
+          "shortName": "≈ Добавочная латеральная коллатеральная · область",
+          "filter": 14622,
+          "x": 408,
+          "y": 420,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        },
+        {
+          "series": "644-contraste_dpfs",
+          "frame": 19,
+          "annotation": "17252",
+          "imageSha256": "d5a2000c519f93290b1a223c47730c3f2d4d31b9a995c4ed8a7e83e132ab06e8",
+          "id": 146000034,
+          "structure": 146205,
+          "name": "≈ Добавочная латеральная коллатеральная · область · ориентировочно",
+          "shortName": "≈ Добавочная латеральная коллатеральная · область",
+          "filter": 14622,
+          "x": 412,
+          "y": 414,
+          "category": "ligaments",
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.46"
+        }
+      ],
+      "coverage": {
+        "1614": {
+          "Аксиальный": [
+            60,
+            61,
+            62,
+            63,
+            64,
+            65
+          ],
+          "Фронтальный": [
+            17,
+            18,
+            19,
+            20
+          ],
+          "Сагиттальный": [
+            18,
+            19
+          ]
+        },
+        "1615": {
+          "Аксиальный": [
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54
+          ],
+          "Фронтальный": [
+            16,
+            17,
+            18,
+            19
+          ],
+          "Сагиттальный": [
+            19,
+            20
+          ]
+        },
+        "1626": {
+          "Аксиальный": [
+            30,
+            31,
+            32
+          ],
+          "Фронтальный": [
+            20,
+            21
+          ],
+          "Сагиттальный": [
+            30
+          ]
+        },
+        "1627": {
+          "Аксиальный": [
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38
+          ],
+          "Фронтальный": [
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "Сагиттальный": [
+            9,
+            10
+          ]
+        },
+        "1628": {
+          "Аксиальный": [
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "Фронтальный": [
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24
+          ],
+          "Сагиттальный": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
+          ]
+        },
+        "1629": {
+          "Аксиальный": [
+            41
+          ],
+          "Фронтальный": [
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
+          ],
+          "Сагиттальный": [
+            18,
+            19,
+            20
+          ]
+        },
+        "146201": {
+          "Аксиальный": [
+            34,
+            35,
+            36
+          ],
+          "Фронтальный": [
+            17,
+            18,
+            19
+          ],
+          "Сагиттальный": [
+            28,
+            29
+          ]
+        },
+        "146202": {
+          "Аксиальный": [
+            33,
+            34,
+            35
+          ],
+          "Фронтальный": [
+            22,
+            23
+          ],
+          "Сагиттальный": [
+            28,
+            29
+          ]
+        },
+        "146203": {
+          "Аксиальный": [
+            36,
+            37
+          ],
+          "Фронтальный": [
+            22,
+            23
+          ],
+          "Сагиттальный": [
+            28,
+            29
+          ]
+        },
+        "146204": {
+          "Аксиальный": [
+            36,
+            37,
+            38
+          ],
+          "Фронтальный": [
+            21,
+            22,
+            23
+          ],
+          "Сагиттальный": [
+            10,
+            11
+          ]
+        },
+        "146205": {
+          "Аксиальный": [
+            39,
+            40
+          ],
+          "Фронтальный": [
+            21,
+            22
+          ],
+          "Сагиттальный": [
+            18,
+            19
+          ]
+        }
+      }
+    }
+  ]
+}

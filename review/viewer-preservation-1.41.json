@@ -1,0 +1,41 @@
+{
+  "existingFiles": {
+    "app/src/main/assets/brain-data.json": "bb95afb02b39b2f987c0abc849119d14e64517a9073807d95c70e4a0a25ca1e6",
+    "app/src/main/assets/brain-labels.json": "0d4bd8f085fc23602e6027134226b7b67d664d7bd5a9d0464b751a4bb10ac1ca",
+    "app/src/main/assets/wrist-mri-data.json": "aca41cf414731714a6f0e3c2b4b30f75f2b34143c35687f27b7b7eda7a594def",
+    "app/src/main/assets/wrist-mri-labels.json": "4660debcf668db061a1a2a91dbe04d702a9b3c1817c46b03ad8547266d09db7b",
+    "app/src/main/assets/elbow-mri-data.json": "42f3c048025e4748072f24db33fe1ff52271195fee6141d56dbd7e70b4c22a80",
+    "app/src/main/assets/elbow-mri-labels.json": "ad252f1225c17b880da0fe86d8c77e7f37f1229d1a190ff41a708e9b50a750db",
+    "app/src/main/assets/male-pelvis-mri-data.json": "0ade0a8600393c8e1029f87dac984796b6d8627f6f83275f9eca661779b66ecd",
+    "app/src/main/assets/male-pelvis-mri-labels.json": "55226b166efccd12fa5ba19a8e3d93ed08f66fa99b3d10d23c7a98388695e297",
+    "app/src/main/assets/female-pelvis-mri-data.json": "c03d5a71c45eff5a22b0ef47b9fca2e6d1b16dffb130bfad394f6632e0680b77",
+    "app/src/main/assets/female-pelvis-mri-labels.json": "9d8e5addd0809e6b27867137690835a84754d108d6279f28f984581410792412"
+  },
+  "addedModules": {
+    "shoulder-mri": {
+      "exactSourceNamesAndCoordinates": true,
+      "offCanvasPointIds": [],
+      "imageDigestsVerified": true
+    },
+    "foot-mri": {
+      "exactSourceNamesAndCoordinates": true,
+      "offCanvasPointIds": [
+        543871,
+        543959,
+        544050,
+        544142,
+        544237,
+        544327,
+        544409,
+        544486,
+        544556,
+        544618,
+        544657,
+        544686,
+        544707,
+        544712
+      ],
+      "imageDigestsVerified": true
+    }
+  }
+}

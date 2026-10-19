@@ -1,0 +1,1314 @@
+[
+  {
+    "module": "brain",
+    "series": "ax",
+    "title": "T1 · аксиальная",
+    "frames": 132,
+    "size": [
+      481,
+      636
+    ],
+    "bounds": [
+      0,
+      5,
+      481,
+      630
+    ]
+  },
+  {
+    "module": "brain",
+    "series": "cor",
+    "title": "T1 · коронарная",
+    "frames": 157,
+    "size": [
+      481,
+      636
+    ],
+    "bounds": [
+      0,
+      21,
+      481,
+      598
+    ]
+  },
+  {
+    "module": "brain",
+    "series": "sag",
+    "title": "T1 · сагиттальная",
+    "frames": 64,
+    "size": [
+      481,
+      636
+    ],
+    "bounds": [
+      0,
+      37,
+      481,
+      566
+    ]
+  },
+  {
+    "module": "brain",
+    "series": "adc",
+    "title": "DWI",
+    "frames": 24,
+    "size": [
+      424,
+      535
+    ],
+    "bounds": [
+      0,
+      0,
+      416,
+      535
+    ]
+  },
+  {
+    "module": "brain",
+    "series": "flair",
+    "title": "FLAIR",
+    "frames": 24,
+    "size": [
+      424,
+      535
+    ],
+    "bounds": [
+      2,
+      0,
+      417,
+      517
+    ]
+  },
+  {
+    "module": "brain",
+    "series": "t1c",
+    "title": "T1 Гадолиний",
+    "frames": 24,
+    "size": [
+      424,
+      535
+    ],
+    "bounds": [
+      3,
+      0,
+      416,
+      525
+    ]
+  },
+  {
+    "module": "brain",
+    "series": "t2",
+    "title": "T2",
+    "frames": 24,
+    "size": [
+      424,
+      535
+    ],
+    "bounds": [
+      0,
+      0,
+      417,
+      523
+    ]
+  },
+  {
+    "module": "brain",
+    "series": "dwi",
+    "title": "T2*",
+    "frames": 24,
+    "size": [
+      424,
+      535
+    ],
+    "bounds": [
+      11,
+      17,
+      392,
+      506
+    ]
+  },
+  {
+    "module": "brain",
+    "series": "t1",
+    "title": "T1",
+    "frames": 24,
+    "size": [
+      424,
+      535
+    ],
+    "bounds": [
+      0,
+      0,
+      419,
+      525
+    ]
+  },
+  {
+    "module": "wrist-mri",
+    "series": "667-contraste_",
+    "title": "T1 · Аксиальный",
+    "frames": 24,
+    "size": [
+      640,
+      670
+    ],
+    "bounds": [
+      0,
+      54,
+      640,
+      604
+    ]
+  },
+  {
+    "module": "wrist-mri",
+    "series": "667-contraste_dpfs",
+    "title": "PD-SPIR · Аксиальный",
+    "frames": 24,
+    "size": [
+      640,
+      670
+    ],
+    "bounds": [
+      0,
+      54,
+      640,
+      604
+    ]
+  },
+  {
+    "module": "wrist-mri",
+    "series": "668-contraste_",
+    "title": "T1 · Фронтальный",
+    "frames": 20,
+    "size": [
+      640,
+      670
+    ],
+    "bounds": [
+      0,
+      0,
+      640,
+      670
+    ]
+  },
+  {
+    "module": "wrist-mri",
+    "series": "668-contraste_dpfs",
+    "title": "PD-SPIR · Фронтальный",
+    "frames": 20,
+    "size": [
+      640,
+      670
+    ],
+    "bounds": [
+      0,
+      0,
+      640,
+      670
+    ]
+  },
+  {
+    "module": "wrist-mri",
+    "series": "669-contraste_",
+    "title": "T1 · Сагиттальный",
+    "frames": 30,
+    "size": [
+      640,
+      670
+    ],
+    "bounds": [
+      127,
+      0,
+      386,
+      670
+    ]
+  },
+  {
+    "module": "wrist-mri",
+    "series": "669-contraste_dpfs",
+    "title": "PD-SPIR · Сагиттальный",
+    "frames": 30,
+    "size": [
+      640,
+      670
+    ],
+    "bounds": [
+      117,
+      0,
+      396,
+      670
+    ]
+  },
+  {
+    "module": "elbow-mri",
+    "series": "642-contraste_",
+    "title": "T1 · Аксиальный",
+    "frames": 65,
+    "size": [
+      640,
+      670
+    ],
+    "bounds": [
+      0,
+      0,
+      640,
+      670
+    ]
+  },
+  {
+    "module": "elbow-mri",
+    "series": "642-contraste_dpfs",
+    "title": "PD-SPIR · Аксиальный",
+    "frames": 65,
+    "size": [
+      640,
+      670
+    ],
+    "bounds": [
+      0,
+      0,
+      640,
+      670
+    ]
+  },
+  {
+    "module": "elbow-mri",
+    "series": "643-contraste_",
+    "title": "T1 · Фронтальный",
+    "frames": 32,
+    "size": [
+      640,
+      670
+    ],
+    "bounds": [
+      53,
+      0,
+      534,
+      670
+    ]
+  },
+  {
+    "module": "elbow-mri",
+    "series": "643-contraste_dpfs",
+    "title": "PD-SPIR · Фронтальный",
+    "frames": 32,
+    "size": [
+      640,
+      670
+    ],
+    "bounds": [
+      48,
+      0,
+      539,
+      670
+    ]
+  },
+  {
+    "module": "elbow-mri",
+    "series": "644-contraste_",
+    "title": "T1 · Сагиттальный",
+    "frames": 33,
+    "size": [
+      640,
+      670
+    ],
+    "bounds": [
+      82,
+      0,
+      507,
+      670
+    ]
+  },
+  {
+    "module": "elbow-mri",
+    "series": "644-contraste_dpfs",
+    "title": "PD-SPIR · Сагиттальный",
+    "frames": 33,
+    "size": [
+      640,
+      670
+    ],
+    "bounds": [
+      82,
+      0,
+      507,
+      670
+    ]
+  },
+  {
+    "module": "male-pelvis-mri",
+    "series": "312-contraste_",
+    "title": "Аксиальный",
+    "frames": 65,
+    "size": [
+      641,
+      671
+    ],
+    "bounds": [
+      0,
+      0,
+      641,
+      667
+    ]
+  },
+  {
+    "module": "male-pelvis-mri",
+    "series": "313-contraste_",
+    "title": "Сагиттальный",
+    "frames": 80,
+    "size": [
+      641,
+      671
+    ],
+    "bounds": [
+      0,
+      0,
+      641,
+      671
+    ]
+  },
+  {
+    "module": "male-pelvis-mri",
+    "series": "314-contraste_",
+    "title": "Фронтальный",
+    "frames": 75,
+    "size": [
+      641,
+      671
+    ],
+    "bounds": [
+      0,
+      0,
+      641,
+      671
+    ]
+  },
+  {
+    "module": "female-pelvis-mri",
+    "series": "629-contraste_",
+    "title": "T2 · Аксиальный",
+    "frames": 24,
+    "size": [
+      511,
+      541
+    ],
+    "bounds": [
+      0,
+      48,
+      511,
+      437
+    ]
+  },
+  {
+    "module": "female-pelvis-mri",
+    "series": "629-contraste_t1",
+    "title": "T1 · Аксиальный",
+    "frames": 24,
+    "size": [
+      511,
+      541
+    ],
+    "bounds": [
+      0,
+      39,
+      511,
+      445
+    ]
+  },
+  {
+    "module": "female-pelvis-mri",
+    "series": "630-contraste_",
+    "title": "T2 · Сагиттальный",
+    "frames": 22,
+    "size": [
+      511,
+      541
+    ],
+    "bounds": [
+      21,
+      0,
+      470,
+      539
+    ]
+  },
+  {
+    "module": "female-pelvis-mri",
+    "series": "630-contraste_t1",
+    "title": "T1 · Сагиттальный",
+    "frames": 22,
+    "size": [
+      511,
+      541
+    ],
+    "bounds": [
+      21,
+      0,
+      470,
+      539
+    ]
+  },
+  {
+    "module": "female-pelvis-mri",
+    "series": "631-contraste_",
+    "title": "T2 · Фронтальный",
+    "frames": 24,
+    "size": [
+      511,
+      541
+    ],
+    "bounds": [
+      0,
+      13,
+      509,
+      510
+    ]
+  },
+  {
+    "module": "shoulder-mri",
+    "series": "656-contraste_",
+    "title": "T1 · Аксиальный",
+    "frames": 42,
+    "size": [
+      458,
+      554
+    ],
+    "bounds": [
+      0,
+      0,
+      458,
+      539
+    ]
+  },
+  {
+    "module": "shoulder-mri",
+    "series": "656-contraste_dp",
+    "title": "PD-SPIR · Аксиальный",
+    "frames": 42,
+    "size": [
+      458,
+      554
+    ],
+    "bounds": [
+      0,
+      0,
+      458,
+      539
+    ]
+  },
+  {
+    "module": "shoulder-mri",
+    "series": "657-contraste_",
+    "title": "T1 · Сагиттальный",
+    "frames": 36,
+    "size": [
+      458,
+      554
+    ],
+    "bounds": [
+      5,
+      0,
+      453,
+      554
+    ]
+  },
+  {
+    "module": "shoulder-mri",
+    "series": "657-contraste_dp",
+    "title": "PD-SPIR · Сагиттальный",
+    "frames": 36,
+    "size": [
+      458,
+      554
+    ],
+    "bounds": [
+      5,
+      0,
+      453,
+      554
+    ]
+  },
+  {
+    "module": "shoulder-mri",
+    "series": "658-contraste_",
+    "title": "T1 · Фронтальный",
+    "frames": 37,
+    "size": [
+      458,
+      554
+    ],
+    "bounds": [
+      0,
+      13,
+      458,
+      526
+    ]
+  },
+  {
+    "module": "shoulder-mri",
+    "series": "658-contraste_dp",
+    "title": "PD-SPIR · Фронтальный",
+    "frames": 37,
+    "size": [
+      458,
+      554
+    ],
+    "bounds": [
+      0,
+      13,
+      458,
+      526
+    ]
+  },
+  {
+    "module": "foot-mri",
+    "series": "541-contraste_",
+    "title": "T1 · Аксиальный",
+    "frames": 45,
+    "size": [
+      504,
+      615
+    ],
+    "bounds": [
+      112,
+      0,
+      292,
+      611
+    ]
+  },
+  {
+    "module": "foot-mri",
+    "series": "541-contraste_dp",
+    "title": "PD-SPIR · Аксиальный",
+    "frames": 45,
+    "size": [
+      504,
+      615
+    ],
+    "bounds": [
+      109,
+      0,
+      304,
+      603
+    ]
+  },
+  {
+    "module": "foot-mri",
+    "series": "542-contraste_",
+    "title": "T1 · Сагиттальный",
+    "frames": 32,
+    "size": [
+      504,
+      615
+    ],
+    "bounds": [
+      0,
+      51,
+      504,
+      488
+    ]
+  },
+  {
+    "module": "foot-mri",
+    "series": "542-contraste_dp",
+    "title": "PD-SPIR · Сагиттальный",
+    "frames": 32,
+    "size": [
+      504,
+      615
+    ],
+    "bounds": [
+      0,
+      51,
+      504,
+      496
+    ]
+  },
+  {
+    "module": "foot-mri",
+    "series": "543-contraste_",
+    "title": "T1 · Фронтальный",
+    "frames": 65,
+    "size": [
+      504,
+      615
+    ],
+    "bounds": [
+      59,
+      0,
+      384,
+      600
+    ]
+  },
+  {
+    "module": "foot-mri",
+    "series": "543-contraste_dp",
+    "title": "PD-SPIR · Фронтальный",
+    "frames": 65,
+    "size": [
+      504,
+      615
+    ],
+    "bounds": [
+      59,
+      0,
+      384,
+      601
+    ]
+  },
+  {
+    "module": "knee-mri",
+    "series": "652-contraste_",
+    "title": "T1 · Аксиальный",
+    "frames": 50,
+    "size": [
+      467,
+      519
+    ],
+    "bounds": [
+      0,
+      0,
+      467,
+      499
+    ]
+  },
+  {
+    "module": "knee-mri",
+    "series": "652-contraste_dp",
+    "title": "PD-SPIR · Аксиальный",
+    "frames": 50,
+    "size": [
+      467,
+      519
+    ],
+    "bounds": [
+      0,
+      0,
+      467,
+      498
+    ]
+  },
+  {
+    "module": "knee-mri",
+    "series": "653-contraste_",
+    "title": "T1 · Сагиттальный",
+    "frames": 32,
+    "size": [
+      467,
+      519
+    ],
+    "bounds": [
+      27,
+      0,
+      424,
+      519
+    ]
+  },
+  {
+    "module": "knee-mri",
+    "series": "653-contraste_dp",
+    "title": "PD-SPIR · Сагиттальный",
+    "frames": 32,
+    "size": [
+      467,
+      519
+    ],
+    "bounds": [
+      26,
+      0,
+      432,
+      519
+    ]
+  },
+  {
+    "module": "knee-mri",
+    "series": "654-contraste_",
+    "title": "T1 · Фронтальный",
+    "frames": 32,
+    "size": [
+      467,
+      519
+    ],
+    "bounds": [
+      37,
+      0,
+      411,
+      519
+    ]
+  },
+  {
+    "module": "knee-mri",
+    "series": "654-contraste_dp",
+    "title": "PD-SPIR · Фронтальный",
+    "frames": 32,
+    "size": [
+      467,
+      519
+    ],
+    "bounds": [
+      37,
+      0,
+      414,
+      519
+    ]
+  },
+  {
+    "module": "face-neck-mri",
+    "series": "156-contraste_",
+    "title": "Аксиальный",
+    "frames": 194,
+    "size": [
+      495,
+      651
+    ],
+    "bounds": [
+      5,
+      5,
+      490,
+      638
+    ]
+  },
+  {
+    "module": "face-neck-mri",
+    "series": "157-contraste_",
+    "title": "Фронтальный",
+    "frames": 156,
+    "size": [
+      495,
+      651
+    ],
+    "bounds": [
+      5,
+      5,
+      478,
+      614
+    ]
+  },
+  {
+    "module": "face-neck-mri",
+    "series": "158-contraste_",
+    "title": "Сагиттальный",
+    "frames": 68,
+    "size": [
+      495,
+      651
+    ],
+    "bounds": [
+      5,
+      37,
+      478,
+      558
+    ]
+  },
+  {
+    "module": "hip-mri",
+    "series": "632-contraste_",
+    "title": "T1 · Аксиальный",
+    "frames": 46,
+    "size": [
+      640,
+      670
+    ],
+    "bounds": [
+      0,
+      0,
+      640,
+      670
+    ]
+  },
+  {
+    "module": "hip-mri",
+    "series": "632-contraste_dpfs",
+    "title": "PD-SPIR · Аксиальный",
+    "frames": 46,
+    "size": [
+      640,
+      670
+    ],
+    "bounds": [
+      0,
+      0,
+      640,
+      670
+    ]
+  },
+  {
+    "module": "hip-mri",
+    "series": "633-contraste_",
+    "title": "T1 · Фронтальный",
+    "frames": 44,
+    "size": [
+      640,
+      670
+    ],
+    "bounds": [
+      0,
+      0,
+      640,
+      670
+    ]
+  },
+  {
+    "module": "hip-mri",
+    "series": "633-contraste_dpfs",
+    "title": "PD-SPIR · Фронтальный",
+    "frames": 44,
+    "size": [
+      640,
+      670
+    ],
+    "bounds": [
+      0,
+      0,
+      640,
+      670
+    ]
+  },
+  {
+    "module": "hip-mri",
+    "series": "634-contraste_",
+    "title": "T1 · Сагиттальный",
+    "frames": 36,
+    "size": [
+      640,
+      670
+    ],
+    "bounds": [
+      0,
+      0,
+      640,
+      670
+    ]
+  },
+  {
+    "module": "hip-mri",
+    "series": "634-contraste_dpfs",
+    "title": "PD-SPIR · Сагиттальный",
+    "frames": 36,
+    "size": [
+      640,
+      670
+    ],
+    "bounds": [
+      0,
+      0,
+      640,
+      670
+    ]
+  },
+  {
+    "module": "spine-mri",
+    "series": "625-contraste_",
+    "title": "T1 · Сагиттальный T1/T2 TSE",
+    "frames": 15,
+    "size": [
+      640,
+      670
+    ],
+    "bounds": [
+      189,
+      0,
+      263,
+      670
+    ]
+  },
+  {
+    "module": "spine-mri",
+    "series": "625-contraste_t2",
+    "title": "T2 · Сагиттальный T1/T2 TSE",
+    "frames": 15,
+    "size": [
+      640,
+      670
+    ],
+    "bounds": [
+      189,
+      0,
+      264,
+      670
+    ]
+  },
+  {
+    "module": "spine-mri",
+    "series": "626-contraste_",
+    "title": "T2 · Поперечный T2 Мультипланарная реконструкция",
+    "frames": 352,
+    "size": [
+      640,
+      670
+    ],
+    "bounds": [
+      0,
+      63,
+      640,
+      516
+    ]
+  },
+  {
+    "module": "spine-mri",
+    "series": "627-contraste_",
+    "title": "T2 · Сагиттальный T2 Мультипланарная реконструкция",
+    "frames": 245,
+    "size": [
+      640,
+      670
+    ],
+    "bounds": [
+      217,
+      0,
+      207,
+      670
+    ]
+  },
+  {
+    "module": "spine-mri",
+    "series": "628-contraste_",
+    "title": "T2 · Фронтальный T2 Мультипланарная реконструкция",
+    "frames": 116,
+    "size": [
+      640,
+      670
+    ],
+    "bounds": [
+      45,
+      0,
+      550,
+      670
+    ]
+  },
+  {
+    "module": "upper-limb-mri",
+    "series": "406-contraste_",
+    "title": "Плечевой пояс; пояс верхней конечности",
+    "frames": 34,
+    "size": [
+      570,
+      667
+    ],
+    "bounds": [
+      0,
+      13,
+      570,
+      654
+    ]
+  },
+  {
+    "module": "upper-limb-mri",
+    "series": "407-contraste_",
+    "title": "Плечо",
+    "frames": 43,
+    "size": [
+      570,
+      667
+    ],
+    "bounds": [
+      0,
+      13,
+      570,
+      654
+    ]
+  },
+  {
+    "module": "upper-limb-mri",
+    "series": "408-contraste_",
+    "title": "Локоть",
+    "frames": 21,
+    "size": [
+      570,
+      667
+    ],
+    "bounds": [
+      0,
+      0,
+      563,
+      559
+    ]
+  },
+  {
+    "module": "upper-limb-mri",
+    "series": "409-contraste_",
+    "title": "Предплечье",
+    "frames": 43,
+    "size": [
+      570,
+      667
+    ],
+    "bounds": [
+      0,
+      0,
+      563,
+      560
+    ]
+  },
+  {
+    "module": "upper-limb-mri",
+    "series": "410-contraste_",
+    "title": "Запястье",
+    "frames": 16,
+    "size": [
+      570,
+      667
+    ],
+    "bounds": [
+      0,
+      0,
+      454,
+      559
+    ]
+  },
+  {
+    "module": "upper-limb-mri",
+    "series": "411-contraste_",
+    "title": "Кисть",
+    "frames": 37,
+    "size": [
+      570,
+      667
+    ],
+    "bounds": [
+      13,
+      0,
+      382,
+      437
+    ]
+  },
+  {
+    "module": "lower-limb-mri",
+    "series": "535-contraste_",
+    "title": "Ягодичная область",
+    "frames": 46,
+    "size": [
+      530,
+      538
+    ],
+    "bounds": [
+      0,
+      0,
+      530,
+      538
+    ]
+  },
+  {
+    "module": "lower-limb-mri",
+    "series": "536-contraste_",
+    "title": "Бедро",
+    "frames": 70,
+    "size": [
+      530,
+      538
+    ],
+    "bounds": [
+      0,
+      0,
+      530,
+      538
+    ]
+  },
+  {
+    "module": "lower-limb-mri",
+    "series": "537-contraste_",
+    "title": "Колено",
+    "frames": 21,
+    "size": [
+      530,
+      538
+    ],
+    "bounds": [
+      0,
+      0,
+      530,
+      538
+    ]
+  },
+  {
+    "module": "lower-limb-mri",
+    "series": "538-contraste_",
+    "title": "Голень",
+    "frames": 71,
+    "size": [
+      530,
+      538
+    ],
+    "bounds": [
+      67,
+      133,
+      463,
+      405
+    ]
+  },
+  {
+    "module": "lower-limb-mri",
+    "series": "539-contraste_",
+    "title": "Предплюсна",
+    "frames": 22,
+    "size": [
+      530,
+      538
+    ],
+    "bounds": [
+      91,
+      1,
+      439,
+      537
+    ]
+  },
+  {
+    "module": "lower-limb-mri",
+    "series": "540-contraste_",
+    "title": "Стопа",
+    "frames": 47,
+    "size": [
+      530,
+      538
+    ],
+    "bounds": [
+      141,
+      1,
+      389,
+      537
+    ]
+  },
+  {
+    "module": "brachial-plexus-mri",
+    "series": "35-contraste_",
+    "title": "Аксиальный",
+    "frames": 60,
+    "size": [
+      641,
+      671
+    ],
+    "bounds": [
+      0,
+      28,
+      641,
+      599
+    ]
+  },
+  {
+    "module": "brachial-plexus-mri",
+    "series": "36-contraste_",
+    "title": "Сагиттальный",
+    "frames": 60,
+    "size": [
+      641,
+      671
+    ],
+    "bounds": [
+      0,
+      0,
+      641,
+      671
+    ]
+  },
+  {
+    "module": "brachial-plexus-mri",
+    "series": "37-contraste_",
+    "title": "Фронтальный",
+    "frames": 40,
+    "size": [
+      641,
+      671
+    ],
+    "bounds": [
+      0,
+      0,
+      641,
+      671
+    ]
+  },
+  {
+    "module": "hand-mri",
+    "series": "165-contraste_",
+    "title": "T1 · Аксиальный",
+    "frames": 62,
+    "size": [
+      642,
+      670
+    ],
+    "bounds": [
+      0,
+      153,
+      642,
+      394
+    ]
+  },
+  {
+    "module": "hand-mri",
+    "series": "165-contraste_dp",
+    "title": "PD-SPIR · Аксиальный",
+    "frames": 62,
+    "size": [
+      642,
+      670
+    ],
+    "bounds": [
+      0,
+      149,
+      642,
+      398
+    ]
+  },
+  {
+    "module": "hand-mri",
+    "series": "166-contraste_",
+    "title": "T1 · Сагиттальный",
+    "frames": 56,
+    "size": [
+      642,
+      670
+    ],
+    "bounds": [
+      217,
+      0,
+      186,
+      670
+    ]
+  },
+  {
+    "module": "hand-mri",
+    "series": "166-contraste_dp",
+    "title": "PD-SPIR · Сагиттальный",
+    "frames": 56,
+    "size": [
+      642,
+      670
+    ],
+    "bounds": [
+      217,
+      0,
+      191,
+      670
+    ]
+  },
+  {
+    "module": "hand-mri",
+    "series": "167-contraste_",
+    "title": "T1 · Фронтальный",
+    "frames": 22,
+    "size": [
+      642,
+      670
+    ],
+    "bounds": [
+      131,
+      0,
+      380,
+      670
+    ]
+  },
+  {
+    "module": "hand-mri",
+    "series": "167-contraste_dp",
+    "title": "PD-SPIR · Фронтальный",
+    "frames": 22,
+    "size": [
+      642,
+      670
+    ],
+    "bounds": [
+      131,
+      0,
+      380,
+      670
+    ]
+  }
+]

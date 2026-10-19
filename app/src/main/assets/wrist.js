@@ -4,7 +4,7 @@ import {bones,ligamentDefs,tendonDefs,palmer,discMesh,discPoint,discPresent} fro
 import {ligamentText,tendonText,palmerText} from './wrist-data.js';
 const $=s=>document.querySelector(s),host=$('#canvas'),requested=new URLSearchParams(location.search).get('mode'),mode=['ligaments','tendons','tfcc'].includes(requested)?requested:'ligaments';
 let selected=mode==='ligaments'?'SL':mode==='tendons'?'I':'normal',attachment='deep';
-const scene=new T.Scene();scene.background=new T.Color('#e6eeea');const camera=new T.PerspectiveCamera(34,1,.1,60);let renderer;try{renderer=new T.WebGLRenderer({antialias:true})}catch(e){$('#failure').hidden=false;throw e}renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.toneMapping=T.ACESFilmicToneMapping;host.appendChild(renderer.domElement);
+const scene=new T.Scene();scene.background=new T.Color('#111a22');const camera=new T.PerspectiveCamera(34,1,.1,60);let renderer;try{renderer=new T.WebGLRenderer({antialias:true})}catch(e){$('#failure').hidden=false;throw e}renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.toneMapping=T.ACESFilmicToneMapping;host.appendChild(renderer.domElement);
 const controls=new OrbitControls(camera,renderer.domElement);controls.target.set(0,.1,0);controls.enableDamping=true;controls.minDistance=2.4;controls.maxDistance=20;controls.autoRotateSpeed=.45;
 scene.add(new T.HemisphereLight(0xffffff,0x7d9186,2.8));for(const [p,i]of [[[4,6,6],2.8],[[-4,-1,-5],1.7]]){let l=new T.DirectionalLight(0xffffff,i);l.position.set(...p);scene.add(l)}
 const material=(color,opacity=1)=>new T.MeshStandardMaterial({color,roughness:.5,side:T.DoubleSide,transparent:opacity<1,opacity,depthWrite:opacity>=1});

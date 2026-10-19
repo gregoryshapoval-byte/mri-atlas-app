@@ -1,0 +1,691 @@
+{
+  "revision": "1.57",
+  "base": "bdc9407db93fa929db8798adecc8b553e5363b35",
+  "shortNames": 71,
+  "coincident": [
+    {
+      "series": "667-contraste_dpfs",
+      "frame": 16,
+      "annotation": "18678",
+      "general": 1647,
+      "detail": 156223,
+      "imageSha256": "c6a04d91a96ea2dfd5fe61696238d41b4c2747a2d7b1dc6df63cb847d2d62f3e"
+    },
+    {
+      "series": "668-contraste_dpfs",
+      "frame": 17,
+      "annotation": "18703",
+      "general": 1654,
+      "detail": 156232,
+      "imageSha256": "0c3023a4de8514a22a11d8a8289a6d5ba5ca4e24329e7fd2c8098a20c97e20ed"
+    }
+  ],
+  "newLandmarks": 0,
+  "sourceHashes": {
+    "wrist-mri-data.json": "aca41cf414731714a6f0e3c2b4b30f75f2b34143c35687f27b7b7eda7a594def",
+    "wrist-mri-labels.json": "4660debcf668db061a1a2a91dbe04d702a9b3c1817c46b03ad8547266d09db7b",
+    "wrist-mri-anatomy146.json": "d3445883b0a5df261475cf839b2cfb8e690d89f7a01893716f0aed63f937c428",
+    "wrist-mri-joints154.json": "6d78ac04733e64c063faab67464c296b0f4b1653d9f9b3ee0845e2619a5cb47c",
+    "wrist-mri-capitate155.json": "7186f780de0c35ffa8b5792c2b498147b476f9f2cce727f88b140a9ad66b3a94",
+    "wrist-mri-ligaments156.json": "7b8e5627463ed599e3ece7c0420d986444af7354f4e68f856c01388e19fa9825"
+  },
+  "audit": {
+    "frames": 209,
+    "duplicateIdentitiesWithinFrame": 0,
+    "catalogEntries": 63,
+    "catalogWithoutAnyMark": [],
+    "nativePDFramesReviewed": 11,
+    "controlComparisons": 72,
+    "newCoordinates": 0,
+    "beforeAfter": [
+      {
+        "width": 393,
+        "height": 852,
+        "mode": "default",
+        "series": "667-contraste_dpfs",
+        "frame": 9,
+        "before": "Подписи 1/3 · ещё ›",
+        "after": "Подписи 1/2 · ещё ›"
+      },
+      {
+        "width": 393,
+        "height": 852,
+        "mode": "default",
+        "series": "667-contraste_dpfs",
+        "frame": 12,
+        "before": "Подписи 1/2 · ещё ›",
+        "after": "Подписи 1/1 · ещё ›"
+      },
+      {
+        "width": 393,
+        "height": 852,
+        "mode": "default",
+        "series": "667-contraste_dpfs",
+        "frame": 16,
+        "before": "Подписи 1/1 · ещё ›",
+        "after": "Подписи 1/1 · ещё ›"
+      },
+      {
+        "width": 393,
+        "height": 852,
+        "mode": "default",
+        "series": "668-contraste_dpfs",
+        "frame": 8,
+        "before": "Подписи 1/3 · ещё ›",
+        "after": "Подписи 1/3 · ещё ›"
+      },
+      {
+        "width": 393,
+        "height": 852,
+        "mode": "default",
+        "series": "668-contraste_dpfs",
+        "frame": 9,
+        "before": "Подписи 1/4 · ещё ›",
+        "after": "Подписи 1/3 · ещё ›"
+      },
+      {
+        "width": 393,
+        "height": 852,
+        "mode": "default",
+        "series": "668-contraste_dpfs",
+        "frame": 13,
+        "before": "Подписи 1/3 · ещё ›",
+        "after": "Подписи 1/3 · ещё ›"
+      },
+      {
+        "width": 393,
+        "height": 852,
+        "mode": "default",
+        "series": "669-contraste_dpfs",
+        "frame": 20,
+        "before": "Подписи 1/1 · ещё ›",
+        "after": "Подписи 1/1 · ещё ›"
+      },
+      {
+        "width": 393,
+        "height": 852,
+        "mode": "default",
+        "series": "669-contraste_dpfs",
+        "frame": 23,
+        "before": "Подписи 1/1 · ещё ›",
+        "after": "Подписи 1/1 · ещё ›"
+      },
+      {
+        "width": 393,
+        "height": 852,
+        "mode": "ligaments",
+        "series": "667-contraste_dpfs",
+        "frame": 9,
+        "before": "Подписи 1/2 · ещё ›",
+        "after": "Подписи 1/2 · ещё ›"
+      },
+      {
+        "width": 393,
+        "height": 852,
+        "mode": "ligaments",
+        "series": "667-contraste_dpfs",
+        "frame": 12,
+        "before": "Подписи 1/2 · ещё ›",
+        "after": "Подписи 1/1 · ещё ›"
+      },
+      {
+        "width": 393,
+        "height": 852,
+        "mode": "ligaments",
+        "series": "667-contraste_dpfs",
+        "frame": 16,
+        "before": "Подписи 1/1 · ещё ›",
+        "after": "Подписи 1/1 · ещё ›"
+      },
+      {
+        "width": 393,
+        "height": 852,
+        "mode": "ligaments",
+        "series": "668-contraste_dpfs",
+        "frame": 8,
+        "before": "Подписи 1/1 · ещё ›",
+        "after": "Подписи 1/1 · ещё ›"
+      },
+      {
+        "width": 393,
+        "height": 852,
+        "mode": "ligaments",
+        "series": "668-contraste_dpfs",
+        "frame": 9,
+        "before": "Подписи 1/3 · ещё ›",
+        "after": "Подписи 1/2 · ещё ›"
+      },
+      {
+        "width": 393,
+        "height": 852,
+        "mode": "ligaments",
+        "series": "668-contraste_dpfs",
+        "frame": 13,
+        "before": "Подписи 1/1 · ещё ›",
+        "after": "Подписи 1/1 · ещё ›"
+      },
+      {
+        "width": 393,
+        "height": 852,
+        "mode": "ligaments",
+        "series": "669-contraste_dpfs",
+        "frame": 20,
+        "before": "Подписи 1/1 · ещё ›",
+        "after": "Подписи 1/1 · ещё ›"
+      },
+      {
+        "width": 393,
+        "height": 852,
+        "mode": "ligaments",
+        "series": "669-contraste_dpfs",
+        "frame": 23,
+        "before": "Подписи 1/1 · ещё ›",
+        "after": "Подписи 1/1 · ещё ›"
+      },
+      {
+        "width": 393,
+        "height": 852,
+        "mode": "all",
+        "series": "667-contraste_dpfs",
+        "frame": 9,
+        "before": "Подписи 1/11 · ещё ›",
+        "after": "Подписи 1/10 · ещё ›"
+      },
+      {
+        "width": 393,
+        "height": 852,
+        "mode": "all",
+        "series": "667-contraste_dpfs",
+        "frame": 12,
+        "before": "Подписи 1/11 · ещё ›",
+        "after": "Подписи 1/11 · ещё ›"
+      },
+      {
+        "width": 393,
+        "height": 852,
+        "mode": "all",
+        "series": "667-contraste_dpfs",
+        "frame": 16,
+        "before": "Подписи 1/10 · ещё ›",
+        "after": "Подписи 1/11 · ещё ›"
+      },
+      {
+        "width": 393,
+        "height": 852,
+        "mode": "all",
+        "series": "668-contraste_dpfs",
+        "frame": 8,
+        "before": "Подписи 1/8 · ещё ›",
+        "after": "Подписи 1/7 · ещё ›"
+      },
+      {
+        "width": 393,
+        "height": 852,
+        "mode": "all",
+        "series": "668-contraste_dpfs",
+        "frame": 9,
+        "before": "Подписи 1/12 · ещё ›",
+        "after": "Подписи 1/11 · ещё ›"
+      },
+      {
+        "width": 393,
+        "height": 852,
+        "mode": "all",
+        "series": "668-contraste_dpfs",
+        "frame": 13,
+        "before": "Подписи 1/11 · ещё ›",
+        "after": "Подписи 1/11 · ещё ›"
+      },
+      {
+        "width": 393,
+        "height": 852,
+        "mode": "all",
+        "series": "669-contraste_dpfs",
+        "frame": 20,
+        "before": "Подписи 1/6 · ещё ›",
+        "after": "Подписи 1/6 · ещё ›"
+      },
+      {
+        "width": 393,
+        "height": 852,
+        "mode": "all",
+        "series": "669-contraste_dpfs",
+        "frame": 23,
+        "before": "Подписи 1/4 · ещё ›",
+        "after": "Подписи 1/5 · ещё ›"
+      },
+      {
+        "width": 360,
+        "height": 640,
+        "mode": "default",
+        "series": "667-contraste_dpfs",
+        "frame": 9,
+        "before": "Подписи 1/4 · ещё ›",
+        "after": "Подписи 1/4 · ещё ›"
+      },
+      {
+        "width": 360,
+        "height": 640,
+        "mode": "default",
+        "series": "667-contraste_dpfs",
+        "frame": 12,
+        "before": "Подписи 1/3 · ещё ›",
+        "after": "Подписи 1/3 · ещё ›"
+      },
+      {
+        "width": 360,
+        "height": 640,
+        "mode": "default",
+        "series": "667-contraste_dpfs",
+        "frame": 16,
+        "before": "Подписи 1/2 · ещё ›",
+        "after": "Подписи 1/2 · ещё ›"
+      },
+      {
+        "width": 360,
+        "height": 640,
+        "mode": "default",
+        "series": "668-contraste_dpfs",
+        "frame": 8,
+        "before": "Подписи 1/5 · ещё ›",
+        "after": "Подписи 1/3 · ещё ›"
+      },
+      {
+        "width": 360,
+        "height": 640,
+        "mode": "default",
+        "series": "668-contraste_dpfs",
+        "frame": 9,
+        "before": "Подписи 1/9 · ещё ›",
+        "after": "Подписи 1/5 · ещё ›"
+      },
+      {
+        "width": 360,
+        "height": 640,
+        "mode": "default",
+        "series": "668-contraste_dpfs",
+        "frame": 13,
+        "before": "Подписи 1/5 · ещё ›",
+        "after": "Подписи 1/5 · ещё ›"
+      },
+      {
+        "width": 360,
+        "height": 640,
+        "mode": "default",
+        "series": "669-contraste_dpfs",
+        "frame": 20,
+        "before": "Подписи 1/1 · ещё ›",
+        "after": "Подписи 1/1 · ещё ›"
+      },
+      {
+        "width": 360,
+        "height": 640,
+        "mode": "default",
+        "series": "669-contraste_dpfs",
+        "frame": 23,
+        "before": "Подписи 1/1 · ещё ›",
+        "after": "Подписи 1/1 · ещё ›"
+      },
+      {
+        "width": 360,
+        "height": 640,
+        "mode": "ligaments",
+        "series": "667-contraste_dpfs",
+        "frame": 9,
+        "before": "Подписи 1/4 · ещё ›",
+        "after": "Подписи 1/3 · ещё ›"
+      },
+      {
+        "width": 360,
+        "height": 640,
+        "mode": "ligaments",
+        "series": "667-contraste_dpfs",
+        "frame": 12,
+        "before": "Подписи 1/3 · ещё ›",
+        "after": "Подписи 1/3 · ещё ›"
+      },
+      {
+        "width": 360,
+        "height": 640,
+        "mode": "ligaments",
+        "series": "667-contraste_dpfs",
+        "frame": 16,
+        "before": "Подписи 1/2 · ещё ›",
+        "after": "Подписи 1/1 · ещё ›"
+      },
+      {
+        "width": 360,
+        "height": 640,
+        "mode": "ligaments",
+        "series": "668-contraste_dpfs",
+        "frame": 8,
+        "before": "Подписи 1/2 · ещё ›",
+        "after": "Подписи 1/1 · ещё ›"
+      },
+      {
+        "width": 360,
+        "height": 640,
+        "mode": "ligaments",
+        "series": "668-contraste_dpfs",
+        "frame": 9,
+        "before": "Подписи 1/5 · ещё ›",
+        "after": "Подписи 1/3 · ещё ›"
+      },
+      {
+        "width": 360,
+        "height": 640,
+        "mode": "ligaments",
+        "series": "668-contraste_dpfs",
+        "frame": 13,
+        "before": "Подписи 1/3 · ещё ›",
+        "after": "Подписи 1/3 · ещё ›"
+      },
+      {
+        "width": 360,
+        "height": 640,
+        "mode": "ligaments",
+        "series": "669-contraste_dpfs",
+        "frame": 20,
+        "before": "Подписи 1/1 · ещё ›",
+        "after": "Подписи 1/1 · ещё ›"
+      },
+      {
+        "width": 360,
+        "height": 640,
+        "mode": "ligaments",
+        "series": "669-contraste_dpfs",
+        "frame": 23,
+        "before": "Подписи 1/1 · ещё ›",
+        "after": "Подписи 1/1 · ещё ›"
+      },
+      {
+        "width": 360,
+        "height": 640,
+        "mode": "all",
+        "series": "667-contraste_dpfs",
+        "frame": 9,
+        "before": "Подписи 1/21 · ещё ›",
+        "after": "Подписи 1/18 · ещё ›"
+      },
+      {
+        "width": 360,
+        "height": 640,
+        "mode": "all",
+        "series": "667-contraste_dpfs",
+        "frame": 12,
+        "before": "Подписи 1/18 · ещё ›",
+        "after": "Подписи 1/18 · ещё ›"
+      },
+      {
+        "width": 360,
+        "height": 640,
+        "mode": "all",
+        "series": "667-contraste_dpfs",
+        "frame": 16,
+        "before": "Подписи 1/20 · ещё ›",
+        "after": "Подписи 1/20 · ещё ›"
+      },
+      {
+        "width": 360,
+        "height": 640,
+        "mode": "all",
+        "series": "668-contraste_dpfs",
+        "frame": 8,
+        "before": "Подписи 1/23 · ещё ›",
+        "after": "Подписи 1/21 · ещё ›"
+      },
+      {
+        "width": 360,
+        "height": 640,
+        "mode": "all",
+        "series": "668-contraste_dpfs",
+        "frame": 9,
+        "before": "Подписи 1/30 · ещё ›",
+        "after": "Подписи 1/24 · ещё ›"
+      },
+      {
+        "width": 360,
+        "height": 640,
+        "mode": "all",
+        "series": "668-contraste_dpfs",
+        "frame": 13,
+        "before": "Подписи 1/28 · ещё ›",
+        "after": "Подписи 1/26 · ещё ›"
+      },
+      {
+        "width": 360,
+        "height": 640,
+        "mode": "all",
+        "series": "669-contraste_dpfs",
+        "frame": 20,
+        "before": "Подписи 1/9 · ещё ›",
+        "after": "Подписи 1/8 · ещё ›"
+      },
+      {
+        "width": 360,
+        "height": 640,
+        "mode": "all",
+        "series": "669-contraste_dpfs",
+        "frame": 23,
+        "before": "Подписи 1/9 · ещё ›",
+        "after": "Подписи 1/8 · ещё ›"
+      },
+      {
+        "width": 852,
+        "height": 393,
+        "mode": "default",
+        "series": "667-contraste_dpfs",
+        "frame": 9,
+        "before": "Подписи 1/4 · ещё ›",
+        "after": "Подписи 1/3 · ещё ›"
+      },
+      {
+        "width": 852,
+        "height": 393,
+        "mode": "default",
+        "series": "667-contraste_dpfs",
+        "frame": 12,
+        "before": "Подписи 1/3 · ещё ›",
+        "after": "Подписи 1/2 · ещё ›"
+      },
+      {
+        "width": 852,
+        "height": 393,
+        "mode": "default",
+        "series": "667-contraste_dpfs",
+        "frame": 16,
+        "before": "Подписи 1/2 · ещё ›",
+        "after": "Подписи 1/2 · ещё ›"
+      },
+      {
+        "width": 852,
+        "height": 393,
+        "mode": "default",
+        "series": "668-contraste_dpfs",
+        "frame": 8,
+        "before": "Подписи 1/4 · ещё ›",
+        "after": "Подписи 1/3 · ещё ›"
+      },
+      {
+        "width": 852,
+        "height": 393,
+        "mode": "default",
+        "series": "668-contraste_dpfs",
+        "frame": 9,
+        "before": "Подписи 1/5 · ещё ›",
+        "after": "Подписи 1/4 · ещё ›"
+      },
+      {
+        "width": 852,
+        "height": 393,
+        "mode": "default",
+        "series": "668-contraste_dpfs",
+        "frame": 13,
+        "before": "Подписи 1/4 · ещё ›",
+        "after": "Подписи 1/4 · ещё ›"
+      },
+      {
+        "width": 852,
+        "height": 393,
+        "mode": "default",
+        "series": "669-contraste_dpfs",
+        "frame": 20,
+        "before": "Подписи 1/2 · ещё ›",
+        "after": "Подписи 1/2 · ещё ›"
+      },
+      {
+        "width": 852,
+        "height": 393,
+        "mode": "default",
+        "series": "669-contraste_dpfs",
+        "frame": 23,
+        "before": "Подписи 1/1 · ещё ›",
+        "after": "Подписи 1/1 · ещё ›"
+      },
+      {
+        "width": 852,
+        "height": 393,
+        "mode": "ligaments",
+        "series": "667-contraste_dpfs",
+        "frame": 9,
+        "before": "Подписи 1/3 · ещё ›",
+        "after": "Подписи 1/2 · ещё ›"
+      },
+      {
+        "width": 852,
+        "height": 393,
+        "mode": "ligaments",
+        "series": "667-contraste_dpfs",
+        "frame": 12,
+        "before": "Подписи 1/3 · ещё ›",
+        "after": "Подписи 1/2 · ещё ›"
+      },
+      {
+        "width": 852,
+        "height": 393,
+        "mode": "ligaments",
+        "series": "667-contraste_dpfs",
+        "frame": 16,
+        "before": "Подписи 1/2 · ещё ›",
+        "after": "Подписи 1/2 · ещё ›"
+      },
+      {
+        "width": 852,
+        "height": 393,
+        "mode": "ligaments",
+        "series": "668-contraste_dpfs",
+        "frame": 8,
+        "before": "Подписи 1/2 · ещё ›",
+        "after": "Подписи 1/2 · ещё ›"
+      },
+      {
+        "width": 852,
+        "height": 393,
+        "mode": "ligaments",
+        "series": "668-contraste_dpfs",
+        "frame": 9,
+        "before": "Подписи 1/3 · ещё ›",
+        "after": "Подписи 1/3 · ещё ›"
+      },
+      {
+        "width": 852,
+        "height": 393,
+        "mode": "ligaments",
+        "series": "668-contraste_dpfs",
+        "frame": 13,
+        "before": "Подписи 1/2 · ещё ›",
+        "after": "Подписи 1/2 · ещё ›"
+      },
+      {
+        "width": 852,
+        "height": 393,
+        "mode": "ligaments",
+        "series": "669-contraste_dpfs",
+        "frame": 20,
+        "before": "Подписи 1/1 · ещё ›",
+        "after": "Подписи 1/1 · ещё ›"
+      },
+      {
+        "width": 852,
+        "height": 393,
+        "mode": "ligaments",
+        "series": "669-contraste_dpfs",
+        "frame": 23,
+        "before": "Подписи 1/1 · ещё ›",
+        "after": "Подписи 1/1 · ещё ›"
+      },
+      {
+        "width": 852,
+        "height": 393,
+        "mode": "all",
+        "series": "667-contraste_dpfs",
+        "frame": 9,
+        "before": "Подписи 1/13 · ещё ›",
+        "after": "Подписи 1/12 · ещё ›"
+      },
+      {
+        "width": 852,
+        "height": 393,
+        "mode": "all",
+        "series": "667-contraste_dpfs",
+        "frame": 12,
+        "before": "Подписи 1/13 · ещё ›",
+        "after": "Подписи 1/13 · ещё ›"
+      },
+      {
+        "width": 852,
+        "height": 393,
+        "mode": "all",
+        "series": "667-contraste_dpfs",
+        "frame": 16,
+        "before": "Подписи 1/13 · ещё ›",
+        "after": "Подписи 1/13 · ещё ›"
+      },
+      {
+        "width": 852,
+        "height": 393,
+        "mode": "all",
+        "series": "668-contraste_dpfs",
+        "frame": 8,
+        "before": "Подписи 1/9 · ещё ›",
+        "after": "Подписи 1/9 · ещё ›"
+      },
+      {
+        "width": 852,
+        "height": 393,
+        "mode": "all",
+        "series": "668-contraste_dpfs",
+        "frame": 9,
+        "before": "Подписи 1/10 · ещё ›",
+        "after": "Подписи 1/10 · ещё ›"
+      },
+      {
+        "width": 852,
+        "height": 393,
+        "mode": "all",
+        "series": "668-contraste_dpfs",
+        "frame": 13,
+        "before": "Подписи 1/10 · ещё ›",
+        "after": "Подписи 1/10 · ещё ›"
+      },
+      {
+        "width": 852,
+        "height": 393,
+        "mode": "all",
+        "series": "669-contraste_dpfs",
+        "frame": 20,
+        "before": "Подписи 1/9 · ещё ›",
+        "after": "Подписи 1/8 · ещё ›"
+      },
+      {
+        "width": 852,
+        "height": 393,
+        "mode": "all",
+        "series": "669-contraste_dpfs",
+        "frame": 23,
+        "before": "Подписи 1/7 · ещё ›",
+        "after": "Подписи 1/6 · ещё ›"
+      }
+    ]
+  }
+}

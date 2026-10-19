@@ -1,0 +1,1647 @@
+[
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 976,
+    "name": "Доли большого мозга/Области",
+    "key": "lobes"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 978,
+    "name": "Борозды большого мозга",
+    "key": "sulci"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 990,
+    "name": "Щели мозжечка",
+    "key": "fissures"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 995,
+    "name": "Средний мозг",
+    "key": "midbrain"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 999,
+    "name": "Черепной нерв",
+    "key": "cranial-nerves"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 1006,
+    "name": "Венозные синусы",
+    "key": "sinus"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 977,
+    "name": "Конечный мозг",
+    "key": "cerebrum"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 979,
+    "name": "Лобная доля",
+    "key": "frontal"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 991,
+    "name": "Полушарие мозжечка [H II - H X]",
+    "key": "hemisphere"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 996,
+    "name": "Мост",
+    "key": "pons"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 1000,
+    "name": "Ядро черепного нерва",
+    "key": "nuclei"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 1007,
+    "name": "Глубокие мозговые вены",
+    "key": "deep-veins"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 980,
+    "name": "Теменная доля",
+    "key": "parietal"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 988,
+    "name": "Промежуточный мозг",
+    "key": "diencephalon"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 992,
+    "name": "Червь мозжечка [I-X]",
+    "key": "vermis"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 997,
+    "name": "Продолговатый мозг; бульбус",
+    "key": "medulla"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 1008,
+    "name": "Поверхностные мозговые вены",
+    "key": "surface-veins"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 981,
+    "name": "Височная доля",
+    "key": "temporal"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 989,
+    "name": "Мозжечок",
+    "key": "cerebellum"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 993,
+    "name": "Внутренние функции",
+    "key": "deep-cerebellum"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 1009,
+    "name": "Диплоические вены",
+    "key": "diploic-veins"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 982,
+    "name": "Островок; островковая доля",
+    "key": "insula"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 994,
+    "name": "Ствол головного мозга",
+    "key": "brainstem"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 1010,
+    "name": "Эмиссарные вены",
+    "key": "emissary-veins"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 983,
+    "name": "Затылочная доля",
+    "key": "occipital"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 998,
+    "name": "Черепные нервы",
+    "key": "cranial-nerves"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 984,
+    "name": "Лимбическая доля",
+    "key": "limbic"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 1001,
+    "name": "Желудочки/цистерны",
+    "key": "ventricles"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 985,
+    "name": "Комиссуральные волокна конечного мозга",
+    "key": "commissures"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 1002,
+    "name": "Мозговые оболочки",
+    "key": "meninges"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 986,
+    "name": "Базальные ядра и связанные с ними структуры",
+    "key": "basal"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 1003,
+    "name": "Артерии",
+    "key": "artery"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 987,
+    "name": "Базальная часть конечного мозга",
+    "key": "basal-forebrain"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 1004,
+    "name": "Бассейны кровоснабжения",
+    "key": "territories"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 1005,
+    "name": "Вены / Венозные синусы",
+    "key": "vein"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 1011,
+    "name": "Поля Бродмана",
+    "key": "brodmann"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "brain3dmri",
+    "id": 1012,
+    "name": "Ассоциативные волокна конечного мозга",
+    "key": "association"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "cerveau",
+    "id": 1361,
+    "name": "Области: Доли большого мозга - Ствол головного мозга",
+    "key": "lobes"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "cerveau",
+    "id": 1362,
+    "name": "Борозды",
+    "key": "sulci"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "cerveau",
+    "id": 1363,
+    "name": "Извилины",
+    "key": "gyri"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "cerveau",
+    "id": 1364,
+    "name": "Лимбическая система",
+    "key": "limbic"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "cerveau",
+    "id": 1365,
+    "name": "Белое вещество",
+    "key": "white-matter"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "cerveau",
+    "id": 1366,
+    "name": "Желудочки/цистерны",
+    "key": "ventricles"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "cerveau",
+    "id": 1367,
+    "name": "Базальные ядра и связанные с ними структуры",
+    "key": "basal"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "cerveau",
+    "id": 1368,
+    "name": "Оптический тракт",
+    "key": "optic"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "cerveau",
+    "id": 1369,
+    "name": "Мозжечок",
+    "key": "cerebellum"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "cerveau",
+    "id": 1370,
+    "name": "Ствол головного мозга",
+    "key": "brainstem"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "cerveau",
+    "id": 1371,
+    "name": "Спинной мозг",
+    "key": "cord"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "cerveau",
+    "id": 1372,
+    "name": "Артерии",
+    "key": "artery"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "cerveau",
+    "id": 1373,
+    "name": "Венозные синусы",
+    "key": "sinus"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "cerveau",
+    "id": 1374,
+    "name": "Железы",
+    "key": "glands"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "vascular-arteries3d",
+    "id": 1003,
+    "name": "Артерии",
+    "key": "artery"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "vascular-veins3d",
+    "id": 1006,
+    "name": "Венозные синусы",
+    "key": "sinus"
+  },
+  {
+    "file": "brain-labels.json",
+    "module": "vascular-veins3d",
+    "id": 1007,
+    "name": "Глубокие мозговые вены",
+    "key": "deep-veins"
+  },
+  {
+    "file": "elbow-mri-labels.json",
+    "module": "elbow-mri-3d",
+    "id": 1188,
+    "name": "Общая анатомия",
+    "key": "region"
+  },
+  {
+    "file": "elbow-mri-labels.json",
+    "module": "elbow-mri-3d",
+    "id": 1190,
+    "name": "Плечевая кость",
+    "key": "humerus"
+  },
+  {
+    "file": "elbow-mri-labels.json",
+    "module": "elbow-mri-3d",
+    "id": 1189,
+    "name": "Кости",
+    "key": "bone"
+  },
+  {
+    "file": "elbow-mri-labels.json",
+    "module": "elbow-mri-3d",
+    "id": 1191,
+    "name": "Лучевая кость",
+    "key": "radius"
+  },
+  {
+    "file": "elbow-mri-labels.json",
+    "module": "elbow-mri-3d",
+    "id": 1192,
+    "name": "Локтевая кость",
+    "key": "ulna"
+  },
+  {
+    "file": "elbow-mri-labels.json",
+    "module": "elbow-mri-3d",
+    "id": 1193,
+    "name": "Локтевой сустав",
+    "key": "joint"
+  },
+  {
+    "file": "elbow-mri-labels.json",
+    "module": "elbow-mri-3d",
+    "id": 1194,
+    "name": "Связки",
+    "key": "ligament"
+  },
+  {
+    "file": "elbow-mri-labels.json",
+    "module": "elbow-mri-3d",
+    "id": 1195,
+    "name": "Мышцы / Сухожилие",
+    "key": "muscle"
+  },
+  {
+    "file": "elbow-mri-labels.json",
+    "module": "elbow-mri-3d",
+    "id": 1196,
+    "name": "Фасции / Апоневроз",
+    "key": "fascia"
+  },
+  {
+    "file": "elbow-mri-labels.json",
+    "module": "elbow-mri-3d",
+    "id": 1197,
+    "name": "Фасциальные ложа",
+    "key": "compartments"
+  },
+  {
+    "file": "elbow-mri-labels.json",
+    "module": "elbow-mri-3d",
+    "id": 1198,
+    "name": "Синовиальная сумка",
+    "key": "bursa"
+  },
+  {
+    "file": "elbow-mri-labels.json",
+    "module": "elbow-mri-3d",
+    "id": 1199,
+    "name": "Артерии",
+    "key": "artery"
+  },
+  {
+    "file": "elbow-mri-labels.json",
+    "module": "elbow-mri-3d",
+    "id": 1200,
+    "name": "Вены",
+    "key": "vein"
+  },
+  {
+    "file": "elbow-mri-labels.json",
+    "module": "elbow-mri-3d",
+    "id": 1201,
+    "name": "Лимфатический узел",
+    "key": "node"
+  },
+  {
+    "file": "elbow-mri-labels.json",
+    "module": "elbow-mri-3d",
+    "id": 1202,
+    "name": "Нервы",
+    "key": "nerve"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 338,
+    "name": "Кости; система скелета",
+    "key": "skull"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 339,
+    "name": "Клиновидная кость",
+    "key": "skull"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 350,
+    "name": "Мышцы лица",
+    "key": "muscle"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 361,
+    "name": "Носовая часть глотки",
+    "key": "pharynx"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 369,
+    "name": "Тройничный нерв [V]",
+    "key": "nerve"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 340,
+    "name": "Височная кость",
+    "key": "skull"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 348,
+    "name": "Отверстие",
+    "key": "foramen"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 351,
+    "name": "Жевательные мышцы",
+    "key": "muscle"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 362,
+    "name": "Ротовая часть глотки",
+    "key": "pharynx"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 370,
+    "name": "Лицевой нерв [VII]",
+    "key": "nerve"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 341,
+    "name": "Верхняя челюсть",
+    "key": "maxilla"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 349,
+    "name": "Мышцы",
+    "key": "muscle"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 352,
+    "name": "Мышцы языка",
+    "key": "muscle"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 363,
+    "name": "Гортанная часть глотки",
+    "key": "larynx"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 371,
+    "name": "Преддверно-улитковый нерв [VIII]",
+    "key": "nerve"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 342,
+    "name": "Решетчатая кость",
+    "key": "skull"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 353,
+    "name": "Мышцы глотки",
+    "key": "muscle"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 357,
+    "name": "Фасция",
+    "key": "fascia"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 372,
+    "name": "Языкоглоточный нерв [IX]",
+    "key": "nerve"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 343,
+    "name": "Скуловая кость",
+    "key": "skull"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 354,
+    "name": "Мышцы гортани",
+    "key": "muscle"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 358,
+    "name": "Полость носа / Околоносовые пазухи",
+    "key": "sinuses"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 373,
+    "name": "Блуждающий нерв [X]",
+    "key": "nerve"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 344,
+    "name": "Нижняя челюсть",
+    "key": "jaw"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 355,
+    "name": "Мышцы шеи",
+    "key": "muscle"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 359,
+    "name": "Полость рта",
+    "key": "oral"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 374,
+    "name": "Добавочный нерв [ХI]",
+    "key": "nerve"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 345,
+    "name": "Позвоночный столб",
+    "key": "spine"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 356,
+    "name": "Мышцы спины",
+    "key": "muscle"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 360,
+    "name": "Глотка",
+    "key": "pharynx"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 375,
+    "name": "Подъязычный нерв [ХII]",
+    "key": "nerve"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 346,
+    "name": "Затылочная кость",
+    "key": "skull"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 364,
+    "name": "Гортань",
+    "key": "larynx"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 376,
+    "name": "Автономный отдел нервной системы",
+    "key": "nerve"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 347,
+    "name": "Другие кости",
+    "key": "skull"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 365,
+    "name": "Пищевод/Трахея/Щитовидная железа",
+    "key": "thyroid"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 377,
+    "name": "Шейное сплетение",
+    "key": "plexus"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 366,
+    "name": "Артерии",
+    "key": "artery"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 378,
+    "name": "Спинномозговые нервы : Задние ветви; дорсальные ветви",
+    "key": "nerve"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 367,
+    "name": "Вены",
+    "key": "vein"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 379,
+    "name": "Плечевое сплетение",
+    "key": "plexus"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 368,
+    "name": "Нерв",
+    "key": "nerve"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 380,
+    "name": "Лимфатические узлы головы и шеи",
+    "key": "node"
+  },
+  {
+    "file": "face-neck-mri-labels.json",
+    "module": "face-cou-irm",
+    "id": 381,
+    "name": "Глубокие области лица и шеи",
+    "key": "region"
+  },
+  {
+    "file": "female-pelvis-mri-labels.json",
+    "module": "pelvis",
+    "id": 1147,
+    "name": "Половые органы",
+    "key": "female"
+  },
+  {
+    "file": "female-pelvis-mri-labels.json",
+    "module": "pelvis",
+    "id": 1148,
+    "name": "Мочевая система",
+    "key": "urinary"
+  },
+  {
+    "file": "female-pelvis-mri-labels.json",
+    "module": "pelvis",
+    "id": 1149,
+    "name": "Пищеварительная система",
+    "key": "digestive"
+  },
+  {
+    "file": "female-pelvis-mri-labels.json",
+    "module": "pelvis",
+    "id": 1150,
+    "name": "Диафрагма таза",
+    "key": "pelvic-floor"
+  },
+  {
+    "file": "female-pelvis-mri-labels.json",
+    "module": "pelvis",
+    "id": 1151,
+    "name": "Тазовый пояс; пояс нижней конечности",
+    "key": "pelvis"
+  },
+  {
+    "file": "female-pelvis-mri-labels.json",
+    "module": "pelvis",
+    "id": 1152,
+    "name": "Области/отверстия",
+    "key": "region"
+  },
+  {
+    "file": "female-pelvis-mri-labels.json",
+    "module": "pelvis",
+    "id": 1153,
+    "name": "Мышцы",
+    "key": "muscle"
+  },
+  {
+    "file": "female-pelvis-mri-labels.json",
+    "module": "pelvis",
+    "id": 1154,
+    "name": "Артерии",
+    "key": "artery"
+  },
+  {
+    "file": "female-pelvis-mri-labels.json",
+    "module": "pelvis",
+    "id": 1155,
+    "name": "Вены",
+    "key": "vein"
+  },
+  {
+    "file": "female-pelvis-mri-labels.json",
+    "module": "pelvis",
+    "id": 1156,
+    "name": "Нервы",
+    "key": "nerve"
+  },
+  {
+    "file": "female-pelvis-mri-labels.json",
+    "module": "pelvis",
+    "id": 1157,
+    "name": "Размеры таза",
+    "key": "dimensions"
+  },
+  {
+    "file": "foot-mri-labels.json",
+    "module": "cheville",
+    "id": 905,
+    "name": "Общая анатомия",
+    "key": "region"
+  },
+  {
+    "file": "foot-mri-labels.json",
+    "module": "cheville",
+    "id": 906,
+    "name": "Кости",
+    "key": "bone"
+  },
+  {
+    "file": "foot-mri-labels.json",
+    "module": "cheville",
+    "id": 907,
+    "name": "Соединения",
+    "key": "joint"
+  },
+  {
+    "file": "foot-mri-labels.json",
+    "module": "cheville",
+    "id": 908,
+    "name": "Связки",
+    "key": "ligament"
+  },
+  {
+    "file": "foot-mri-labels.json",
+    "module": "cheville",
+    "id": 909,
+    "name": "Мышцы",
+    "key": "muscle"
+  },
+  {
+    "file": "foot-mri-labels.json",
+    "module": "cheville",
+    "id": 910,
+    "name": "Сухожилие",
+    "key": "tendon"
+  },
+  {
+    "file": "foot-mri-labels.json",
+    "module": "cheville",
+    "id": 911,
+    "name": "Фасции",
+    "key": "fascia"
+  },
+  {
+    "file": "foot-mri-labels.json",
+    "module": "cheville",
+    "id": 912,
+    "name": "Артерии",
+    "key": "artery"
+  },
+  {
+    "file": "foot-mri-labels.json",
+    "module": "cheville",
+    "id": 913,
+    "name": "Вены",
+    "key": "vein"
+  },
+  {
+    "file": "foot-mri-labels.json",
+    "module": "cheville",
+    "id": 914,
+    "name": "Нервы",
+    "key": "nerve"
+  },
+  {
+    "file": "hip-mri-labels.json",
+    "module": "hip-mri-3d",
+    "id": 1158,
+    "name": "Общая анатомия",
+    "key": "region"
+  },
+  {
+    "file": "hip-mri-labels.json",
+    "module": "hip-mri-3d",
+    "id": 1160,
+    "name": "Крестец [крестцовые позвонки I-V]",
+    "key": "sacrum"
+  },
+  {
+    "file": "hip-mri-labels.json",
+    "module": "hip-mri-3d",
+    "id": 1159,
+    "name": "Кости",
+    "key": "bone"
+  },
+  {
+    "file": "hip-mri-labels.json",
+    "module": "hip-mri-3d",
+    "id": 1161,
+    "name": "Тазовая кость",
+    "key": "pelvis"
+  },
+  {
+    "file": "hip-mri-labels.json",
+    "module": "hip-mri-3d",
+    "id": 1162,
+    "name": "Бедренная кость",
+    "key": "femur"
+  },
+  {
+    "file": "hip-mri-labels.json",
+    "module": "hip-mri-3d",
+    "id": 1163,
+    "name": "Соединения",
+    "key": "joint"
+  },
+  {
+    "file": "hip-mri-labels.json",
+    "module": "hip-mri-3d",
+    "id": 1164,
+    "name": "Связки",
+    "key": "ligament"
+  },
+  {
+    "file": "hip-mri-labels.json",
+    "module": "hip-mri-3d",
+    "id": 1165,
+    "name": "Мышцы",
+    "key": "muscle"
+  },
+  {
+    "file": "hip-mri-labels.json",
+    "module": "hip-mri-3d",
+    "id": 1166,
+    "name": "Фасция/Апоневроз",
+    "key": "fascia"
+  },
+  {
+    "file": "hip-mri-labels.json",
+    "module": "hip-mri-3d",
+    "id": 1167,
+    "name": "Сумки нижней конечности",
+    "key": "bursa"
+  },
+  {
+    "file": "hip-mri-labels.json",
+    "module": "hip-mri-3d",
+    "id": 1168,
+    "name": "Пищеварительная система",
+    "key": "digestive"
+  },
+  {
+    "file": "hip-mri-labels.json",
+    "module": "hip-mri-3d",
+    "id": 1169,
+    "name": "Мочевая система",
+    "key": "urinary"
+  },
+  {
+    "file": "hip-mri-labels.json",
+    "module": "hip-mri-3d",
+    "id": 1170,
+    "name": "Система мужских половых органов",
+    "key": "male"
+  },
+  {
+    "file": "hip-mri-labels.json",
+    "module": "hip-mri-3d",
+    "id": 1171,
+    "name": "Тазовая полость",
+    "key": "pelvis"
+  },
+  {
+    "file": "hip-mri-labels.json",
+    "module": "hip-mri-3d",
+    "id": 1172,
+    "name": "Артерии",
+    "key": "artery"
+  },
+  {
+    "file": "hip-mri-labels.json",
+    "module": "hip-mri-3d",
+    "id": 1173,
+    "name": "Вены",
+    "key": "vein"
+  },
+  {
+    "file": "hip-mri-labels.json",
+    "module": "hip-mri-3d",
+    "id": 1174,
+    "name": "Лимфатический узел",
+    "key": "node"
+  },
+  {
+    "file": "hip-mri-labels.json",
+    "module": "hip-mri-3d",
+    "id": 1175,
+    "name": "Нервы",
+    "key": "nerve"
+  },
+  {
+    "file": "knee-mri-labels.json",
+    "module": "knee",
+    "id": 1218,
+    "name": "Кости; система скелета",
+    "key": "bone"
+  },
+  {
+    "file": "knee-mri-labels.json",
+    "module": "knee",
+    "id": 1219,
+    "name": "Соединение",
+    "key": "joint"
+  },
+  {
+    "file": "knee-mri-labels.json",
+    "module": "knee",
+    "id": 1220,
+    "name": "Связки",
+    "key": "ligament"
+  },
+  {
+    "file": "knee-mri-labels.json",
+    "module": "knee",
+    "id": 1221,
+    "name": "Мышцы; мышечная система",
+    "key": "muscle"
+  },
+  {
+    "file": "knee-mri-labels.json",
+    "module": "knee",
+    "id": 1222,
+    "name": "Сухожилие",
+    "key": "tendon"
+  },
+  {
+    "file": "knee-mri-labels.json",
+    "module": "knee",
+    "id": 1223,
+    "name": "Фасции",
+    "key": "fascia"
+  },
+  {
+    "file": "knee-mri-labels.json",
+    "module": "knee",
+    "id": 1224,
+    "name": "Артерии",
+    "key": "artery"
+  },
+  {
+    "file": "knee-mri-labels.json",
+    "module": "knee",
+    "id": 1225,
+    "name": "Вены",
+    "key": "vein"
+  },
+  {
+    "file": "knee-mri-labels.json",
+    "module": "knee",
+    "id": 1226,
+    "name": "Нервы",
+    "key": "nerve"
+  },
+  {
+    "file": "male-pelvis-mri-labels.json",
+    "module": "Pelvis-Male-MR",
+    "id": 570,
+    "name": "Общая анатомия",
+    "key": "region"
+  },
+  {
+    "file": "male-pelvis-mri-labels.json",
+    "module": "Pelvis-Male-MR",
+    "id": 571,
+    "name": "Области/Тазовая полость",
+    "key": "pelvis"
+  },
+  {
+    "file": "male-pelvis-mri-labels.json",
+    "module": "Pelvis-Male-MR",
+    "id": 572,
+    "name": "Кости",
+    "key": "bone"
+  },
+  {
+    "file": "male-pelvis-mri-labels.json",
+    "module": "Pelvis-Male-MR",
+    "id": 573,
+    "name": "Соединения/Связки",
+    "key": "ligament"
+  },
+  {
+    "file": "male-pelvis-mri-labels.json",
+    "module": "Pelvis-Male-MR",
+    "id": 574,
+    "name": "Мышцы",
+    "key": "muscle"
+  },
+  {
+    "file": "male-pelvis-mri-labels.json",
+    "module": "Pelvis-Male-MR",
+    "id": 575,
+    "name": "Фасции",
+    "key": "fascia"
+  },
+  {
+    "file": "male-pelvis-mri-labels.json",
+    "module": "Pelvis-Male-MR",
+    "id": 576,
+    "name": "Мочевая система",
+    "key": "urinary"
+  },
+  {
+    "file": "male-pelvis-mri-labels.json",
+    "module": "Pelvis-Male-MR",
+    "id": 577,
+    "name": "Мужской мочеиспускательный канал",
+    "key": "urethra"
+  },
+  {
+    "file": "male-pelvis-mri-labels.json",
+    "module": "Pelvis-Male-MR",
+    "id": 578,
+    "name": "Половой член/Яичко",
+    "key": "male"
+  },
+  {
+    "file": "male-pelvis-mri-labels.json",
+    "module": "Pelvis-Male-MR",
+    "id": 579,
+    "name": "Простата/Семенная железа; семенной пузырек",
+    "key": "prostate"
+  },
+  {
+    "file": "male-pelvis-mri-labels.json",
+    "module": "Pelvis-Male-MR",
+    "id": 580,
+    "name": "Зональная анатомия предстательной железы (по McNeal)",
+    "key": "prostate-zones"
+  },
+  {
+    "file": "male-pelvis-mri-labels.json",
+    "module": "Pelvis-Male-MR",
+    "id": 581,
+    "name": "Пищеварительная система",
+    "key": "digestive"
+  },
+  {
+    "file": "male-pelvis-mri-labels.json",
+    "module": "Pelvis-Male-MR",
+    "id": 582,
+    "name": "Лимфатические узлы",
+    "key": "node"
+  },
+  {
+    "file": "male-pelvis-mri-labels.json",
+    "module": "Pelvis-Male-MR",
+    "id": 583,
+    "name": "Артерии",
+    "key": "artery"
+  },
+  {
+    "file": "male-pelvis-mri-labels.json",
+    "module": "Pelvis-Male-MR",
+    "id": 584,
+    "name": "Вены",
+    "key": "vein"
+  },
+  {
+    "file": "male-pelvis-mri-labels.json",
+    "module": "Pelvis-Male-MR",
+    "id": 585,
+    "name": "Нервы",
+    "key": "nerve"
+  },
+  {
+    "file": "shoulder-mri-labels.json",
+    "module": "shoulder",
+    "id": 1227,
+    "name": "Кости; система скелета",
+    "key": "bone"
+  },
+  {
+    "file": "shoulder-mri-labels.json",
+    "module": "shoulder",
+    "id": 1228,
+    "name": "Соединение",
+    "key": "joint"
+  },
+  {
+    "file": "shoulder-mri-labels.json",
+    "module": "shoulder",
+    "id": 1229,
+    "name": "Связки",
+    "key": "ligament"
+  },
+  {
+    "file": "shoulder-mri-labels.json",
+    "module": "shoulder",
+    "id": 1230,
+    "name": "Мышцы; мышечная система",
+    "key": "muscle"
+  },
+  {
+    "file": "shoulder-mri-labels.json",
+    "module": "shoulder",
+    "id": 1231,
+    "name": "Сухожилие",
+    "key": "tendon"
+  },
+  {
+    "file": "shoulder-mri-labels.json",
+    "module": "shoulder",
+    "id": 1232,
+    "name": "Артерии",
+    "key": "artery"
+  },
+  {
+    "file": "shoulder-mri-labels.json",
+    "module": "shoulder",
+    "id": 1233,
+    "name": "Вены",
+    "key": "vein"
+  },
+  {
+    "file": "shoulder-mri-labels.json",
+    "module": "shoulder",
+    "id": 1234,
+    "name": "Нервы",
+    "key": "nerve"
+  },
+  {
+    "file": "shoulder-mri-labels.json",
+    "module": "shoulder",
+    "id": 1235,
+    "name": "Лимфатический узел",
+    "key": "node"
+  },
+  {
+    "file": "spine-mri-labels.json",
+    "module": "lumbar-spine-mri",
+    "id": 1132,
+    "name": "Позвонки - Нумерация",
+    "key": "vertebra"
+  },
+  {
+    "file": "spine-mri-labels.json",
+    "module": "lumbar-spine-mri",
+    "id": 1133,
+    "name": "Позвоночный столб",
+    "key": "spine"
+  },
+  {
+    "file": "spine-mri-labels.json",
+    "module": "lumbar-spine-mri",
+    "id": 1134,
+    "name": "Позвонок",
+    "key": "vertebra"
+  },
+  {
+    "file": "spine-mri-labels.json",
+    "module": "lumbar-spine-mri",
+    "id": 1135,
+    "name": "Крестец",
+    "key": "sacrum"
+  },
+  {
+    "file": "spine-mri-labels.json",
+    "module": "lumbar-spine-mri",
+    "id": 1136,
+    "name": "Другие кости",
+    "key": "bone"
+  },
+  {
+    "file": "spine-mri-labels.json",
+    "module": "lumbar-spine-mri",
+    "id": 1137,
+    "name": "Соединения-Связки",
+    "key": "ligament"
+  },
+  {
+    "file": "spine-mri-labels.json",
+    "module": "lumbar-spine-mri",
+    "id": 1138,
+    "name": "Мышцы",
+    "key": "muscle"
+  },
+  {
+    "file": "spine-mri-labels.json",
+    "module": "lumbar-spine-mri",
+    "id": 1139,
+    "name": "Спинной мозг",
+    "key": "cord"
+  },
+  {
+    "file": "spine-mri-labels.json",
+    "module": "lumbar-spine-mri",
+    "id": 1140,
+    "name": "Спинномозговые нервы",
+    "key": "nerve"
+  },
+  {
+    "file": "spine-mri-labels.json",
+    "module": "lumbar-spine-mri",
+    "id": 1141,
+    "name": "Периферическая нервная система",
+    "key": "nerve"
+  },
+  {
+    "file": "spine-mri-labels.json",
+    "module": "lumbar-spine-mri",
+    "id": 1142,
+    "name": "Мозговые оболочки",
+    "key": "meninges"
+  },
+  {
+    "file": "spine-mri-labels.json",
+    "module": "lumbar-spine-mri",
+    "id": 1143,
+    "name": "Артерии",
+    "key": "artery"
+  },
+  {
+    "file": "spine-mri-labels.json",
+    "module": "lumbar-spine-mri",
+    "id": 1144,
+    "name": "Вены",
+    "key": "vein"
+  },
+  {
+    "file": "spine-mri-labels.json",
+    "module": "lumbar-spine-mri",
+    "id": 1145,
+    "name": "Области",
+    "key": "region"
+  },
+  {
+    "file": "spine-mri-labels.json",
+    "module": "lumbar-spine-mri",
+    "id": 1146,
+    "name": "Другие структуры",
+    "key": "region"
+  },
+  {
+    "file": "wrist-mri-labels.json",
+    "module": "wrist-mri-3d",
+    "id": 91270,
+    "name": "Остальные связки запястья",
+    "key": "ligament"
+  },
+  {
+    "file": "wrist-mri-labels.json",
+    "module": "wrist-mri-3d",
+    "id": 91271,
+    "name": "ТФХК",
+    "key": "tfcc"
+  },
+  {
+    "file": "wrist-mri-labels.json",
+    "module": "wrist-mri-3d",
+    "id": 1252,
+    "name": "Общая анатомия",
+    "key": "region"
+  },
+  {
+    "file": "wrist-mri-labels.json",
+    "module": "wrist-mri-3d",
+    "id": 1254,
+    "name": "Лучевая кость",
+    "key": "radius"
+  },
+  {
+    "file": "wrist-mri-labels.json",
+    "module": "wrist-mri-3d",
+    "id": 1253,
+    "name": "Кости",
+    "key": "bone"
+  },
+  {
+    "file": "wrist-mri-labels.json",
+    "module": "wrist-mri-3d",
+    "id": 1255,
+    "name": "Локтевая кость",
+    "key": "ulna"
+  },
+  {
+    "file": "wrist-mri-labels.json",
+    "module": "wrist-mri-3d",
+    "id": 1256,
+    "name": "Кости запястья",
+    "key": "hand"
+  },
+  {
+    "file": "wrist-mri-labels.json",
+    "module": "wrist-mri-3d",
+    "id": 1258,
+    "name": "Соединения",
+    "key": "joint"
+  },
+  {
+    "file": "wrist-mri-labels.json",
+    "module": "wrist-mri-3d",
+    "id": 1257,
+    "name": "Пястные кости",
+    "key": "hand"
+  },
+  {
+    "file": "wrist-mri-labels.json",
+    "module": "wrist-mri-3d",
+    "id": 1259,
+    "name": "Общие ориентиры исходника",
+    "key": "ligament"
+  },
+  {
+    "file": "wrist-mri-labels.json",
+    "module": "wrist-mri-3d",
+    "id": 1260,
+    "name": "Мышцы",
+    "key": "muscle"
+  },
+  {
+    "file": "wrist-mri-labels.json",
+    "module": "wrist-mri-3d",
+    "id": 1261,
+    "name": "Сухожилие",
+    "key": "tendon"
+  },
+  {
+    "file": "wrist-mri-labels.json",
+    "module": "wrist-mri-3d",
+    "id": 1262,
+    "name": "Фасция/Апоневроз",
+    "key": "fascia"
+  },
+  {
+    "file": "wrist-mri-labels.json",
+    "module": "wrist-mri-3d",
+    "id": 1263,
+    "name": "Запястные влагалища",
+    "key": "sheath"
+  },
+  {
+    "file": "wrist-mri-labels.json",
+    "module": "wrist-mri-3d",
+    "id": 1264,
+    "name": "Артерии",
+    "key": "artery"
+  },
+  {
+    "file": "wrist-mri-labels.json",
+    "module": "wrist-mri-3d",
+    "id": 1265,
+    "name": "Вены",
+    "key": "vein"
+  },
+  {
+    "file": "wrist-mri-labels.json",
+    "module": "wrist-mri-3d",
+    "id": 1266,
+    "name": "Нервы",
+    "key": "nerve"
+  },
+  {
+    "file": "wrist-mri-labels.json",
+    "module": "wrist-mri-3d",
+    "id": 91301,
+    "name": "SL / LT · межзапястные",
+    "key": "interosseous"
+  },
+  {
+    "file": "wrist-mri-labels.json",
+    "module": "wrist-mri-3d",
+    "id": 91302,
+    "name": "Ладонные связки",
+    "key": "palmar"
+  },
+  {
+    "file": "wrist-mri-labels.json",
+    "module": "wrist-mri-3d",
+    "id": 91303,
+    "name": "Тыльные связки",
+    "key": "dorsal"
+  },
+  {
+    "file": "wrist-mri-labels.json",
+    "module": "wrist-mri-3d",
+    "id": 91304,
+    "name": "Другие связки",
+    "key": "ligament"
+  },
+  {
+    "file": "wrist-mri-labels.json",
+    "module": "wrist-mri-3d",
+    "id": 91311,
+    "name": "Диск и прикрепления",
+    "key": "disc"
+  },
+  {
+    "file": "wrist-mri-labels.json",
+    "module": "wrist-mri-3d",
+    "id": 91312,
+    "name": "Лучелоктевые связки",
+    "key": "collateral"
+  },
+  {
+    "file": "wrist-mri-labels.json",
+    "module": "wrist-mri-3d",
+    "id": 91313,
+    "name": "Периферия ТФХК",
+    "key": "tfcc"
+  },
+  {
+    "file": "wrist-mri-labels.json",
+    "module": "wrist-mri-3d",
+    "id": 91314,
+    "name": "Локтезапястные связки",
+    "key": "ligament"
+  },
+  {
+    "file": "wrist-mri-labels.json",
+    "module": "wrist-mri-3d",
+    "id": 91315,
+    "name": "ECU · фиброзный футляр",
+    "key": "sheath"
+  },
+  {
+    "file": "shoulder-mri-anatomy146.json",
+    "module": "shoulder",
+    "id": 14301,
+    "name": "Сумки и завороты · ленты PD",
+    "key": "recess"
+  },
+  {
+    "file": "shoulder-mri-anatomy146.json",
+    "module": "shoulder",
+    "id": 14302,
+    "name": "Аксиллярный карман · капсула и прикрепления",
+    "key": "capsule"
+  },
+  {
+    "file": "knee-mri-anatomy145.json",
+    "module": "knee",
+    "id": 14401,
+    "name": "Сумки и завороты · ленты PD",
+    "key": "recess"
+  },
+  {
+    "file": "foot-mri-anatomy144.json",
+    "module": "cheville",
+    "id": 14401,
+    "name": "Сумки и завороты · ленты PD",
+    "key": "recess"
+  },
+  {
+    "file": "elbow-mri-anatomy146.json",
+    "module": "elbow-mri-3d",
+    "id": 14621,
+    "name": "Медиальный комплекс · компоненты",
+    "key": "ligament"
+  },
+  {
+    "file": "elbow-mri-anatomy146.json",
+    "module": "elbow-mri-3d",
+    "id": 14622,
+    "name": "Латеральный комплекс · компоненты",
+    "key": "ligament"
+  },
+  {
+    "file": "hip-mri-anatomy147.json",
+    "module": "hip-mri-3d",
+    "id": 14701,
+    "name": "Сухожилия · прикрепления у вертелов",
+    "key": "insertion"
+  },
+  {
+    "file": "hip-mri-anatomy147.json",
+    "module": "hip-mri-3d",
+    "id": 14702,
+    "name": "Суставная губа · отделы и элементы",
+    "key": "labrum"
+  }
+]

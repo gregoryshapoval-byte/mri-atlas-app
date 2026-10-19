@@ -21,3 +21,36 @@ atlas-signing/
 # Temporary files
 *.tmp
 *.log
+
+release-signing/
+__pycache__/
+*.pyc
+
+review/browser-*/
+
+# MRI 1.42 image bytes are versioned in source-assets/mri142 chunks.
+app/src/main/assets/knee-mri-source/
+app/src/main/assets/face-neck-mri-source/
+app/src/main/assets/hip-mri-source/
+app/src/main/assets/spine-mri-source/
+
+# Browser review outputs belong to CI artifacts, not source commits.
+review/joints-1.45/
+review/ligaments-1.46/
+review/hip-1.47/
+review/icons-1.48/
+review/hip-knee-1.49/
+
+# 1.50 source images/masks materialize from checksummed offline chunks.
+app/src/main/assets/upper-limb-mri-source/
+app/src/main/assets/lower-limb-mri-source/
+app/src/main/assets/brachial-plexus-mri-source/
+
+# 1.52 image resources are checksummed in source-assets/mri152.
+app/src/main/assets/hand-mri-source/
+app/src/main/assets/brain-3d-source/
+app/src/main/assets/knee-3d-source/
+
+# 1.65 CT media are materialized from verified offline chunks.
+app/src/main/assets/abdomen-ct-source/
+app/src/main/assets/abdomen-pelvis-ct-source/

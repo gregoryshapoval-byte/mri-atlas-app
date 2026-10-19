@@ -1,7 +1,7 @@
 import * as T from 'three';
 import {OrbitControls} from './vendor/OrbitControls.js';
 const $=s=>document.querySelector(s), host=$('#canvas');
-const scene=new T.Scene();scene.background=new T.Color('#e8efeb');scene.fog=new T.Fog('#e8efeb',18,40);
+const scene=new T.Scene();scene.background=new T.Color('#111a22');scene.fog=new T.Fog('#e8efeb',18,40);
 let renderer;try{renderer=new T.WebGLRenderer({antialias:true,alpha:false});}catch(e){$('#failure').hidden=false;throw e;}
 renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.localClippingEnabled=true;renderer.outputColorSpace=T.SRGBColorSpace;renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=1.32;host.appendChild(renderer.domElement);
 const camera=new T.PerspectiveCamera(35,1,.1,100);camera.position.set(6,3,10);

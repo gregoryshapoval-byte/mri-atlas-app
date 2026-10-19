@@ -1,11 +1,8 @@
 name: Build Android APK
 
+# Local verification and signed APK come first. GitHub builds are an optional manual check.
 on:
   workflow_dispatch:
-  push:
-    branches: [ main ]
-    paths-ignore:
-      - '**/*.md'
 
 permissions:
   contents: read
@@ -18,6 +15,13 @@ jobs:
     steps:
       - name: Checkout source
         uses: actions/checkout@v4
+
+      - name: Restore exact offline image assets
+        run: |
+          python3 tools/materialize_assets142.py
+          python3 tools/materialize_assets150.py
+          python3 tools/materialize_assets152.py
+          python3 tools/materialize_assets165.py
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
@@ -32,16 +36,138 @@ jobs:
           yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null || true
           "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'platforms;android-35' 'build-tools;35.0.0'
 
+      - name: Check annotation data and viewer math
+        run: |
+          node tests/joint-anatomy144.mjs
+          node tests/joint-anatomy145.mjs
+          node tests/ligaments146.mjs
+          node tests/hip147.mjs
+          node tests/hip-knee149.mjs
+          node tests/modules150.mjs
+          node tests/modules152.mjs
+          node tests/hand153.mjs
+          node tests/joint-lines154.mjs
+          node tests/wrist-capitate155.mjs
+          node tests/wrist-ligaments156.mjs
+          node tests/wrist-review157.mjs
+          node tests/perianal158.mjs
+          node tests/perianal-classifications160.mjs
+          node tests/perianal-training161.mjs
+          node tests/female-pelvis162.mjs
+          node tests/viewer-fit159.mjs
+          node tests/foot-joints151.mjs
+          node tests/anatomy-icons148.mjs
+          node tests/catalog142.mjs
+          node tests/home163.mjs
+          node tests/abdomen165.mjs
+          node tests/all-mri-data.mjs
+          node tests/wrist-mri.mjs
+          node tests/female-pelvis-source.mjs
+          node tests/brain-screen-labels.mjs
+          node tests/brain-frame-cache.mjs
+          node tests/brain-gestures.mjs
+          node tests/continuous-scroll164.mjs
+
+      - name: Install viewer test dependencies
+        run: npm install --prefix /tmp/atlas-dom happy-dom playwright --no-audit --no-fund
+
+      - name: Prepare model previews
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
+        run: |
+          python3 -m pip install --quiet pillow
+          node tools/render_menu_previews.mjs
+
+      - name: Check menus and every route offline
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
+        run: node tests/menus142.mjs && node tests/home-modules150.mjs && node tests/browser-home163.mjs
+
+      - name: Upload ready local thumbnails
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: menu-thumbnails-1.65
+          path: app/src/main/assets/menu-thumbs/
+          if-no-files-found: ignore
+
+      - name: Check all viewer controls
+        run: node tests/source-viewer.mjs
+
+      - name: Check phone layouts in Chromium
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
+        run: |
+          node tests/browser-viewer.mjs
+          node tests/browser-joints145.mjs
+          node tests/browser-ligaments146.mjs
+          node tests/browser-hip147.mjs
+          node tests/browser-icons148.mjs
+          node tests/browser-hip-knee149.mjs
+          node tests/browser-foot151.mjs
+          node tests/browser-modules152.mjs
+          node tests/browser-hand153.mjs
+          node tests/browser-joint-lines154.mjs
+          node tests/browser-wrist-capitate155.mjs
+          node tests/browser-wrist-ligaments156.mjs
+          node tests/browser-wrist-review157.mjs
+          node tests/browser-perianal158.mjs
+          node tests/browser-perianal-classifications160.mjs
+          node tests/browser-perianal-training161.mjs
+          node tests/browser-female-pelvis162.mjs
+          node tests/browser-viewer-fit159.mjs
+          node tests/browser-continuous-scroll164.mjs
+          node tests/browser-abdomen165.mjs
+
+      - name: Upload viewer screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: viewer-review-1.65
+          path: |
+            review/browser-1.42/
+            review/browser-1.50/
+            review/browser-1.52/
+            review/browser-1.53/
+            review/browser-1.54/
+            review/browser-1.55/
+            review/browser-1.56/
+            review/browser-1.57/
+            review/browser-1.58/
+            review/browser-1.59/
+            review/browser-1.60/
+            review/browser-1.61/
+            review/browser-1.62/
+            review/browser-1.63/
+            review/browser-1.65/
+            review/joints-1.45/
+            review/ligaments-1.46/
+            review/hip-1.47/
+            review/icons-1.48/
+            review/hip-knee-1.49/
+          if-no-files-found: ignore
+
       - name: Build APK
         shell: bash
         run: |
           chmod +x ./build-apk.sh
-          ./build-apk.sh
+          ANDROID_SDK_ROOT="$ANDROID_HOME" UNSIGNED_ONLY=1 ./build-apk.sh
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
-          name: MRIAtlas-1.4-apk
-          path: build/MRIAtlas-1.4.apk
+          name: MRIAtlas-1.65-unsigned
+          path: build/MRIAtlas-1.65-unsigned.apk
           if-no-files-found: error
           retention-days: 30
+
+      - name: Export Android signing utility for local release signing
+        run: cp "$ANDROID_HOME/build-tools/35.0.0/lib/apksigner.jar" apksigner.jar
+
+      - name: Upload Android signing utility
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-apksigner-jar
+          path: apksigner.jar
+          if-no-files-found: error
+          retention-days: 1

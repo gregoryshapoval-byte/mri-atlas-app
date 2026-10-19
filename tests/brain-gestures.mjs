@@ -1,11 +1,11 @@
 import assert from 'node:assert/strict';
 import {SliceGestures} from '../app/src/main/assets/brain-gestures.js';
 const make=()=>({index:10,zoom:2,x:20,y:30,stage:{getBoundingClientRect:()=>({left:0,top:0,width:400,height:600})},move(i){this.index=Math.max(0,Math.min(23,i))},transform(){},reset(){this.zoom=1;this.x=this.y=0}});
-let v=make(),g=new SliceGestures(v);g.down(1,100,100);g.move(1,100,195);assert.equal(v.index,13);assert.deepEqual([v.zoom,v.x,v.y],[2,20,30]);g.up(1);
-g.down(1,100,195);g.move(1,100,125);assert.equal(v.index,11);g.up(1);
-g.down(1,100,100);g.move(1,200,100);g.up(1);assert.equal(v.index,11);assert.equal(v.zoom,2);
+let v=make(),g=new SliceGestures(v);g.down(1,100,100);g.move(1,100,195);assert.equal(v.index,19);assert.deepEqual([v.zoom,v.x,v.y],[2,20,30]);g.up(1);
+g.down(1,100,195);g.move(1,100,125);assert.equal(v.index,12);g.up(1);
+g.down(1,100,100);g.move(1,200,100);g.up(1);assert.equal(v.index,12);assert.equal(v.zoom,2);
 g.down(1,100,100);g.down(2,200,100);g.move(2,250,100);assert.equal(v.zoom,3);const before=v.index;g.up(2);g.move(1,100,250);g.up(1);assert.equal(v.index,before,'lifting one pinch finger must not scroll');
-g.down(1,100,100);g.move(1,100,160);g.up(1);assert.equal(v.index,before+2);
-g.mode='pan';const x=v.x;g.down(1,100,100);g.move(1,150,150);g.up(1);assert.equal(v.x,x+50);assert.equal(v.index,before+2);
-g.mode='slices';g.down(1,100,100);g.up(1,true);g.move(1,100,500);assert.equal(v.index,before+2);assert.equal(g.points.size,0);
+g.down(1,100,100);g.move(1,100,160);g.up(1);assert.equal(v.index,before+6);
+g.mode='pan';const x=v.x;g.down(1,100,100);g.move(1,150,150);g.up(1);assert.equal(v.x,x+50);assert.equal(v.index,before+6);
+g.mode='slices';g.down(1,100,100);g.up(1,true);g.move(1,100,500);assert.equal(v.index,before+6);assert.equal(g.points.size,0);
 console.log('PASS: continuous swipe at zoom, reverse/horizontal gestures, pinch, post-pinch suppression, pan mode, cancellation');

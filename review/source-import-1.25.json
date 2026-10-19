@@ -1,0 +1,127 @@
+{
+  "wrist-mri": {
+    "images": 209,
+    "sourceSlices": 135,
+    "points": 6256,
+    "structures": 186,
+    "masks": 173,
+    "allImageBytesPreserved": true,
+    "series": [
+      {
+        "id": "667-contraste_",
+        "title": "T1 · Аксиальный",
+        "frames": 24
+      },
+      {
+        "id": "667-contraste_dpfs",
+        "title": "PD-SPIR · Аксиальный",
+        "frames": 24
+      },
+      {
+        "id": "668-contraste_",
+        "title": "T1 · Фронтальный",
+        "frames": 20
+      },
+      {
+        "id": "668-contraste_dpfs",
+        "title": "PD-SPIR · Фронтальный",
+        "frames": 20
+      },
+      {
+        "id": "669-contraste_",
+        "title": "T1 · Сагиттальный",
+        "frames": 30
+      },
+      {
+        "id": "669-contraste_dpfs",
+        "title": "PD-SPIR · Сагиттальный",
+        "frames": 30
+      },
+      {
+        "id": "670-contraste_",
+        "title": "3D - Латеральное вращение",
+        "frames": 30
+      },
+      {
+        "id": "671-contraste_",
+        "title": "3D - Вертикальное вращение",
+        "frames": 31
+      }
+    ]
+  },
+  "elbow-mri": {
+    "images": 321,
+    "sourceSlices": 191,
+    "points": 7425,
+    "structures": 160,
+    "masks": 128,
+    "allImageBytesPreserved": true,
+    "series": [
+      {
+        "id": "642-contraste_",
+        "title": "T1 · Аксиальный",
+        "frames": 65
+      },
+      {
+        "id": "642-contraste_dpfs",
+        "title": "PD-SPIR · Аксиальный",
+        "frames": 65
+      },
+      {
+        "id": "643-contraste_",
+        "title": "T1 · Фронтальный",
+        "frames": 32
+      },
+      {
+        "id": "643-contraste_dpfs",
+        "title": "PD-SPIR · Фронтальный",
+        "frames": 32
+      },
+      {
+        "id": "644-contraste_",
+        "title": "T1 · Сагиттальный",
+        "frames": 33
+      },
+      {
+        "id": "644-contraste_dpfs",
+        "title": "PD-SPIR · Сагиттальный",
+        "frames": 33
+      },
+      {
+        "id": "645-contraste_",
+        "title": "3D - Латеральное вращение",
+        "frames": 30
+      },
+      {
+        "id": "646-contraste_",
+        "title": "3D - Вертикальное вращение",
+        "frames": 31
+      }
+    ]
+  },
+  "male-pelvis-mri": {
+    "images": 220,
+    "sourceSlices": 220,
+    "points": 19030,
+    "structures": 433,
+    "masks": 44,
+    "allImageBytesPreserved": true,
+    "series": [
+      {
+        "id": "312-contraste_",
+        "title": "Аксиальный",
+        "frames": 65
+      },
+      {
+        "id": "313-contraste_",
+        "title": "Сагиттальный",
+        "frames": 80
+      },
+      {
+        "id": "314-contraste_",
+        "title": "Фронтальный",
+        "frames": 75
+      }
+    ]
+  }
+}

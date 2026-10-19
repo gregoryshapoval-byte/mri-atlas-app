@@ -1,0 +1,989 @@
+{
+  "revision": "1.62",
+  "filters": [
+    {
+      "id": 16201,
+      "name": "Связки матки и яичников",
+      "parent": null,
+      "layer": null,
+      "default": true
+    },
+    {
+      "id": 16202,
+      "name": "Придатки · соседние ориентиры",
+      "parent": null,
+      "layer": null,
+      "default": false
+    },
+    {
+      "id": 16203,
+      "name": "Перегородки и промежность",
+      "parent": null,
+      "layer": null,
+      "default": false
+    }
+  ],
+  "pointPresentation": {
+    "3431": {
+      "filter": 16201,
+      "category": "ligaments"
+    },
+    "3484": {
+      "filter": 16201,
+      "category": "ligaments"
+    },
+    "3489": {
+      "filter": 16201,
+      "category": "ligaments"
+    }
+  },
+  "displayNames": {
+    "3489": "Крестцово-маточная (прямокишечно-маточная) связка"
+  },
+  "shortNames": {
+    "3489": "Крестцово-маточная связка",
+    "3431": "Подвешивающая связка яичника",
+    "3484": "Круглая связка матки",
+    "3824": "Дугласово углубление",
+    "3476": "Параметрий",
+    "9245": "Задний свод влагалища",
+    "9246": "Боковой свод влагалища",
+    "9248": "Передний свод влагалища"
+  },
+  "searchAliases": {
+    "3489": "крестцово маточная сакроутеринная uterosacral USL прямокишечно маточная",
+    "3431": "воронко тазовая инфундибулопельвикальная suspensory infundibulopelvic IP",
+    "3484": "round teres круглая",
+    "3824": "дуглас Douglas",
+    "3476": "parametrium парацервикс",
+    "162101": "овариальная утероовариальная utero ovarian ovarian ligament",
+    "162102": "овариальная утероовариальная utero ovarian ovarian ligament",
+    "162103": "broad ligament широкая mesometrium мезометрий",
+    "162104": "broad ligament широкая mesometrium мезометрий",
+    "162105": "кардинальная поперечная связка шейки Макенродта cardinal Mackenrodt",
+    "162106": "кардинальная поперечная связка шейки Макенродта cardinal Mackenrodt",
+    "162110": "ректовагинальная прямокишечно влагалищная перегородка rectovaginal"
+  },
+  "structureNotes": {
+    "3431": "Подвешивающая (воронко-тазовая) связка соединяет яичник с боковой стенкой таза и содержит яичниковые сосуды. Исходные точки сохранены; не путать с собственной связкой яичника, направленной к матке.",
+    "3484": "Круглая связка начинается у маточного угла и идёт к глубокому паховому кольцу и паховому каналу. Исходные точки сохранены.",
+    "3489": "Крестцово-маточная связка: в исходнике — прямокишечно-маточная. Задняя поддержка шейки и верхней части влагалища, направление к задней стенке таза. Начало связано с torus uterinus; не следует изображать её как один прямой тяж до крестца. Исходные точки сохранены.",
+    "3410": "Яичник: ориентир для различения собственной связки (медиально к матке), подвешивающей связки (к боковой стенке) и мезовариума (к широкой связке).",
+    "3434": "Маточная труба расположена у верхнего свободного края широкой связки; мезосальпинкс — прилежащая часть её брюшинной дупликатуры. Точка трубы не является меткой собственной связки яичника.",
+    "3476": "Параметрий — околоматочная соединительная ткань. Кардинальный комплекс — часть боковой фасциально-сосудистой поддержки шейки и верхнего влагалища, а не синоним всей широкой связки.",
+    "4741": "Маточная артерия в околоматочной ткани; её отношение к мочеточнику оценивают на серии срезов. Один маркер не показывает точное место их перекреста.",
+    "3361": "Тазовый мочеточник проходит рядом с придатками и парацервикальными тканями. Исходная точка не доказывает место перекреста с маточной артерией.",
+    "3824": "Дугласово (прямокишечно-маточное) углубление — брюшинный карман позади матки; отличается от внебрюшинной ректовагинальной перегородки ниже.",
+    "162101": "Соединяет медиальный маточный полюс яичника с маточным углом, ниже места отхождения трубы. Отличается от сосудистой подвешивающей связки. ≈ Отдельный приблизительный учебный ориентир; не подтверждённые волокна или граница.",
+    "162102": "Направлена от медиального полюса яичника к матке; не является маточной трубой или воронко-тазовой связкой. ≈ Отдельный приблизительный учебный ориентир; не подтверждённые волокна или граница.",
+    "162103": "Брюшинная дупликатура латерально от матки. Метка указывает область листков, а не отдельный фиброзный тяж. ≈ Отдельный приблизительный учебный ориентир; не подтверждённые волокна или граница.",
+    "162104": "Парная брюшинная складка. Её листки и прилежащий кардинальный комплекс не всегда различимы раздельно на обычной МРТ. ≈ Отдельный приблизительный учебный ориентир; не подтверждённые волокна или граница.",
+    "162105": "Латеральная соединительнотканная и сосудистая поддержка шейки и верхнего влагалища; поперечная связка шейки, связка Макенродта. Это область, а не изолированный видимый шнур. ≈ Отдельный приблизительный учебный ориентир; не подтверждённые волокна или граница.",
+    "162106": "Парацервикальная боковая поддержка с сосудами и соединительной тканью; не путать с брюшинными листками широкой связки. ≈ Отдельный приблизительный учебный ориентир; не подтверждённые волокна или граница.",
+    "162107": "Задняя поверхность маточно-шеечного перехода, проксимальная область крестцово-маточных связок. Отдельное утолщение не сегментировано. ≈ Отдельный приблизительный учебный ориентир; не подтверждённые волокна или граница.",
+    "162108": "Область боковой стенки таза рядом с яичником. Положение яичника вариабельно; точка не задаёт его обязательное нормальное положение. ≈ Отдельный приблизительный учебный ориентир; не подтверждённые волокна или граница.",
+    "162109": "Ориентир боковой стенки у придатка; не контур яичника или брюшинного листка. ≈ Отдельный приблизительный учебный ориентир; не подтверждённые волокна или граница.",
+    "162110": "Ткани между задней стенкой влагалища и передней стенкой прямой кишки, ниже брюшинного Дугласова углубления. Исправляет смешанную мужскую подпись исходника только на выбранных кадрах. ≈ Отдельный приблизительный учебный ориентир; не подтверждённые волокна или граница.",
+    "162111": "Фибромышечная ткань между дистальным влагалищем и анальным каналом; не продолжение ректовагинальной фасции по всем каудальным срезам. ≈ Отдельный приблизительный учебный ориентир; не подтверждённые волокна или граница.",
+    "162112": "Короткая брюшинная брыжейка у ворот яичника, связывающая его с широкой связкой. Отдельная покадровая точка не добавлена: листки уверенно не разделены.",
+    "162113": "Часть широкой связки у трубы. Не отдельный тяж. Листки на этих кадрах уверенно не разделены, поэтому отдельной точки нет.",
+    "162114": "Передняя фасциальная поддержка влагалища/шейки; не обособленная видимая связка в данном источнике. Отдельной точки нет."
+  },
+  "seriesSlices": {
+    "629-contraste_": {
+      "16553": {
+        "suppress": [
+          2103
+        ],
+        "points": [
+          {
+            "id": 162000001,
+            "structure": 162102,
+            "name": "≈ Собственная связка левого яичника",
+            "shortName": "≈ Собственная связка яичника · L",
+            "filter": 16201,
+            "category": "ligaments",
+            "x": 343,
+            "y": 215,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          },
+          {
+            "id": 162000012,
+            "structure": 162105,
+            "name": "≈ Кардинальный комплекс · справа",
+            "shortName": "≈ Кардинальный комплекс · справа",
+            "filter": 16201,
+            "category": "ligaments",
+            "x": 215,
+            "y": 234,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          },
+          {
+            "id": 162000013,
+            "structure": 162106,
+            "name": "≈ Кардинальный комплекс · слева",
+            "shortName": "≈ Кардинальный комплекс · слева",
+            "filter": 16201,
+            "category": "ligaments",
+            "x": 280,
+            "y": 233,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          }
+        ]
+      },
+      "16554": {
+        "suppress": [
+          2103
+        ],
+        "points": [
+          {
+            "id": 162000014,
+            "structure": 162105,
+            "name": "≈ Кардинальный комплекс · справа",
+            "shortName": "≈ Кардинальный комплекс · справа",
+            "filter": 16201,
+            "category": "ligaments",
+            "x": 219,
+            "y": 232,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          },
+          {
+            "id": 162000015,
+            "structure": 162106,
+            "name": "≈ Кардинальный комплекс · слева",
+            "shortName": "≈ Кардинальный комплекс · слева",
+            "filter": 16201,
+            "category": "ligaments",
+            "x": 286,
+            "y": 235,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          },
+          {
+            "id": 162000024,
+            "structure": 162109,
+            "name": "≈ Яичниковая ямка · слева",
+            "shortName": "≈ Яичниковая ямка · слева",
+            "filter": 16202,
+            "category": "organs",
+            "x": 377,
+            "y": 211,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          }
+        ]
+      },
+      "16555": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16556": {
+        "suppress": [
+          2103
+        ],
+        "points": [
+          {
+            "id": 162000028,
+            "structure": 162110,
+            "name": "≈ Ректовагинальная перегородка · область",
+            "shortName": "≈ Ректовагинальная перегородка · область",
+            "filter": 16203,
+            "category": "organs",
+            "x": 254,
+            "y": 232,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          }
+        ]
+      },
+      "16557": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16558": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16559": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16560": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16561": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16562": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16563": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16564": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16565": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16566": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16567": {
+        "suppress": [
+          2103
+        ],
+        "points": [
+          {
+            "id": 162000031,
+            "structure": 162111,
+            "name": "≈ Тело промежности · область",
+            "shortName": "≈ Тело промежности · область",
+            "filter": 16203,
+            "category": "organs",
+            "x": 257,
+            "y": 242,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          }
+        ]
+      },
+      "16568": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16552": {
+        "points": [
+          {
+            "id": 162000000,
+            "structure": 162101,
+            "name": "≈ Собственная связка правого яичника",
+            "shortName": "≈ Собственная связка яичника · R",
+            "filter": 16201,
+            "category": "ligaments",
+            "x": 203,
+            "y": 232,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          },
+          {
+            "id": 162000006,
+            "structure": 162103,
+            "name": "≈ Широкая связка матки · справа",
+            "shortName": "≈ Широкая связка матки · справа",
+            "filter": 16201,
+            "category": "ligaments",
+            "x": 215,
+            "y": 206,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          },
+          {
+            "id": 162000007,
+            "structure": 162104,
+            "name": "≈ Широкая связка матки · слева",
+            "shortName": "≈ Широкая связка матки · слева",
+            "filter": 16201,
+            "category": "ligaments",
+            "x": 307,
+            "y": 212,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          },
+          {
+            "id": 162000020,
+            "structure": 162107,
+            "name": "≈ Torus uterinus · область",
+            "shortName": "≈ Torus uterinus · область",
+            "filter": 16202,
+            "category": "organs",
+            "x": 246,
+            "y": 242,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          }
+        ]
+      },
+      "16551": {
+        "points": [
+          {
+            "id": 162000023,
+            "structure": 162108,
+            "name": "≈ Яичниковая ямка · справа",
+            "shortName": "≈ Яичниковая ямка · справа",
+            "filter": 16202,
+            "category": "organs",
+            "x": 162,
+            "y": 239,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          }
+        ]
+      }
+    },
+    "629-contraste_t1": {
+      "16553": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16554": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16555": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16556": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16557": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16558": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16559": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16560": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16561": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16562": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16563": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16564": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16565": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16566": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16567": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16568": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      }
+    },
+    "630-contraste_": {
+      "16577": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16578": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16579": {
+        "suppress": [
+          2103
+        ],
+        "points": [
+          {
+            "id": 162000021,
+            "structure": 162107,
+            "name": "≈ Torus uterinus · область",
+            "shortName": "≈ Torus uterinus · область",
+            "filter": 16202,
+            "category": "organs",
+            "x": 242,
+            "y": 254,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          },
+          {
+            "id": 162000026,
+            "structure": 162110,
+            "name": "≈ Ректовагинальная перегородка · область",
+            "shortName": "≈ Ректовагинальная перегородка · область",
+            "filter": 16203,
+            "category": "organs",
+            "x": 208,
+            "y": 282,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          },
+          {
+            "id": 162000030,
+            "structure": 162111,
+            "name": "≈ Тело промежности · область",
+            "shortName": "≈ Тело промежности · область",
+            "filter": 16203,
+            "category": "organs",
+            "x": 187,
+            "y": 381,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          }
+        ]
+      },
+      "16580": {
+        "suppress": [
+          2103
+        ],
+        "points": [
+          {
+            "id": 162000022,
+            "structure": 162107,
+            "name": "≈ Torus uterinus · область",
+            "shortName": "≈ Torus uterinus · область",
+            "filter": 16202,
+            "category": "organs",
+            "x": 239,
+            "y": 258,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          },
+          {
+            "id": 162000027,
+            "structure": 162110,
+            "name": "≈ Ректовагинальная перегородка · область",
+            "shortName": "≈ Ректовагинальная перегородка · область",
+            "filter": 16203,
+            "category": "organs",
+            "x": 204,
+            "y": 280,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          }
+        ]
+      },
+      "16581": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16582": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16583": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16574": {
+        "points": [
+          {
+            "id": 162000004,
+            "structure": 162101,
+            "name": "≈ Собственная связка правого яичника",
+            "shortName": "≈ Собственная связка яичника · R",
+            "filter": 16201,
+            "category": "ligaments",
+            "x": 209,
+            "y": 256,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          },
+          {
+            "id": 162000010,
+            "structure": 162103,
+            "name": "≈ Широкая связка матки · справа",
+            "shortName": "≈ Широкая связка матки · справа",
+            "filter": 16201,
+            "category": "ligaments",
+            "x": 211,
+            "y": 267,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          }
+        ]
+      },
+      "16587": {
+        "points": [
+          {
+            "id": 162000005,
+            "structure": 162102,
+            "name": "≈ Собственная связка левого яичника",
+            "shortName": "≈ Собственная связка яичника · L",
+            "filter": 16201,
+            "category": "ligaments",
+            "x": 184,
+            "y": 274,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          },
+          {
+            "id": 162000011,
+            "structure": 162104,
+            "name": "≈ Широкая связка матки · слева",
+            "shortName": "≈ Широкая связка матки · слева",
+            "filter": 16201,
+            "category": "ligaments",
+            "x": 181,
+            "y": 281,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          }
+        ]
+      }
+    },
+    "630-contraste_t1": {
+      "16577": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16578": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16579": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16580": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16581": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16582": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      },
+      "16583": {
+        "suppress": [
+          2103
+        ],
+        "points": []
+      }
+    },
+    "631-contraste_": {
+      "16603": {
+        "suppress": [
+          2103
+        ],
+        "points": [
+          {
+            "id": 162000016,
+            "structure": 162105,
+            "name": "≈ Кардинальный комплекс · справа",
+            "shortName": "≈ Кардинальный комплекс · справа",
+            "filter": 16201,
+            "category": "ligaments",
+            "x": 222,
+            "y": 264,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          },
+          {
+            "id": 162000017,
+            "structure": 162106,
+            "name": "≈ Кардинальный комплекс · слева",
+            "shortName": "≈ Кардинальный комплекс · слева",
+            "filter": 16201,
+            "category": "ligaments",
+            "x": 285,
+            "y": 276,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          },
+          {
+            "id": 162000029,
+            "structure": 162110,
+            "name": "≈ Ректовагинальная перегородка · область",
+            "shortName": "≈ Ректовагинальная перегородка · область",
+            "filter": 16203,
+            "category": "organs",
+            "x": 256,
+            "y": 294,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          }
+        ]
+      },
+      "16604": {
+        "suppress": [
+          2103
+        ],
+        "points": [
+          {
+            "id": 162000002,
+            "structure": 162101,
+            "name": "≈ Собственная связка правого яичника",
+            "shortName": "≈ Собственная связка яичника · R",
+            "filter": 16201,
+            "category": "ligaments",
+            "x": 205,
+            "y": 241,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          },
+          {
+            "id": 162000018,
+            "structure": 162105,
+            "name": "≈ Кардинальный комплекс · справа",
+            "shortName": "≈ Кардинальный комплекс · справа",
+            "filter": 16201,
+            "category": "ligaments",
+            "x": 219,
+            "y": 261,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          },
+          {
+            "id": 162000019,
+            "structure": 162106,
+            "name": "≈ Кардинальный комплекс · слева",
+            "shortName": "≈ Кардинальный комплекс · слева",
+            "filter": 16201,
+            "category": "ligaments",
+            "x": 290,
+            "y": 280,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          },
+          {
+            "id": 162000025,
+            "structure": 162108,
+            "name": "≈ Яичниковая ямка · справа",
+            "shortName": "≈ Яичниковая ямка · справа",
+            "filter": 16202,
+            "category": "organs",
+            "x": 151,
+            "y": 244,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          }
+        ]
+      },
+      "16605": {
+        "suppress": [
+          2103
+        ],
+        "points": [
+          {
+            "id": 162000003,
+            "structure": 162101,
+            "name": "≈ Собственная связка правого яичника",
+            "shortName": "≈ Собственная связка яичника · R",
+            "filter": 16201,
+            "category": "ligaments",
+            "x": 209,
+            "y": 244,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          }
+        ]
+      },
+      "16602": {
+        "points": [
+          {
+            "id": 162000008,
+            "structure": 162103,
+            "name": "≈ Широкая связка матки · справа",
+            "shortName": "≈ Широкая связка матки · справа",
+            "filter": 16201,
+            "category": "ligaments",
+            "x": 207,
+            "y": 251,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          },
+          {
+            "id": 162000009,
+            "structure": 162104,
+            "name": "≈ Широкая связка матки · слева",
+            "shortName": "≈ Широкая связка матки · слева",
+            "filter": 16201,
+            "category": "ligaments",
+            "x": 294,
+            "y": 256,
+            "approximate": true,
+            "observedFibres": false,
+            "observedBoundary": false,
+            "provenance": "manual-t2-control-frame-1.62",
+            "confidence": "expected-topography"
+          }
+        ]
+      }
+    }
+  },
+  "guideTitle": "Связки матки, придатки и перегородки · подробнее",
+  "guideHint": "Три связки уже были в исходнике; они собраны в отдельную янтарную группу. Новые ≈ метки — приблизительные ориентиры только на отдельных T2-срезах. По названию можно перейти к контрольному кадру, включая другую плоскость.",
+  "preferredSeries": [
+    "629-contraste_",
+    "630-contraste_",
+    "631-contraste_"
+  ],
+  "catalogNames": {
+    "162101": "Собственная связка правого яичника",
+    "162102": "Собственная связка левого яичника",
+    "162103": "Широкая связка матки · справа",
+    "162104": "Широкая связка матки · слева",
+    "162105": "Кардинальный комплекс · справа",
+    "162106": "Кардинальный комплекс · слева",
+    "162107": "Torus uterinus · область",
+    "162108": "Яичниковая ямка · справа",
+    "162109": "Яичниковая ямка · слева",
+    "162110": "Ректовагинальная перегородка · область",
+    "162111": "Тело промежности · область",
+    "162112": "Мезовариум",
+    "162113": "Мезосальпинкс",
+    "162114": "Лобково-шеечная фасциальная поддержка"
+  },
+  "limitations": [
+    "Дополнения — ожидаемая топография, не прослеженные волокна или сегментация. Источник JPEG без DICOM-геометрии; независимой врачебной верификации нет.",
+    "Координаты выбраны отдельно на контрольных T2-кадрах, без интерполяции и переноса на T1. Стороны новых AX/COR ориентиров — по принятому отображению исходного атласа.",
+    "Мезовариум, мезосальпинкс и лобково-шеечная фасциальная поддержка описаны без отдельных точек: уверенно разделить их в этих кадрах нельзя."
+  ],
+  "sources": [
+    {
+      "title": "Kaniewska et al. Suspensory Ligaments of the Female Genital Organs. RadioGraphics, 2018",
+      "url": "https://doi.org/10.1148/rg.2018180089"
+    },
+    {
+      "title": "Alexander et al. Reference Handbook of Gynecologic Pelvic MRI. RadioGraphics, 2026",
+      "url": "https://doi.org/10.1148/rg.250029"
+    },
+    {
+      "title": "Ramanah et al. Anatomy and histology of apical support, 2012",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4258694/"
+    }
+  ],
+  "guideChapters": [
+    [
+      "Связки · исходные и дополнительные",
+      [
+        3484,
+        3489,
+        3431,
+        162101,
+        162102,
+        162103,
+        162104,
+        162105,
+        162106
+      ]
+    ],
+    [
+      "Придатки, задний и боковой компартменты",
+      [
+        3410,
+        3434,
+        162107,
+        162108,
+        162109,
+        3476,
+        3361,
+        4741,
+        3824,
+        162110,
+        162111
+      ]
+    ],
+    [
+      "Тонкие листки без отдельной метки",
+      [
+        162112,
+        162113,
+        162114
+      ]
+    ]
+  ]
+}

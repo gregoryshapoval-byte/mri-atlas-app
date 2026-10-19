@@ -1,0 +1,273 @@
+{
+  "review": {
+    "version": "1.28",
+    "scope": "Coronal frames 12–14, source series 668; shared source coordinates for T1 and PD-SPIR",
+    "limitations": "All added landmarks approximate; no segmentation or independent expert validation. No new axial/sagittal/3D landmarks.",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7509702/"
+  },
+  "points": [
+    {
+      "slice": "18698",
+      "id": 1869801,
+      "structure": 912701,
+      "name": "≈ SL · центральный компонент",
+      "x": 356,
+      "y": 249,
+      "filter": 91270,
+      "color": "#FFD27A",
+      "approximate": true,
+      "provenance": "manual-teaching-review-1.28"
+    },
+    {
+      "slice": "18698",
+      "id": 1869802,
+      "structure": 912702,
+      "name": "≈ LT · центральный компонент",
+      "x": 449,
+      "y": 249,
+      "filter": 91270,
+      "color": "#FFD27A",
+      "approximate": true,
+      "provenance": "manual-teaching-review-1.28"
+    },
+    {
+      "slice": "18698",
+      "id": 1869803,
+      "structure": 912703,
+      "name": "≈ Диск ТФХК · центральная часть",
+      "x": 435,
+      "y": 225,
+      "filter": 91271,
+      "color": "#FFD27A",
+      "approximate": true,
+      "provenance": "manual-teaching-review-1.28"
+    },
+    {
+      "slice": "18698",
+      "id": 1869804,
+      "structure": 912704,
+      "name": "≈ Лучевое прикрепление диска · область",
+      "x": 415,
+      "y": 222,
+      "filter": 91271,
+      "color": "#FFD27A",
+      "approximate": true,
+      "provenance": "manual-teaching-review-1.28"
+    },
+    {
+      "slice": "18698",
+      "id": 1869806,
+      "structure": 912706,
+      "name": "≈ Фовеальное прикрепление · примерно",
+      "x": 472,
+      "y": 218,
+      "filter": 91271,
+      "color": "#FFD27A",
+      "approximate": true,
+      "provenance": "manual-teaching-review-1.28"
+    },
+    {
+      "slice": "18698",
+      "id": 1869807,
+      "structure": 912707,
+      "name": "≈ Шиловидное прикрепление · примерно",
+      "x": 497,
+      "y": 244,
+      "filter": 91271,
+      "color": "#FFD27A",
+      "approximate": true,
+      "provenance": "manual-teaching-review-1.28"
+    },
+    {
+      "slice": "18699",
+      "id": 1869901,
+      "structure": 912701,
+      "name": "≈ SL · центральный компонент",
+      "x": 359,
+      "y": 250,
+      "filter": 91270,
+      "color": "#FFD27A",
+      "approximate": true,
+      "provenance": "manual-teaching-review-1.28"
+    },
+    {
+      "slice": "18699",
+      "id": 1869902,
+      "structure": 912702,
+      "name": "≈ LT · центральный компонент",
+      "x": 451,
+      "y": 249,
+      "filter": 91270,
+      "color": "#FFD27A",
+      "approximate": true,
+      "provenance": "manual-teaching-review-1.28"
+    },
+    {
+      "slice": "18699",
+      "id": 1869903,
+      "structure": 912703,
+      "name": "≈ Диск ТФХК · центральная часть",
+      "x": 437,
+      "y": 224,
+      "filter": 91271,
+      "color": "#FFD27A",
+      "approximate": true,
+      "provenance": "manual-teaching-review-1.28"
+    },
+    {
+      "slice": "18699",
+      "id": 1869904,
+      "structure": 912704,
+      "name": "≈ Лучевое прикрепление диска · область",
+      "x": 417,
+      "y": 221,
+      "filter": 91271,
+      "color": "#FFD27A",
+      "approximate": true,
+      "provenance": "manual-teaching-review-1.28"
+    },
+    {
+      "slice": "18699",
+      "id": 1869906,
+      "structure": 912706,
+      "name": "≈ Фовеальное прикрепление · примерно",
+      "x": 474,
+      "y": 218,
+      "filter": 91271,
+      "color": "#FFD27A",
+      "approximate": true,
+      "provenance": "manual-teaching-review-1.28"
+    },
+    {
+      "slice": "18699",
+      "id": 1869907,
+      "structure": 912707,
+      "name": "≈ Шиловидное прикрепление · примерно",
+      "x": 498,
+      "y": 244,
+      "filter": 91271,
+      "color": "#FFD27A",
+      "approximate": true,
+      "provenance": "manual-teaching-review-1.28"
+    },
+    {
+      "slice": "18700",
+      "id": 1870001,
+      "structure": 912701,
+      "name": "≈ SL · центральный компонент",
+      "x": 359,
+      "y": 248,
+      "filter": 91270,
+      "color": "#FFD27A",
+      "approximate": true,
+      "provenance": "manual-teaching-review-1.28"
+    },
+    {
+      "slice": "18700",
+      "id": 1870002,
+      "structure": 912702,
+      "name": "≈ LT · центральный компонент",
+      "x": 450,
+      "y": 248,
+      "filter": 91270,
+      "color": "#FFD27A",
+      "approximate": true,
+      "provenance": "manual-teaching-review-1.28"
+    },
+    {
+      "slice": "18700",
+      "id": 1870003,
+      "structure": 912703,
+      "name": "≈ Диск ТФХК · центральная часть",
+      "x": 437,
+      "y": 226,
+      "filter": 91271,
+      "color": "#FFD27A",
+      "approximate": true,
+      "provenance": "manual-teaching-review-1.28"
+    },
+    {
+      "slice": "18700",
+      "id": 1870004,
+      "structure": 912704,
+      "name": "≈ Лучевое прикрепление диска · область",
+      "x": 418,
+      "y": 224,
+      "filter": 91271,
+      "color": "#FFD27A",
+      "approximate": true,
+      "provenance": "manual-teaching-review-1.28"
+    },
+    {
+      "slice": "18700",
+      "id": 1870006,
+      "structure": 912706,
+      "name": "≈ Фовеальное прикрепление · примерно",
+      "x": 475,
+      "y": 220,
+      "filter": 91271,
+      "color": "#FFD27A",
+      "approximate": true,
+      "provenance": "manual-teaching-review-1.28"
+    },
+    {
+      "slice": "18700",
+      "id": 1870007,
+      "structure": 912707,
+      "name": "≈ Шиловидное прикрепление · примерно",
+      "x": 499,
+      "y": 245,
+      "filter": 91271,
+      "color": "#FFD27A",
+      "approximate": true,
+      "provenance": "manual-teaching-review-1.28"
+    }
+  ],
+  "coverage": [
+    {
+      "filter": 91270,
+      "name": "SL: тыльный и ладонный пучки",
+      "status": "Отдельно не размечены"
+    },
+    {
+      "filter": 91270,
+      "name": "LT: тыльный и ладонный пучки",
+      "status": "Отдельно не размечены"
+    },
+    {
+      "filter": 91271,
+      "name": "Ладонная лучелоктевая связка",
+      "status": "Отдельно не размечена"
+    },
+    {
+      "filter": 91271,
+      "name": "Тыльная лучелоктевая связка",
+      "status": "Отдельно не размечена"
+    },
+    {
+      "filter": 91271,
+      "name": "Фовеальное / шиловидное прикрепления",
+      "status": "Два приблизительных ориентира; волокна не выделены"
+    },
+    {
+      "filter": 91271,
+      "name": "Локтеполулунная / локтетрёхгранная связки",
+      "status": "В исходнике только общее обозначение"
+    },
+    {
+      "filter": 91271,
+      "name": "Гомолог мениска",
+      "status": "Отдельно не размечен"
+    },
+    {
+      "filter": 91271,
+      "name": "Ligamentum subcruentum",
+      "status": "Отдельно не размечено"
+    },
+    {
+      "filter": 91271,
+      "name": "Собственный футляр ECU (subsheath)",
+      "status": "Отдельно не размечен; влагалище есть в исходнике"
+    }
+  ]
+}

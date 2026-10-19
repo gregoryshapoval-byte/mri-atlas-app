@@ -1,0 +1,69 @@
+{
+  "version": "1.44",
+  "modules": [
+    {
+      "module": "shoulder-mri",
+      "ribbons": 98,
+      "notes": 24,
+      "sourceDataSha256": "97280dc1df1bab7ad748c4a445e33b87c6e79f26c3531cb1b5eeff822bf27b48",
+      "sourceLabelsSha256": "2a54bf0ccc8ff32825dddf70b7f2bf249c59066e86b53615821bebb44a3c4537",
+      "perSeries": {
+        "656-contraste_dp": {
+          "framesWithRibbons": 15,
+          "ribbons": 37
+        },
+        "657-contraste_dp": {
+          "framesWithRibbons": 14,
+          "ribbons": 30
+        },
+        "658-contraste_dp": {
+          "framesWithRibbons": 17,
+          "ribbons": 31
+        }
+      }
+    },
+    {
+      "module": "knee-mri",
+      "ribbons": 72,
+      "notes": 25,
+      "sourceDataSha256": "10de14ba67ff748c32ee911178a8ba7b461ccb6afe933b0ced570e03eaaba413",
+      "sourceLabelsSha256": "81669880fda2b0aa8f05d88664b5aa5572872d5218a7e753126471fb2b2006df",
+      "perSeries": {
+        "652-contraste_dp": {
+          "framesWithRibbons": 16,
+          "ribbons": 24
+        },
+        "653-contraste_dp": {
+          "framesWithRibbons": 20,
+          "ribbons": 41
+        },
+        "654-contraste_dp": {
+          "framesWithRibbons": 7,
+          "ribbons": 7
+        }
+      }
+    },
+    {
+      "module": "foot-mri",
+      "ribbons": 62,
+      "notes": 51,
+      "sourceDataSha256": "cf627ffe4815255ef7c216a36e94b26c0fcfc21e2ac6e0c025e9cd843f460aa4",
+      "sourceLabelsSha256": "9c75261df517f84aff7d9e02267852190aa08ee9c8a266007c2340ee825dc8fe",
+      "perSeries": {
+        "541-contraste_dp": {
+          "framesWithRibbons": 7,
+          "ribbons": 8
+        },
+        "542-contraste_dp": {
+          "framesWithRibbons": 9,
+          "ribbons": 41
+        },
+        "543-contraste_dp": {
+          "framesWithRibbons": 8,
+          "ribbons": 13
+        }
+      }
+    }
+  ],
+  "limitations": "Все ленты и новые ориентиры приблизительные: показана ожидаемая топография, а не точные стенки, объём жидкости или доказанный бурсит. На срезах без разметки контуры не интерполируются. Нормальные спавшиеся сумки могут не различаться. Исходные точки проверены обзорно по топографии и терминологии; это не независимая врачебная верификация каждой точки."
+}
