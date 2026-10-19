@@ -1,0 +1,22 @@
+{
+  "version": "1.71",
+  "versionCode": 71,
+  "bytes": 137589371,
+  "sha256": "5bb7c7239f243aa7b1da1c93a5fe79c492127a6c123926d91d5b75c47dd42b03",
+  "assetCount": 9062,
+  "sourceAssetsByteExact": true,
+  "dataMathTests": 34,
+  "physicalPhoneTested": false,
+  "savedArtifactsRoundtripVerified": true,
+  "browserNewModule": {
+    "states": 3,
+    "viewports": 4,
+    "offline": true
+  },
+  "browserLabrum170": {
+    "states": 11,
+    "viewports": 3
+  },
+  "menuRoutes": 38,
+  "menuViewports": 4
+}

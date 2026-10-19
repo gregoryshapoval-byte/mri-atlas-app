@@ -1,0 +1,5 @@
+import assert from 'node:assert/strict';
+import {hillCases,HEAD_CENTER,HEAD_RADIUS,craterProfile,headPoint,headMesh} from '../app/src/main/assets/hill-sachs-data.js';
+assert.deepEqual(hillCases.map(c=>c.paired),['normal','bankart','reverse']);
+for(const c of hillCases){for(const size of [.6,1,1.4]){const n=c.direction||[0,0,1],p=headPoint(n,c,size),r=Math.hypot(...p.map((x,i)=>x-HEAD_CENTER[i]));assert(Math.abs(r-(HEAD_RADIUS-(c.direction?.62*size:0)))<1e-8);assert.equal(craterProfile(n.map(x=>-x),c,size).depth,0);const m=headMesh(c,size);assert.equal(m.positions.length,m.colors.length);assert(m.positions.every(Number.isFinite));assert(m.colors.every(x=>x>=0&&x<=1));assert(m.indices.every(x=>x>=0&&x<m.positions.length/3));assert(m.indices.length>80000);}}
+assert(hillCases[1].direction[2]>0&&hillCases[1].direction[1]>0);assert(hillCases[2].direction[2]<0&&hillCases[2].direction[0]<0);assert.match(hillCases[1].mechanism,/переднем вывихе/);assert.match(hillCases[2].mechanism,/заднем вывихе/);console.log('PASS hill171: actual radial depression, opposite surface intact, all sizes finite, anterior/posterior mechanisms and linked lesions');

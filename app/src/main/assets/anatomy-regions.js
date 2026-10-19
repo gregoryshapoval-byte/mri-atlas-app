@@ -107,6 +107,13 @@ export const regions=[
         "thumb": "menu-thumbs/shoulder-labrum.webp"
       },
       {
+        "title": "Хилл—Сакс и обратный",
+        "description": "Импрессия головки · передний и задний вывих · МРТ 1,5 Т",
+        "url": "shoulder-hill-sachs.html",
+        "type": "3D-МОДЕЛЬ",
+        "thumb": "menu-thumbs/shoulder-hill-sachs.webp"
+      },
+      {
         "title": "Сумки плеча",
         "description": "Сумки, завороты и влагалище бицепса",
         "url": "shoulder.html",
