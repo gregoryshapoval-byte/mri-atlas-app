@@ -1,0 +1,6371 @@
+{
+  "base": "6edd4291bc11f89910f09be266779ae413c56fe4",
+  "revision": "1.51",
+  "manualPaths": 65,
+  "renderRecords": 130,
+  "reviewedSourceJointTypes": 11,
+  "sourcePointsInGroup": 315,
+  "coverage": {
+    "1730": 8,
+    "1740": 11,
+    "1744": 0,
+    "1745": 9,
+    "1747": 6,
+    "1748": 10,
+    "1749": 11,
+    "1772": 8,
+    "1781": 0,
+    "151102": 0,
+    "151103": 2,
+    "151104": 0
+  },
+  "records": [
+    {
+      "series": "541-contraste_",
+      "sourceSeries": 541,
+      "frame": 23,
+      "annotation": "11849",
+      "imageSha256": "4eabdac4391b02403d1aea4a3aa489f7034c61bb8cd6c83fea0a392d1c88746b",
+      "structure": 1745,
+      "vertices": [
+        [
+          250,
+          322
+        ],
+        [
+          270,
+          313
+        ],
+        [
+          289,
+          310
+        ],
+        [
+          308,
+          315
+        ],
+        [
+          323,
+          329
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_dp",
+      "sourceSeries": 541,
+      "frame": 23,
+      "annotation": "11849",
+      "imageSha256": "302eb2a1dd64cce893491a684276a2055c1bea518f0c6b52ee1fadd96d3bd46e",
+      "structure": 1745,
+      "vertices": [
+        [
+          250,
+          322
+        ],
+        [
+          270,
+          313
+        ],
+        [
+          289,
+          310
+        ],
+        [
+          308,
+          315
+        ],
+        [
+          323,
+          329
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_",
+      "sourceSeries": 541,
+      "frame": 24,
+      "annotation": "11850",
+      "imageSha256": "4d6c9202c0fc8a40c9f5590257903040c313b4983bc6acd098ea62f1e0828c35",
+      "structure": 1745,
+      "vertices": [
+        [
+          247,
+          329
+        ],
+        [
+          267,
+          319
+        ],
+        [
+          286,
+          316
+        ],
+        [
+          305,
+          322
+        ],
+        [
+          323,
+          341
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_dp",
+      "sourceSeries": 541,
+      "frame": 24,
+      "annotation": "11850",
+      "imageSha256": "4f5e576f1b27fb7854515840a07a1a4feaf63433def4eb1918bd295604ab0c71",
+      "structure": 1745,
+      "vertices": [
+        [
+          247,
+          329
+        ],
+        [
+          267,
+          319
+        ],
+        [
+          286,
+          316
+        ],
+        [
+          305,
+          322
+        ],
+        [
+          323,
+          341
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_",
+      "sourceSeries": 541,
+      "frame": 26,
+      "annotation": "11852",
+      "imageSha256": "5a7d9a7fec5b28f33690f32a7f7629265f6f81602bfe31a05adee9cace65a98f",
+      "structure": 1745,
+      "vertices": [
+        [
+          253,
+          345
+        ],
+        [
+          274,
+          333
+        ],
+        [
+          291,
+          330
+        ],
+        [
+          311,
+          336
+        ],
+        [
+          326,
+          352
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_dp",
+      "sourceSeries": 541,
+      "frame": 26,
+      "annotation": "11852",
+      "imageSha256": "5a4a1b9eff9bec898614e39f62631c38a55fb3e632ee17b6ab9ebf3f64ae4a04",
+      "structure": 1745,
+      "vertices": [
+        [
+          253,
+          345
+        ],
+        [
+          274,
+          333
+        ],
+        [
+          291,
+          330
+        ],
+        [
+          311,
+          336
+        ],
+        [
+          326,
+          352
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_",
+      "sourceSeries": 541,
+      "frame": 27,
+      "annotation": "11853",
+      "imageSha256": "b9ace9579e6dd4997ebe1000afe61469cdbfcd2f03989157bf1753e58d82cbe9",
+      "structure": 1745,
+      "vertices": [
+        [
+          257,
+          345
+        ],
+        [
+          277,
+          340
+        ],
+        [
+          293,
+          341
+        ],
+        [
+          312,
+          350
+        ],
+        [
+          323,
+          360
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_dp",
+      "sourceSeries": 541,
+      "frame": 27,
+      "annotation": "11853",
+      "imageSha256": "abd5306780062669d26ba962510a64486b8d386a69ba5042fdfd1d01b2386b6c",
+      "structure": 1745,
+      "vertices": [
+        [
+          257,
+          345
+        ],
+        [
+          277,
+          340
+        ],
+        [
+          293,
+          341
+        ],
+        [
+          312,
+          350
+        ],
+        [
+          323,
+          360
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_",
+      "sourceSeries": 541,
+      "frame": 23,
+      "annotation": "11849",
+      "imageSha256": "4eabdac4391b02403d1aea4a3aa489f7034c61bb8cd6c83fea0a392d1c88746b",
+      "structure": 1740,
+      "vertices": [
+        [
+          218,
+          414
+        ],
+        [
+          238,
+          413
+        ],
+        [
+          257,
+          418
+        ],
+        [
+          271,
+          429
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_dp",
+      "sourceSeries": 541,
+      "frame": 23,
+      "annotation": "11849",
+      "imageSha256": "302eb2a1dd64cce893491a684276a2055c1bea518f0c6b52ee1fadd96d3bd46e",
+      "structure": 1740,
+      "vertices": [
+        [
+          218,
+          414
+        ],
+        [
+          238,
+          413
+        ],
+        [
+          257,
+          418
+        ],
+        [
+          271,
+          429
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_",
+      "sourceSeries": 541,
+      "frame": 24,
+      "annotation": "11850",
+      "imageSha256": "4d6c9202c0fc8a40c9f5590257903040c313b4983bc6acd098ea62f1e0828c35",
+      "structure": 1740,
+      "vertices": [
+        [
+          219,
+          405
+        ],
+        [
+          239,
+          407
+        ],
+        [
+          257,
+          413
+        ],
+        [
+          271,
+          425
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_dp",
+      "sourceSeries": 541,
+      "frame": 24,
+      "annotation": "11850",
+      "imageSha256": "4f5e576f1b27fb7854515840a07a1a4feaf63433def4eb1918bd295604ab0c71",
+      "structure": 1740,
+      "vertices": [
+        [
+          219,
+          405
+        ],
+        [
+          239,
+          407
+        ],
+        [
+          257,
+          413
+        ],
+        [
+          271,
+          425
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_",
+      "sourceSeries": 541,
+      "frame": 26,
+      "annotation": "11852",
+      "imageSha256": "5a7d9a7fec5b28f33690f32a7f7629265f6f81602bfe31a05adee9cace65a98f",
+      "structure": 1740,
+      "vertices": [
+        [
+          219,
+          398
+        ],
+        [
+          239,
+          400
+        ],
+        [
+          256,
+          406
+        ],
+        [
+          273,
+          419
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_dp",
+      "sourceSeries": 541,
+      "frame": 26,
+      "annotation": "11852",
+      "imageSha256": "5a4a1b9eff9bec898614e39f62631c38a55fb3e632ee17b6ab9ebf3f64ae4a04",
+      "structure": 1740,
+      "vertices": [
+        [
+          219,
+          398
+        ],
+        [
+          239,
+          400
+        ],
+        [
+          256,
+          406
+        ],
+        [
+          273,
+          419
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_",
+      "sourceSeries": 541,
+      "frame": 23,
+      "annotation": "11849",
+      "imageSha256": "4eabdac4391b02403d1aea4a3aa489f7034c61bb8cd6c83fea0a392d1c88746b",
+      "structure": 1748,
+      "vertices": [
+        [
+          261,
+          275
+        ],
+        [
+          278,
+          270
+        ],
+        [
+          295,
+          267
+        ],
+        [
+          306,
+          265
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_dp",
+      "sourceSeries": 541,
+      "frame": 23,
+      "annotation": "11849",
+      "imageSha256": "302eb2a1dd64cce893491a684276a2055c1bea518f0c6b52ee1fadd96d3bd46e",
+      "structure": 1748,
+      "vertices": [
+        [
+          261,
+          275
+        ],
+        [
+          278,
+          270
+        ],
+        [
+          295,
+          267
+        ],
+        [
+          306,
+          265
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_",
+      "sourceSeries": 541,
+      "frame": 24,
+      "annotation": "11850",
+      "imageSha256": "4d6c9202c0fc8a40c9f5590257903040c313b4983bc6acd098ea62f1e0828c35",
+      "structure": 1748,
+      "vertices": [
+        [
+          263,
+          279
+        ],
+        [
+          281,
+          275
+        ],
+        [
+          299,
+          273
+        ],
+        [
+          314,
+          271
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_dp",
+      "sourceSeries": 541,
+      "frame": 24,
+      "annotation": "11850",
+      "imageSha256": "4f5e576f1b27fb7854515840a07a1a4feaf63433def4eb1918bd295604ab0c71",
+      "structure": 1748,
+      "vertices": [
+        [
+          263,
+          279
+        ],
+        [
+          281,
+          275
+        ],
+        [
+          299,
+          273
+        ],
+        [
+          314,
+          271
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_",
+      "sourceSeries": 541,
+      "frame": 26,
+      "annotation": "11852",
+      "imageSha256": "5a7d9a7fec5b28f33690f32a7f7629265f6f81602bfe31a05adee9cace65a98f",
+      "structure": 1748,
+      "vertices": [
+        [
+          276,
+          285
+        ],
+        [
+          292,
+          279
+        ],
+        [
+          308,
+          276
+        ],
+        [
+          327,
+          273
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_dp",
+      "sourceSeries": 541,
+      "frame": 26,
+      "annotation": "11852",
+      "imageSha256": "5a4a1b9eff9bec898614e39f62631c38a55fb3e632ee17b6ab9ebf3f64ae4a04",
+      "structure": 1748,
+      "vertices": [
+        [
+          276,
+          285
+        ],
+        [
+          292,
+          279
+        ],
+        [
+          308,
+          276
+        ],
+        [
+          327,
+          273
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_",
+      "sourceSeries": 541,
+      "frame": 27,
+      "annotation": "11853",
+      "imageSha256": "b9ace9579e6dd4997ebe1000afe61469cdbfcd2f03989157bf1753e58d82cbe9",
+      "structure": 1748,
+      "vertices": [
+        [
+          280,
+          289
+        ],
+        [
+          299,
+          282
+        ],
+        [
+          316,
+          279
+        ],
+        [
+          332,
+          278
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_dp",
+      "sourceSeries": 541,
+      "frame": 27,
+      "annotation": "11853",
+      "imageSha256": "abd5306780062669d26ba962510a64486b8d386a69ba5042fdfd1d01b2386b6c",
+      "structure": 1748,
+      "vertices": [
+        [
+          280,
+          289
+        ],
+        [
+          299,
+          282
+        ],
+        [
+          316,
+          279
+        ],
+        [
+          332,
+          278
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_",
+      "sourceSeries": 541,
+      "frame": 26,
+      "annotation": "11852",
+      "imageSha256": "5a7d9a7fec5b28f33690f32a7f7629265f6f81602bfe31a05adee9cace65a98f",
+      "structure": 1749,
+      "vertices": [
+        [
+          284,
+          220
+        ],
+        [
+          287,
+          239
+        ],
+        [
+          292,
+          254
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_dp",
+      "sourceSeries": 541,
+      "frame": 26,
+      "annotation": "11852",
+      "imageSha256": "5a4a1b9eff9bec898614e39f62631c38a55fb3e632ee17b6ab9ebf3f64ae4a04",
+      "structure": 1749,
+      "vertices": [
+        [
+          284,
+          220
+        ],
+        [
+          287,
+          239
+        ],
+        [
+          292,
+          254
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_",
+      "sourceSeries": 541,
+      "frame": 26,
+      "annotation": "11852",
+      "imageSha256": "5a7d9a7fec5b28f33690f32a7f7629265f6f81602bfe31a05adee9cace65a98f",
+      "structure": 1749,
+      "vertices": [
+        [
+          249,
+          240
+        ],
+        [
+          258,
+          253
+        ],
+        [
+          265,
+          264
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_dp",
+      "sourceSeries": 541,
+      "frame": 26,
+      "annotation": "11852",
+      "imageSha256": "5a4a1b9eff9bec898614e39f62631c38a55fb3e632ee17b6ab9ebf3f64ae4a04",
+      "structure": 1749,
+      "vertices": [
+        [
+          249,
+          240
+        ],
+        [
+          258,
+          253
+        ],
+        [
+          265,
+          264
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_",
+      "sourceSeries": 541,
+      "frame": 27,
+      "annotation": "11853",
+      "imageSha256": "b9ace9579e6dd4997ebe1000afe61469cdbfcd2f03989157bf1753e58d82cbe9",
+      "structure": 1749,
+      "vertices": [
+        [
+          284,
+          220
+        ],
+        [
+          288,
+          240
+        ],
+        [
+          295,
+          262
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_dp",
+      "sourceSeries": 541,
+      "frame": 27,
+      "annotation": "11853",
+      "imageSha256": "abd5306780062669d26ba962510a64486b8d386a69ba5042fdfd1d01b2386b6c",
+      "structure": 1749,
+      "vertices": [
+        [
+          284,
+          220
+        ],
+        [
+          288,
+          240
+        ],
+        [
+          295,
+          262
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_",
+      "sourceSeries": 541,
+      "frame": 27,
+      "annotation": "11853",
+      "imageSha256": "b9ace9579e6dd4997ebe1000afe61469cdbfcd2f03989157bf1753e58d82cbe9",
+      "structure": 1749,
+      "vertices": [
+        [
+          249,
+          238
+        ],
+        [
+          259,
+          251
+        ],
+        [
+          267,
+          265
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_dp",
+      "sourceSeries": 541,
+      "frame": 27,
+      "annotation": "11853",
+      "imageSha256": "abd5306780062669d26ba962510a64486b8d386a69ba5042fdfd1d01b2386b6c",
+      "structure": 1749,
+      "vertices": [
+        [
+          249,
+          238
+        ],
+        [
+          259,
+          251
+        ],
+        [
+          267,
+          265
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_",
+      "sourceSeries": 541,
+      "frame": 29,
+      "annotation": "11855",
+      "imageSha256": "d3bb24f4ad3c216da58264fa92efeb68d9c1c7a7437aef7f52ddf0ea8d0401ff",
+      "structure": 1749,
+      "vertices": [
+        [
+          289,
+          224
+        ],
+        [
+          295,
+          242
+        ],
+        [
+          302,
+          266
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_dp",
+      "sourceSeries": 541,
+      "frame": 29,
+      "annotation": "11855",
+      "imageSha256": "0059e85a5127ac6859d4c169d08bd71e136538fb29d89690eb8b67f0e2916729",
+      "structure": 1749,
+      "vertices": [
+        [
+          289,
+          224
+        ],
+        [
+          295,
+          242
+        ],
+        [
+          302,
+          266
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_",
+      "sourceSeries": 541,
+      "frame": 29,
+      "annotation": "11855",
+      "imageSha256": "d3bb24f4ad3c216da58264fa92efeb68d9c1c7a7437aef7f52ddf0ea8d0401ff",
+      "structure": 1749,
+      "vertices": [
+        [
+          248,
+          235
+        ],
+        [
+          258,
+          249
+        ],
+        [
+          272,
+          266
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_dp",
+      "sourceSeries": 541,
+      "frame": 29,
+      "annotation": "11855",
+      "imageSha256": "0059e85a5127ac6859d4c169d08bd71e136538fb29d89690eb8b67f0e2916729",
+      "structure": 1749,
+      "vertices": [
+        [
+          248,
+          235
+        ],
+        [
+          258,
+          249
+        ],
+        [
+          272,
+          266
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_",
+      "sourceSeries": 541,
+      "frame": 27,
+      "annotation": "11853",
+      "imageSha256": "b9ace9579e6dd4997ebe1000afe61469cdbfcd2f03989157bf1753e58d82cbe9",
+      "structure": 1772,
+      "vertices": [
+        [
+          304,
+          191
+        ],
+        [
+          322,
+          193
+        ],
+        [
+          338,
+          200
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_dp",
+      "sourceSeries": 541,
+      "frame": 27,
+      "annotation": "11853",
+      "imageSha256": "abd5306780062669d26ba962510a64486b8d386a69ba5042fdfd1d01b2386b6c",
+      "structure": 1772,
+      "vertices": [
+        [
+          304,
+          191
+        ],
+        [
+          322,
+          193
+        ],
+        [
+          338,
+          200
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_",
+      "sourceSeries": 541,
+      "frame": 29,
+      "annotation": "11855",
+      "imageSha256": "d3bb24f4ad3c216da58264fa92efeb68d9c1c7a7437aef7f52ddf0ea8d0401ff",
+      "structure": 1772,
+      "vertices": [
+        [
+          305,
+          194
+        ],
+        [
+          326,
+          197
+        ],
+        [
+          343,
+          205
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_dp",
+      "sourceSeries": 541,
+      "frame": 29,
+      "annotation": "11855",
+      "imageSha256": "0059e85a5127ac6859d4c169d08bd71e136538fb29d89690eb8b67f0e2916729",
+      "structure": 1772,
+      "vertices": [
+        [
+          305,
+          194
+        ],
+        [
+          326,
+          197
+        ],
+        [
+          343,
+          205
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_",
+      "sourceSeries": 541,
+      "frame": 31,
+      "annotation": "11857",
+      "imageSha256": "67f68f0e657c5aa7f7b15f8b5c1121797c474c1cbe3dbe3866ddf021e00c18be",
+      "structure": 1772,
+      "vertices": [
+        [
+          293,
+          210
+        ],
+        [
+          314,
+          215
+        ],
+        [
+          337,
+          224
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_dp",
+      "sourceSeries": 541,
+      "frame": 31,
+      "annotation": "11857",
+      "imageSha256": "1fa2cd4c39a0b174524ed08164d46a10b349d200c08c2630f0c113752eef2c59",
+      "structure": 1772,
+      "vertices": [
+        [
+          293,
+          210
+        ],
+        [
+          314,
+          215
+        ],
+        [
+          337,
+          224
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_",
+      "sourceSeries": 541,
+      "frame": 31,
+      "annotation": "11857",
+      "imageSha256": "67f68f0e657c5aa7f7b15f8b5c1121797c474c1cbe3dbe3866ddf021e00c18be",
+      "structure": 1772,
+      "vertices": [
+        [
+          221,
+          224
+        ],
+        [
+          239,
+          234
+        ],
+        [
+          258,
+          238
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_dp",
+      "sourceSeries": 541,
+      "frame": 31,
+      "annotation": "11857",
+      "imageSha256": "1fa2cd4c39a0b174524ed08164d46a10b349d200c08c2630f0c113752eef2c59",
+      "structure": 1772,
+      "vertices": [
+        [
+          221,
+          224
+        ],
+        [
+          239,
+          234
+        ],
+        [
+          258,
+          238
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_",
+      "sourceSeries": 541,
+      "frame": 29,
+      "annotation": "11855",
+      "imageSha256": "d3bb24f4ad3c216da58264fa92efeb68d9c1c7a7437aef7f52ddf0ea8d0401ff",
+      "structure": 1747,
+      "vertices": [
+        [
+          201,
+          338
+        ],
+        [
+          222,
+          339
+        ],
+        [
+          242,
+          346
+        ],
+        [
+          255,
+          354
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_dp",
+      "sourceSeries": 541,
+      "frame": 29,
+      "annotation": "11855",
+      "imageSha256": "0059e85a5127ac6859d4c169d08bd71e136538fb29d89690eb8b67f0e2916729",
+      "structure": 1747,
+      "vertices": [
+        [
+          201,
+          338
+        ],
+        [
+          222,
+          339
+        ],
+        [
+          242,
+          346
+        ],
+        [
+          255,
+          354
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_",
+      "sourceSeries": 541,
+      "frame": 31,
+      "annotation": "11857",
+      "imageSha256": "67f68f0e657c5aa7f7b15f8b5c1121797c474c1cbe3dbe3866ddf021e00c18be",
+      "structure": 1747,
+      "vertices": [
+        [
+          198,
+          341
+        ],
+        [
+          218,
+          341
+        ],
+        [
+          239,
+          347
+        ],
+        [
+          253,
+          357
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_dp",
+      "sourceSeries": 541,
+      "frame": 31,
+      "annotation": "11857",
+      "imageSha256": "1fa2cd4c39a0b174524ed08164d46a10b349d200c08c2630f0c113752eef2c59",
+      "structure": 1747,
+      "vertices": [
+        [
+          198,
+          341
+        ],
+        [
+          218,
+          341
+        ],
+        [
+          239,
+          347
+        ],
+        [
+          253,
+          357
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_",
+      "sourceSeries": 541,
+      "frame": 29,
+      "annotation": "11855",
+      "imageSha256": "d3bb24f4ad3c216da58264fa92efeb68d9c1c7a7437aef7f52ddf0ea8d0401ff",
+      "structure": 151103,
+      "vertices": [
+        [
+          235,
+          273
+        ],
+        [
+          240,
+          284
+        ],
+        [
+          249,
+          294
+        ]
+      ]
+    },
+    {
+      "series": "541-contraste_dp",
+      "sourceSeries": 541,
+      "frame": 29,
+      "annotation": "11855",
+      "imageSha256": "0059e85a5127ac6859d4c169d08bd71e136538fb29d89690eb8b67f0e2916729",
+      "structure": 151103,
+      "vertices": [
+        [
+          235,
+          273
+        ],
+        [
+          240,
+          284
+        ],
+        [
+          249,
+          294
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_",
+      "sourceSeries": 542,
+      "frame": 13,
+      "annotation": "11884",
+      "imageSha256": "acef7dfcae865f6692e74627738f85b7866c52cfa46d5e6577a1c74546c0ad10",
+      "structure": 1747,
+      "vertices": [
+        [
+          278,
+          371
+        ],
+        [
+          283,
+          389
+        ],
+        [
+          286,
+          411
+        ],
+        [
+          290,
+          428
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_dp",
+      "sourceSeries": 542,
+      "frame": 13,
+      "annotation": "11884",
+      "imageSha256": "0b39d472a549b7c5b6e8488e2160b628474d86d84966d81408177ef87bc837d6",
+      "structure": 1747,
+      "vertices": [
+        [
+          278,
+          371
+        ],
+        [
+          283,
+          389
+        ],
+        [
+          286,
+          411
+        ],
+        [
+          290,
+          428
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_",
+      "sourceSeries": 542,
+      "frame": 15,
+      "annotation": "11886",
+      "imageSha256": "8690b9fb5013b2dfe8bf88c0764458fb5c7c1fb329c09940243e863d7daf0607",
+      "structure": 1747,
+      "vertices": [
+        [
+          279,
+          372
+        ],
+        [
+          284,
+          387
+        ],
+        [
+          287,
+          408
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_dp",
+      "sourceSeries": 542,
+      "frame": 15,
+      "annotation": "11886",
+      "imageSha256": "64275eb5485f0f7c2af10ee907d32302a78a6f6888936b85c097af8b27a1351c",
+      "structure": 1747,
+      "vertices": [
+        [
+          279,
+          372
+        ],
+        [
+          284,
+          387
+        ],
+        [
+          287,
+          408
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_",
+      "sourceSeries": 542,
+      "frame": 19,
+      "annotation": "11890",
+      "imageSha256": "f4509e5b803c8d82836824036156dad8a7eedc4cec1835709a0b23afeb470eea",
+      "structure": 1747,
+      "vertices": [
+        [
+          279,
+          383
+        ],
+        [
+          286,
+          393
+        ],
+        [
+          289,
+          406
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_dp",
+      "sourceSeries": 542,
+      "frame": 19,
+      "annotation": "11890",
+      "imageSha256": "7b29ee9fb9188319772c0923cb460718edc8683301322a8bb714eb2d567d4c58",
+      "structure": 1747,
+      "vertices": [
+        [
+          279,
+          383
+        ],
+        [
+          286,
+          393
+        ],
+        [
+          289,
+          406
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_",
+      "sourceSeries": 542,
+      "frame": 15,
+      "annotation": "11886",
+      "imageSha256": "8690b9fb5013b2dfe8bf88c0764458fb5c7c1fb329c09940243e863d7daf0607",
+      "structure": 1730,
+      "vertices": [
+        [
+          330,
+          319
+        ],
+        [
+          348,
+          324
+        ],
+        [
+          365,
+          321
+        ],
+        [
+          377,
+          313
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_dp",
+      "sourceSeries": 542,
+      "frame": 15,
+      "annotation": "11886",
+      "imageSha256": "64275eb5485f0f7c2af10ee907d32302a78a6f6888936b85c097af8b27a1351c",
+      "structure": 1730,
+      "vertices": [
+        [
+          330,
+          319
+        ],
+        [
+          348,
+          324
+        ],
+        [
+          365,
+          321
+        ],
+        [
+          377,
+          313
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_",
+      "sourceSeries": 542,
+      "frame": 17,
+      "annotation": "11888",
+      "imageSha256": "47be4f3a2befa3393674390296ec5418e3cd4b249bd50d6ad10fd51396a339a3",
+      "structure": 1730,
+      "vertices": [
+        [
+          305,
+          284
+        ],
+        [
+          325,
+          276
+        ],
+        [
+          346,
+          276
+        ],
+        [
+          365,
+          283
+        ],
+        [
+          381,
+          302
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_dp",
+      "sourceSeries": 542,
+      "frame": 17,
+      "annotation": "11888",
+      "imageSha256": "ca51f566e274205dc77baabeddf845402f54e3ddb657d45c8562513e7361b5e0",
+      "structure": 1730,
+      "vertices": [
+        [
+          305,
+          284
+        ],
+        [
+          325,
+          276
+        ],
+        [
+          346,
+          276
+        ],
+        [
+          365,
+          283
+        ],
+        [
+          381,
+          302
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_",
+      "sourceSeries": 542,
+      "frame": 19,
+      "annotation": "11890",
+      "imageSha256": "f4509e5b803c8d82836824036156dad8a7eedc4cec1835709a0b23afeb470eea",
+      "structure": 1730,
+      "vertices": [
+        [
+          295,
+          283
+        ],
+        [
+          315,
+          274
+        ],
+        [
+          339,
+          273
+        ],
+        [
+          360,
+          279
+        ],
+        [
+          378,
+          296
+        ],
+        [
+          393,
+          320
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_dp",
+      "sourceSeries": 542,
+      "frame": 19,
+      "annotation": "11890",
+      "imageSha256": "7b29ee9fb9188319772c0923cb460718edc8683301322a8bb714eb2d567d4c58",
+      "structure": 1730,
+      "vertices": [
+        [
+          295,
+          283
+        ],
+        [
+          315,
+          274
+        ],
+        [
+          339,
+          273
+        ],
+        [
+          360,
+          279
+        ],
+        [
+          378,
+          296
+        ],
+        [
+          393,
+          320
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_",
+      "sourceSeries": 542,
+      "frame": 20,
+      "annotation": "11891",
+      "imageSha256": "9101f90f87dba9955f8f0f4553657ddcdc52ef837448484ba82068b69f315b6d",
+      "structure": 1730,
+      "vertices": [
+        [
+          294,
+          282
+        ],
+        [
+          315,
+          273
+        ],
+        [
+          340,
+          273
+        ],
+        [
+          364,
+          280
+        ],
+        [
+          382,
+          300
+        ],
+        [
+          395,
+          324
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_dp",
+      "sourceSeries": 542,
+      "frame": 20,
+      "annotation": "11891",
+      "imageSha256": "c0cc800c1f88d272b338ca77740bbfd726d2a9249793e879715d423e2f63c18d",
+      "structure": 1730,
+      "vertices": [
+        [
+          294,
+          282
+        ],
+        [
+          315,
+          273
+        ],
+        [
+          340,
+          273
+        ],
+        [
+          364,
+          280
+        ],
+        [
+          382,
+          300
+        ],
+        [
+          395,
+          324
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_",
+      "sourceSeries": 542,
+      "frame": 22,
+      "annotation": "11893",
+      "imageSha256": "0e07fb0b5d9e60bbbcbeafa8409892b9d3a1a9b1dac88b0025024535ebc6546e",
+      "structure": 1730,
+      "vertices": [
+        [
+          294,
+          281
+        ],
+        [
+          314,
+          272
+        ],
+        [
+          338,
+          272
+        ],
+        [
+          362,
+          279
+        ],
+        [
+          383,
+          300
+        ],
+        [
+          395,
+          325
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_dp",
+      "sourceSeries": 542,
+      "frame": 22,
+      "annotation": "11893",
+      "imageSha256": "65f5b88a828056378d806cee16d503b88ea519e5bb2b8c56af80af8435cbe698",
+      "structure": 1730,
+      "vertices": [
+        [
+          294,
+          281
+        ],
+        [
+          314,
+          272
+        ],
+        [
+          338,
+          272
+        ],
+        [
+          362,
+          279
+        ],
+        [
+          383,
+          300
+        ],
+        [
+          395,
+          325
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_",
+      "sourceSeries": 542,
+      "frame": 25,
+      "annotation": "11896",
+      "imageSha256": "bd9dbaad0118a027719d065e06fc84e59910ccbc3824c803fee3890f08e182ee",
+      "structure": 1730,
+      "vertices": [
+        [
+          290,
+          280
+        ],
+        [
+          312,
+          272
+        ],
+        [
+          337,
+          272
+        ],
+        [
+          362,
+          279
+        ],
+        [
+          383,
+          299
+        ],
+        [
+          394,
+          321
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_dp",
+      "sourceSeries": 542,
+      "frame": 25,
+      "annotation": "11896",
+      "imageSha256": "e21bbd95bde760a69a58dee794d909385b0ae7a364584170cf43481d8db889bc",
+      "structure": 1730,
+      "vertices": [
+        [
+          290,
+          280
+        ],
+        [
+          312,
+          272
+        ],
+        [
+          337,
+          272
+        ],
+        [
+          362,
+          279
+        ],
+        [
+          383,
+          299
+        ],
+        [
+          394,
+          321
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_",
+      "sourceSeries": 542,
+      "frame": 15,
+      "annotation": "11886",
+      "imageSha256": "8690b9fb5013b2dfe8bf88c0764458fb5c7c1fb329c09940243e863d7daf0607",
+      "structure": 1740,
+      "vertices": [
+        [
+          346,
+          354
+        ],
+        [
+          359,
+          345
+        ],
+        [
+          374,
+          342
+        ],
+        [
+          386,
+          346
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_dp",
+      "sourceSeries": 542,
+      "frame": 15,
+      "annotation": "11886",
+      "imageSha256": "64275eb5485f0f7c2af10ee907d32302a78a6f6888936b85c097af8b27a1351c",
+      "structure": 1740,
+      "vertices": [
+        [
+          346,
+          354
+        ],
+        [
+          359,
+          345
+        ],
+        [
+          374,
+          342
+        ],
+        [
+          386,
+          346
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_",
+      "sourceSeries": 542,
+      "frame": 17,
+      "annotation": "11888",
+      "imageSha256": "47be4f3a2befa3393674390296ec5418e3cd4b249bd50d6ad10fd51396a339a3",
+      "structure": 1740,
+      "vertices": [
+        [
+          338,
+          359
+        ],
+        [
+          353,
+          350
+        ],
+        [
+          369,
+          347
+        ],
+        [
+          385,
+          350
+        ],
+        [
+          398,
+          357
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_dp",
+      "sourceSeries": 542,
+      "frame": 17,
+      "annotation": "11888",
+      "imageSha256": "ca51f566e274205dc77baabeddf845402f54e3ddb657d45c8562513e7361b5e0",
+      "structure": 1740,
+      "vertices": [
+        [
+          338,
+          359
+        ],
+        [
+          353,
+          350
+        ],
+        [
+          369,
+          347
+        ],
+        [
+          385,
+          350
+        ],
+        [
+          398,
+          357
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_",
+      "sourceSeries": 542,
+      "frame": 19,
+      "annotation": "11890",
+      "imageSha256": "f4509e5b803c8d82836824036156dad8a7eedc4cec1835709a0b23afeb470eea",
+      "structure": 1740,
+      "vertices": [
+        [
+          338,
+          360
+        ],
+        [
+          355,
+          349
+        ],
+        [
+          373,
+          346
+        ],
+        [
+          390,
+          350
+        ],
+        [
+          407,
+          360
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_dp",
+      "sourceSeries": 542,
+      "frame": 19,
+      "annotation": "11890",
+      "imageSha256": "7b29ee9fb9188319772c0923cb460718edc8683301322a8bb714eb2d567d4c58",
+      "structure": 1740,
+      "vertices": [
+        [
+          338,
+          360
+        ],
+        [
+          355,
+          349
+        ],
+        [
+          373,
+          346
+        ],
+        [
+          390,
+          350
+        ],
+        [
+          407,
+          360
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_",
+      "sourceSeries": 542,
+      "frame": 20,
+      "annotation": "11891",
+      "imageSha256": "9101f90f87dba9955f8f0f4553657ddcdc52ef837448484ba82068b69f315b6d",
+      "structure": 1740,
+      "vertices": [
+        [
+          337,
+          362
+        ],
+        [
+          355,
+          350
+        ],
+        [
+          374,
+          347
+        ],
+        [
+          392,
+          351
+        ],
+        [
+          409,
+          361
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_dp",
+      "sourceSeries": 542,
+      "frame": 20,
+      "annotation": "11891",
+      "imageSha256": "c0cc800c1f88d272b338ca77740bbfd726d2a9249793e879715d423e2f63c18d",
+      "structure": 1740,
+      "vertices": [
+        [
+          337,
+          362
+        ],
+        [
+          355,
+          350
+        ],
+        [
+          374,
+          347
+        ],
+        [
+          392,
+          351
+        ],
+        [
+          409,
+          361
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_",
+      "sourceSeries": 542,
+      "frame": 22,
+      "annotation": "11893",
+      "imageSha256": "0e07fb0b5d9e60bbbcbeafa8409892b9d3a1a9b1dac88b0025024535ebc6546e",
+      "structure": 1740,
+      "vertices": [
+        [
+          340,
+          363
+        ],
+        [
+          357,
+          351
+        ],
+        [
+          376,
+          349
+        ],
+        [
+          394,
+          353
+        ],
+        [
+          410,
+          364
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_dp",
+      "sourceSeries": 542,
+      "frame": 22,
+      "annotation": "11893",
+      "imageSha256": "65f5b88a828056378d806cee16d503b88ea519e5bb2b8c56af80af8435cbe698",
+      "structure": 1740,
+      "vertices": [
+        [
+          340,
+          363
+        ],
+        [
+          357,
+          351
+        ],
+        [
+          376,
+          349
+        ],
+        [
+          394,
+          353
+        ],
+        [
+          410,
+          364
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_",
+      "sourceSeries": 542,
+      "frame": 25,
+      "annotation": "11896",
+      "imageSha256": "bd9dbaad0118a027719d065e06fc84e59910ccbc3824c803fee3890f08e182ee",
+      "structure": 1740,
+      "vertices": [
+        [
+          342,
+          369
+        ],
+        [
+          360,
+          358
+        ],
+        [
+          377,
+          355
+        ],
+        [
+          393,
+          359
+        ],
+        [
+          405,
+          367
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_dp",
+      "sourceSeries": 542,
+      "frame": 25,
+      "annotation": "11896",
+      "imageSha256": "e21bbd95bde760a69a58dee794d909385b0ae7a364584170cf43481d8db889bc",
+      "structure": 1740,
+      "vertices": [
+        [
+          342,
+          369
+        ],
+        [
+          360,
+          358
+        ],
+        [
+          377,
+          355
+        ],
+        [
+          393,
+          359
+        ],
+        [
+          405,
+          367
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_",
+      "sourceSeries": 542,
+      "frame": 19,
+      "annotation": "11890",
+      "imageSha256": "f4509e5b803c8d82836824036156dad8a7eedc4cec1835709a0b23afeb470eea",
+      "structure": 1745,
+      "vertices": [
+        [
+          256,
+          337
+        ],
+        [
+          263,
+          346
+        ],
+        [
+          268,
+          357
+        ],
+        [
+          275,
+          364
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_dp",
+      "sourceSeries": 542,
+      "frame": 19,
+      "annotation": "11890",
+      "imageSha256": "7b29ee9fb9188319772c0923cb460718edc8683301322a8bb714eb2d567d4c58",
+      "structure": 1745,
+      "vertices": [
+        [
+          256,
+          337
+        ],
+        [
+          263,
+          346
+        ],
+        [
+          268,
+          357
+        ],
+        [
+          275,
+          364
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_",
+      "sourceSeries": 542,
+      "frame": 20,
+      "annotation": "11891",
+      "imageSha256": "9101f90f87dba9955f8f0f4553657ddcdc52ef837448484ba82068b69f315b6d",
+      "structure": 1745,
+      "vertices": [
+        [
+          253,
+          336
+        ],
+        [
+          261,
+          345
+        ],
+        [
+          266,
+          356
+        ],
+        [
+          273,
+          364
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_dp",
+      "sourceSeries": 542,
+      "frame": 20,
+      "annotation": "11891",
+      "imageSha256": "c0cc800c1f88d272b338ca77740bbfd726d2a9249793e879715d423e2f63c18d",
+      "structure": 1745,
+      "vertices": [
+        [
+          253,
+          336
+        ],
+        [
+          261,
+          345
+        ],
+        [
+          266,
+          356
+        ],
+        [
+          273,
+          364
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_",
+      "sourceSeries": 542,
+      "frame": 22,
+      "annotation": "11893",
+      "imageSha256": "0e07fb0b5d9e60bbbcbeafa8409892b9d3a1a9b1dac88b0025024535ebc6546e",
+      "structure": 1745,
+      "vertices": [
+        [
+          251,
+          333
+        ],
+        [
+          258,
+          343
+        ],
+        [
+          264,
+          355
+        ],
+        [
+          271,
+          362
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_dp",
+      "sourceSeries": 542,
+      "frame": 22,
+      "annotation": "11893",
+      "imageSha256": "65f5b88a828056378d806cee16d503b88ea519e5bb2b8c56af80af8435cbe698",
+      "structure": 1745,
+      "vertices": [
+        [
+          251,
+          333
+        ],
+        [
+          258,
+          343
+        ],
+        [
+          264,
+          355
+        ],
+        [
+          271,
+          362
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_",
+      "sourceSeries": 542,
+      "frame": 25,
+      "annotation": "11896",
+      "imageSha256": "bd9dbaad0118a027719d065e06fc84e59910ccbc3824c803fee3890f08e182ee",
+      "structure": 1745,
+      "vertices": [
+        [
+          255,
+          331
+        ],
+        [
+          262,
+          342
+        ],
+        [
+          268,
+          353
+        ],
+        [
+          276,
+          360
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_dp",
+      "sourceSeries": 542,
+      "frame": 25,
+      "annotation": "11896",
+      "imageSha256": "e21bbd95bde760a69a58dee794d909385b0ae7a364584170cf43481d8db889bc",
+      "structure": 1745,
+      "vertices": [
+        [
+          255,
+          331
+        ],
+        [
+          262,
+          342
+        ],
+        [
+          268,
+          353
+        ],
+        [
+          276,
+          360
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_",
+      "sourceSeries": 542,
+      "frame": 19,
+      "annotation": "11890",
+      "imageSha256": "f4509e5b803c8d82836824036156dad8a7eedc4cec1835709a0b23afeb470eea",
+      "structure": 1748,
+      "vertices": [
+        [
+          214,
+          349
+        ],
+        [
+          219,
+          360
+        ],
+        [
+          224,
+          372
+        ],
+        [
+          228,
+          380
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_dp",
+      "sourceSeries": 542,
+      "frame": 19,
+      "annotation": "11890",
+      "imageSha256": "7b29ee9fb9188319772c0923cb460718edc8683301322a8bb714eb2d567d4c58",
+      "structure": 1748,
+      "vertices": [
+        [
+          214,
+          349
+        ],
+        [
+          219,
+          360
+        ],
+        [
+          224,
+          372
+        ],
+        [
+          228,
+          380
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_",
+      "sourceSeries": 542,
+      "frame": 20,
+      "annotation": "11891",
+      "imageSha256": "9101f90f87dba9955f8f0f4553657ddcdc52ef837448484ba82068b69f315b6d",
+      "structure": 1748,
+      "vertices": [
+        [
+          212,
+          350
+        ],
+        [
+          217,
+          361
+        ],
+        [
+          222,
+          374
+        ],
+        [
+          227,
+          382
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_dp",
+      "sourceSeries": 542,
+      "frame": 20,
+      "annotation": "11891",
+      "imageSha256": "c0cc800c1f88d272b338ca77740bbfd726d2a9249793e879715d423e2f63c18d",
+      "structure": 1748,
+      "vertices": [
+        [
+          212,
+          350
+        ],
+        [
+          217,
+          361
+        ],
+        [
+          222,
+          374
+        ],
+        [
+          227,
+          382
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_",
+      "sourceSeries": 542,
+      "frame": 22,
+      "annotation": "11893",
+      "imageSha256": "0e07fb0b5d9e60bbbcbeafa8409892b9d3a1a9b1dac88b0025024535ebc6546e",
+      "structure": 1748,
+      "vertices": [
+        [
+          207,
+          354
+        ],
+        [
+          213,
+          366
+        ],
+        [
+          218,
+          378
+        ],
+        [
+          223,
+          386
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_dp",
+      "sourceSeries": 542,
+      "frame": 22,
+      "annotation": "11893",
+      "imageSha256": "65f5b88a828056378d806cee16d503b88ea519e5bb2b8c56af80af8435cbe698",
+      "structure": 1748,
+      "vertices": [
+        [
+          207,
+          354
+        ],
+        [
+          213,
+          366
+        ],
+        [
+          218,
+          378
+        ],
+        [
+          223,
+          386
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_",
+      "sourceSeries": 542,
+      "frame": 25,
+      "annotation": "11896",
+      "imageSha256": "bd9dbaad0118a027719d065e06fc84e59910ccbc3824c803fee3890f08e182ee",
+      "structure": 1748,
+      "vertices": [
+        [
+          213,
+          363
+        ],
+        [
+          218,
+          375
+        ],
+        [
+          224,
+          387
+        ],
+        [
+          229,
+          396
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_dp",
+      "sourceSeries": 542,
+      "frame": 25,
+      "annotation": "11896",
+      "imageSha256": "e21bbd95bde760a69a58dee794d909385b0ae7a364584170cf43481d8db889bc",
+      "structure": 1748,
+      "vertices": [
+        [
+          213,
+          363
+        ],
+        [
+          218,
+          375
+        ],
+        [
+          224,
+          387
+        ],
+        [
+          229,
+          396
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_",
+      "sourceSeries": 542,
+      "frame": 19,
+      "annotation": "11890",
+      "imageSha256": "f4509e5b803c8d82836824036156dad8a7eedc4cec1835709a0b23afeb470eea",
+      "structure": 1772,
+      "vertices": [
+        [
+          171,
+          365
+        ],
+        [
+          179,
+          383
+        ],
+        [
+          187,
+          400
+        ],
+        [
+          195,
+          418
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_dp",
+      "sourceSeries": 542,
+      "frame": 19,
+      "annotation": "11890",
+      "imageSha256": "7b29ee9fb9188319772c0923cb460718edc8683301322a8bb714eb2d567d4c58",
+      "structure": 1772,
+      "vertices": [
+        [
+          171,
+          365
+        ],
+        [
+          179,
+          383
+        ],
+        [
+          187,
+          400
+        ],
+        [
+          195,
+          418
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_",
+      "sourceSeries": 542,
+      "frame": 20,
+      "annotation": "11891",
+      "imageSha256": "9101f90f87dba9955f8f0f4553657ddcdc52ef837448484ba82068b69f315b6d",
+      "structure": 1772,
+      "vertices": [
+        [
+          165,
+          366
+        ],
+        [
+          173,
+          384
+        ],
+        [
+          182,
+          402
+        ],
+        [
+          190,
+          419
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_dp",
+      "sourceSeries": 542,
+      "frame": 20,
+      "annotation": "11891",
+      "imageSha256": "c0cc800c1f88d272b338ca77740bbfd726d2a9249793e879715d423e2f63c18d",
+      "structure": 1772,
+      "vertices": [
+        [
+          165,
+          366
+        ],
+        [
+          173,
+          384
+        ],
+        [
+          182,
+          402
+        ],
+        [
+          190,
+          419
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_",
+      "sourceSeries": 542,
+      "frame": 22,
+      "annotation": "11893",
+      "imageSha256": "0e07fb0b5d9e60bbbcbeafa8409892b9d3a1a9b1dac88b0025024535ebc6546e",
+      "structure": 1772,
+      "vertices": [
+        [
+          158,
+          369
+        ],
+        [
+          166,
+          387
+        ],
+        [
+          175,
+          405
+        ],
+        [
+          181,
+          421
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_dp",
+      "sourceSeries": 542,
+      "frame": 22,
+      "annotation": "11893",
+      "imageSha256": "65f5b88a828056378d806cee16d503b88ea519e5bb2b8c56af80af8435cbe698",
+      "structure": 1772,
+      "vertices": [
+        [
+          158,
+          369
+        ],
+        [
+          166,
+          387
+        ],
+        [
+          175,
+          405
+        ],
+        [
+          181,
+          421
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_",
+      "sourceSeries": 542,
+      "frame": 25,
+      "annotation": "11896",
+      "imageSha256": "bd9dbaad0118a027719d065e06fc84e59910ccbc3824c803fee3890f08e182ee",
+      "structure": 1772,
+      "vertices": [
+        [
+          144,
+          381
+        ],
+        [
+          151,
+          397
+        ],
+        [
+          157,
+          414
+        ]
+      ]
+    },
+    {
+      "series": "542-contraste_dp",
+      "sourceSeries": 542,
+      "frame": 25,
+      "annotation": "11896",
+      "imageSha256": "e21bbd95bde760a69a58dee794d909385b0ae7a364584170cf43481d8db889bc",
+      "structure": 1772,
+      "vertices": [
+        [
+          144,
+          381
+        ],
+        [
+          151,
+          397
+        ],
+        [
+          157,
+          414
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_",
+      "sourceSeries": 543,
+      "frame": 24,
+      "annotation": "11927",
+      "imageSha256": "4310260cd70f2847aba42c3bd476279f054a2743193e60cb9c8ad63cf59eaf97",
+      "structure": 1749,
+      "vertices": [
+        [
+          280,
+          352
+        ],
+        [
+          288,
+          371
+        ],
+        [
+          297,
+          392
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_dp",
+      "sourceSeries": 543,
+      "frame": 24,
+      "annotation": "11927",
+      "imageSha256": "4918817b805c9151c76cb263f38551f21ad15f1cc9463ce08c746a018aa96c0c",
+      "structure": 1749,
+      "vertices": [
+        [
+          280,
+          352
+        ],
+        [
+          288,
+          371
+        ],
+        [
+          297,
+          392
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_",
+      "sourceSeries": 543,
+      "frame": 26,
+      "annotation": "11929",
+      "imageSha256": "4f116d3f2d57e7b13954b7589c81b29c290db9ad414352b9ddadcca0ce9b8d71",
+      "structure": 1749,
+      "vertices": [
+        [
+          286,
+          366
+        ],
+        [
+          292,
+          386
+        ],
+        [
+          298,
+          407
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_dp",
+      "sourceSeries": 543,
+      "frame": 26,
+      "annotation": "11929",
+      "imageSha256": "ea04fa9ca8125f4d4d82afb66b73ae25ab9d90fcc333d538e96443c9b8e0c0a8",
+      "structure": 1749,
+      "vertices": [
+        [
+          286,
+          366
+        ],
+        [
+          292,
+          386
+        ],
+        [
+          298,
+          407
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_",
+      "sourceSeries": 543,
+      "frame": 26,
+      "annotation": "11929",
+      "imageSha256": "4f116d3f2d57e7b13954b7589c81b29c290db9ad414352b9ddadcca0ce9b8d71",
+      "structure": 1749,
+      "vertices": [
+        [
+          235,
+          370
+        ],
+        [
+          246,
+          384
+        ],
+        [
+          257,
+          395
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_dp",
+      "sourceSeries": 543,
+      "frame": 26,
+      "annotation": "11929",
+      "imageSha256": "ea04fa9ca8125f4d4d82afb66b73ae25ab9d90fcc333d538e96443c9b8e0c0a8",
+      "structure": 1749,
+      "vertices": [
+        [
+          235,
+          370
+        ],
+        [
+          246,
+          384
+        ],
+        [
+          257,
+          395
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_",
+      "sourceSeries": 543,
+      "frame": 28,
+      "annotation": "11931",
+      "imageSha256": "be05672bcfebf8458f55295b6d64b261c489cc9b3bb87043af1a56864ce2dd5e",
+      "structure": 1749,
+      "vertices": [
+        [
+          285,
+          389
+        ],
+        [
+          288,
+          410
+        ],
+        [
+          289,
+          432
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_dp",
+      "sourceSeries": 543,
+      "frame": 28,
+      "annotation": "11931",
+      "imageSha256": "c95afac350bdd96b3438f0484a77f6b01f2b778d8b1f78832a963f8598edc548",
+      "structure": 1749,
+      "vertices": [
+        [
+          285,
+          389
+        ],
+        [
+          288,
+          410
+        ],
+        [
+          289,
+          432
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_",
+      "sourceSeries": 543,
+      "frame": 28,
+      "annotation": "11931",
+      "imageSha256": "be05672bcfebf8458f55295b6d64b261c489cc9b3bb87043af1a56864ce2dd5e",
+      "structure": 1749,
+      "vertices": [
+        [
+          248,
+          375
+        ],
+        [
+          260,
+          388
+        ],
+        [
+          269,
+          402
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_dp",
+      "sourceSeries": 543,
+      "frame": 28,
+      "annotation": "11931",
+      "imageSha256": "c95afac350bdd96b3438f0484a77f6b01f2b778d8b1f78832a963f8598edc548",
+      "structure": 1749,
+      "vertices": [
+        [
+          248,
+          375
+        ],
+        [
+          260,
+          388
+        ],
+        [
+          269,
+          402
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_",
+      "sourceSeries": 543,
+      "frame": 28,
+      "annotation": "11931",
+      "imageSha256": "be05672bcfebf8458f55295b6d64b261c489cc9b3bb87043af1a56864ce2dd5e",
+      "structure": 1748,
+      "vertices": [
+        [
+          287,
+          368
+        ],
+        [
+          304,
+          380
+        ],
+        [
+          321,
+          388
+        ],
+        [
+          341,
+          392
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_dp",
+      "sourceSeries": 543,
+      "frame": 28,
+      "annotation": "11931",
+      "imageSha256": "c95afac350bdd96b3438f0484a77f6b01f2b778d8b1f78832a963f8598edc548",
+      "structure": 1748,
+      "vertices": [
+        [
+          287,
+          368
+        ],
+        [
+          304,
+          380
+        ],
+        [
+          321,
+          388
+        ],
+        [
+          341,
+          392
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_",
+      "sourceSeries": 543,
+      "frame": 32,
+      "annotation": "11935",
+      "imageSha256": "51022ef00bc0dbd1c9a063cdacfd3b328d88a6fcded1e10e62c8ab325cf2074f",
+      "structure": 1748,
+      "vertices": [
+        [
+          325,
+          417
+        ],
+        [
+          337,
+          423
+        ],
+        [
+          346,
+          424
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_dp",
+      "sourceSeries": 543,
+      "frame": 32,
+      "annotation": "11935",
+      "imageSha256": "0dbae95f914770dd34932402d28a29a5b80bec868b0a1493b37fec33a3565201",
+      "structure": 1748,
+      "vertices": [
+        [
+          325,
+          417
+        ],
+        [
+          337,
+          423
+        ],
+        [
+          346,
+          424
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_",
+      "sourceSeries": 543,
+      "frame": 28,
+      "annotation": "11931",
+      "imageSha256": "be05672bcfebf8458f55295b6d64b261c489cc9b3bb87043af1a56864ce2dd5e",
+      "structure": 151103,
+      "vertices": [
+        [
+          211,
+          415
+        ],
+        [
+          229,
+          425
+        ],
+        [
+          244,
+          430
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_dp",
+      "sourceSeries": 543,
+      "frame": 28,
+      "annotation": "11931",
+      "imageSha256": "c95afac350bdd96b3438f0484a77f6b01f2b778d8b1f78832a963f8598edc548",
+      "structure": 151103,
+      "vertices": [
+        [
+          211,
+          415
+        ],
+        [
+          229,
+          425
+        ],
+        [
+          244,
+          430
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_",
+      "sourceSeries": 543,
+      "frame": 35,
+      "annotation": "11938",
+      "imageSha256": "8a354a8d2b1d096844d7b4a574812b819e65949ff9d3f45626c206912366f190",
+      "structure": 1745,
+      "vertices": [
+        [
+          316,
+          357
+        ],
+        [
+          328,
+          370
+        ],
+        [
+          334,
+          386
+        ],
+        [
+          331,
+          402
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_dp",
+      "sourceSeries": 543,
+      "frame": 35,
+      "annotation": "11938",
+      "imageSha256": "84e054620728ce61beb575ccb798098872cee4a4c9388b93b3d1972d0baacd2a",
+      "structure": 1745,
+      "vertices": [
+        [
+          316,
+          357
+        ],
+        [
+          328,
+          370
+        ],
+        [
+          334,
+          386
+        ],
+        [
+          331,
+          402
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_",
+      "sourceSeries": 543,
+      "frame": 38,
+      "annotation": "11941",
+      "imageSha256": "5051e137c3d166bc12cb3655f6c700a6cfca2883723918892fc0d8dca3e4a87f",
+      "structure": 1747,
+      "vertices": [
+        [
+          235,
+          402
+        ],
+        [
+          241,
+          415
+        ],
+        [
+          239,
+          430
+        ],
+        [
+          225,
+          440
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_dp",
+      "sourceSeries": 543,
+      "frame": 38,
+      "annotation": "11941",
+      "imageSha256": "8e57207d19c869c7b04c30edc3537da25d1eec4e49193b2ff43a77a63a8aef0b",
+      "structure": 1747,
+      "vertices": [
+        [
+          235,
+          402
+        ],
+        [
+          241,
+          415
+        ],
+        [
+          239,
+          430
+        ],
+        [
+          225,
+          440
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_",
+      "sourceSeries": 543,
+      "frame": 46,
+      "annotation": "11949",
+      "imageSha256": "df56fe4ab548fce0967d5102cc5b728fa1804f6314b9a0c839e39ca3a0d08151",
+      "structure": 1730,
+      "vertices": [
+        [
+          217,
+          243
+        ],
+        [
+          242,
+          246
+        ],
+        [
+          272,
+          247
+        ],
+        [
+          305,
+          247
+        ],
+        [
+          328,
+          256
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_dp",
+      "sourceSeries": 543,
+      "frame": 46,
+      "annotation": "11949",
+      "imageSha256": "78a6c74fd7fb885e7fb3eb683d1149166d3880f57dbae3911c10cb0ca3bfac27",
+      "structure": 1730,
+      "vertices": [
+        [
+          217,
+          243
+        ],
+        [
+          242,
+          246
+        ],
+        [
+          272,
+          247
+        ],
+        [
+          305,
+          247
+        ],
+        [
+          328,
+          256
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_",
+      "sourceSeries": 543,
+      "frame": 50,
+      "annotation": "11953",
+      "imageSha256": "928eba92675d4f6c0377c1b111e8b1f2bb43a2194cb595726c6afd79200b3961",
+      "structure": 1730,
+      "vertices": [
+        [
+          204,
+          289
+        ],
+        [
+          221,
+          270
+        ],
+        [
+          233,
+          240
+        ],
+        [
+          263,
+          240
+        ],
+        [
+          298,
+          241
+        ],
+        [
+          326,
+          248
+        ],
+        [
+          343,
+          268
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_dp",
+      "sourceSeries": 543,
+      "frame": 50,
+      "annotation": "11953",
+      "imageSha256": "3b6c4472d9613a763aa4686939584d6de8095890ba2a5e3597fbf3daf0b965d0",
+      "structure": 1730,
+      "vertices": [
+        [
+          204,
+          289
+        ],
+        [
+          221,
+          270
+        ],
+        [
+          233,
+          240
+        ],
+        [
+          263,
+          240
+        ],
+        [
+          298,
+          241
+        ],
+        [
+          326,
+          248
+        ],
+        [
+          343,
+          268
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_",
+      "sourceSeries": 543,
+      "frame": 50,
+      "annotation": "11953",
+      "imageSha256": "928eba92675d4f6c0377c1b111e8b1f2bb43a2194cb595726c6afd79200b3961",
+      "structure": 1740,
+      "vertices": [
+        [
+          219,
+          325
+        ],
+        [
+          241,
+          329
+        ],
+        [
+          263,
+          336
+        ],
+        [
+          285,
+          345
+        ],
+        [
+          307,
+          357
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_dp",
+      "sourceSeries": 543,
+      "frame": 50,
+      "annotation": "11953",
+      "imageSha256": "3b6c4472d9613a763aa4686939584d6de8095890ba2a5e3597fbf3daf0b965d0",
+      "structure": 1740,
+      "vertices": [
+        [
+          219,
+          325
+        ],
+        [
+          241,
+          329
+        ],
+        [
+          263,
+          336
+        ],
+        [
+          285,
+          345
+        ],
+        [
+          307,
+          357
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_",
+      "sourceSeries": 543,
+      "frame": 53,
+      "annotation": "11956",
+      "imageSha256": "d4d55e619a66a8f0783c7ec37f27ebbc47eb4a87b3d2ba398c1f9e71ea1ad0d8",
+      "structure": 1740,
+      "vertices": [
+        [
+          212,
+          315
+        ],
+        [
+          235,
+          321
+        ],
+        [
+          260,
+          330
+        ],
+        [
+          285,
+          343
+        ]
+      ]
+    },
+    {
+      "series": "543-contraste_dp",
+      "sourceSeries": 543,
+      "frame": 53,
+      "annotation": "11956",
+      "imageSha256": "2cb7d4e408916c640957fac5d8a377b25a5371ca47e7dfdbfa6ebc4db96cb569",
+      "structure": 1740,
+      "vertices": [
+        [
+          212,
+          315
+        ],
+        [
+          235,
+          321
+        ],
+        [
+          260,
+          330
+        ],
+        [
+          285,
+          343
+        ]
+      ]
+    }
+  ],
+  "sourceDataSha256": "cf627ffe4815255ef7c216a36e94b26c0fcfc21e2ac6e0c025e9cd843f460aa4",
+  "sourceLabelsSha256": "9c75261df517f84aff7d9e02267852190aa08ee9c8a266007c2340ee825dc8fe",
+  "untraced": [
+    1744,
+    1781,
+    151102,
+    151104
+  ],
+  "reclassified": [
+    1687,
+    1780
+  ],
+  "rejectedCandidates": [
+    {
+      "sourceSeries": 541,
+      "frame": 27,
+      "structure": 151102,
+      "vertices": [
+        [
+          284,
+          385
+        ],
+        [
+          297,
+          389
+        ],
+        [
+          308,
+          396
+        ]
+      ],
+      "decision": "not published: joint gap could not be independently resolved at this location"
+    },
+    {
+      "sourceSeries": 542,
+      "frame": 20,
+      "structure": 151102,
+      "vertices": [
+        [
+          282,
+          367
+        ],
+        [
+          292,
+          370
+        ],
+        [
+          302,
+          367
+        ]
+      ],
+      "decision": "not published: joint gap could not be independently resolved at this location"
+    },
+    {
+      "sourceSeries": 543,
+      "frame": 19,
+      "structure": 1772,
+      "vertices": [
+        [
+          291,
+          398
+        ],
+        [
+          310,
+          402
+        ],
+        [
+          326,
+          408
+        ]
+      ],
+      "decision": "not published: joint gap could not be independently resolved at this location"
+    },
+    {
+      "sourceSeries": 543,
+      "frame": 24,
+      "structure": 1772,
+      "vertices": [
+        [
+          224,
+          421
+        ],
+        [
+          243,
+          429
+        ],
+        [
+          260,
+          436
+        ]
+      ],
+      "decision": "not published: joint gap could not be independently resolved at this location"
+    },
+    {
+      "sourceSeries": 543,
+      "frame": 28,
+      "structure": 1772,
+      "vertices": [
+        [
+          203,
+          470
+        ],
+        [
+          217,
+          479
+        ],
+        [
+          232,
+          481
+        ]
+      ],
+      "decision": "not published: joint gap could not be independently resolved at this location"
+    }
+  ],
+  "sourcePointDecisions": [
+    {
+      "annotation": "11834",
+      "pointId": 541238,
+      "structure": 1687,
+      "originalName": "Межберцовый синдесмоз",
+      "x": 228,
+      "y": 432,
+      "decision": "separate syndesmosis group"
+    },
+    {
+      "annotation": "11835",
+      "pointId": 541277,
+      "structure": 1687,
+      "originalName": "Межберцовый синдесмоз",
+      "x": 228,
+      "y": 432,
+      "decision": "separate syndesmosis group"
+    },
+    {
+      "annotation": "11836",
+      "pointId": 541316,
+      "structure": 1687,
+      "originalName": "Межберцовый синдесмоз",
+      "x": 228,
+      "y": 432,
+      "decision": "separate syndesmosis group"
+    },
+    {
+      "annotation": "11837",
+      "pointId": 541354,
+      "structure": 1687,
+      "originalName": "Межберцовый синдесмоз",
+      "x": 228,
+      "y": 432,
+      "decision": "separate syndesmosis group"
+    },
+    {
+      "annotation": "11838",
+      "pointId": 541393,
+      "structure": 1687,
+      "originalName": "Межберцовый синдесмоз",
+      "x": 228,
+      "y": 432,
+      "decision": "separate syndesmosis group"
+    },
+    {
+      "annotation": "11839",
+      "pointId": 541404,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 251,
+      "y": 422,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11840",
+      "pointId": 541444,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 275,
+      "y": 435,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11841",
+      "pointId": 541484,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 300,
+      "y": 448,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11842",
+      "pointId": 541527,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 329,
+      "y": 400,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11848",
+      "pointId": 541821,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 335,
+      "y": 332,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11848",
+      "pointId": 541822,
+      "structure": 1745,
+      "originalName": "Таранно-пяточно-ладьевидный сустав",
+      "x": 292,
+      "y": 310,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11848",
+      "pointId": 541847,
+      "structure": 1740,
+      "originalName": "Подтаранный сустав; пяточный сустав",
+      "x": 243,
+      "y": 459,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11849",
+      "pointId": 541884,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 334,
+      "y": 336,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11849",
+      "pointId": 541885,
+      "structure": 1745,
+      "originalName": "Таранно-пяточно-ладьевидный сустав",
+      "x": 289,
+      "y": 314,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11849",
+      "pointId": 541889,
+      "structure": 1748,
+      "originalName": "Клиноладьевидный сустав",
+      "x": 283,
+      "y": 268,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11849",
+      "pointId": 541910,
+      "structure": 1740,
+      "originalName": "Подтаранный сустав; пяточный сустав",
+      "x": 246,
+      "y": 446,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11850",
+      "pointId": 541948,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 334,
+      "y": 339,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11850",
+      "pointId": 541949,
+      "structure": 1745,
+      "originalName": "Таранно-пяточно-ладьевидный сустав",
+      "x": 285,
+      "y": 319,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11850",
+      "pointId": 541953,
+      "structure": 1748,
+      "originalName": "Клиноладьевидный сустав",
+      "x": 290,
+      "y": 270,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11850",
+      "pointId": 541954,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 293,
+      "y": 235,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11850",
+      "pointId": 541973,
+      "structure": 1740,
+      "originalName": "Подтаранный сустав; пяточный сустав",
+      "x": 248,
+      "y": 433,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11851",
+      "pointId": 542010,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 334,
+      "y": 343,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11851",
+      "pointId": 542011,
+      "structure": 1745,
+      "originalName": "Таранно-пяточно-ладьевидный сустав",
+      "x": 282,
+      "y": 323,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11851",
+      "pointId": 542015,
+      "structure": 1748,
+      "originalName": "Клиноладьевидный сустав",
+      "x": 296,
+      "y": 272,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11851",
+      "pointId": 542016,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 293,
+      "y": 239,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11851",
+      "pointId": 542017,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 301,
+      "y": 194,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11851",
+      "pointId": 542034,
+      "structure": 1740,
+      "originalName": "Подтаранный сустав; пяточный сустав",
+      "x": 250,
+      "y": 420,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11852",
+      "pointId": 542079,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 334,
+      "y": 347,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11852",
+      "pointId": 542080,
+      "structure": 1745,
+      "originalName": "Таранно-пяточно-ладьевидный сустав",
+      "x": 279,
+      "y": 327,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11852",
+      "pointId": 542084,
+      "structure": 1748,
+      "originalName": "Клиноладьевидный сустав",
+      "x": 303,
+      "y": 274,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11852",
+      "pointId": 542085,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 293,
+      "y": 242,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11852",
+      "pointId": 542086,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 261,
+      "y": 259,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11852",
+      "pointId": 542087,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 301,
+      "y": 194,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11853",
+      "pointId": 542147,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 332,
+      "y": 355,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11853",
+      "pointId": 542148,
+      "structure": 1745,
+      "originalName": "Таранно-пяточно-ладьевидный сустав",
+      "x": 272,
+      "y": 336,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11853",
+      "pointId": 542149,
+      "structure": 1747,
+      "originalName": "Пяточно-кубовидный сустав",
+      "x": 225,
+      "y": 340,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11853",
+      "pointId": 542153,
+      "structure": 1748,
+      "originalName": "Клиноладьевидный сустав",
+      "x": 309,
+      "y": 276,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11853",
+      "pointId": 542154,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 293,
+      "y": 246,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11853",
+      "pointId": 542155,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 263,
+      "y": 259,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11853",
+      "pointId": 542156,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 332,
+      "y": 190,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11854",
+      "pointId": 542219,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 332,
+      "y": 355,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11854",
+      "pointId": 542220,
+      "structure": 1745,
+      "originalName": "Таранно-пяточно-ладьевидный сустав",
+      "x": 265,
+      "y": 345,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11854",
+      "pointId": 542221,
+      "structure": 1747,
+      "originalName": "Пяточно-кубовидный сустав",
+      "x": 225,
+      "y": 341,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11854",
+      "pointId": 542223,
+      "structure": 1748,
+      "originalName": "Клиноладьевидный сустав",
+      "x": 316,
+      "y": 278,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11854",
+      "pointId": 542224,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 293,
+      "y": 249,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11854",
+      "pointId": 542225,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 266,
+      "y": 259,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11854",
+      "pointId": 542226,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 332,
+      "y": 190,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11855",
+      "pointId": 542288,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 332,
+      "y": 355,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11855",
+      "pointId": 542289,
+      "structure": 1747,
+      "originalName": "Пяточно-кубовидный сустав",
+      "x": 225,
+      "y": 343,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11855",
+      "pointId": 542290,
+      "structure": 1748,
+      "originalName": "Клиноладьевидный сустав",
+      "x": 321,
+      "y": 285,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11855",
+      "pointId": 542291,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 295,
+      "y": 249,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11855",
+      "pointId": 542292,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 268,
+      "y": 259,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11855",
+      "pointId": 542293,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 332,
+      "y": 190,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11855",
+      "pointId": 542318,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 286,
+      "y": 140,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11856",
+      "pointId": 542353,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 261,
+      "y": 360,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11856",
+      "pointId": 542354,
+      "structure": 1747,
+      "originalName": "Пяточно-кубовидный сустав",
+      "x": 225,
+      "y": 344,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11856",
+      "pointId": 542355,
+      "structure": 1748,
+      "originalName": "Клиноладьевидный сустав",
+      "x": 326,
+      "y": 293,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11856",
+      "pointId": 542356,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 297,
+      "y": 249,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11856",
+      "pointId": 542357,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 268,
+      "y": 253,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11856",
+      "pointId": 542358,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 310,
+      "y": 203,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11856",
+      "pointId": 542383,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 289,
+      "y": 130,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11857",
+      "pointId": 542419,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 261,
+      "y": 360,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11857",
+      "pointId": 542420,
+      "structure": 1747,
+      "originalName": "Пяточно-кубовидный сустав",
+      "x": 225,
+      "y": 345,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11857",
+      "pointId": 542421,
+      "structure": 1748,
+      "originalName": "Клиноладьевидный сустав",
+      "x": 331,
+      "y": 300,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11857",
+      "pointId": 542422,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 298,
+      "y": 249,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11857",
+      "pointId": 542423,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 268,
+      "y": 246,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11857",
+      "pointId": 542424,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 310,
+      "y": 203,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11857",
+      "pointId": 542447,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 292,
+      "y": 120,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11858",
+      "pointId": 542481,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 261,
+      "y": 360,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11858",
+      "pointId": 542482,
+      "structure": 1747,
+      "originalName": "Пяточно-кубовидный сустав",
+      "x": 225,
+      "y": 346,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11858",
+      "pointId": 542483,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 310,
+      "y": 203,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11858",
+      "pointId": 542508,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 295,
+      "y": 111,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11859",
+      "pointId": 542537,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 261,
+      "y": 360,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11859",
+      "pointId": 542538,
+      "structure": 1747,
+      "originalName": "Пяточно-кубовидный сустав",
+      "x": 225,
+      "y": 348,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11859",
+      "pointId": 542539,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 310,
+      "y": 211,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11859",
+      "pointId": 542563,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 298,
+      "y": 101,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11860",
+      "pointId": 542592,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 261,
+      "y": 360,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11860",
+      "pointId": 542593,
+      "structure": 1747,
+      "originalName": "Пяточно-кубовидный сустав",
+      "x": 225,
+      "y": 349,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11860",
+      "pointId": 542594,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 310,
+      "y": 211,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11860",
+      "pointId": 542618,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 301,
+      "y": 91,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11861",
+      "pointId": 542645,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 310,
+      "y": 211,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11861",
+      "pointId": 542669,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 216,
+      "y": 135,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11862",
+      "pointId": 542694,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 226,
+      "y": 251,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11862",
+      "pointId": 542719,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 218,
+      "y": 124,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11862",
+      "pointId": 542720,
+      "structure": 1781,
+      "originalName": "Плюснефаланговые  суставы",
+      "x": 194,
+      "y": 49,
+      "decision": "unreliable/cropped forefoot location; no path invented"
+    },
+    {
+      "annotation": "11863",
+      "pointId": 542747,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 226,
+      "y": 251,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11863",
+      "pointId": 542771,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 220,
+      "y": 114,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11863",
+      "pointId": 542772,
+      "structure": 1781,
+      "originalName": "Плюснефаланговые  суставы",
+      "x": 194,
+      "y": 49,
+      "decision": "unreliable/cropped forefoot location; no path invented"
+    },
+    {
+      "annotation": "11864",
+      "pointId": 542799,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 223,
+      "y": 262,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11864",
+      "pointId": 542820,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 222,
+      "y": 103,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11864",
+      "pointId": 542821,
+      "structure": 1781,
+      "originalName": "Плюснефаланговые  суставы",
+      "x": 194,
+      "y": 49,
+      "decision": "unreliable/cropped forefoot location; no path invented"
+    },
+    {
+      "annotation": "11865",
+      "pointId": 542863,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 187,
+      "y": 137,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11865",
+      "pointId": 542864,
+      "structure": 1781,
+      "originalName": "Плюснефаланговые  суставы",
+      "x": 146,
+      "y": 82,
+      "decision": "unreliable/cropped forefoot location; no path invented"
+    },
+    {
+      "annotation": "11878",
+      "pointId": 543060,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 114,
+      "y": 457,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11878",
+      "pointId": 543061,
+      "structure": 1781,
+      "originalName": "Плюснефаланговые  суставы",
+      "x": 39,
+      "y": 448,
+      "decision": "unreliable/cropped forefoot location; no path invented"
+    },
+    {
+      "annotation": "11879",
+      "pointId": 543082,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 135,
+      "y": 450,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11879",
+      "pointId": 543083,
+      "structure": 1781,
+      "originalName": "Плюснефаланговые  суставы",
+      "x": 36,
+      "y": 441,
+      "decision": "unreliable/cropped forefoot location; no path invented"
+    },
+    {
+      "annotation": "11880",
+      "pointId": 543100,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 270,
+      "y": 470,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11880",
+      "pointId": 543110,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 156,
+      "y": 444,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11880",
+      "pointId": 543111,
+      "structure": 1781,
+      "originalName": "Плюснефаланговые  суставы",
+      "x": 36,
+      "y": 441,
+      "decision": "unreliable/cropped forefoot location; no path invented"
+    },
+    {
+      "annotation": "11881",
+      "pointId": 543131,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 270,
+      "y": 470,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11881",
+      "pointId": 543145,
+      "structure": 1781,
+      "originalName": "Плюснефаланговые  суставы",
+      "x": 36,
+      "y": 441,
+      "decision": "unreliable/cropped forefoot location; no path invented"
+    },
+    {
+      "annotation": "11882",
+      "pointId": 543169,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 293,
+      "y": 384,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11882",
+      "pointId": 543170,
+      "structure": 1747,
+      "originalName": "Пяточно-кубовидный сустав",
+      "x": 289,
+      "y": 409,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11882",
+      "pointId": 543171,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 255,
+      "y": 468,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11883",
+      "pointId": 543222,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 292,
+      "y": 384,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11883",
+      "pointId": 543223,
+      "structure": 1747,
+      "originalName": "Пяточно-кубовидный сустав",
+      "x": 289,
+      "y": 407,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11883",
+      "pointId": 543225,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 255,
+      "y": 468,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11883",
+      "pointId": 543247,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 120,
+      "y": 437,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11884",
+      "pointId": 543283,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 291,
+      "y": 384,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11884",
+      "pointId": 543284,
+      "structure": 1747,
+      "originalName": "Пяточно-кубовидный сустав",
+      "x": 289,
+      "y": 405,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11884",
+      "pointId": 543287,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 212,
+      "y": 448,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11884",
+      "pointId": 543311,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 106,
+      "y": 420,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11884",
+      "pointId": 543312,
+      "structure": 1781,
+      "originalName": "Плюснефаланговые  суставы",
+      "x": 19,
+      "y": 442,
+      "decision": "unreliable/cropped forefoot location; no path invented"
+    },
+    {
+      "annotation": "11885",
+      "pointId": 543354,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 290,
+      "y": 384,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11885",
+      "pointId": 543355,
+      "structure": 1747,
+      "originalName": "Пяточно-кубовидный сустав",
+      "x": 289,
+      "y": 404,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11885",
+      "pointId": 543359,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 212,
+      "y": 448,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11885",
+      "pointId": 543378,
+      "structure": 1740,
+      "originalName": "Подтаранный сустав; пяточный сустав",
+      "x": 365,
+      "y": 354,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11885",
+      "pointId": 543388,
+      "structure": 1781,
+      "originalName": "Плюснефаланговые  суставы",
+      "x": 19,
+      "y": 442,
+      "decision": "unreliable/cropped forefoot location; no path invented"
+    },
+    {
+      "annotation": "11885",
+      "pointId": 543413,
+      "structure": 1687,
+      "originalName": "Межберцовый синдесмоз",
+      "x": 348,
+      "y": 253,
+      "decision": "separate syndesmosis group"
+    },
+    {
+      "annotation": "11886",
+      "pointId": 543433,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 287,
+      "y": 384,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11886",
+      "pointId": 543434,
+      "structure": 1747,
+      "originalName": "Пяточно-кубовидный сустав",
+      "x": 289,
+      "y": 402,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11886",
+      "pointId": 543435,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 374,
+      "y": 323,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11886",
+      "pointId": 543438,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 212,
+      "y": 448,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11886",
+      "pointId": 543464,
+      "structure": 1740,
+      "originalName": "Подтаранный сустав; пяточный сустав",
+      "x": 365,
+      "y": 354,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11886",
+      "pointId": 543478,
+      "structure": 1781,
+      "originalName": "Плюснефаланговые  суставы",
+      "x": 19,
+      "y": 442,
+      "decision": "unreliable/cropped forefoot location; no path invented"
+    },
+    {
+      "annotation": "11886",
+      "pointId": 543503,
+      "structure": 1687,
+      "originalName": "Межберцовый синдесмоз",
+      "x": 348,
+      "y": 253,
+      "decision": "separate syndesmosis group"
+    },
+    {
+      "annotation": "11887",
+      "pointId": 543525,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 285,
+      "y": 384,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11887",
+      "pointId": 543526,
+      "structure": 1747,
+      "originalName": "Пяточно-кубовидный сустав",
+      "x": 289,
+      "y": 400,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11887",
+      "pointId": 543527,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 374,
+      "y": 323,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11887",
+      "pointId": 543530,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 210,
+      "y": 425,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11887",
+      "pointId": 543556,
+      "structure": 1740,
+      "originalName": "Подтаранный сустав; пяточный сустав",
+      "x": 365,
+      "y": 354,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11887",
+      "pointId": 543571,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 120,
+      "y": 424,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11887",
+      "pointId": 543572,
+      "structure": 1781,
+      "originalName": "Плюснефаланговые  суставы",
+      "x": 19,
+      "y": 442,
+      "decision": "unreliable/cropped forefoot location; no path invented"
+    },
+    {
+      "annotation": "11887",
+      "pointId": 543600,
+      "structure": 1687,
+      "originalName": "Межберцовый синдесмоз",
+      "x": 348,
+      "y": 253,
+      "decision": "separate syndesmosis group"
+    },
+    {
+      "annotation": "11888",
+      "pointId": 543624,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 282,
+      "y": 384,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11888",
+      "pointId": 543625,
+      "structure": 1745,
+      "originalName": "Таранно-пяточно-ладьевидный сустав",
+      "x": 268,
+      "y": 369,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11888",
+      "pointId": 543626,
+      "structure": 1747,
+      "originalName": "Пяточно-кубовидный сустав",
+      "x": 289,
+      "y": 398,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11888",
+      "pointId": 543628,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 374,
+      "y": 288,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11888",
+      "pointId": 543631,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 210,
+      "y": 425,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11888",
+      "pointId": 543658,
+      "structure": 1740,
+      "originalName": "Подтаранный сустав; пяточный сустав",
+      "x": 365,
+      "y": 354,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11888",
+      "pointId": 543671,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 104,
+      "y": 405,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11889",
+      "pointId": 543717,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 282,
+      "y": 380,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11889",
+      "pointId": 543718,
+      "structure": 1745,
+      "originalName": "Таранно-пяточно-ладьевидный сустав",
+      "x": 265,
+      "y": 366,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11889",
+      "pointId": 543719,
+      "structure": 1747,
+      "originalName": "Пяточно-кубовидный сустав",
+      "x": 289,
+      "y": 396,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11889",
+      "pointId": 543721,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 374,
+      "y": 288,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11889",
+      "pointId": 543724,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 212,
+      "y": 374,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11889",
+      "pointId": 543725,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 201,
+      "y": 426,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11889",
+      "pointId": 543754,
+      "structure": 1740,
+      "originalName": "Подтаранный сустав; пяточный сустав",
+      "x": 368,
+      "y": 353,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11890",
+      "pointId": 543812,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 282,
+      "y": 375,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11890",
+      "pointId": 543813,
+      "structure": 1745,
+      "originalName": "Таранно-пяточно-ладьевидный сустав",
+      "x": 262,
+      "y": 362,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11890",
+      "pointId": 543814,
+      "structure": 1747,
+      "originalName": "Пяточно-кубовидный сустав",
+      "x": 289,
+      "y": 394,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11890",
+      "pointId": 543815,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 374,
+      "y": 288,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11890",
+      "pointId": 543816,
+      "structure": 1748,
+      "originalName": "Клиноладьевидный сустав",
+      "x": 226,
+      "y": 358,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11890",
+      "pointId": 543817,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 217,
+      "y": 382,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11890",
+      "pointId": 543818,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 201,
+      "y": 426,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11890",
+      "pointId": 543846,
+      "structure": 1740,
+      "originalName": "Подтаранный сустав; пяточный сустав",
+      "x": 370,
+      "y": 353,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11890",
+      "pointId": 543860,
+      "structure": 1781,
+      "originalName": "Плюснефаланговые  суставы",
+      "x": 10,
+      "y": 440,
+      "decision": "unreliable/cropped forefoot location; no path invented"
+    },
+    {
+      "annotation": "11891",
+      "pointId": 543904,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 282,
+      "y": 376,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11891",
+      "pointId": 543905,
+      "structure": 1745,
+      "originalName": "Таранно-пяточно-ладьевидный сустав",
+      "x": 259,
+      "y": 358,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11891",
+      "pointId": 543906,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 374,
+      "y": 288,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11891",
+      "pointId": 543907,
+      "structure": 1748,
+      "originalName": "Клиноладьевидный сустав",
+      "x": 223,
+      "y": 361,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11891",
+      "pointId": 543908,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 223,
+      "y": 389,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11891",
+      "pointId": 543909,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 201,
+      "y": 415,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11891",
+      "pointId": 543936,
+      "structure": 1740,
+      "originalName": "Подтаранный сустав; пяточный сустав",
+      "x": 373,
+      "y": 353,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11891",
+      "pointId": 543948,
+      "structure": 1781,
+      "originalName": "Плюснефаланговые  суставы",
+      "x": 10,
+      "y": 440,
+      "decision": "unreliable/cropped forefoot location; no path invented"
+    },
+    {
+      "annotation": "11892",
+      "pointId": 543994,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 282,
+      "y": 378,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11892",
+      "pointId": 543995,
+      "structure": 1745,
+      "originalName": "Таранно-пяточно-ладьевидный сустав",
+      "x": 256,
+      "y": 355,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11892",
+      "pointId": 543996,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 374,
+      "y": 288,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11892",
+      "pointId": 543997,
+      "structure": 1748,
+      "originalName": "Клиноладьевидный сустав",
+      "x": 221,
+      "y": 364,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11892",
+      "pointId": 543998,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 201,
+      "y": 415,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11892",
+      "pointId": 544026,
+      "structure": 1740,
+      "originalName": "Подтаранный сустав; пяточный сустав",
+      "x": 376,
+      "y": 352,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11892",
+      "pointId": 544039,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 84,
+      "y": 409,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11893",
+      "pointId": 544088,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 282,
+      "y": 379,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11893",
+      "pointId": 544089,
+      "structure": 1745,
+      "originalName": "Таранно-пяточно-ладьевидный сустав",
+      "x": 257,
+      "y": 355,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11893",
+      "pointId": 544090,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 374,
+      "y": 288,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11893",
+      "pointId": 544091,
+      "structure": 1748,
+      "originalName": "Клиноладьевидный сустав",
+      "x": 219,
+      "y": 367,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11893",
+      "pointId": 544092,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 182,
+      "y": 370,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11893",
+      "pointId": 544093,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 186,
+      "y": 415,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11893",
+      "pointId": 544119,
+      "structure": 1740,
+      "originalName": "Подтаранный сустав; пяточный сустав",
+      "x": 375,
+      "y": 356,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11893",
+      "pointId": 544130,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 82,
+      "y": 412,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11894",
+      "pointId": 544183,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 282,
+      "y": 379,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11894",
+      "pointId": 544184,
+      "structure": 1745,
+      "originalName": "Таранно-пяточно-ладьевидный сустав",
+      "x": 258,
+      "y": 355,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11894",
+      "pointId": 544185,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 374,
+      "y": 288,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11894",
+      "pointId": 544186,
+      "structure": 1748,
+      "originalName": "Клиноладьевидный сустав",
+      "x": 216,
+      "y": 370,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11894",
+      "pointId": 544187,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 199,
+      "y": 389,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11894",
+      "pointId": 544188,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 186,
+      "y": 415,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11894",
+      "pointId": 544214,
+      "structure": 1740,
+      "originalName": "Подтаранный сустав; пяточный сустав",
+      "x": 374,
+      "y": 359,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11894",
+      "pointId": 544226,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 79,
+      "y": 416,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11895",
+      "pointId": 544277,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 282,
+      "y": 379,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11895",
+      "pointId": 544278,
+      "structure": 1745,
+      "originalName": "Таранно-пяточно-ладьевидный сустав",
+      "x": 259,
+      "y": 355,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11895",
+      "pointId": 544279,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 374,
+      "y": 288,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11895",
+      "pointId": 544280,
+      "structure": 1748,
+      "originalName": "Клиноладьевидный сустав",
+      "x": 219,
+      "y": 375,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11895",
+      "pointId": 544281,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 169,
+      "y": 416,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11895",
+      "pointId": 544306,
+      "structure": 1740,
+      "originalName": "Подтаранный сустав; пяточный сустав",
+      "x": 373,
+      "y": 363,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11895",
+      "pointId": 544316,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 77,
+      "y": 419,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11896",
+      "pointId": 544364,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 282,
+      "y": 379,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11896",
+      "pointId": 544365,
+      "structure": 1745,
+      "originalName": "Таранно-пяточно-ладьевидный сустав",
+      "x": 260,
+      "y": 356,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11896",
+      "pointId": 544366,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 374,
+      "y": 288,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11896",
+      "pointId": 544367,
+      "structure": 1748,
+      "originalName": "Клиноладьевидный сустав",
+      "x": 221,
+      "y": 380,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11896",
+      "pointId": 544368,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 169,
+      "y": 416,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11896",
+      "pointId": 544390,
+      "structure": 1740,
+      "originalName": "Подтаранный сустав; пяточный сустав",
+      "x": 372,
+      "y": 367,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11897",
+      "pointId": 544442,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 282,
+      "y": 379,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11897",
+      "pointId": 544443,
+      "structure": 1745,
+      "originalName": "Таранно-пяточно-ладьевидный сустав",
+      "x": 265,
+      "y": 354,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11897",
+      "pointId": 544444,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 374,
+      "y": 288,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11897",
+      "pointId": 544445,
+      "structure": 1748,
+      "originalName": "Клиноладьевидный сустав",
+      "x": 223,
+      "y": 385,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11897",
+      "pointId": 544446,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 169,
+      "y": 416,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11897",
+      "pointId": 544467,
+      "structure": 1740,
+      "originalName": "Подтаранный сустав; пяточный сустав",
+      "x": 371,
+      "y": 370,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11897",
+      "pointId": 544475,
+      "structure": 1781,
+      "originalName": "Плюснефаланговые  суставы",
+      "x": 16,
+      "y": 432,
+      "decision": "unreliable/cropped forefoot location; no path invented"
+    },
+    {
+      "annotation": "11898",
+      "pointId": 544514,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 282,
+      "y": 373,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11898",
+      "pointId": 544515,
+      "structure": 1745,
+      "originalName": "Таранно-пяточно-ладьевидный сустав",
+      "x": 271,
+      "y": 353,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11898",
+      "pointId": 544516,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 374,
+      "y": 288,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11898",
+      "pointId": 544518,
+      "structure": 1748,
+      "originalName": "Клиноладьевидный сустав",
+      "x": 225,
+      "y": 389,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11898",
+      "pointId": 544519,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 169,
+      "y": 416,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11898",
+      "pointId": 544545,
+      "structure": 1781,
+      "originalName": "Плюснефаланговые  суставы",
+      "x": 16,
+      "y": 432,
+      "decision": "unreliable/cropped forefoot location; no path invented"
+    },
+    {
+      "annotation": "11899",
+      "pointId": 544586,
+      "structure": 1744,
+      "originalName": "Поперечный сустав предплюсны",
+      "x": 282,
+      "y": 368,
+      "decision": "compound information only; component paths used"
+    },
+    {
+      "annotation": "11899",
+      "pointId": 544587,
+      "structure": 1745,
+      "originalName": "Таранно-пяточно-ладьевидный сустав",
+      "x": 277,
+      "y": 351,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11899",
+      "pointId": 544590,
+      "structure": 1748,
+      "originalName": "Клиноладьевидный сустав",
+      "x": 230,
+      "y": 389,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11899",
+      "pointId": 544607,
+      "structure": 1781,
+      "originalName": "Плюснефаланговые  суставы",
+      "x": 16,
+      "y": 432,
+      "decision": "unreliable/cropped forefoot location; no path invented"
+    },
+    {
+      "annotation": "11905",
+      "pointId": 544756,
+      "structure": 1781,
+      "originalName": "Плюснефаланговые  суставы",
+      "x": 175,
+      "y": 492,
+      "decision": "unreliable/cropped forefoot location; no path invented"
+    },
+    {
+      "annotation": "11908",
+      "pointId": 544865,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 304,
+      "y": 472,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11909",
+      "pointId": 544904,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 303,
+      "y": 467,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11909",
+      "pointId": 544905,
+      "structure": 1781,
+      "originalName": "Плюснефаланговые  суставы",
+      "x": 116,
+      "y": 498,
+      "decision": "unreliable/cropped forefoot location; no path invented"
+    },
+    {
+      "annotation": "11910",
+      "pointId": 544943,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 301,
+      "y": 462,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11910",
+      "pointId": 544944,
+      "structure": 1781,
+      "originalName": "Плюснефаланговые  суставы",
+      "x": 116,
+      "y": 498,
+      "decision": "unreliable/cropped forefoot location; no path invented"
+    },
+    {
+      "annotation": "11911",
+      "pointId": 544983,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 300,
+      "y": 457,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11912",
+      "pointId": 545023,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 298,
+      "y": 452,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11913",
+      "pointId": 545064,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 297,
+      "y": 448,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11914",
+      "pointId": 545105,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 295,
+      "y": 443,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11915",
+      "pointId": 545145,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 294,
+      "y": 438,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11916",
+      "pointId": 545185,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 292,
+      "y": 433,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11917",
+      "pointId": 545225,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 290,
+      "y": 429,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11918",
+      "pointId": 545265,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 289,
+      "y": 426,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11919",
+      "pointId": 545307,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 287,
+      "y": 422,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11920",
+      "pointId": 545353,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 285,
+      "y": 419,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11921",
+      "pointId": 545377,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 318,
+      "y": 401,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11921",
+      "pointId": 545402,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 163,
+      "y": 490,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11922",
+      "pointId": 545428,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 318,
+      "y": 401,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11922",
+      "pointId": 545451,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 165,
+      "y": 489,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11923",
+      "pointId": 545476,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 281,
+      "y": 389,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11923",
+      "pointId": 545477,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 318,
+      "y": 401,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11923",
+      "pointId": 545503,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 167,
+      "y": 488,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11924",
+      "pointId": 545528,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 284,
+      "y": 386,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11924",
+      "pointId": 545529,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 318,
+      "y": 421,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11924",
+      "pointId": 545559,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 169,
+      "y": 488,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11925",
+      "pointId": 545582,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 288,
+      "y": 383,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11925",
+      "pointId": 545583,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 318,
+      "y": 421,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11925",
+      "pointId": 545616,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 171,
+      "y": 487,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11926",
+      "pointId": 545641,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 291,
+      "y": 379,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11926",
+      "pointId": 545642,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 318,
+      "y": 421,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11926",
+      "pointId": 545675,
+      "structure": 1780,
+      "originalName": "Межкостные промежутки плюсны",
+      "x": 173,
+      "y": 486,
+      "decision": "general anatomy; not a joint"
+    },
+    {
+      "annotation": "11927",
+      "pointId": 545700,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 294,
+      "y": 376,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11927",
+      "pointId": 545701,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 254,
+      "y": 431,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11928",
+      "pointId": 545758,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 298,
+      "y": 373,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11928",
+      "pointId": 545759,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 241,
+      "y": 385,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11928",
+      "pointId": 545760,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 254,
+      "y": 431,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11929",
+      "pointId": 545817,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 298,
+      "y": 385,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11929",
+      "pointId": 545818,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 246,
+      "y": 381,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11929",
+      "pointId": 545819,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 254,
+      "y": 431,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11930",
+      "pointId": 545879,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 298,
+      "y": 397,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11930",
+      "pointId": 545880,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 251,
+      "y": 376,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11930",
+      "pointId": 545881,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 222,
+      "y": 482,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11931",
+      "pointId": 545937,
+      "structure": 1748,
+      "originalName": "Клиноладьевидный сустав",
+      "x": 300,
+      "y": 371,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11931",
+      "pointId": 545938,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 298,
+      "y": 410,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11931",
+      "pointId": 545939,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 256,
+      "y": 372,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11931",
+      "pointId": 545940,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 222,
+      "y": 482,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11932",
+      "pointId": 545995,
+      "structure": 1748,
+      "originalName": "Клиноладьевидный сустав",
+      "x": 315,
+      "y": 389,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11932",
+      "pointId": 545996,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 298,
+      "y": 410,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11932",
+      "pointId": 545997,
+      "structure": 1749,
+      "originalName": "Межклиновидные суставы",
+      "x": 272,
+      "y": 401,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11932",
+      "pointId": 545998,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 222,
+      "y": 482,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11933",
+      "pointId": 546052,
+      "structure": 1748,
+      "originalName": "Клиноладьевидный сустав",
+      "x": 330,
+      "y": 407,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11933",
+      "pointId": 546053,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 208,
+      "y": 503,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11934",
+      "pointId": 546109,
+      "structure": 1748,
+      "originalName": "Клиноладьевидный сустав",
+      "x": 337,
+      "y": 414,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11934",
+      "pointId": 546110,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 208,
+      "y": 503,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11935",
+      "pointId": 546166,
+      "structure": 1745,
+      "originalName": "Таранно-пяточно-ладьевидный сустав",
+      "x": 302,
+      "y": 336,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11935",
+      "pointId": 546167,
+      "structure": 1748,
+      "originalName": "Клиноладьевидный сустав",
+      "x": 343,
+      "y": 422,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11935",
+      "pointId": 546168,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 208,
+      "y": 503,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11936",
+      "pointId": 546223,
+      "structure": 1745,
+      "originalName": "Таранно-пяточно-ладьевидный сустав",
+      "x": 289,
+      "y": 346,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11936",
+      "pointId": 546224,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 208,
+      "y": 503,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11937",
+      "pointId": 546281,
+      "structure": 1745,
+      "originalName": "Таранно-пяточно-ладьевидный сустав",
+      "x": 276,
+      "y": 355,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11937",
+      "pointId": 546282,
+      "structure": 1772,
+      "originalName": "Предплюсне-плюсневые суставы",
+      "x": 180,
+      "y": 494,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11938",
+      "pointId": 546339,
+      "structure": 1745,
+      "originalName": "Таранно-пяточно-ладьевидный сустав",
+      "x": 264,
+      "y": 365,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11939",
+      "pointId": 546396,
+      "structure": 1745,
+      "originalName": "Таранно-пяточно-ладьевидный сустав",
+      "x": 251,
+      "y": 374,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11940",
+      "pointId": 546452,
+      "structure": 1747,
+      "originalName": "Пяточно-кубовидный сустав",
+      "x": 211,
+      "y": 394,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11941",
+      "pointId": 546510,
+      "structure": 1747,
+      "originalName": "Пяточно-кубовидный сустав",
+      "x": 222,
+      "y": 418,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11944",
+      "pointId": 546675,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 314,
+      "y": 257,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11945",
+      "pointId": 546729,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 314,
+      "y": 257,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11946",
+      "pointId": 546787,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 314,
+      "y": 246,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11947",
+      "pointId": 546847,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 314,
+      "y": 246,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11948",
+      "pointId": 546907,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 314,
+      "y": 246,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11948",
+      "pointId": 546947,
+      "structure": 1687,
+      "originalName": "Межберцовый синдесмоз",
+      "x": 198,
+      "y": 208,
+      "decision": "separate syndesmosis group"
+    },
+    {
+      "annotation": "11949",
+      "pointId": 546968,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 314,
+      "y": 243,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11949",
+      "pointId": 547008,
+      "structure": 1687,
+      "originalName": "Межберцовый синдесмоз",
+      "x": 209,
+      "y": 209,
+      "decision": "separate syndesmosis group"
+    },
+    {
+      "annotation": "11950",
+      "pointId": 547028,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 314,
+      "y": 243,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11950",
+      "pointId": 547050,
+      "structure": 1740,
+      "originalName": "Подтаранный сустав; пяточный сустав",
+      "x": 233,
+      "y": 356,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11950",
+      "pointId": 547067,
+      "structure": 1687,
+      "originalName": "Межберцовый синдесмоз",
+      "x": 219,
+      "y": 209,
+      "decision": "separate syndesmosis group"
+    },
+    {
+      "annotation": "11951",
+      "pointId": 547089,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 314,
+      "y": 243,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11951",
+      "pointId": 547109,
+      "structure": 1740,
+      "originalName": "Подтаранный сустав; пяточный сустав",
+      "x": 247,
+      "y": 345,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11951",
+      "pointId": 547125,
+      "structure": 1687,
+      "originalName": "Межберцовый синдесмоз",
+      "x": 219,
+      "y": 209,
+      "decision": "separate syndesmosis group"
+    },
+    {
+      "annotation": "11952",
+      "pointId": 547146,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 314,
+      "y": 243,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11952",
+      "pointId": 547166,
+      "structure": 1740,
+      "originalName": "Подтаранный сустав; пяточный сустав",
+      "x": 262,
+      "y": 334,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11952",
+      "pointId": 547180,
+      "structure": 1687,
+      "originalName": "Межберцовый синдесмоз",
+      "x": 229,
+      "y": 215,
+      "decision": "separate syndesmosis group"
+    },
+    {
+      "annotation": "11953",
+      "pointId": 547199,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 314,
+      "y": 243,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11953",
+      "pointId": 547219,
+      "structure": 1740,
+      "originalName": "Подтаранный сустав; пяточный сустав",
+      "x": 262,
+      "y": 334,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11953",
+      "pointId": 547233,
+      "structure": 1687,
+      "originalName": "Межберцовый синдесмоз",
+      "x": 229,
+      "y": 215,
+      "decision": "separate syndesmosis group"
+    },
+    {
+      "annotation": "11954",
+      "pointId": 547249,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 313,
+      "y": 260,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11954",
+      "pointId": 547268,
+      "structure": 1740,
+      "originalName": "Подтаранный сустав; пяточный сустав",
+      "x": 262,
+      "y": 334,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11954",
+      "pointId": 547284,
+      "structure": 1687,
+      "originalName": "Межберцовый синдесмоз",
+      "x": 228,
+      "y": 221,
+      "decision": "separate syndesmosis group"
+    },
+    {
+      "annotation": "11955",
+      "pointId": 547299,
+      "structure": 1730,
+      "originalName": "Голеностопный сустав",
+      "x": 313,
+      "y": 260,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11955",
+      "pointId": 547316,
+      "structure": 1740,
+      "originalName": "Подтаранный сустав; пяточный сустав",
+      "x": 262,
+      "y": 334,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11955",
+      "pointId": 547331,
+      "structure": 1687,
+      "originalName": "Межберцовый синдесмоз",
+      "x": 228,
+      "y": 227,
+      "decision": "separate syndesmosis group"
+    },
+    {
+      "annotation": "11956",
+      "pointId": 547361,
+      "structure": 1740,
+      "originalName": "Подтаранный сустав; пяточный сустав",
+      "x": 262,
+      "y": 334,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11956",
+      "pointId": 547377,
+      "structure": 1687,
+      "originalName": "Межберцовый синдесмоз",
+      "x": 228,
+      "y": 234,
+      "decision": "separate syndesmosis group"
+    },
+    {
+      "annotation": "11957",
+      "pointId": 547405,
+      "structure": 1740,
+      "originalName": "Подтаранный сустав; пяточный сустав",
+      "x": 262,
+      "y": 334,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    },
+    {
+      "annotation": "11958",
+      "pointId": 547446,
+      "structure": 1740,
+      "originalName": "Подтаранный сустав; пяточный сустав",
+      "x": 262,
+      "y": 334,
+      "decision": "source dot suppressed; only explicit reviewed joint paths shown"
+    }
+  ]
+}

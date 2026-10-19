@@ -1,0 +1,22 @@
+import assert from 'node:assert/strict';import fs from 'node:fs';import {spawn} from 'node:child_process';
+const {chromium}=await import('/tmp/atlas-dom/node_modules/playwright/index.mjs');const A='app/src/main/assets/',D=JSON.parse(fs.readFileSync(A+'foot-mri-data.json')),E=JSON.parse(fs.readFileSync(A+'foot-mri-anatomy151.json')),out='review/browser-1.51';fs.mkdirSync(out,{recursive:true});
+const server=spawn('python3',['-m','http.server','8781','--bind','127.0.0.1'],{cwd:A,stdio:'ignore'});let browser;
+try{browser=await chromium.launch({headless:true,...(process.env.CHROME_PATH?{executablePath:process.env.CHROME_PATH}:{}),args:['--no-sandbox']});
+for(const viewport of [{width:393,height:852},{width:360,height:640},{width:852,height:393}]){
+ const page=await browser.newPage({viewport});const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.route('**/*',r=>r.request().url().startsWith('http://127.0.0.1:8781/')?r.continue():r.abort());await page.goto('http://127.0.0.1:8781/foot-mri.html');await page.waitForSelector('.anatomyMenuButton');await page.locator('.anatomyMenuButton').click();assert.equal(await page.locator('.groupOpen').filter({hasText:'Соединения'}).count(),0);await page.locator('.filterButtons .none').click();await page.locator('.compactGroup').filter({hasText:/^Суставы/}).locator('input').check();await page.locator('.closeMenu').click();
+ for(const s of D.series){await page.locator('.panelHead select').selectOption(s.id);
+ for(let i=0;i<s.frames.length;i++){
+  const f=s.frames[i],rs=E.seriesSlices[s.id][f.annotation].regions.filter(r=>r.lineMarker);await page.locator('.slice').fill(String(i));await page.locator('.slice').dispatchEvent('input');await page.waitForFunction(src=>document.querySelector('.screenLabels').dataset.frame===src,f.src);assert.equal(await page.locator('.anatomyRegion').count(),rs.length);assert.equal(await page.locator('.screenLabels circle').count(),0);assert.equal(await page.locator('.failed').isVisible(),false);
+  if(viewport.width===393&&[23,29,19,28,35,38,50].includes(i+1)&&rs.length)await page.screenshot({path:`${out}/${s.id}-${i+1}.png`});
+ }
+ }
+ await page.locator('.panelHead select').selectOption('542-contraste_dp');await page.locator('.slice').fill('19');await page.locator('.slice').dispatchEvent('input');await page.waitForFunction(()=>document.querySelectorAll('.anatomyRegion').length>=4);
+ const before=await page.locator('.anatomyRegion path').first().getAttribute('d');await page.locator('.stage').dispatchEvent('wheel',{deltaY:-80,ctrlKey:true});assert.notEqual(await page.locator('.anatomyRegion path').first().getAttribute('d'),before);await page.locator('.fit').click();
+ await page.locator('[data-mode="points"]').click();assert(await page.locator('.anatomyRegion').count()>0);assert.equal(await page.locator('.screenLabels text,.screenLabels circle').count(),0);await page.screenshot({path:`${out}/lines-only-${viewport.width}.png`});
+ const g=page.locator('.anatomyRegion').first();await g.press('Enter');await page.waitForSelector('.pointPopup:not([hidden])');assert.match(await page.locator('.pointPopup').textContent(),/сустав|сочленен/i);await page.locator('.pointPopup button').click();
+ await page.locator('[data-mode="off"]').click();assert.equal(await page.locator('.anatomyRegion').count(),0);await page.locator('[data-mode="labels"]').click();await page.locator('.fullscreenButton').click();assert(await page.locator('.fullscreenViewer .anatomyRegion').count()>0);await page.locator('.fullscreenButton').click();
+ await page.locator('.anatomyMenuButton').click();await page.locator('.search').fill('Шопар');assert(await page.locator('.searchResults button').count()>0);await page.locator('.searchResults button').first().click();assert(await page.locator('.anatomyRegion').count()>0);
+ await page.locator('.anatomyMenuButton').click();await page.locator('.shoulderGuide>summary').click();assert.match(await page.locator('.shoulderGuide').textContent(),/межкостные|Межкостные/);assert.match(await page.locator('.shoulderGuide').textContent(),/Плюснефаланговые/);await page.locator('.closeMenu').click();assert.deepEqual(errors,[]);await page.close();console.log('PASS foot joint lines, all 284 T1/PD frames, modes/search/zoom/fullscreen,',viewport.width+'x'+viewport.height);
+}
+fs.writeFileSync(out+'/result.json',JSON.stringify({passed:true,frames:284,viewports:3,jointPaths:65,sourceTypesReviewed:11,anatomicalAccuracyNotEstablishedByTests:true}));
+}finally{await browser?.close();server.kill()}
