@@ -4,7 +4,9 @@
 
 - Ветка work/wrist-capitate-ligaments-1-55 от1.54/8b3b4d7e06718ca77acb929935dcbd16e50c4d6e. CI1.54/39261309624 success.
 - wrist-mri-capitate155.json и wrist-capitate.js составляются после146/154.8явных приблизительных PD-точек CH/CT/SC на7кадрах; TC/TH/TT в каталоге без отдельных точек.4неуверенные привязки отвергнуты. Исходные данные и прежние overlays сохранены. Отчёт review/wrist-capitate-1.55.md/json; генератор tools/wrist_capitate155.py.
-- Новая группа внутри «Остальные связки запястья», поиск/справочник/одноразовая миграция. ТФХК и суставные линии154 сохранены. Проверки/сборка выполняются; незавершённый результат не объявлять готовым.
+- Новая группа внутри «Остальные связки запястья», поиск/справочник/одноразовая миграция. ТФХК и суставные линии154 сохранены. Все data/math workflow и source-viewer17модулей прошли. browser-wrist-capitate155:148MRIкадров×3размера,режимы/поиск/popup/zoom/fullscreen/два окна прошли. browser-ligaments146, browser-joint-lines154 и browser-viewer повторно прошли; меню32URL и домашний экран4размеров также прошли.
+- Код414daa6349c3b783de377c23181eb576866693af, дерево45af329bd66e22aee4413de475502bc3cd5fe384; каждыйblob и всёдерево сверены с локальнымGitSHA. PR22 https://github.com/gregoryshapoval-byte/mri-atlas-app/pull/22, база work/joint-lines-1-54; не слит. CI https://github.com/gregoryshapoval-byte/mri-atlas-app/actions/runs/39264238076 выполняется на момент записи; успех не заявляется.
+- MRIAtlas-1.55.apk:121772361байт,SHA25663f2d30c6dff9e933d8347cfacdb908aeb83f73174b89b5f5dc30d5d53053dcb;8404assets побайтно совпали. VersionCode55,прежнийapplicationId/сертификат9cc66233…cec14,v2/v3 проверены. Сохранён libfile_2bf9e08bcea081919d260ff7dbb9f894,version0. Физический телефон и независимая врачебная верификация не проводились. Следующая задача не выбрана; при продолжении проверить итогCI.
 
 ## Текущая работа — 1.54: суставные линии
 
