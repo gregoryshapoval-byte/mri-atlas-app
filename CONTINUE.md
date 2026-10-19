@@ -11,7 +11,7 @@
 - lineMarker поддержан в brain-labels/anatomy-regions-layer; на «Только точки» суставные маркеры остаются линиями без подписей, старые сумочные ленты скрыты как прежде. Без меток скрывает всё. Состояние выбора группы907 сохраняется, по умолчанию выключена.
 - foot-joints151 + browser-foot151 прошли:284 кадра T1/PD при трёх размерах, все режимы/поиск/zoom/fullscreen. Data/math workflow и source-viewer14 модулей прошли. Все прежние browser-регрессии пройдены: viewer, joints145, ligaments146, hip147, icons148, hip-knee149; офлайн-меню/новые модули150 также повторно прошли. Независимая врачебная верификация и физический телефон не заявляются.
 - MRIAtlas-1.51.apk:123728908байт, SHA256 d955195033e71b3c70277b6b2a6d6bf18ef6747e681bca4c8c917899b6098d4e. Подписан прежним ключом9cc66233…cec14, v2/v3 и все assets проверены; applicationId прежний.
-- Код опубликован: `44c9f0a915a9458033934be55a58c7abd8008aeb`. PR18: https://github.com/gregoryshapoval-byte/mri-atlas-app/pull/18, база work/home-limbs-plexus-1-50; PR не слит. CI https://github.com/gregoryshapoval-byte/mri-atlas-app/actions/runs/39232815861 выполняется: data/math, меню/управление пройдены, идут browser-регрессии. Последующие коммиты документации APK не меняют.
+- Код опубликован: `44c9f0a915a9458033934be55a58c7abd8008aeb`. PR18: https://github.com/gregoryshapoval-byte/mri-atlas-app/pull/18, база work/home-limbs-plexus-1-50; PR не слит. CI https://github.com/gregoryshapoval-byte/mri-atlas-app/actions/runs/39232815861 успешно завершён: все data/math, меню/управление и browser-регрессии пройдены, создан MRIAtlas-1.51-unsigned. Последующие коммиты документации APK не меняют.
 
 ## Архив1.50
 
