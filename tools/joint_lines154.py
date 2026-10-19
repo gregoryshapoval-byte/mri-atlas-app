@@ -70,12 +70,12 @@ for m,rows in ROWS.items():
  pp={str(k):{'category':'cartilage'} for k in true};migration=[]
  for gid,(name,ids) in RECLASS[m].items():
   filters.append({'id':gid,'name':name,'parent':None,'layer':None,'default':m=='hip','icon':icon});migration.append([oldgroup,gid])
-  for k in ids:pp[str(k)]={'filter':gid,'category':'organs'}
+  for k in ids:pp[str(k)]={'filter':gid,'category':'cartilage' if gid in [15442,15443] else 'organs'}
  if m=='hip':pp['1682']={'filter':1164,'category':'ligaments'}
  if m=='knee':names.update({'1704':'Передний рог латерального мениска','1705':'Задний рог латерального мениска','1709':'Передний рог медиального мениска','1710':'Задний рог медиального мениска','1715':'Медиальная околонадколенниковая синовиальная складка','1716':'Наднадколенниковая синовиальная складка'})
  if m=='wrist':names.update({'1633':'Мешкообразный заворот дистального лучелоктевого сустава','1651':'Запястный канал','1652':'Локтевой канал (Гийона)'})
  if m=='elbow':names['1630']='Мешкообразный заворот проксимального лучелоктевого сустава'
- if m=='hip':names['1682']='Серповидный отросток крестцово-бугорной связки'
+ if m=='hip':names.update({'1682':'Серповидный отросток крестцово-бугорной связки','91':'Область тазобедренного сустава'})
  limitation='Линии есть только на перечисленных контрольных срезах. Полное покрытие всех суставов/пальцев не заявляется. Независимая врачебная верификация не проведена.'
  untraced=sorted(true-{r[2] for r in rows})
  notes={str(k):NAMES.get(k,source.get(k,''))+COMMON+(' В этом наборе отдельная уверенная линия не добавлена.' if k in untraced else '') for k in identities}
