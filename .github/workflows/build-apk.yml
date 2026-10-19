@@ -1,13 +1,8 @@
 name: Build Android APK
 
+# Local verification and signed APK come first. GitHub builds are an optional manual check.
 on:
   workflow_dispatch:
-  pull_request:
-    branches: [ main ]
-  push:
-    branches: [ main, 'work/wrist-tfcc-1-30', 'work/female-pelvis-on-1-30', 'work/viewer-all-modules-1-41', 'work/design-and-mri-1-42', 'work/shoulder-pd-1-43', 'work/joint-recesses-1-44', 'work/anatomy-audit-1-45', 'work/ligaments-pd-1-46', 'work/hip-insertions-1-47', 'work/anatomy-icons-1-48', 'work/hip-knee-tendons-1-49', 'work/home-limbs-plexus-1-50', 'work/foot-joints-1-51', 'work/hand-brain-knee-1-52', 'work/hand-anatomy-1-53', 'work/joint-lines-1-54', 'work/wrist-capitate-ligaments-1-55', 'work/wrist-ligament-topography-1-56', 'work/wrist-review-1-57', 'work/perianal-module-1-58', 'work/viewer-fit-1-59', 'work/perianal-classification-1-60', 'work/perianal-training-1-61', 'work/female-pelvis-ligaments-1-62', 'work/home-icons-1-63', 'work/continuous-scroll-1-64', 'work/abdomen-ct-1-65' ]
-    paths-ignore:
-      - '**/*.md'
 
 permissions:
   contents: read
