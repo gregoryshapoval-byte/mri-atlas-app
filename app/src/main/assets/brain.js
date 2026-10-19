@@ -1,4 +1,4 @@
-import {setupViewerPage,fitZoom,iconMarkup} from './viewer-ui.js';
+import {setupViewerPage,fitZoom,iconMarkup,applySeriesFit,fitViewer,watchViewerSize} from './viewer-ui.js';
 import {SliceGestures} from './brain-gestures.js';
 import {AnnotationLayer} from './brain-labels.js';
 setupViewerPage();
@@ -32,20 +32,20 @@ class Viewer{
  distance(){const [a,b]=[...this.points.values()];return Math.hypot(a.x-b.x,a.y-b.y)}
  transform(){this.stage.style.touchAction='none';const maxX=this.stage.clientWidth*(this.zoom-1)/2,maxY=this.stage.clientHeight*(this.zoom-1)/2;this.x=clamp(this.x,-maxX,maxX);this.y=clamp(this.y,-maxY,maxY);this.img.style.transform=`translate(${this.x}px,${this.y}px) scale(${this.zoom}) rotate(${this.rotation}deg) scale(${this.flipX},${this.flipY})`;this.el.querySelector('.fit').textContent='↺ '+Math.round(this.zoom/fitZoom(this)*100)+'%';this.el.querySelector('.fit').setAttribute('aria-label','Сбросить масштаб');this.ann?.transform()}
  scale(z){this.zoom=clamp(z,1,5);this.transform()}
- reset(){this.rotation=0;this.flipX=this.flipY=1;this.zoom=fitZoom(this);this.x=this.y=0;this.el.querySelector('.bright').value=this.el.querySelector('.ct').value=100;this.img.style.filter='none';this.transform()}
+ reset(){this.rotation=0;this.flipX=this.flipY=1;fitViewer(this);this.el.querySelector('.bright').value=this.el.querySelector('.ct').value=100;this.img.style.filter='none';this.transform()}
  move(i,sync=true){this.index=clamp(i,0,this.series.frames.length-1);this.render();if(sync&&group==='contrast'&&$('#link').checked)for(const p of panels)if(p!==this)p.move(this.index,false);save()}
  render(){const n=this.series.frames.length;if(!this.ann)this.img.src=this.series.frames[this.index].src;this.img.alt=`${this.series.title}, кадр ${this.index+1} из ${n}`;this.range.max=n-1;this.range.value=this.index;this.el.querySelector('.status').textContent=this.series.plane;this.el.querySelector('.pageCount').textContent=`${group==='vascular'?'Ракурс':'Кадр'} ${this.index+1} / ${n}`;this.el.querySelector('.prev').disabled=this.index===0;this.el.querySelector('.next').disabled=this.index===n-1;this.ann?.render();this.transform();}
 }
 function build(restore){
- const ss=data.series.filter(s=>s.group===group),count=$('#compare').checked?2:1;for(const p of panels)p.setFullscreen(false);panels=[];$('#viewers').replaceChildren();$('#viewers').classList.toggle('compare',count===2);
- for(let i=0;i<count;i++){const series=ss.find(s=>s.id===restore?.ids?.[i])||ss[i===1?(group==='contrast'?3:1):0];const p=new Viewer(series,restore?.indices?.[i]??(group==='vascular'?0:Math.floor(series.frames.length/2)));panels.push(p);$('#viewers').append(p.el);p.ann=new AnnotationLayer(p,annotationData);p.reset()}
+ const ss=data.series.filter(s=>s.group===group),count=$('#compare').checked?2:1;for(const p of panels){p.sizeObserver?.disconnect();p.setFullscreen(false)}panels=[];$('#viewers').replaceChildren();$('#viewers').classList.toggle('compare',count===2);
+ for(let i=0;i<count;i++){const series=ss.find(s=>s.id===restore?.ids?.[i])||ss[i===1?(group==='contrast'?3:1):0];const p=new Viewer(series,restore?.indices?.[i]??(group==='vascular'?0:Math.floor(series.frames.length/2)));panels.push(p);$('#viewers').append(p.el);p.ann=new AnnotationLayer(p,annotationData);p.reset();watchViewerSize(p)}
  $('#vascular').setAttribute('aria-pressed',group==='vascular');$('#multi').setAttribute('aria-pressed',group==='multiplanar');$('#contrast').setAttribute('aria-pressed',group==='contrast');$('#linkLabel').hidden=!(count===2&&group==='contrast');if(group!=='contrast')$('#link').checked=false;
  $('#summary').textContent=group==='vascular'?'8 готовых 3D-ракурсов · артерии, вены и синусы. Листай ракурсы жестом; масштаб доступен двумя пальцами.':group==='multiplanar'?'353 кадра · аксиальная, коронарная и сагиттальная плоскости.':'144 кадра · T1, T1 Гадолиний, T2, T2*, FLAIR и DWI. Названия из базы атласа.';save();
 }
 $('#vascular').onclick=()=>{group='vascular';build()};$('#multi').onclick=()=>{group='multiplanar';build()};$('#contrast').onclick=()=>{group='contrast';build()};
 $('#compare').onchange=()=>build({ids:panels.map(p=>p.series.id),indices:panels.map(p=>p.index)});
 $('#link').onchange=()=>{if($('#link').checked&&panels[0])panels[0].move(panels[0].index)};$('#reset').onclick=()=>panels.forEach(p=>p.reset());
-try{const res=await fetch('brain-data.json');if(!res.ok)throw Error('manifest');data=await res.json();const labels=await fetch('brain-labels.json');if(!labels.ok)throw Error('labels');annotationData=await labels.json();let saved;try{saved=JSON.parse(localStorage.getItem('brain-view-v1'));if(saved?.group!==group)saved=null}catch{}const requested=new URLSearchParams(location.search).get('series');if(data.series.some(s=>s.id===requested&&s.group===group))saved={ids:[requested],indices:[0]};build(saved)}catch(e){$('#summary').textContent='Не удалось открыть набор изображений.';$('#error').hidden=false;$('#error').textContent='Вернись в меню и открой раздел повторно.';console.error(e)}
+try{const res=await fetch('brain-data.json');if(!res.ok)throw Error('manifest');data=await res.json();await applySeriesFit(data,'brain');const labels=await fetch('brain-labels.json');if(!labels.ok)throw Error('labels');annotationData=await labels.json();let saved;try{saved=JSON.parse(localStorage.getItem('brain-view-v1'));if(saved?.group!==group)saved=null}catch{}const requested=new URLSearchParams(location.search).get('series');if(data.series.some(s=>s.id===requested&&s.group===group))saved={ids:[requested],indices:[0]};build(saved)}catch(e){$('#summary').textContent='Не удалось открыть набор изображений.';$('#error').hidden=false;$('#error').textContent='Вернись в меню и открой раздел повторно.';console.error(e)}
 
 window.addEventListener('resize',()=>panels.forEach(p=>p.ann?.render()));
 

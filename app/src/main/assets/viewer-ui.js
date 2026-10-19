@@ -14,7 +14,30 @@ export function setupViewerPage(){
  window.addEventListener('pagehide',()=>window.AtlasNative?.setImmersive(false));
  return info;
 }
-export function fitZoom(viewer){
- const f=viewer.series.frames[viewer.index],w=viewer.stage?.clientWidth||360,h=viewer.stage?.clientHeight||500,k=Math.min(w/700,h/760),a=(viewer.rotation%180)?f.height/f.width:1,iw=400*a,ih=(viewer.rotation%180)?400:400*f.height/f.width;
- return Math.max(1,Math.min(5,Math.min((w-8)/iw,(h-8)/ih)/k));
+// Bounds are a presentation layer; source pixels and all annotation coordinates stay intact.
+export async function applySeriesFit(data,moduleName){
+ const response=await fetch('viewer-fit-bounds.json');if(!response.ok)throw Error('fit bounds');
+ const bounds=(await response.json())[moduleName]||{};
+ for(const series of data.series)if(bounds[series.id])series.fitBounds=bounds[series.id];
+}
+export function fittedView(viewer,width,height){
+ const f=viewer.series.frames[viewer.index],w=width||viewer.stage?.clientWidth||360,h=height||viewer.stage?.clientHeight||500,k=Math.min(w/700,h/760);
+ const [x,y,bw,bh]=viewer.series.fitBounds||[0,0,f.width,f.height],a=viewer.rotation*Math.PI/180,c=Math.cos(a),s=Math.sin(a),unit=400/f.width*k;
+ const iw=unit*(Math.abs(bw*c)+Math.abs(bh*s)),ih=unit*(Math.abs(bw*s)+Math.abs(bh*c));
+ const zoom=Math.max(1,Math.min(5,(w-8)/iw,(h-8)/ih));
+ const cx=(x+bw/2-f.width/2)*unit*viewer.flipX,cy=(y+bh/2-f.height/2)*unit*viewer.flipY;
+ return {zoom,x:-(cx*c-cy*s)*zoom,y:-(cx*s+cy*c)*zoom};
+}
+export function fitZoom(viewer){return fittedView(viewer).zoom}
+export function fitViewer(viewer){Object.assign(viewer,fittedView(viewer))}
+export function watchViewerSize(viewer){
+ if(typeof ResizeObserver==='undefined')return;
+ let width=viewer.stage.clientWidth,height=viewer.stage.clientHeight;
+ const observer=new ResizeObserver(()=>{
+  const w=viewer.stage.clientWidth,h=viewer.stage.clientHeight;if(!w||!h||(w===width&&h===height))return;
+  const old=fittedView(viewer,width,height),next=fittedView(viewer,w,h),ratio=viewer.zoom/old.zoom;
+  const dx=(viewer.x-old.x*ratio)/Math.max(1,width),dy=(viewer.y-old.y*ratio)/Math.max(1,height);
+  viewer.zoom=Math.max(1,Math.min(5,next.zoom*ratio));const r=viewer.zoom/next.zoom;
+  viewer.x=next.x*r+dx*w;viewer.y=next.y*r+dy*h;width=w;height=h;viewer.transform();
+ });observer.observe(viewer.stage);viewer.sizeObserver=observer;
 }
