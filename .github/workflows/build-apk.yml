@@ -87,7 +87,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: menu-thumbnails-1.65
+          name: menu-thumbnails-1.66
           path: app/src/main/assets/menu-thumbs/
           if-no-files-found: ignore
 
@@ -123,7 +123,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: viewer-review-1.65
+          name: viewer-review-1.66
           path: |
             review/browser-1.42/
             review/browser-1.50/
@@ -139,7 +139,7 @@ jobs:
             review/browser-1.61/
             review/browser-1.62/
             review/browser-1.63/
-            review/browser-1.65/
+            review/browser-1.66/
             review/joints-1.45/
             review/ligaments-1.46/
             review/hip-1.47/
@@ -156,8 +156,8 @@ jobs:
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
-          name: MRIAtlas-1.65-unsigned
-          path: build/MRIAtlas-1.65-unsigned.apk
+          name: MRIAtlas-1.66-unsigned
+          path: build/MRIAtlas-1.66-unsigned.apk
           if-no-files-found: error
           retention-days: 30
 

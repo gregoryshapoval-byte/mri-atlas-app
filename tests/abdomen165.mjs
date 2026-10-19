@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';import fs from 'node:fs';import crypto from 'node:crypto';
-import {liverSegments,addAbdomenAnatomy}from '../app/src/main/assets/abdomen-anatomy.js';
+import {liverSegments,liverSubsegments,segmentIVReview,addAbdomenAnatomy}from '../app/src/main/assets/abdomen-anatomy.js';
 import {annotationSlice}from '../app/src/main/assets/anatomy-regions-layer.js';import{paintPoint}from '../app/src/main/assets/anatomy-colors.js';import{regions}from '../app/src/main/assets/anatomy-regions.js';
 const A='app/src/main/assets/',hash=b=>crypto.createHash('sha256').update(b).digest('hex');
 assert.deepEqual(liverSegments.map(s=>s.number),['I','II','III','IV','V','VI','VII','VIII']);assert.equal(new Set(liverSegments.map(s=>s.structure)).size,8);
@@ -10,12 +10,17 @@ for(const [mod,source,n,points]of [['abdomen-ct','abdomen',182,6352],['abdomen-p
  if(mod==='abdomen-ct'){
   const before=structuredClone(l);addAbdomenAnatomy(l);assert(l.filters.abdomen.find(f=>f.id===4).default);const counts=new Map();
   for(const s of d.series)for(const f of s.frames){const shown=annotationSlice(l,s,f);assert.equal(shown.points.length,before.slices[f.annotation].points.length);assert.deepEqual(shown.masks,before.slices[f.annotation].masks);
-   for(let i=0;i<shown.points.length;i++){const p=shown.points[i],original=before.slices[f.annotation].points[i];for(const k of ['id','structure','x','y','filter','color'])assert.equal(p[k],original[k]);const seg=liverSegments.find(s=>s.structure===p.structure);if(seg){counts.set(seg.number,(counts.get(seg.number)||0)+1);assert.equal(l.numberedStructures[p.structure],seg.number);assert.equal(p.shortName,'S '+seg.number);assert.equal(paintPoint(p,l.filters.abdomen).color,seg.color);assert(l.searchAliases[p.structure].includes('S'+seg.arabic));assert.match(p.name,/^S [IV]+ · /);}}
+   for(let i=0;i<shown.points.length;i++){const p=shown.points[i],original=before.slices[f.annotation].points[i];for(const k of ['id','x','y','filter'])assert.equal(p[k],original[k]);assert.equal(p.sourceStructure||p.structure,original.structure);if(original.structure!==2893)assert.equal(p.color,original.color);const seg=[...liverSegments,...liverSubsegments].find(s=>s.structure===p.structure);if(seg){counts.set(seg.number,(counts.get(seg.number)||0)+1);assert.equal(l.numberedStructures[p.structure],seg.number);assert.equal(p.shortName,'S '+seg.number);assert.equal(paintPoint(p,l.filters.abdomen).color,seg.color);assert(l.searchAliases[p.structure].includes('S'+seg.arabic));assert.match(p.name,/^S [IV]+[ab/]* · /);}}
   }
-  assert.equal(counts.size,8);assert.equal([...counts.values()].reduce((a,b)=>a+b),312);assert.match(l.displayNames[2898],/^S V · /);assert.match(l.displayNames[2899],/^S VIII · /);assert.equal(hash(fs.readFileSync(A+mod+'-labels.json')),hash(raw));
+  assert.equal(counts.size,10);assert.equal([...counts.values()].reduce((a,b)=>a+b),312);assert.match(l.displayNames[2898],/^S V · /);assert.match(l.displayNames[2899],/^S VIII · /);assert.equal(hash(fs.readFileSync(A+mod+'-labels.json')),hash(raw));
  }
  console.log('PASS exact CT frames/points/masks',mod,n,points);
 }
 const area=regions.find(r=>r.id==='abdomen');assert.equal(area.items.length,2);assert(area.items.every(i=>i.type==='КТ'));assert.equal(regions.length,13);console.log('PASS all 8 Couinaud numbers, 312 unchanged source anchors/colors, corrected V/VIII, masks/default group/search, 13 areas');
 
 const{numberPlacements}=await import('../app/src/main/assets/segment-numbers.js');const clustered=[{structure:1,sx:100,sy:100},{structure:2,sx:105,sy:104},{structure:3,sx:101,sy:99}];const positions=[...numberPlacements(clustered,393,680).values()];for(let i=0;i<positions.length;i++)for(let j=0;j<i;j++)assert(Math.abs(positions[i].x-positions[j].x)>=40||Math.abs(positions[i].y-positions[j].y)>=25);
+
+const reviewed=Object.values(segmentIVReview).flat();assert.equal(new Set(reviewed).size,64);
+const labels=JSON.parse(fs.readFileSync(A+'abdomen-ct-labels.json'));addAbdomenAnatomy(labels);
+for(const [kind,frames]of Object.entries(segmentIVReview))for(const frame of frames){const p=labels.slices[frame].points.find(p=>p.sourceStructure===2893);assert(p?.approximate);assert.equal(labels.numberedStructures[p.structure],kind==='a'?'IVa':kind==='b'?'IVb':'IVa/b');}
+assert.equal(labels.maskOpacity,.9);assert(labels.masksInPoints);console.log('PASS 64 explicit IV assignments, transition uncertainty, distinct colors, original raw JSON intact');

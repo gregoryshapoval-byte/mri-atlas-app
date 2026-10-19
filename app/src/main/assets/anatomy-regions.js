@@ -288,14 +288,14 @@ export const regions=[
     "image": "home-icons/abdomen.svg",
     "items": [
       {
-        "title": "КТ · сегменты печени",
-        "description": "182 среза · цветные сегменты I–VIII по Куино",
+        "title": "КТ · нормальная анатомия",
+        "description": "182 среза · сегменты печени, IVa и IVb",
         "url": "abdomen-ct.html",
         "type": "КТ",
         "thumb": "menu-thumbs/abdomen-ct.webp"
       },
       {
-        "title": "КТ брюшной полости и таза",
+        "title": "КТ · цирроз и асцит",
         "description": "303 среза · три плоскости · органы, сосуды и брюшина",
         "url": "abdomen-pelvis-ct.html",
         "type": "КТ",

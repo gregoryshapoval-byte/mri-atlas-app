@@ -1,14 +1,15 @@
-import assert from 'node:assert/strict';import fs from 'node:fs';import{spawn}from'node:child_process';import{liverSegments}from'../app/src/main/assets/abdomen-anatomy.js';
+import assert from 'node:assert/strict';import fs from 'node:fs';import{spawn}from'node:child_process';import{liverSegments,addAbdomenAnatomy}from'../app/src/main/assets/abdomen-anatomy.js';
 const{chromium}=await import('/tmp/atlas-dom/node_modules/playwright/index.mjs'),out='review/browser-1.65',A='app/src/main/assets/';fs.mkdirSync(out,{recursive:true});const server=spawn('python3',['-m','http.server','8808','--bind','127.0.0.1'],{cwd:A,stdio:'ignore'});let browser;
 try{browser=await chromium.launch({headless:true,args:['--no-sandbox'],...(process.env.CHROME_PATH?{executablePath:process.env.CHROME_PATH}:{})});for(const viewport of [{width:393,height:852},{width:360,height:640},{width:852,height:393}]){
- const page=await browser.newPage({viewport}),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.route('**/*',r=>new URL(r.request().url()).hostname==='127.0.0.1'?r.continue():r.abort());
+ const page=await browser.newPage({viewport}),errors=[];
+ await page.addInitScript(()=>{if(!localStorage.getItem('abdomen-ct-anatomy-v1-defaults'))localStorage.setItem('abdomen-ct-anatomy-v1',JSON.stringify({groups:{abdomen:[3,6]},masks:false,names:true,on:true}));});page.on('pageerror',e=>errors.push(e.message));await page.route('**/*',r=>new URL(r.request().url()).hostname==='127.0.0.1'?r.continue():r.abort());
  for(const mod of ['abdomen-ct','abdomen-pelvis-ct']){
-  const d=JSON.parse(fs.readFileSync(A+mod+'-data.json')),l=JSON.parse(fs.readFileSync(A+mod+'-labels.json'));await page.goto('http://127.0.0.1:8808/'+mod+'.html');await page.waitForSelector('.screenLabels circle,.segmentNumber');assert.equal(await page.locator('#multi').textContent(),'КТ');assert.match(await page.locator('#summary').textContent(),/КТ-кадров/);assert.equal(await page.locator('.panelHead select option').count(),d.series.length);
+  const d=JSON.parse(fs.readFileSync(A+mod+'-data.json')),l=JSON.parse(fs.readFileSync(A+mod+'-labels.json'));if(mod==='abdomen-ct')addAbdomenAnatomy(l);await page.goto('http://127.0.0.1:8808/'+mod+'.html');await page.waitForSelector('.screenLabels circle,.segmentNumber');assert.equal(await page.locator('#multi').textContent(),'КТ');assert.match(await page.locator('#summary').textContent(),/КТ-кадров/);assert.equal(await page.locator('.panelHead select option').count(),d.series.length);
   // Decode all original CT frames and masks in the browser once, independent of layout.
   if(viewport.width===393){const paths=[...new Set([...d.series.flatMap(s=>s.frames.map(f=>f.src)),...Object.values(l.slices).flatMap(sl=>sl.masks.map(m=>m.src))])];for(let i=0;i<paths.length;i+=20)await page.evaluate(async paths=>{for(const src of paths){const im=new Image();im.src=src;try{await im.decode()}catch{throw Error("Cannot decode "+src)};if(!im.naturalWidth)throw Error(src)}},paths.slice(i,i+20));}
   for(const s of d.series){await page.locator('.panelHead select').selectOption(s.id);for(const index of mod==='abdomen-ct'?[0,12,25,37,50,65,90,181]:[0,Math.floor(s.frames.length/2),s.frames.length-1]){const f=s.frames[index];await page.locator('.slice').fill(String(index));await page.waitForFunction(src=>document.querySelector('.screenLabels').dataset.frame===src,f.src);assert.equal(await page.locator('#error:not([hidden]),.failed:not([hidden])').count(),0);
    if(mod==='abdomen-ct'){
-    const expected=l.slices[f.annotation].points.filter(p=>p.filter===4).map(p=>liverSegments.find(s=>s.structure===p.structure).number).sort();assert.deepEqual((await page.locator('.segmentNumber text').allTextContents()).sort(),expected);
+    const expected=l.slices[f.annotation].points.filter(p=>p.filter===4).map(p=>l.numberedStructures[p.structure]).sort();assert.deepEqual((await page.locator('.segmentNumber text').allTextContents()).map(s=>s.replace('≈','')).sort(),expected);
     for(const e of await page.locator('.segmentNumber').evaluateAll(es=>es.map(e=>({number:e.textContent,rect:e.querySelector('rect').getBoundingClientRect().toJSON()}))))assert(e.rect.width>=30&&e.rect.height>=20);
    }
    if(index===25||index===37||mod==='abdomen-pelvis-ct'&&index===Math.floor(s.frames.length/2))await page.screenshot({path:`${out}/${mod}-${s.id}-${index}-${viewport.width}.png`});
@@ -16,6 +17,17 @@ try{browser=await chromium.launch({headless:true,args:['--no-sandbox'],...(proce
   if(mod==='abdomen-ct'){
    await page.locator('.anatomyMenuButton').click();await page.locator('.search').fill('S8');const result=page.locator('.searchResults button');assert.equal(await result.count(),1);assert.match(await result.textContent(),/S VIII/);await result.click();await page.waitForSelector('.segmentNumber[data-structure="2899"]');await page.locator('.segmentNumber[data-structure="2899"]').click();await page.waitForSelector('.pointPopup:not([hidden])');assert.match(await page.locator('.pointPopup').textContent(),/S VIII/);
    await page.locator('[data-mode="points"]').click();await page.waitForSelector('.segmentNumber');assert.equal(await page.locator('.labelBackdrop').count(),0);await page.locator('[data-mode="off"]').click();assert.equal(await page.locator('.segmentNumber').count(),0);await page.locator('[data-mode="labels"]').click();await page.waitForSelector('.segmentNumber');
+   // Pixel-level regression: color fields survive points mode and toggle off/on.
+   for(const [index,number]of [[19,'≈IVa'],[30,'≈IVa/b'],[49,'≈IVb']]){
+    await page.locator('.slice').fill(String(index));await page.waitForFunction(src=>document.querySelector('.screenLabels').dataset.frame===src,d.series[0].frames[index].src);
+    assert((await page.locator('.segmentNumber text').allTextContents()).includes(number));
+    const colored=()=>page.locator('canvas.anatomyScene').evaluate(c=>{const a=c.getContext('2d').getImageData(0,0,c.width,c.height).data;let n=0;for(let i=0;i<a.length;i+=4)if(Math.max(a[i],a[i+1],a[i+2])-Math.min(a[i],a[i+1],a[i+2])>35)n++;return n});
+    const withColor=await colored();assert(withColor>1000);
+    await page.locator('[data-mode="points"]').click();await page.waitForTimeout(50);assert.equal(await colored(),withColor);
+    await page.locator('.segmentToggle').click();await page.waitForTimeout(50);assert((await colored())<withColor/10);
+    await page.locator('.segmentToggle').click();await page.waitForTimeout(50);assert.equal(await colored(),withColor);
+    await page.locator('[data-mode="labels"]').click();assert.equal(await page.locator('[data-mode="labels"]').getAttribute('aria-pressed'),'true');assert(await page.locator('.labelBackdrop').count()>0);await page.screenshot({path:`${out}/review166-${index}-${viewport.width}.png`});
+   }
    await page.locator('.stage').dblclick({position:{x:20,y:100}});await page.locator('.anatomyMenuButton').click();await page.locator('[data-tab="settings"]').click();await page.locator('[data-transform="right"]').click();await page.locator('[data-transform="flipX"]').click();await page.locator('.closeMenu').click();await page.waitForSelector('.segmentNumber');assert(await page.locator('.segmentNumber text').evaluateAll(es=>es.every(t=>!t.hasAttribute('transform'))));await page.locator('.fit').click();
   }
   await page.locator('.fullscreenButton').click();await page.locator('.fullscreenButton').click();await page.locator('#compare').check();assert.equal(await page.locator('.panel').count(),2);await page.locator('#compare').uncheck();
