@@ -1,0 +1,2913 @@
+{
+  "version": "1.49",
+  "modules": [
+    {
+      "module": "hip-mri",
+      "sourceDataSha256": "72237d638773c160bdcc9ec94acf71d02e95e5c79500fe6d3f5530d23034f526",
+      "sourceLabelsSha256": "00760d01b5db17798245f87fa33d30eedfcfa43c43f92dd17cb04e6b437b0687",
+      "points": [
+        {
+          "series": "632-contraste_dpfs",
+          "frame": 17,
+          "imageSha256": "f71549e2b71d0483b920eaa2cf2ce380edf9cdeaa9091c9eb908d51144758928",
+          "id": 149000000,
+          "structure": 149101,
+          "name": "≈ Прямая мышца бедра · прямое сухожилие у НППО · ориентировочно",
+          "shortName": "≈ Прямая мышца бедра · прямое сухожилие у НППО",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 385,
+          "y": 161,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "632-contraste_dpfs",
+          "frame": 18,
+          "imageSha256": "fd05b607f2893b2595ac45fe7fa2721eed0e4369effdb7e37d009bf6ba48d66d",
+          "id": 149000001,
+          "structure": 149101,
+          "name": "≈ Прямая мышца бедра · прямое сухожилие у НППО · ориентировочно",
+          "shortName": "≈ Прямая мышца бедра · прямое сухожилие у НППО",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 382,
+          "y": 168,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "632-contraste_dpfs",
+          "frame": 19,
+          "imageSha256": "81163880a81bf5b6c7de1d2bfb0a63e30719091daa1e746760beaf6883b6e857",
+          "id": 149000002,
+          "structure": 149101,
+          "name": "≈ Прямая мышца бедра · прямое сухожилие у НППО · ориентировочно",
+          "shortName": "≈ Прямая мышца бедра · прямое сухожилие у НППО",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 380,
+          "y": 176,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "633-contraste_dpfs",
+          "frame": 11,
+          "imageSha256": "5ee357cd0b105ee9502fd445d947062072bf25774dae6293c8c3c2c18af62356",
+          "id": 149000003,
+          "structure": 149101,
+          "name": "≈ Прямая мышца бедра · прямое сухожилие у НППО · ориентировочно",
+          "shortName": "≈ Прямая мышца бедра · прямое сухожилие у НППО",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 356,
+          "y": 249,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "633-contraste_dpfs",
+          "frame": 12,
+          "imageSha256": "b0ba6b954487502d2f3e1a2601146e783029a778220ce38da98ccb474b623c2b",
+          "id": 149000004,
+          "structure": 149101,
+          "name": "≈ Прямая мышца бедра · прямое сухожилие у НППО · ориентировочно",
+          "shortName": "≈ Прямая мышца бедра · прямое сухожилие у НППО",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 353,
+          "y": 261,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "633-contraste_dpfs",
+          "frame": 13,
+          "imageSha256": "dcfced72770a4132ac854c0ed6b26c74377cf2fb35d44ad20d049b560ff5cbe7",
+          "id": 149000005,
+          "structure": 149101,
+          "name": "≈ Прямая мышца бедра · прямое сухожилие у НППО · ориентировочно",
+          "shortName": "≈ Прямая мышца бедра · прямое сухожилие у НППО",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 353,
+          "y": 264,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "634-contraste_dpfs",
+          "frame": 21,
+          "imageSha256": "314921c479c6865b870147aff6ad7673eb1bc060bd5c45ff6f4dab94144c2b21",
+          "id": 149000006,
+          "structure": 149101,
+          "name": "≈ Прямая мышца бедра · прямое сухожилие у НППО · ориентировочно",
+          "shortName": "≈ Прямая мышца бедра · прямое сухожилие у НППО",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 204,
+          "y": 246,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "634-contraste_dpfs",
+          "frame": 22,
+          "imageSha256": "419058b4a210c4be360da204d63c147525b74bcea3ff993bbe64784860508e74",
+          "id": 149000007,
+          "structure": 149101,
+          "name": "≈ Прямая мышца бедра · прямое сухожилие у НППО · ориентировочно",
+          "shortName": "≈ Прямая мышца бедра · прямое сухожилие у НППО",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 203,
+          "y": 236,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "634-contraste_dpfs",
+          "frame": 23,
+          "imageSha256": "035864f213a07e085ed5374308a2f3fc6f1739e482fd52e2c9bbf7c7530b0e05",
+          "id": 149000008,
+          "structure": 149101,
+          "name": "≈ Прямая мышца бедра · прямое сухожилие у НППО · ориентировочно",
+          "shortName": "≈ Прямая мышца бедра · прямое сухожилие у НППО",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 208,
+          "y": 238,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "633-contraste_dpfs",
+          "frame": 16,
+          "imageSha256": "a79a770981621ef9186268e34b94674b613605e4af90f7bbc9de2f1e810835af",
+          "id": 149000009,
+          "structure": 149102,
+          "name": "≈ Прямая мышца бедра · отражённое сухожилие · ориентировочно",
+          "shortName": "≈ Прямая мышца бедра · отражённое сухожилие",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 365,
+          "y": 253,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "633-contraste_dpfs",
+          "frame": 17,
+          "imageSha256": "f088e955054c6ed6d5c4ef6d99028d53c60177af7a49fb09f813d32f76173180",
+          "id": 149000010,
+          "structure": 149102,
+          "name": "≈ Прямая мышца бедра · отражённое сухожилие · ориентировочно",
+          "shortName": "≈ Прямая мышца бедра · отражённое сухожилие",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 362,
+          "y": 251,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "633-contraste_dpfs",
+          "frame": 18,
+          "imageSha256": "76d5cb7b7bf91dd88d37f1470f0b7cd8144df71d63fba48ba0e46d5a9fc701b9",
+          "id": 149000011,
+          "structure": 149102,
+          "name": "≈ Прямая мышца бедра · отражённое сухожилие · ориентировочно",
+          "shortName": "≈ Прямая мышца бедра · отражённое сухожилие",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 359,
+          "y": 249,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "632-contraste_dpfs",
+          "frame": 32,
+          "imageSha256": "8f09b8304460486b0c9caabf01746a8f62cb76bd5520c34fb387ce5e6e51d3ba",
+          "id": 149000012,
+          "structure": 149103,
+          "name": "≈ Хамстринги · общее начало ST/BF · ориентировочно",
+          "shortName": "≈ Хамстринги · общее начало ST/BF",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 294,
+          "y": 452,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "632-contraste_dpfs",
+          "frame": 33,
+          "imageSha256": "dec574aa4eab871ae95a2d76255a890b9913e97e6c0931b0c8fe1866ee3abc02",
+          "id": 149000013,
+          "structure": 149103,
+          "name": "≈ Хамстринги · общее начало ST/BF · ориентировочно",
+          "shortName": "≈ Хамстринги · общее начало ST/BF",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 294,
+          "y": 451,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "632-contraste_dpfs",
+          "frame": 34,
+          "imageSha256": "ed3d649ba85ca124f50775e40f90f89ad6aaa715d814f528858317cde8c746b0",
+          "id": 149000014,
+          "structure": 149103,
+          "name": "≈ Хамстринги · общее начало ST/BF · ориентировочно",
+          "shortName": "≈ Хамстринги · общее начало ST/BF",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 294,
+          "y": 449,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "632-contraste_dpfs",
+          "frame": 32,
+          "imageSha256": "8f09b8304460486b0c9caabf01746a8f62cb76bd5520c34fb387ce5e6e51d3ba",
+          "id": 149000015,
+          "structure": 149104,
+          "name": "≈ Полуперепончатая · проксимальное начало · ориентировочно",
+          "shortName": "≈ Полуперепончатая · проксимальное начало",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 309,
+          "y": 432,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "632-contraste_dpfs",
+          "frame": 33,
+          "imageSha256": "dec574aa4eab871ae95a2d76255a890b9913e97e6c0931b0c8fe1866ee3abc02",
+          "id": 149000016,
+          "structure": 149104,
+          "name": "≈ Полуперепончатая · проксимальное начало · ориентировочно",
+          "shortName": "≈ Полуперепончатая · проксимальное начало",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 311,
+          "y": 433,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "632-contraste_dpfs",
+          "frame": 34,
+          "imageSha256": "ed3d649ba85ca124f50775e40f90f89ad6aaa715d814f528858317cde8c746b0",
+          "id": 149000017,
+          "structure": 149104,
+          "name": "≈ Полуперепончатая · проксимальное начало · ориентировочно",
+          "shortName": "≈ Полуперепончатая · проксимальное начало",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 313,
+          "y": 434,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "633-contraste_dpfs",
+          "frame": 29,
+          "imageSha256": "0fccd766471d9419275e5c77cd5e1c459f67727a1441d2ec5e6f49f6c2996800",
+          "id": 149000018,
+          "structure": 149103,
+          "name": "≈ Хамстринги · общее начало ST/BF · ориентировочно",
+          "shortName": "≈ Хамстринги · общее начало ST/BF",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 307,
+          "y": 473,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "633-contraste_dpfs",
+          "frame": 30,
+          "imageSha256": "c148b7346d848339ccd4535a5a2bb18a6ce4e82c43899d73902a4cd4d4c6a00b",
+          "id": 149000019,
+          "structure": 149103,
+          "name": "≈ Хамстринги · общее начало ST/BF · ориентировочно",
+          "shortName": "≈ Хамстринги · общее начало ST/BF",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 302,
+          "y": 466,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "633-contraste_dpfs",
+          "frame": 31,
+          "imageSha256": "864a39af7246752a4af1b9e490db0686ec611f1a83caec367f4ada7088610c64",
+          "id": 149000020,
+          "structure": 149103,
+          "name": "≈ Хамстринги · общее начало ST/BF · ориентировочно",
+          "shortName": "≈ Хамстринги · общее начало ST/BF",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 289,
+          "y": 460,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "633-contraste_dpfs",
+          "frame": 27,
+          "imageSha256": "ab7c97395871b7f9db4974a48a443f0215428edf031b5dae1504e9e94156263e",
+          "id": 149000021,
+          "structure": 149104,
+          "name": "≈ Полуперепончатая · проксимальное начало · ориентировочно",
+          "shortName": "≈ Полуперепончатая · проксимальное начало",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 326,
+          "y": 486,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "633-contraste_dpfs",
+          "frame": 28,
+          "imageSha256": "6caccd5aa68c4df88cb701adf46e9771906836bcd84f1a01d1568d5e7f02d13e",
+          "id": 149000022,
+          "structure": 149104,
+          "name": "≈ Полуперепончатая · проксимальное начало · ориентировочно",
+          "shortName": "≈ Полуперепончатая · проксимальное начало",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 322,
+          "y": 481,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "633-contraste_dpfs",
+          "frame": 29,
+          "imageSha256": "0fccd766471d9419275e5c77cd5e1c459f67727a1441d2ec5e6f49f6c2996800",
+          "id": 149000023,
+          "structure": 149104,
+          "name": "≈ Полуперепончатая · проксимальное начало · ориентировочно",
+          "shortName": "≈ Полуперепончатая · проксимальное начало",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 318,
+          "y": 476,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "634-contraste_dpfs",
+          "frame": 16,
+          "imageSha256": "a7bf1c89a877cb38d1620dd0b72b1ddd8f6d91d1ca72b452e0dfedbaf292c4a3",
+          "id": 149000024,
+          "structure": 149103,
+          "name": "≈ Хамстринги · общее начало ST/BF · ориентировочно",
+          "shortName": "≈ Хамстринги · общее начало ST/BF",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 397,
+          "y": 468,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "634-contraste_dpfs",
+          "frame": 17,
+          "imageSha256": "c8ce0b542fdf2ea6298e537eaf34d0be7c45945a56bb6b4898d9f269798d79be",
+          "id": 149000025,
+          "structure": 149103,
+          "name": "≈ Хамстринги · общее начало ST/BF · ориентировочно",
+          "shortName": "≈ Хамстринги · общее начало ST/BF",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 397,
+          "y": 474,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "634-contraste_dpfs",
+          "frame": 18,
+          "imageSha256": "4ea3ce65e72b5e2d9a14b9da3a63290a306143684038a7c4206d5563403dc2aa",
+          "id": 149000026,
+          "structure": 149103,
+          "name": "≈ Хамстринги · общее начало ST/BF · ориентировочно",
+          "shortName": "≈ Хамстринги · общее начало ST/BF",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 397,
+          "y": 479,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "634-contraste_dpfs",
+          "frame": 17,
+          "imageSha256": "c8ce0b542fdf2ea6298e537eaf34d0be7c45945a56bb6b4898d9f269798d79be",
+          "id": 149000027,
+          "structure": 149104,
+          "name": "≈ Полуперепончатая · проксимальное начало · ориентировочно",
+          "shortName": "≈ Полуперепончатая · проксимальное начало",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 385,
+          "y": 489,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "634-contraste_dpfs",
+          "frame": 18,
+          "imageSha256": "4ea3ce65e72b5e2d9a14b9da3a63290a306143684038a7c4206d5563403dc2aa",
+          "id": 149000028,
+          "structure": 149104,
+          "name": "≈ Полуперепончатая · проксимальное начало · ориентировочно",
+          "shortName": "≈ Полуперепончатая · проксимальное начало",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 384,
+          "y": 492,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "634-contraste_dpfs",
+          "frame": 19,
+          "imageSha256": "dbb607f0e655e55e867f6197c000ba47a281ad465cbf39e70335e7a3cbf743e9",
+          "id": 149000029,
+          "structure": 149104,
+          "name": "≈ Полуперепончатая · проксимальное начало · ориентировочно",
+          "shortName": "≈ Полуперепончатая · проксимальное начало",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 386,
+          "y": 488,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "633-contraste_dpfs",
+          "frame": 8,
+          "imageSha256": "9885a57c1a00ae7392af834d63a57757cb808efa27fa415589e053a4cea299ac",
+          "id": 149000030,
+          "structure": 149105,
+          "name": "≈ Длинная приводящая · лобковое начало · ориентировочно",
+          "shortName": "≈ Длинная приводящая · лобковое начало",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 155,
+          "y": 418,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "633-contraste_dpfs",
+          "frame": 9,
+          "imageSha256": "6177f5f5570b8dca8afe7e0d5720687388ca68823afad1742b30c4316e73b432",
+          "id": 149000031,
+          "structure": 149105,
+          "name": "≈ Длинная приводящая · лобковое начало · ориентировочно",
+          "shortName": "≈ Длинная приводящая · лобковое начало",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 155,
+          "y": 421,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "633-contraste_dpfs",
+          "frame": 10,
+          "imageSha256": "827e6f6b7f7a90776ffc17de804a3c6c3a61f4614de4e8371e740ae40db20eb3",
+          "id": 149000032,
+          "structure": 149105,
+          "name": "≈ Длинная приводящая · лобковое начало · ориентировочно",
+          "shortName": "≈ Длинная приводящая · лобковое начало",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 152,
+          "y": 423,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "632-contraste_dpfs",
+          "frame": 29,
+          "imageSha256": "317c1224ad69ec1abb82e80b01c95bd17dfd6cd7a8313ffc0fbfbf7f456543e8",
+          "id": 149000033,
+          "structure": 149105,
+          "name": "≈ Длинная приводящая · лобковое начало · ориентировочно",
+          "shortName": "≈ Длинная приводящая · лобковое начало",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 126,
+          "y": 135,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "632-contraste_dpfs",
+          "frame": 30,
+          "imageSha256": "d739b9b70c042490e3bdc92121947cb159e0407cde153307cd3a8035909fec1f",
+          "id": 149000034,
+          "structure": 149105,
+          "name": "≈ Длинная приводящая · лобковое начало · ориентировочно",
+          "shortName": "≈ Длинная приводящая · лобковое начало",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 119,
+          "y": 146,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "632-contraste_dpfs",
+          "frame": 31,
+          "imageSha256": "6ba737cd5cf2725094f79a583324c16e921ddadd7d7238d9f9c0ede567d96edf",
+          "id": 149000035,
+          "structure": 149105,
+          "name": "≈ Длинная приводящая · лобковое начало · ориентировочно",
+          "shortName": "≈ Длинная приводящая · лобковое начало",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 112,
+          "y": 158,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "633-contraste_dpfs",
+          "frame": 11,
+          "imageSha256": "5ee357cd0b105ee9502fd445d947062072bf25774dae6293c8c3c2c18af62356",
+          "id": 149000036,
+          "structure": 149106,
+          "name": "≈ Тонкая мышца · проксимальное начало · ориентировочно",
+          "shortName": "≈ Тонкая мышца · проксимальное начало",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 131,
+          "y": 437,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "633-contraste_dpfs",
+          "frame": 12,
+          "imageSha256": "b0ba6b954487502d2f3e1a2601146e783029a778220ce38da98ccb474b623c2b",
+          "id": 149000037,
+          "structure": 149106,
+          "name": "≈ Тонкая мышца · проксимальное начало · ориентировочно",
+          "shortName": "≈ Тонкая мышца · проксимальное начало",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 130,
+          "y": 444,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "633-contraste_dpfs",
+          "frame": 13,
+          "imageSha256": "dcfced72770a4132ac854c0ed6b26c74377cf2fb35d44ad20d049b560ff5cbe7",
+          "id": 149000038,
+          "structure": 149106,
+          "name": "≈ Тонкая мышца · проксимальное начало · ориентировочно",
+          "shortName": "≈ Тонкая мышца · проксимальное начало",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 130,
+          "y": 451,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "632-contraste_dpfs",
+          "frame": 35,
+          "imageSha256": "168b9a7b7b11367fd424e51c011068336d369b7025c6546312ca77bd6a17fdae",
+          "id": 149000039,
+          "structure": 149107,
+          "name": "≈ Большая приводящая · седалищное начало · ориентировочно",
+          "shortName": "≈ Большая приводящая · седалищное начало",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 247,
+          "y": 448,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "632-contraste_dpfs",
+          "frame": 36,
+          "imageSha256": "134abe0ac8989d6fb90cd145dcc94219864d7463ba3721e3012c9f0b5554fb6b",
+          "id": 149000040,
+          "structure": 149107,
+          "name": "≈ Большая приводящая · седалищное начало · ориентировочно",
+          "shortName": "≈ Большая приводящая · седалищное начало",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 246,
+          "y": 440,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "632-contraste_dpfs",
+          "frame": 37,
+          "imageSha256": "404c0d09cfd47db033ee6d8775f3582dfa91d83905e3bf5c0a23195bcdc5b9b4",
+          "id": 149000041,
+          "structure": 149107,
+          "name": "≈ Большая приводящая · седалищное начало · ориентировочно",
+          "shortName": "≈ Большая приводящая · седалищное начало",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 245,
+          "y": 432,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "633-contraste_dpfs",
+          "frame": 27,
+          "imageSha256": "ab7c97395871b7f9db4974a48a443f0215428edf031b5dae1504e9e94156263e",
+          "id": 149000042,
+          "structure": 149107,
+          "name": "≈ Большая приводящая · седалищное начало · ориентировочно",
+          "shortName": "≈ Большая приводящая · седалищное начало",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 276,
+          "y": 476,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "633-contraste_dpfs",
+          "frame": 28,
+          "imageSha256": "6caccd5aa68c4df88cb701adf46e9771906836bcd84f1a01d1568d5e7f02d13e",
+          "id": 149000043,
+          "structure": 149107,
+          "name": "≈ Большая приводящая · седалищное начало · ориентировочно",
+          "shortName": "≈ Большая приводящая · седалищное начало",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 273,
+          "y": 474,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "633-contraste_dpfs",
+          "frame": 29,
+          "imageSha256": "0fccd766471d9419275e5c77cd5e1c459f67727a1441d2ec5e6f49f6c2996800",
+          "id": 149000044,
+          "structure": 149107,
+          "name": "≈ Большая приводящая · седалищное начало · ориентировочно",
+          "shortName": "≈ Большая приводящая · седалищное начало",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 271,
+          "y": 473,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "632-contraste_dpfs",
+          "frame": 12,
+          "imageSha256": "c0ad347d662c9332afe18a1a317d2cb4b3b1a33b8fda68bf1cb50d6bea59d376",
+          "id": 149000045,
+          "structure": 149108,
+          "name": "≈ Портняжная · начало у ВППО · ориентировочно",
+          "shortName": "≈ Портняжная · начало у ВППО",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 423,
+          "y": 108,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "632-contraste_dpfs",
+          "frame": 13,
+          "imageSha256": "3ad7a320dcc7da0f3a4c4454129825ff5e522483f8f0cb88eb910362854736fc",
+          "id": 149000046,
+          "structure": 149108,
+          "name": "≈ Портняжная · начало у ВППО · ориентировочно",
+          "shortName": "≈ Портняжная · начало у ВППО",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 423,
+          "y": 108,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "632-contraste_dpfs",
+          "frame": 14,
+          "imageSha256": "2fd4e99b12cd85fb53ad7a5db08a7edbfc98446218877d40d71550af26f402fc",
+          "id": 149000047,
+          "structure": 149108,
+          "name": "≈ Портняжная · начало у ВППО · ориентировочно",
+          "shortName": "≈ Портняжная · начало у ВППО",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 423,
+          "y": 108,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "633-contraste_dpfs",
+          "frame": 6,
+          "imageSha256": "ec2c66624513381f288971c8bd31aee84b57d8523d6cac1748a833d5b864da6b",
+          "id": 149000048,
+          "structure": 149108,
+          "name": "≈ Портняжная · начало у ВППО · ориентировочно",
+          "shortName": "≈ Портняжная · начало у ВППО",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 378,
+          "y": 197,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "633-contraste_dpfs",
+          "frame": 7,
+          "imageSha256": "36a942253d5564e8f78c641ecc890d8cae3473d92be1f0493c92d0ec4bd86ce0",
+          "id": 149000049,
+          "structure": 149108,
+          "name": "≈ Портняжная · начало у ВППО · ориентировочно",
+          "shortName": "≈ Портняжная · начало у ВППО",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 377,
+          "y": 193,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "633-contraste_dpfs",
+          "frame": 8,
+          "imageSha256": "9885a57c1a00ae7392af834d63a57757cb808efa27fa415589e053a4cea299ac",
+          "id": 149000050,
+          "structure": 149108,
+          "name": "≈ Портняжная · начало у ВППО · ориентировочно",
+          "shortName": "≈ Портняжная · начало у ВППО",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 377,
+          "y": 193,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "632-contraste_dpfs",
+          "frame": 12,
+          "imageSha256": "c0ad347d662c9332afe18a1a317d2cb4b3b1a33b8fda68bf1cb50d6bea59d376",
+          "id": 149000051,
+          "structure": 149109,
+          "name": "≈ Напрягатель широкой фасции · проксимальный апоневроз · ориентировочно",
+          "shortName": "≈ Напрягатель широкой фасции · проксимальный апоневроз",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 440,
+          "y": 120,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "632-contraste_dpfs",
+          "frame": 13,
+          "imageSha256": "3ad7a320dcc7da0f3a4c4454129825ff5e522483f8f0cb88eb910362854736fc",
+          "id": 149000052,
+          "structure": 149109,
+          "name": "≈ Напрягатель широкой фасции · проксимальный апоневроз · ориентировочно",
+          "shortName": "≈ Напрягатель широкой фасции · проксимальный апоневроз",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 440,
+          "y": 120,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "632-contraste_dpfs",
+          "frame": 14,
+          "imageSha256": "2fd4e99b12cd85fb53ad7a5db08a7edbfc98446218877d40d71550af26f402fc",
+          "id": 149000053,
+          "structure": 149109,
+          "name": "≈ Напрягатель широкой фасции · проксимальный апоневроз · ориентировочно",
+          "shortName": "≈ Напрягатель широкой фасции · проксимальный апоневроз",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 440,
+          "y": 120,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "632-contraste_dpfs",
+          "frame": 44,
+          "imageSha256": "8dac8386a760cfb023c231cc68fb92c19f03bf73e0a396ae822ee117a4a50e9d",
+          "id": 149000054,
+          "structure": 149110,
+          "name": "≈ Большая ягодичная · бедренное прикрепление · ориентировочно",
+          "shortName": "≈ Большая ягодичная · бедренное прикрепление",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 466,
+          "y": 354,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "632-contraste_dpfs",
+          "frame": 45,
+          "imageSha256": "8a18c4455e06da83dc75837d4741d9534409df8cf87e248ccb6806ddce498c5f",
+          "id": 149000055,
+          "structure": 149110,
+          "name": "≈ Большая ягодичная · бедренное прикрепление · ориентировочно",
+          "shortName": "≈ Большая ягодичная · бедренное прикрепление",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 464,
+          "y": 350,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "632-contraste_dpfs",
+          "frame": 46,
+          "imageSha256": "9c1985ff3e85e9aba25c6e771a7968d4890868454b2889b06c7afd744add0116",
+          "id": 149000056,
+          "structure": 149110,
+          "name": "≈ Большая ягодичная · бедренное прикрепление · ориентировочно",
+          "shortName": "≈ Большая ягодичная · бедренное прикрепление",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 462,
+          "y": 346,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "632-contraste_dpfs",
+          "frame": 44,
+          "imageSha256": "8dac8386a760cfb023c231cc68fb92c19f03bf73e0a396ae822ee117a4a50e9d",
+          "id": 149000057,
+          "structure": 149111,
+          "name": "≈ Гребенчатая · дистальный апоневроз · ориентировочно",
+          "shortName": "≈ Гребенчатая · дистальный апоневроз",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 393,
+          "y": 320,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "632-contraste_dpfs",
+          "frame": 45,
+          "imageSha256": "8a18c4455e06da83dc75837d4741d9534409df8cf87e248ccb6806ddce498c5f",
+          "id": 149000058,
+          "structure": 149111,
+          "name": "≈ Гребенчатая · дистальный апоневроз · ориентировочно",
+          "shortName": "≈ Гребенчатая · дистальный апоневроз",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 393,
+          "y": 315,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "632-contraste_dpfs",
+          "frame": 46,
+          "imageSha256": "9c1985ff3e85e9aba25c6e771a7968d4890868454b2889b06c7afd744add0116",
+          "id": 149000059,
+          "structure": 149111,
+          "name": "≈ Гребенчатая · дистальный апоневроз · ориентировочно",
+          "shortName": "≈ Гребенчатая · дистальный апоневроз",
+          "filter": 14701,
+          "category": "ligaments",
+          "x": 392,
+          "y": 310,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        }
+      ],
+      "ribbons": [],
+      "coverage": {
+        "149101": {
+          "Аксиальный": [
+            17,
+            18,
+            19
+          ],
+          "Фронтальный": [
+            11,
+            12,
+            13
+          ],
+          "Сагиттальный": [
+            21,
+            22,
+            23
+          ]
+        },
+        "149102": {
+          "Аксиальный": [],
+          "Фронтальный": [
+            16,
+            17,
+            18
+          ],
+          "Сагиттальный": []
+        },
+        "149103": {
+          "Аксиальный": [
+            32,
+            33,
+            34
+          ],
+          "Фронтальный": [
+            29,
+            30,
+            31
+          ],
+          "Сагиттальный": [
+            16,
+            17,
+            18
+          ]
+        },
+        "149104": {
+          "Аксиальный": [
+            32,
+            33,
+            34
+          ],
+          "Фронтальный": [
+            27,
+            28,
+            29
+          ],
+          "Сагиттальный": [
+            17,
+            18,
+            19
+          ]
+        },
+        "149105": {
+          "Аксиальный": [
+            29,
+            30,
+            31
+          ],
+          "Фронтальный": [
+            8,
+            9,
+            10
+          ],
+          "Сагиттальный": []
+        },
+        "149106": {
+          "Аксиальный": [],
+          "Фронтальный": [
+            11,
+            12,
+            13
+          ],
+          "Сагиттальный": []
+        },
+        "149107": {
+          "Аксиальный": [
+            35,
+            36,
+            37
+          ],
+          "Фронтальный": [
+            27,
+            28,
+            29
+          ],
+          "Сагиттальный": []
+        },
+        "149108": {
+          "Аксиальный": [
+            12,
+            13,
+            14
+          ],
+          "Фронтальный": [
+            6,
+            7,
+            8
+          ],
+          "Сагиттальный": []
+        },
+        "149109": {
+          "Аксиальный": [
+            12,
+            13,
+            14
+          ],
+          "Фронтальный": [],
+          "Сагиттальный": []
+        },
+        "149110": {
+          "Аксиальный": [
+            44,
+            45,
+            46
+          ],
+          "Фронтальный": [],
+          "Сагиттальный": []
+        },
+        "149111": {
+          "Аксиальный": [
+            44,
+            45,
+            46
+          ],
+          "Фронтальный": [],
+          "Сагиттальный": []
+        }
+      },
+      "presentation": {
+        "9504": {
+          "filter": 14701,
+          "category": "ligaments"
+        },
+        "9507": {
+          "filter": 14701,
+          "category": "ligaments"
+        },
+        "9512": {
+          "filter": 14701,
+          "category": "ligaments"
+        },
+        "9514": {
+          "filter": 14701,
+          "category": "ligaments"
+        },
+        "9519": {
+          "filter": 14701,
+          "category": "ligaments"
+        },
+        "9520": {
+          "filter": 14701,
+          "category": "ligaments"
+        },
+        "9470": {
+          "filter": 14701,
+          "category": "ligaments"
+        },
+        "9524": {
+          "filter": 14701,
+          "category": "ligaments"
+        },
+        "9475": {
+          "filter": 14701,
+          "category": "ligaments"
+        },
+        "9525": {
+          "filter": 14701,
+          "category": "ligaments"
+        }
+      }
+    },
+    {
+      "module": "knee-mri",
+      "sourceDataSha256": "10de14ba67ff748c32ee911178a8ba7b461ccb6afe933b0ced570e03eaaba413",
+      "sourceLabelsSha256": "81669880fda2b0aa8f05d88664b5aa5572872d5218a7e753126471fb2b2006df",
+      "points": [
+        {
+          "series": "653-contraste_dp",
+          "frame": 24,
+          "imageSha256": "b8f59c9ad96de991d4a2241671f2444361f0fb7aa402de5c67dcae92eab28f10",
+          "id": 149100000,
+          "structure": 149214,
+          "name": "≈ Большая приводящая · приводящий бугорок · ориентировочно",
+          "shortName": "≈ Большая приводящая · приводящий бугорок",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 225,
+          "y": 229,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 25,
+          "imageSha256": "ab65bf2bda40d400455c968a08ad04c349e301b4f17fa0d2e4316a3a2a2ba876",
+          "id": 149100001,
+          "structure": 149214,
+          "name": "≈ Большая приводящая · приводящий бугорок · ориентировочно",
+          "shortName": "≈ Большая приводящая · приводящий бугорок",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 225,
+          "y": 233,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 26,
+          "imageSha256": "cca3a8ce2253797f584321b9dd1949e877b96eadb1ea330513904b5b05e5a4ba",
+          "id": 149100002,
+          "structure": 149214,
+          "name": "≈ Большая приводящая · приводящий бугорок · ориентировочно",
+          "shortName": "≈ Большая приводящая · приводящий бугорок",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 226,
+          "y": 238,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "654-contraste_dp",
+          "frame": 18,
+          "imageSha256": "33f05e45a52f1a5f5d1bb60d580b1e4e942de5d68e521cc1fc3cae00952f75ee",
+          "id": 149100003,
+          "structure": 149214,
+          "name": "≈ Большая приводящая · приводящий бугорок · ориентировочно",
+          "shortName": "≈ Большая приводящая · приводящий бугорок",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 326,
+          "y": 219,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "654-contraste_dp",
+          "frame": 19,
+          "imageSha256": "c0090586eb9421bfb89ba0daf4ece0aab318e4e683e510893232f17a72f2e130",
+          "id": 149100004,
+          "structure": 149214,
+          "name": "≈ Большая приводящая · приводящий бугорок · ориентировочно",
+          "shortName": "≈ Большая приводящая · приводящий бугорок",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 325,
+          "y": 219,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "654-contraste_dp",
+          "frame": 20,
+          "imageSha256": "6e382fab0a56f981c09440bfc73ed32e4a6ce5074fb4a65623d63b86e59f6c42",
+          "id": 149100005,
+          "structure": 149214,
+          "name": "≈ Большая приводящая · приводящий бугорок · ориентировочно",
+          "shortName": "≈ Большая приводящая · приводящий бугорок",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 324,
+          "y": 219,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 12,
+          "imageSha256": "5050f4acb72cf848527a8ad3596863052074d4b20be09a8a88302ba8d63ffb2f",
+          "id": 149100006,
+          "structure": 149201,
+          "name": "≈ Четырёхглавая · прикрепление к надколеннику · ориентировочно",
+          "shortName": "≈ Четырёхглавая · прикрепление к надколеннику",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 103,
+          "y": 245,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 13,
+          "imageSha256": "62e22c84df1675b6b4b8492636ebdc4df2be7365af3ec816324a916973adc4f0",
+          "id": 149100007,
+          "structure": 149201,
+          "name": "≈ Четырёхглавая · прикрепление к надколеннику · ориентировочно",
+          "shortName": "≈ Четырёхглавая · прикрепление к надколеннику",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 102,
+          "y": 245,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 14,
+          "imageSha256": "d948f7acb96af6068c1dcc9766635e68ca24d62eda8b55af096427a5126dd122",
+          "id": 149100008,
+          "structure": 149201,
+          "name": "≈ Четырёхглавая · прикрепление к надколеннику · ориентировочно",
+          "shortName": "≈ Четырёхглавая · прикрепление к надколеннику",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 101,
+          "y": 245,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 10,
+          "imageSha256": "79019f73acfd1b21afeefdb8a2607125caf171a3b78a79ccfb0e4cc09c0bfa7d",
+          "id": 149100009,
+          "structure": 149202,
+          "name": "≈ Связка надколенника · проксимальное прикрепление · ориентировочно",
+          "shortName": "≈ Связка надколенника · проксимальное прикрепление",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 111,
+          "y": 358,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 11,
+          "imageSha256": "9cefdd9bec2c73ce81c4383772b3650d9d20fdd4c55e50e2b0e1618eb8e92918",
+          "id": 149100010,
+          "structure": 149202,
+          "name": "≈ Связка надколенника · проксимальное прикрепление · ориентировочно",
+          "shortName": "≈ Связка надколенника · проксимальное прикрепление",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 108,
+          "y": 355,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 12,
+          "imageSha256": "5050f4acb72cf848527a8ad3596863052074d4b20be09a8a88302ba8d63ffb2f",
+          "id": 149100011,
+          "structure": 149202,
+          "name": "≈ Связка надколенника · проксимальное прикрепление · ориентировочно",
+          "shortName": "≈ Связка надколенника · проксимальное прикрепление",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 105,
+          "y": 353,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 10,
+          "imageSha256": "79019f73acfd1b21afeefdb8a2607125caf171a3b78a79ccfb0e4cc09c0bfa7d",
+          "id": 149100012,
+          "structure": 149203,
+          "name": "≈ Связка надколенника · бугристость большеберцовой · ориентировочно",
+          "shortName": "≈ Связка надколенника · бугристость большеберцовой",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 158,
+          "y": 460,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 11,
+          "imageSha256": "9cefdd9bec2c73ce81c4383772b3650d9d20fdd4c55e50e2b0e1618eb8e92918",
+          "id": 149100013,
+          "structure": 149203,
+          "name": "≈ Связка надколенника · бугристость большеберцовой · ориентировочно",
+          "shortName": "≈ Связка надколенника · бугристость большеберцовой",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 155,
+          "y": 452,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 12,
+          "imageSha256": "5050f4acb72cf848527a8ad3596863052074d4b20be09a8a88302ba8d63ffb2f",
+          "id": 149100014,
+          "structure": 149203,
+          "name": "≈ Связка надколенника · бугристость большеберцовой · ориентировочно",
+          "shortName": "≈ Связка надколенника · бугристость большеберцовой",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 152,
+          "y": 443,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 11,
+          "imageSha256": "9cefdd9bec2c73ce81c4383772b3650d9d20fdd4c55e50e2b0e1618eb8e92918",
+          "id": 149100015,
+          "structure": 149204,
+          "name": "≈ Связка надколенника · ход · ориентировочно",
+          "shortName": "≈ Связка надколенника · ход",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 118,
+          "y": 389,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 12,
+          "imageSha256": "5050f4acb72cf848527a8ad3596863052074d4b20be09a8a88302ba8d63ffb2f",
+          "id": 149100016,
+          "structure": 149204,
+          "name": "≈ Связка надколенника · ход · ориентировочно",
+          "shortName": "≈ Связка надколенника · ход",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 117,
+          "y": 388,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 13,
+          "imageSha256": "62e22c84df1675b6b4b8492636ebdc4df2be7365af3ec816324a916973adc4f0",
+          "id": 149100017,
+          "structure": 149204,
+          "name": "≈ Связка надколенника · ход · ориентировочно",
+          "shortName": "≈ Связка надколенника · ход",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 116,
+          "y": 389,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 3,
+          "imageSha256": "4686b1cd0e1b6973284f7ce80a64c3d7d3651fafaae70b3d26d215ff6a003d83",
+          "id": 149100018,
+          "structure": 149205,
+          "name": "≈ Двуглавая бедра · малоберцовое прикрепление · ориентировочно",
+          "shortName": "≈ Двуглавая бедра · малоберцовое прикрепление",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 336,
+          "y": 411,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 4,
+          "imageSha256": "71191c2b8143e94e8c4f0ee28afa5b4d244f70854e8c05951813dbe0c3d5e26b",
+          "id": 149100019,
+          "structure": 149205,
+          "name": "≈ Двуглавая бедра · малоберцовое прикрепление · ориентировочно",
+          "shortName": "≈ Двуглавая бедра · малоберцовое прикрепление",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 337,
+          "y": 414,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 5,
+          "imageSha256": "b77337ae476f80f01d2c40e6cb478c5be20a6cef481ebf12e804374323a0dd6f",
+          "id": 149100020,
+          "structure": 149205,
+          "name": "≈ Двуглавая бедра · малоберцовое прикрепление · ориентировочно",
+          "shortName": "≈ Двуглавая бедра · малоберцовое прикрепление",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 338,
+          "y": 417,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "652-contraste_dp",
+          "frame": 40,
+          "imageSha256": "f90a101cf15d4e409c0a17f9c1d625c942d04b7c6997829371a3bc705afda685",
+          "id": 149100021,
+          "structure": 149205,
+          "name": "≈ Двуглавая бедра · малоберцовое прикрепление · ориентировочно",
+          "shortName": "≈ Двуглавая бедра · малоберцовое прикрепление",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 51,
+          "y": 302,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "652-contraste_dp",
+          "frame": 41,
+          "imageSha256": "f5e74ca8b647613e67ed692d54ec846acc8f0b3c6883fcb48ea3d99c079db693",
+          "id": 149100022,
+          "structure": 149205,
+          "name": "≈ Двуглавая бедра · малоберцовое прикрепление · ориентировочно",
+          "shortName": "≈ Двуглавая бедра · малоберцовое прикрепление",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 49,
+          "y": 302,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "652-contraste_dp",
+          "frame": 42,
+          "imageSha256": "5866afe8830cf3774236b9bfd8c6fd2e3fb04e55c278d44d36ef36b50d387cb8",
+          "id": 149100023,
+          "structure": 149205,
+          "name": "≈ Двуглавая бедра · малоберцовое прикрепление · ориентировочно",
+          "shortName": "≈ Двуглавая бедра · малоберцовое прикрепление",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 48,
+          "y": 302,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "654-contraste_dp",
+          "frame": 20,
+          "imageSha256": "6e382fab0a56f981c09440bfc73ed32e4a6ce5074fb4a65623d63b86e59f6c42",
+          "id": 149100024,
+          "structure": 149205,
+          "name": "≈ Двуглавая бедра · малоберцовое прикрепление · ориентировочно",
+          "shortName": "≈ Двуглавая бедра · малоберцовое прикрепление",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 111,
+          "y": 422,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "654-contraste_dp",
+          "frame": 21,
+          "imageSha256": "58ef7df525d0762d5d81cef8ff3ece6c5e7e7c7f7b926e0a016e77146a11e6b8",
+          "id": 149100025,
+          "structure": 149205,
+          "name": "≈ Двуглавая бедра · малоберцовое прикрепление · ориентировочно",
+          "shortName": "≈ Двуглавая бедра · малоберцовое прикрепление",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 110,
+          "y": 417,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "654-contraste_dp",
+          "frame": 22,
+          "imageSha256": "ac98d92e57f8444b6bcdba61d06c302322e24f9bec46a383f98f9b1e44ccbea3",
+          "id": 149100026,
+          "structure": 149205,
+          "name": "≈ Двуглавая бедра · малоберцовое прикрепление · ориентировочно",
+          "shortName": "≈ Двуглавая бедра · малоберцовое прикрепление",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 109,
+          "y": 412,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "652-contraste_dp",
+          "frame": 46,
+          "imageSha256": "7339fdf84d183618cadc9606a6e3a838031ae98a8c3d9bcbc4301894446bd08e",
+          "id": 149100027,
+          "structure": 149206,
+          "name": "≈ Гусиная лапка · большеберцовое прикрепление · ориентировочно",
+          "shortName": "≈ Гусиная лапка · большеберцовое прикрепление",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 309,
+          "y": 238,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "652-contraste_dp",
+          "frame": 47,
+          "imageSha256": "a8330da1fa7fa9a9bf0b4dff54dd0d7e09d4b0448d92d6dcfe9168d0d6d4dd3f",
+          "id": 149100028,
+          "structure": 149206,
+          "name": "≈ Гусиная лапка · большеберцовое прикрепление · ориентировочно",
+          "shortName": "≈ Гусиная лапка · большеберцовое прикрепление",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 304,
+          "y": 233,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "652-contraste_dp",
+          "frame": 48,
+          "imageSha256": "ea8384d10dbec51eb853ef5444b96f8e86e30a3cd9ca3a91cc0806e3179ad6bb",
+          "id": 149100029,
+          "structure": 149206,
+          "name": "≈ Гусиная лапка · большеберцовое прикрепление · ориентировочно",
+          "shortName": "≈ Гусиная лапка · большеберцовое прикрепление",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 299,
+          "y": 230,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "654-contraste_dp",
+          "frame": 17,
+          "imageSha256": "bdeb02557ec35f7bb4c7c85eda162068269e7d2609332eeafa7b41be35848156",
+          "id": 149100030,
+          "structure": 149206,
+          "name": "≈ Гусиная лапка · большеберцовое прикрепление · ориентировочно",
+          "shortName": "≈ Гусиная лапка · большеберцовое прикрепление",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 324,
+          "y": 430,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "654-contraste_dp",
+          "frame": 18,
+          "imageSha256": "33f05e45a52f1a5f5d1bb60d580b1e4e942de5d68e521cc1fc3cae00952f75ee",
+          "id": 149100031,
+          "structure": 149206,
+          "name": "≈ Гусиная лапка · большеберцовое прикрепление · ориентировочно",
+          "shortName": "≈ Гусиная лапка · большеберцовое прикрепление",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 328,
+          "y": 425,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "654-contraste_dp",
+          "frame": 19,
+          "imageSha256": "c0090586eb9421bfb89ba0daf4ece0aab318e4e683e510893232f17a72f2e130",
+          "id": 149100032,
+          "structure": 149206,
+          "name": "≈ Гусиная лапка · большеберцовое прикрепление · ориентировочно",
+          "shortName": "≈ Гусиная лапка · большеберцовое прикрепление",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 333,
+          "y": 420,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 22,
+          "imageSha256": "32f13398c9711611d386dd058830b445f12d8afdfc185ada5195da5af8c736b7",
+          "id": 149100033,
+          "structure": 149207,
+          "name": "≈ Полуперепончатая · прямое прикрепление · ориентировочно",
+          "shortName": "≈ Полуперепончатая · прямое прикрепление",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 296,
+          "y": 389,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 23,
+          "imageSha256": "96d3a093964658b56185743b1795efb71093bfd6e0cdfe7e4d3e3e14b8bd0803",
+          "id": 149100034,
+          "structure": 149207,
+          "name": "≈ Полуперепончатая · прямое прикрепление · ориентировочно",
+          "shortName": "≈ Полуперепончатая · прямое прикрепление",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 296,
+          "y": 387,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 24,
+          "imageSha256": "b8f59c9ad96de991d4a2241671f2444361f0fb7aa402de5c67dcae92eab28f10",
+          "id": 149100035,
+          "structure": 149207,
+          "name": "≈ Полуперепончатая · прямое прикрепление · ориентировочно",
+          "shortName": "≈ Полуперепончатая · прямое прикрепление",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 297,
+          "y": 386,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "652-contraste_dp",
+          "frame": 38,
+          "imageSha256": "9a78aec404f8d9fe803b2e6a2fb7c5b6b39c78aee0c2c5240726c969c9634867",
+          "id": 149100036,
+          "structure": 149208,
+          "name": "≈ Полуперепончатая · отражённое расширение · ориентировочно",
+          "shortName": "≈ Полуперепончатая · отражённое расширение",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 329,
+          "y": 284,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "652-contraste_dp",
+          "frame": 39,
+          "imageSha256": "7d19ce5ff0efe5d6ef9c1392766d8efc1f658146651957ba7456133586980e27",
+          "id": 149100037,
+          "structure": 149208,
+          "name": "≈ Полуперепончатая · отражённое расширение · ориентировочно",
+          "shortName": "≈ Полуперепончатая · отражённое расширение",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 331,
+          "y": 281,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "652-contraste_dp",
+          "frame": 40,
+          "imageSha256": "f90a101cf15d4e409c0a17f9c1d625c942d04b7c6997829371a3bc705afda685",
+          "id": 149100038,
+          "structure": 149208,
+          "name": "≈ Полуперепончатая · отражённое расширение · ориентировочно",
+          "shortName": "≈ Полуперепончатая · отражённое расширение",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 331,
+          "y": 276,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "654-contraste_dp",
+          "frame": 17,
+          "imageSha256": "bdeb02557ec35f7bb4c7c85eda162068269e7d2609332eeafa7b41be35848156",
+          "id": 149100039,
+          "structure": 149209,
+          "name": "≈ Подколенное сухожилие · бедренная область · ориентировочно",
+          "shortName": "≈ Подколенное сухожилие · бедренная область",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 121,
+          "y": 306,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "654-contraste_dp",
+          "frame": 18,
+          "imageSha256": "33f05e45a52f1a5f5d1bb60d580b1e4e942de5d68e521cc1fc3cae00952f75ee",
+          "id": 149100040,
+          "structure": 149209,
+          "name": "≈ Подколенное сухожилие · бедренная область · ориентировочно",
+          "shortName": "≈ Подколенное сухожилие · бедренная область",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 121,
+          "y": 306,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "654-contraste_dp",
+          "frame": 19,
+          "imageSha256": "c0090586eb9421bfb89ba0daf4ece0aab318e4e683e510893232f17a72f2e130",
+          "id": 149100041,
+          "structure": 149209,
+          "name": "≈ Подколенное сухожилие · бедренная область · ориентировочно",
+          "shortName": "≈ Подколенное сухожилие · бедренная область",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 122,
+          "y": 304,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 5,
+          "imageSha256": "b77337ae476f80f01d2c40e6cb478c5be20a6cef481ebf12e804374323a0dd6f",
+          "id": 149100042,
+          "structure": 149210,
+          "name": "≈ Подколенное сухожилие · ход в hiatus · ориентировочно",
+          "shortName": "≈ Подколенное сухожилие · ход в hiatus",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 299,
+          "y": 347,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 6,
+          "imageSha256": "ef09b5b8a22a49671bd1b4aee8c56a48b9bea49b010a5eadbdd403b44f8805c8",
+          "id": 149100043,
+          "structure": 149210,
+          "name": "≈ Подколенное сухожилие · ход в hiatus · ориентировочно",
+          "shortName": "≈ Подколенное сухожилие · ход в hiatus",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 306,
+          "y": 352,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 7,
+          "imageSha256": "923fec221f0ffe65140043d91fb0df9e26831efbd17c7207789da11918c831e7",
+          "id": 149100044,
+          "structure": 149210,
+          "name": "≈ Подколенное сухожилие · ход в hiatus · ориентировочно",
+          "shortName": "≈ Подколенное сухожилие · ход в hiatus",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 313,
+          "y": 358,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 21,
+          "imageSha256": "6b70e104d37277216cc5981dab666975599b7d913b28bffe04279e3039e82e40",
+          "id": 149100045,
+          "structure": 149211,
+          "name": "≈ Икроножная · медиальное бедренное начало · ориентировочно",
+          "shortName": "≈ Икроножная · медиальное бедренное начало",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 296,
+          "y": 250,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 22,
+          "imageSha256": "32f13398c9711611d386dd058830b445f12d8afdfc185ada5195da5af8c736b7",
+          "id": 149100046,
+          "structure": 149211,
+          "name": "≈ Икроножная · медиальное бедренное начало · ориентировочно",
+          "shortName": "≈ Икроножная · медиальное бедренное начало",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 296,
+          "y": 250,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 23,
+          "imageSha256": "96d3a093964658b56185743b1795efb71093bfd6e0cdfe7e4d3e3e14b8bd0803",
+          "id": 149100047,
+          "structure": 149211,
+          "name": "≈ Икроножная · медиальное бедренное начало · ориентировочно",
+          "shortName": "≈ Икроножная · медиальное бедренное начало",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 294,
+          "y": 250,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 7,
+          "imageSha256": "923fec221f0ffe65140043d91fb0df9e26831efbd17c7207789da11918c831e7",
+          "id": 149100048,
+          "structure": 149212,
+          "name": "≈ Икроножная · латеральное бедренное начало · ориентировочно",
+          "shortName": "≈ Икроножная · латеральное бедренное начало",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 311,
+          "y": 272,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 8,
+          "imageSha256": "40808f931ea8c296067210b53a1149afb404b89d125d2ee1661efa429569d7e7",
+          "id": 149100049,
+          "structure": 149212,
+          "name": "≈ Икроножная · латеральное бедренное начало · ориентировочно",
+          "shortName": "≈ Икроножная · латеральное бедренное начало",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 315,
+          "y": 278,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 9,
+          "imageSha256": "3f7864b233aca46a3ed4913addfd18cd031c084fb54a07e4b8664eef1fb58959",
+          "id": 149100050,
+          "structure": 149212,
+          "name": "≈ Икроножная · латеральное бедренное начало · ориентировочно",
+          "shortName": "≈ Икроножная · латеральное бедренное начало",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 319,
+          "y": 282,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "652-contraste_dp",
+          "frame": 43,
+          "imageSha256": "e3e236488d08f86b5bfa7df2882b25adbeb1a9319a95bdeee142525f9f8e576c",
+          "id": 149100051,
+          "structure": 149213,
+          "name": "≈ Подошвенная · тонкий дистальный переход · ориентировочно",
+          "shortName": "≈ Подошвенная · тонкий дистальный переход",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 232,
+          "y": 330,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "652-contraste_dp",
+          "frame": 44,
+          "imageSha256": "0f8dfd327e86c93a58664c8793748ff8c3baa952279c5b08f1672e17d9b1e368",
+          "id": 149100052,
+          "structure": 149213,
+          "name": "≈ Подошвенная · тонкий дистальный переход · ориентировочно",
+          "shortName": "≈ Подошвенная · тонкий дистальный переход",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 233,
+          "y": 328,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        },
+        {
+          "series": "652-contraste_dp",
+          "frame": 45,
+          "imageSha256": "fcaa7ee7ed31f038792b41f934949c2583a452892ac1f2e376ac8b0e0502d492",
+          "id": 149100053,
+          "structure": 149213,
+          "name": "≈ Подошвенная · тонкий дистальный переход · ориентировочно",
+          "shortName": "≈ Подошвенная · тонкий дистальный переход",
+          "filter": 1222,
+          "category": "ligaments",
+          "x": 234,
+          "y": 326,
+          "approximate": true,
+          "provenance": "manual-pd-topography-1.49"
+        }
+      ],
+      "ribbons": [
+        {
+          "series": "653-contraste_dp",
+          "frame": 8,
+          "imageSha256": "40808f931ea8c296067210b53a1149afb404b89d125d2ee1661efa429569d7e7",
+          "structure": 144204,
+          "name": "≈ Задний бедренный заворот",
+          "shortName": "≈ Задний заворот",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "recess",
+          "vertices": [
+            [
+              313,
+              276
+            ],
+            [
+              315,
+              286
+            ],
+            [
+              314,
+              297
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 9,
+          "imageSha256": "3f7864b233aca46a3ed4913addfd18cd031c084fb54a07e4b8664eef1fb58959",
+          "structure": 144204,
+          "name": "≈ Задний бедренный заворот",
+          "shortName": "≈ Задний заворот",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "recess",
+          "vertices": [
+            [
+              315,
+              277
+            ],
+            [
+              317,
+              287
+            ],
+            [
+              316,
+              298
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 10,
+          "imageSha256": "79019f73acfd1b21afeefdb8a2607125caf171a3b78a79ccfb0e4cc09c0bfa7d",
+          "structure": 144204,
+          "name": "≈ Задний бедренный заворот",
+          "shortName": "≈ Задний заворот",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "recess",
+          "vertices": [
+            [
+              316,
+              279
+            ],
+            [
+              318,
+              289
+            ],
+            [
+              317,
+              300
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 22,
+          "imageSha256": "32f13398c9711611d386dd058830b445f12d8afdfc185ada5195da5af8c736b7",
+          "structure": 144204,
+          "name": "≈ Задний бедренный заворот",
+          "shortName": "≈ Задний заворот",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "recess",
+          "vertices": [
+            [
+              293,
+              269
+            ],
+            [
+              296,
+              280
+            ],
+            [
+              297,
+              291
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 23,
+          "imageSha256": "96d3a093964658b56185743b1795efb71093bfd6e0cdfe7e4d3e3e14b8bd0803",
+          "structure": 144204,
+          "name": "≈ Задний бедренный заворот",
+          "shortName": "≈ Задний заворот",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "recess",
+          "vertices": [
+            [
+              292,
+              270
+            ],
+            [
+              295,
+              281
+            ],
+            [
+              296,
+              292
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 24,
+          "imageSha256": "b8f59c9ad96de991d4a2241671f2444361f0fb7aa402de5c67dcae92eab28f10",
+          "structure": 144204,
+          "name": "≈ Задний бедренный заворот",
+          "shortName": "≈ Задний заворот",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "recess",
+          "vertices": [
+            [
+              292,
+              271
+            ],
+            [
+              295,
+              282
+            ],
+            [
+              296,
+              293
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 5,
+          "imageSha256": "b77337ae476f80f01d2c40e6cb478c5be20a6cef481ebf12e804374323a0dd6f",
+          "structure": 144205,
+          "name": "≈ Заворот сухожилия подколенной мышцы",
+          "shortName": "≈ Подколенный заворот",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "recess",
+          "vertices": [
+            [
+              293,
+              342
+            ],
+            [
+              299,
+              346
+            ],
+            [
+              304,
+              350
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 6,
+          "imageSha256": "ef09b5b8a22a49671bd1b4aee8c56a48b9bea49b010a5eadbdd403b44f8805c8",
+          "structure": 144205,
+          "name": "≈ Заворот сухожилия подколенной мышцы",
+          "shortName": "≈ Подколенный заворот",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "recess",
+          "vertices": [
+            [
+              300,
+              344
+            ],
+            [
+              306,
+              349
+            ],
+            [
+              310,
+              354
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 7,
+          "imageSha256": "923fec221f0ffe65140043d91fb0df9e26831efbd17c7207789da11918c831e7",
+          "structure": 144205,
+          "name": "≈ Заворот сухожилия подколенной мышцы",
+          "shortName": "≈ Подколенный заворот",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "recess",
+          "vertices": [
+            [
+              307,
+              346
+            ],
+            [
+              312,
+              352
+            ],
+            [
+              317,
+              358
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 12,
+          "imageSha256": "5050f4acb72cf848527a8ad3596863052074d4b20be09a8a88302ba8d63ffb2f",
+          "structure": 144206,
+          "name": "≈ Преднадколенниковая сумка",
+          "shortName": "≈ Преднадколен. сумка",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "bursa",
+          "vertices": [
+            [
+              49,
+              266
+            ],
+            [
+              50,
+              278
+            ],
+            [
+              52,
+              290
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 13,
+          "imageSha256": "62e22c84df1675b6b4b8492636ebdc4df2be7365af3ec816324a916973adc4f0",
+          "structure": 144206,
+          "name": "≈ Преднадколенниковая сумка",
+          "shortName": "≈ Преднадколен. сумка",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "bursa",
+          "vertices": [
+            [
+              49,
+              269
+            ],
+            [
+              50,
+              281
+            ],
+            [
+              52,
+              293
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 14,
+          "imageSha256": "d948f7acb96af6068c1dcc9766635e68ca24d62eda8b55af096427a5126dd122",
+          "structure": 144206,
+          "name": "≈ Преднадколенниковая сумка",
+          "shortName": "≈ Преднадколен. сумка",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "bursa",
+          "vertices": [
+            [
+              50,
+              272
+            ],
+            [
+              51,
+              284
+            ],
+            [
+              53,
+              296
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 15,
+          "imageSha256": "50b08fac833f47a754b907c2538f6f73922c739b98e0cf57559f36192402e336",
+          "structure": 144206,
+          "name": "≈ Преднадколенниковая сумка",
+          "shortName": "≈ Преднадколен. сумка",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "bursa",
+          "vertices": [
+            [
+              51,
+              278
+            ],
+            [
+              52,
+              290
+            ],
+            [
+              54,
+              302
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 14,
+          "imageSha256": "d948f7acb96af6068c1dcc9766635e68ca24d62eda8b55af096427a5126dd122",
+          "structure": 144207,
+          "name": "≈ Глубокая поднадколенниковая сумка",
+          "shortName": "≈ Глубокая инфрапател. сумка",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "bursa",
+          "vertices": [
+            [
+              138,
+              399
+            ],
+            [
+              142,
+              406
+            ],
+            [
+              146,
+              412
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 15,
+          "imageSha256": "50b08fac833f47a754b907c2538f6f73922c739b98e0cf57559f36192402e336",
+          "structure": 144207,
+          "name": "≈ Глубокая поднадколенниковая сумка",
+          "shortName": "≈ Глубокая инфрапател. сумка",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "bursa",
+          "vertices": [
+            [
+              140,
+              401
+            ],
+            [
+              144,
+              408
+            ],
+            [
+              148,
+              414
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 16,
+          "imageSha256": "c35476e20c248046372c5ec1aacd0febc20a4d16972452db6517e9c175baacfb",
+          "structure": 144207,
+          "name": "≈ Глубокая поднадколенниковая сумка",
+          "shortName": "≈ Глубокая инфрапател. сумка",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "bursa",
+          "vertices": [
+            [
+              142,
+              403
+            ],
+            [
+              146,
+              410
+            ],
+            [
+              150,
+              416
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 14,
+          "imageSha256": "d948f7acb96af6068c1dcc9766635e68ca24d62eda8b55af096427a5126dd122",
+          "structure": 144208,
+          "name": "≈ Поверхностная поднадколенниковая сумка",
+          "shortName": "≈ Поверхност. инфрапател. сумка",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "bursa",
+          "vertices": [
+            [
+              112,
+              400
+            ],
+            [
+              115,
+              408
+            ],
+            [
+              118,
+              416
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 15,
+          "imageSha256": "50b08fac833f47a754b907c2538f6f73922c739b98e0cf57559f36192402e336",
+          "structure": 144208,
+          "name": "≈ Поверхностная поднадколенниковая сумка",
+          "shortName": "≈ Поверхност. инфрапател. сумка",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "bursa",
+          "vertices": [
+            [
+              114,
+              402
+            ],
+            [
+              117,
+              410
+            ],
+            [
+              120,
+              418
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 16,
+          "imageSha256": "c35476e20c248046372c5ec1aacd0febc20a4d16972452db6517e9c175baacfb",
+          "structure": 144208,
+          "name": "≈ Поверхностная поднадколенниковая сумка",
+          "shortName": "≈ Поверхност. инфрапател. сумка",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "bursa",
+          "vertices": [
+            [
+              116,
+              404
+            ],
+            [
+              119,
+              412
+            ],
+            [
+              122,
+              420
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "652-contraste_dp",
+          "frame": 29,
+          "imageSha256": "003a56cce5f74d280e91323b4ec7b1eaadd6c31a85ae442a55226c37be1e6a8e",
+          "structure": 144209,
+          "name": "≈ Икроножно-полуперепончатая сумка",
+          "shortName": "≈ Икроножно-полупереп. сумка",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "bursa",
+          "vertices": [
+            [
+              304,
+              343
+            ],
+            [
+              303,
+              350
+            ],
+            [
+              302,
+              357
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "652-contraste_dp",
+          "frame": 30,
+          "imageSha256": "fd8b007a64585741c5e3e6cba81b427acc1d4c02ee2c03bf55dff4700173fde6",
+          "structure": 144209,
+          "name": "≈ Икроножно-полуперепончатая сумка",
+          "shortName": "≈ Икроножно-полупереп. сумка",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "bursa",
+          "vertices": [
+            [
+              305,
+              345
+            ],
+            [
+              304,
+              352
+            ],
+            [
+              303,
+              359
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "652-contraste_dp",
+          "frame": 31,
+          "imageSha256": "09b9d9d7b77a3c74c0d2375df754cb2130c12e8f95a363ac659c6f2dee95b5f6",
+          "structure": 144209,
+          "name": "≈ Икроножно-полуперепончатая сумка",
+          "shortName": "≈ Икроножно-полупереп. сумка",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "bursa",
+          "vertices": [
+            [
+              306,
+              347
+            ],
+            [
+              305,
+              354
+            ],
+            [
+              304,
+              361
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 23,
+          "imageSha256": "96d3a093964658b56185743b1795efb71093bfd6e0cdfe7e4d3e3e14b8bd0803",
+          "structure": 144209,
+          "name": "≈ Икроножно-полуперепончатая сумка",
+          "shortName": "≈ Икроножно-полупереп. сумка",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "bursa",
+          "vertices": [
+            [
+              314,
+              319
+            ],
+            [
+              315,
+              327
+            ],
+            [
+              316,
+              335
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 24,
+          "imageSha256": "b8f59c9ad96de991d4a2241671f2444361f0fb7aa402de5c67dcae92eab28f10",
+          "structure": 144209,
+          "name": "≈ Икроножно-полуперепончатая сумка",
+          "shortName": "≈ Икроножно-полупереп. сумка",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "bursa",
+          "vertices": [
+            [
+              315,
+              321
+            ],
+            [
+              316,
+              329
+            ],
+            [
+              317,
+              337
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "653-contraste_dp",
+          "frame": 25,
+          "imageSha256": "ab65bf2bda40d400455c968a08ad04c349e301b4f17fa0d2e4316a3a2a2ba876",
+          "structure": 144209,
+          "name": "≈ Икроножно-полуперепончатая сумка",
+          "shortName": "≈ Икроножно-полупереп. сумка",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "bursa",
+          "vertices": [
+            [
+              316,
+              323
+            ],
+            [
+              317,
+              331
+            ],
+            [
+              318,
+              339
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "654-contraste_dp",
+          "frame": 15,
+          "imageSha256": "20ce99ecf7c7619aca23ff955b33dd4631a2e8f79993fb359aa4d7fd688d61bd",
+          "structure": 144210,
+          "name": "≈ Сумка гусиной лапки",
+          "shortName": "≈ Сумка гусиной лапки",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "bursa",
+          "vertices": [
+            [
+              343,
+              400
+            ],
+            [
+              345,
+              411
+            ],
+            [
+              345,
+              422
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "654-contraste_dp",
+          "frame": 16,
+          "imageSha256": "bf1f8826be0deb5d047eca09b7ca746d6111926619092c66801672361de75272",
+          "structure": 144210,
+          "name": "≈ Сумка гусиной лапки",
+          "shortName": "≈ Сумка гусиной лапки",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "bursa",
+          "vertices": [
+            [
+              343,
+              401
+            ],
+            [
+              345,
+              412
+            ],
+            [
+              345,
+              423
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "654-contraste_dp",
+          "frame": 17,
+          "imageSha256": "bdeb02557ec35f7bb4c7c85eda162068269e7d2609332eeafa7b41be35848156",
+          "structure": 144210,
+          "name": "≈ Сумка гусиной лапки",
+          "shortName": "≈ Сумка гусиной лапки",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "bursa",
+          "vertices": [
+            [
+              343,
+              402
+            ],
+            [
+              345,
+              413
+            ],
+            [
+              345,
+              424
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        },
+        {
+          "series": "654-contraste_dp",
+          "frame": 18,
+          "imageSha256": "33f05e45a52f1a5f5d1bb60d580b1e4e942de5d68e521cc1fc3cae00952f75ee",
+          "structure": 144210,
+          "name": "≈ Сумка гусиной лапки",
+          "shortName": "≈ Сумка гусиной лапки",
+          "filter": 14401,
+          "category": "organs",
+          "approximate": true,
+          "kind": "bursa",
+          "vertices": [
+            [
+              342,
+              403
+            ],
+            [
+              344,
+              414
+            ],
+            [
+              344,
+              425
+            ]
+          ],
+          "width": 3,
+          "provenance": "expected-anatomical-space-1.49"
+        }
+      ],
+      "coverage": {
+        "149201": {
+          "Аксиальный": [],
+          "Сагиттальный": [
+            12,
+            13,
+            14
+          ],
+          "Фронтальный": []
+        },
+        "149202": {
+          "Аксиальный": [],
+          "Сагиттальный": [
+            10,
+            11,
+            12
+          ],
+          "Фронтальный": []
+        },
+        "149203": {
+          "Аксиальный": [],
+          "Сагиттальный": [
+            10,
+            11,
+            12
+          ],
+          "Фронтальный": []
+        },
+        "149204": {
+          "Аксиальный": [],
+          "Сагиттальный": [
+            11,
+            12,
+            13
+          ],
+          "Фронтальный": []
+        },
+        "149205": {
+          "Аксиальный": [
+            40,
+            41,
+            42
+          ],
+          "Сагиттальный": [
+            3,
+            4,
+            5
+          ],
+          "Фронтальный": [
+            20,
+            21,
+            22
+          ]
+        },
+        "149206": {
+          "Аксиальный": [
+            46,
+            47,
+            48
+          ],
+          "Сагиттальный": [],
+          "Фронтальный": [
+            17,
+            18,
+            19
+          ]
+        },
+        "149207": {
+          "Аксиальный": [],
+          "Сагиттальный": [
+            22,
+            23,
+            24
+          ],
+          "Фронтальный": []
+        },
+        "149208": {
+          "Аксиальный": [
+            38,
+            39,
+            40
+          ],
+          "Сагиттальный": [],
+          "Фронтальный": []
+        },
+        "149209": {
+          "Аксиальный": [],
+          "Сагиттальный": [],
+          "Фронтальный": [
+            17,
+            18,
+            19
+          ]
+        },
+        "149210": {
+          "Аксиальный": [],
+          "Сагиттальный": [
+            5,
+            6,
+            7
+          ],
+          "Фронтальный": []
+        },
+        "149211": {
+          "Аксиальный": [],
+          "Сагиттальный": [
+            21,
+            22,
+            23
+          ],
+          "Фронтальный": []
+        },
+        "149212": {
+          "Аксиальный": [],
+          "Сагиттальный": [
+            7,
+            8,
+            9
+          ],
+          "Фронтальный": []
+        },
+        "149213": {
+          "Аксиальный": [
+            43,
+            44,
+            45
+          ],
+          "Сагиттальный": [],
+          "Фронтальный": []
+        },
+        "149214": {
+          "Аксиальный": [],
+          "Сагиттальный": [
+            24,
+            25,
+            26
+          ],
+          "Фронтальный": [
+            18,
+            19,
+            20
+          ]
+        }
+      },
+      "presentation": {
+        "9473": {
+          "filter": 1222,
+          "category": "ligaments"
+        },
+        "9847": {
+          "filter": 1222,
+          "category": "ligaments"
+        },
+        "9848": {
+          "filter": 1222,
+          "category": "ligaments"
+        },
+        "9849": {
+          "filter": 1222,
+          "category": "ligaments"
+        },
+        "9507": {
+          "filter": 1222,
+          "category": "ligaments"
+        },
+        "9475": {
+          "filter": 1222,
+          "category": "ligaments"
+        },
+        "9474": {
+          "filter": 1222,
+          "category": "ligaments"
+        },
+        "9478": {
+          "filter": 1222,
+          "category": "ligaments"
+        },
+        "9470": {
+          "filter": 1222,
+          "category": "ligaments"
+        },
+        "9850": {
+          "filter": 1222,
+          "category": "ligaments"
+        },
+        "2332": {
+          "filter": 1222,
+          "category": "ligaments"
+        }
+      }
+    }
+  ]
+}

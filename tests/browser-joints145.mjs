@@ -6,7 +6,7 @@ try{
  for(const viewport of [{width:393,height:852},{width:360,height:640},{width:852,height:393}]){
   const page=await browser.newPage({viewport}),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.route('**/*',r=>r.request().url().startsWith('http://127.0.0.1:8767/')?r.continue():r.abort());
   for(const [mod,refs]of [['shoulder-mri',[[656,17],[657,18],[658,19]]],['knee-mri',[[652,24],[653,14]]],['foot-mri',[[541,15],[542,20],[543,45]]]]){
-   const E=JSON.parse(fs.readFileSync('app/src/main/assets/'+mod+(mod==='foot-mri'?'-anatomy144.json':'-anatomy145.json'))),D=JSON.parse(fs.readFileSync('app/src/main/assets/'+mod+'-data.json'));
+   const E=JSON.parse(fs.readFileSync('app/src/main/assets/'+mod+(mod==='foot-mri'?'-anatomy144.json':mod==='knee-mri'?'-anatomy149.json':'-anatomy145.json'))),D=JSON.parse(fs.readFileSync('app/src/main/assets/'+mod+'-data.json'));
    await page.goto('http://127.0.0.1:8767/'+mod+'.html');await page.waitForSelector('.anatomyRegion path');assert((await page.locator('.panelHead select').inputValue()).endsWith('_dp'));
    await page.locator('.anatomyMenuButton').click();await page.locator('.filterButtons .none').click();for(const text of ['Сумки и завороты · ленты PD',...(mod==='shoulder-mri'?['Аксиллярный карман · капсула и прикрепления']:[])])await page.locator('.compactGroup').filter({hasText:text}).locator('input').check();await page.locator('.closeMenu').click();
    for(const [se,n]of refs){

@@ -3,7 +3,7 @@ import {annotationSlice} from '../app/src/main/assets/anatomy-regions-layer.js';
 import {addJointAnatomy} from '../app/src/main/assets/joint-anatomy.js';
 const A='app/src/main/assets/',read=p=>JSON.parse(fs.readFileSync(p)),D=read(A+'hip-mri-data.json'),L=read(A+'hip-mri-labels.json'),E=read(A+'hip-mri-anatomy147.json'),R=read('review/hip-1.47.json');
 for(const [suffix,sha]of [['-data.json',R.sourceDataSha256],['-labels.json',R.sourceLabelsSha256]])assert.equal(crypto.createHash('sha256').update(fs.readFileSync(A+'hip-mri'+suffix)).digest('hex'),sha);
-const original=structuredClone(L);globalThis.fetch=async url=>({ok:true,json:async()=>read(A+url)});await addJointAnatomy('hip-mri',L);
+const original=structuredClone(L);globalThis.fetch=async()=>({ok:true,json:async()=>structuredClone(E)});await addJointAnatomy('hip-mri',L);
 for(const f of E.filters){assert(L.filters['hip-mri-3d'].some(q=>q.id===f.id&&q.default));assert(fs.existsSync(A+f.icon))}
 let frames=0,count=0;const seen=new Set();
 for(const s of D.series)for(const [i,f]of s.frames.entries()){
