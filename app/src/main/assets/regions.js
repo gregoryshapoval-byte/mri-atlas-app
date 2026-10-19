@@ -1,5 +1,5 @@
 import {regions} from './anatomy-regions.js';
-const area=new URLSearchParams(location.search).get('area'),r=regions.find(r=>r.id===area);
+const area=new URLSearchParams(location.search).get('area'),r=regions.find(r=>r.id===(area==='brachial-plexus'?'shoulder':area));
 document.querySelector('#heading').textContent=r?r.name:'Область не найдена';
 document.querySelector('#regionDescription').textContent=r?.description||'Вернитесь к списку анатомических областей.';
 document.querySelector('#sectionCount').textContent=r?r.items.length+' раздел'+(r.items.length===1?'':r.items.length<5?'а':'ов'):'';

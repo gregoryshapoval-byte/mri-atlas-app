@@ -74,8 +74,8 @@ export const regions=[
   },
   {
     "id": "shoulder",
-    "name": "Плечевой сустав",
-    "description": "МРТ и анатомия в 3D",
+    "name": "Плечо",
+    "description": "Сустав, манжета и плечевое сплетение",
     "image": "menu-art/shoulder.webp",
     "items": [
       {
@@ -84,6 +84,13 @@ export const regions=[
         "url": "shoulder-mri.html",
         "type": "МРТ",
         "thumb": "menu-thumbs/shoulder-mri.webp"
+      },
+      {
+        "title": "МРТ · плечевое сплетение",
+        "description": "160 кадров · три плоскости · исходные анатомические метки",
+        "url": "brachial-plexus-mri.html",
+        "type": "МРТ",
+        "thumb": "menu-thumbs/brachial-plexus-mri.webp"
       },
       {
         "title": "Сумки плеча",
@@ -244,7 +251,13 @@ export const regions=[
     "description": "Мужской и женский таз",
     "image": "menu-art/pelvis.webp",
     "items": [
-      {"title":"Перианальная область · мужчина","description":"Сфинктеры, мышцы и пространства · анатомия для описания свищей","url":"perianal-mri.html","type":"МРТ","thumb":"menu-thumbs/perianal-mri.webp"},
+      {
+        "title": "Перианальная область · мужчина",
+        "description": "Сфинктеры, мышцы и пространства · анатомия для описания свищей",
+        "url": "perianal-mri.html",
+        "type": "МРТ",
+        "thumb": "menu-thumbs/perianal-mri.webp"
+      },
       {
         "title": "МРТ мужского таза · исходный атлас",
         "description": "Предстательная железа, органы и структуры таза",
@@ -310,21 +323,6 @@ export const regions=[
         "url": "lower-limb-mri.html",
         "type": "МРТ",
         "thumb": "menu-thumbs/lower-limb-mri.webp"
-      }
-    ]
-  },
-  {
-    "id": "brachial-plexus",
-    "name": "Плечевое сплетение",
-    "description": "МРТ · три плоскости",
-    "image": "menu-art/brachial-plexus.svg",
-    "items": [
-      {
-        "title": "МРТ · плечевое сплетение",
-        "description": "160 кадров · три плоскости · исходные анатомические метки",
-        "url": "brachial-plexus-mri.html",
-        "type": "МРТ",
-        "thumb": "menu-thumbs/brachial-plexus-mri.webp"
       }
     ]
   }

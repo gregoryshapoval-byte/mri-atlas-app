@@ -10,7 +10,7 @@ try{
  await context.route('**/*',async r=>{const u=new URL(r.request().url());if(u.hostname!=='127.0.0.1')return r.abort();if(u.pathname.endsWith('/menus.css')){const response=await r.fetch();return r.fulfill({response,body:(await response.text())+'\n@view-transition{navigation:none}'});}return r.continue();});
  for(const viewport of [{width:393,height:852},{width:360,height:640},{width:320,height:568},{width:852,height:393}]){
  const page=await context.newPage();await page.setViewportSize(viewport);page.on('pageerror',e=>errors.push(e.message));await page.goto('http://127.0.0.1:8770/index.html');await page.waitForSelector('.areaCard:visible');await page.evaluate(()=>Promise.all([...document.images].map(i=>i.decode())));
- assert.equal(await page.locator('.areaCard:visible').count(),13);
+ assert.equal(await page.locator('.areaCard:visible').count(),12);
  const layout=await page.evaluate(()=>({h:innerHeight,w:innerWidth,sh:document.documentElement.scrollHeight,sw:document.documentElement.scrollWidth,cards:[...document.querySelectorAll('.areaCard')].map(e=>{const r=e.getBoundingClientRect(),t=e.querySelector('h3').getBoundingClientRect();return {x:r.x,y:r.y,right:r.right,bottom:r.bottom,h:r.height,titleBottom:t.bottom,titleRight:t.right}})}));
  assert(layout.sh<=layout.h,'home fits height: '+JSON.stringify(layout));assert(layout.sw<=layout.w);
  for(const c of layout.cards){assert(c.h>=44);assert(c.bottom<=layout.h);assert(c.titleBottom<=c.bottom);assert(c.titleRight<=c.right);}
