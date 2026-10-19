@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';import fs from 'node:fs';import {spawn} from 'node:child_process';
 const {chromium}=await import('/tmp/atlas-dom/node_modules/playwright/index.mjs');const A='app/src/main/assets/',out='review/browser-1.52';fs.mkdirSync(out,{recursive:true});
 const server=spawn('python3',['-m','http.server','8782','--bind','127.0.0.1'],{cwd:A,stdio:'ignore'});let browser;
-try{browser=await chromium.launch({headless:true,args:['--no-sandbox']});
+try{browser=await chromium.launch({headless:true,...(process.env.CHROME_PATH?{executablePath:process.env.CHROME_PATH}:{}),args:['--no-sandbox']});
 for(const viewport of [{width:393,height:852},{width:360,height:640},{width:852,height:393}])for(const mod of ['hand-mri','brain-3d','knee-3d']){
  const d=JSON.parse(fs.readFileSync(A+mod+'-data.json')),page=await browser.newPage({viewport}),errors=[];page.on('pageerror',e=>errors.push(e.message));await page.route('**/*',r=>r.request().url().startsWith('http://127.0.0.1:8782/')?r.continue():r.abort());
  await page.goto('http://127.0.0.1:8782/'+mod+'.html');await page.waitForSelector('.anatomyMenuButton');await page.locator('.anatomyMenuButton').click();await page.locator('.filterButtons .all').click();await page.locator('.closeMenu').click();
