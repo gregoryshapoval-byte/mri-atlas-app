@@ -1,0 +1,24 @@
+{
+  "version": "1.67",
+  "baseCommit": "5e9ff73dd035585f76694c0d81bcac7bad40b63f",
+  "vessels": 50,
+  "ICASegmentsPerSide": 7,
+  "source": "hand-authored generalized anatomy, not patient reconstruction",
+  "sourceBrainDataSha256": "bb95afb02b39b2f987c0abc849119d14e64517a9073807d95c70e4a0a25ca1e6",
+  "sourceBrainLabelsSha256": "0d4bd8f085fc23602e6027134226b7b67d664d7bd5a9d0464b751a4bb10ac1ca",
+  "apkSha256": "75ee991eac846815f3de024ef55f746e5cee3feb38487f05f00fab7575723376",
+  "apkBytes": 137551687,
+  "packagedAssetsVerified": 9051,
+  "checks": {
+    "dataMath": 30,
+    "sourceViewers": 18,
+    "menuRoutes": 36,
+    "menuViewports": 4,
+    "modelViewports": 5,
+    "modelViews": 5,
+    "pinchPan": true,
+    "offline": true,
+    "physicalPhone": false,
+    "independentMedicalValidation": false
+  }
+}

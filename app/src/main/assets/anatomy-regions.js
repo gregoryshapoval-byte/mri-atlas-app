@@ -7,7 +7,14 @@ export const regions=[
     "items": [
       {
         "title": "Артерии · 3D",
-        "description": "Артерии и сегменты ВСА · 5 ракурсов",
+        "description": "Вращаемая модель · цветные сегменты ВСА C1–C7",
+        "url": "cerebral-arteries.html",
+        "type": "3D-МОДЕЛЬ",
+        "thumb": "menu-thumbs/cerebral-arteries.webp"
+      },
+      {
+        "title": "Артерии · исходные ракурсы",
+        "description": "5 изображений реконструкций · исходная анатомическая разметка",
         "url": "brain.html?set=vascular&series=arteries3d",
         "type": "3D-РАКУРСЫ",
         "thumb": "menu-thumbs/brain-set-vascular-series-arteries3d.webp"
