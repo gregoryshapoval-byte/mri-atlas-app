@@ -260,5 +260,50 @@ export const regions=[
         "thumb": "menu-thumbs/foot-mri.webp"
       }
     ]
+  },
+  {
+    "id": "upper-limb",
+    "name": "Верхняя конечность",
+    "description": "Плечевой пояс, плечо, предплечье и кисть",
+    "image": "menu-art/upper-limb.svg",
+    "items": [
+      {
+        "title": "МРТ · верхняя конечность",
+        "description": "194 кадра · 6 областей · исходные анатомические метки",
+        "url": "upper-limb-mri.html",
+        "type": "МРТ",
+        "thumb": "menu-thumbs/upper-limb-mri.webp"
+      }
+    ]
+  },
+  {
+    "id": "lower-limb",
+    "name": "Нижняя конечность",
+    "description": "От ягодичной области до стопы",
+    "image": "menu-art/lower-limb.svg",
+    "items": [
+      {
+        "title": "МРТ · нижняя конечность",
+        "description": "277 кадров · 6 областей · исходные анатомические метки",
+        "url": "lower-limb-mri.html",
+        "type": "МРТ",
+        "thumb": "menu-thumbs/lower-limb-mri.webp"
+      }
+    ]
+  },
+  {
+    "id": "brachial-plexus",
+    "name": "Плечевое сплетение",
+    "description": "МРТ · три плоскости",
+    "image": "menu-art/brachial-plexus.svg",
+    "items": [
+      {
+        "title": "МРТ · плечевое сплетение",
+        "description": "160 кадров · три плоскости · исходные анатомические метки",
+        "url": "brachial-plexus-mri.html",
+        "type": "МРТ",
+        "thumb": "menu-thumbs/brachial-plexus-mri.webp"
+      }
+    ]
   }
 ];

@@ -28,7 +28,7 @@ public class MainActivity extends Activity {
     Uri u=request.getUrl();
     if(!"https".equals(u.getScheme())||!HOST.equals(u.getHost()))return blocked();
     String path=u.getPath();if(path==null||!path.startsWith("/assets/")||path.contains("..")||path.contains("\\"))return blocked();
-    String file=path.substring(8);String mime=file.endsWith(".js")?"text/javascript":file.endsWith(".css")?"text/css":file.endsWith(".html")?"text/html":file.endsWith(".png")?"image/png":file.endsWith(".jpg")?"image/jpeg":file.endsWith(".webp")?"image/webp":file.endsWith(".json")?"application/json":"text/plain";
+    String file=path.substring(8);String mime=file.endsWith(".js")?"text/javascript":file.endsWith(".css")?"text/css":file.endsWith(".html")?"text/html":file.endsWith(".png")?"image/png":file.endsWith(".jpg")?"image/jpeg":file.endsWith(".webp")?"image/webp":file.endsWith(".svg")?"image/svg+xml":file.endsWith(".json")?"application/json":"text/plain";
     try{return new WebResourceResponse(mime,"UTF-8",200,"OK",Collections.singletonMap("Cache-Control","no-cache"),getAssets().open(file));}catch(IOException e){return new WebResourceResponse("text/plain","UTF-8",404,"Not Found",Collections.emptyMap(),new ByteArrayInputStream(new byte[0]));}
    }
    @Override public boolean shouldOverrideUrlLoading(WebView v,WebResourceRequest r){

@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [ main ]
   push:
-    branches: [ main, 'work/wrist-tfcc-1-30', 'work/female-pelvis-on-1-30', 'work/viewer-all-modules-1-41', 'work/design-and-mri-1-42', 'work/shoulder-pd-1-43', 'work/joint-recesses-1-44', 'work/anatomy-audit-1-45', 'work/ligaments-pd-1-46', 'work/hip-insertions-1-47', 'work/anatomy-icons-1-48', 'work/hip-knee-tendons-1-49' ]
+    branches: [ main, 'work/wrist-tfcc-1-30', 'work/female-pelvis-on-1-30', 'work/viewer-all-modules-1-41', 'work/design-and-mri-1-42', 'work/shoulder-pd-1-43', 'work/joint-recesses-1-44', 'work/anatomy-audit-1-45', 'work/ligaments-pd-1-46', 'work/hip-insertions-1-47', 'work/anatomy-icons-1-48', 'work/hip-knee-tendons-1-49', 'work/home-limbs-plexus-1-50' ]
     paths-ignore:
       - '**/*.md'
 
@@ -22,7 +22,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Restore exact offline image assets
-        run: python3 tools/materialize_assets142.py
+        run: |
+          python3 tools/materialize_assets142.py
+          python3 tools/materialize_assets150.py
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
@@ -44,6 +46,7 @@ jobs:
           node tests/ligaments146.mjs
           node tests/hip147.mjs
           node tests/hip-knee149.mjs
+          node tests/modules150.mjs
           node tests/anatomy-icons148.mjs
           node tests/catalog142.mjs
           node tests/all-mri-data.mjs
@@ -65,13 +68,13 @@ jobs:
       - name: Check menus and every route offline
         env:
           CHROME_PATH: /usr/bin/google-chrome
-        run: node tests/menus142.mjs
+        run: node tests/menus142.mjs && node tests/home-modules150.mjs
 
       - name: Upload ready local thumbnails
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: menu-thumbnails-1.49
+          name: menu-thumbnails-1.50
           path: app/src/main/assets/menu-thumbs/
           if-no-files-found: ignore
 
@@ -93,9 +96,10 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: viewer-review-1.49
+          name: viewer-review-1.50
           path: |
             review/browser-1.42/
+            review/browser-1.50/
             review/joints-1.45/
             review/ligaments-1.46/
             review/hip-1.47/
@@ -112,8 +116,8 @@ jobs:
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
-          name: MRIAtlas-1.49-unsigned
-          path: build/MRIAtlas-1.49-unsigned.apk
+          name: MRIAtlas-1.50-unsigned
+          path: build/MRIAtlas-1.50-unsigned.apk
           if-no-files-found: error
           retention-days: 30
 

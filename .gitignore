@@ -33,3 +33,15 @@ app/src/main/assets/knee-mri-source/
 app/src/main/assets/face-neck-mri-source/
 app/src/main/assets/hip-mri-source/
 app/src/main/assets/spine-mri-source/
+
+# Browser review outputs belong to CI artifacts, not source commits.
+review/joints-1.45/
+review/ligaments-1.46/
+review/hip-1.47/
+review/icons-1.48/
+review/hip-knee-1.49/
+
+# 1.50 source images/masks materialize from checksummed offline chunks.
+app/src/main/assets/upper-limb-mri-source/
+app/src/main/assets/lower-limb-mri-source/
+app/src/main/assets/brachial-plexus-mri-source/

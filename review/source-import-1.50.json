@@ -1,0 +1,134 @@
+{
+  "upper-limb-mri": {
+    "frames": 194,
+    "slices": 194,
+    "points": 6235,
+    "groups": 11,
+    "series": [
+      [
+        "Плечевой пояс; пояс верхней конечности",
+        34
+      ],
+      [
+        "Плечо",
+        43
+      ],
+      [
+        "Локоть",
+        21
+      ],
+      [
+        "Предплечье",
+        43
+      ],
+      [
+        "Запястье",
+        16
+      ],
+      [
+        "Кисть",
+        37
+      ]
+    ],
+    "source": "upper-limb",
+    "seriesIds": [
+      406,
+      407,
+      408,
+      409,
+      410,
+      411
+    ],
+    "dimensions": [
+      [
+        570,
+        667
+      ]
+    ],
+    "sourcePointsOutsideImage": 0,
+    "verifiedExactAgainstSourceDatabase": true
+  },
+  "lower-limb-mri": {
+    "frames": 277,
+    "slices": 277,
+    "points": 8439,
+    "groups": 11,
+    "series": [
+      [
+        "Ягодичная область",
+        46
+      ],
+      [
+        "Бедро",
+        70
+      ],
+      [
+        "Колено",
+        21
+      ],
+      [
+        "Голень",
+        71
+      ],
+      [
+        "Предплюсна",
+        22
+      ],
+      [
+        "Стопа",
+        47
+      ]
+    ],
+    "source": "lowerlimb",
+    "seriesIds": [
+      535,
+      536,
+      537,
+      538,
+      539,
+      540
+    ],
+    "dimensions": [
+      [
+        530,
+        538
+      ]
+    ],
+    "sourcePointsOutsideImage": 0,
+    "verifiedExactAgainstSourceDatabase": true
+  },
+  "brachial-plexus-mri": {
+    "frames": 160,
+    "slices": 160,
+    "points": 15560,
+    "groups": 14,
+    "series": [
+      [
+        "Аксиальный",
+        60
+      ],
+      [
+        "Сагиттальный",
+        60
+      ],
+      [
+        "Фронтальный",
+        40
+      ]
+    ],
+    "source": "Brachial-Plexus-MR",
+    "seriesIds": [
+      35,
+      36,
+      37
+    ],
+    "dimensions": [
+      [
+        641,
+        671
+      ]
+    ],
+    "sourcePointsOutsideImage": 0,
+    "verifiedExactAgainstSourceDatabase": true
+  }
+}
