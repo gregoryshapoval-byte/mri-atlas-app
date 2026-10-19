@@ -1,0 +1,9 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Кисть · МРТ Атлас</title><link rel="stylesheet" href="brain.css"><link rel="stylesheet" href="ui-theme.css"></head><body data-module="hand-mri">
+<header><a href="region.html?area=wrist">‹ Кисть</a><span>МРТ АТЛАС <b>1.52</b></span></header><main>
+<div class="intro"><span class="eyebrow">МРТ · ОФЛАЙН</span><h1>Кисть</h1><p id="summary">Открываем серии…</p></div>
+<nav><button id="multi">МРТ</button><button id="vascular">3D · ракурсы</button><button id="contrast" hidden>Контраст</button></nav>
+<div class="quickLinks"><a href="region.html?area=wrist">Раздел · меню ↗</a></div>
+<div class="toolbar"><label><input id="compare" type="checkbox"> Два окна</label><label id="linkLabel" hidden><input id="link" type="checkbox"> Связать T1/PD-SPIR одной плоскости</label><button id="reset">Сброс вида</button></div>
+<div id="viewers"></div><p class="hint">Один палец: листание срезов, включая увеличенный вид. Два пальца: масштаб и перемещение. ⛶ — весь экран. «☰ Анатомия» — группы с изображениями, выбор отдельных структур и поиск.</p>
+<details><summary>О наборе</summary><p>280 МРТ-изображений · T1 и PD-SPIR · три плоскости. 140 исходных срезов с общей разметкой контрастов.</p><p>Исходные JPEG и покадровые метки архива. Контрасты одного среза используют общую исходную разметку.</p></details>
+<p id="error" role="alert" hidden></p></main><script type="module" src="source-mri-viewer.js"></script></body></html>

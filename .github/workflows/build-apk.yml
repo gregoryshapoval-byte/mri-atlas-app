@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [ main ]
   push:
-    branches: [ main, 'work/wrist-tfcc-1-30', 'work/female-pelvis-on-1-30', 'work/viewer-all-modules-1-41', 'work/design-and-mri-1-42', 'work/shoulder-pd-1-43', 'work/joint-recesses-1-44', 'work/anatomy-audit-1-45', 'work/ligaments-pd-1-46', 'work/hip-insertions-1-47', 'work/anatomy-icons-1-48', 'work/hip-knee-tendons-1-49', 'work/home-limbs-plexus-1-50', 'work/foot-joints-1-51' ]
+    branches: [ main, 'work/wrist-tfcc-1-30', 'work/female-pelvis-on-1-30', 'work/viewer-all-modules-1-41', 'work/design-and-mri-1-42', 'work/shoulder-pd-1-43', 'work/joint-recesses-1-44', 'work/anatomy-audit-1-45', 'work/ligaments-pd-1-46', 'work/hip-insertions-1-47', 'work/anatomy-icons-1-48', 'work/hip-knee-tendons-1-49', 'work/home-limbs-plexus-1-50', 'work/foot-joints-1-51', 'work/hand-brain-knee-1-52' ]
     paths-ignore:
       - '**/*.md'
 
@@ -25,6 +25,7 @@ jobs:
         run: |
           python3 tools/materialize_assets142.py
           python3 tools/materialize_assets150.py
+          python3 tools/materialize_assets152.py
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
@@ -47,6 +48,7 @@ jobs:
           node tests/hip147.mjs
           node tests/hip-knee149.mjs
           node tests/modules150.mjs
+          node tests/modules152.mjs
           node tests/foot-joints151.mjs
           node tests/anatomy-icons148.mjs
           node tests/catalog142.mjs
@@ -75,7 +77,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: menu-thumbnails-1.51
+          name: menu-thumbnails-1.52
           path: app/src/main/assets/menu-thumbs/
           if-no-files-found: ignore
 
@@ -93,16 +95,17 @@ jobs:
           node tests/browser-icons148.mjs
           node tests/browser-hip-knee149.mjs
           node tests/browser-foot151.mjs
+          node tests/browser-modules152.mjs
 
       - name: Upload viewer screenshots
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: viewer-review-1.51
+          name: viewer-review-1.52
           path: |
             review/browser-1.42/
             review/browser-1.50/
-            review/browser-1.51/
+            review/browser-1.52/
             review/joints-1.45/
             review/ligaments-1.46/
             review/hip-1.47/
@@ -119,8 +122,8 @@ jobs:
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
-          name: MRIAtlas-1.51-unsigned
-          path: build/MRIAtlas-1.51-unsigned.apk
+          name: MRIAtlas-1.52-unsigned
+          path: build/MRIAtlas-1.52-unsigned.apk
           if-no-files-found: error
           retention-days: 30
 

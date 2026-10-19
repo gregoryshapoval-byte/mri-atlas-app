@@ -45,3 +45,8 @@ review/hip-knee-1.49/
 app/src/main/assets/upper-limb-mri-source/
 app/src/main/assets/lower-limb-mri-source/
 app/src/main/assets/brachial-plexus-mri-source/
+
+# 1.52 image resources are checksummed in source-assets/mri152.
+app/src/main/assets/hand-mri-source/
+app/src/main/assets/brain-3d-source/
+app/src/main/assets/knee-3d-source/

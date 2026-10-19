@@ -5,7 +5,7 @@ import {pathToFileURL} from 'node:url';
 const {Window}=await import(process.env.HAPPY_DOM_PATH||'/tmp/atlas-dom/node_modules/happy-dom/lib/index.js');
 const root=path.resolve('app/src/main/assets');
 const errors=[];
-for(const name of ['wrist-mri','elbow-mri','male-pelvis-mri','female-pelvis-mri','shoulder-mri','foot-mri','knee-mri','face-neck-mri','hip-mri','spine-mri','upper-limb-mri','lower-limb-mri','brachial-plexus-mri','brain']){
+for(const name of ['wrist-mri','elbow-mri','male-pelvis-mri','female-pelvis-mri','shoulder-mri','foot-mri','knee-mri','face-neck-mri','hip-mri','spine-mri','upper-limb-mri','lower-limb-mri','brachial-plexus-mri','hand-mri','brain-3d','knee-3d','brain']){
  const w=new Window({url:'https://appassets.androidplatform.net/assets/'+name+'.html'});
  w.document.write(await fs.readFile(path.join(root,name+'.html'),'utf8'));
  for(const key of ['window','document','location','localStorage'])globalThis[key]=key==='window'?w:w[key];
@@ -35,7 +35,7 @@ for(const name of ['wrist-mri','elbow-mri','male-pelvis-mri','female-pelvis-mri'
  first.querySelector('.anatomyMenuButton').click();
  assert.ok(first.querySelectorAll('.compactGroup').length>0);
  assert.ok(first.querySelectorAll('.compactGroup img').length>0);
- const search=first.querySelector('.search');search.value=name==='brain'?'мозг':['upper-limb-mri','lower-limb-mri','brachial-plexus-mri'].includes(name)?'артер':name==='spine-mri'?'позвон':['male-pelvis-mri','female-pelvis-mri','face-neck-mri'].includes(name)?'артер':'кость';search.oninput();
+ const search=first.querySelector('.search');search.value=['brain','brain-3d'].includes(name)?'мозг':['upper-limb-mri','lower-limb-mri','brachial-plexus-mri'].includes(name)?'артер':name==='spine-mri'?'позвон':['male-pelvis-mri','female-pelvis-mri','face-neck-mri'].includes(name)?'артер':'кость';search.oninput();
  assert.ok(first.querySelectorAll('.searchResults button').length>0,name+' search');
  first.querySelector('.searchResults button').click();
  const mode=type=>first.querySelector('[data-mode="'+type+'"]').click();
@@ -51,7 +51,7 @@ for(const name of ['wrist-mri','elbow-mri','male-pelvis-mri','female-pelvis-mri'
  first.querySelector('.fullscreenButton').click();assert.ok(first.classList.contains('fullscreenViewer'));
  assert.equal(w.exitAtlasFullscreen(),true);
  first.querySelector('.next').click();
- const select=first.querySelector('select');select.selectedIndex=1;select.onchange();
+ const select=first.querySelector('select');select.selectedIndex=Math.min(1,select.options.length-1);select.onchange();
  await new Promise(r=>setTimeout(r,20));
  assert.equal(first.querySelector('.failed').hidden,true);
  w.document.querySelector('#compare').checked=true;w.document.querySelector('#compare').onchange();

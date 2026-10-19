@@ -1,0 +1,61 @@
+{
+  "hand-mri": {
+    "frames": 280,
+    "slices": 140,
+    "points": 7274,
+    "groups": 15,
+    "series": [
+      [
+        "T1 · Аксиальный",
+        62
+      ],
+      [
+        "PD-SPIR · Аксиальный",
+        62
+      ],
+      [
+        "T1 · Сагиттальный",
+        56
+      ],
+      [
+        "PD-SPIR · Сагиттальный",
+        56
+      ],
+      [
+        "T1 · Фронтальный",
+        22
+      ],
+      [
+        "PD-SPIR · Фронтальный",
+        22
+      ]
+    ],
+    "structures": 188
+  },
+  "brain-3d": {
+    "frames": 18,
+    "slices": 18,
+    "points": 997,
+    "groups": 37,
+    "series": [
+      [
+        "3D",
+        18
+      ]
+    ],
+    "structures": 306
+  },
+  "knee-3d": {
+    "frames": 6,
+    "slices": 6,
+    "points": 126,
+    "groups": 9,
+    "series": [
+      [
+        "3D",
+        6
+      ]
+    ],
+    "structures": 36
+  }
+}

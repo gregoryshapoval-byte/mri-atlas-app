@@ -32,6 +32,13 @@ export const regions=[
         "url": "brain.html?set=contrast",
         "type": "МРТ",
         "thumb": "menu-thumbs/brain-set-contrast.webp"
+      },
+      {
+        "title": "Анатомия мозга · 3D",
+        "description": "18 готовых ракурсов · исходные подписи",
+        "url": "brain-3d.html?set=vascular",
+        "type": "3D-РАКУРСЫ",
+        "thumb": "menu-thumbs/brain-3d.webp"
       }
     ]
   },
@@ -111,10 +118,17 @@ export const regions=[
   },
   {
     "id": "wrist",
-    "name": "Лучезапястный сустав",
-    "description": "МРТ, связки и ТФХК",
+    "name": "Кисть и запястье",
+    "description": "МРТ кисти и лучезапястного сустава",
     "image": "menu-art/wrist.webp",
     "items": [
+      {
+        "title": "МРТ кисти",
+        "description": "280 изображений · T1 / PD-SPIR · три плоскости",
+        "url": "hand-mri.html",
+        "type": "МРТ",
+        "thumb": "menu-thumbs/hand-mri.webp"
+      },
       {
         "title": "МРТ ЛЗС · исходный атлас",
         "description": "T1 / PD-SPIR · три плоскости и 3D-ракурсы",
@@ -192,6 +206,13 @@ export const regions=[
         "url": "cartilage.html",
         "type": "3D-МОДЕЛЬ",
         "thumb": "menu-thumbs/cartilage.webp"
+      },
+      {
+        "title": "Коленный сустав · 3D-ракурсы",
+        "description": "6 готовых ракурсов · исходные подписи",
+        "url": "knee-3d.html?set=vascular",
+        "type": "3D-РАКУРСЫ",
+        "thumb": "menu-thumbs/knee-3d.webp"
       }
     ]
   },

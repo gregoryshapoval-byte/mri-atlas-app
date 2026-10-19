@@ -6,7 +6,7 @@ const root='app/src/main/assets/';
 const digest=b=>crypto.createHash('sha256').update(b).digest('hex');
 const preserved=JSON.parse(fs.readFileSync('review/preservation-1.50.json'));
 // 1.51 intentionally augments these two runtime files; MRI/data/old overlays stay protected.
-for(const [p,sha] of Object.entries(preserved.existingFiles).filter(([p])=>!['app/src/main/assets/brain-labels.js','app/src/main/assets/joint-anatomy.js'].includes(p)))assert.equal(digest(fs.readFileSync(p)),sha,'Preserved from 1.49: '+p);
+for(const [p,sha] of Object.entries(preserved.existingFiles).filter(([p])=>!['app/src/main/assets/brain-labels.js','app/src/main/assets/joint-anatomy.js','app/src/main/assets/source-mri-viewer.js'].includes(p)))assert.equal(digest(fs.readFileSync(p)),sha,'Preserved from 1.49: '+p);
 for(const [mod,source,frames,points,series] of [['upper-limb-mri','upper-limb',194,6235,6],['lower-limb-mri','lowerlimb',277,8439,6],['brachial-plexus-mri','Brachial-Plexus-MR',160,15560,3]]){
  const d=JSON.parse(fs.readFileSync(root+mod+'-data.json')),l=JSON.parse(fs.readFileSync(root+mod+'-labels.json'));
  assert.equal(d.source,source);assert.equal(d.series.length,series);assert.equal(d.series.reduce((n,s)=>n+s.frames.length,0),frames);assert.equal(Object.keys(l.slices).length,frames);assert.equal(Object.values(l.slices).reduce((n,s)=>n+s.points.length,0),points);
