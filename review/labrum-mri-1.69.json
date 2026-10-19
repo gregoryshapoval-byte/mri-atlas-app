@@ -1,0 +1,18 @@
+{
+  "version": "1.69",
+  "baseCommit": "ab7aa57c4c0394dc8c9d388622ee307679b11c63",
+  "MRI": "1.5 T without arthrography",
+  "states": 10,
+  "guidance": "qualitative synthesis, not validated per-subtype diagnostic accuracy",
+  "checks": {
+    "dataMath": 32,
+    "viewports": 3,
+    "priorGeometryBytePreserved": true,
+    "clockNumbers": 12,
+    "physicalPhone": false,
+    "independentMedicalValidation": false
+  },
+  "apkSha256": "31ad7bb1d6d181780aa6a75b317e50b675915fc06c0e70a7ea89812401498c77",
+  "apkBytes": 137572604,
+  "packagedAssetsVerified": 9057
+}

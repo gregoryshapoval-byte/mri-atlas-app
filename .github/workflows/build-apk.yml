@@ -62,6 +62,7 @@ jobs:
           node tests/abdomen165.mjs
           node tests/cerebral-arteries167.mjs
           node tests/labrum168.mjs
+          node tests/labrum-mri169.mjs
           node tests/all-mri-data.mjs
           node tests/wrist-mri.mjs
           node tests/female-pelvis-source.mjs
@@ -89,7 +90,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: menu-thumbnails-1.68
+          name: menu-thumbnails-1.69
           path: app/src/main/assets/menu-thumbs/
           if-no-files-found: ignore
 
@@ -122,12 +123,13 @@ jobs:
           node tests/browser-abdomen165.mjs
           node tests/browser-cerebral-arteries167.mjs
           node tests/browser-labrum168.mjs
+          node tests/browser-labrum-mri169.mjs
 
       - name: Upload viewer screenshots
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: viewer-review-1.68
+          name: viewer-review-1.69
           path: |
             review/browser-1.42/
             review/browser-1.50/
@@ -145,6 +147,7 @@ jobs:
             review/browser-1.63/
             review/browser-1.67/
             review/browser-1.68/
+            review/browser-1.69/
             review/joints-1.45/
             review/ligaments-1.46/
             review/hip-1.47/
@@ -161,8 +164,8 @@ jobs:
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
-          name: MRIAtlas-1.68-unsigned
-          path: build/MRIAtlas-1.68-unsigned.apk
+          name: MRIAtlas-1.69-unsigned
+          path: build/MRIAtlas-1.69-unsigned.apk
           if-no-files-found: error
           retention-days: 30
 
