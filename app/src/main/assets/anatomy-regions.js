@@ -101,7 +101,7 @@ export const regions=[
       },
       {
         "title": "Суставная губа · повреждения",
-        "description": "Bankart и SLAP · борозда и комплекс Буфорда · часы 1–12",
+        "description": "Варианты губы · Bankart/SLAP · HAGL/GAGL · киста",
         "url": "shoulder-labrum.html",
         "type": "3D-МОДЕЛЬ",
         "thumb": "menu-thumbs/shoulder-labrum.webp"

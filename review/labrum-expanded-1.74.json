@@ -1,0 +1,30 @@
+{
+  "version": "1.74",
+  "versionCode": 74,
+  "bytes": 137605977,
+  "sha256": "a455454b739b91911104a3990fd22d109f2348721ea15a11061d15f66a5b56ca",
+  "assetCount": 9065,
+  "sourceAssetsByteExact": true,
+  "dataMathTests": 37,
+  "physicalPhoneTested": false,
+  "previousGeometriesPreserved": 13,
+  "states": 22,
+  "newModels": 9,
+  "briefCardMaxChars": 210,
+  "browserLegacy168": {
+    "cases": 11,
+    "viewports": 5,
+    "dragAndPinch": true
+  },
+  "browserMri169": {
+    "cases": 11,
+    "viewports": 3
+  },
+  "savedArtifactsRoundtripVerified": true,
+  "browserExpanded174": {
+    "viewports": 4,
+    "states": 22,
+    "newModels": 9,
+    "offline": true
+  }
+}
