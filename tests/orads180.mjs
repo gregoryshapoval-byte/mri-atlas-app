@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {assess} from '../app/src/main/assets/orads-engine.js';
+let count=0;
+const base={scope:'standard',adequate:'yes',type:'uni',peritoneal:'no',fat:'no',solid:'no',fluid:'simple',wall:'thin'};
+const check=(patch,expected)=>{const r=assess({...base,...patch});assert.equal(r.score,expected,JSON.stringify(patch)+' '+r.reason);count++;};
+check({},2);check({wall:'none',fluid:'other'},2);check({fluid:'other'},3);check({type:'multi'},3);check({type:'multi',fluid:'endo'},2);check({fat:'typical'},2);check({fat:'large'},4);check({peritoneal:'yes'},5);check({adequate:'no'},0);check({scope:'acute'},null);check({scope:'other'},null);check({type:'normal'},1);check({type:'physio',menopause:'pre',max:30},1);check({type:'physio',menopause:'pre',max:31},null);check({type:'physio',menopause:'post',max:20},null);check({solid:'unknown'},0);check({solid:'yes',dark:'yes'},2);
+const solid={solid:'yes',dark:'no',mode:'dce',uterus:'yes'};
+check({...solid,curve:'low'},3);check({...solid,curve:'intermediate'},4);check({...solid,curve:'high'},5);check({...solid,uterus:'no',curve:'low'},3);check({...solid,uterus:'no',curve:'plateau'},null);check({...solid,curve:'plateau'},null);check({...solid,mode:'early',early:'less'},4);check({...solid,mode:'early',early:'greater'},5);check({...solid,mode:'early',uterus:'no'},0);check({...solid,mode:'unusable'},0);
+check({type:'tube',fluid:'simple',wall:'thin'},2);check({type:'tube',fluid:'simple',wall:'thick'},3);check({type:'tube',fluid:'other',wall:'thin'},3);check({type:'tube',fluid:'other',wall:'thick'},null);check({type:'para',fluid:'other',wall:'thin'},2);check({type:'para',wall:'thick'},null);check({type:'solid'},null);check({wall:'irregular'},null);
+for(const field of ['scope','adequate','type','peritoneal','fat','solid','fluid','wall'])check({[field]:''},null);
+console.log(count+' clinical branch and incomplete-input checks passed');

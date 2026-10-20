@@ -38,6 +38,7 @@ jobs:
 
       - name: Check annotation data and viewer math
         run: |
+          node tests/orads180.mjs
           node tests/joint-anatomy144.mjs
           node tests/joint-anatomy145.mjs
           node tests/ligaments146.mjs
@@ -87,7 +88,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: menu-thumbnails-1.65
+          name: menu-thumbnails-1.80
           path: app/src/main/assets/menu-thumbs/
           if-no-files-found: ignore
 
@@ -123,7 +124,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: viewer-review-1.65
+          name: viewer-review-1.80
           path: |
             review/browser-1.42/
             review/browser-1.50/
@@ -156,8 +157,8 @@ jobs:
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
-          name: MRIAtlas-1.65-unsigned
-          path: build/MRIAtlas-1.65-unsigned.apk
+          name: MRIAtlas-1.80-unsigned
+          path: build/MRIAtlas-1.80-unsigned.apk
           if-no-files-found: error
           retention-days: 30
 

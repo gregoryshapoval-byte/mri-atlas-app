@@ -1,5 +1,7 @@
 # MRI Atlas · Android
 
+Актуальное состояние — **1.80**, модуль O-RADS MRI поверх восстановленных assets1.79; см. верх CONTINUE.md и review/orads-1.80.md. Нижние записи о 1.49 и 1.65 — исторические.
+
 **Текущая документированная версия — 1.49.** Для продолжения разработки сначала прочитайте [CONTINUE.md](CONTINUE.md), [AGENTS.md](AGENTS.md) и [SOURCE_RECOVERY.md](SOURCE_RECOVERY.md).
 
 Рабочая ветка: `work/hip-knee-tendons-1-49`; исходный код выпущенного APK: `182b2a55a9c7365d6556ac7112c8daaf90087e83`; [PR #16](https://github.com/gregoryshapoval-byte/mri-atlas-app/pull/16). Не предполагайте, что default/main содержит все изменения этой ветки.

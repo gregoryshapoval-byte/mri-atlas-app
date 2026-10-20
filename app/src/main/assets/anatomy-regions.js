@@ -7,7 +7,14 @@ export const regions=[
     "items": [
       {
         "title": "Артерии · 3D",
-        "description": "Артерии и сегменты ВСА · 5 ракурсов",
+        "description": "Вращаемая модель · цветные сегменты ВСА C1–C7",
+        "url": "cerebral-arteries.html",
+        "type": "3D-МОДЕЛЬ",
+        "thumb": "menu-thumbs/cerebral-arteries.webp"
+      },
+      {
+        "title": "Артерии · исходные ракурсы",
+        "description": "5 изображений реконструкций · исходная анатомическая разметка",
         "url": "brain.html?set=vascular&series=arteries3d",
         "type": "3D-РАКУРСЫ",
         "thumb": "menu-thumbs/brain-set-vascular-series-arteries3d.webp"
@@ -91,6 +98,20 @@ export const regions=[
         "url": "brachial-plexus-mri.html",
         "type": "МРТ",
         "thumb": "menu-thumbs/brachial-plexus-mri.webp"
+      },
+      {
+        "title": "Суставная губа · повреждения",
+        "description": "Варианты губы · Bankart/SLAP · HAGL/GAGL · киста",
+        "url": "shoulder-labrum.html",
+        "type": "3D-МОДЕЛЬ",
+        "thumb": "menu-thumbs/shoulder-labrum.webp"
+      },
+      {
+        "title": "Хилл—Сакс и обратный",
+        "description": "Импрессия головки · передний и задний вывих · МРТ 1,5 Т",
+        "url": "shoulder-hill-sachs.html",
+        "type": "3D-МОДЕЛЬ",
+        "thumb": "menu-thumbs/shoulder-hill-sachs.webp"
       },
       {
         "title": "Сумки плеча",
@@ -251,6 +272,8 @@ export const regions=[
     "description": "Мужской и женский таз",
     "image": "menu-art/pelvis.webp",
     "items": [
+      {"title":"Образования придатков · O-RADS MRI","description":"Категория риска · признаки · контрастирование · заключение","url":"orads-mri.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/orads-mri.webp"},
+      {"title":"Рак прямой кишки","description":"Стадирование · MRF / EMVI · ответ на лечение · протокол GE","url":"rectal-cancer.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/rectal-cancer.webp"},
       {
         "title": "Перианальная область · мужчина",
         "description": "Сфинктеры, мышцы и пространства · анатомия для описания свищей",
@@ -288,14 +311,14 @@ export const regions=[
     "image": "home-icons/abdomen.svg",
     "items": [
       {
-        "title": "КТ · сегменты печени",
-        "description": "182 среза · цветные сегменты I–VIII по Куино",
+        "title": "КТ · нормальная анатомия",
+        "description": "182 среза · сегменты печени, IVa и IVb",
         "url": "abdomen-ct.html",
         "type": "КТ",
         "thumb": "menu-thumbs/abdomen-ct.webp"
       },
       {
-        "title": "КТ брюшной полости и таза",
+        "title": "КТ · цирроз и асцит",
         "description": "303 среза · три плоскости · органы, сосуды и брюшина",
         "url": "abdomen-pelvis-ct.html",
         "type": "КТ",
