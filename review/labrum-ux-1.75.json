@@ -1,0 +1,33 @@
+{
+  "version": "1.75",
+  "versionCode": 75,
+  "bytes": 137610210,
+  "sha256": "39d78c3619efe9b6ab361164afb257a2be35e1fd4da899b1607d1ed60cd54a54",
+  "assets": 9067,
+  "parent": "d75c17000823dd7a8b4fa4a99b9b4104280ae221",
+  "branch": "work/abdomen-ct-1-65",
+  "certificateSha256": "9cc66233387f434c95059fc032f12bf3fbed77345bca5d976e32e45b877cec14",
+  "physicalPhone": false,
+  "realPathologicalMRExamples": false,
+  "dataMathChecks": 38,
+  "browserUX": {
+    "states": 22,
+    "viewports": 4,
+    "worstViewsPerViewport": 25
+  },
+  "browser168": {
+    "states": 11,
+    "viewports": 5,
+    "dragPinch": true
+  },
+  "browser174": {
+    "states": 22,
+    "viewports": 4
+  },
+  "roundtripVerified": true,
+  "zipCRCVerified": true,
+  "signatureVerified": [
+    "v2",
+    "v3"
+  ]
+}
