@@ -7,7 +7,7 @@ const errors=[];fs.mkdirSync('review/browser-orads180',{recursive:true});
 for(const [width,height]of [[393,852],[320,568],[852,393],[1280,800]]){
  const page=await browser.newPage({viewport:{width,height}});page.on('pageerror',e=>errors.push(String(e)));
  await page.goto('http://127.0.0.1:8765/region.html?area=pelvis');await page.getByRole('link',{name:/Образования придатков/}).click();
- await page.waitForSelector('#scope');assert.match(await page.locator('#result').innerText(),/Нужны/);
+ if(await page.locator('[data-tab="schemes"]').count())await page.locator('[data-tab="assessment"]').click();await page.waitForSelector('#scope');assert.match(await page.locator('#result').innerText(),/Нужны/);
  for(const [id,v]of Object.entries({scope:'standard',adequate:'yes',type:'uni',peritoneal:'no',fat:'no',solid:'no',fluid:'simple',wall:'thin'}))await page.selectOption('#'+id,v);
  assert.match(await page.locator('#result').innerText(),/MRI 2/);
  await page.selectOption('#fluid','other');await page.selectOption('#wall','thin');assert.match(await page.locator('#result').innerText(),/MRI 3/);

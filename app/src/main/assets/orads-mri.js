@@ -1,3 +1,4 @@
+import {initSchemes} from './orads-schemes.js';
 import {assess,categories} from './orads-engine.js';
 const $=id=>document.getElementById(id), state={};
 const definitions=[
@@ -39,3 +40,5 @@ function writeDraft(){lastGenerated=report();$('reportText').value=lastGenerated
 $('makeReport').onclick=()=>{if(dirty)$('replacePrompt').hidden=false;else writeDraft();};$('reportText').addEventListener('input',()=>{dirty=$('reportText').value!==lastGenerated;});$('confirmReplace').onclick=writeDraft;$('cancelReplace').onclick=()=>{$('replacePrompt').hidden=true;};
 $('copyReport').onclick=async()=>{if(!$('reportText').value.trim()){$('copyStatus').textContent='Сначала сформируйте или введите текст.';return;}try{await navigator.clipboard.writeText($('reportText').value);$('copyStatus').textContent='Скопировано';}catch{$('reportText').focus();$('reportText').select();try{$('copyStatus').textContent=document.execCommand('copy')?'Скопировано':'Текст выделен — скопируйте вручную';}catch{$('copyStatus').textContent='Текст выделен — скопируйте вручную';}}};
 update();
+
+initSchemes();
