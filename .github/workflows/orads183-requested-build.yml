@@ -1,0 +1,80 @@
+name: Build MRI Atlas 1.83 requested APK
+
+on:
+  push:
+    branches: [work/orads-simplify-1-83]
+    paths: [.github/workflows/orads183-requested-build.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Restore exact image assets
+        run: |
+          python3 tools/materialize_assets142.py
+          python3 tools/materialize_assets150.py
+          python3 tools/materialize_assets152.py
+          python3 tools/materialize_assets165.py
+      - name: Check routes and unchanged source data
+        run: |
+          node tests/catalog142.mjs
+          node tests/home163.mjs
+          node tests/all-mri-data.mjs
+      - name: Install browser test dependency
+        run: npm install --prefix /tmp/atlas-dom playwright --no-audit --no-fund
+      - name: Check simplified O-RADS on four screens
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
+        run: node tests/browser-orads183.mjs
+      - name: Save UI review images
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: orads183-ui-review
+          path: review/browser-orads183/
+          if-no-files-found: ignore
+          retention-days: 7
+      - name: Install Android SDK 35
+        run: |
+          yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null || true
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'platforms;android-35' 'build-tools;35.0.0'
+      - name: Build unsigned APK with unchanged application ID
+        run: |
+          chmod +x build-apk.sh
+          ANDROID_SDK_ROOT="$ANDROID_HOME" UNSIGNED_ONLY=1 ./build-apk.sh
+      - name: Verify ZIP integrity and checksum
+        run: |
+          python3 - <<'PY'
+          from zipfile import ZipFile
+          from pathlib import Path
+          import hashlib,json
+          p=Path('build/MRIAtlas-1.83-unsigned.apk')
+          with ZipFile(p) as z:
+              assert z.testzip() is None
+              html=z.read('assets/orads-mri.html').decode()
+              assert 'id="assessment"' not in html and 'id="report"' not in html
+              assert 'накапливает контраст' in html
+          Path('build/MRIAtlas-1.83-build-info.json').write_text(json.dumps({'version':'1.83','signed':False,'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()},indent=2))
+          PY
+      - name: Upload requested APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: MRIAtlas-1.83-unsigned
+          path: |
+            build/MRIAtlas-1.83-unsigned.apk
+            build/MRIAtlas-1.83-build-info.json
+          if-no-files-found: error
+          retention-days: 30
