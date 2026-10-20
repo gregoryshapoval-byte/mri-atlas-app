@@ -1,0 +1,43 @@
+{
+  "version": "1.77",
+  "versionCode": 77,
+  "bytes": 137610273,
+  "sha256": "664e7505ac3ed75bbd3dd91d69791c733e9c9cb29ee4f2edd52471b9431cd425",
+  "assets": 9068,
+  "parent": "88f102fb82908dcaa05c96d6e75460c3b020e951",
+  "branch": "work/abdomen-ct-1-65",
+  "dataMathChecks": 39,
+  "localCrossSectionsTested": 130,
+  "correctedVariants": [
+    "buford",
+    "cord"
+  ],
+  "mghlColor": "#b69ae8",
+  "illustrativeDimensions": {
+    "cordRadius": 0.2,
+    "ribbonSemiaxes": [
+      0.14,
+      0.035
+    ]
+  },
+  "browserMGHL": {
+    "variants": 2,
+    "viewports": 4,
+    "viewsPerVariant": 4
+  },
+  "browser168": {
+    "states": 11,
+    "viewports": 5,
+    "dragPinch": true
+  },
+  "physicalPhone": false,
+  "certificateSha256": "9cc66233387f434c95059fc032f12bf3fbed77345bca5d976e32e45b877cec14",
+  "localApkCRCVerified": true,
+  "localAssetsVerified": true,
+  "localSignatureVerified": [
+    "v2",
+    "v3"
+  ],
+  "roundtripVerified": false,
+  "deliverySaveError": "HTTP403 hosted apps tools/list during helper preflight; no upload started"
+}
