@@ -88,7 +88,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: menu-thumbnails-1.81
+          name: menu-thumbnails-1.82
           path: app/src/main/assets/menu-thumbs/
           if-no-files-found: ignore
 
@@ -120,12 +120,13 @@ jobs:
           node tests/browser-continuous-scroll164.mjs
           node tests/browser-abdomen165.mjs
           node tests/browser-orads181.mjs
+          node tests/browser-castellvi182.mjs
 
       - name: Upload viewer screenshots
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: viewer-review-1.81
+          name: viewer-review-1.82
           path: |
             review/browser-1.42/
             review/browser-1.50/
@@ -158,8 +159,8 @@ jobs:
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
-          name: MRIAtlas-1.81-unsigned
-          path: build/MRIAtlas-1.81-unsigned.apk
+          name: MRIAtlas-1.82-unsigned
+          path: build/MRIAtlas-1.82-unsigned.apk
           if-no-files-found: error
           retention-days: 30
 

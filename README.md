@@ -1,6 +1,6 @@
 # MRI Atlas · Android
 
-Актуальное состояние — **1.81**, категории O-RADS MRI с22схемами и комментариями; см. верх CONTINUE.md и review/orads-1.81.md. Нижние записи о 1.49 и 1.65 — исторические.
+Актуальное состояние — **1.82**, модуль Castellvi с семью схемами; см. верх CONTINUE.md и review/castellvi-1.82.md. Нижние записи о 1.49 и 1.65 — исторические.
 
 **Текущая документированная версия — 1.49.** Для продолжения разработки сначала прочитайте [CONTINUE.md](CONTINUE.md), [AGENTS.md](AGENTS.md) и [SOURCE_RECOVERY.md](SOURCE_RECOVERY.md).
 

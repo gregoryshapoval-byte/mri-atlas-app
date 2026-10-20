@@ -1,0 +1,58 @@
+[
+  {
+    "code": "Ia",
+    "left": "large",
+    "right": "normal",
+    "separate_bones": 2,
+    "joint_count": 0,
+    "fusion_count": 0
+  },
+  {
+    "code": "Ib",
+    "left": "large",
+    "right": "large",
+    "separate_bones": 2,
+    "joint_count": 0,
+    "fusion_count": 0
+  },
+  {
+    "code": "IIa",
+    "left": "joint",
+    "right": "normal",
+    "separate_bones": 2,
+    "joint_count": 1,
+    "fusion_count": 0
+  },
+  {
+    "code": "IIb",
+    "left": "joint",
+    "right": "joint",
+    "separate_bones": 2,
+    "joint_count": 2,
+    "fusion_count": 0
+  },
+  {
+    "code": "IIIa",
+    "left": "fusion",
+    "right": "normal",
+    "separate_bones": 1,
+    "joint_count": 0,
+    "fusion_count": 1
+  },
+  {
+    "code": "IIIb",
+    "left": "fusion",
+    "right": "fusion",
+    "separate_bones": 1,
+    "joint_count": 0,
+    "fusion_count": 2
+  },
+  {
+    "code": "IV",
+    "left": "joint",
+    "right": "fusion",
+    "separate_bones": 1,
+    "joint_count": 1,
+    "fusion_count": 1
+  }
+]

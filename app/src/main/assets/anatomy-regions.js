@@ -55,6 +55,7 @@ export const regions=[
     "description": "Поясничный отдел · МРТ",
     "image": "menu-art/spine.webp",
     "items": [
+      {"title":"Сакрализация · Castellvi","description":"7 схем · типы Ia–IV","url":"castellvi.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/castellvi.webp"},
       {
         "title": "МРТ поясничного отдела",
         "description": "T1 и T2 · исходные серии и мультипланарные реконструкции.",

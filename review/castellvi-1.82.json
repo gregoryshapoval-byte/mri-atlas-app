@@ -1,0 +1,24 @@
+{
+  "base": "1.81",
+  "version": "1.82",
+  "code": 82,
+  "changed_assets": [
+    "assets/anatomy-regions.js",
+    "assets/castellvi.html",
+    "assets/castellvi.css",
+    "assets/castellvi.js",
+    "assets/menu-thumbs/castellvi.webp",
+    "assets/castellvi/IIb.svg",
+    "assets/castellvi/IIIb.svg",
+    "assets/castellvi/Ib.svg",
+    "assets/castellvi/IV.svg",
+    "assets/castellvi/Ia.svg",
+    "assets/castellvi/IIa.svg",
+    "assets/castellvi/IIIa.svg"
+  ],
+  "unchanged_assets": 9080,
+  "bytes": 138283704,
+  "sha256": "6303dc9976352462936a77d158224c7dade03d9864e754436a4ce0fe3e979a57",
+  "signature": "Verifies\nVerified using v1 scheme (JAR signing): false\nVerified using v2 scheme (APK Signature Scheme v2): true\nVerified using v3 scheme (APK Signature Scheme v3): true\nVerified using v3.1 scheme (APK Signature Scheme v3.1): false\nVerified using v4 scheme (APK Signature Scheme v4): false\nVerified for SourceStamp: false\nNumber of signers: 1\nSigner #1 certificate DN: CN=Shoulder Atlas Personal Build\nSigner #1 certificate SHA-256 digest: 9cc66233387f434c95059fc032f12bf3fbed77345bca5d976e32e45b877cec14\nSigner #1 certificate SHA-1 digest: 407c087149daf2d52913be4b01c1aa38bd9e9329\nSigner #1 certificate MD5 digest: b8e5b22991c052d6cba70efe90dedd5d\nSigner #1 key algorithm: RSA\nSigner #1 key size (bits): 2048\nSigner #1 public key SHA-256 digest: daef738e03626bbcce06348f9139bbe0cb2032abc1882c25548b28aeaca8fd24\nSigner #1 public key SHA-1 digest: de66c40ce246e8c39c0b5f776e272d6cfb07a972\nSigner #1 public key MD5 digest: c05aa0126831333a80506fc83d66c8b5\n",
+  "physical_device_tested": false
+}
