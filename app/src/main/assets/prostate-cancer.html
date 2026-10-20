@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#10171f"><title>Рак простаты · PI-RADS · MRI Atlas</title><link rel="stylesheet" href="prostate-cancer.css"></head>
-<body><header><a href="region.html?area=pelvis">‹ Малый таз</a><span>MRI Atlas · 1.85</span></header>
+<body><header><a href="region.html?area=pelvis">‹ Малый таз</a><span>MRI Atlas · 1.86</span></header>
 <main><h1>Рак простаты · PI-RADS</h1><p class="lead">Зона → ведущая серия → категория · v2.1</p>
 <nav class="tabs" role="tablist" aria-label="Разделы модуля">
 <button type="button" role="tab" id="tab-lesions" data-tab="lesions" aria-controls="lesions" aria-selected="true">Очаги</button>
@@ -26,10 +26,13 @@
 <p class="hint scope">PI-RADS оценивает вероятность клинически значимого рака в железе до лечения. Категория и местное распространение описываются отдельно.</p>
 </section>
 <section id="zones" role="tabpanel" aria-labelledby="tab-zones" hidden>
-<h2>Зональная анатомия</h2><div class="segmented" aria-label="Уровень простаты"><button type="button" data-level="base" aria-pressed="false">Основание</button><button type="button" data-level="mid" aria-pressed="true">Середина</button><button type="button" data-level="apex" aria-pressed="false">Верхушка</button></div>
-<div class="zoneLayout"><div><div id="zoneFigure" class="zoneFigure"></div><p class="figureNote">Аксиальная условная схема · R / L — стороны пациента</p></div><div><div id="zoneChoices" class="zoneChoices"></div><article class="card"><h3 id="zoneTitle"></h3><p id="zoneText"></p><p class="trap" id="zoneTip"></p></article></div></div>
-<details><summary>Основание и верхушка на SAG</summary><div class="advancedFigure" id="sagFigure"></div></details>
-<details><summary>Как назвать сектор</summary><p>PZa — передний; PZpl — заднелатеральный; PZpm — заднемедиальный. TZa / TZp — передний / задний отдел TZ. Добавьте R/L и уровень: base / mid / apex.</p><p>В PI-RADS v2.1 карта включает 41 сектор/регион. Эта зональная схема помогает ориентироваться; в описании перечисляйте все затронутые секторы.</p></details>
+<div class="sectorHeading"><h2>Секторная карта PI-RADS</h2><span class="sectorCount">38 + 2 + 1</span></div>
+<div class="segmented" aria-label="Уровень секторной карты"><button type="button" data-level="base" aria-pressed="false">Основание · 14</button><button type="button" data-level="mid" aria-pressed="true">Середина · 12</button><button type="button" data-level="apex" aria-pressed="false">Верхушка · 12</button><button type="button" data-level="extra" aria-pressed="false">SV / US · 3</button></div>
+<div class="sectorLayout"><div><div id="zoneFigure" class="sectorFigure"></div><div class="mapActions"><span class="figureNote">R — справа пациента · L — слева</span><button type="button" class="copy" id="enlargeMap">Увеличить</button></div></div><article class="card sectorInfo"><div class="eyebrow" id="sectorLevel"></div><h3 id="sectorCode"></h3><p id="sectorName"></p><p class="trap" id="sectorTip"></p><label class="figureNote" for="sectorLocation">Локализация для описания</label><textarea id="sectorLocation" readonly aria-label="Локализация выбранного сектора"></textarea><button type="button" class="copy" id="copySector">Копировать локализацию</button><p id="sectorCopyStatus" class="status" role="status" aria-live="polite"></p></article></div>
+<p class="figureNote">Нажмите сектор или его подпись. A — спереди, P — сзади. Схема нормальной железы; при ДГПЖ соотношение зон меняется.</p>
+<details><summary>Выбрать сектор списком · все 41 региона</summary><div id="allSectors"></div></details>
+<details open><summary>Расшифровка обозначений</summary><div class="tableWrap"><table><thead><tr><th>Код</th><th>Анатомический отдел</th></tr></thead><tbody id="sectorLegend"></tbody></table></div><p>R / L — сторона пациента. B — основание, M — средняя треть, X — верхушка. Например, RM-PZpl — справа, средняя треть, заднелатеральный сектор PZ.</p></details>
+<details><summary>Как проходят границы</summary><p>Срединная линия разделяет правую и левую стороны; линия через середину железы — передние и задние секторы. Задняя PZ разделена на латеральный и медиальный сектора с каждой стороны.</p><p>У основания выделены также парные CZ. Анатомически CZ сужается к семенному бугорку; отдельные сектора CZ на этой карте обозначены у основания.</p><p>AFS — передняя нежелезистая строма. TZ вокруг проксимальной уретры и CZ вокруг семявыбрасывающих протоков — разные зоны.</p></details>
 </section>
 <section id="scanning" role="tabpanel" aria-labelledby="tab-scanning" hidden><h2>Сканирование по PI-RADS v2.1</h2><p class="hint">1,5 Т и 3 Т; предпочтительно 3 Т. Малое поле обзора включает железу и семенные пузырьки. Совмещайте плоскости T2, DWI и DCE.</p><div class="tableWrap"><table class="scanTable"><thead><tr><th>Серия</th><th>Плоскость / задача</th><th>Требования</th></tr></thead><tbody id="scanRows"></tbody></table></div>
 <details><summary>DCE: введение и начало съёмки</summary><p>Динамическую серию начинают до введения и продолжают во время и после болюса. Обычно 0,1 ммоль/кг, 2–3 мл/с; объём зависит от концентрации препарата.</p></details>
@@ -50,6 +53,6 @@
 <li><a href="https://nrgoncology.org/wp-content/uploads/2025/09/MRI-Prostate-Guidelines-v1.02.pdf" target="_blank" rel="noopener">NRG Oncology · параметры сканирования</a></li>
 <li><a href="https://edge.sitecorecloud.io/americancoldf5f-acrorgf92a-productioncb02-3650/media/ACR/Files/RADS/PI-RADS/PIRADS-Report-Template.pdf" target="_blank" rel="noopener">ACR · структура описания</a></li>
 <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6467207/" target="_blank" rel="noopener">Weinreb et al., 2016 · анатомия и местное распространение</a></li>
-</ol><p>Схемы авторские, обобщённые. Оценка рака и его распространения требует анализа исследования целиком.</p></details><p>MRI Atlas · 1.85 · офлайн</p></footer>
-</main><dialog id="zoom"><button type="button" class="close">Закрыть</button><div id="zoomFigure"></div><p class="hint">Условная учебная схема</p></dialog>
-<script src="prostate-data.js" defer></script><script src="prostate-figures.js" defer></script><script src="prostate-rules.js" defer></script><script src="prostate-cancer.js" defer></script></body></html>
+</ol><p>Схемы авторские, обобщённые. Оценка рака и его распространения требует анализа исследования целиком.</p></details><p>MRI Atlas · 1.86 · офлайн</p></footer>
+</main><dialog id="zoom"><button type="button" class="close">Закрыть</button><div id="zoomFigure"></div><p id="zoomSectorName" class="hint" role="status" hidden></p><p class="hint">Условная учебная схема</p></dialog>
+<script src="prostate-data.js" defer></script><script src="prostate-figures.js" defer></script><script src="prostate-rules.js" defer></script><script src="prostate-sectors186.js" defer></script><script src="prostate-cancer.js" defer></script></body></html>
