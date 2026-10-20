@@ -14,68 +14,42 @@ jobs:
   sign:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    # User explicitly requested a test key without secret/password setup.
-    # These are intentionally public test credentials, not a production key.
+    # Owner-requested public test identity. Always restore; never regenerate.
     env:
       ATLAS_STORE_PASSWORD: android
       ATLAS_KEY_PASSWORD: android
       ATLAS_KEY_ALIAS: atlas
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
     steps:
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: '17'
-      - name: Locate reusable public test key
-        id: backup
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const items = await github.paginate(github.rest.actions.listArtifactsForRepo, {
-              ...context.repo, name: 'MRIAtlas-test-signing-key-20261020', per_page: 100
-            });
-            const matching = items.filter(a => a.name === 'MRIAtlas-test-signing-key-20261020');
-            const active = matching.filter(a => !a.expired).sort((a,b) => b.id-a.id)[0];
-            if (active) core.setOutput('artifact_id', String(active.id));
-            else if (matching.length || process.env.GITHUB_RUN_NUMBER !== '2')
-              throw new Error('Test key backup unavailable. Restore it rather than silently replacing the key.');
-      - name: Restore public test key
-        if: steps.backup.outputs.artifact_id != ''
-        uses: actions/download-artifact@v4
-        with:
-          artifact-ids: ${{ steps.backup.outputs.artifact_id }}
-          merge-multiple: true
-          path: signing
-          github-token: ${{ github.token }}
-      - name: Create or validate reusable test key
-        shell: bash
+      - name: Restore the permanent public test key backup
         run: |
           set -euo pipefail
-          umask 077
-          mkdir -p signing
-          if [ ! -f signing/atlas.keystore ]; then
-            keytool -genkeypair -noprompt -storetype PKCS12 -keystore signing/atlas.keystore \
-              -storepass:env ATLAS_STORE_PASSWORD -keypass:env ATLAS_KEY_PASSWORD \
-              -alias "$ATLAS_KEY_ALIAS" -keyalg RSA -keysize 3072 -validity 10000 \
-              -dname "CN=MRI Atlas Public Test Key, O=MRI Atlas"
-          fi
+          mkdir -p saved-key signing
+          gh release download atlas-1.83-personal-backup --pattern MRIAtlas-test-signing-key.zip --dir saved-key
+          python3 - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+          import hashlib
+          p=Path('saved-key/MRIAtlas-test-signing-key.zip')
+          assert hashlib.sha256(p.read_bytes()).hexdigest()=='21e95c8f3b3b57579f8ad930e5dd011a7800efccc00750b003d70a5a9d9c87c6'
+          with ZipFile(p) as z:
+              assert z.testzip() is None
+              for name in ['atlas.keystore','certificate.der','certificate.sha256','README.txt']:
+                  Path('signing',name).write_bytes(z.read(name))
+          PY
           keytool -exportcert -keystore signing/atlas.keystore -storepass:env ATLAS_STORE_PASSWORD \
-            -alias "$ATLAS_KEY_ALIAS" -file signing/certificate.der
-          sha256sum signing/certificate.der > signing/certificate.sha256
-          cat > signing/README.txt <<'INFO'
-          MRI Atlas public test signing key, created at the owner's request.
-          Store type: PKCS12. Alias: atlas. Store and key password: android.
-          This is intentionally not a protected production signing identity.
-          Keep this file to sign subsequent personal builds with the same certificate.
-          It does not match the original MRI Atlas 1.82 release certificate.
-          INFO
-      - name: Preserve reusable test key
-        if: steps.backup.outputs.artifact_id == ''
-        uses: actions/upload-artifact@v4
-        with:
-          name: MRIAtlas-test-signing-key-20261020
-          path: signing/
-          if-no-files-found: error
-          retention-days: 90
+            -alias "$ATLAS_KEY_ALIAS" -file current-cert.der
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib
+          assert hashlib.sha256(Path('current-cert.der').read_bytes()).hexdigest()=='cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe'
+          assert Path('current-cert.der').read_bytes()==Path('signing/certificate.der').read_bytes()
+          PY
       - name: Download exact previously built APK
         uses: actions/download-artifact@v4
         with:
