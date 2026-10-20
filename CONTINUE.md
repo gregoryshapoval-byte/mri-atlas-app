@@ -1,5 +1,15 @@
 # Продолжение MRI Atlas
 
+## Результат выпуска1.85 — 20.10.2026
+
+Код c8352ea2836acb0449ac5fb8511bf57d727eff8a; ветка work/orads-simplify-1-83. CI https://github.com/gregoryshapoval-byte/mri-atlas-app/actions/runs/39488434057 — SUCCESS. PASS: сохранность всех прежнихblobsassets кроме добавленного пункта меню; catalog142/home163/all-mri-data; prostate185150комбинаций; browser-prostate1854размера(320×568,393×852,852×393,1280×800),3уровня/PZ/TZ/CZ/AFS,отсутствиеCZнаверхушке,все4вкладки,отсутствиеoverflow,калькулятор/DCE X/ограничениекачества,копирование/fallback,клавиатура/zoom/возврат/офлайн; регрессииbrowser-ms184 иbrowser-orads183. Androidсборка,ZIP/payloadвсехassets,package/version85/1.85,v2/v3иSHA256сертификата проверены. Полныйисторическийbrowser-suiteнепрогонялся.
+
+СкриншотыCI скачаны длявнутреннегоQA, визуальноосмотрены393pxэкраныPZ/TZ/зоны/сканирование, все6SVGосмотренылокально. БраузерUIнафизическомAndroidи независимаяврачебнаяпроверканевыполнены.
+
+APK: https://github.com/gregoryshapoval-byte/mri-atlas-app/releases/download/atlas-1.85-prostate/MRIAtlas-1.85.apk
+Размер 138305007байт; SHA256 d4f9a1f181a1a4717ad942299e84c105755f13c85d5f203229077deefe20749f.
+Release https://github.com/gregoryshapoval-byte/mri-atlas-app/releases/tag/atlas-1.85-prostate; подписан темжесохранённымпубличнымтестовымключом1.83/1.84, сертификатcb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe. Новогоключанет. Старыйзащищённыйключ1.82несовместимсэтойлинией. Продолжатьотэтойветки/потомка, неmain1.82.
+
 ## 1.85 — рак простаты / PI-RADS v2.1
 
 Основа e8fc27e8 (подписанная1.84), текущаяветка work/orads-simplify-1-83; не начинать от main1.82. Малый таз → Рак простаты: зональнаяанатомия, требованиясканирования, критерииочаговPZ/TZ, проверкабаллов, шаблоныописания. Сначала review/prostate-cancer-1.85.md. ЛокальноPASS150комбинаций,JSsyntax,6SVGотрендерены/визуальноосмотрены. БраузерCI/Android/APK на момент исходного коммита ещё не выполнены; успех не заявляется. Подписывать тем же сохранённым тестовым ключом1.83/1.84, не генерировать. ПрежнийMSмодуль сохранён.
