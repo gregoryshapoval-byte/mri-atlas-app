@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#10171f"><title>Рак простаты · PI-RADS · MRI Atlas</title><link rel="stylesheet" href="prostate-cancer.css"></head>
+<body><header><a href="region.html?area=pelvis">‹ Малый таз</a><span>MRI Atlas · 1.85</span></header>
+<main><h1>Рак простаты · PI-RADS</h1><p class="lead">Зона → ведущая серия → категория · v2.1</p>
+<nav class="tabs" role="tablist" aria-label="Разделы модуля">
+<button type="button" role="tab" id="tab-lesions" data-tab="lesions" aria-controls="lesions" aria-selected="true">Очаги</button>
+<button type="button" role="tab" id="tab-zones" data-tab="zones" aria-controls="zones" aria-selected="false" tabindex="-1">Зоны</button>
+<button type="button" role="tab" id="tab-scanning" data-tab="scanning" aria-controls="scanning" aria-selected="false" tabindex="-1">Сканирование</button>
+<button type="button" role="tab" id="tab-report" data-tab="report" aria-controls="report" aria-selected="false" tabindex="-1">Описание</button>
+</nav>
+<section id="lesions" role="tabpanel" aria-labelledby="tab-lesions">
+<div class="segmented" aria-label="Исходная зона очага"><button type="button" data-score-zone="PZ" aria-pressed="true">PZ · периферическая</button><button type="button" data-score-zone="TZ" aria-pressed="false">TZ · переходная</button></div>
+<article class="card scoreIntro"><div><div class="eyebrow" id="dominant"></div><h2 id="scoreHeading"></h2><p id="scoreRule"></p></div><button type="button" class="figureButton compactFigure" id="scoreFigure" aria-label="Увеличить схему признаков"></button></article>
+<div class="tableWrap"><table id="scoreTable"><thead><tr><th>Балл серии</th><th id="seriesLabel"></th></tr></thead><tbody id="scoreRows"></tbody></table></div>
+<div class="note" id="upgradeRule"></div>
+<details><summary>DCE+: какое накопление считается положительным</summary><p>Фокальное, раньше или одновременно с соседней тканью, совпадает с подозрительным очагом на T2 и/или DWI. Диффузное накопление и типичный узел ДГПЖ не дают DCE+.</p><p>Без DCE ставьте X, а не «−». В PZ при DWI 3 укажите, что контрастная оценка не выполнена.</p></details>
+<details><summary>Как измерять · порог 15 мм</summary><p><b>Наибольший размер: ≥15 мм включает ровно 15 мм.</b> Для PZ — преимущественно ADC, для TZ — T2. Укажите серию, кадр; если максимальный размер в другой плоскости, укажите и её.</p><p>Размер ≥15 мм сам по себе не делает очаг категорией 5: нужны признаки балла 4 на ведущей серии либо явная инвазия. Один контакт с контуром железы не равен явному экстрапростатическому распространению.</p></details>
+<details id="assessment"><summary>Проверить сочетание баллов</summary><p class="hint">Для диагностических T2 и DWI. Баллы выбирает врач по признакам выше.</p><div class="formGrid">
+<label>Исходная зона<select id="calcZone"><option value="PZ">PZ</option><option value="TZ">TZ</option></select></label>
+<label>T2 · балл<select id="calcT2"><option>1</option><option>2</option><option selected>3</option><option>4</option><option>5</option></select></label>
+<label>DWI · балл<select id="calcDwi"><option>1</option><option>2</option><option selected>3</option><option>4</option><option>5</option></select></label>
+<label>DCE<select id="calcDce"><option value="X">X · не оценено</option><option value="-">− · отрицательно</option><option value="+">+ · положительно</option></select></label></div>
+<label class="check"><input type="checkbox" id="adequate" checked> T2 и DWI диагностического качества</label><output id="calcResult" class="result" aria-live="polite"></output><p id="calcReason" class="hint"></p>
+</details>
+<details><summary>Частые ошибки</summary><ul><li>Один низкий ADC без выраженного высокого DWI недостаточен для DWI 4.</li><li>Числовой ADC не заменяет морфологию и парную оценку серий.</li><li>Типичный узел ДГПЖ в TZ может ограничивать диффузию.</li></ul></details>
+<p class="hint scope">PI-RADS оценивает вероятность клинически значимого рака в железе до лечения. Категория и местное распространение описываются отдельно.</p>
+</section>
+<section id="zones" role="tabpanel" aria-labelledby="tab-zones" hidden>
+<h2>Зональная анатомия</h2><div class="segmented" aria-label="Уровень простаты"><button type="button" data-level="base" aria-pressed="false">Основание</button><button type="button" data-level="mid" aria-pressed="true">Середина</button><button type="button" data-level="apex" aria-pressed="false">Верхушка</button></div>
+<div class="zoneLayout"><div><div id="zoneFigure" class="zoneFigure"></div><p class="figureNote">Аксиальная условная схема · R / L — стороны пациента</p></div><div><div id="zoneChoices" class="zoneChoices"></div><article class="card"><h3 id="zoneTitle"></h3><p id="zoneText"></p><p class="trap" id="zoneTip"></p></article></div></div>
+<details><summary>Основание и верхушка на SAG</summary><div class="advancedFigure" id="sagFigure"></div></details>
+<details><summary>Как назвать сектор</summary><p>PZa — передний; PZpl — заднелатеральный; PZpm — заднемедиальный. TZa / TZp — передний / задний отдел TZ. Добавьте R/L и уровень: base / mid / apex.</p><p>В PI-RADS v2.1 карта включает 41 сектор/регион. Эта зональная схема помогает ориентироваться; в описании перечисляйте все затронутые секторы.</p></details>
+</section>
+<section id="scanning" role="tabpanel" aria-labelledby="tab-scanning" hidden><h2>Сканирование по PI-RADS v2.1</h2><p class="hint">1,5 Т и 3 Т; предпочтительно 3 Т. Малое поле обзора включает железу и семенные пузырьки. Совмещайте плоскости T2, DWI и DCE.</p><div class="tableWrap"><table class="scanTable"><thead><tr><th>Серия</th><th>Плоскость / задача</th><th>Требования</th></tr></thead><tbody id="scanRows"></tbody></table></div>
+<details><summary>DCE: введение и начало съёмки</summary><p>Динамическую серию начинают до введения и продолжают во время и после болюса. Обычно 0,1 ммоль/кг, 2–3 мл/с; объём зависит от концентрации препарата.</p></details>
+<details><summary>GE 1,5 Т · что проверить на консоли</summary><p>Проверьте фактический исходный воксель, SNR high-b, геометрические искажения и временной шаг DCE. При квадратном FOV 20×20 см для T2 нужны ≥500 отсчётов по частоте и ≥286 по фазе; пример матрицы — 512×320 с учётом направлений.</p><p>Это расчёт по заданному FOV и требованиям к пикселю. Интерполяция не заменяет исходное разрешение. TR/TE T2, ускорение и время подбираются по качеству на аппарате.</p></details>
+<details><summary>Перед завершением исследования</summary><ul><li>Сопоставление T2 ↔ ADC ↔ high-b без смещения очага.</li><li>Газ в прямой кишке, движение и недостаточный SNR не мешают оценке; иначе исправить и повторить серию.</li><li>Контроль качества важнее формального совпадения чисел.</li></ul></details>
+<details><summary>Бипараметрическое исследование</summary><p>Без DCE укажите выполненный протокол и ограничения. При PZ DWI 3 повышение по контрастированию не проверяется; отсутствие DCE не означает отрицательное DCE.</p></details>
+</section>
+<section id="report" role="tabpanel" aria-labelledby="tab-report" hidden><h2>Что обязательно указать</h2>
+<div class="card"><p><b>Очаг:</b> зона, сторона, уровень, сектор; размеры; T2 / DWI / DCE; итоговая категория; серия и кадр.</p><p><b>Железа:</b> объём, качество, кровоизлияние. <b>Распространение:</b> контур, сосудисто-нервные пучки, семенные пузырьки, лимфоузлы.</p></div>
+<details><summary>Индексный очаг и распространение</summary><p>Индексный: высшая категория; при равенстве — очаг с EPE, затем наибольший. Обычно подробно картируют до четырёх очагов PI-RADS 3–5.</p><p>Явное EPE — выход опухолевой ткани за пределы железы. Выбухание, неровность контура и длинный контакт повышают подозрение, но не доказывают EPE сами по себе.</p></details>
+<div id="reportCards"></div><textarea id="copyFallback" aria-label="Текст для ручного копирования" readonly hidden></textarea><p class="status" id="copyStatus" role="status" aria-live="polite"></p>
+<details><summary>Значение категорий</summary><p>1 — очень низкая; 2 — низкая; 3 — неопределённая; 4 — высокая; 5 — очень высокая вероятность клинически значимого рака. ПСА / PSAD учитываются в клиническом решении, но не меняют балл PI-RADS.</p></details>
+</section>
+<footer><details><summary>Источники · 20.10.2026</summary><ol>
+<li><a href="https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/PI-RADS" target="_blank" rel="noopener">ACR · текущая редакция PI-RADS v2.1, 2019</a></li>
+<li><a href="https://edge.sitecorecloud.io/americancoldf5f-acrorgf92a-productioncb02-3650/media/ACR/Files/RADS/PI-RADS/PIRADS-2019.pdf" target="_blank" rel="noopener">ACR / ESUR / AdMeTech · полный документ</a></li>
+<li><a href="https://edge.sitecorecloud.io/americancoldf5f-acrorgf92a-productioncb02-3650/media/ACR/Files/RADS/PI-RADS/PIRADS-Revisions.pdf" target="_blank" rel="noopener">Комитет PI-RADS · изменения 2.1</a></li>
+<li><a href="https://nrgoncology.org/wp-content/uploads/2025/09/MRI-Prostate-Guidelines-v1.02.pdf" target="_blank" rel="noopener">NRG Oncology · параметры сканирования</a></li>
+<li><a href="https://edge.sitecorecloud.io/americancoldf5f-acrorgf92a-productioncb02-3650/media/ACR/Files/RADS/PI-RADS/PIRADS-Report-Template.pdf" target="_blank" rel="noopener">ACR · структура описания</a></li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6467207/" target="_blank" rel="noopener">Weinreb et al., 2016 · анатомия и местное распространение</a></li>
+</ol><p>Схемы авторские, обобщённые. Оценка рака и его распространения требует анализа исследования целиком.</p></details><p>MRI Atlas · 1.85 · офлайн</p></footer>
+</main><dialog id="zoom"><button type="button" class="close">Закрыть</button><div id="zoomFigure"></div><p class="hint">Условная учебная схема</p></dialog>
+<script src="prostate-data.js" defer></script><script src="prostate-figures.js" defer></script><script src="prostate-rules.js" defer></script><script src="prostate-cancer.js" defer></script></body></html>

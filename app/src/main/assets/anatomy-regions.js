@@ -274,6 +274,7 @@ export const regions=[
     "description": "Мужской и женский таз",
     "image": "menu-art/pelvis.webp",
     "items": [
+      {"title":"Рак простаты · PI-RADS","description":"Зоны простаты · требования к МРТ · оценка очагов","url":"prostate-cancer.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/prostate-cancer.svg"},
       {"title":"Образования придатков · O-RADS MRI","description":"Категория риска · признаки · контрастирование · заключение","url":"orads-mri.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/orads-mri.webp"},
       {"title":"Рак прямой кишки","description":"Стадирование · MRF / EMVI · ответ на лечение · протокол GE","url":"rectal-cancer.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/rectal-cancer.webp"},
       {
