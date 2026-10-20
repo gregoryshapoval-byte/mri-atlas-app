@@ -78,4 +78,4 @@ jobs:
             build/MRIAtlas-1.83-build-info.json
           if-no-files-found: error
           retention-days: 30
-# Keep cross-document transitions enabled on the O-RADS page.
+# Use stable menu navigation without cross-document animation.
