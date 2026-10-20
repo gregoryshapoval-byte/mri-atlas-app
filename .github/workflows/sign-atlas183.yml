@@ -1,0 +1,157 @@
+name: Sign existing MRI Atlas 1.83 APK
+on:
+  push:
+    branches: [work/orads-simplify-1-83]
+    paths: [.github/workflows/sign-atlas183.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: atlas-release-signing
+  cancel-in-progress: false
+jobs:
+  sign:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      ATLAS_STORE_PASSWORD: ${{ secrets.ATLAS_KEYSTORE_PASSWORD }}
+      ATLAS_KEY_PASSWORD: ${{ secrets.ATLAS_KEY_PASSWORD || secrets.ATLAS_KEYSTORE_PASSWORD }}
+      ATLAS_KEY_ALIAS: ${{ secrets.ATLAS_KEY_ALIAS || 'atlas' }}
+      ATLAS_KEYSTORE_BASE64: ${{ secrets.ATLAS_KEYSTORE_BASE64 }}
+    steps:
+      - name: Check protected signing configuration
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -z "$ATLAS_STORE_PASSWORD" ]; then
+            echo "::error::Missing ATLAS_KEYSTORE_PASSWORD repository secret. Set a strong random password (24+ characters) to create and preserve a new key, then re-run this job. Optionally set ATLAS_KEYSTORE_BASE64 to restore an existing key."
+            exit 1
+          fi
+          if [ -z "$ATLAS_KEYSTORE_BASE64" ] && [ "${#ATLAS_STORE_PASSWORD}" -lt 24 ]; then
+            echo "::error::A new signing key requires a strong random password of at least 24 characters."
+            exit 1
+          fi
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Locate encrypted backup of the new key
+        id: backup
+        if: env.ATLAS_KEYSTORE_BASE64 == ''
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const items = await github.paginate(github.rest.actions.listArtifactsForRepo, {
+              ...context.repo, name: 'MRIAtlas-signing-key-20261020', per_page: 100
+            });
+            const matching = items.filter(a => a.name === 'MRIAtlas-signing-key-20261020');
+            const active = matching.filter(a => !a.expired).sort((a,b) => b.id-a.id)[0];
+            if (active) core.setOutput('artifact_id', String(active.id));
+            else if (matching.length || process.env.GITHUB_RUN_NUMBER !== '1')
+              throw new Error('Signing backup unavailable. Restore ATLAS_KEYSTORE_BASE64; refusing to silently replace a previous key.');
+      - name: Restore encrypted key backup
+        if: steps.backup.outputs.artifact_id != ''
+        uses: actions/download-artifact@v4
+        with:
+          artifact-ids: ${{ steps.backup.outputs.artifact_id }}
+          merge-multiple: true
+          path: signing
+          github-token: ${{ github.token }}
+      - name: Restore or create persistent signing key
+        shell: bash
+        run: |
+          set -euo pipefail
+          umask 077
+          mkdir -p signing
+          if [ -n "$ATLAS_KEYSTORE_BASE64" ]; then
+            printf '%s' "$ATLAS_KEYSTORE_BASE64" | base64 --decode > signing/atlas.keystore
+          elif [ ! -f signing/atlas.keystore ]; then
+            keytool -genkeypair -noprompt -storetype PKCS12 -keystore signing/atlas.keystore \
+              -storepass:env ATLAS_STORE_PASSWORD -keypass:env ATLAS_STORE_PASSWORD \
+              -alias "$ATLAS_KEY_ALIAS" -keyalg RSA -keysize 3072 -validity 10000 \
+              -dname "CN=MRI Atlas Release, O=MRI Atlas"
+          fi
+          keytool -exportcert -keystore signing/atlas.keystore -storepass:env ATLAS_STORE_PASSWORD \
+            -alias "$ATLAS_KEY_ALIAS" -file signing/certificate.der
+          sha256sum signing/certificate.der > signing/certificate.sha256
+      - name: Preserve password-encrypted key before signing
+        if: env.ATLAS_KEYSTORE_BASE64 == '' && steps.backup.outputs.artifact_id == ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: MRIAtlas-signing-key-20261020
+          path: |
+            signing/atlas.keystore
+            signing/certificate.der
+            signing/certificate.sha256
+          if-no-files-found: error
+          retention-days: 90
+      - name: Download exact previously built APK
+        uses: actions/download-artifact@v4
+        with:
+          name: MRIAtlas-1.83-unsigned
+          run-id: 39459133181
+          github-token: ${{ github.token }}
+          path: input
+      - name: Check original APK checksum and ZIP
+        run: |
+          python3 - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          from zipfile import ZipFile
+          p=Path('input/MRIAtlas-1.83-unsigned.apk')
+          info=json.loads(Path('input/MRIAtlas-1.83-build-info.json').read_text())
+          assert hashlib.sha256(p.read_bytes()).hexdigest()==info['sha256'], 'Input checksum mismatch'
+          with ZipFile(p) as z:
+              assert z.testzip() is None, 'Invalid input ZIP'
+          PY
+      - name: Install Android signing tools
+        run: |
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'build-tools;35.0.0'
+      - name: Sign and verify APK
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p output
+          bt="$ANDROID_HOME/build-tools/35.0.0"
+          "$bt/zipalign" -c 4 input/MRIAtlas-1.83-unsigned.apk
+          "$bt/apksigner" sign --ks signing/atlas.keystore \
+            --ks-pass env:ATLAS_STORE_PASSWORD --key-pass env:ATLAS_KEY_PASSWORD \
+            --ks-key-alias "$ATLAS_KEY_ALIAS" --v2-signing-enabled true --v3-signing-enabled true \
+            --v4-signing-enabled false --out output/MRIAtlas-1.83-signed.apk input/MRIAtlas-1.83-unsigned.apk
+          "$bt/apksigner" verify --verbose --print-certs output/MRIAtlas-1.83-signed.apk | tee output/signature.txt
+          "$bt/aapt2" dump badging output/MRIAtlas-1.83-signed.apk > output/package-info.txt
+          python3 - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+          import hashlib,json
+          source=Path('input/MRIAtlas-1.83-unsigned.apk')
+          result=Path('output/MRIAtlas-1.83-signed.apk')
+          with ZipFile(source) as a, ZipFile(result) as b:
+              assert b.testzip() is None
+              original=set(a.namelist())
+              assert original.issubset(set(b.namelist()))
+              for name in original:
+                  assert a.read(name)==b.read(name), 'Payload changed: '+name
+              assert all(n.startswith('META-INF/') for n in set(b.namelist())-original)
+          package=Path('output/package-info.txt').read_text().splitlines()[0]
+          assert "name='ru.grigory.shoulderatlas.restored'" in package
+          assert "versionCode='83'" in package and "versionName='1.83'" in package
+          cert=hashlib.sha256(Path('signing/certificate.der').read_bytes()).hexdigest()
+          old='9cc66233387f434c95059fc032f12bf3fbed77345bca5d976e32e45b877cec14'
+          Path('output/build-info.json').write_text(json.dumps({
+            'version':'1.83','signed':True,'payload_unchanged':True,
+            'certificate_sha256':cert,'matches_previous_release_key':cert==old,
+            'sha256':hashlib.sha256(result.read_bytes()).hexdigest()
+          },indent=2))
+          PY
+      - name: Upload verified signed APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: MRIAtlas-1.83-signed
+          path: output/
+          if-no-files-found: error
+          retention-days: 30
+      - name: Remove runner copy of key
+        if: always()
+        run: rm -rf signing
