@@ -5,6 +5,7 @@ export const regions=[
     "description": "МРТ и сосудистая анатомия",
     "image": "menu-art/brain.webp",
     "items": [
+      {"title":"Рассеянный склероз","description":"МР-признаки · критерии · сканирование · заключение","url":"multiple-sclerosis.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/multiple-sclerosis.svg"},
       {
         "title": "Артерии · 3D",
         "description": "Вращаемая модель · цветные сегменты ВСА C1–C7",
