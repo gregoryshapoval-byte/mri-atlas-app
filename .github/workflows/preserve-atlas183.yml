@@ -1,0 +1,90 @@
+name: Preserve Atlas 1.83 APK and public test key
+on:
+  push:
+    branches: [work/orads-simplify-1-83]
+    paths: [.github/workflows/preserve-atlas183.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: atlas183-durable-backup
+  cancel-in-progress: false
+jobs:
+  preserve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Retrieve verified APK
+        uses: actions/download-artifact@v4
+        with:
+          name: MRIAtlas-1.83-signed
+          run-id: 39482179206
+          github-token: ${{ github.token }}
+          path: apk
+      - name: Retrieve existing public test key
+        uses: actions/download-artifact@v4
+        with:
+          name: MRIAtlas-test-signing-key-20261020
+          run-id: 39482179206
+          github-token: ${{ github.token }}
+          path: key
+      - name: Verify and package backup
+        run: |
+          keytool -exportcert -keystore key/atlas.keystore -storepass android -alias atlas -file current-cert.der
+          python3 - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile,ZIP_DEFLATED
+          import hashlib,json,shutil
+          digest=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+          expected='cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe'
+          assert digest('current-cert.der')==expected
+          info=json.loads(Path('apk/build-info.json').read_text())
+          assert info['certificate_sha256']==expected
+          assert info['signed'] and info['payload_unchanged']
+          assert digest('apk/MRIAtlas-1.83-signed.apk')==info['sha256']
+          out=Path('backup');out.mkdir()
+          for n in ['MRIAtlas-1.83-signed.apk','build-info.json','signature.txt','package-info.txt']:
+              shutil.copy2(Path('apk')/n,out/n)
+          with ZipFile(out/'MRIAtlas-test-signing-key.zip','w',ZIP_DEFLATED) as z:
+              for p in sorted(Path('key').iterdir()):
+                  if p.is_file(): z.write(p,p.name)
+          Path(out/'SHA256SUMS.txt').write_text(''.join(digest(p)+'  '+p.name+'\n' for p in sorted(out.iterdir()) if p.is_file()))
+          Path('release-notes.txt').write_text(
+            'Persistent backup requested by the owner. APK 1.83 has verified v2/v3 signatures and unchanged payload.\n\n'
+            'This build uses a NEW intentionally PUBLIC TEST KEY, not the original release identity. '
+            'It cannot update an installation signed with the previous key.\n\n'
+            'The key backup uses PKCS12, alias atlas, store/key password android. '
+            'Keep the same key for future personal updates. No secret setup is required.\n\n'
+            'Certificate SHA-256: '+expected+'\n'
+          )
+          PY
+      - name: Preserve files in a prerelease without artifact expiration
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import subprocess,json,hashlib
+          tag='atlas-1.83-personal-backup'
+          result=subprocess.run(['gh','release','view',tag,'--json','assets'],capture_output=True,text=True)
+          if result.returncode:
+              subprocess.run(['gh','release','create',tag,'--target','39f63e96adda567a9c1e6416f30cf02b2c5bdb40',
+                '--prerelease','--latest=false','--title','MRI Atlas 1.83 - personal APK and test key backup',
+                '--notes-file','release-notes.txt'],check=True)
+              result=subprocess.run(['gh','release','view',tag,'--json','assets'],capture_output=True,text=True,check=True)
+          existing={a['name'] for a in json.loads(result.stdout)['assets']}
+          Path('existing').mkdir()
+          for p in sorted(Path('backup').iterdir()):
+              if p.name in existing:
+                  subprocess.run(['gh','release','download',tag,'--pattern',p.name,'--dir','existing'],check=True)
+                  assert hashlib.sha256((Path('existing')/p.name).read_bytes()).digest()==hashlib.sha256(p.read_bytes()).digest(), 'Existing backup differs: '+p.name
+              else:
+                  subprocess.run(['gh','release','upload',tag,str(p)],check=True)
+          subprocess.run(['gh','release','view',tag,'--json','url,assets'],check=True)
+          PY
