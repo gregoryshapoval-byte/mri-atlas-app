@@ -1,0 +1,24 @@
+{
+  "version": "1.73",
+  "versionCode": 73,
+  "bytes": 137597711,
+  "sha256": "37db5cd6b64b000139496ba4d64bbf56538128c3d9d693e8657bf3f5be086506",
+  "assetCount": 9064,
+  "sourceAssetsByteExact": true,
+  "dataMathTests": 36,
+  "physicalPhoneTested": false,
+  "previousGeometriesPreserved": 12,
+  "gapAnalysisItems": 8,
+  "savedArtifactsRoundtripVerified": true,
+  "browserBuford173": {
+    "viewports": 4,
+    "offline": true
+  },
+  "browserRecess172": {
+    "viewports": 4
+  },
+  "browserLabrum170": {
+    "states": 11,
+    "viewports": 3
+  }
+}
