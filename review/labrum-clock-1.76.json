@@ -1,0 +1,31 @@
+{
+  "version": "1.76",
+  "versionCode": 76,
+  "bytes": 137610210,
+  "sha256": "d4a35f701945fe49419466388fb64a58e9c08f556bf27fc6808fa74c4565bc8b",
+  "assets": 9067,
+  "parent": "6ffe55defe23f0ae0ea577d0a92700566667d3a8",
+  "clockOpacity": 0.5,
+  "clockRails": false,
+  "clockLeaderLines": false,
+  "anatomicalClockProjectionPreserved": true,
+  "dataMathChecks": 38,
+  "browserUX": {
+    "states": 22,
+    "viewports": 4,
+    "viewsPerViewport": 25
+  },
+  "physicalPhone": false,
+  "certificateSha256": "9cc66233387f434c95059fc032f12bf3fbed77345bca5d976e32e45b877cec14",
+  "roundtripVerified": true,
+  "zipCRCVerified": true,
+  "signatureVerified": [
+    "v2",
+    "v3"
+  ],
+  "browser168": {
+    "states": 11,
+    "viewports": 5,
+    "dragPinch": true
+  }
+}

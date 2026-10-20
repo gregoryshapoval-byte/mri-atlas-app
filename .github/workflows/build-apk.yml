@@ -141,7 +141,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: viewer-review-1.75
+          name: viewer-review-1.76
           path: |
             review/browser-1.42/
             review/browser-1.50/
@@ -166,6 +166,7 @@ jobs:
             review/browser-1.73/
             review/browser-1.74/
             review/browser-1.75/
+            review/browser-1.76/
             review/joints-1.45/
             review/ligaments-1.46/
             review/hip-1.47/
@@ -182,8 +183,8 @@ jobs:
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
-          name: MRIAtlas-1.75-unsigned
-          path: build/MRIAtlas-1.75-unsigned.apk
+          name: MRIAtlas-1.76-unsigned
+          path: build/MRIAtlas-1.76-unsigned.apk
           if-no-files-found: error
           retention-days: 30
 

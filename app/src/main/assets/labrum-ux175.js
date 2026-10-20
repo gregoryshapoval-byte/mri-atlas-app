@@ -1,11 +1,7 @@
 // Screen layout only; all anatomical coordinates remain in their source modules.
-export function clockLayout(points,width,height,force=false){
- const overlap=(a,b)=>Math.abs(a.x-b.x)<27&&Math.abs(a.y-b.y)<27;
- const rails=force||points.some((p,i)=>!Number.isFinite(p.x+p.y)||p.x<15||p.x>width-15||p.y<48||p.y>height-94||points.slice(i+1).some(q=>overlap(p,q)));
- if(!rails)return{rails:false,points:points.map(p=>({...p}))};
- const ordered=[...points].sort((a,b)=>a.x-b.x||a.hour-b.hour),top=60,bottom=Math.max(top+112,height-86),out=[];
- for(const[side,list]of [[0,ordered.slice(0,6)],[1,ordered.slice(6)]]){list.sort((a,b)=>a.y-b.y||a.hour-b.hour);list.forEach((p,i)=>out.push({...p,x:side?width-20:20,y:top+(bottom-top)*i/Math.max(1,list.length-1)}));}
- return{rails:true,points:out};
+// Keep every digit at its projected anatomical point, even in profile views.
+export function clockLayout(points){
+ return{rails:false,points:points.map(p=>({...p}))};
 }
 export const comparisonGroups=[
  {id:'superior',label:'Борозда / SLAP II',cases:['recess','slap2']},
