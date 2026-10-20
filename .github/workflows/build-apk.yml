@@ -65,6 +65,7 @@ jobs:
           node tests/labrum-mri169.mjs
           node tests/labrum-clock170.mjs
           node tests/hill-sachs171.mjs
+          node tests/labrum-variants172.mjs
           node tests/all-mri-data.mjs
           node tests/wrist-mri.mjs
           node tests/female-pelvis-source.mjs
@@ -128,12 +129,13 @@ jobs:
           node tests/browser-labrum-mri169.mjs
           node tests/browser-labrum-clock170.mjs
           node tests/browser-hill-sachs171.mjs
+          node tests/browser-labrum-variants172.mjs
 
       - name: Upload viewer screenshots
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: viewer-review-1.71
+          name: viewer-review-1.72
           path: |
             review/browser-1.42/
             review/browser-1.50/
@@ -154,6 +156,7 @@ jobs:
             review/browser-1.69/
             review/browser-1.70/
             review/browser-1.71/
+            review/browser-1.72/
             review/joints-1.45/
             review/ligaments-1.46/
             review/hip-1.47/
@@ -170,8 +173,8 @@ jobs:
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
-          name: MRIAtlas-1.71-unsigned
-          path: build/MRIAtlas-1.71-unsigned.apk
+          name: MRIAtlas-1.72-unsigned
+          path: build/MRIAtlas-1.72-unsigned.apk
           if-no-files-found: error
           retention-days: 30
 

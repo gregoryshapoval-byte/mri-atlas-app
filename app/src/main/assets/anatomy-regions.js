@@ -101,7 +101,7 @@ export const regions=[
       },
       {
         "title": "Суставная губа · повреждения",
-        "description": "Bankart, Perthes, ALPSA, GLAD и SLAP I–IV · часы 1–12",
+        "description": "Bankart и SLAP · сублабральная борозда · часы 1–12",
         "url": "shoulder-labrum.html",
         "type": "3D-МОДЕЛЬ",
         "thumb": "menu-thumbs/shoulder-labrum.webp"

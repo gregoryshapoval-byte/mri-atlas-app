@@ -1,0 +1,25 @@
+{
+  "version": "1.72",
+  "versionCode": 72,
+  "bytes": 137593541,
+  "sha256": "b9a6dd183f7b91ebea839aac33aac61f1727808934d358f121907bd6c05dd644",
+  "assetCount": 9063,
+  "sourceAssetsByteExact": true,
+  "dataMathTests": 35,
+  "physicalPhoneTested": false,
+  "savedArtifactsRoundtripVerified": true,
+  "browserNewVariant": {
+    "viewports": 4,
+    "offline": true
+  },
+  "browserLabrum170": {
+    "states": 11,
+    "viewports": 3
+  },
+  "preservedLabrumGeometries": 11,
+  "browserLabrum168": {
+    "states": 11,
+    "viewports": 5,
+    "dragAndPinch": true
+  }
+}
