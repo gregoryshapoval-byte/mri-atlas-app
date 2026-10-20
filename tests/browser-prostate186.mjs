@@ -55,8 +55,8 @@ await page.selectOption('#calcZone','TZ');await page.selectOption('#calcT2','2')
 await page.selectOption('#calcT2','3');assert.equal(await page.locator('#calcResult').innerText(),'PI-RADS 4');
 await page.locator('#adequate').uncheck();assert.equal(await page.locator('#calcResult').innerText(),'Оценка ограничена');
 await page.locator('[data-tab="report"]').click();
-await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async t=>{window.copied=t;}}}));await page.locator('.copy').first().click();await page.waitForFunction(()=>document.querySelector('#copyStatus').textContent.startsWith('Скопировано'));assert.match(await page.evaluate(()=>window.copied),/Очаг/);
-await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async()=>{throw Error('Denied');}}}));await page.locator('.copy').nth(1).click();assert.equal(await page.locator('#copyFallback').isVisible(),true);
+await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async t=>{window.copied=t;}}}));await page.locator('#reportCards .copy').first().click();await page.waitForFunction(()=>document.querySelector('#copyStatus').textContent.startsWith('Скопировано'));assert.match(await page.evaluate(()=>window.copied),/Очаг/);
+await page.evaluate(()=>Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async()=>{throw Error('Denied');}}}));await page.locator('#reportCards .copy').nth(1).click();assert.equal(await page.locator('#copyFallback').isVisible(),true);
 await page.locator('[data-tab="lesions"]').focus();await page.keyboard.press('ArrowRight');assert.equal(await page.locator('[data-tab="zones"]').getAttribute('aria-selected'),'true');
 await page.getByRole('link',{name:'‹ Малый таз',exact:true}).click();await page.waitForSelector('#cards');assert.match(await page.locator('#heading').innerText(),/Малый таз/);await page.close();
 }
