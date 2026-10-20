@@ -19,3 +19,17 @@
 Локально PASS: синтаксис JS/Python/YAML; tests/prostate187.mjs (20строк, различия T2 PZ/TZ, DWI AND/OR, нефокальная TZ,≥15мм); неизменные150сочетаний итоговых категорий и41сектор. Browser-test проверяет все четыре таблицы×4экрана, все41региона×4экрана, копирование/zoom/клавиатуру/полный список и старые расчётные элементы; регрессииMS184/O-RADS183. ИтогCI/APK на исходный коммит ещё не утверждается. ФизическийAndroid не проверен. Подпись тем же сохранённым публичным тестовым ключом1.83–1.86, без генерации.
 
 История проверки1.86: первыйCI остановился из-за неоднозначного селектора .copy в тесте, который выбрал скрытую кнопку увеличения вместо копирования отчёта. Селектор ограничен #reportCards; повторный CI39491215834 SUCCESS, APK1.86 подписан. Это не ошибка медицинских правил или карты. Пользователь во время работы расширил требования шкал; актуальный выдаваемый выпуск —1.87.
+
+
+## Verified release 1.87
+
+- Build commit: 039ef847b9c50eec1064246c861a27104c4c00cf.
+- GitHub Actions run 39491927681 succeeded: https://github.com/gregoryshapoval-byte/mri-atlas-app/actions/runs/39491927681
+- APK: https://github.com/gregoryshapoval-byte/mri-atlas-app/releases/download/atlas-1.87-prostate/MRIAtlas-1.87.apk
+- APK size: 138313274 bytes; SHA256: daa084f85d63dc5f38b77e98434c2755e631acfcd014c58028424d89fbc81b23.
+- Signing certificate SHA256: cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe (same test identity as 1.83–1.86).
+- Source audit: all 20 T2/DWI score rows, DCE, size threshold, EPE and limited-sequence rules checked against official ACR PI-RADS v2.1.
+- Passed all 150 calculator combinations, 41 region selections, four sequence tables, four viewport sizes, offline behavior, MS/O-RADS regressions, asset preservation, Android build, packaged asset/version checks and signature verification.
+- Visually reviewed the 393px screenshots of base/mid/apex maps and PZ-T2/TZ-DWI tables, plus rendered sector SVGs against the official map. Physical Android device not tested.
+- Continue from work/orads-simplify-1-83 and its current descendant, not stale main.
+
