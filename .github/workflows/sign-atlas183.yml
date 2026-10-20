@@ -14,43 +14,31 @@ jobs:
   sign:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    # User explicitly requested a test key without secret/password setup.
+    # These are intentionally public test credentials, not a production key.
     env:
-      ATLAS_STORE_PASSWORD: ${{ secrets.ATLAS_KEYSTORE_PASSWORD }}
-      ATLAS_KEY_PASSWORD: ${{ secrets.ATLAS_KEY_PASSWORD || secrets.ATLAS_KEYSTORE_PASSWORD }}
-      ATLAS_KEY_ALIAS: ${{ secrets.ATLAS_KEY_ALIAS || 'atlas' }}
-      ATLAS_KEYSTORE_BASE64: ${{ secrets.ATLAS_KEYSTORE_BASE64 }}
+      ATLAS_STORE_PASSWORD: android
+      ATLAS_KEY_PASSWORD: android
+      ATLAS_KEY_ALIAS: atlas
     steps:
-      - name: Check protected signing configuration
-        shell: bash
-        run: |
-          set -euo pipefail
-          if [ -z "$ATLAS_STORE_PASSWORD" ]; then
-            echo "::error::Missing ATLAS_KEYSTORE_PASSWORD repository secret. Set a strong random password (24+ characters) to create and preserve a new key, then re-run this job. Optionally set ATLAS_KEYSTORE_BASE64 to restore an existing key."
-            exit 1
-          fi
-          if [ -z "$ATLAS_KEYSTORE_BASE64" ] && [ "${#ATLAS_STORE_PASSWORD}" -lt 24 ]; then
-            echo "::error::A new signing key requires a strong random password of at least 24 characters."
-            exit 1
-          fi
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: '17'
-      - name: Locate encrypted backup of the new key
+      - name: Locate reusable public test key
         id: backup
-        if: env.ATLAS_KEYSTORE_BASE64 == ''
         uses: actions/github-script@v7
         with:
           script: |
             const items = await github.paginate(github.rest.actions.listArtifactsForRepo, {
-              ...context.repo, name: 'MRIAtlas-signing-key-20261020', per_page: 100
+              ...context.repo, name: 'MRIAtlas-test-signing-key-20261020', per_page: 100
             });
-            const matching = items.filter(a => a.name === 'MRIAtlas-signing-key-20261020');
+            const matching = items.filter(a => a.name === 'MRIAtlas-test-signing-key-20261020');
             const active = matching.filter(a => !a.expired).sort((a,b) => b.id-a.id)[0];
             if (active) core.setOutput('artifact_id', String(active.id));
-            else if (matching.length || process.env.GITHUB_RUN_NUMBER !== '1')
-              throw new Error('Signing backup unavailable. Restore ATLAS_KEYSTORE_BASE64; refusing to silently replace a previous key.');
-      - name: Restore encrypted key backup
+            else if (matching.length || process.env.GITHUB_RUN_NUMBER !== '2')
+              throw new Error('Test key backup unavailable. Restore it rather than silently replacing the key.');
+      - name: Restore public test key
         if: steps.backup.outputs.artifact_id != ''
         uses: actions/download-artifact@v4
         with:
@@ -58,32 +46,34 @@ jobs:
           merge-multiple: true
           path: signing
           github-token: ${{ github.token }}
-      - name: Restore or create persistent signing key
+      - name: Create or validate reusable test key
         shell: bash
         run: |
           set -euo pipefail
           umask 077
           mkdir -p signing
-          if [ -n "$ATLAS_KEYSTORE_BASE64" ]; then
-            printf '%s' "$ATLAS_KEYSTORE_BASE64" | base64 --decode > signing/atlas.keystore
-          elif [ ! -f signing/atlas.keystore ]; then
+          if [ ! -f signing/atlas.keystore ]; then
             keytool -genkeypair -noprompt -storetype PKCS12 -keystore signing/atlas.keystore \
-              -storepass:env ATLAS_STORE_PASSWORD -keypass:env ATLAS_STORE_PASSWORD \
+              -storepass:env ATLAS_STORE_PASSWORD -keypass:env ATLAS_KEY_PASSWORD \
               -alias "$ATLAS_KEY_ALIAS" -keyalg RSA -keysize 3072 -validity 10000 \
-              -dname "CN=MRI Atlas Release, O=MRI Atlas"
+              -dname "CN=MRI Atlas Public Test Key, O=MRI Atlas"
           fi
           keytool -exportcert -keystore signing/atlas.keystore -storepass:env ATLAS_STORE_PASSWORD \
             -alias "$ATLAS_KEY_ALIAS" -file signing/certificate.der
           sha256sum signing/certificate.der > signing/certificate.sha256
-      - name: Preserve password-encrypted key before signing
-        if: env.ATLAS_KEYSTORE_BASE64 == '' && steps.backup.outputs.artifact_id == ''
+          cat > signing/README.txt <<'INFO'
+          MRI Atlas public test signing key, created at the owner's request.
+          Store type: PKCS12. Alias: atlas. Store and key password: android.
+          This is intentionally not a protected production signing identity.
+          Keep this file to sign subsequent personal builds with the same certificate.
+          It does not match the original MRI Atlas 1.82 release certificate.
+          INFO
+      - name: Preserve reusable test key
+        if: steps.backup.outputs.artifact_id == ''
         uses: actions/upload-artifact@v4
         with:
-          name: MRIAtlas-signing-key-20261020
-          path: |
-            signing/atlas.keystore
-            signing/certificate.der
-            signing/certificate.sha256
+          name: MRIAtlas-test-signing-key-20261020
+          path: signing/
           if-no-files-found: error
           retention-days: 90
       - name: Download exact previously built APK
