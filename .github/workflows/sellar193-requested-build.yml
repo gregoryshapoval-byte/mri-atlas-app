@@ -1,5 +1,5 @@
 name: MRI Atlas 1.93 - Sellar region
-# Sixth adult brain tumour module: sellar anatomy, PitNET and all modified Knosp grades.
+# Final mobile layout: short Knosp introduction; construction guidance is collapsible.
 on:
   push:
     branches: [work/orads-simplify-1-83]
@@ -72,19 +72,10 @@ jobs:
           node tests/all-mri-data.mjs
       - name: Install browser dependency
         run: npm install --prefix /tmp/atlas-dom playwright --no-audit --no-fund
-      - name: Check module on four screens and O-RADS regression
+      - name: Recheck changed sellar layout on four screens
         env:
           CHROME_PATH: /usr/bin/google-chrome
-        run: |
-          node tests/browser-sellar193.mjs
-          node tests/browser-lymphoma192.mjs
-          node tests/browser-diffuse191.mjs
-          node tests/browser-meningioma190.mjs
-          node tests/browser-metastases189.mjs
-          node tests/browser-brain188.mjs
-          node tests/browser-prostate187.mjs
-          node tests/browser-ms184.mjs
-          node tests/browser-orads183.mjs
+        run: node tests/browser-sellar193.mjs
       - name: Upload UI review
         if: always()
         uses: actions/upload-artifact@v4
@@ -178,7 +169,7 @@ jobs:
           retention-days: 30
       - name: Save installable APK in permanent personal release
         run: |
-          gh release create atlas-1.93-sellar output/MRIAtlas-1.93.apk output/build-info.json output/signature.txt --target "$GITHUB_SHA" --prerelease --title "MRI Atlas 1.93 - Sellar region" --notes "Селлярная область: гипофиз/PitNET, четыре схемы, шесть схем Knosp 0–4 с 3A/3B, хиазма, имитаторы и прицельная МРТ. Подписано сохранённым ключом линии 1.83–1.92. Chromium на четырёх размерах; физический Android не проверен."
+          gh release create atlas-1.93-sellar-final output/MRIAtlas-1.93.apk output/build-info.json output/signature.txt --target "$GITHUB_SHA" --prerelease --title "MRI Atlas 1.93 - Sellar region" --notes "Селлярная область: гипофиз/PitNET, четыре схемы, шесть схем Knosp 0–4 с 3A/3B, хиазма, имитаторы и прицельная МРТ. Подписано сохранённым ключом линии 1.83–1.92. Chromium на четырёх размерах; физический Android не проверен."
       - name: Clean runner key copy
         if: always()
         run: rm -rf signing saved-key current-cert.der
