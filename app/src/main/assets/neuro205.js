@@ -19,3 +19,5 @@ for(const [title,body]of data.reports){const card=document.createElement('articl
 
 
 for(const row of data.locations){const tr=document.createElement('tr');row.forEach((t,i)=>{const cell=document.createElement(i===0?'th':'td');if(i===0)cell.scope='row';else cell.dataset.label='Задача';cell.textContent=t;tr.append(cell);});el('locationRows').append(tr);}
+
+if(el('criteria205'))for(const [title,body]of data.criteria||[]){const d=document.createElement('details'),s=document.createElement('summary');s.textContent=title;d.append(s,paragraph(body));el('criteria205').append(d);}
