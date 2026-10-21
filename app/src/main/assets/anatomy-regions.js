@@ -11,6 +11,7 @@ export const regions=[
       {"title":"Кисты и кистозные изменения","description":"Арахноидальная · пинеальная · эпидермоид · состав · отличия","url":"brain-cysts.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/brain-cysts.svg"},
       {"title":"Инсульты","description":"Ишемия · давность · кровь · сосуды · протокол МРТ","url":"stroke.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/stroke.svg"},
       {"title":"Сосудистые мальформации","description":"Кавернома · телеангиэктазия · ВАР / DVA · АВМ · фистулы","url":"vascular-malformations.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/vascular-malformations.svg"},
+      {"title":"Венозный тромбоз, аневризмы и САК","description":"Вены и синусы · артериальные аневризмы · субарахноидальная кровь","url":"venous-aneurysm-sah.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/venous-aneurysm-sah.svg"},
       {"title":"Опухоли головного мозга","description":"Возраст и частота · 13 тем · схемы · протоколы МРТ","url":"brain-tumors.html","type":"КЛИНИЧЕСКИЕ МОДУЛИ","thumb":"menu-thumbs/brain-tumors.svg"},
       {"title":"Демиелинизация","description":"РС · NMOSD · MOGAD · ОДЭМ · тумефактивный очаг","url":"demyelination.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/demyelination.svg"},
       {"title":"Инфекции","description":"Абсцесс · эмпиема · энцефалит · ПМЛ · иммунный статус","url":"brain-infections.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/brain-infections.svg"},
