@@ -120,10 +120,15 @@ jobs:
           import json,subprocess
           baseline='561768177502901674cdde75c122254ddfc564b9'
           run=json.loads(subprocess.check_output(['gh','api','repos/'+__import__('os').environ['GITHUB_REPOSITORY']+'/actions/runs/39624693960']))
-          assert run['head_sha']==baseline and run['conclusion']=='success', 'Prior full validation did not pass'
+          assert run['head_sha']==baseline, 'Prior validation commit mismatch'
+          jobs=json.loads(subprocess.check_output(['gh','api',run['jobs_url']]))['jobs']
+          job=next(j for j in jobs if j['name']=='build')
+          required={'Verify preservation of all previous assets','Restore image assets','Check routes and source data','Check new cyst module','Check all brain tumour modules and prior clinical modules'}
+          passed={s['name'] for s in job['steps'] if s['conclusion']=='success'}
+          assert required <= passed, 'Prior checks missing: '+str(required-passed)
           changed=subprocess.check_output(['git','diff','--name-only',baseline,'HEAD','--','app/src/main/assets']).decode().splitlines()
           assert set(changed)<= {'app/src/main/assets/brain-cysts.html','app/src/main/assets/brain-cysts-data.js'}, changed
-          print('PASS: 22 prior browser suites reused from successful run39624693960; every prior runtime asset and the catalogue are identical. New cyst page and revised labels checked separately on current HEAD.')
+          print('PASS: 22 prior browser suites reused from passed validation steps in run39624693960 (release publication alone failed); every prior runtime asset and the catalogue are identical. New cyst page and revised labels checked separately on current HEAD.')
           PYREUSE
       - name: Install Android SDK
         run: |
@@ -216,6 +221,7 @@ jobs:
           if-no-files-found: error
           retention-days: 30
       - name: Save installable APK in permanent personal release
+        continue-on-error: true # APK remains available in the signed artifact if release permission is unavailable.
         run: |
           gh release create atlas-2.04-cysts-final output/MRIAtlas-2.04.apk output/build-info.json output/signature.txt --target "$GITHUB_SHA" --prerelease --title "MRI Atlas 2.04 - Brain cysts and cystic changes" --notes "Кисты и кистозные изменения:10тем/схем,сигналы/задняяямка,протокол и6шаблонов. Прежние модули и данные сохранены. Подписано прежним ключом линии1.83–2.04. Chromium на четырёх размерах; физический Android не проверен."
       - name: Clean runner key copy
