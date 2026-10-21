@@ -4,7 +4,7 @@ import {data} from '../app/src/main/assets/hemangioblastoma-data.js';
 import {figures} from '../app/src/main/assets/hemangioblastoma-figures.js';
 const html=fs.readFileSync('app/src/main/assets/hemangioblastoma.html','utf8');
 const hub=fs.readFileSync('app/src/main/assets/brain-tumors.html','utf8');
-assert.match(hub,/href="hemangioblastoma.html"/);assert.match(hub,/Модуль 08/);
+assert.match(hub,/href="hemangioblastoma.html"/);assert.match(hub,/<h2>Гемангиобластома<\/h2>/);
 assert.deepEqual(data.features.map(f=>f.id),['cyst','solid','vessels','pressure']);
 assert.deepEqual(Object.keys(figures),data.features.map(f=>f.id));
 assert.match(data.features[0].trap,/обычно не усиливается.*усиление не исключает/);

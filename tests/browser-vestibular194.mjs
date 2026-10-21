@@ -14,7 +14,7 @@ for(const [width,height]of [[320,568],[393,852],[852,393],[1280,800]]){
  page.on('pageerror',e=>errors.push(String(e)));page.on('response',r=>{if(r.status()>=400)errors.push(r.status()+' '+r.url());});page.on('request',r=>{if(!r.url().startsWith(base))external.push(r.url());});
  await page.goto(base+'/region.html?area=brain');await page.getByRole('link',{name:/Опухоли головного мозга/}).click();
  assert.equal(await page.locator('a[href="vestibular.html"]').count(),1);
- assert.equal(await page.locator('a[href]').count(),9);
+ assert.equal(await page.locator('a.moduleLink').count(),9);
  await page.screenshot({path:out+'/'+width+'-hub.png',fullPage:true});
  await page.locator('a[href="vestibular.html"]').click();await page.waitForSelector('#featureFigure svg');
  assert.equal(await page.locator('[role=tab]').count(),5);

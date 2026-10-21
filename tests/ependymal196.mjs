@@ -1,0 +1,28 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {data} from '../app/src/main/assets/ependymal-data.js';
+import {figures} from '../app/src/main/assets/ependymal-figures.js';
+const html=fs.readFileSync('app/src/main/assets/ependymal.html','utf8');
+const hub=fs.readFileSync('app/src/main/assets/brain-tumors.html','utf8');
+const primary=hub.match(/<section id="primary"[\s\S]*?<\/section>/)[0];
+assert.deepEqual([...primary.matchAll(/class="moduleLink card" href="([^"]+)"/g)].map(m=>m[1]),['meningioma.html','sellar.html','glioblastoma.html','vestibular.html','diffuse-gliomas.html','cns-lymphoma.html','ependymal.html','hemangioblastoma.html']);
+assert.match(hub,/<section id="secondary"[\s\S]*href="brain-metastases.html"/);
+assert(!/Модуль \d\d/.test(hub));assert.match(hub,/не входят в статистику первичных опухолей/);assert.match(hub,/частота зависит от возраста/);
+assert.deepEqual(data.features.map(f=>f.id),['fourth','outlets','supratentorial','subependymoma']);assert.deepEqual(Object.keys(figures),data.features.map(f=>f.id));
+assert.match(data.features[1].good,/латеральные.*Люшка.*Мажанди.*большую цистерну/);
+assert.match(data.features[1].trap,/прямого распространения, не доказательство ликворных отсевов/);
+assert.match(data.features[2].good,/связь с желудочком необязательна/);
+assert.match(data.features[3].trap,/нередко усиливается.*частично.*гидроцефалию/);
+assert.match(html,/Это не obex и не центральный канал/);
+assert.match(html,/ZFTA fusion-positive и YAP1 fusion-positive.*PFA \/ PFB/);
+assert.match(html,/отдельный тип CNS WHO grade 1/);
+assert.match(html,/WHO CNS5 она grade 2/);
+assert.match(html,/не ранее 2–3 недель.*МРТ выполнять до люмбальной пункции/);
+assert.match(html,/Это не срок ранней послеоперационной МРТ/);
+assert.match(html,/нельзя автоматически переносить.*субэпендимомы/);
+assert.match(data.differentials[2].trap,/Субэпендимома и SEGA — разные опухоли/);
+assert.match(data.scan[0][1],/Весь мозг.*около 1 мм/);assert.match(data.scan[2][1],/b=0 и 1000.*ADC/);assert.match(data.scan[4][1],/весь позвоночник.*дурального мешка/);
+assert.equal(data.locations.length,4);assert.equal(data.differentials.length,4);assert.equal(data.scan.length,5);assert.equal(data.checklist.length,7);assert.equal(data.reports.length,3);
+assert.match(data.reports[1][1],/молекулярная группа требуют тканевой/);assert.match(data.reports[2][1],/субэпендимоме.*окончательно не устанавливается/);
+for(const svg of Object.values(figures)){assert.match(svg,/viewBox="0 0 420 300"/);assert.match(svg,/role="img" aria-label=/);assert(!/<script|<image|https?:\/\//.test(svg.replace('http://www.w3.org/2000/svg','')));for(const n of [1,2,3])assert.ok(svg.includes('>'+n+'</text>'));}
+console.log('PASS ependymal196: frequency-sorted primary menu/separate metastases, IV outlets vs seeding, parenchymal variant, subependymoma enhancement, WHO limits, staged acquisition and reports.');
