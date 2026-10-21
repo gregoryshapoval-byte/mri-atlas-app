@@ -1,5 +1,5 @@
 name: MRI Atlas 1.90 - Meningioma
-# Third adult brain tumour module: meningioma with bone/sinus/interface diagrams.
+# Third adult brain tumour module; mobile protocol rows use stacked cards.
 on:
   push:
     branches: [work/orads-simplify-1-83]
