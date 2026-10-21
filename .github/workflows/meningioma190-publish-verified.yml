@@ -1,0 +1,44 @@
+name: Publish verified MRI Atlas 1.90 final
+on:
+  push:
+    branches: [work/orads-simplify-1-83]
+    paths: [.github/workflows/meningioma190-publish-verified.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - name: Download already tested and signed APK
+        run: gh run download 39547701496 --name MRIAtlas-1.90-signed --dir output
+      - name: Verify artifact provenance and hash
+        run: |
+          python3 - <<'PY'
+          import json,hashlib
+          from pathlib import Path
+          from zipfile import ZipFile
+          p=Path('output/MRIAtlas-1.90.apk')
+          i=json.loads(Path('output/build-info.json').read_text())
+          assert i['commit']=='0bb9bf25f50d60f03d102ce7525e42e9cdb5a3e0'
+          assert i['version']=='1.90' and i['signed'] and i['payload_verified']
+          assert hashlib.sha256(p.read_bytes()).hexdigest()==i['sha256']
+          assert p.stat().st_size==i['bytes']
+          assert i['certificate_sha256']=='cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe'
+          s=Path('output/signature.txt').read_text().lower()
+          assert 'verified using v2 scheme (apk signature scheme v2): true' in s
+          assert 'verified using v3 scheme (apk signature scheme v3): true' in s
+          with ZipFile(p) as z:
+              assert z.testzip() is None
+              assert 'stacked' not in z.read('assets/meningioma.html').decode()
+              assert 'max-width:520px' in z.read('assets/meningioma.html').decode()
+          print(json.dumps(i,ensure_ascii=False))
+          PY
+      - name: Publish final reviewed mobile layout
+        run: |
+          gh release create atlas-1.90-meningioma-final output/MRIAtlas-1.90.apk output/build-info.json output/signature.txt --target 0bb9bf25f50d60f03d102ce7525e42e9cdb5a3e0 --prerelease --title "MRI Atlas 1.90 - Meningioma final" --notes "Менингиома: четыре схемы, кость, синусы, локализации, имитаторы, протокол МРТ и описание. Итоговая мобильная компоновка протокола и локализаций. APK из проверенной сборки 39547701496; прежний сертификат, v2/v3. Chromium: четыре размера, регрессии GBM, метастазов, PI-RADS, MS и O-RADS пройдены. Физический Android не проверен."
