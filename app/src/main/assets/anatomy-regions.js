@@ -14,6 +14,7 @@ export const regions=[
       {"title":"Опухоли головного мозга","description":"Возраст и частота · 13 тем · схемы · протоколы МРТ","url":"brain-tumors.html","type":"КЛИНИЧЕСКИЕ МОДУЛИ","thumb":"menu-thumbs/brain-tumors.svg"},
       {"title":"Демиелинизация","description":"РС · NMOSD · MOGAD · ОДЭМ · тумефактивный очаг","url":"demyelination.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/demyelination.svg"},
       {"title":"Инфекции","description":"Абсцесс · эмпиема · энцефалит · ПМЛ · иммунный статус","url":"brain-infections.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/brain-infections.svg"},
+      {"title":"Эпилептогенные изменения","description":"Гиппокамп · ФКД · мальформации · HARNESS-MRI","url":"epilepsy.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/epilepsy.svg"},
       {
         "title": "Артерии · 3D",
         "description": "Вращаемая модель · цветные сегменты ВСА C1–C7",
