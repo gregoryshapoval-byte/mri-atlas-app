@@ -1,5 +1,5 @@
 name: MRI Atlas 2.01 - Small vessel disease
-# Small-vessel MRI markers with compact 320px controls; all existing modules and imaging data preserved.
+# Small-vessel MRI markers with compact 320px controls and explicit Fazekas component labels; all existing modules and imaging data preserved.
 on:
   push:
     branches: [work/orads-simplify-1-83]
@@ -207,7 +207,7 @@ jobs:
           retention-days: 30
       - name: Save installable APK in permanent personal release
         run: |
-          gh release create atlas-2.01-svd output/MRIAtlas-2.01.apk output/build-info.json output/signature.txt --target "$GITHUB_SHA" --prerelease --title "MRI Atlas 2.01 - Small vessel disease" --notes "Болезнь мелких сосудов: две шкалы Fazekas0–3 с восемью схемами, лакуны и ПВП с исключениями STRIVE-2, микрокровоизлияния, cSS и ЦАА / Boston2.0. Протокол МРТ и шаблоны описания. Подписано прежним ключом линии1.83–2.01. Chromium на четырёх размерах; физический Android не проверен."
+          gh release create atlas-2.01-svd-final output/MRIAtlas-2.01.apk output/build-info.json output/signature.txt --target "$GITHUB_SHA" --prerelease --title "MRI Atlas 2.01 - Small vessel disease" --notes "Болезнь мелких сосудов: две шкалы Fazekas0–3 с восемью схемами, лакуны и ПВП с исключениями STRIVE-2, микрокровоизлияния, cSS и ЦАА / Boston2.0. Протокол МРТ и шаблоны описания. Подписано прежним ключом линии1.83–2.01. Chromium на четырёх размерах; физический Android не проверен."
       - name: Clean runner key copy
         if: always()
         run: rm -rf signing saved-key current-cert.der

@@ -72,6 +72,12 @@ scales='''<p class="note">Болезнь мелких сосудов — сов�
 <p><strong>Специальные маркеры:</strong> выраженные ПВП полуовального центра: &gt;20 в одном полушарии на аксиальном срезе максимальной выраженности; либо multispot WMH: &gt;10 мелких округлых / овальных T2/FLAIR-очагов двусторонне в подкорковом белом веществе. Любой высокий Fazekas не заменяет эти маркеры.</p>
 <p>Мозжечковая кровь не считается ни лобарной, ни глубокой для Boston 2.0. cSS / САК в одном месте не считать дважды; оценивать отдельные фокусы, а не каждую затронутую борозду. Исключать травму, геморрагическую трансформацию инфаркта, АВМ, геморрагическую опухоль, васкулит и другие причины cSS / САК.</p>
 <p>Достоверная ЦАА и вероятная ЦАА с патологическим подтверждением требуют ткани и здесь по МРТ не присваиваются. МР-категории не равны гистологическому диагнозу; смешанная кровь не исключает сосуществующую ЦАА. Для бессимптомных находок и пациентов &lt;50 лет эти категории автоматически не применять.</p></details>'''
+# Keep both component names visible when mobile CSS hides table headers.
+scales=scales.replace('<table><thead><tr><th>Балл</th>', '<table class="fazekasTable"><thead><tr><th>Балл</th>')
+def component_labels(m):
+ row=m.group(0);cells=iter(['PVH','DWMH'])
+ return re.sub(r'<td>',lambda _: '<td data-label="'+next(cells)+'">',row)
+scales=re.sub(r'<tr><th scope="row">[0-3]</th>.*?</tr>',component_labels,scales)
 h=h[:start]+scales+h[end:]
 h=h.replace('Новая кровь, гидроцефалия, венозный инфаркт или подозрение на шунт с корковым рефлюксом требуют оперативного сообщения профильной команде.','Свежая ишемия, новая кровь, острая конвекситальная САК или асимметричный отёк с подострыми симптомами требуют своевременного сообщения клинической команде.')
 h=h.replace('Базовая МРТ всего мозга + серии под конкретный тип. Параметры ниже — практические цели, адаптируемые к аппарату и SNR. Контраст и ангиография нужны по задаче.','Покрытие всего мозга. Целевые параметры STRIVE-2 ниже; это ориентиры качества, а не готовые настройки конкретного аппарата. Компромиссы 1,5Т обозначены отдельно.')
@@ -87,7 +93,7 @@ h=h[:start]+'''<details id="sources"><summary>Источники и границ
 <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9389452/">Charidimou et al. · Boston2.0,2022</a> — клинико-МР-категории ЦАА.</li>
 <li><a href="https://doi.org/10.1177/17474930251365861">International CAA Association / WSO,2025</a> — диагностика ЦАА и ограничения применения критериев.</li>
 </ul><p class="hint">Авторские условные схемы, не МР-срезы. FLAIR и susceptibility показаны раздельно; варианты паттернов не являются сегментацией конкретного пациента. Сторона пациента не присвоена. Восемь схем Fazekas показывают две шкалы независимо, не суммарный балл.</p></details>'''+h[end:]
-h=h.replace('vascular-malformations.js','small-vessel.js').replace('</style>','#gradeChoices{grid-template-columns:repeat(4,minmax(0,1fr))} #gradeChoices button{text-align:center}</style>')
+h=h.replace('vascular-malformations.js','small-vessel.js').replace('</style>','.fazekasTable td[data-label]::before{content:attr(data-label) \": \";font-weight:700;color:#54e1c1} #gradeChoices{grid-template-columns:repeat(4,minmax(0,1fr))} #gradeChoices button{text-align:center}</style>')
 (A/'small-vessel.html').write_text(h)
 j=(A/'vascular-malformations.js').read_text().replace('vascular-malformations','small-vessel').replace("let current='cavernoma';","let current='dwmh',grade=2;\nconst grades={dwmh:['0 · Нет глубоких WMH.','1 · Точечные раздельные очаги.','2 · Начинающееся слияние очагов.','3 · Крупные сливные участки.'],pvh:['0 · Нет перивентрикулярных изменений.','1 · Шапочки или тонкая линейная кайма.','2 · Гладкий непрерывный ореол.','3 · Неровное распространение в глубокое белое вещество.']};\nconst figureKey=()=>grades[current]?current+grade:current;")
 j=j.replace('el(\'featureFigure\').innerHTML=figures[id];',"el('featureFigure').innerHTML=figures[figureKey()];el('gradeChoices').hidden=!grades[id];el('gradeDescription').hidden=!grades[id];el('gradeDescription').textContent=grades[id]?.[grade]||'';for(const b of document.querySelectorAll('[data-grade]'))b.setAttribute('aria-pressed',String(+b.dataset.grade===grade));")

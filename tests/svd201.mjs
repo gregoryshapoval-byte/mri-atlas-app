@@ -10,6 +10,7 @@ assert.equal(data.features.length,7);assert.equal(Object.keys(figures).length,13
 for(const prefix of ['pvh','dwmh'])for(let i=0;i<4;i++)assert(figures[prefix+i]);
 for(const f of data.features){assert.equal(f.legend.length,3);assert(h.includes('data-feature="'+f.id+'"'));if(!['pvh','dwmh'].includes(f.id))assert(figures[f.id]);}
 for(const s of Object.values(figures)){assert.match(s,/viewBox="0 0 420 300"/);assert.match(s,/role="img" aria-label=/);assert(!/<script|<image/.test(s));}
+assert.equal((h.match(/data-label=\"PVH\"/g)||[]).length,4);assert.equal((h.match(/data-label=\"DWMH\"/g)||[]).length,4);
 const faz=h.split('id="fazekas"')[1].split('</details>')[0];assert.equal((faz.match(/<tr>/g)||[]).length,5);
 for(const t of ['Нет изменений','Шапочки','шапочки','Гладкий','Начинающееся','Неровные','Крупные'])if(!['Шапочки'].includes(t))assert.match(faz,new RegExp(t,'i'));
 assert.match(data.features[2].good,/STRIVE-2 допускает лакуны менее 3 мм/);assert.match(data.features[2].trap,/Размер и ободок по отдельности не отличают/);
