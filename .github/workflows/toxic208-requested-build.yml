@@ -1,0 +1,248 @@
+name: MRI Atlas 2.08 - Toxic and hypoxic injury
+on:
+  push:
+    branches: [work/orads-simplify-1-83]
+    paths: [.github/workflows/toxic208-requested-build.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: atlas-release-signing
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      ATLAS_STORE_PASSWORD: android
+      ATLAS_KEY_PASSWORD: android
+      ATLAS_KEY_ALIAS: atlas
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify preservation of all previous assets
+        run: |
+          python3 - <<'PY'
+          import subprocess
+          base='0b0b21fe8e3612b10fc5128787243415d46b1bcc'
+          def tree(ref):
+              raw=subprocess.check_output(['git','ls-tree','-r','-z',ref,'app/src/main/assets'])
+              result={}
+              for entry in raw.split(b'\0'):
+                  if not entry: continue
+                  meta,p=entry.split(b'\t',1)
+                  result[p.decode()]=meta.split()[2]
+              return result
+          a,b=tree(base),tree('HEAD')
+          for p,h in a.items():
+              if p in {'app/src/main/assets/anatomy-regions.js'}: continue
+              assert b.get(p)==h, 'Prior asset changed or deleted: '+p
+          print('PASS unchanged previous assets:',len(a)-1)
+          PY
+      - name: Restore image assets
+        run: |
+          python3 tools/materialize_assets142.py
+          python3 tools/materialize_assets150.py
+          python3 tools/materialize_assets152.py
+          python3 tools/materialize_assets165.py
+      - name: Check routes and source data
+        run: |
+          node --check app/src/main/assets/brain-tumors-age.js
+          node --check app/src/main/assets/pilocytic.js
+          node --check app/src/main/assets/craniopharyngioma.js
+          node --check app/src/main/assets/ependymal.js
+          node --check app/src/main/assets/hemangioblastoma.js
+          node --check app/src/main/assets/vestibular.js
+          node --check app/src/main/assets/glioneuronal.js
+          node --check app/src/main/assets/neurocytoma.js
+          node --check app/src/main/assets/stroke.js
+          node --check app/src/main/assets/vascular-malformations.js
+          node --check app/src/main/assets/small-vessel.js
+          node --check app/src/main/assets/small-vessel-figures.js
+          node --check app/src/main/assets/atrophy.js
+          node --check app/src/main/assets/atrophy-figures.js
+          node --check app/src/main/assets/brain-cysts.js
+          node --check app/src/main/assets/brain-cysts-data.js
+          node --check app/src/main/assets/brain-cysts-figures.js
+          node --check app/src/main/assets/csf-disorders.js
+          node --check app/src/main/assets/csf-disorders-figures.js
+          node --check app/src/main/assets/epilepsy.js
+          node --check app/src/main/assets/epilepsy-data.js
+          node --check app/src/main/assets/epilepsy-figures.js
+          node --check app/src/main/assets/brain-trauma.js
+          node --check app/src/main/assets/brain-trauma-data.js
+          node --check app/src/main/assets/brain-trauma-figures.js
+          node --check app/src/main/assets/toxic-hypoxic.js
+          node --check app/src/main/assets/toxic-hypoxic-data.js
+          node --check app/src/main/assets/toxic-hypoxic-figures.js
+          node tests/toxic208.mjs
+          node tests/trauma207.mjs
+          node tests/epilepsy206.mjs
+          node tests/neuro205.mjs
+          node tests/cysts204.mjs
+          node tests/csf203.mjs
+          node tests/atrophy202.mjs
+          node tests/vascular200.mjs
+          node tests/svd201.mjs
+          node tests/stroke199.mjs
+          node tests/neuronal198.mjs
+          node tests/age197.mjs
+          node tests/ependymal196.mjs
+          node tests/hemangioblastoma195.mjs
+          node tests/vestibular194.mjs
+          node tests/sellar193.mjs
+          node tests/lymphoma192.mjs
+          node tests/diffuse191.mjs
+          node tests/meningioma190.mjs
+          node tests/metastases189.mjs
+          node tests/brain188.mjs
+          node tests/prostate187.mjs
+          node tests/catalog142.mjs
+          node tests/home163.mjs
+          node tests/all-mri-data.mjs
+      - name: Install browser dependency
+        run: npm install --prefix /tmp/atlas-dom playwright --no-audit --no-fund
+      - name: Check toxic/hypoxic module and prior trauma module
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
+        run: |
+          node tests/browser-toxic208.mjs
+          node tests/browser-trauma207.mjs
+      - name: Upload UI review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: toxic208-ui-review
+          path: |
+            review/browser-trauma207/
+            review/browser-toxic208/
+          if-no-files-found: ignore
+          retention-days: 7
+      - name: Verify prior module validation for unchanged runtime files
+        run: |
+          python3 - <<'PYREUSE'
+          import json,subprocess,os
+          baseline='0b0b21fe8e3612b10fc5128787243415d46b1bcc'
+          run=json.loads(subprocess.check_output(['gh','api','repos/'+os.environ['GITHUB_REPOSITORY']+'/actions/runs/39643208090']))
+          assert run['head_sha']==baseline and run['conclusion']=='success'
+          changed=subprocess.check_output(['git','diff','--name-only','--diff-filter=MD',baseline,'HEAD','--','app/src/main/assets']).decode().splitlines()
+          assert set(changed)<= {'app/src/main/assets/anatomy-regions.js'},changed
+          print('PASS prior unchanged modules reuse successful run39643208090 and its verified validation chain. Current browsers exercise toxic/hypoxic, trauma and catalogue. Other unchanged modules retain the prior validated chain.')
+          PYREUSE
+      - name: Install Android SDK
+        run: |
+          yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null || true
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'platforms;android-35' 'build-tools;35.0.0'
+      - name: Build APK
+        run: |
+          chmod +x build-apk.sh
+          ANDROID_SDK_ROOT="$ANDROID_HOME" UNSIGNED_ONLY=1 ./build-apk.sh
+      - name: Restore the same saved test signing key
+        run: |
+          set -euo pipefail
+          mkdir -p saved-key signing
+          gh release download atlas-1.83-personal-backup --pattern MRIAtlas-test-signing-key.zip --dir saved-key
+          python3 - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+          import hashlib
+          p=Path('saved-key/MRIAtlas-test-signing-key.zip')
+          assert hashlib.sha256(p.read_bytes()).hexdigest()=='21e95c8f3b3b57579f8ad930e5dd011a7800efccc00750b003d70a5a9d9c87c6'
+          with ZipFile(p) as z:
+              assert z.testzip() is None
+              Path('signing/atlas.keystore').write_bytes(z.read('atlas.keystore'))
+              Path('signing/certificate.der').write_bytes(z.read('certificate.der'))
+          PY
+          keytool -exportcert -keystore signing/atlas.keystore -storepass:env ATLAS_STORE_PASSWORD -alias atlas -file current-cert.der
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib
+          assert hashlib.sha256(Path('current-cert.der').read_bytes()).hexdigest()=='cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe'
+          assert Path('current-cert.der').read_bytes()==Path('signing/certificate.der').read_bytes()
+          PY
+      - name: Sign and verify payload and version
+        run: |
+          set -euo pipefail
+          mkdir -p output
+          bt="$ANDROID_HOME/build-tools/35.0.0"
+          "$bt/zipalign" -c 4 build/MRIAtlas-2.08-unsigned.apk
+          "$bt/apksigner" sign --ks signing/atlas.keystore --ks-pass env:ATLAS_STORE_PASSWORD --key-pass env:ATLAS_KEY_PASSWORD --ks-key-alias atlas --v2-signing-enabled true --v3-signing-enabled true --v4-signing-enabled false --out output/MRIAtlas-2.08.apk build/MRIAtlas-2.08-unsigned.apk
+          "$bt/apksigner" verify --verbose --print-certs output/MRIAtlas-2.08.apk | tee output/signature.txt
+          "$bt/aapt2" dump badging output/MRIAtlas-2.08.apk > output/package-info.txt
+          python3 - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+          import hashlib,json
+          p=Path('output/MRIAtlas-2.08.apk')
+          with ZipFile('build/MRIAtlas-2.08-unsigned.apk') as a, ZipFile(p) as b:
+              assert b.testzip() is None
+              original=set(a.namelist())
+              assert original.issubset(set(b.namelist()))
+              for n in original: assert a.read(n)==b.read(n),'Payload changed: '+n
+              assert all(n.startswith('META-INF/') for n in set(b.namelist())-original)
+              for f in Path('app/src/main/assets').rglob('*'):
+                  if f.is_file(): assert b.read('assets/'+f.relative_to('app/src/main/assets').as_posix())==f.read_bytes()
+              assert 'brain-tumors' in b.read('assets/anatomy-regions.js').decode()
+              assert 'brain-metastases.html' in b.read('assets/brain-tumors.html').decode()
+              assert 'ependymal.html' in b.read('assets/brain-tumors.html').decode()
+              assert 'Пилоцитарная астроцитома' in b.read('assets/pilocytic.html').decode()
+              assert 'Краниофарингиома' in b.read('assets/craniopharyngioma.html').decode()
+              assert 'Ганглиоглиома / ДНЭО' in b.read('assets/glioneuronal.html').decode()
+              assert 'Центральная нейроцитома' in b.read('assets/neurocytoma.html').decode()
+              assert 'Инсульты' in b.read('assets/stroke.html').decode()
+              assert 'Кисты и кистозные изменения' in b.read('assets/brain-cysts.html').decode()
+              assert 'Инфекции головного мозга' in b.read('assets/brain-infections.html').decode()
+              assert 'Токсические и гипоксические поражения' in b.read('assets/toxic-hypoxic.html').decode()
+              assert 'toxic-hypoxic.html' in b.read('assets/anatomy-regions.js').decode()
+              assert 'Черепно-мозговая травма' in b.read('assets/brain-trauma.html').decode()
+              assert 'brain-trauma.html' in b.read('assets/anatomy-regions.js').decode()
+              assert 'Эпилептогенные изменения' in b.read('assets/epilepsy.html').decode()
+              assert 'epilepsy.html' in b.read('assets/anatomy-regions.js').decode()
+              assert 'Демиелинизация' in b.read('assets/demyelination.html').decode()
+              assert 'mcdonald205' in b.read('assets/multiple-sclerosis.html').decode()
+              assert 'brain-cysts.html' in b.read('assets/anatomy-regions.js').decode()
+              assert 'Гидроцефалия и ликворные нарушения' in b.read('assets/csf-disorders.html').decode()
+              assert 'csf-disorders.html' in b.read('assets/anatomy-regions.js').decode()
+              assert 'Атрофия и когнитивные нарушения' in b.read('assets/atrophy.html').decode()
+              assert 'atrophy.html' in b.read('assets/anatomy-regions.js').decode()
+              assert 'Болезнь мелких сосудов' in b.read('assets/small-vessel.html').decode()
+              assert 'small-vessel.html' in b.read('assets/anatomy-regions.js').decode()
+              assert 'Сосудистые мальформации' in b.read('assets/vascular-malformations.html').decode()
+              assert 'vascular-malformations.html' in b.read('assets/anatomy-regions.js').decode()
+              assert 'stroke.html' in b.read('assets/anatomy-regions.js').decode()
+              assert 'data-age' in b.read('assets/brain-tumors.html').decode()
+          package=Path('output/package-info.txt').read_text().splitlines()[0]
+          assert "name='ru.grigory.shoulderatlas.restored'" in package
+          assert "versionCode='108'" in package and "versionName='2.08'" in package
+          signature=Path('output/signature.txt').read_text().lower()
+          assert 'cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe' in signature
+          assert 'verified using v2 scheme (apk signature scheme v2): true' in signature
+          assert 'verified using v3 scheme (apk signature scheme v3): true' in signature
+          info={'version':'2.08','signed':True,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'bytes':p.stat().st_size,'certificate_sha256':'cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe','payload_verified':True,'base_commit':'0b0b21fe8e3612b10fc5128787243415d46b1bcc','commit':__import__('os').environ['GITHUB_SHA']}
+          Path('output/build-info.json').write_text(json.dumps(info,indent=2))
+          PY
+      - name: Save signed APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: MRIAtlas-2.08-signed
+          path: output/
+          if-no-files-found: error
+          retention-days: 30
+      - name: Save installable APK in permanent personal release
+        continue-on-error: true # APK remains available in the signed artifact if release permission is unavailable.
+        run: |
+          gh release create atlas-2.08-toxic-hypoxic output/MRIAtlas-2.08.apk output/build-info.json output/signature.txt --target "$GITHUB_SHA" --prerelease --title "MRI Atlas 2.08 - Toxic and hypoxic injury" --notes "Токсические и гипоксические поражения: 14 тем и схем, метаболические имитаторы, AHA2025/NCS с ограничениями, протокол и6шаблонов. Прежние модули и данные сохранены. Подписано прежним ключом линии1.83–2.08. Chromium на четырёх размерах; физический Android не проверен."
+      - name: Clean runner key copy
+        if: always()
+        run: rm -rf signing saved-key current-cert.der
