@@ -6,6 +6,7 @@ export const regions=[
     "image": "menu-art/brain.webp",
     "items": [
       {"title":"Инсульты","description":"Ишемия · давность · кровь · сосуды · протокол МРТ","url":"stroke.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/stroke.svg"},
+      {"title":"Сосудистые мальформации","description":"Кавернома · телеангиэктазия · ВАР / DVA · АВМ · фистулы","url":"vascular-malformations.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/vascular-malformations.svg"},
       {"title":"Опухоли головного мозга","description":"Возраст и частота · 13 тем · схемы · протоколы МРТ","url":"brain-tumors.html","type":"КЛИНИЧЕСКИЕ МОДУЛИ","thumb":"menu-thumbs/brain-tumors.svg"},
       {"title":"Рассеянный склероз","description":"МР-признаки · критерии · сканирование · заключение","url":"multiple-sclerosis.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/multiple-sclerosis.svg"},
       {
