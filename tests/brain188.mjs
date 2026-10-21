@@ -6,7 +6,7 @@ import {figures} from '../app/src/main/assets/glioblastoma-figures.js';
 const brain=regions.find(r=>r.id==='brain');
 assert.equal(brain.items.filter(i=>i.url==='brain-tumors.html').length,1);
 const hub=fs.readFileSync('app/src/main/assets/brain-tumors.html','utf8'),html=fs.readFileSync('app/src/main/assets/glioblastoma.html','utf8');
-assert.match(hub,/href="glioblastoma.html"/);assert.match(hub,/запланирован/);
+assert.match(hub,/href="glioblastoma.html"/);assert.match(hub,/Модули серии доступны/);
 assert.deepEqual(data.features.map(f=>f.id),['layers','spread','diffusion','perfusion']);
 for(const f of data.features){assert.equal(f.legend.length,3);assert.ok(figures[f.id]?.includes('viewBox="0 0 420 300"'));assert.ok(f.trap.length>35);}
 assert.match(data.features[0].trap,/отёк и инфильтрацию нельзя/);

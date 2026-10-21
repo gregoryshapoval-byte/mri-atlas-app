@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import {data} from '../app/src/main/assets/sellar-data.js';
 import {figures,knospFigures} from '../app/src/main/assets/sellar-figures.js';
 const html=fs.readFileSync('app/src/main/assets/sellar.html','utf8'),hub=fs.readFileSync('app/src/main/assets/brain-tumors.html','utf8');
-assert.match(hub,/href="sellar.html"/);assert.match(hub,/Этот модуль запланирован/);
+assert.match(hub,/href="sellar.html"/);assert.match(hub,/Модули серии доступны/);
 assert.deepEqual(data.features.map(f=>f.id),['anatomy','micro','macro','apoplexy']);
 assert.deepEqual(new Set(Object.keys(figures)),new Set(data.features.map(f=>f.id)));
 assert.deepEqual(data.knosp.map(k=>k.id),['0','1','2','3A','3B','4']);assert.deepEqual(new Set(Object.keys(knospFigures)),new Set(data.knosp.map(k=>k.id)));
