@@ -15,6 +15,7 @@ export const regions=[
       {"title":"Демиелинизация","description":"РС · NMOSD · MOGAD · ОДЭМ · тумефактивный очаг","url":"demyelination.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/demyelination.svg"},
       {"title":"Инфекции","description":"Абсцесс · эмпиема · энцефалит · ПМЛ · иммунный статус","url":"brain-infections.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/brain-infections.svg"},
       {"title":"Эпилептогенные изменения","description":"Гиппокамп · ФКД · мальформации · HARNESS-MRI","url":"epilepsy.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/epilepsy.svg"},
+      {"title":"Черепно-мозговая травма","description":"Ушибы · аксональное повреждение · кровь · вторичные осложнения","url":"brain-trauma.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/brain-trauma.svg"},
       {
         "title": "Артерии · 3D",
         "description": "Вращаемая модель · цветные сегменты ВСА C1–C7",
