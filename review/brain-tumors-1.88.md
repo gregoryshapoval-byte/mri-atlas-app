@@ -25,3 +25,17 @@ Four panels: features, differentials, scanning, report. Keyboard tabs, enlarge/E
 PASS local syntax, brain188 content/route checks, prior prostate187 including 150 scoring combinations, YAML and embedded Python. Four SVGs visually inspected. Local Chromium unavailable; CI browser checks requested on 320x568,393x852,852x393,1280x800. CI also runs prostate187, MS184 and O-RADS183 regressions, route/data integrity and all previous asset hashes except the intended catalogue edit.
 
 Signed APK pending. Workflow brain188-requested-build.yml builds 1.88, verifies packaged contents/version, restores exact saved test signing key from authorised 1.83 backup, verifies same certificate, signs v2/v3 and publishes atlas-1.88-brain. No new key. Physical Android device and independent physician validation not performed. No claim of completion of the broader atlas audit or the remaining tumour modules.
+
+
+## Выпуск 1.88 подтверждён
+
+- Код APK: d1f36156ec10488f8bb7cae79bf466ad145b65dd.
+- Actions: https://github.com/gregoryshapoval-byte/mri-atlas-app/actions/runs/39542963246 — SUCCESS.
+- APK: https://github.com/gregoryshapoval-byte/mri-atlas-app/releases/download/atlas-1.88-brain/MRIAtlas-1.88.apk
+- Размер: 138326069 байт; SHA256: 64afed5b92880be55447eadabdda7b24bcdde16b9296e6b5715c878bcaba8697.
+- Подпись v2/v3; прежний сертификат линии 1.83–1.87: cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe.
+- PASS: brain188, prostate187 (20 строк/150 сочетаний/41 регион), catalog142/home163/all-mri-data, сохранность 4015 прежних asset blobs кроме намеренного дополнения каталога, browser brain188/prostate187/MS184/O-RADS183, версия/целостность/упакованные assets/подпись APK.
+- Новый модуль проверен на 320×568, 393×852, 852×393, 1280×800: четыре схемы, четыре панели, навигация, увеличение, клавиатура, копирование/fallback, чек-лист, отсутствие overflow и внешних запросов.
+- Скриншоты 393px: визуально просмотрены оглавление серии, строение, отличия, сканирование, описание. Четыре схемы отдельно отрендерены и просмотрены. На физическом Android не проверено; независимая врачебная верификация не заявляется.
+- Следующий запланированный модуль серии — метастазы. Сейчас реализована только глиобластома. Продолжать от текущего потомка work/orads-simplify-1-83, не старого main.
+
