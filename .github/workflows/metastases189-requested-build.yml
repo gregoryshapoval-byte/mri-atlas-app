@@ -1,5 +1,5 @@
 name: MRI Atlas 1.89 - Brain metastases
-# User requested next module in the adult brain tumour series: metastases.
+# Keep field-selector pressed state on buttons, separate from table metadata.
 on:
   push:
     branches: [work/orads-simplify-1-83]
