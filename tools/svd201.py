@@ -52,7 +52,7 @@ data=dict(features=[
 # Reuse the established accessible module UI; only this new page is changed.
 h=(A/'vascular-malformations.html').read_text()
 h=h.replace('Сосудистые мальформации','Болезнь мелких сосудов').replace('Мальформации и венозные аномалии','Хронические сосудистые изменения').replace('MRI Atlas · 2.00','MRI Atlas · 2.01').replace('Кавернома · телеангиэктазия · ВАР / DVA · АВМ · фистула','Fazekas · лакуны · ПВП · микрокровоизлияния · ЦАА')
-choices=''.join('<button data-feature="'+x['id']+'" aria-pressed="'+str(i==0).lower()+'">'+t+'</button>' for i,(x,t) in enumerate(zip(data['features'],['Глубокие WMH','Перивентрикулярные','Лакуны','ПВП','Микрокровоизлияния','Сидероз','ЦАА'])))
+choices=''.join('<button data-feature="'+x['id']+'" aria-pressed="'+str(i==0).lower()+'">'+t+'</button>' for i,(x,t) in enumerate(zip(data['features'],['DWMH · 0–3','PVH · 0–3','Лакуны','ПВП','Микрокровь','Сидероз','ЦАА'])))
 h=re.sub(r'<div class="featureChoices".*?</div>','<div class="featureChoices" aria-label="Признаки">'+choices+'</div><div id="gradeChoices" class="featureChoices" aria-label="Степень Fazekas">'+''.join('<button data-grade="'+str(n)+'" aria-pressed="'+str(n==2).lower()+'">'+str(n)+'</button>' for n in range(4))+'</div><p id="gradeDescription" class="note" aria-live="polite"></p>',h,count=1)
 start=h.index('<p class="note">ВАР')
 end=h.index('</section><section id="location"',start)
@@ -87,7 +87,7 @@ h=h[:start]+'''<details id="sources"><summary>Источники и границ
 <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9389452/">Charidimou et al. · Boston2.0,2022</a> — клинико-МР-категории ЦАА.</li>
 <li><a href="https://doi.org/10.1177/17474930251365861">International CAA Association / WSO,2025</a> — диагностика ЦАА и ограничения применения критериев.</li>
 </ul><p class="hint">Авторские условные схемы, не МР-срезы. FLAIR и susceptibility показаны раздельно; варианты паттернов не являются сегментацией конкретного пациента. Сторона пациента не присвоена. Восемь схем Fazekas показывают две шкалы независимо, не суммарный балл.</p></details>'''+h[end:]
-h=h.replace('vascular-malformations.js','small-vessel.js')
+h=h.replace('vascular-malformations.js','small-vessel.js').replace('</style>','#gradeChoices{grid-template-columns:repeat(4,minmax(0,1fr))} #gradeChoices button{text-align:center}</style>')
 (A/'small-vessel.html').write_text(h)
 j=(A/'vascular-malformations.js').read_text().replace('vascular-malformations','small-vessel').replace("let current='cavernoma';","let current='dwmh',grade=2;\nconst grades={dwmh:['0 · Нет глубоких WMH.','1 · Точечные раздельные очаги.','2 · Начинающееся слияние очагов.','3 · Крупные сливные участки.'],pvh:['0 · Нет перивентрикулярных изменений.','1 · Шапочки или тонкая линейная кайма.','2 · Гладкий непрерывный ореол.','3 · Неровное распространение в глубокое белое вещество.']};\nconst figureKey=()=>grades[current]?current+grade:current;")
 j=j.replace('el(\'featureFigure\').innerHTML=figures[id];',"el('featureFigure').innerHTML=figures[figureKey()];el('gradeChoices').hidden=!grades[id];el('gradeDescription').hidden=!grades[id];el('gradeDescription').textContent=grades[id]?.[grade]||'';for(const b of document.querySelectorAll('[data-grade]'))b.setAttribute('aria-pressed',String(+b.dataset.grade===grade));")

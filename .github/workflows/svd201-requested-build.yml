@@ -1,5 +1,5 @@
 name: MRI Atlas 2.01 - Small vessel disease
-# Small-vessel MRI markers; all existing modules and imaging data preserved.
+# Small-vessel MRI markers with compact 320px controls; all existing modules and imaging data preserved.
 on:
   push:
     branches: [work/orads-simplify-1-83]

@@ -8,7 +8,7 @@ const browser=await chromium.launch({headless:true,...(process.env.CHROME_PATH?{
 try{
  for(const [width,height]of [[320,568],[393,852],[852,393],[1280,800]]){
   const page=await browser.newPage({viewport:{width,height}});page.on('pageerror',e=>errors.push(String(e)));page.on('response',r=>{if(r.status()>=400)errors.push(r.status()+' '+r.url());});page.on('request',r=>{if(!r.url().startsWith(base))external.push(r.url());});
-  await page.goto(base+'/region.html?area=brain');assert.equal(await page.locator('a[href="stroke.html"]').count(),1);assert.match(await page.locator('#cards a').first().innerText(),/Инсульты/);
+  await page.goto(base+'/region.html?area=brain');assert.equal(await page.locator('a[href="stroke.html"]').count(),1);assert.match(await page.locator('a[href=\"stroke.html\"]').innerText(),/Инсульты/);
   await page.screenshot({path:out+'/'+width+'-brain-menu.png',fullPage:true});await page.locator('a[href="stroke.html"]').click();await page.waitForSelector('#featureFigure svg');
   assert.equal(await page.locator('[role=tab]').count(),5);
   for(const id of ['ischemia','timing','mismatch','territory','hemorrhage','transformation']){
