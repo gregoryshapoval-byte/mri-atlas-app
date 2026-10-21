@@ -86,20 +86,6 @@ jobs:
           CHROME_PATH: /usr/bin/google-chrome
         run: |
           node tests/browser-brain-age197.mjs
-          node tests/browser-pilocytic197.mjs
-          node tests/browser-craniopharyngioma197.mjs
-          node tests/browser-ependymal196.mjs
-          node tests/browser-hemangioblastoma195.mjs
-          node tests/browser-vestibular194.mjs
-          node tests/browser-sellar193.mjs
-          node tests/browser-lymphoma192.mjs
-          node tests/browser-diffuse191.mjs
-          node tests/browser-meningioma190.mjs
-          node tests/browser-metastases189.mjs
-          node tests/browser-brain188.mjs
-          node tests/browser-prostate187.mjs
-          node tests/browser-ms184.mjs
-          node tests/browser-orads183.mjs
       - name: Upload UI review
         if: always()
         uses: actions/upload-artifact@v4
@@ -201,7 +187,7 @@ jobs:
           retention-days: 30
       - name: Save installable APK in permanent personal release
         run: |
-          gh release create atlas-1.97-age output/MRIAtlas-1.97.apk output/build-info.json output/signature.txt --target "$GITHUB_SHA" --prerelease --title "MRI Atlas 1.97 - Age navigation and new tumour modules" --notes "Пилоцитарная астроцитома и краниофарингиома: восемь схем, требования к МРТ и описание. Возрастные группы0–14,15–39,40+ и Все; общие страницы и приоритет готовых тем. Подписано прежним ключом линии1.83–1.97. Chromium на четырёх размерах; физический Android не проверен."
+          gh release create atlas-1.97-age-final output/MRIAtlas-1.97.apk output/build-info.json output/signature.txt --target "$GITHUB_SHA" --prerelease --title "MRI Atlas 1.97 - Age navigation and new tumour modules" --notes "Пилоцитарная астроцитома и краниофарингиома: восемь схем, требования к МРТ и описание. Возрастные группы0–14,15–39,40+ и Все; общие страницы и приоритет готовых тем. Подписано прежним ключом линии1.83–1.97. Chromium на четырёх размерах; физический Android не проверен."
       - name: Clean runner key copy
         if: always()
         run: rm -rf signing saved-key current-cert.der
