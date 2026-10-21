@@ -1,0 +1,27 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {data} from '../app/src/main/assets/sellar-data.js';
+import {figures,knospFigures} from '../app/src/main/assets/sellar-figures.js';
+const html=fs.readFileSync('app/src/main/assets/sellar.html','utf8'),hub=fs.readFileSync('app/src/main/assets/brain-tumors.html','utf8');
+assert.match(hub,/href="sellar.html"/);assert.match(hub,/Этот модуль запланирован/);
+assert.deepEqual(data.features.map(f=>f.id),['anatomy','micro','macro','apoplexy']);
+assert.deepEqual(new Set(Object.keys(figures)),new Set(data.features.map(f=>f.id)));
+assert.deepEqual(data.knosp.map(k=>k.id),['0','1','2','3A','3B','4']);assert.deepEqual(new Set(Object.keys(knospFigures)),new Set(data.knosp.map(k=>k.id)));
+for(const f of data.features){assert.equal(f.legend.length,3);assert.match(figures[f.id],/viewBox="0 0 420 300"/);}
+assert.match(data.features[1].good,/<10 мм; макроаденома ≥10 мм/);
+assert.match(data.features[1].trap,/МРТ не определяет гормональный тип/);
+assert.match(data.features[3].good,/кровь И\/ИЛИ инфаркт/);assert.match(data.features[3].trap,/без кровоизлияния.*не называть апоплексией автоматически/);
+assert.match(data.knosp[0].criterion,/не пересекает медиальную/);
+assert.match(data.knosp[1].criterion,/медиальная.*но не линия центров/);
+assert.match(data.knosp[2].criterion,/линия центров.*но не латеральная/);
+assert.match(data.knosp[3].criterion,/за латеральную.*верхний/);assert.match(data.knosp[3].note,/выше интракавернозной/);
+assert.match(data.knosp[4].criterion,/за латеральную.*нижний/);assert.match(data.knosp[4].note,/ниже интракавернозной/);
+assert.match(data.knosp[5].criterion,/Полный охват интракавернозной ВСА/);
+assert.match(html,/справа и слева отдельно/);assert.match(html,/не гистологическое доказательство/);assert.match(html,/Касание линии без пересечения/);
+assert.match(data.differentials[3].check,/MRA \/ CTA.*до инвазивного/);
+assert.equal(data.locations.length,4);assert.equal(data.scan.length,5);assert.equal(data.differentials.length,4);assert.equal(data.checklist.length,7);assert.equal(data.reports.length,3);
+assert.match(data.scan[0][1],/COR \+ SAG.*≤2–2,5 мм, без промежутков/);assert.match(data.scan[2][1],/COR \+ SAG.*3D ~1 мм/);
+assert.match(html,/Динамика не должна подменять/);assert.match(html,/Не обязательна для каждого крупного/);
+assert.match(data.reports[0][1],/Knosp: справа.*слева/);
+for(const svg of [...Object.values(figures),...Object.values(knospFigures)])assert(!/<script|<image|https?:\/\//.test(svg.replace('http://www.w3.org/2000/svg','')));
+console.log('PASS sellar193: six complete Knosp grades/3A-3B/line boundaries, 10mm size threshold, apoplexy limits, focused MRI, mimics and cautious report.');

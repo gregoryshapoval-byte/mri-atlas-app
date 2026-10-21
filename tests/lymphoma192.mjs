@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import {data} from '../app/src/main/assets/cns-lymphoma-data.js';
 import {figures} from '../app/src/main/assets/cns-lymphoma-figures.js';
 const html=fs.readFileSync('app/src/main/assets/cns-lymphoma.html','utf8'),hub=fs.readFileSync('app/src/main/assets/brain-tumors.html','utf8');
-assert.match(hub,/href="cns-lymphoma.html"/);assert.match(hub,/Эти два модуля запланированы/);
+assert.match(hub,/href="cns-lymphoma.html"/);assert.match(hub,/Этот модуль запланирован/);
 assert.deepEqual(data.features.map(f=>f.id),['solid','diffusion','atypical','surface']);
 assert.deepEqual(new Set(Object.keys(figures)),new Set(data.features.map(f=>f.id)));
 for(const f of data.features){assert.equal(f.legend.length,3);assert.match(figures[f.id],/viewBox="0 0 420 300"/);}

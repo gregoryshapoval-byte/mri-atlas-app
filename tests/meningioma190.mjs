@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import {data} from '../app/src/main/assets/meningioma-data.js';
 import {figures} from '../app/src/main/assets/meningioma-figures.js';
 const html=fs.readFileSync('app/src/main/assets/meningioma.html','utf8'),hub=fs.readFileSync('app/src/main/assets/brain-tumors.html','utf8');
-assert.match(hub,/href="meningioma.html"/);assert.match(hub,/Эти два модуля запланированы/);
+assert.match(hub,/href="meningioma.html"/);assert.match(hub,/Этот модуль запланирован/);
 assert.deepEqual(data.features.map(x=>x.id),['extra','bone','sinus','interface']);
 assert.deepEqual(new Set(Object.keys(figures)),new Set(data.features.map(x=>x.id)));
 for(const f of data.features){assert.equal(f.legend.length,3);assert.match(figures[f.id],/viewBox="0 0 420 300"/);}
