@@ -1,5 +1,5 @@
 name: MRI Atlas 1.88 - Brain tumors - Glioblastoma
-# User requested beginning the brain tumor series with a practical GBM module.
+# Verify both hub links, including the return URL with its query string.
 on:
   push:
     branches: [work/orads-simplify-1-83]
