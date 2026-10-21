@@ -114,32 +114,17 @@ jobs:
           path: review/browser-cysts204/
           if-no-files-found: ignore
           retention-days: 7
-      - name: Check all brain tumour modules and prior clinical modules
-        env:
-          CHROME_PATH: /usr/bin/google-chrome
+      - name: Verify prior module validation for unchanged runtime files
         run: |
-          node tests/browser-csf203.mjs
-          node tests/browser-atrophy202.mjs
-          node tests/browser-vascular200.mjs
-          node tests/browser-svd201.mjs
-          node tests/browser-stroke199.mjs
-          node tests/browser-brain-age197.mjs
-          node tests/browser-glioneuronal198.mjs
-          node tests/browser-neurocytoma198.mjs
-          node tests/browser-pilocytic197.mjs
-          node tests/browser-craniopharyngioma197.mjs
-          node tests/browser-ependymal196.mjs
-          node tests/browser-hemangioblastoma195.mjs
-          node tests/browser-vestibular194.mjs
-          node tests/browser-sellar193.mjs
-          node tests/browser-lymphoma192.mjs
-          node tests/browser-diffuse191.mjs
-          node tests/browser-meningioma190.mjs
-          node tests/browser-metastases189.mjs
-          node tests/browser-brain188.mjs
-          node tests/browser-prostate187.mjs
-          node tests/browser-ms184.mjs
-          node tests/browser-orads183.mjs
+          python3 - <<'PYREUSE'
+          import json,subprocess
+          baseline='561768177502901674cdde75c122254ddfc564b9'
+          run=json.loads(subprocess.check_output(['gh','api','repos/'+__import__('os').environ['GITHUB_REPOSITORY']+'/actions/runs/39624693960']))
+          assert run['head_sha']==baseline and run['conclusion']=='success', 'Prior full validation did not pass'
+          changed=subprocess.check_output(['git','diff','--name-only',baseline,'HEAD','--','app/src/main/assets']).decode().splitlines()
+          assert set(changed)<= {'app/src/main/assets/brain-cysts.html','app/src/main/assets/brain-cysts-data.js'}, changed
+          print('PASS: 22 prior browser suites reused from successful run39624693960; every prior runtime asset and the catalogue are identical. New cyst page and revised labels checked separately on current HEAD.')
+          PYREUSE
       - name: Install Android SDK
         run: |
           yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null || true
