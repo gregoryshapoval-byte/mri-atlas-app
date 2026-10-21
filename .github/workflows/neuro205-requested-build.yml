@@ -1,4 +1,5 @@
 name: MRI Atlas 2.05 - Infections and demyelination
+# Final visual corrections: periventricular/cortical contact, optic chiasm and extraventricular infarct.
 # Infections and acquired demyelination. Previous imaging assets and runtime preserved; MS page extended.
 on:
   push:
@@ -227,7 +228,7 @@ jobs:
       - name: Save installable APK in permanent personal release
         continue-on-error: true # APK remains available in the signed artifact if release permission is unavailable.
         run: |
-          gh release create atlas-2.05-neuroinfection-demyelination output/MRIAtlas-2.05.apk output/build-info.json output/signature.txt --target "$GITHUB_SHA" --prerelease --title "MRI Atlas 2.05 - Infections and demyelination" --notes "Инфекции: 11 тем, демиелинизация: 7 паттернов, 18 схем, протоколы и шаблоны; дополнен прежний модуль РС. Прежние модули и данные сохранены. Подписано прежним ключом линии1.83–2.05. Chromium на четырёх размерах; физический Android не проверен."
+          gh release create atlas-2.05-neuroinfection-demyelination-final output/MRIAtlas-2.05.apk output/build-info.json output/signature.txt --target "$GITHUB_SHA" --prerelease --title "MRI Atlas 2.05 - Infections and demyelination" --notes "Инфекции: 11 тем, демиелинизация: 7 паттернов, 18 схем, протоколы и шаблоны; дополнен прежний модуль РС. Прежние модули и данные сохранены. Подписано прежним ключом линии1.83–2.05. Chromium на четырёх размерах; физический Android не проверен."
       - name: Clean runner key copy
         if: always()
         run: rm -rf signing saved-key current-cert.der
