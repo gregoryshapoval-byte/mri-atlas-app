@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';import fs from 'node:fs';
+import {plans} from '../app/src/main/assets/brain-tumors-age.js';
+import {data as pa} from '../app/src/main/assets/pilocytic-data.js';import {data as cp} from '../app/src/main/assets/craniopharyngioma-data.js';
+import {figures as pf} from '../app/src/main/assets/pilocytic-figures.js';import {figures as cf} from '../app/src/main/assets/craniopharyngioma-figures.js';
+const hub=fs.readFileSync('app/src/main/assets/brain-tumors.html','utf8'),sellar=fs.readFileSync('app/src/main/assets/sellar.html','utf8');
+assert.deepEqual(Object.keys(plans),['all','child','aya','older']);assert.equal(plans.all.primary.length,10);assert.equal(new Set(plans.all.primary).size,10);
+assert.equal(plans.child.primary[0],'pilocytic.html');assert.equal(plans.aya.primary[0],'sellar.html');assert.equal(plans.older.primary[0],'meningioma.html');
+assert.match(plans.child.limits,/медуллобластомы.*детских диффузных глиом/);assert.match(plans.aya.limits,/подростков/);
+for(const p of Object.values(plans)){assert.equal(new Set(p.primary).size,p.primary.length);assert(p.primary.every(x=>plans.all.primary.includes(x)));assert(!p.primary.includes('brain-metastases.html'));}
+assert.match(hub,/data-age="child".*0–14 лет/);assert.match(hub,/одна общая страница/);assert.match(hub,/не ранжируются вместе/);assert.match(sellar,/href="craniopharyngioma.html"/);
+for(const [n,d,f]of [['pilocytic',pa,pf],['craniopharyngioma',cp,cf]]){assert.deepEqual(Object.keys(f),d.features.map(x=>x.id));assert.equal(d.locations.length,4);assert.equal(d.differentials.length,4);assert.equal(d.scan.length,5);assert.equal(d.checklist.length,7);assert.equal(d.reports.length,3);const h=fs.readFileSync('app/src/main/assets/'+n+'.html','utf8');assert.match(h,/1.97/);assert.match(h,/МРТ/);for(const svg of Object.values(f)){assert.match(svg,/viewBox="0 0 420 300"/);assert.match(svg,/role="img" aria-label=/);assert(!/<script|<image|https?:\/\//.test(svg.replace('http://www.w3.org/2000/svg','')));for(const k of [1,2,3])assert(svg.includes('>'+k+'</text>'));}}
+assert.match(pa.features[0].trap,/усиление само по себе не доказывает/);assert.match(pa.features[1].trap,/усиление не равно высокой степени/);assert.match(pa.features[2].trap,/не требует автоматической биопсии/);assert.match(pa.scan[0][1],/1,5 Т допустимо 1,5 мм/);assert.match(pa.reports[2][1],/узел.*киста.*оценкой зрения/);
+assert.match(cp.features[1].trap,/не автоматически кровь/);assert.match(cp.features[2].trap,/нельзя надёжно установить.*BRAF V600E/);assert.match(cp.features[3].trap,/не доказывает гистологическую инвазию/);assert.match(cp.scan[4][2],/не обязательна/);assert.match(cp.reports[2][1],/солидная ткань.*кисты.*не рассчитывается/);
+assert.match(pf.cyst,/L210 144/);assert.match(cf.solid,/M158 101Q210 77 262 101/);
+console.log('PASS age197: age-specific navigation plans, one shared URL per module, limits, PA patterns/NF1/cyst wall, craniopharyngioma types/functional anatomy/protocol/measurements.');

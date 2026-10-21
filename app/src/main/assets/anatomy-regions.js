@@ -5,7 +5,7 @@ export const regions=[
     "description": "МРТ и сосудистая анатомия",
     "image": "menu-art/brain.webp",
     "items": [
-      {"title":"Опухоли головного мозга","description":"Девять модулей · по частоте · схемы · протоколы МРТ","url":"brain-tumors.html","type":"КЛИНИЧЕСКИЕ МОДУЛИ","thumb":"menu-thumbs/brain-tumors.svg"},
+      {"title":"Опухоли головного мозга","description":"Возраст и частота · 11 тем · схемы · протоколы МРТ","url":"brain-tumors.html","type":"КЛИНИЧЕСКИЕ МОДУЛИ","thumb":"menu-thumbs/brain-tumors.svg"},
       {"title":"Рассеянный склероз","description":"МР-признаки · критерии · сканирование · заключение","url":"multiple-sclerosis.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/multiple-sclerosis.svg"},
       {
         "title": "Артерии · 3D",
