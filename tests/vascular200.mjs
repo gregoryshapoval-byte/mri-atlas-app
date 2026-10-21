@@ -5,7 +5,7 @@ import {regions} from '../app/src/main/assets/anatomy-regions.js';
 const h=fs.readFileSync('app/src/main/assets/vascular-malformations.html','utf8');
 assert.match(h,/MRI Atlas · 2.00/);assert.match(h,/href="region.html\?area=brain"/);assert.match(h,/Проверено21.10.2026/);
 assert(!/ECASS|PH1|PH2|ageGuide|htGuide|ишемия.*давность.*кровь/i.test(h));
-const brain=regions.find(r=>r.id==='brain');assert.equal(brain.items.filter(i=>!['small-vessel.html','atrophy.html','csf-disorders.html'].includes(i.url))[0].url,'stroke.html');assert.equal(brain.items.filter(i=>!['small-vessel.html','atrophy.html','csf-disorders.html'].includes(i.url))[1].url,'vascular-malformations.html');assert.equal(regions.flatMap(r=>r.items).filter(i=>i.url==='vascular-malformations.html').length,1);
+const brain=regions.find(r=>r.id==='brain');assert.equal(brain.items.filter(i=>!['small-vessel.html','atrophy.html','csf-disorders.html','brain-cysts.html'].includes(i.url))[0].url,'stroke.html');assert.equal(brain.items.filter(i=>!['small-vessel.html','atrophy.html','csf-disorders.html','brain-cysts.html'].includes(i.url))[1].url,'vascular-malformations.html');assert.equal(regions.flatMap(r=>r.items).filter(i=>i.url==='vascular-malformations.html').length,1);
 assert.deepEqual(Object.keys(figures),['cavernoma','telangiectasia','dva','combined','avm','davf']);assert.deepEqual(data.features.map(x=>x.id),Object.keys(figures));
 assert.equal(data.locations.length,6);assert.equal(data.scan.length,6);assert.equal(data.checklist.length,8);assert.equal(data.reports.length,5);assert.equal(data.differentials.length,4);
 for(const f of data.features){assert.equal(f.legend.length,3);assert(h.includes('data-feature="'+f.id+'"'));assert(f.trap.length>45);}

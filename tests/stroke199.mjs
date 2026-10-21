@@ -5,7 +5,7 @@ import {regions} from '../app/src/main/assets/anatomy-regions.js';
 const h=fs.readFileSync('app/src/main/assets/stroke.html','utf8');
 assert.match(h,/MRI Atlas · 1.99/);assert.match(h,/href="region.html\?area=brain"/);assert.match(h,/Проверено21.10.2026/);
 assert(!/нейроцитома|Ki-67|септальн|нейроцитомного/.test(h));
-const b=regions.find(r=>r.id==='brain');assert.equal(b.items.filter(i=>!['small-vessel.html','atrophy.html','csf-disorders.html'].includes(i.url))[0].url,'stroke.html');assert.equal(regions.flatMap(r=>r.items).filter(i=>i.url==='stroke.html').length,1);
+const b=regions.find(r=>r.id==='brain');assert.equal(b.items.filter(i=>!['small-vessel.html','atrophy.html','csf-disorders.html','brain-cysts.html'].includes(i.url))[0].url,'stroke.html');assert.equal(regions.flatMap(r=>r.items).filter(i=>i.url==='stroke.html').length,1);
 assert(b.items.some(i=>i.url==='brain-tumors.html'));assert(b.items.some(i=>i.url==='multiple-sclerosis.html'));
 assert.deepEqual(Object.keys(figures),['ischemia','timing','mismatch','territory','hemorrhage','transformation']);assert.deepEqual(data.features.map(x=>x.id),Object.keys(figures));
 assert.equal(data.locations.length,6);assert.equal(data.scan.length,6);assert.equal(data.checklist.length,8);assert.equal(data.reports.length,4);assert.equal(data.differentials.length,4);
