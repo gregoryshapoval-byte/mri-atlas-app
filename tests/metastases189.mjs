@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import {data} from '../app/src/main/assets/brain-metastases-data.js';
 import {figures} from '../app/src/main/assets/brain-metastases-figures.js';
 const html=fs.readFileSync('app/src/main/assets/brain-metastases.html','utf8'),hub=fs.readFileSync('app/src/main/assets/brain-tumors.html','utf8');
-assert.match(hub,/href="brain-metastases.html"/);assert.match(hub,/Эти три модуля запланированы/);
+assert.match(hub,/href="brain-metastases.html"/);assert.match(hub,/Эти два модуля запланированы/);
 assert.deepEqual(data.features.map(x=>x.id),['single','multiple','blood','lepto','dural']);
 for(const f of data.features){assert.equal(f.legend.length,3);assert.match(figures[f.id],/viewBox="0 0 420 300"/);assert(f.trap.length>30);}
 for(const f of Object.values(figures))assert(!/<script|<image|https?:\/\//.test(f.replace('http://www.w3.org/2000/svg','')));
