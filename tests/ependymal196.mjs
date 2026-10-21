@@ -5,7 +5,7 @@ import {figures} from '../app/src/main/assets/ependymal-figures.js';
 const html=fs.readFileSync('app/src/main/assets/ependymal.html','utf8');
 const hub=fs.readFileSync('app/src/main/assets/brain-tumors.html','utf8');
 const primary=hub.match(/<section id="primary"[\s\S]*?<\/section>/)[0];
-assert.deepEqual([...primary.matchAll(/class="moduleLink card" href="([^"]+)"/g)].map(m=>m[1]),['meningioma.html','sellar.html','glioblastoma.html','vestibular.html','diffuse-gliomas.html','cns-lymphoma.html','ependymal.html','pilocytic.html','craniopharyngioma.html','hemangioblastoma.html']);
+assert.deepEqual([...primary.matchAll(/class="moduleLink card" href="([^"]+)"/g)].map(m=>m[1]),['meningioma.html','sellar.html','glioblastoma.html','vestibular.html','diffuse-gliomas.html','cns-lymphoma.html','ependymal.html','pilocytic.html','craniopharyngioma.html','glioneuronal.html','hemangioblastoma.html','neurocytoma.html']);
 assert.match(hub,/<section id="secondary"[\s\S]*href="brain-metastases.html"/);
 assert(!/Модуль \d\d/.test(hub));assert.match(hub,/не входят в статистику первичных опухолей/);assert.match(hub,/частота зависит от возраста/);
 assert.deepEqual(data.features.map(f=>f.id),['fourth','outlets','supratentorial','subependymoma']);assert.deepEqual(Object.keys(figures),data.features.map(f=>f.id));

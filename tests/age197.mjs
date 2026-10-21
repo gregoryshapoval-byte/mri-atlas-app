@@ -3,7 +3,7 @@ import {plans} from '../app/src/main/assets/brain-tumors-age.js';
 import {data as pa} from '../app/src/main/assets/pilocytic-data.js';import {data as cp} from '../app/src/main/assets/craniopharyngioma-data.js';
 import {figures as pf} from '../app/src/main/assets/pilocytic-figures.js';import {figures as cf} from '../app/src/main/assets/craniopharyngioma-figures.js';
 const hub=fs.readFileSync('app/src/main/assets/brain-tumors.html','utf8'),sellar=fs.readFileSync('app/src/main/assets/sellar.html','utf8');
-assert.deepEqual(Object.keys(plans),['all','child','aya','older']);assert.equal(plans.all.primary.length,10);assert.equal(new Set(plans.all.primary).size,10);
+assert.deepEqual(Object.keys(plans),['all','child','aya','older']);assert.equal(plans.all.primary.length,12);assert.equal(new Set(plans.all.primary).size,12);
 assert.equal(plans.child.primary[0],'pilocytic.html');assert.equal(plans.aya.primary[0],'sellar.html');assert.equal(plans.older.primary[0],'meningioma.html');
 assert.match(plans.child.limits,/Детская серия неполная/);assert.match(hub,/медуллобластомы, детских диффузных глиом/);assert.match(plans.aya.limits,/подростков/);
 for(const p of Object.values(plans)){assert.equal(new Set(p.primary).size,p.primary.length);assert(p.primary.every(x=>plans.all.primary.includes(x)));assert(!p.primary.includes('brain-metastases.html'));}

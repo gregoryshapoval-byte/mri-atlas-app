@@ -12,12 +12,12 @@ try{
 for(const [width,height]of [[320,568],[393,852],[852,393],[1280,800]]){
  const page=await browser.newPage({viewport:{width,height}});page.on('pageerror',e=>errors.push(String(e)));page.on('response',r=>{if(r.status()>=400)errors.push(r.status()+' '+r.url());});page.on('request',r=>{if(!r.url().startsWith(base))external.push(r.url());});
  await page.goto(base+'/brain-tumors.html');
- const all=['meningioma.html','sellar.html','glioblastoma.html','vestibular.html','diffuse-gliomas.html','cns-lymphoma.html','ependymal.html','pilocytic.html','craniopharyngioma.html','hemangioblastoma.html'];
- const expected={all,child:['pilocytic.html','ependymal.html','craniopharyngioma.html'],aya:['sellar.html','meningioma.html','vestibular.html','diffuse-gliomas.html','pilocytic.html'],older:['meningioma.html','sellar.html','glioblastoma.html','vestibular.html','diffuse-gliomas.html','cns-lymphoma.html']};
+ const all=['meningioma.html','sellar.html','glioblastoma.html','vestibular.html','diffuse-gliomas.html','cns-lymphoma.html','ependymal.html','pilocytic.html','craniopharyngioma.html','glioneuronal.html','hemangioblastoma.html','neurocytoma.html'];
+ const expected={all,child:['pilocytic.html','ependymal.html','craniopharyngioma.html','glioneuronal.html'],aya:['sellar.html','meningioma.html','vestibular.html','diffuse-gliomas.html','pilocytic.html','glioneuronal.html','neurocytoma.html'],older:['meningioma.html','sellar.html','glioblastoma.html','vestibular.html','diffuse-gliomas.html','cns-lymphoma.html']};
  for(const [age,order]of Object.entries(expected)){
   await page.locator('[data-age="'+age+'"]').click();assert.equal(await page.locator('[data-age][aria-pressed=true]').count(),1);
   assert.deepEqual(await page.locator('#primaryCards .moduleLink').evaluateAll(xs=>xs.map(x=>x.getAttribute('href'))),order);
-  assert.equal(await page.locator('a.moduleLink').count(),11);assert.equal(await page.locator('a.moduleLink').evaluateAll(xs=>new Set(xs.map(x=>x.getAttribute('href'))).size),11);
+  assert.equal(await page.locator('a.moduleLink').count(),13);assert.equal(await page.locator('a.moduleLink').evaluateAll(xs=>new Set(xs.map(x=>x.getAttribute('href'))).size),13);
   assert.equal(await page.locator('#other').isVisible(),age!=='all');assert.equal(await page.locator('#ageLimits').isVisible(),age==='child'||age==='aya');
   assert.deepEqual(await page.locator('#secondary .moduleLink').evaluateAll(xs=>xs.map(x=>x.getAttribute('href'))),['brain-metastases.html']);
   await page.locator('#frequency').evaluate(d=>d.open=true);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false);

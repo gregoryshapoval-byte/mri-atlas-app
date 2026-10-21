@@ -1,7 +1,7 @@
 export const plans={
- all:{primary:["meningioma.html","sellar.html","glioblastoma.html","vestibular.html","diffuse-gliomas.html","cns-lymphoma.html","ependymal.html","pilocytic.html","craniopharyngioma.html","hemangioblastoma.html"],status:'Все возрасты: от частых к редким.',limits:''},
- child:{primary:['pilocytic.html','ependymal.html','craniopharyngioma.html'],status:'0–14 лет: характерные готовые темы.',limits:'Детская серия неполная; часть модулей содержит взрослую основу.'},
- aya:{primary:['sellar.html','meningioma.html','vestibular.html','diffuse-gliomas.html','pilocytic.html'],status:'15–39 лет: частые и характерные темы.',limits:'Группа включает подростков; часть модулей имеет взрослую основу.'},
+ all:{primary:["meningioma.html", "sellar.html", "glioblastoma.html", "vestibular.html", "diffuse-gliomas.html", "cns-lymphoma.html", "ependymal.html", "pilocytic.html", "craniopharyngioma.html", "glioneuronal.html", "hemangioblastoma.html", "neurocytoma.html"],status:'Все возрасты: от частых к редким.',limits:''},
+ child:{primary:['pilocytic.html','ependymal.html','craniopharyngioma.html','glioneuronal.html'],status:'0–14 лет: характерные готовые темы.',limits:'Детская серия неполная; часть модулей содержит взрослую основу.'},
+ aya:{primary:['sellar.html','meningioma.html','vestibular.html','diffuse-gliomas.html','pilocytic.html','glioneuronal.html','neurocytoma.html'],status:'15–39 лет: частые и характерные темы.',limits:'Группа включает подростков; часть модулей имеет взрослую основу.'},
  older:{primary:['meningioma.html','sellar.html','glioblastoma.html','vestibular.html','diffuse-gliomas.html','cns-lymphoma.html'],status:'40+ лет: частые взрослые группы.',limits:''}
 };
 if(typeof document!=='undefined'){

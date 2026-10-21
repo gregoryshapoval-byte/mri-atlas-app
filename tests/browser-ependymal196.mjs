@@ -14,8 +14,8 @@ for(const [width,height]of [[320,568],[393,852],[852,393],[1280,800]]){
  page.on('pageerror',e=>errors.push(String(e)));page.on('response',r=>{if(r.status()>=400)errors.push(r.status()+' '+r.url());});page.on('request',r=>{if(!r.url().startsWith(base))external.push(r.url());});
  await page.goto(base+'/region.html?area=brain');await page.getByRole('link',{name:/Опухоли головного мозга/}).click();
  assert.equal(await page.locator('a[href="ependymal.html"]').count(),1);
- assert.equal(await page.locator('a.moduleLink').count(),11);
- assert.deepEqual(await page.locator('#primary a.moduleLink').evaluateAll(xs=>xs.map(x=>x.getAttribute('href'))),['meningioma.html','sellar.html','glioblastoma.html','vestibular.html','diffuse-gliomas.html','cns-lymphoma.html','ependymal.html','pilocytic.html','craniopharyngioma.html','hemangioblastoma.html']);
+ assert.equal(await page.locator('a.moduleLink').count(),13);
+ assert.deepEqual(await page.locator('#primary a.moduleLink').evaluateAll(xs=>xs.map(x=>x.getAttribute('href'))),['meningioma.html','sellar.html','glioblastoma.html','vestibular.html','diffuse-gliomas.html','cns-lymphoma.html','ependymal.html','pilocytic.html','craniopharyngioma.html','glioneuronal.html','hemangioblastoma.html','neurocytoma.html']);
  assert.deepEqual(await page.locator('#secondary a.moduleLink').evaluateAll(xs=>xs.map(x=>x.getAttribute('href'))),['brain-metastases.html']);
  await page.locator('#frequency').evaluate(d=>d.open=true);
  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false,width+' hub');
