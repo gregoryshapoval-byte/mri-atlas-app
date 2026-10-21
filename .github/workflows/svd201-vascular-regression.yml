@@ -1,0 +1,31 @@
+name: MRI Atlas 2.01 - Prior vascular regression
+on:
+  push:
+    branches: [work/orads-simplify-1-83]
+    paths: [.github/workflows/svd201-vascular-regression.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  vascular-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Materialize existing image assets
+        run: |
+          python3 tools/materialize_assets142.py
+          python3 tools/materialize_assets150.py
+          python3 tools/materialize_assets152.py
+          python3 tools/materialize_assets165.py
+      - name: Install browser dependency
+        run: npm install --prefix /tmp/atlas-dom playwright --no-audit --no-fund
+      - name: Check prior vascular module and navigation
+        env:
+          CHROME_PATH: /usr/bin/google-chrome
+        run: |
+          node tests/vascular200.mjs
+          node tests/browser-vascular200.mjs
