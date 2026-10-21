@@ -7,6 +7,7 @@ export const regions=[
     "items": [
       {"title":"Болезнь мелких сосудов","description":"Fazekas · лакуны · ПВП · микрокровоизлияния · ЦАА","url":"small-vessel.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/small-vessel.svg"},
       {"title":"Атрофия и когнитивные нарушения","description":"MTA · GCA · Koedam · возраст · паттерны · протокол МРТ","url":"atrophy.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/atrophy.svg"},
+      {"title":"Гидроцефалия и ликворные нарушения","description":"Обструкция · DESH · ex vacuo · измерения · SIH / IIH","url":"csf-disorders.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/csf-disorders.svg"},
       {"title":"Инсульты","description":"Ишемия · давность · кровь · сосуды · протокол МРТ","url":"stroke.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/stroke.svg"},
       {"title":"Сосудистые мальформации","description":"Кавернома · телеангиэктазия · ВАР / DVA · АВМ · фистулы","url":"vascular-malformations.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/vascular-malformations.svg"},
       {"title":"Опухоли головного мозга","description":"Возраст и частота · 13 тем · схемы · протоколы МРТ","url":"brain-tumors.html","type":"КЛИНИЧЕСКИЕ МОДУЛИ","thumb":"menu-thumbs/brain-tumors.svg"},
