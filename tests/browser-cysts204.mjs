@@ -11,6 +11,7 @@ try{
   await page.goto(base+'/region.html?area=brain');assert.equal(await page.locator('a[href="brain-cysts.html"]').count(),1);assert.match(await page.locator('a[href="brain-cysts.html"]').innerText(),/Кисты и кистозные изменения/);
   await page.screenshot({path:out+'/'+width+'-brain-menu.png',fullPage:true});await page.locator('a[href="brain-cysts.html"]').click();await page.waitForSelector('#featureFigure svg');
   assert.equal(await page.locator('[role=tab]').count(),5);
+  const badLabels=await page.locator('.featureChoices button,.tabs button').evaluateAll(bs=>bs.filter(b=>{const r=document.createRange();r.selectNodeContents(b);const box=b.getBoundingClientRect();return [...r.getClientRects()].some(t=>t.left<box.left+3||t.right>box.right-3);}).map(b=>b.textContent));assert.deepEqual(badLabels,[],width+' text must fit its own button');
   for(const id of ['arachnoid','pineal','pvs','fissure','mega','epidermoid','colloid','dermoid','neuroglial','porencephaly']){
    await page.locator('[data-feature="'+id+'"]').click();assert.equal(await page.locator('[data-feature][aria-pressed=true]').count(),1);assert.equal(await page.locator('#featureLegend li').count(),3);assert.equal(await page.locator('#featureFigure svg path').evaluateAll(ps=>ps.every(p=>p.getTotalLength()>0)),true);
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false,width+' '+id);

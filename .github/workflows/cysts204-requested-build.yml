@@ -1,4 +1,5 @@
 name: MRI Atlas 2.04 - Brain cysts and cystic changes
+# Final mobile label review: long names shortened on buttons; full terms retained in cards.
 # Brain cysts and cystic changes; all existing modules and imaging data preserved.
 on:
   push:
@@ -231,7 +232,7 @@ jobs:
           retention-days: 30
       - name: Save installable APK in permanent personal release
         run: |
-          gh release create atlas-2.04-cysts output/MRIAtlas-2.04.apk output/build-info.json output/signature.txt --target "$GITHUB_SHA" --prerelease --title "MRI Atlas 2.04 - Brain cysts and cystic changes" --notes "Кисты и кистозные изменения:10тем/схем,сигналы/задняяямка,протокол и6шаблонов. Прежние модули и данные сохранены. Подписано прежним ключом линии1.83–2.04. Chromium на четырёх размерах; физический Android не проверен."
+          gh release create atlas-2.04-cysts-final output/MRIAtlas-2.04.apk output/build-info.json output/signature.txt --target "$GITHUB_SHA" --prerelease --title "MRI Atlas 2.04 - Brain cysts and cystic changes" --notes "Кисты и кистозные изменения:10тем/схем,сигналы/задняяямка,протокол и6шаблонов. Прежние модули и данные сохранены. Подписано прежним ключом линии1.83–2.04. Chromium на четырёх размерах; физический Android не проверен."
       - name: Clean runner key copy
         if: always()
         run: rm -rf signing saved-key current-cert.der
