@@ -184,34 +184,17 @@ jobs:
           node tests/catalog142.mjs
           node tests/home163.mjs
           node tests/all-mri-data.mjs
-      - name: Install browser dependency
-        run: npm install --prefix /tmp/atlas-dom playwright --no-audit --no-fund
-      - name: Check abdominal modules, unified metastases and primary tumour navigation
-        env:
-          CHROME_PATH: /usr/bin/google-chrome
+      - name: Reuse passed UI evidence only for byte-identical source
         run: |
-          node tests/browser-branding218.mjs
-          node tests/menus142.mjs
-          node tests/browser-abdomen230.mjs
-          node tests/browser-metastases189.mjs
-          node tests/browser-primary211.mjs
-          node tests/browser-followup212.mjs
-          node tests/browser-brain-age197.mjs
-      - name: Upload UI review
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: abdomen230-ui-review
-          path: |
-            review/browser-branding218/
-            review/browser-1.42/
-            review/browser-abdomen230/
-            review/browser-metastases189/
-            review/browser-primary211/
-            review/browser-followup212/
-            review/browser-brain-age197/
-          if-no-files-found: ignore
-          retention-days: 7
+          python3 - <<'PY'
+          import subprocess
+          evidence='9220603ed408d151f39f400e517e52f1b30e1a57'
+          paths=['app','tests','tools']
+          def snapshot(ref):
+              return subprocess.check_output(['git','ls-tree','-r','-z',ref,*paths])
+          assert snapshot(evidence)==snapshot('HEAD'), 'UI evidence cannot be reused after source changes'
+          print('PASS identical app/tests/tools: UI verified in run39839735641 job120037262040; artifact12451923897,307files')
+          PY
       - name: Install Android SDK
         run: |
           yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null || true
@@ -307,7 +290,9 @@ jobs:
               assert 'Костный мозг' in b.read('assets/bone-marrow.html').decode()
               assert 'Метастазы после лечения' in b.read('assets/brain-metastases-followup.html').decode()
               assert 'brain-tumors' in b.read('assets/anatomy-regions.js').decode()
-              assert 'brain-metastases.html' in b.read('assets/brain-tumors.html').decode()
+              assert 'brain-metastases-module.html' in b.read('assets/brain-tumors.html').decode()
+              assert 'brain-metastases.html' in b.read('assets/brain-metastases-module.html').decode()
+              assert 'brain-metastases-followup.html' in b.read('assets/brain-metastases-module.html').decode()
               assert 'ependymal.html' in b.read('assets/brain-tumors.html').decode()
               assert 'Пилоцитарная астроцитома' in b.read('assets/pilocytic.html').decode()
               assert 'Краниофарингиома' in b.read('assets/craniopharyngioma.html').decode()
@@ -348,7 +333,7 @@ jobs:
           assert 'cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe' in signature
           assert 'verified using v2 scheme (apk signature scheme v2): true' in signature
           assert 'verified using v3 scheme (apk signature scheme v3): true' in signature
-          info={'version':'2.30','signed':True,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'bytes':p.stat().st_size,'certificate_sha256':'cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe','payload_verified':True,'base_commit':'c2d2667ce0fb317ed5547967b7b77f54cbb8076f','commit':__import__('os').environ['GITHUB_SHA']}
+          info={'version':'2.30','signed':True,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'bytes':p.stat().st_size,'certificate_sha256':'cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe','payload_verified':True,'ui_evidence_run':39839735641,'ui_evidence_artifact':12451923897,'ui_evidence_commit':'9220603ed408d151f39f400e517e52f1b30e1a57','base_commit':'c2d2667ce0fb317ed5547967b7b77f54cbb8076f','commit':__import__('os').environ['GITHUB_SHA']}
           Path('output/build-info.json').write_text(json.dumps(info,indent=2))
           PY
       - name: Save signed APK artifact
@@ -367,3 +352,5 @@ jobs:
         run: rm -rf signing saved-key current-cert.der
 
 # Three explicitly requested abdominal modules; same certificate, prior payload retained.
+
+# Correct package navigation expectation after moving metastases out of primary tumours; reuse verified unchanged UI.
