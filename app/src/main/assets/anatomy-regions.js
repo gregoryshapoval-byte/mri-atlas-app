@@ -239,9 +239,9 @@ export const regions=[
       },
       {
         "title": "Мениски",
-        "description": "Норма и семь вариантов разрывов менисков",
+        "description": "Разрывы, корни, экструзия, после операции и 3D",
         "url": "knee.html",
-        "type": "3D-МОДЕЛЬ",
+        "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
         "thumb": "menu-thumbs/knee.webp"
       },
       {
