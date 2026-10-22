@@ -1,4 +1,5 @@
 name: MRI Atlas 2.13 - Bone marrow patterns
+# Select the CSI card before checking its contextual measurement details.
 on:
   push:
     branches: [work/orads-simplify-1-83]
