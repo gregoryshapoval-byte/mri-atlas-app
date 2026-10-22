@@ -18,3 +18,9 @@
 ## Проверки
 
 Локальноosteonecrosis221:критерииARCO/≤2ммравенство/нет0/мультимодальность/17SVG/легенды/источники/протокол/шаблоны/точноесохранениекаталогаотосновы2.20;branding218/home163/glioma217/spinal215/marrow213/liver214/schizas219/disc220/catalog142/all-mri-data — PASS. XML17разобран,синтаксисPASS. ИсторическиекаталожныеfixturesигнорируюттолькодобавленныйURL,объекты/порядокнезависимосравниваютсяновымтестомотточнойосновы. Предыдущиеassetsменяютсятолькокаталог/footer. Browserплан:4размера/17схем/zoom/Escape/5tabs/keyboard/7copy+fallback/hip↔marrow/переполнение;статусCI/подписи/визуальногообзоравCONTINUEпослевыполнения. Независимаяврачебнаяверификация/физическийAndroidневыполнены.
+
+## Фактический выпуск
+
+Actions39769240830/job119792304463 — SUCCESS с первого прогона. Все source/data проверки, browser-osteonecrosis221×4 (17figures/zoom/Escape/5tabs/keyboard/7copy+fallback/hip↔marrow/zerooverflow/errors), предыдущие disc220×4,schizas219×4,branding218×5,menus13×4/73routes прошли. Визуальный обзор17SVG,уточнённыхстадий/зеркальнойголовки,320pxверх,393pxzoomIIIA/SIF,полныйIIIB,низописания/fallback выполнен. ФизическийAndroid/независимаяврачебнаяверификацияневыполнены.
+
+Кодe3fedbf7126deb3f844a6f365d4c55385a3c6896;UIartifact12422250421;signedartifact12421677196;tagatlas-2.21-osteonecrosis. APK138897886байт,SHA2560647f540bcdcce761e547b8ddfa9a3042b7bca387385798cd1c0ac27bc3cbb40,121/2.21,сертификатcb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe,v2/v3. СкачанныйпакетCRC/hash/size/commit/версия/label/локальныйapksignerивсе9307assets проверены.
