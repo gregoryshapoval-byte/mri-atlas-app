@@ -352,6 +352,9 @@ export const regions=[
     "image": "home-icons/abdomen.svg",
     "items": [
       {"title":"Очаговые образования печени","description":"Киста · гемангиома · ФНГ · аденома · ГЦР · метастазы","url":"liver-lesions.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/liver-lesions.svg"},
+      {"title":"Желчные протоки · МРХПГ","description":"Камни · стриктуры · PSC · уровень обструкции · ловушки","url":"biliary-mrcp.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/biliary-mrcp.svg"},
+      {"title":"Кистозные образования поджелудочной","description":"IPMN · SCN · MCN · Kyoto2024 · узелки · наблюдение","url":"pancreatic-cysts.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/pancreatic-cysts.svg"},
+      {"title":"Образования почек · Bosniak","description":"Bosniak2019 I–IV · усиление · субтракция · солидные массы","url":"renal-bosniak.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/renal-bosniak.svg"},
       {
         "title": "КТ · нормальная анатомия",
         "description": "182 среза · сегменты печени, IVa и IVb",
@@ -375,10 +378,10 @@ export const regions=[
     "image": "menu-art/foot.webp",
     "items": [
       {"title":"Связки голеностопа","description":"ATFL / CFL / PTFL · синдесмоз · дельтовидная · повреждения","url":"ankle-ligaments.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/ankle-ligaments.svg"},
-      {"title":"Сухожилия голеностопа","description":{"ankle-tendons":"Ахилл · PB / PL · PTT · разрывы · влагалища · после шва","talar-olt":"Hepple I–V · карта купола · хрящ · кисты · стабильность","ankle-impingement":"Передние / задние · os trigonum · латеральный конфликт","heel-pain":"Фасция · ахиллов энтезис · бурсы · стресс-перелом"},"url":"ankle-tendons.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/ankle-tendons.svg"},
-      {"title":"Остеохондральные поражения таранной кости","description":{"ankle-tendons":"Ахилл · PB / PL · PTT · разрывы · влагалища · после шва","talar-olt":"Hepple I–V · карта купола · хрящ · кисты · стабильность","ankle-impingement":"Передние / задние · os trigonum · латеральный конфликт","heel-pain":"Фасция · ахиллов энтезис · бурсы · стресс-перелом"},"url":"talar-olt.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/talar-olt.svg"},
-      {"title":"Импинджмент голеностопа","description":{"ankle-tendons":"Ахилл · PB / PL · PTT · разрывы · влагалища · после шва","talar-olt":"Hepple I–V · карта купола · хрящ · кисты · стабильность","ankle-impingement":"Передние / задние · os trigonum · латеральный конфликт","heel-pain":"Фасция · ахиллов энтезис · бурсы · стресс-перелом"},"url":"ankle-impingement.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/ankle-impingement.svg"},
-      {"title":"Боль в пятке","description":{"ankle-tendons":"Ахилл · PB / PL · PTT · разрывы · влагалища · после шва","talar-olt":"Hepple I–V · карта купола · хрящ · кисты · стабильность","ankle-impingement":"Передние / задние · os trigonum · латеральный конфликт","heel-pain":"Фасция · ахиллов энтезис · бурсы · стресс-перелом"},"url":"heel-pain.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/heel-pain.svg"},
+      {"title":"Сухожилия голеностопа","description":"Ахилл · PB / PL · PTT · разрывы · влагалища · после шва","url":"ankle-tendons.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/ankle-tendons.svg"},
+      {"title":"Остеохондральные поражения таранной кости","description":"Hepple I–V · карта купола · хрящ · кисты · стабильность","url":"talar-olt.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/talar-olt.svg"},
+      {"title":"Импинджмент голеностопа","description":"Передние / задние · os trigonum · латеральный конфликт","url":"ankle-impingement.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/ankle-impingement.svg"},
+      {"title":"Боль в пятке","description":"Фасция · ахиллов энтезис · бурсы · стресс-перелом","url":"heel-pain.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/heel-pain.svg"},
       {"title":"Костный мозг","description":"Отёк · реконверсия · перелом · замещение · CSI / DWI","url":"bone-marrow.html?from=foot","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-marrow.svg"},
       {"title":"Очаговые образования костей","description":"Агрессивность · матрикс · типичные очаги · SSR Bone-RADS","url":"bone-lesions.html?from=foot","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-lesions.svg"},
       {

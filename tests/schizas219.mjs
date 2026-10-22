@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';import fs from 'node:fs';import{execFileSync}from'node:child_process';import{grades}from'../app/src/main/assets/schizas-data.js';import{regions as currentRegions}from'../app/src/main/assets/anatomy-regions.js';
 // Historical fixture: only the new 2.25 route is outside its snapshot.
-const regions=currentRegions.map(r=>({...r,items:r.items.filter(i=>i.url!=='acl-postop.html'&&!['endometrial-cancer.html','cervical-cancer.html','ankle-ligaments.html','ankle-tendons.html','talar-olt.html','ankle-impingement.html','heel-pain.html'].includes(i.url))}));
+const regions=currentRegions.map(r=>({...r,items:r.items.filter(i=>i.url!=='acl-postop.html'&&!['endometrial-cancer.html','cervical-cancer.html','ankle-ligaments.html','ankle-tendons.html','talar-olt.html','ankle-impingement.html','heel-pain.html','biliary-mrcp.html','pancreatic-cysts.html','renal-bosniak.html'].includes(i.url))}));
 
 assert.deepEqual(grades.map(g=>g.code),['A1','A2','A3','A4','B','C','D']);const G=c=>grades.find(g=>g.code===c).caption;
 for(const[c,terms]of Object.entries({A1:['дорсально','менее половины'],A2:['дорсально','подковы'],A3:['дорсально','более половины'],A4:['центрально','большую часть'],B:['весь','по отдельности','ликвора сохраняется'],C:['неразличимы','ликвор не виден','сохранена'],D:['не видны','не определяется']}))for(const t of terms)assert(G(c).includes(t),c+':'+t);
