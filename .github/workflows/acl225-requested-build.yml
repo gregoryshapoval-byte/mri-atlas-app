@@ -341,3 +341,5 @@ jobs:
         run: rm -rf signing saved-key current-cert.der
 
 # Verify and sign the owner-requested postoperative ACL module after source checks.
+
+# Retry after awaiting complete menu return and route-handler teardown in the browser test.
