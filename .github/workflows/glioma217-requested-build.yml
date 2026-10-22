@@ -1,4 +1,5 @@
 name: MRI Atlas 2.17 - Gliomas after treatment
+# Recheck narrow-screen button labels after manual hyphenation.
 on:
   push:
     branches: [work/orads-simplify-1-83]
