@@ -20,3 +20,9 @@
 Локально disc220:15XML/легенды/критерии/источники/5соответствий/7шаблонов и полное сравнение старыхкаталожныхобъектов от точнойосновы2.19;branding218/home163/glioma217/spinal215/marrow213/liver214/schizas219/catalog142/all-mri-data,синтаксис — PASS. Историческиекаталожныеfixtures исключают только новыйdisc-nerveURL. Предыдущиеassetфайлыизменены лишьвкаталоге иномереfooter2.20. СтарыеSchizas/viewer/иконки/MRI/метки/координаты сохранены. Новыйbrowserтест предназначен для4размеров,15схем/zoom/5вкладок/5строкуровней/7clipboard+fallback/keyboard/переходовSchizas↔spine и переполнения. ИтогCI/подпись/визуальнаяпроверкабудут записаны после выполнения.
 
 Медицинская сверка, визуальная проверка и автоматические тесты — разные виды проверки. Независимый врачебный аудит и физический Android не выполнены.
+
+## Итог выпуска
+
+Actions39762960824/job119771378625 — SUCCESS с первого прогона. Все содержательные проверки workflow;browser-disc220×4:15схем/zoom/5tabs/keyboard/5соответствий/7clipboard+fallback,Schizas/spine,нулевыеJSerrors/overflow. browser-schizas219×4,branding218×5,menus13×4/72routes прошли. Визуальный обзор:15SVG в общемлисте,320pxверх,393pxroot3/Lee1zoom,полныеэкструзия/Lee2,низшаблонов/fallback. ФизическийAndroid/независимыйврачебныйаудит невыполнены.
+
+Кодeb071f41f65c6c4f88f4cf60134bc88b7c6b025e;UIartifact12418424090;signedartifact12419560340;tagatlas-2.20-disc-nerve. APK138867541байт,SHA2564db193b86952bbcfc936e91e08b105ac2c91812c43e9a4a2c320c68589daf6c6,120/2.20,прежнийсертификатcb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe,v2/v3. СкачанныйпакетCRC/hash/size/commit/версия/label и локальныйapksigner,все9285assets точнопроверены.
