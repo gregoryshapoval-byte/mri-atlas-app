@@ -1,5 +1,5 @@
 name: MRI Atlas 2.18 - MRIAtlas anatomical artwork
-# MRIAtlas name and flat home illustrations requested by user.
+# MRIAtlas branding; navigation regression uses the current complete shoulder catalogue.
 on:
   push:
     branches: [work/orads-simplify-1-83]
