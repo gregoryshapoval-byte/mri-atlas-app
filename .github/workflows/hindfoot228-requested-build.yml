@@ -351,3 +351,5 @@ jobs:
 # Verify and sign four explicitly requested hindfoot modules.
 
 # MRI morphology is separated from functional instability.
+
+# Recheck long clinical labels at 320px after enabling semantic text wrapping.
