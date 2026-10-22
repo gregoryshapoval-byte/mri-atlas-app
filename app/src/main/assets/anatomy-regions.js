@@ -70,6 +70,7 @@ export const regions=[
     "description": "Поясничный отдел · МРТ",
     "image": "menu-art/spine.webp",
     "items": [
+      {"title":"Диски, рецессусы и корешки","description":"Выбухание · протрузия · экструзия · компрессия · отверстия Lee","url":"disc-nerve.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/disc-nerve.svg"},
       {"title":"Центральный стеноз · Schizas","description":"A1–A4 · B · C · D · семь схем · формулировки заключения","url":"schizas.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/schizas.svg"},
       {"title":"Костный мозг","description":"Отёк · реконверсия · перелом · замещение · CSI / DWI","url":"bone-marrow.html?from=spine","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-marrow.svg"},
       {"title":"Спондилодисцит и имитаторы","description":"Инфекция · Modic I · эпидурально · после операции","url":"spinal-infection.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/spinal-infection.svg"},
