@@ -70,6 +70,7 @@ export const regions=[
     "description": "Поясничный отдел · МРТ",
     "image": "menu-art/spine.webp",
     "items": [
+      {"title":"Центральный стеноз · Schizas","description":"A1–A4 · B · C · D · семь схем · формулировки заключения","url":"schizas.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/schizas.svg"},
       {"title":"Костный мозг","description":"Отёк · реконверсия · перелом · замещение · CSI / DWI","url":"bone-marrow.html?from=spine","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-marrow.svg"},
       {"title":"Спондилодисцит и имитаторы","description":"Инфекция · Modic I · эпидурально · после операции","url":"spinal-infection.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/spinal-infection.svg"},
       {"title":"Сакрализация · Castellvi","description":"7 схем · типы Ia–IV","url":"castellvi.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/castellvi.webp"},
