@@ -1,4 +1,5 @@
 name: MRI Atlas 2.14 - Focal liver lesions
+# Long Russian captions wrap within the 320px feature grid.
 on:
   push:
     branches: [work/orads-simplify-1-83]
