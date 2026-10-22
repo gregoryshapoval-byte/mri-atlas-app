@@ -1,5 +1,5 @@
 name: MRI Atlas 2.18 - MRIAtlas anatomical artwork
-# MRIAtlas branding; navigation regression uses the current complete shoulder catalogue.
+# MRIAtlas branding; regression distinguishes clinical pages from image viewers.
 on:
   push:
     branches: [work/orads-simplify-1-83]
