@@ -18,7 +18,7 @@ for(const [width,height]of [[320,568],[393,852],[852,393],[1280,800]]){
  await page.screenshot({path:out+'/'+width+'-hub.png',fullPage:true});
  await page.locator('a[href="brain-metastases.html"]').click();await page.waitForSelector('#featureFigure svg');
  assert.equal(await page.locator('[role=tab]').count(),4);
- for(const id of ['single','multiple','blood','lepto','dural']){
+ for(const id of ['single','multiple','blood','melanoma','lepto','dural']){
   await page.locator('[data-feature="'+id+'"]').click();assert.equal(await page.locator('[data-feature][aria-pressed=true]').count(),1);assert.equal(await page.locator('#featureLegend li').count(),3);
   assert.ok((await page.locator('#featureTrap').innerText()).length>30);
   assert.equal(await page.locator('#featureFigure svg path').evaluateAll(ps=>ps.every(p=>p.getTotalLength()>0)),true);

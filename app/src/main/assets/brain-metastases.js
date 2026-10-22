@@ -1,3 +1,4 @@
+import {signalRows} from './brain-metastases-signals210.js';
 import {data} from './brain-metastases-data.js';
 import {figures} from './brain-metastases-figures.js';
 const el=id=>document.getElementById(id);
@@ -16,3 +17,5 @@ for(const b of document.querySelectorAll('button[data-field]'))b.addEventListene
 for(const text of data.checklist){const label=document.createElement('label'),input=document.createElement('input'),span=document.createElement('span');input.type='checkbox';span.textContent=text;label.append(input,span);el('checklist').append(label);}
 for(const [title,body]of data.reports){const card=document.createElement('article');card.className='card';const h=document.createElement('h3');h.textContent=title;const p=paragraph(body,'reportText'),b=document.createElement('button');b.type='button';b.className='copy';b.textContent='Копировать';b.setAttribute('aria-label','Копировать: '+title);b.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(body);el('copyFallback').hidden=true;el('fallbackLabel').hidden=true;el('copyStatus').textContent='Скопировано. Заполните поля в скобках.';}catch{el('copyFallback').value=body;el('copyFallback').hidden=false;el('fallbackLabel').hidden=false;el('copyFallback').focus();el('copyFallback').select();el('copyStatus').textContent='Выделен текст для ручного копирования.';}});card.append(h,p,b);el('reportCards').append(card);}
 
+
+for(const row of signalRows){const tr=document.createElement("tr");row.forEach((text,i)=>{const td=document.createElement(i===0?"th":"td");if(i===0)td.scope="row";else td.dataset.label=["Компонент","МР-сигнал","Проверка / ограничение"][i];td.textContent=text;tr.append(td);});el("signalRows210").append(tr);}
