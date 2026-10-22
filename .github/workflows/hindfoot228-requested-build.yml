@@ -353,3 +353,5 @@ jobs:
 # MRI morphology is separated from functional instability.
 
 # Recheck long clinical labels at 320px after enabling semantic text wrapping.
+
+# Override inherited neuro205 button overflow-wrap:normal for long Russian labels.
