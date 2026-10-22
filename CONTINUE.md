@@ -1,3 +1,11 @@
+## Подтверждённый выпуск 2.27 — Связки голеностопа — 22.10.2026
+
+Основа1033d7fa46c7c66599b9c98a8019062cdf2f14ff/2.26; кодa5b1e43c85f765adfa4400023974aeb55bbd220d, CI9e8f762a604ea99f13daad36bdbea0cc85218bda. Веткаwork/orads-simplify-1-83. Actions39826319989/job119990435497SUCCESS. Подробностиreview/ankle-2.27.md.
+
+Новый ankle-ligaments.html первым в foot:15SVG/6вкладок/3морфологическиестепени/5ловушек/6строкМРТ/7чеков/8копируемыхшаблоновсfallback. ATFL/CFL/PTFL;AITFL/IOL/мембрана/PITFL;поверхностная/глубокаядельтовидная,spring/PTT. Частичный/полныйразрыв,рубцы/отрывы/варианты;нетавтонестабильностипосигналуилиуниверсальномупорогуМРТ. ПротоколреференсESSR2016,параметры/плоскости/контрастывмодуле. Старые4328trackedassets,кромеcatalog/footer,неизменны;MRI/метки/viewer/моделисохранены. 13областей/89маршрутов/9438assets. Native127/2.27,пакет/бренд/ключпрежние.
+
+106локальныхsource/dataкоманд,SVGXML,CIsource/data,anklebrowser×4размераиунаследованныеbrowser/menusPASS. UIartifact12447656349:241файл;15схемиключевыемобильныеэкранывизуальнопросмотрены. Signedartifact12446279205/tagatlas-2.27-ankle-ligaments. APK139088098байт,SHA2565ebde23da21bbfb88aa2a51e948bf0d6491db48d5deaf1037d918f6331afab41. Сертификатcb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe,v2/v3verifiedCI. ЛокальноCRC/hash/размер/версия/коммит/labelивсе9438assetsпобайтноPASS. Сохранёнlibfile_fa6945acb97c8191ab5901bad613efca,version0,metadataappliedtrue. Независимаяврачебнаяверификация/физическийAndroidневыполнены. Следующийкоммиттолькодокументация,повторнаясборканенужна.
+
 ## Подтверждённый выпуск 2.26 — рак эндометрия и шейки матки — 22.10.2026
 
 Основа d006f8e/2.25; код155a3844cc3b13aefbd4ff317d29cf2fccdb0bd9, CI3f9a3bb08b5a2755ec06c524e91e5b4d1d0d92ca. Веткаwork/orads-simplify-1-83. Actions39823186279/job119979515805SUCCESS. Подробностиreview/uterine-2.26.md.
