@@ -331,3 +331,5 @@ jobs:
       - name: Clean runner key copy
         if: always()
         run: rm -rf signing saved-key current-cert.der
+
+# Verify and sign the owner-requested meniscus revision after source checks.
