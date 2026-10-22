@@ -312,6 +312,8 @@ export const regions=[
       {"title":"Рак простаты · PI-RADS","description":"Зоны простаты · требования к МРТ · оценка очагов","url":"prostate-cancer.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/prostate-cancer.svg"},
       {"title":"Образования придатков · O-RADS MRI","description":"Категория риска · признаки · контрастирование · заключение","url":"orads-mri.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/orads-mri.webp"},
       {"title":"Эндометриоз","description":"Сигнал · глубокие очаги · карта таза · протокол и описание","url":"endometriosis.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/endometriosis.svg"},
+      {"title":"Рак эндометрия","description":"МР-критерии · FIGO · распространение · протокол и заключение","url":"endometrial-cancer.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/endometrial-cancer.svg"},
+      {"title":"Рак шейки матки","description":"МР-критерии · FIGO · распространение · протокол и заключение","url":"cervical-cancer.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/cervical-cancer.svg"},
       {"title":"Рак прямой кишки","description":"Стадирование · MRF / EMVI · ответ на лечение · протокол GE","url":"rectal-cancer.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/rectal-cancer.webp"},
       {
         "title": "Перианальная область · мужчина",

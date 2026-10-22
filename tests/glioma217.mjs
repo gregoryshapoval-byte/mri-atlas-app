@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';import fs from 'node:fs';import{execFileSync}from'node:child_process';
 import{data}from'../app/src/main/assets/glioma-followup-data.js';import{figures}from'../app/src/main/assets/glioma-followup-figures.js';import{regions as currentRegions}from'../app/src/main/assets/anatomy-regions.js';
 // Historical fixture: only the new 2.25 route is outside its snapshot.
-const regions=currentRegions.map(r=>({...r,items:r.items.filter(i=>i.url!=='acl-postop.html')}));
+const regions=currentRegions.map(r=>({...r,items:r.items.filter(i=>i.url!=='acl-postop.html'&&!['endometrial-cancer.html','cervical-cancer.html'].includes(i.url))}));
 
 const ids=['baseline','postop','ischemia','progression','psp','necrosis','mixed','nonenhancing','antivegf','diffusion','perfusion','measurement','spread'];assert.deepEqual(data.features.map(f=>f.id),ids);assert.deepEqual(Object.keys(figures).sort(),[...ids].sort());assert.equal(new Set(Object.values(figures)).size,13);
 for(const f of data.features){assert.equal(f.legend.length,3);assert(f.good.length>100&&f.trap.length>100);assert.match(figures[f.id],/viewBox="0 0 420 300"/);assert(!/<script|<image|https?:\/\//.test(figures[f.id].replace('http://www.w3.org/2000/svg','')));for(let i=1;i<=3;i++)assert(figures[f.id].includes('>'+i+'</text>'));}
