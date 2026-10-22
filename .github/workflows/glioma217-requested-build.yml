@@ -1,5 +1,5 @@
 name: MRI Atlas 2.17 - Gliomas after treatment
-# Recheck narrow-screen button labels after manual hyphenation.
+# Validate final CE/non-CE confirmation scope and steroid conditions.
 on:
   push:
     branches: [work/orads-simplify-1-83]
