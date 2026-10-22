@@ -73,6 +73,7 @@ export const regions=[
       {"title":"Диски, рецессусы и корешки","description":"Выбухание · протрузия · экструзия · компрессия · отверстия Lee","url":"disc-nerve.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/disc-nerve.svg"},
       {"title":"Центральный стеноз · Schizas","description":"A1–A4 · B · C · D · семь схем · формулировки заключения","url":"schizas.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/schizas.svg"},
       {"title":"Костный мозг","description":"Отёк · реконверсия · перелом · замещение · CSI / DWI","url":"bone-marrow.html?from=spine","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-marrow.svg"},
+      {"title":"Сакроилиит и имитаторы","description":"BME · эрозии · backfill · OCI · механика · протокол КПС","url":"sacroiliitis.html?from=spine","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/sacroiliitis.svg"},
       {"title":"Спондилодисцит и имитаторы","description":"Инфекция · Modic I · эпидурально · после операции","url":"spinal-infection.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/spinal-infection.svg"},
       {"title":"Сакрализация · Castellvi","description":"7 схем · типы Ia–IV","url":"castellvi.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/castellvi.webp"},
       {
@@ -299,6 +300,7 @@ export const regions=[
     "image": "menu-art/pelvis.webp",
     "items": [
       {"title":"Костный мозг","description":"Отёк · реконверсия · перелом · замещение · CSI / DWI","url":"bone-marrow.html?from=pelvis","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-marrow.svg"},
+      {"title":"Сакроилиит и имитаторы","description":"BME · эрозии · backfill · OCI · механика · протокол КПС","url":"sacroiliitis.html?from=pelvis","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/sacroiliitis.svg"},
       {"title":"Рак простаты · PI-RADS","description":"Зоны простаты · требования к МРТ · оценка очагов","url":"prostate-cancer.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/prostate-cancer.svg"},
       {"title":"Образования придатков · O-RADS MRI","description":"Категория риска · признаки · контрастирование · заключение","url":"orads-mri.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/orads-mri.webp"},
       {"title":"Эндометриоз","description":"Сигнал · глубокие очаги · карта таза · протокол и описание","url":"endometriosis.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/endometriosis.svg"},
