@@ -107,6 +107,7 @@ jobs:
           node --check app/src/main/assets/spinal-infection.js
           node --check app/src/main/assets/spinal-infection-data.js
           node --check app/src/main/assets/spinal-infection-figures.js
+          python3 -c 'from pathlib import Path; import xml.etree.ElementTree as E; files=list(Path("app/src/main/assets/schizas").glob("*.svg")); assert len(files)==7; [E.parse(p) for p in files]; print("PASS seven Schizas XML schemes")'
           node tests/schizas219.mjs
           node --check app/src/main/assets/schizas.js
           node tests/spinal215.mjs
