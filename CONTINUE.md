@@ -1,4 +1,20 @@
-## Подтверждённый выпуск 2.28 — четыре модуля голеностопа — 22.10.2026
+## Подтверждённый выпуск 2.30 — брюшная полость и объединение метастазов, 22.10.2026
+
+Ветка `work/orads-simplify-1-83`. Основа c2d2667ce0fb317ed5547967b7b77f54cbb8076f/2.29; код6691dfb0f2774918b87f0c1c69ca1a373f44c527; финальный CI-коммит c9d47a3781fd8aec1344e962dde70f76609ef65f. Android130/2.30. Ниже2.29 и старше — история.
+
+Добавлены пункты4–6 исходного списка: `pancreatic-solid.html` (PDAC/Pan-NET/панкреатит/AIP/SPN/добавочная селезёнка, протоки и сосуды), `diffuse-liver.html` (стеатоз/PDFF, железо/R2*/LIC, цирроз/MRE, портальная система, печёночный отток/застой), `adrenal-masses.html` (аденома/CSI, миелолипома, кровь, феохромоцитома, подозрительная опухоль/метастазы, рост/двусторонность). Всего28 условных SVG,18 шаблонов,по5 вкладок/6 строк протокола/7 чеков. Генераторы tools/abdomen_data230.py и abdomen_figures230.py, renderer abdomen230.js/CSS. 13 областей/99 карточек.
+
+Дополнительный запрос пользователя: метастазы до/после лечения вынести и объединить. Сделана одна карточка «Метастазы головного мозга» перед первичными опухолями, общий вход `brain-metastases-module.html` и2 блока с переключением вверху прежних страниц. Старые URL работают. Первичные опухоли теперь12 тем; возрастные планы сохранены. Клинические данные/схемы/таблицы/протоколы/шаблоны метастазов не менялись. Сохранность4431 прежнего tracked asset проверена хешами; для3 HTML навигации новый abdomen230.mjs после снятия строго согласованных nav-изменений сравнивает весь прежний контент. catalog-current230.mjs нормализует только3 abdominal routes и изменения brain-меню для исторических тестов; актуальный каталог отдельно проверяется целиком.
+
+Содержание сверено22.10.2026 по первичным источникам. SAR/APA2014 только терминология сосудистого отчёта, не актуальный автоалгоритм резектабельности; ENETS2023/ICDC2011/JPS2020; EASL2024 MASLD, ESGAR/SAR2023 LIC, EASL2025 vascular; ESE/ENSAT2023 и оригинальные исследования имитаторов/CSI. Ссылки внутри модулей и review/abdomen-metastases-2.30.md. Визуально просмотрены28 SVG и ключевые мобильные экраны/таблицы/протоколы/общий вход метастазов. Независимой врачебной проверки нет.
+
+Локально122 source/data команды и SVG XML прошли. Run39839735641/job120037262040: source/data и7 browser scripts (branding218/menus142/abdomen230/metastases189/primary211/followup212/brain-age197) успешны. Новые модули и обе фазы метастазов проверены на320×568/393×852/852×393/1280×800: схемы/zoom/Escape, вкладки/клавиатура, таблицы/ловушки, копирование/fallback, чеклисты/переходы, безJS ошибок/overflow. UIartifact12451923897,307 файлов(43 новых abdominal). Первый run остановился после подписи на устаревшем ожидании brain-metastases.html внутри brain-tumors.html. Изменён только workflow: проверяется новый общий раздел, а UI повторно используется лишь после проверки идентичности app/tests/tools коммиту9220603ed408d151f39f400e517e52f1b30e1a57.
+
+Финальный run39840546936/job120040096190 — SUCCESS: https://github.com/gregoryshapoval-byte/mri-atlas-app/actions/runs/39840546936 . Signedartifact12452173375; release https://github.com/gregoryshapoval-byte/mri-atlas-app/releases/tag/atlas-2.30-abdomen-metastases .
+
+APK /workspace/scratch/cb5a7a1f983d/output230/MRIAtlas-2.30.apk;139277965 байт; SHA256848b7a3596f6dfdc129808dde8a02a85f868d652ea413caf3280fa5a3212bfc5. Прежний сертификат SHA256cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe, CIapksigner v2/v3 true. Скачанный artifact ZIP SHA256/CRC, APK CRC/hash/size/version130/2.30/package/label/CI signature report проверены; все9565assets побайтово совпали с локальными. Независимый локальный apksigner и физический Android не проверялись.
+
+APK сохранён: libfile_b30707dc9ce88191a1e3f7b2514504bb, file_00000000327881f78b79731bafef36b0, filenameMRIAtlas-2.30.apk, version0, metadata applied true. Актуальные helpers230 скопированы из установленного library0.1.64; для будущих запросов использовать свежие helpers. Последующий коммит документационный; новый APK не нужен.
 
 ## Подтверждённый выпуск 2.29 — брюшная полость, 22.10.2026
 
@@ -14,6 +30,8 @@ APKartifact12450507683; permanent release https://github.com/gregoryshapoval-byt
 
 APKсохранёнlibfile_732ae29c3560819188eb3d068d0d1e24,file_00000000f91881f6852d2558fa88edc2,filenameMRIAtlas-2.29.apk,version0,metadataappliedtrue. Helpers229внеrepo;непереиспользоватьвследующемзапросе.
 
+
+## Подтверждённый выпуск 2.28 — четыре модуля голеностопа — 22.10.2026
 
 Основаb0ea40564b596d009474d7faa4d07589ef043f06/2.27; код7c67c97260ff16982ea9b5db5ec8e59cf2acc684; финальныйCIкоммитd658891853438e93a0deb28a4e9b5ff2ac1b9626. Веткаwork/orads-simplify-1-83. Actions39831305346/job120007856133SUCCESS. Подробностиreview/hindfoot-2.28.md.
 
