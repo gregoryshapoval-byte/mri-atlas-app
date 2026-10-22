@@ -1,4 +1,5 @@
 name: MRI Atlas 2.12 - Brain metastases after treatment
+# Short transient-growth button fits the 320px feature grid.
 on:
   push:
     branches: [work/orads-simplify-1-83]
