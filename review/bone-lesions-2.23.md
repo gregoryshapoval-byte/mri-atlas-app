@@ -23,3 +23,12 @@
 ## Проверки и ограничения
 
 Локально99содержательных/синтаксическихкомандrequestedworkflow — PASS. Новыйbone223 проверяет SSRобластьприменения/интервалы,ограничения885HU/ADC,хрящ/scalloping,АБК/инфекцию/всюкость/биопсию иточнуюсохранностькаталога2.22. Старыеfixturesисключаюттолькодобавленныеbone-lesionsURL;spinecounts7→8/hip4→5. XML21/неизменностьстарыхassets — PASS. Browser/CI/подписанныйAPK ещё не подтверждены, итог будет в CONTINUE.md. Физический Android и независимый врачебный аудит не выполнены; автотест не доказывает медицинскую точность.
+
+
+## Подтверждённый выпуск
+
+Код2a254ff11aa741fa9ded84c2bf2b2747c13d0f6e. Actions39781312975/job119832993842 SUCCESS с первого прогона. Все source checks workflow; browser-bone223 на320×568/393×852/852×393/1280×800:21схема/zoom/Escape,6tabs/keyboard,4management+4signal+6scanrows,9clipboard+fallback,10origins/marrow/back/fallbackknee,безJSerrors/overflow. Предыдущие browser-sacroiliitis222/osteonecrosis221/disc220/schizas219×4,branding218×5,menus142:13областей×4/85маршрутов — PASS.
+
+UIartifact12427361180(20461102байта). Финальные снимки просмотрены:320pxпервыйэкран,393pxzoomостеохондромы/ABC/абсцессаБроди,верх/низтаблицSSR,верхпротокола,низзаключенийиfallback. Все21исходныеSVGранееосмотреныконтактнымлистом. Обрезки/переполнения не обнаружены. Независимый врачебный аудит/физический Android не выполнены.
+
+Signedartifact12426647386,tagatlas-2.23-bone-lesions. APK138971174байта,SHA256e466764089a0b5b46a94727be34320c92c1c5ebbd509aff651e34fbd9f219148,123/2.23,labelMRIAtlas,packageru.grigory.shoulderatlas.restored. apksigner в CI подтвердил v2/v3 и прежний сертификат cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe. Скачанныйпакетлокально:CRC/hash/size/commit/версия/labelи9355assetsпобайтовопроверены. Локальныйповторapksignerневыполнен:пакетSDKбылудалёнавтоматическойочисткой;скачанныйAPKимееттотжеSHA256,чтовпроверенномCIартефакте. Точнаяоснова9329assets,26новых,итог9355;изстарыхменялисьтолькокаталог/footer.
