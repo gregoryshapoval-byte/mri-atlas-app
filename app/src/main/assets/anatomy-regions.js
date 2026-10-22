@@ -275,6 +275,7 @@ export const regions=[
     "image": "menu-art/hip.webp",
     "items": [
       {"title":"Костный мозг","description":"Отёк · реконверсия · перелом · замещение · CSI / DWI","url":"bone-marrow.html?from=hip","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-marrow.svg"},
+      {"title":"Аваскулярный некроз","description":"МР-признаки · ARCO 2019 · перелом и коллапс · SIF / транзиторный отёк","url":"osteonecrosis.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/osteonecrosis.svg"},
       {
         "title": "МРТ тазобедренного сустава",
         "description": "Три плоскости · T1 и PD-SPIR · исходные метки.",
