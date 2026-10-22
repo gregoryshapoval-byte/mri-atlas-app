@@ -1,4 +1,4 @@
-name: MRI Atlas 2.10 - Endometriosis and brain metastasis signals
+name: MRI Atlas 2.10 - Endometriosis and brain metastasis signals final
 on:
   push:
     branches: [work/orads-simplify-1-83]
@@ -258,7 +258,7 @@ jobs:
       - name: Save installable APK in permanent personal release
         continue-on-error: true # APK remains available in the signed artifact if release permission is unavailable.
         run: |
-          gh release create atlas-2.10-endometriosis-metastases output/MRIAtlas-2.10.apk output/build-info.json output/signature.txt --target "$GITHUB_SHA" --prerelease --title "MRI Atlas 2.10 - Endometriosis and brain metastasis signals" --notes "Эндометриоз: 12тем/схем, протокол ESUR2025, карта таза, dPEI и5шаблонов. Метастазы: расширенный сигнал, меланома, кровь, DWI иSWI. Прежние данные сохранены. Подписано прежним ключом линии1.83–2.10. Chromium на четырёх размерах; физический Android не проверен."
+          gh release create atlas-2.10-endometriosis-metastases-final output/MRIAtlas-2.10.apk output/build-info.json output/signature.txt --target "$GITHUB_SHA" --prerelease --title "MRI Atlas 2.10 - Endometriosis and brain metastasis signals final" --notes "Эндометриоз: 12тем/схем, протокол ESUR2025, карта таза, dPEI и5шаблонов. Метастазы: расширенный сигнал, меланома, кровь, DWI иSWI. Прежние данные сохранены. Подписано прежним ключом линии1.83–2.10. Chromium на четырёх размерах; физический Android не проверен."
       - name: Clean runner key copy
         if: always()
         run: rm -rf signing saved-key current-cert.der
