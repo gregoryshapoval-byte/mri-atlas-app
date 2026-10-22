@@ -74,6 +74,7 @@ export const regions=[
       {"title":"Центральный стеноз · Schizas","description":"A1–A4 · B · C · D · семь схем · формулировки заключения","url":"schizas.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/schizas.svg"},
       {"title":"Костный мозг","description":"Отёк · реконверсия · перелом · замещение · CSI / DWI","url":"bone-marrow.html?from=spine","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-marrow.svg"},
       {"title":"Сакроилиит и имитаторы","description":"BME · эрозии · backfill · OCI · механика · протокол КПС","url":"sacroiliitis.html?from=spine","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/sacroiliitis.svg"},
+      {"title":"Очаговые образования костей","description":"Агрессивность · матрикс · типичные очаги · SSR Bone-RADS","url":"bone-lesions.html?from=spine","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-lesions.svg"},
       {"title":"Спондилодисцит и имитаторы","description":"Инфекция · Modic I · эпидурально · после операции","url":"spinal-infection.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/spinal-infection.svg"},
       {"title":"Сакрализация · Castellvi","description":"7 схем · типы Ia–IV","url":"castellvi.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/castellvi.webp"},
       {
@@ -107,6 +108,7 @@ export const regions=[
     "image": "menu-art/shoulder.webp",
     "items": [
       {"title":"Костный мозг","description":"Отёк · реконверсия · перелом · замещение · CSI / DWI","url":"bone-marrow.html?from=shoulder","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-marrow.svg"},
+      {"title":"Очаговые образования костей","description":"Агрессивность · матрикс · типичные очаги · SSR Bone-RADS","url":"bone-lesions.html?from=shoulder","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-lesions.svg"},
       {
         "title": "МРТ плечевого сустава",
         "description": "230 кадров · T1 / PD-SPIR в трёх плоскостях",
@@ -158,6 +160,7 @@ export const regions=[
     "image": "menu-art/elbow.webp",
     "items": [
       {"title":"Костный мозг","description":"Отёк · реконверсия · перелом · замещение · CSI / DWI","url":"bone-marrow.html?from=elbow","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-marrow.svg"},
+      {"title":"Очаговые образования костей","description":"Агрессивность · матрикс · типичные очаги · SSR Bone-RADS","url":"bone-lesions.html?from=elbow","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-lesions.svg"},
       {
         "title": "МРТ локтевого сустава · исходный атлас",
         "description": "321 кадр · T1 / PD-SPIR и 3D-ракурсы",
@@ -174,6 +177,7 @@ export const regions=[
     "image": "menu-art/wrist.webp",
     "items": [
       {"title":"Костный мозг","description":"Отёк · реконверсия · перелом · замещение · CSI / DWI","url":"bone-marrow.html?from=wrist","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-marrow.svg"},
+      {"title":"Очаговые образования костей","description":"Агрессивность · матрикс · типичные очаги · SSR Bone-RADS","url":"bone-lesions.html?from=wrist","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-lesions.svg"},
       {
         "title": "МРТ кисти",
         "description": "280 изображений · T1 / PD-SPIR · три плоскости",
@@ -218,6 +222,7 @@ export const regions=[
     "image": "menu-art/knee.webp",
     "items": [
       {"title":"Костный мозг","description":"Отёк · реконверсия · перелом · замещение · CSI / DWI","url":"bone-marrow.html?from=knee","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-marrow.svg"},
+      {"title":"Очаговые образования костей","description":"Агрессивность · матрикс · типичные очаги · SSR Bone-RADS","url":"bone-lesions.html?from=knee","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-lesions.svg"},
       {
         "title": "МРТ коленного сустава",
         "description": "Три плоскости · T1 и PD-SPIR · исходные метки.",
@@ -277,6 +282,7 @@ export const regions=[
     "items": [
       {"title":"Костный мозг","description":"Отёк · реконверсия · перелом · замещение · CSI / DWI","url":"bone-marrow.html?from=hip","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-marrow.svg"},
       {"title":"Аваскулярный некроз","description":"МР-признаки · ARCO 2019 · перелом и коллапс · SIF / транзиторный отёк","url":"osteonecrosis.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/osteonecrosis.svg"},
+      {"title":"Очаговые образования костей","description":"Агрессивность · матрикс · типичные очаги · SSR Bone-RADS","url":"bone-lesions.html?from=hip","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-lesions.svg"},
       {
         "title": "МРТ тазобедренного сустава",
         "description": "Три плоскости · T1 и PD-SPIR · исходные метки.",
@@ -301,6 +307,7 @@ export const regions=[
     "items": [
       {"title":"Костный мозг","description":"Отёк · реконверсия · перелом · замещение · CSI / DWI","url":"bone-marrow.html?from=pelvis","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-marrow.svg"},
       {"title":"Сакроилиит и имитаторы","description":"BME · эрозии · backfill · OCI · механика · протокол КПС","url":"sacroiliitis.html?from=pelvis","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/sacroiliitis.svg"},
+      {"title":"Очаговые образования костей","description":"Агрессивность · матрикс · типичные очаги · SSR Bone-RADS","url":"bone-lesions.html?from=pelvis","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-lesions.svg"},
       {"title":"Рак простаты · PI-RADS","description":"Зоны простаты · требования к МРТ · оценка очагов","url":"prostate-cancer.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/prostate-cancer.svg"},
       {"title":"Образования придатков · O-RADS MRI","description":"Категория риска · признаки · контрастирование · заключение","url":"orads-mri.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/orads-mri.webp"},
       {"title":"Эндометриоз","description":"Сигнал · глубокие очаги · карта таза · протокол и описание","url":"endometriosis.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/endometriosis.svg"},
@@ -365,6 +372,7 @@ export const regions=[
     "image": "menu-art/foot.webp",
     "items": [
       {"title":"Костный мозг","description":"Отёк · реконверсия · перелом · замещение · CSI / DWI","url":"bone-marrow.html?from=foot","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-marrow.svg"},
+      {"title":"Очаговые образования костей","description":"Агрессивность · матрикс · типичные очаги · SSR Bone-RADS","url":"bone-lesions.html?from=foot","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-lesions.svg"},
       {
         "title": "МРТ предплюсны и стопы",
         "description": "284 кадра · три плоскости и исходные метки",
@@ -381,6 +389,7 @@ export const regions=[
     "image": "menu-art/upper-limb.svg",
     "items": [
       {"title":"Костный мозг","description":"Отёк · реконверсия · перелом · замещение · CSI / DWI","url":"bone-marrow.html?from=upper-limb","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-marrow.svg"},
+      {"title":"Очаговые образования костей","description":"Агрессивность · матрикс · типичные очаги · SSR Bone-RADS","url":"bone-lesions.html?from=upper-limb","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-lesions.svg"},
       {
         "title": "МРТ · верхняя конечность",
         "description": "194 кадра · 6 областей · исходные анатомические метки",
@@ -397,6 +406,7 @@ export const regions=[
     "image": "menu-art/lower-limb.svg",
     "items": [
       {"title":"Костный мозг","description":"Отёк · реконверсия · перелом · замещение · CSI / DWI","url":"bone-marrow.html?from=lower-limb","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-marrow.svg"},
+      {"title":"Очаговые образования костей","description":"Агрессивность · матрикс · типичные очаги · SSR Bone-RADS","url":"bone-lesions.html?from=lower-limb","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-lesions.svg"},
       {
         "title": "МРТ · нижняя конечность",
         "description": "277 кадров · 6 областей · исходные анатомические метки",
