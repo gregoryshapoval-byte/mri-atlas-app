@@ -334,6 +334,7 @@ export const regions=[
     "description": "КТ · органы, сосуды и сегменты печени",
     "image": "home-icons/abdomen.svg",
     "items": [
+      {"title":"Очаговые образования печени","description":"Киста · гемангиома · ФНГ · аденома · ГЦР · метастазы","url":"liver-lesions.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/liver-lesions.svg"},
       {
         "title": "КТ · нормальная анатомия",
         "description": "182 среза · сегменты печени, IVa и IVb",
