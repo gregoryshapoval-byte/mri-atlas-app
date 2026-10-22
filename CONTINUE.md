@@ -1,5 +1,20 @@
 ## Подтверждённый выпуск 2.28 — четыре модуля голеностопа — 22.10.2026
 
+## Подтверждённый выпуск 2.29 — брюшная полость, 22.10.2026
+
+Рабочая ветка work/orads-simplify-1-83; код7e71351d2b4ad793b95c886227c838107d705a2a, финальныйCI-коммитfb871c0c7590a5ee9bf72af3a34bd7b5d1e7825c. VersionCode129/versionName2.29. Ниже2.28и старше — история.
+
+3модуля: желчныепротоки/MRCP (`biliary-mrcp.html`), кистыподжелудочной (`pancreatic-cysts.html`), образованияпочек/Bosniak (`renal-bosniak.html`), после liver-lesions вabdomen. 28оригинальныхусловныхсхем,18шаблонов,полныеHRS/WFKyoto2024/Bosniak2019,таблицы/ловушки/протоколы/чеклисты,5вкладок. 13областей/96маршрутов. Содержание сверено по первичным источникам,отчёт review/abdomen-2.29.md;независимойврачебнойверификациинет.
+
+Исправлены4описаниякарточекстопы2.28:объект ошибочноотображалсякак[object Object],теперьстроки;типпроверяетсятестом. Прежние4395trackedassetsкромеменю/футерапровереныхешами. Ниодинстарыйклиническиймодуль/viewer/МРТ/меткинеменялся. Генераторы tools/abdomen_data229.py,tools/abdomen_figures229.py;общийrendererabdomen229.js/CSS,внихявноеoverflow-wrap:anywhereдляfeaturebuttons.
+
+CI https://github.com/gregoryshapoval-byte/mri-atlas-app/actions/runs/39835426240, job120022349385 — success. 117source/dataкоманд+4браузерныхскрипта. Новые3модуля4размера320×568/393×852/852×393/1280×800:28схем/zoom/Escape,5вкладок/клавиатура,таблицы/ловушки,копирование6+fallback,чеклисты/меню,безJSошибок иoverflow. UIartifact12449559528:120файлов,43скриншотановыхмодулей. Визуальнопросмотрены28SVG(3контактныхлиста,3исправленияповторно)и основныестраницы.
+
+APKartifact12450507683; permanent release https://github.com/gregoryshapoval-byte/mri-atlas-app/releases/tag/atlas-2.29-abdomen . /workspace/scratch/cb5a7a1f983d/output229/MRIAtlas-2.29.apk,139217507байт,SHA256ea481ddd0015b8d6b0379d3e9bdc8e6f65bde58252abe3e6510d4f6d56e86615. CIapksigner: v2/v3 true,certSHA256cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe(прежний);labelMRIAtlas/packageпрежние. После скачиванияCRC/hash/size/version/CIsignature-reportпроверены,все9524assetsAPKпобайтовосовпалислокальными. Независимыйлокальныйapksignerне запускался. ФизическийAndroidнепроверен.
+
+APKсохранёнlibfile_732ae29c3560819188eb3d068d0d1e24,file_00000000f91881f6852d2558fa88edc2,filenameMRIAtlas-2.29.apk,version0,metadataappliedtrue. Helpers229внеrepo;непереиспользоватьвследующемзапросе.
+
+
 Основаb0ea40564b596d009474d7faa4d07589ef043f06/2.27; код7c67c97260ff16982ea9b5db5ec8e59cf2acc684; финальныйCIкоммитd658891853438e93a0deb28a4e9b5ff2ac1b9626. Веткаwork/orads-simplify-1-83. Actions39831305346/job120007856133SUCCESS. Подробностиreview/hindfoot-2.28.md.
 
 Новыеankle-tendons.html/talar-olt.html/ankle-impingement.html/heel-pain.htmlпослесвязоквfoot. 33SVG(10/8/7/8),каждыйпо5вкладок/6строкМРТ/7чеков/6шаблонов. 24шаблонавсего. HeppleI/IIA/IIB/III/IV/Vполностью,9зонRaikin,интерфейс/хрящ/киста/нестабильность;ахилл/послешва/PBsplit/SPR/PTT/FHL;7локализацийимпинджмента;фасция/стресс-перелом/подушка/ADM/энтезисы/Haglund/двебурсы. Неавтодиагнозпосигналу/кисте/шпоре/os trigonum/ADMжиринфильтрации. РеференспротоколовESSR2016иотдельноепокрытиедлякаждойзадачи. Старые4348trackedassetsкромеcatalog/footerнеизменны;MRI/метки/координаты/viewer/моделисохранены. 13областей/93маршрута/9485assets. Native128/2.28.
