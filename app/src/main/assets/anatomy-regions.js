@@ -251,6 +251,7 @@ export const regions=[
         "type": "3D-МОДЕЛЬ",
         "thumb": "menu-thumbs/ligaments.webp"
       },
+      {"title":"ПКС после пластики","description":"Трансплантат · каналы · фиксаторы · осложнения","url":"acl-postop.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/acl-postop.svg"},
       {
         "title": "Сумки и завороты",
         "description": "Сумки, завороты и окружающие структуры",
