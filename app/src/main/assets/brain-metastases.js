@@ -1,4 +1,5 @@
 import {signalRows} from './brain-metastases-signals210.js';
+import {primaryRows} from './brain-metastases-primary211.js';
 import {data} from './brain-metastases-data.js';
 import {figures} from './brain-metastases-figures.js';
 const el=id=>document.getElementById(id);
@@ -19,3 +20,5 @@ for(const [title,body]of data.reports){const card=document.createElement('articl
 
 
 for(const row of signalRows){const tr=document.createElement("tr");row.forEach((text,i)=>{const td=document.createElement(i===0?"th":"td");if(i===0)td.scope="row";else td.dataset.label=["Компонент","МР-сигнал","Проверка / ограничение"][i];td.textContent=text;tr.append(td);});el("signalRows210").append(tr);}
+
+for(const row of primaryRows){const tr=document.createElement('tr');tr.dataset.primary=row.id;for(const[key,label]of [['cancer','Первичная опухоль'],['pattern','МР-особенность'],['trap','Ловушка / что проверить']]){const cell=document.createElement(key==='cancer'?'th':'td');if(key==='cancer')cell.scope='row';else cell.dataset.label=label;cell.append(document.createTextNode(row[key]));if(key==='trap'){const p=document.createElement('p');p.className='hint';for(const[name,url]of row.sources){if(p.childNodes.length)p.append(document.createTextNode(' · '));const a=document.createElement('a');a.textContent=name;a.href=url;a.target='_blank';a.rel='noopener';p.append(a);}cell.append(p);}tr.append(cell);}el('primaryRows211').append(tr);}
