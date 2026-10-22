@@ -4,7 +4,7 @@ import {execFileSync} from 'node:child_process';
 import {data} from '../app/src/main/assets/meniscus-data.js';
 import {regions as currentRegions} from '../app/src/main/assets/anatomy-regions.js';
 // Historical fixture: only the new 2.25 route is outside its snapshot.
-const regions=currentRegions.map(r=>({...r,items:r.items.filter(i=>i.url!=='acl-postop.html'&&!['endometrial-cancer.html','cervical-cancer.html'].includes(i.url))}));
+const regions=currentRegions.map(r=>({...r,items:r.items.filter(i=>i.url!=='acl-postop.html'&&!['endometrial-cancer.html','cervical-cancer.html','ankle-ligaments.html'].includes(i.url))}));
 
 const A='app/src/main/assets/';
 for(const group of ['features','roots','mimics','postop'])for(const f of data[group]){

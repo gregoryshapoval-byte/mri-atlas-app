@@ -1,0 +1,3 @@
+.featureChoices{grid-template-columns:repeat(3,minmax(0,1fr))}.featureChoices button:last-child{grid-column:auto}.related{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:18px}header a{max-width:60%}@media(max-width:600px){.featureChoices{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+@media(max-width:600px){.featureChoices button:last-child{grid-column:auto}}

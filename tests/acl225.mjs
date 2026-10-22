@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';import fs from 'node:fs';import{execFileSync}from'node:child_process';import{createHash}from'node:crypto';import{data}from'../app/src/main/assets/acl-postop-data.js';import{regions as rawRegions}from'../app/src/main/assets/anatomy-regions.js';
-const regions=rawRegions.map(r=>({...r,items:r.items.filter(i=>!['endometrial-cancer.html','cervical-cancer.html'].includes(i.url))}));
+const regions=rawRegions.map(r=>({...r,items:r.items.filter(i=>!['endometrial-cancer.html','cervical-cancer.html','ankle-ligaments.html'].includes(i.url))}));
 const A='app/src/main/assets/',base='98fbdc4038e243d7b83e9edd3c1628c2c4e6fde2';
 const old=execFileSync('git',['show',base+':'+A+'anatomy-regions.js'],{encoding:'utf8'});const prev=JSON.parse(old.slice(old.indexOf('[')).trim().replace(/;$/,''));
 assert.deepEqual(regions.map(r=>({...r,items:r.items.filter(i=>i.url!=='acl-postop.html')})),prev);const knee=regions.find(r=>r.id==='knee');assert.equal(knee.items.filter(i=>i.url==='acl-postop.html').length,1);assert.equal(knee.items.findIndex(i=>i.url==='acl-postop.html'),knee.items.findIndex(i=>i.url==='ligaments.html')+1);assert.equal(regions.flatMap(r=>r.items).length,86);

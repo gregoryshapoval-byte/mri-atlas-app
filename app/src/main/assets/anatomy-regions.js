@@ -374,6 +374,7 @@ export const regions=[
     "description": "МРТ и анатомические метки",
     "image": "menu-art/foot.webp",
     "items": [
+      {"title":"Связки голеностопа","description":"ATFL / CFL / PTFL · синдесмоз · дельтовидная · повреждения","url":"ankle-ligaments.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/ankle-ligaments.svg"},
       {"title":"Костный мозг","description":"Отёк · реконверсия · перелом · замещение · CSI / DWI","url":"bone-marrow.html?from=foot","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-marrow.svg"},
       {"title":"Очаговые образования костей","description":"Агрессивность · матрикс · типичные очаги · SSR Bone-RADS","url":"bone-lesions.html?from=foot","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-lesions.svg"},
       {
