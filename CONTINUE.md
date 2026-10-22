@@ -1,3 +1,13 @@
+## Подтверждённый выпуск 2.28 — четыре модуля голеностопа — 22.10.2026
+
+Основаb0ea40564b596d009474d7faa4d07589ef043f06/2.27; код7c67c97260ff16982ea9b5db5ec8e59cf2acc684; финальныйCIкоммитd658891853438e93a0deb28a4e9b5ff2ac1b9626. Веткаwork/orads-simplify-1-83. Actions39831305346/job120007856133SUCCESS. Подробностиreview/hindfoot-2.28.md.
+
+Новыеankle-tendons.html/talar-olt.html/ankle-impingement.html/heel-pain.htmlпослесвязоквfoot. 33SVG(10/8/7/8),каждыйпо5вкладок/6строкМРТ/7чеков/6шаблонов. 24шаблонавсего. HeppleI/IIA/IIB/III/IV/Vполностью,9зонRaikin,интерфейс/хрящ/киста/нестабильность;ахилл/послешва/PBsplit/SPR/PTT/FHL;7локализацийимпинджмента;фасция/стресс-перелом/подушка/ADM/энтезисы/Haglund/двебурсы. Неавтодиагнозпосигналу/кисте/шпоре/os trigonum/ADMжиринфильтрации. РеференспротоколовESSR2016иотдельноепокрытиедлякаждойзадачи. Старые4348trackedassetsкромеcatalog/footerнеизменны;MRI/метки/координаты/viewer/моделисохранены. 13областей/93маршрута/9485assets. Native128/2.28.
+
+112локальныхsource/dataкоманд,SVGXML33,CIsource/data,4новыхbrowser×4,ankle227/branding218/menus142PASS. Первые2CI39830063370/39830610606остановленыиз-за4pxoverflowдлиннойкнопкина320px;232550dисправляетунаследованноеneuro205.css overflow-wrap:normalлокальнымновымправиломanywhere. СтарыйCSSнеизменён,overflowнепрячется,тестыусиленыдиагностикой. ФинальныеUIпросмотрены,artifact12448697664/98файлов(53новых). Старыеостальныеbrowserнеповторялисьбезнеобходимости;hash/sourceсохранностьпроверены.
+
+Signedartifact12448119575/tagatlas-2.28-hindfoot. APK139157234байта,SHA2560471c84bafb6242872da0c2242ce15a16ecaf716f14fb2694c65a6e59c5d5739. Прежнийсертификатcb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe,v2/v3verifiedCI. ЛокальноCRC/hash/size/version/commit/labelивсе9485assetsпобайтноPASS. Сохранёнlibfile_479fd922fe548191b679ae90011fd298,version0,metadataappliedtrue. Независимаяврачебнаяверификация/физическийAndroidневыполнены. Следующийкоммиттолькодокументация;повторнаясборканенужна.
+
 ## Подтверждённый выпуск 2.27 — Связки голеностопа — 22.10.2026
 
 Основа1033d7fa46c7c66599b9c98a8019062cdf2f14ff/2.26; кодa5b1e43c85f765adfa4400023974aeb55bbd220d, CI9e8f762a604ea99f13daad36bdbea0cc85218bda. Веткаwork/orads-simplify-1-83. Actions39826319989/job119990435497SUCCESS. Подробностиreview/ankle-2.27.md.
