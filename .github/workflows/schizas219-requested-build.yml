@@ -1,5 +1,5 @@
 name: MRI Atlas 2.19 - Schizas lumbar stenosis
-# MRIAtlas branding; regression distinguishes clinical pages from image viewers.
+# Schizas: decode loaded scheme images; empty dialog image is intentionally deferred.
 on:
   push:
     branches: [work/orads-simplify-1-83]
