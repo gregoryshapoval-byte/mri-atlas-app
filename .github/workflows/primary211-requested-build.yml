@@ -1,4 +1,5 @@
 name: MRI Atlas 2.11 - Brain metastases by primary cancer
+# Browser test waits for attached rows before opening the intentionally collapsed block.
 on:
   push:
     branches: [work/orads-simplify-1-83]
