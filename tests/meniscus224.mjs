@@ -2,9 +2,9 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {execFileSync} from 'node:child_process';
 import {data} from '../app/src/main/assets/meniscus-data.js';
-import {regions as currentRegions} from '../app/src/main/assets/anatomy-regions.js';
+import {regions as currentRegions} from './catalog-current230.mjs';
 // Historical fixture: only the new 2.25 route is outside its snapshot.
-const regions=currentRegions.map(r=>({...r,items:r.items.filter(i=>i.url!=='acl-postop.html'&&!['endometrial-cancer.html','cervical-cancer.html','ankle-ligaments.html','ankle-tendons.html','talar-olt.html','ankle-impingement.html','heel-pain.html','biliary-mrcp.html','pancreatic-cysts.html','renal-bosniak.html'].includes(i.url))}));
+const regions=currentRegions.map(r=>({...r,items:r.items.filter(i=>i.url!=='acl-postop.html'&&!['endometrial-cancer.html','cervical-cancer.html','ankle-ligaments.html','ankle-tendons.html','talar-olt.html','ankle-impingement.html','heel-pain.html','biliary-mrcp.html','pancreatic-cysts.html','renal-bosniak.html','pancreatic-solid.html','diffuse-liver.html','adrenal-masses.html'].includes(i.url))}));
 
 const A='app/src/main/assets/';
 for(const group of ['features','roots','mimics','postop'])for(const f of data[group]){
@@ -17,7 +17,7 @@ const previous=execFileSync('git',['show',base+':'+A+'anatomy-regions.js'],{enco
 const old=JSON.parse(previous.slice(previous.indexOf('[')).trim().replace(/;$/,''));
 for(const r of old)for(const item of r.items)if(item.url==='knee.html')Object.assign(item,{description:'Разрывы, корни, экструзия, после операции и 3D',type:'КЛИНИЧЕСКИЙ МОДУЛЬ'});
 assert.deepEqual(regions,old,'only the existing meniscus catalogue item changes');
-const exceptions=new Set([A+'anatomy-regions.js',A+'index.html',A+'knee.html']);
+const exceptions=new Set([A+'anatomy-regions.js',A+'index.html',A+'brain-tumors.html',A+'brain-metastases.html',A+'brain-metastases-followup.html',A+'knee.html']);
 const raw=execFileSync('git',['ls-tree','-r','--name-only',base,'app/src/main/assets'],{encoding:'utf8'});
 let preserved=0;for(const file of raw.trim().split('\n'))if(!exceptions.has(file)){
  const expected=execFileSync('git',['rev-parse',base+':'+file],{encoding:'utf8'}).trim();

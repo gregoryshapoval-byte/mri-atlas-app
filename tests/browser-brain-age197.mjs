@@ -17,9 +17,9 @@ for(const [width,height]of [[320,568],[393,852],[852,393],[1280,800]]){
  for(const [age,order]of Object.entries(expected)){
   await page.locator('[data-age="'+age+'"]').click();assert.equal(await page.locator('[data-age][aria-pressed=true]').count(),1);
   assert.deepEqual(await page.locator('#primaryCards .moduleLink').evaluateAll(xs=>xs.map(x=>x.getAttribute('href'))),order);
-  assert.equal(await page.locator('a.moduleLink').count(),13);assert.equal(await page.locator('a.moduleLink').evaluateAll(xs=>new Set(xs.map(x=>x.getAttribute('href'))).size),13);
+  assert.equal(await page.locator('a.moduleLink').count(),12);assert.equal(await page.locator('a.moduleLink').evaluateAll(xs=>new Set(xs.map(x=>x.getAttribute('href'))).size),12);
   assert.equal(await page.locator('#other').isVisible(),age!=='all');assert.equal(await page.locator('#ageLimits').isVisible(),age==='child'||age==='aya');
-  assert.deepEqual(await page.locator('#secondary .moduleLink').evaluateAll(xs=>xs.map(x=>x.getAttribute('href'))),['brain-metastases.html']);
+  assert.equal(await page.locator('#secondary').count(),0);assert.equal(await page.locator('a[href="brain-metastases-module.html"]').count(),1);
   await page.locator('#frequency').evaluate(d=>d.open=true);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false);
   await page.screenshot({path:out+'/'+width+'-'+age+'.png',fullPage:true});
  }

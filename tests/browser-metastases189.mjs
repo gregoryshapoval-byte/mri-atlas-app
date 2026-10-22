@@ -12,9 +12,9 @@ try{
 for(const [width,height]of [[320,568],[393,852],[852,393],[1280,800]]){
  const page=await browser.newPage({viewport:{width,height}});
  page.on('pageerror',e=>errors.push(String(e)));page.on('response',r=>{if(r.status()>=400)errors.push(r.status()+' '+r.url());});page.on('request',r=>{if(!r.url().startsWith(base))external.push(r.url());});
- await page.goto(base+'/region.html?area=brain');await page.getByRole('link',{name:/Опухоли головного мозга/}).click();
+ await page.goto(base+'/region.html?area=brain');await page.locator('a[href="brain-metastases-module.html"]').click();
  assert.equal(await page.locator('a[href="brain-metastases.html"]').count(),1);
- assert.equal(await page.locator('a.moduleLink').count(),13);
+ assert.equal(await page.locator('[data-phase]').count(),2);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false);
  await page.screenshot({path:out+'/'+width+'-hub.png',fullPage:true});
  await page.locator('a[href="brain-metastases.html"]').click();await page.waitForSelector('#featureFigure svg');
  assert.equal(await page.locator('[role=tab]').count(),4);
@@ -47,7 +47,7 @@ for(const [width,height]of [[320,568],[393,852],[852,393],[1280,800]]){
  await page.locator('#reportCards .copy').first().click();assert.equal(await page.locator('#copyFallback').isVisible(),true);assert.match(await page.locator('#copyFallback').inputValue(),/выявлены/);
  await page.locator('[data-tab=features]').focus();await page.keyboard.press('ArrowRight');assert.equal(await page.locator('[data-tab=differences]').getAttribute('aria-selected'),'true');
  await page.keyboard.press('End');assert.equal(await page.locator('[data-tab=report]').getAttribute('aria-selected'),'true');
- await page.getByRole('link',{name:'‹ Опухоли мозга',exact:true}).click();await page.getByRole('link',{name:'‹ Головной мозг',exact:true}).click();await page.waitForSelector('#heading');assert.match(await page.locator('#heading').innerText(),/Головной мозг/);await page.close();
+ await page.getByRole('link',{name:'‹ Метастазы головного мозга',exact:true}).click();await page.getByRole('link',{name:'‹ Головной мозг',exact:true}).click();await page.waitForSelector('#heading');assert.match(await page.locator('#heading').innerText(),/Головной мозг/);await page.close();
 }
 assert.deepEqual(errors,[]);assert.deepEqual(external,[]);console.log('PASS metastases189 browser: region/hub/metastases, five diagrams, both field protocols and four panels x4 viewports, zoom, keyboard, clipboard/fallback, checklist, layout and offline.');
 }finally{await browser.close();server.close();}
