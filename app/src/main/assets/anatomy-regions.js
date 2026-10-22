@@ -69,6 +69,7 @@ export const regions=[
     "description": "Поясничный отдел · МРТ",
     "image": "menu-art/spine.webp",
     "items": [
+      {"title":"Костный мозг","description":"Отёк · реконверсия · перелом · замещение · CSI / DWI","url":"bone-marrow.html?from=spine","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-marrow.svg"},
       {"title":"Сакрализация · Castellvi","description":"7 схем · типы Ia–IV","url":"castellvi.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/castellvi.webp"},
       {
         "title": "МРТ поясничного отдела",
@@ -100,6 +101,7 @@ export const regions=[
     "description": "Сустав, манжета и плечевое сплетение",
     "image": "menu-art/shoulder.webp",
     "items": [
+      {"title":"Костный мозг","description":"Отёк · реконверсия · перелом · замещение · CSI / DWI","url":"bone-marrow.html?from=shoulder","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-marrow.svg"},
       {
         "title": "МРТ плечевого сустава",
         "description": "230 кадров · T1 / PD-SPIR в трёх плоскостях",
@@ -150,6 +152,7 @@ export const regions=[
     "description": "МРТ и исходные ракурсы",
     "image": "menu-art/elbow.webp",
     "items": [
+      {"title":"Костный мозг","description":"Отёк · реконверсия · перелом · замещение · CSI / DWI","url":"bone-marrow.html?from=elbow","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-marrow.svg"},
       {
         "title": "МРТ локтевого сустава · исходный атлас",
         "description": "321 кадр · T1 / PD-SPIR и 3D-ракурсы",
@@ -165,6 +168,7 @@ export const regions=[
     "description": "МРТ кисти и лучезапястного сустава",
     "image": "menu-art/wrist.webp",
     "items": [
+      {"title":"Костный мозг","description":"Отёк · реконверсия · перелом · замещение · CSI / DWI","url":"bone-marrow.html?from=wrist","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-marrow.svg"},
       {
         "title": "МРТ кисти",
         "description": "280 изображений · T1 / PD-SPIR · три плоскости",
@@ -208,6 +212,7 @@ export const regions=[
     "description": "МРТ, анатомия и патология",
     "image": "menu-art/knee.webp",
     "items": [
+      {"title":"Костный мозг","description":"Отёк · реконверсия · перелом · замещение · CSI / DWI","url":"bone-marrow.html?from=knee","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-marrow.svg"},
       {
         "title": "МРТ коленного сустава",
         "description": "Три плоскости · T1 и PD-SPIR · исходные метки.",
@@ -265,6 +270,7 @@ export const regions=[
     "description": "МРТ и анатомические ракурсы",
     "image": "menu-art/hip.webp",
     "items": [
+      {"title":"Костный мозг","description":"Отёк · реконверсия · перелом · замещение · CSI / DWI","url":"bone-marrow.html?from=hip","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-marrow.svg"},
       {
         "title": "МРТ тазобедренного сустава",
         "description": "Три плоскости · T1 и PD-SPIR · исходные метки.",
@@ -287,6 +293,7 @@ export const regions=[
     "description": "Мужской и женский таз",
     "image": "menu-art/pelvis.webp",
     "items": [
+      {"title":"Костный мозг","description":"Отёк · реконверсия · перелом · замещение · CSI / DWI","url":"bone-marrow.html?from=pelvis","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-marrow.svg"},
       {"title":"Рак простаты · PI-RADS","description":"Зоны простаты · требования к МРТ · оценка очагов","url":"prostate-cancer.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/prostate-cancer.svg"},
       {"title":"Образования придатков · O-RADS MRI","description":"Категория риска · признаки · контрастирование · заключение","url":"orads-mri.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/orads-mri.webp"},
       {"title":"Эндометриоз","description":"Сигнал · глубокие очаги · карта таза · протокол и описание","url":"endometriosis.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/endometriosis.svg"},
@@ -349,6 +356,7 @@ export const regions=[
     "description": "МРТ и анатомические метки",
     "image": "menu-art/foot.webp",
     "items": [
+      {"title":"Костный мозг","description":"Отёк · реконверсия · перелом · замещение · CSI / DWI","url":"bone-marrow.html?from=foot","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-marrow.svg"},
       {
         "title": "МРТ предплюсны и стопы",
         "description": "284 кадра · три плоскости и исходные метки",
@@ -364,6 +372,7 @@ export const regions=[
     "description": "Плечевой пояс, плечо, предплечье и кисть",
     "image": "menu-art/upper-limb.svg",
     "items": [
+      {"title":"Костный мозг","description":"Отёк · реконверсия · перелом · замещение · CSI / DWI","url":"bone-marrow.html?from=upper-limb","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-marrow.svg"},
       {
         "title": "МРТ · верхняя конечность",
         "description": "194 кадра · 6 областей · исходные анатомические метки",
@@ -379,6 +388,7 @@ export const regions=[
     "description": "От ягодичной области до стопы",
     "image": "menu-art/lower-limb.svg",
     "items": [
+      {"title":"Костный мозг","description":"Отёк · реконверсия · перелом · замещение · CSI / DWI","url":"bone-marrow.html?from=lower-limb","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/bone-marrow.svg"},
       {
         "title": "МРТ · нижняя конечность",
         "description": "277 кадров · 6 областей · исходные анатомические метки",
