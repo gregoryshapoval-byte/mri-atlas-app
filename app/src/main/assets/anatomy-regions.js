@@ -13,6 +13,7 @@ export const regions=[
       {"title":"Сосудистые мальформации","description":"Кавернома · телеангиэктазия · ВАР / DVA · АВМ · фистулы","url":"vascular-malformations.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/vascular-malformations.svg"},
       {"title":"Венозный тромбоз, аневризмы и САК","description":"Вены и синусы · артериальные аневризмы · субарахноидальная кровь","url":"venous-aneurysm-sah.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/venous-aneurysm-sah.svg"},
       {"title":"Опухоли головного мозга","description":"Возраст и частота · 13 тем · схемы · протоколы МРТ","url":"brain-tumors.html","type":"КЛИНИЧЕСКИЕ МОДУЛИ","thumb":"menu-thumbs/brain-tumors.svg"},
+      {"title":"Метастазы · после лечения","description":"Рецидив / лучевые изменения · DWI / перфузия · динамика","url":"brain-metastases-followup.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/brain-metastases-followup.svg"},
       {"title":"Демиелинизация","description":"РС · NMOSD · MOGAD · ОДЭМ · тумефактивный очаг","url":"demyelination.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/demyelination.svg"},
       {"title":"Инфекции","description":"Абсцесс · эмпиема · энцефалит · ПМЛ · иммунный статус","url":"brain-infections.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/brain-infections.svg"},
       {"title":"Эпилептогенные изменения","description":"Гиппокамп · ФКД · мальформации · HARNESS-MRI","url":"epilepsy.html","type":"КЛИНИЧЕСКИЙ МОДУЛЬ","thumb":"menu-thumbs/epilepsy.svg"},
