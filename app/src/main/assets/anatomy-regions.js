@@ -658,10 +658,10 @@ export const regions=[
         "thumb": "menu-thumbs/female-pelvis-mri.webp"
       },
       {
-        "title": "Матка · миомы FIGO",
-        "description": "Миомы типов 0–8 и гибридный тип 2–5",
+        "title": "Миомы матки · МР-справочник",
+        "description": "FIGO со схемами, дегенерации, атипичные узлы и заключения",
         "url": "fibroids.html",
-        "type": "3D-МОДЕЛЬ",
+        "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
         "thumb": "menu-thumbs/fibroids.webp"
       }
     ]
