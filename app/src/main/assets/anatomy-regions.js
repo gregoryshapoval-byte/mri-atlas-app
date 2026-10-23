@@ -609,6 +609,13 @@ export const regions=[
         "thumb": "menu-thumbs/endometriosis.svg"
       },
       {
+        "title": "Пролапс тазовых органов у женщин",
+        "description": "Три компартмента · PCL / H / M · ректоцеле · МР-дефекография",
+        "url": "pelvic-prolapse.html",
+        "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+        "thumb": "menu-thumbs/pelvic-prolapse.svg"
+      },
+      {
         "title": "Рак эндометрия",
         "description": "МР-критерии · FIGO · распространение · протокол и заключение",
         "url": "endometrial-cancer.html",
