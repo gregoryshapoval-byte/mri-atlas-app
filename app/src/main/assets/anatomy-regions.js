@@ -510,6 +510,13 @@ export const regions=[
     "image": "menu-art/hip.webp",
     "items": [
       {
+        "title": "ФАИ и суставная губа",
+        "description": "Cam / pincer · измерения · губа · хрящ · протокол и заключения",
+        "url": "hip-impingement.html",
+        "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+        "thumb": "menu-thumbs/hip-impingement.svg"
+      },
+      {
         "title": "Костный мозг",
         "description": "Отёк · реконверсия · перелом · замещение · CSI / DWI",
         "url": "bone-marrow.html?from=hip",

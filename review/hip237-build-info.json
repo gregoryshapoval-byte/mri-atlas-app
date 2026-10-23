@@ -1,0 +1,33 @@
+{
+  "version": "2.37",
+  "code": 137,
+  "signed": false,
+  "base_sha256": "e2b675dbf24a21b8ea4bc49103e57da3ab2eed8c5f09237a49b8cd716b91ef0f",
+  "sha256": "b303db1eb67a4e57271b4fa5498bc619b7da1464e74ee69cbf9d3f52f0c2ad48",
+  "old_assets": 9589,
+  "assets": 9591,
+  "changed_assets": [
+    "anatomy-regions.js",
+    "index.html",
+    "region.html"
+  ],
+  "new_assets": [
+    "hip-impingement.html",
+    "menu-thumbs/hip-impingement.svg"
+  ],
+  "unchanged_payload_verified": true,
+  "source_base": "dd4e1d531b7852b8c175de495089d048ed54a1cc",
+  "status": "unsigned; signing blocked by automatic approval review",
+  "full_sdk_build": false,
+  "physical_android_tested": false,
+  "independent_medical_validation": false,
+  "ui_viewports": [
+    "393x852",
+    "320x568",
+    "852x393",
+    "1280x800"
+  ],
+  "ui_pass": true,
+  "zipalign4_pass": true,
+  "crc_pass": true
+}
