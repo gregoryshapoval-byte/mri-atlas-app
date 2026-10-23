@@ -731,6 +731,21 @@ export const regions=[
     ]
   },
   {
+    "id": "breast",
+    "name": "Молочные железы",
+    "description": "МРТ · BI-RADS · импланты",
+    "image": "home-icons/breast.svg",
+    "items": [
+      {
+        "title": "МРТ молочных желёз · BI-RADS v2025",
+        "description": "Узлы и NME · кинетика · категории0–6 · импланты · протокол и заключение",
+        "url": "breast-mri.html",
+        "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+        "thumb": "home-icons/breast.svg"
+      }
+    ]
+  },
+  {
     "id": "foot",
     "name": "Предплюсна · стопа",
     "description": "МРТ и анатомические метки",

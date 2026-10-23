@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';import fs from 'node:fs';import {execFileSync}from'node:child_process';
+import {regions}from'../app/src/main/assets/anatomy-regions.js';import{homeIconIds,homeIcon}from'../app/src/main/assets/home-icons.js';import{data}from'../app/src/main/assets/breast-mri-data.js';
+const base='cad6f623159d00e87c87ef46963d1c892a230546',old=execFileSync('git',['show',base+':app/src/main/assets/anatomy-regions.js'],{encoding:'utf8'}),before=JSON.parse(old.slice(old.indexOf('['),old.lastIndexOf(']')+1));
+assert.deepEqual(regions.filter(r=>r.id!=='breast'),before);assert.equal(regions.length,14);assert.equal(homeIconIds.length,14);assert.equal(new Set(homeIconIds).size,14);
+for(const r of regions){assert(homeIconIds.includes(r.id));assert(fs.existsSync('app/src/main/assets/'+homeIcon(r.id)));for(const i of r.items){assert(fs.existsSync('app/src/main/assets/'+i.url.split('?')[0]));assert(fs.existsSync('app/src/main/assets/'+i.thumb));}}
+const r=regions.find(r=>r.id==='breast');assert.equal(r.items.length,1);assert.equal(r.items[0].url,'breast-mri.html');assert.equal(data.patterns.length,14);assert.equal(data.implants.length,4);assert.equal(data.categories.length,10);
+assert.deepEqual(data.categories.map(x=>x[0]),['0','1','2','3','4','4A','4B','4C','5','6']);assert.equal(new Set([...data.patterns,...data.implants].map(c=>c.id)).size,18);
+for(const c of [...data.patterns,...data.implants])for(const k of ['label','look','key','trap','report'])assert(c[k]?.length>0,c.id+':'+k);
+const html=fs.readFileSync('app/src/main/assets/breast-mri.html','utf8');assert(html.includes('всех трёх условий'));assert(html.includes('Не увеличивает общий размах поражения более чем на 2 см'));assert(html.includes('не меняет клиническую тактику'));assert(html.includes('5 → 4 → 0 → 6 → 3 → 2/1'));
+console.log('PASS: all13 prior regions unchanged;14 valid home icons; allroutes/thumbs;18complete patterns;10categories;ACF all3 criteria.');
