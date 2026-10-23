@@ -1,0 +1,2964 @@
+{
+  "date": "23.10.2026",
+  "scope": "Navigation, catalog, local links, real-image assets, source/review presence; not full medical or per-label anatomical validation",
+  "regions": 14,
+  "cards": 116,
+  "unique_entry_html_files": 80,
+  "kind_counts": {
+    "mri": 17,
+    "clinical": 48,
+    "model": 16,
+    "reference": 33,
+    "ct": 2
+  },
+  "all_top_level_html_checked": 100,
+  "missing_local_html_references": [],
+  "frame_checks": [
+    {
+      "route": "brain.html?set=multiplanar",
+      "kind": "mri",
+      "series": 3,
+      "frames": 353,
+      "all_frame_files_and_sha256_pass": true
+    },
+    {
+      "route": "brain.html?set=contrast",
+      "kind": "mri",
+      "series": 6,
+      "frames": 144,
+      "all_frame_files_and_sha256_pass": true
+    },
+    {
+      "route": "spine-mri.html",
+      "kind": "mri",
+      "series": 5,
+      "frames": 743,
+      "all_frame_files_and_sha256_pass": true
+    },
+    {
+      "route": "face-neck-mri.html",
+      "kind": "mri",
+      "series": 3,
+      "frames": 418,
+      "all_frame_files_and_sha256_pass": true
+    },
+    {
+      "route": "shoulder-mri.html",
+      "kind": "mri",
+      "series": 6,
+      "frames": 230,
+      "all_frame_files_and_sha256_pass": true
+    },
+    {
+      "route": "brachial-plexus-mri.html",
+      "kind": "mri",
+      "series": 3,
+      "frames": 160,
+      "all_frame_files_and_sha256_pass": true
+    },
+    {
+      "route": "elbow-mri.html",
+      "kind": "mri",
+      "series": 6,
+      "frames": 260,
+      "all_frame_files_and_sha256_pass": true
+    },
+    {
+      "route": "hand-mri.html",
+      "kind": "mri",
+      "series": 6,
+      "frames": 280,
+      "all_frame_files_and_sha256_pass": true
+    },
+    {
+      "route": "wrist-mri.html",
+      "kind": "mri",
+      "series": 6,
+      "frames": 148,
+      "all_frame_files_and_sha256_pass": true
+    },
+    {
+      "route": "knee-mri.html",
+      "kind": "mri",
+      "series": 6,
+      "frames": 228,
+      "all_frame_files_and_sha256_pass": true
+    },
+    {
+      "route": "hip-mri.html",
+      "kind": "mri",
+      "series": 6,
+      "frames": 252,
+      "all_frame_files_and_sha256_pass": true
+    },
+    {
+      "route": "perianal-mri.html",
+      "kind": "mri",
+      "series": 3,
+      "frames": 88,
+      "all_frame_files_and_sha256_pass": true
+    },
+    {
+      "route": "male-pelvis-mri.html",
+      "kind": "mri",
+      "series": 3,
+      "frames": 220,
+      "all_frame_files_and_sha256_pass": true
+    },
+    {
+      "route": "female-pelvis-mri.html",
+      "kind": "mri",
+      "series": 5,
+      "frames": 116,
+      "all_frame_files_and_sha256_pass": true
+    },
+    {
+      "route": "abdomen-ct.html",
+      "kind": "ct",
+      "series": 1,
+      "frames": 182,
+      "all_frame_files_and_sha256_pass": true
+    },
+    {
+      "route": "abdomen-pelvis-ct.html",
+      "kind": "ct",
+      "series": 3,
+      "frames": 303,
+      "all_frame_files_and_sha256_pass": true
+    },
+    {
+      "route": "foot-mri.html",
+      "kind": "mri",
+      "series": 6,
+      "frames": 284,
+      "all_frame_files_and_sha256_pass": true
+    },
+    {
+      "route": "upper-limb-mri.html",
+      "kind": "mri",
+      "series": 6,
+      "frames": 194,
+      "all_frame_files_and_sha256_pass": true
+    },
+    {
+      "route": "lower-limb-mri.html",
+      "kind": "mri",
+      "series": 6,
+      "frames": 277,
+      "all_frame_files_and_sha256_pass": true
+    }
+  ],
+  "shared_entry_files": {
+    "brain.html": [
+      "brain",
+      "brain",
+      "brain",
+      "brain"
+    ],
+    "sacroiliitis.html": [
+      "spine",
+      "pelvis"
+    ],
+    "bone-marrow.html": [
+      "spine",
+      "shoulder",
+      "elbow",
+      "wrist",
+      "knee",
+      "hip",
+      "pelvis",
+      "foot",
+      "upper-limb",
+      "lower-limb"
+    ],
+    "bone-lesions.html": [
+      "spine",
+      "shoulder",
+      "elbow",
+      "wrist",
+      "knee",
+      "hip",
+      "pelvis",
+      "foot",
+      "upper-limb",
+      "lower-limb"
+    ],
+    "stress-fractures.html": [
+      "spine",
+      "knee",
+      "hip",
+      "foot",
+      "lower-limb"
+    ],
+    "tunnel-neuropathies.html": [
+      "shoulder",
+      "elbow",
+      "wrist",
+      "knee",
+      "hip",
+      "foot",
+      "upper-limb",
+      "lower-limb"
+    ],
+    "wrist.html": [
+      "wrist",
+      "wrist",
+      "wrist"
+    ],
+    "hip-mri.html": [
+      "hip",
+      "hip"
+    ]
+  },
+  "entries": [
+    {
+      "region": "brain",
+      "region_name": "Головной мозг",
+      "title": "МРТ · три плоскости",
+      "description": "353 кадра · AX / COR / SAG",
+      "url": "brain.html?set=multiplanar",
+      "type": "МРТ",
+      "thumb": "menu-thumbs/brain-set-multiplanar.webp",
+      "contentKind": "mri",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5520564/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6251069/",
+        "https://pubmed.ncbi.nlm.nih.gov/10350290/",
+        "https://pubmed.ncbi.nlm.nih.gov/10789798/",
+        "https://pubmed.ncbi.nlm.nih.gov/2252083/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false,
+      "real_image_frames": 353,
+      "real_image_series": 3
+    },
+    {
+      "region": "brain",
+      "region_name": "Головной мозг",
+      "title": "МРТ · разные контрасты",
+      "description": "T1, T2, FLAIR, DWI · 144 кадра",
+      "url": "brain.html?set=contrast",
+      "type": "МРТ",
+      "thumb": "menu-thumbs/brain-set-contrast.webp",
+      "contentKind": "mri",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5520564/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6251069/",
+        "https://pubmed.ncbi.nlm.nih.gov/10350290/",
+        "https://pubmed.ncbi.nlm.nih.gov/10789798/",
+        "https://pubmed.ncbi.nlm.nih.gov/2252083/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false,
+      "real_image_frames": 144,
+      "real_image_series": 6
+    },
+    {
+      "region": "brain",
+      "region_name": "Головной мозг",
+      "title": "Болезнь мелких сосудов",
+      "description": "Fazekas · лакуны · ПВП · микрокровоизлияния · ЦАА",
+      "url": "small-vessel.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/small-vessel.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://doi.org/10.1177/17474930251365861",
+        "https://doi.org/10.2214/ajr.149.2.351",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9389452/",
+        "https://pubmed.ncbi.nlm.nih.gov/23867200/",
+        "https://pubmed.ncbi.nlm.nih.gov/37236211/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "svd-2.01.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "brain",
+      "region_name": "Головной мозг",
+      "title": "Атрофия и когнитивные нарушения",
+      "description": "MTA · GCA · Koedam · возраст · паттерны · протокол МРТ",
+      "url": "atrophy.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/atrophy.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://doi.org/10.1002/alz.13859",
+        "https://doi.org/10.1007/s00330-011-2205-4",
+        "https://doi.org/10.1016/j.nicl.2019.101936",
+        "https://doi.org/10.1093/brain/awr179",
+        "https://doi.org/10.1093/brain/aww005",
+        "https://doi.org/10.1111/joim.12358",
+        "https://doi.org/10.1136/jnnp.55.10.967",
+        "https://pubmed.ncbi.nlm.nih.gov/28592453/",
+        "https://pubmed.ncbi.nlm.nih.gov/40409878/",
+        "https://pubmed.ncbi.nlm.nih.gov/8864706/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "brain",
+      "region_name": "Головной мозг",
+      "title": "Гидроцефалия и ликворные нарушения",
+      "description": "Обструкция · DESH · ex vacuo · измерения · SIH / IIH",
+      "url": "csf-disorders.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/csf-disorders.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://doi.org/10.1017/cjn.2026.10663",
+        "https://doi.org/10.1136/jnnp-2017-317440",
+        "https://doi.org/10.1136/jnnp-2023-331166",
+        "https://doi.org/10.1186/s10194-018-0919-2",
+        "https://doi.org/10.2176/nmc.st.2020-0292",
+        "https://doi.org/10.3174/ajnr.A9017"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "csf-2.03.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "brain",
+      "region_name": "Головной мозг",
+      "title": "Кисты и кистозные изменения",
+      "description": "Арахноидальная · пинеальная · эпидермоид · состав · отличия",
+      "url": "brain-cysts.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/brain-cysts.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://doi.org/10.1007/BF00301017",
+        "https://doi.org/10.1007/BF00626102",
+        "https://doi.org/10.1016/j.ejrad.2004.06.018",
+        "https://doi.org/10.1016/j.radcr.2026.07.026",
+        "https://doi.org/10.1055/s-0044-1801281",
+        "https://doi.org/10.1177/2050313X261431037",
+        "https://doi.org/10.3171/2012.10.JNS12548",
+        "https://doi.org/10.3174/ajnr.A7659",
+        "https://doi.org/10.3174/ajnr.A8376",
+        "https://doi.org/10.4329/wjr.v10.i7.65",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7661083/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7965768/",
+        "https://pubmed.ncbi.nlm.nih.gov/15709127/",
+        "https://pubmed.ncbi.nlm.nih.gov/2120999/",
+        "https://pubmed.ncbi.nlm.nih.gov/30898748/",
+        "https://pubmed.ncbi.nlm.nih.gov/33072233/",
+        "https://pubmed.ncbi.nlm.nih.gov/33531962/",
+        "https://pubmed.ncbi.nlm.nih.gov/34039752/",
+        "https://www.nature.com/articles/s41598-022-06167-x"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "cysts-2.04.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "brain",
+      "region_name": "Головной мозг",
+      "title": "Инсульты",
+      "description": "Ишемия · давность · кровь · сосуды · протокол МРТ",
+      "url": "stroke.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/stroke.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://doi.org/10.1056/NEJMoa1804355",
+        "https://doi.org/10.1161/STR.0000000000000407",
+        "https://doi.org/10.1161/STR.0000000000000513",
+        "https://doi.org/10.3174/ajnr.A3690",
+        "https://pubmed.ncbi.nlm.nih.gov/10548658/",
+        "https://pubmed.ncbi.nlm.nih.gov/11003275/",
+        "https://pubmed.ncbi.nlm.nih.gov/11290470/",
+        "https://pubmed.ncbi.nlm.nih.gov/1432137/",
+        "https://pubmed.ncbi.nlm.nih.gov/26330447/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "stroke-1.99.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "brain",
+      "region_name": "Головной мозг",
+      "title": "Сосудистые мальформации",
+      "description": "Кавернома · телеангиэктазия · ВАР / DVA · АВМ · фистулы",
+      "url": "vascular-malformations.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/vascular-malformations.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://cavernoma.org.uk/wp-content/uploads/2025/05/Guidelines-for-the-Diagnosis-and-Clinical-Management-of-CCM-2025.pdf",
+        "https://doi.org/10.1161/STR.0000000000000134",
+        "https://doi.org/10.3174/ajnr.A2893",
+        "https://doi.org/10.3174/ajnr.A8072",
+        "https://pubmed.ncbi.nlm.nih.gov/18988912/",
+        "https://pubmed.ncbi.nlm.nih.gov/29545245/",
+        "https://pubmed.ncbi.nlm.nih.gov/31898766/",
+        "https://pubmed.ncbi.nlm.nih.gov/3760956/",
+        "https://pubmed.ncbi.nlm.nih.gov/7815143/",
+        "https://pubmed.ncbi.nlm.nih.gov/8113854/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "vascular-2.00.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "brain",
+      "region_name": "Головной мозг",
+      "title": "Венозный тромбоз, аневризмы и САК",
+      "description": "Вены и синусы · артериальные аневризмы · субарахноидальная кровь",
+      "url": "venous-aneurysm-sah.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/venous-aneurysm-sah.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://journals.sagepub.com/doi/full/10.1177/23969873221099736",
+        "https://link.springer.com/article/10.1186/s42466-024-00320-9",
+        "https://professional.heart.org/en/science-news/2023-guideline-for-the-management-of-patients-with-aneurysmal-subarachnoid-hemorrhage",
+        "https://pubmed.ncbi.nlm.nih.gov/10669228/",
+        "https://pubmed.ncbi.nlm.nih.gov/19095790/",
+        "https://pubmed.ncbi.nlm.nih.gov/20190211/",
+        "https://pubmed.ncbi.nlm.nih.gov/20231664/",
+        "https://pubmed.ncbi.nlm.nih.gov/20798370/",
+        "https://pubmed.ncbi.nlm.nih.gov/21087941/",
+        "https://pubmed.ncbi.nlm.nih.gov/25103608/",
+        "https://pubmed.ncbi.nlm.nih.gov/38284265/",
+        "https://pubmed.ncbi.nlm.nih.gov/3982634/",
+        "https://www.asnr.org/wp-content/uploads/2017/11/2016-AJNR-ASNR-guideline-VWI.pdf",
+        "https://www.bmj.com/content/343/bmj.d4277"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "brain",
+      "region_name": "Головной мозг",
+      "title": "Метастазы головного мозга",
+      "description": "До лечения · сигналы / оболочки · после лечения · рецидив / радионекроз",
+      "url": "brain-metastases-module.html",
+      "type": "КЛИНИЧЕСКИЙ РАЗДЕЛ",
+      "thumb": "menu-thumbs/brain-metastases-followup.svg",
+      "contentKind": "clinical",
+      "sources_found": [],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "abdomen-metastases-2.30.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "brain",
+      "region_name": "Головной мозг",
+      "title": "Первичные опухоли головного мозга",
+      "description": "Возраст и частота · 12 тем · схемы · протоколы МРТ",
+      "url": "brain-tumors.html",
+      "type": "КЛИНИЧЕСКИЕ МОДУЛИ",
+      "thumb": "menu-thumbs/brain-tumors.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://doi.org/10.1093/neuonc/noaf168",
+        "https://doi.org/10.1093/neuonc/noaf194"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "age-1.97.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "brain",
+      "region_name": "Головной мозг",
+      "title": "Глиомы · после лечения",
+      "description": "Псевдопрогрессия · радионекроз · псевдоответ · RANO 2.0",
+      "url": "glioma-followup.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/glioma-followup.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://doi.org/10.1038/s41571-020-00447-z",
+        "https://doi.org/10.1093/neuonc/noaa141",
+        "https://doi.org/10.1093/neuonc/noag153",
+        "https://doi.org/10.1200/JCO.23.01059",
+        "https://doi.org/10.3174/ajnr.A8396",
+        "https://doi.org/10.3389/fonc.2022.810263",
+        "https://doi.org/10.3389/fradi.2023.1267615",
+        "https://escholarship.org/content/qt1zv2z6bg/qt1zv2z6bg_noSplash_d0fc00be6b14f60a6be7b527b032efd4.pdf"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "brain",
+      "region_name": "Головной мозг",
+      "title": "Демиелинизация",
+      "description": "РС · NMOSD · MOGAD · ОДЭМ · тумефактивный очаг",
+      "url": "demyelination.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/demyelination.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://doi.org/10.1016/S1474-4422(22)00431-8",
+        "https://doi.org/10.1177/1352458513484547",
+        "https://doi.org/10.1212/WNL.0000000000001729",
+        "https://link.springer.com/article/10.1007/s00415-023-11634-0",
+        "https://pubmed.ncbi.nlm.nih.gov/30115676/",
+        "https://pubmed.ncbi.nlm.nih.gov/34011576/",
+        "https://pubmed.ncbi.nlm.nih.gov/40975101/",
+        "https://www.neurology.org/doi/10.1212/WNL.0000000000209321"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "brain",
+      "region_name": "Головной мозг",
+      "title": "Инфекции",
+      "description": "Абсцесс · эмпиема · энцефалит · ПМЛ · иммунный статус",
+      "url": "brain-infections.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/brain-infections.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://clinicalinfo.hiv.gov/en/guidelines/hiv-clinical-guidelines-adult-and-adolescent-opportunistic-infections/toxoplasmosis",
+        "https://pubmed.ncbi.nlm.nih.gov/12490479/",
+        "https://pubmed.ncbi.nlm.nih.gov/15205140/",
+        "https://pubmed.ncbi.nlm.nih.gov/17698537/",
+        "https://pubmed.ncbi.nlm.nih.gov/23568998/",
+        "https://pubmed.ncbi.nlm.nih.gov/37648062/",
+        "https://pubmed.ncbi.nlm.nih.gov/8183465/",
+        "https://www.idsociety.org/practice-guideline/encephalitis/",
+        "https://www.idsociety.org/practice-guideline/neurocysticercosis/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "epilepsy-2.06.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "brain",
+      "region_name": "Головной мозг",
+      "title": "Эпилептогенные изменения",
+      "description": "Гиппокамп · ФКД · мальформации · HARNESS-MRI",
+      "url": "epilepsy.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/epilepsy.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://doi.org/10.1111/epi.13505",
+        "https://onlinelibrary.wiley.com/doi/10.1111/epi.17301",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9575409/",
+        "https://pubmed.ncbi.nlm.nih.gov/15037472/",
+        "https://pubmed.ncbi.nlm.nih.gov/20384762/",
+        "https://pubmed.ncbi.nlm.nih.gov/2748227/",
+        "https://pubmed.ncbi.nlm.nih.gov/3257118/",
+        "https://pubmed.ncbi.nlm.nih.gov/32779696/",
+        "https://pubmed.ncbi.nlm.nih.gov/33939185/",
+        "https://pubmed.ncbi.nlm.nih.gov/40283540/",
+        "https://pubmed.ncbi.nlm.nih.gov/41894169/",
+        "https://www.ilae.org/files/ilaeGuideline/RecommendationsForUseOf-StructuralMRI-Bernasconi_et_al-2019-Epilepsia.pdf"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "epilepsy-2.06.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "brain",
+      "region_name": "Головной мозг",
+      "title": "Черепно-мозговая травма",
+      "description": "Ушибы · аксональное повреждение · кровь · вторичные осложнения",
+      "url": "brain-trauma.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/brain-trauma.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://doi.org/10.1111/j.1365-2559.1989.tb03040.x",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5220564/",
+        "https://pubmed.ncbi.nlm.nih.gov/1414825/",
+        "https://pubmed.ncbi.nlm.nih.gov/20190211/",
+        "https://pubmed.ncbi.nlm.nih.gov/31608359/",
+        "https://pubmed.ncbi.nlm.nih.gov/32228304/",
+        "https://pubmed.ncbi.nlm.nih.gov/3257117/",
+        "https://pubmed.ncbi.nlm.nih.gov/33586017/",
+        "https://pubmed.ncbi.nlm.nih.gov/33958108/",
+        "https://pubmed.ncbi.nlm.nih.gov/4034983/",
+        "https://www.east.org/education-resources/practice-management-guidelines/details/blunt-cerebrovascular-injury-evaluation-and-management-of",
+        "https://www.facs.org/media/vgfgjpfk/best-practices-guidelines-traumatic-brain-injury.pdf",
+        "https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2022.872664/full",
+        "https://www.health.mil/Reference-Center/Publications/2024/02/20/Neuroimaging-Following-Mild-TBI-in-the-NonDeployed-Setting-Clinical-Recommendation",
+        "https://www.kjronline.org/DOIx.php?id=10.3348/kjr.2001.2.4.183"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "trauma-2.07.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "brain",
+      "region_name": "Головной мозг",
+      "title": "Токсические и гипоксические поражения",
+      "description": "Гипоксия · токсические воздействия · метаболические имитаторы",
+      "url": "toxic-hypoxic.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/toxic-hypoxic.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/post-cardiac-arrest-care",
+        "https://onlinelibrary.wiley.com/doi/full/10.1002/brb3.364",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6757017/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7963995/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8134211/",
+        "https://pubmed.ncbi.nlm.nih.gov/10445435/",
+        "https://pubmed.ncbi.nlm.nih.gov/12063238/",
+        "https://pubmed.ncbi.nlm.nih.gov/16424374/",
+        "https://pubmed.ncbi.nlm.nih.gov/17698535/",
+        "https://pubmed.ncbi.nlm.nih.gov/18945789/",
+        "https://pubmed.ncbi.nlm.nih.gov/21087942/",
+        "https://pubmed.ncbi.nlm.nih.gov/21997578/",
+        "https://pubmed.ncbi.nlm.nih.gov/26921573/",
+        "https://pubmed.ncbi.nlm.nih.gov/30679224/",
+        "https://pubmed.ncbi.nlm.nih.gov/36949360/",
+        "https://pubmed.ncbi.nlm.nih.gov/7630246/",
+        "https://pubmed.ncbi.nlm.nih.gov/8448765/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "toxic-hypoxic-2.08.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "brain",
+      "region_name": "Головной мозг",
+      "title": "Артерии · 3D",
+      "description": "Вращаемая модель · цветные сегменты ВСА C1–C7",
+      "url": "cerebral-arteries.html",
+      "type": "3D-МОДЕЛЬ",
+      "thumb": "menu-thumbs/cerebral-arteries.webp",
+      "contentKind": "model",
+      "sources_found": [
+        "https://doi.org/10.1097/00006123-199603000-00001'}",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3773035/'}",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8073207/'}"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "brain",
+      "region_name": "Головной мозг",
+      "title": "Артерии · исходные ракурсы",
+      "description": "5 изображений реконструкций · исходная анатомическая разметка",
+      "url": "brain.html?set=vascular&series=arteries3d",
+      "type": "3D-РАКУРСЫ",
+      "thumb": "menu-thumbs/brain-set-vascular-series-arteries3d.webp",
+      "contentKind": "model",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5520564/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6251069/",
+        "https://pubmed.ncbi.nlm.nih.gov/10350290/",
+        "https://pubmed.ncbi.nlm.nih.gov/10789798/",
+        "https://pubmed.ncbi.nlm.nih.gov/2252083/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "brain",
+      "region_name": "Головной мозг",
+      "title": "Вены и синусы · 3D",
+      "description": "Вены и венозные синусы · 3 ракурса",
+      "url": "brain.html?set=vascular&series=veins3d",
+      "type": "3D-РАКУРСЫ",
+      "thumb": "menu-thumbs/brain-set-vascular-series-veins3d.webp",
+      "contentKind": "model",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5520564/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6251069/",
+        "https://pubmed.ncbi.nlm.nih.gov/10350290/",
+        "https://pubmed.ncbi.nlm.nih.gov/10789798/",
+        "https://pubmed.ncbi.nlm.nih.gov/2252083/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "brain",
+      "region_name": "Головной мозг",
+      "title": "Анатомия мозга · 3D",
+      "description": "18 готовых ракурсов · исходные подписи",
+      "url": "brain-3d.html?set=vascular",
+      "type": "3D-РАКУРСЫ",
+      "thumb": "menu-thumbs/brain-3d.webp",
+      "contentKind": "model",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5520564/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6251069/",
+        "https://pubmed.ncbi.nlm.nih.gov/10350290/",
+        "https://pubmed.ncbi.nlm.nih.gov/10789798/",
+        "https://pubmed.ncbi.nlm.nih.gov/2252083/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "spine",
+      "region_name": "Позвоночник",
+      "title": "МРТ поясничного отдела",
+      "description": "T1 и T2 · исходные серии и мультипланарные реконструкции.",
+      "url": "spine-mri.html",
+      "type": "МРТ",
+      "thumb": "menu-thumbs/spine-mri.webp",
+      "contentKind": "mri",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5520564/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6251069/",
+        "https://pubmed.ncbi.nlm.nih.gov/10350290/",
+        "https://pubmed.ncbi.nlm.nih.gov/10789798/",
+        "https://pubmed.ncbi.nlm.nih.gov/2252083/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false,
+      "real_image_frames": 743,
+      "real_image_series": 5
+    },
+    {
+      "region": "spine",
+      "region_name": "Позвоночник",
+      "title": "Диски, рецессусы и корешки",
+      "description": "Выбухание · протрузия · экструзия · компрессия · отверстия Lee",
+      "url": "disc-nerve.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/disc-nerve.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://doi.org/10.1016/j.spinee.2014.04.022",
+        "https://doi.org/10.1148/radiol.2302021289",
+        "https://doi.org/10.1186/s13244-020-00952-w",
+        "https://doi.org/10.21037/jss.2017.06.08",
+        "https://doi.org/10.2214/AJR.09.2772"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "disc-2.20.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "spine",
+      "region_name": "Позвоночник",
+      "title": "Центральный стеноз · Schizas",
+      "description": "A1–A4 · B · C · D · семь схем · формулировки заключения",
+      "url": "schizas.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/schizas.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://doi.org/10.1097/BRS.0b013e3181d359bd",
+        "https://doi.org/10.1371/journal.pone.0233633",
+        "https://profschizas.com/resources/qualitative_grading.pdf"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "spine",
+      "region_name": "Позвоночник",
+      "title": "Сакроилиит и имитаторы",
+      "description": "BME · эрозии · backfill · OCI · механика · протокол КПС",
+      "url": "sacroiliitis.html?from=spine",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/sacroiliitis.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://doi.org/10.1002/art.40475",
+        "https://doi.org/10.1093/rheumatology/keaa175",
+        "https://doi.org/10.1136/annrheumdis-2015-208642",
+        "https://doi.org/10.1136/annrheumdis-2019-215589",
+        "https://doi.org/10.1136/ard-2024-225882",
+        "https://pubmed.ncbi.nlm.nih.gov/2255946/",
+        "https://pubmed.ncbi.nlm.nih.gov/26496552/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "sacroiliitis-2.22.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "spine",
+      "region_name": "Позвоночник",
+      "title": "Спондилодисцит и имитаторы",
+      "description": "Инфекция · Modic I · эпидурально · после операции",
+      "url": "spinal-infection.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/spinal-infection.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://acsearch.acr.org/docs/3148734/Narrative/",
+        "https://doi.org/10.1007/s13244-015-0435-8",
+        "https://doi.org/10.1016/j.bas.2024.104178",
+        "https://doi.org/10.1053/j.sult.2018.09.003",
+        "https://doi.org/10.1093/cid/civ482",
+        "https://doi.org/10.1177/21925682261454361",
+        "https://doi.org/10.1186/s13244-021-01103-5",
+        "https://doi.org/10.1259/bjr.20150152",
+        "https://doi.org/10.3174/ajnr.A3948",
+        "https://doi.org/10.3390/jcm9030826"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "spine",
+      "region_name": "Позвоночник",
+      "title": "Сакрализация · Castellvi",
+      "description": "7 схем · типы Ia–IV",
+      "url": "castellvi.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/castellvi.webp",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://doi.org/10.1097/00007632-198407000-00014",
+        "https://doi.org/10.3174/ajnr.A2036"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "spine",
+      "region_name": "Позвоночник",
+      "title": "Костный мозг",
+      "description": "Отёк · реконверсия · перелом · замещение · CSI / DWI",
+      "url": "bone-marrow.html?from=spine",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/bone-marrow.svg",
+      "contentKind": "reference",
+      "sources_found": [
+        "https://academic.oup.com/bjr/article/97/1156/828/7602148",
+        "https://doi.org/10.1007/s00256-021-03807-7",
+        "https://doi.org/10.1007/s00256-022-04022-8",
+        "https://doi.org/10.1007/s00330-025-12307-4",
+        "https://doi.org/10.1007/s11604-021-01224-3",
+        "https://doi.org/10.1148/radiol.242371",
+        "https://doi.org/10.1259/bjr.20220063",
+        "https://doi.org/10.4103/0971-3026.137049",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3177109/",
+        "https://pubmed.ncbi.nlm.nih.gov/30247978/",
+        "https://www.nature.com/articles/s41416-024-02868-4"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "spine",
+      "region_name": "Позвоночник",
+      "title": "Очаговые образования костей",
+      "description": "Агрессивность · матрикс · типичные очаги · SSR Bone-RADS",
+      "url": "bone-lesions.html?from=spine",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/bone-lesions.svg",
+      "contentKind": "reference",
+      "sources_found": [
+        "https://doi.org/10.1007/s00256-022-04022-8",
+        "https://doi.org/10.1007/s00330-025-12307-4",
+        "https://doi.org/10.1016/j.annonc.2021.08.1995",
+        "https://doi.org/10.1038/s41416-024-02868-4",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10661611/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9929425/",
+        "https://pubmed.ncbi.nlm.nih.gov/17340164/",
+        "https://pubmed.ncbi.nlm.nih.gov/20392983/",
+        "https://pubmed.ncbi.nlm.nih.gov/27101076/",
+        "https://pubmed.ncbi.nlm.nih.gov/32248448/",
+        "https://pubmed.ncbi.nlm.nih.gov/40409893/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "bone-lesions-2.23.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "spine",
+      "region_name": "Позвоночник",
+      "title": "Стрессовые и недостаточностные переломы",
+      "description": "Крестец · тазовое кольцо · компрессионные переломы",
+      "url": "stress-fractures.html?from=spine",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "module231/stress-fractures.svg",
+      "contentKind": "reference",
+      "sources_found": [],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "face-neck",
+      "region_name": "Лицо и шея",
+      "title": "МРТ лица и шеи",
+      "description": "418 срезов · три плоскости · группы и поиск структур.",
+      "url": "face-neck-mri.html",
+      "type": "МРТ",
+      "thumb": "menu-thumbs/face-neck-mri.webp",
+      "contentKind": "mri",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5520564/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6251069/",
+        "https://pubmed.ncbi.nlm.nih.gov/10350290/",
+        "https://pubmed.ncbi.nlm.nih.gov/10789798/",
+        "https://pubmed.ncbi.nlm.nih.gov/2252083/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false,
+      "real_image_frames": 418,
+      "real_image_series": 3
+    },
+    {
+      "region": "shoulder",
+      "region_name": "Плечо",
+      "title": "МРТ плечевого сустава",
+      "description": "230 кадров · T1 / PD-SPIR в трёх плоскостях",
+      "url": "shoulder-mri.html",
+      "type": "МРТ",
+      "thumb": "menu-thumbs/shoulder-mri.webp",
+      "contentKind": "mri",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5520564/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6251069/",
+        "https://pubmed.ncbi.nlm.nih.gov/10350290/",
+        "https://pubmed.ncbi.nlm.nih.gov/10789798/",
+        "https://pubmed.ncbi.nlm.nih.gov/2252083/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false,
+      "real_image_frames": 230,
+      "real_image_series": 6
+    },
+    {
+      "region": "shoulder",
+      "region_name": "Плечо",
+      "title": "МРТ · плечевое сплетение",
+      "description": "160 кадров · три плоскости · исходные анатомические метки",
+      "url": "brachial-plexus-mri.html",
+      "type": "МРТ",
+      "thumb": "menu-thumbs/brachial-plexus-mri.webp",
+      "contentKind": "mri",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5520564/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6251069/",
+        "https://pubmed.ncbi.nlm.nih.gov/10350290/",
+        "https://pubmed.ncbi.nlm.nih.gov/10789798/",
+        "https://pubmed.ncbi.nlm.nih.gov/2252083/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false,
+      "real_image_frames": 160,
+      "real_image_series": 3
+    },
+    {
+      "region": "shoulder",
+      "region_name": "Плечо",
+      "title": "Вращательная манжета",
+      "description": "Все сухожилия · разрывы · Ellman / Patte · мышцы и заключения",
+      "url": "cuff.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/cuff.webp",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://acsearch.acr.org/docs/3101482/narrative/",
+        "https://doi.org/10.55095/achot2023/031",
+        "https://pubmed.ncbi.nlm.nih.gov/10580942/",
+        "https://pubmed.ncbi.nlm.nih.gov/10633896/",
+        "https://pubmed.ncbi.nlm.nih.gov/16762697/",
+        "https://pubmed.ncbi.nlm.nih.gov/2182260/",
+        "https://pubmed.ncbi.nlm.nih.gov/2323151/",
+        "https://pubmed.ncbi.nlm.nih.gov/25055277/",
+        "https://pubmed.ncbi.nlm.nih.gov/30271779/",
+        "https://pubmed.ncbi.nlm.nih.gov/32197762/",
+        "https://pubmed.ncbi.nlm.nih.gov/34968654/",
+        "https://pubmed.ncbi.nlm.nih.gov/7785568/",
+        "https://pubmed.ncbi.nlm.nih.gov/8020238/",
+        "https://pubmed.ncbi.nlm.nih.gov/9525755/",
+        "https://www.essr.org/content-essr/uploads/2016/10/ESSR-MRI-Protocols-Shoulder.pdf"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "cuff-2.36.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "shoulder",
+      "region_name": "Плечо",
+      "title": "Суставная губа · повреждения",
+      "description": "Варианты губы · Bankart/SLAP · HAGL/GAGL · киста",
+      "url": "shoulder-labrum.html",
+      "type": "3D-МОДЕЛЬ",
+      "thumb": "menu-thumbs/shoulder-labrum.webp",
+      "contentKind": "model",
+      "sources_found": [
+        "https://doi.org/10.1007/s00256-023-04420-6'}",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10491707/'}",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10623653/'}",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11068713/'}",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11068713/'}",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11887871/'}",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12047549/'}",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3548665/'}",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4188290/'}",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4886453/'}",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4965366/'}",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5073387/'}",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5310186/'}",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6110058/'}",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8930820/'}",
+        "https://pubmed.ncbi.nlm.nih.gov/12107572/'}",
+        "https://pubmed.ncbi.nlm.nih.gov/12672841/'}",
+        "https://pubmed.ncbi.nlm.nih.gov/12883757/'}",
+        "https://pubmed.ncbi.nlm.nih.gov/15346113/'}",
+        "https://pubmed.ncbi.nlm.nih.gov/16047149/'}",
+        "https://pubmed.ncbi.nlm.nih.gov/18716101/'}",
+        "https://pubmed.ncbi.nlm.nih.gov/23255647/'}",
+        "https://pubmed.ncbi.nlm.nih.gov/23426764/'}",
+        "https://pubmed.ncbi.nlm.nih.gov/23715887/'}",
+        "https://pubmed.ncbi.nlm.nih.gov/27502624/'}",
+        "https://pubmed.ncbi.nlm.nih.gov/39439307/'}",
+        "https://pubmed.ncbi.nlm.nih.gov/39439307/'}",
+        "https://pubmed.ncbi.nlm.nih.gov/8086014/'}",
+        "https://radiologyassistant.nl/musculoskeletal/shoulder/instability'}"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "shoulder",
+      "region_name": "Плечо",
+      "title": "Хилл—Сакс и обратный",
+      "description": "Импрессия головки · передний и задний вывих · МРТ 1,5 Т",
+      "url": "shoulder-hill-sachs.html",
+      "type": "3D-МОДЕЛЬ",
+      "thumb": "menu-thumbs/shoulder-hill-sachs.webp",
+      "contentKind": "model",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11068713/'}",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12126034/'}",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC1705542/'}",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3548665/'}",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4188290/'}",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4965366/'}",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5590004/'}",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8930820/'}",
+        "https://pubmed.ncbi.nlm.nih.gov/8115607/'}"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "shoulder",
+      "region_name": "Плечо",
+      "title": "Сумки плеча",
+      "description": "Сумки, завороты и влагалище бицепса",
+      "url": "shoulder.html",
+      "type": "3D-МОДЕЛЬ",
+      "thumb": "menu-thumbs/shoulder.webp",
+      "contentKind": "model",
+      "sources_found": [
+        "https://clinicalimagingscience.org/imaging-of-the-bursae/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7509696/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9005683/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "shoulder",
+      "region_name": "Плечо",
+      "title": "Костный мозг",
+      "description": "Отёк · реконверсия · перелом · замещение · CSI / DWI",
+      "url": "bone-marrow.html?from=shoulder",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/bone-marrow.svg",
+      "contentKind": "reference",
+      "sources_found": [
+        "https://academic.oup.com/bjr/article/97/1156/828/7602148",
+        "https://doi.org/10.1007/s00256-021-03807-7",
+        "https://doi.org/10.1007/s00256-022-04022-8",
+        "https://doi.org/10.1007/s00330-025-12307-4",
+        "https://doi.org/10.1007/s11604-021-01224-3",
+        "https://doi.org/10.1148/radiol.242371",
+        "https://doi.org/10.1259/bjr.20220063",
+        "https://doi.org/10.4103/0971-3026.137049",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3177109/",
+        "https://pubmed.ncbi.nlm.nih.gov/30247978/",
+        "https://www.nature.com/articles/s41416-024-02868-4"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "shoulder",
+      "region_name": "Плечо",
+      "title": "Очаговые образования костей",
+      "description": "Агрессивность · матрикс · типичные очаги · SSR Bone-RADS",
+      "url": "bone-lesions.html?from=shoulder",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/bone-lesions.svg",
+      "contentKind": "reference",
+      "sources_found": [
+        "https://doi.org/10.1007/s00256-022-04022-8",
+        "https://doi.org/10.1007/s00330-025-12307-4",
+        "https://doi.org/10.1016/j.annonc.2021.08.1995",
+        "https://doi.org/10.1038/s41416-024-02868-4",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10661611/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9929425/",
+        "https://pubmed.ncbi.nlm.nih.gov/17340164/",
+        "https://pubmed.ncbi.nlm.nih.gov/20392983/",
+        "https://pubmed.ncbi.nlm.nih.gov/27101076/",
+        "https://pubmed.ncbi.nlm.nih.gov/32248448/",
+        "https://pubmed.ncbi.nlm.nih.gov/40409893/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "bone-lesions-2.23.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "shoulder",
+      "region_name": "Плечо",
+      "title": "Туннельные невропатии",
+      "description": "13 локализаций · нервы · карта денервации · причины компрессии",
+      "url": "tunnel-neuropathies.html?from=shoulder",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "module231/tunnel-neuropathies.svg",
+      "contentKind": "reference",
+      "sources_found": [],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "elbow",
+      "region_name": "Локтевой сустав",
+      "title": "МРТ локтевого сустава · исходный атлас",
+      "description": "321 кадр · T1 / PD-SPIR и 3D-ракурсы",
+      "url": "elbow-mri.html",
+      "type": "МРТ",
+      "thumb": "menu-thumbs/elbow-mri.webp",
+      "contentKind": "mri",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5520564/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6251069/",
+        "https://pubmed.ncbi.nlm.nih.gov/10350290/",
+        "https://pubmed.ncbi.nlm.nih.gov/10789798/",
+        "https://pubmed.ncbi.nlm.nih.gov/2252083/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false,
+      "real_image_frames": 260,
+      "real_image_series": 6
+    },
+    {
+      "region": "elbow",
+      "region_name": "Локтевой сустав",
+      "title": "Костный мозг",
+      "description": "Отёк · реконверсия · перелом · замещение · CSI / DWI",
+      "url": "bone-marrow.html?from=elbow",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/bone-marrow.svg",
+      "contentKind": "reference",
+      "sources_found": [
+        "https://academic.oup.com/bjr/article/97/1156/828/7602148",
+        "https://doi.org/10.1007/s00256-021-03807-7",
+        "https://doi.org/10.1007/s00256-022-04022-8",
+        "https://doi.org/10.1007/s00330-025-12307-4",
+        "https://doi.org/10.1007/s11604-021-01224-3",
+        "https://doi.org/10.1148/radiol.242371",
+        "https://doi.org/10.1259/bjr.20220063",
+        "https://doi.org/10.4103/0971-3026.137049",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3177109/",
+        "https://pubmed.ncbi.nlm.nih.gov/30247978/",
+        "https://www.nature.com/articles/s41416-024-02868-4"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "elbow",
+      "region_name": "Локтевой сустав",
+      "title": "Очаговые образования костей",
+      "description": "Агрессивность · матрикс · типичные очаги · SSR Bone-RADS",
+      "url": "bone-lesions.html?from=elbow",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/bone-lesions.svg",
+      "contentKind": "reference",
+      "sources_found": [
+        "https://doi.org/10.1007/s00256-022-04022-8",
+        "https://doi.org/10.1007/s00330-025-12307-4",
+        "https://doi.org/10.1016/j.annonc.2021.08.1995",
+        "https://doi.org/10.1038/s41416-024-02868-4",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10661611/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9929425/",
+        "https://pubmed.ncbi.nlm.nih.gov/17340164/",
+        "https://pubmed.ncbi.nlm.nih.gov/20392983/",
+        "https://pubmed.ncbi.nlm.nih.gov/27101076/",
+        "https://pubmed.ncbi.nlm.nih.gov/32248448/",
+        "https://pubmed.ncbi.nlm.nih.gov/40409893/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "bone-lesions-2.23.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "elbow",
+      "region_name": "Локтевой сустав",
+      "title": "Туннельные невропатии",
+      "description": "13 локализаций · нервы · карта денервации · причины компрессии",
+      "url": "tunnel-neuropathies.html?from=elbow",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "module231/tunnel-neuropathies.svg",
+      "contentKind": "reference",
+      "sources_found": [],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "wrist",
+      "region_name": "Кисть и запястье",
+      "title": "МРТ кисти",
+      "description": "280 изображений · T1 / PD-SPIR · три плоскости",
+      "url": "hand-mri.html",
+      "type": "МРТ",
+      "thumb": "menu-thumbs/hand-mri.webp",
+      "contentKind": "mri",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5520564/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6251069/",
+        "https://pubmed.ncbi.nlm.nih.gov/10350290/",
+        "https://pubmed.ncbi.nlm.nih.gov/10789798/",
+        "https://pubmed.ncbi.nlm.nih.gov/2252083/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false,
+      "real_image_frames": 280,
+      "real_image_series": 6
+    },
+    {
+      "region": "wrist",
+      "region_name": "Кисть и запястье",
+      "title": "МРТ ЛЗС · исходный атлас",
+      "description": "T1 / PD-SPIR · три плоскости и 3D-ракурсы",
+      "url": "wrist-mri.html",
+      "type": "МРТ",
+      "thumb": "menu-thumbs/wrist-mri.webp",
+      "contentKind": "mri",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5520564/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6251069/",
+        "https://pubmed.ncbi.nlm.nih.gov/10350290/",
+        "https://pubmed.ncbi.nlm.nih.gov/10789798/",
+        "https://pubmed.ncbi.nlm.nih.gov/2252083/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "RELEASE-1.19.md"
+      ],
+      "clinical_revalidated_this_audit": false,
+      "real_image_frames": 148,
+      "real_image_series": 6
+    },
+    {
+      "region": "wrist",
+      "region_name": "Кисть и запястье",
+      "title": "Связки ЛЗС",
+      "description": "SL, LT и наружные связки запястья",
+      "url": "wrist.html?mode=ligaments",
+      "type": "3D-МОДЕЛЬ",
+      "thumb": "menu-thumbs/wrist-mode-ligaments.webp",
+      "contentKind": "model",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3558235/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5594018/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5600038/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7509702/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8041499/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8569728/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9322592/",
+        "https://pubmed.ncbi.nlm.nih.gov/2666492/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "wrist",
+      "region_name": "Кисть и запястье",
+      "title": "Сухожилия ЛЗС",
+      "description": "Каналы разгибателей, сгибатели и удерживатели",
+      "url": "wrist.html?mode=tendons",
+      "type": "3D-МОДЕЛЬ",
+      "thumb": "menu-thumbs/wrist-mode-tendons.webp",
+      "contentKind": "model",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3558235/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5594018/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5600038/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7509702/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8041499/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8569728/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9322592/",
+        "https://pubmed.ncbi.nlm.nih.gov/2666492/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "wrist",
+      "region_name": "Кисть и запястье",
+      "title": "TFCC · Palmer",
+      "description": "ТФХК: норма и варианты повреждений Palmer",
+      "url": "wrist.html?mode=tfcc",
+      "type": "3D-МОДЕЛЬ",
+      "thumb": "menu-thumbs/wrist-mode-tfcc.webp",
+      "contentKind": "model",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3558235/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5594018/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5600038/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7509702/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8041499/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8569728/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9322592/",
+        "https://pubmed.ncbi.nlm.nih.gov/2666492/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "wrist",
+      "region_name": "Кисть и запястье",
+      "title": "Костный мозг",
+      "description": "Отёк · реконверсия · перелом · замещение · CSI / DWI",
+      "url": "bone-marrow.html?from=wrist",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/bone-marrow.svg",
+      "contentKind": "reference",
+      "sources_found": [
+        "https://academic.oup.com/bjr/article/97/1156/828/7602148",
+        "https://doi.org/10.1007/s00256-021-03807-7",
+        "https://doi.org/10.1007/s00256-022-04022-8",
+        "https://doi.org/10.1007/s00330-025-12307-4",
+        "https://doi.org/10.1007/s11604-021-01224-3",
+        "https://doi.org/10.1148/radiol.242371",
+        "https://doi.org/10.1259/bjr.20220063",
+        "https://doi.org/10.4103/0971-3026.137049",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3177109/",
+        "https://pubmed.ncbi.nlm.nih.gov/30247978/",
+        "https://www.nature.com/articles/s41416-024-02868-4"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "wrist",
+      "region_name": "Кисть и запястье",
+      "title": "Очаговые образования костей",
+      "description": "Агрессивность · матрикс · типичные очаги · SSR Bone-RADS",
+      "url": "bone-lesions.html?from=wrist",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/bone-lesions.svg",
+      "contentKind": "reference",
+      "sources_found": [
+        "https://doi.org/10.1007/s00256-022-04022-8",
+        "https://doi.org/10.1007/s00330-025-12307-4",
+        "https://doi.org/10.1016/j.annonc.2021.08.1995",
+        "https://doi.org/10.1038/s41416-024-02868-4",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10661611/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9929425/",
+        "https://pubmed.ncbi.nlm.nih.gov/17340164/",
+        "https://pubmed.ncbi.nlm.nih.gov/20392983/",
+        "https://pubmed.ncbi.nlm.nih.gov/27101076/",
+        "https://pubmed.ncbi.nlm.nih.gov/32248448/",
+        "https://pubmed.ncbi.nlm.nih.gov/40409893/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "bone-lesions-2.23.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "wrist",
+      "region_name": "Кисть и запястье",
+      "title": "Туннельные невропатии",
+      "description": "13 локализаций · нервы · карта денервации · причины компрессии",
+      "url": "tunnel-neuropathies.html?from=wrist",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "module231/tunnel-neuropathies.svg",
+      "contentKind": "reference",
+      "sources_found": [],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "knee",
+      "region_name": "Коленный сустав",
+      "title": "МРТ коленного сустава",
+      "description": "Три плоскости · T1 и PD-SPIR · исходные метки.",
+      "url": "knee-mri.html",
+      "type": "МРТ",
+      "thumb": "menu-thumbs/knee-mri.webp",
+      "contentKind": "mri",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5520564/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6251069/",
+        "https://pubmed.ncbi.nlm.nih.gov/10350290/",
+        "https://pubmed.ncbi.nlm.nih.gov/10789798/",
+        "https://pubmed.ncbi.nlm.nih.gov/2252083/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false,
+      "real_image_frames": 228,
+      "real_image_series": 6
+    },
+    {
+      "region": "knee",
+      "region_name": "Коленный сустав",
+      "title": "Мениски",
+      "description": "Разрывы, корни, экструзия, после операции и 3D",
+      "url": "knee.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/knee.webp",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://doi.org/10.1007/s00330-024-10706-7",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13424353/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5709159/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7571514/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8292249/",
+        "https://pubmed.ncbi.nlm.nih.gov/16985134/",
+        "https://pubmed.ncbi.nlm.nih.gov/25451789/",
+        "https://pubmed.ncbi.nlm.nih.gov/3575724/",
+        "https://pubmed.ncbi.nlm.nih.gov/38606565/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "meniscus-2.24.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "knee",
+      "region_name": "Коленный сустав",
+      "title": "ПКС после пластики",
+      "description": "Трансплантат · каналы · фиксаторы · осложнения",
+      "url": "acl-postop.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/acl-postop.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://doi.org/10.1007/s00167-023-07550-5",
+        "https://doi.org/10.1007/s00330-024-10706-7",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8384440/",
+        "https://pubmed.ncbi.nlm.nih.gov/11121700/",
+        "https://pubmed.ncbi.nlm.nih.gov/12218830/",
+        "https://pubmed.ncbi.nlm.nih.gov/19165901/",
+        "https://pubmed.ncbi.nlm.nih.gov/19267347/",
+        "https://pubmed.ncbi.nlm.nih.gov/2027966/",
+        "https://pubmed.ncbi.nlm.nih.gov/24821755/",
+        "https://pubmed.ncbi.nlm.nih.gov/27986989/",
+        "https://pubmed.ncbi.nlm.nih.gov/34541010/",
+        "https://pubmed.ncbi.nlm.nih.gov/36322180/",
+        "https://pubmed.ncbi.nlm.nih.gov/37019288/",
+        "https://pubmed.ncbi.nlm.nih.gov/37243789/",
+        "https://pubmed.ncbi.nlm.nih.gov/9051173/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "acl-2.25.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "knee",
+      "region_name": "Коленный сустав",
+      "title": "Пателлофеморальный сустав",
+      "description": "Положение надколенника и форма блока",
+      "url": "patellofemoral.html",
+      "type": "3D-МОДЕЛЬ",
+      "thumb": "menu-thumbs/patellofemoral.webp",
+      "contentKind": "model",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10262599/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6570735/",
+        "https://pubmed.ncbi.nlm.nih.gov/27077588/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "knee",
+      "region_name": "Коленный сустав",
+      "title": "Связки",
+      "description": "ПКС, ЗКС, МКС и ЛКС: норма и разрывы",
+      "url": "ligaments.html",
+      "type": "3D-МОДЕЛЬ",
+      "thumb": "menu-thumbs/ligaments.webp",
+      "contentKind": "model",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11399221/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6100662/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7571514/",
+        "https://www.ncbi.nlm.nih.gov/books/NBK570163/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "ankle-2.27.md",
+        "acl-2.25.md",
+        "hindfoot-2.28.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "knee",
+      "region_name": "Коленный сустав",
+      "title": "Сумки и завороты",
+      "description": "Сумки, завороты и окружающие структуры",
+      "url": "knee-bursae.html",
+      "type": "3D-МОДЕЛЬ",
+      "thumb": "menu-thumbs/knee-bursae.webp",
+      "contentKind": "model",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3354353/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3675245/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7571514/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "knee",
+      "region_name": "Коленный сустав",
+      "title": "Хрящ",
+      "description": "Хрящевые и костно-хрящевые дефекты",
+      "url": "cartilage.html",
+      "type": "3D-МОДЕЛЬ",
+      "thumb": "menu-thumbs/cartilage.webp",
+      "contentKind": "model",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8531853/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9453290/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "knee",
+      "region_name": "Коленный сустав",
+      "title": "Коленный сустав · 3D-ракурсы",
+      "description": "6 готовых ракурсов · исходные подписи",
+      "url": "knee-3d.html?set=vascular",
+      "type": "3D-РАКУРСЫ",
+      "thumb": "menu-thumbs/knee-3d.webp",
+      "contentKind": "model",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5520564/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6251069/",
+        "https://pubmed.ncbi.nlm.nih.gov/10350290/",
+        "https://pubmed.ncbi.nlm.nih.gov/10789798/",
+        "https://pubmed.ncbi.nlm.nih.gov/2252083/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "knee",
+      "region_name": "Коленный сустав",
+      "title": "Костный мозг",
+      "description": "Отёк · реконверсия · перелом · замещение · CSI / DWI",
+      "url": "bone-marrow.html?from=knee",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/bone-marrow.svg",
+      "contentKind": "reference",
+      "sources_found": [
+        "https://academic.oup.com/bjr/article/97/1156/828/7602148",
+        "https://doi.org/10.1007/s00256-021-03807-7",
+        "https://doi.org/10.1007/s00256-022-04022-8",
+        "https://doi.org/10.1007/s00330-025-12307-4",
+        "https://doi.org/10.1007/s11604-021-01224-3",
+        "https://doi.org/10.1148/radiol.242371",
+        "https://doi.org/10.1259/bjr.20220063",
+        "https://doi.org/10.4103/0971-3026.137049",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3177109/",
+        "https://pubmed.ncbi.nlm.nih.gov/30247978/",
+        "https://www.nature.com/articles/s41416-024-02868-4"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "knee",
+      "region_name": "Коленный сустав",
+      "title": "Очаговые образования костей",
+      "description": "Агрессивность · матрикс · типичные очаги · SSR Bone-RADS",
+      "url": "bone-lesions.html?from=knee",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/bone-lesions.svg",
+      "contentKind": "reference",
+      "sources_found": [
+        "https://doi.org/10.1007/s00256-022-04022-8",
+        "https://doi.org/10.1007/s00330-025-12307-4",
+        "https://doi.org/10.1016/j.annonc.2021.08.1995",
+        "https://doi.org/10.1038/s41416-024-02868-4",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10661611/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9929425/",
+        "https://pubmed.ncbi.nlm.nih.gov/17340164/",
+        "https://pubmed.ncbi.nlm.nih.gov/20392983/",
+        "https://pubmed.ncbi.nlm.nih.gov/27101076/",
+        "https://pubmed.ncbi.nlm.nih.gov/32248448/",
+        "https://pubmed.ncbi.nlm.nih.gov/40409893/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "bone-lesions-2.23.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "knee",
+      "region_name": "Коленный сустав",
+      "title": "Туннельные невропатии",
+      "description": "13 локализаций · нервы · карта денервации · причины компрессии",
+      "url": "tunnel-neuropathies.html?from=knee",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "module231/tunnel-neuropathies.svg",
+      "contentKind": "reference",
+      "sources_found": [],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "knee",
+      "region_name": "Коленный сустав",
+      "title": "Стрессовые и недостаточностные переломы",
+      "description": "Стресс-реакция · опасные зоны · SIFK · крестец · Fredericson",
+      "url": "stress-fractures.html?from=knee",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "module231/stress-fractures.svg",
+      "contentKind": "reference",
+      "sources_found": [],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "hip",
+      "region_name": "Тазобедренный сустав",
+      "title": "МРТ тазобедренного сустава",
+      "description": "Три плоскости · T1 и PD-SPIR · исходные метки.",
+      "url": "hip-mri.html",
+      "type": "МРТ",
+      "thumb": "menu-thumbs/hip-mri.webp",
+      "contentKind": "mri",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5520564/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6251069/",
+        "https://pubmed.ncbi.nlm.nih.gov/10350290/",
+        "https://pubmed.ncbi.nlm.nih.gov/10789798/",
+        "https://pubmed.ncbi.nlm.nih.gov/2252083/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false,
+      "real_image_frames": 252,
+      "real_image_series": 6
+    },
+    {
+      "region": "hip",
+      "region_name": "Тазобедренный сустав",
+      "title": "ФАИ и суставная губа",
+      "description": "Cam / pincer · измерения · губа · хрящ · протокол и заключения",
+      "url": "hip-impingement.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/hip-impingement.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://bjsm.bmj.com/content/57/6/325",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4743561/",
+        "https://pubmed.ncbi.nlm.nih.gov/17056882/",
+        "https://pubmed.ncbi.nlm.nih.gov/18840790/",
+        "https://pubmed.ncbi.nlm.nih.gov/23104610/",
+        "https://pubmed.ncbi.nlm.nih.gov/27629403/",
+        "https://pubmed.ncbi.nlm.nih.gov/28986631/",
+        "https://pubmed.ncbi.nlm.nih.gov/33411052/",
+        "https://pubmed.ncbi.nlm.nih.gov/33411053/",
+        "https://pubmed.ncbi.nlm.nih.gov/35903867/",
+        "https://pubmed.ncbi.nlm.nih.gov/36051975/",
+        "https://pubmed.ncbi.nlm.nih.gov/38225402/",
+        "https://pubmed.ncbi.nlm.nih.gov/9448753/",
+        "https://www.essr.org/content-essr/uploads/2016/10/ESSR-MRI-Protocols-Standard-Hip.pdf"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "hip-2.37.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "hip",
+      "region_name": "Тазобедренный сустав",
+      "title": "Аваскулярный некроз",
+      "description": "МР-признаки · ARCO 2019 · перелом и коллапс · SIF / транзиторный отёк",
+      "url": "osteonecrosis.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/osteonecrosis.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://acsearch.acr.org/docs/69420/Narrative/",
+        "https://doi.org/10.1016/j.arth.2019.11.029",
+        "https://pubmed.ncbi.nlm.nih.gov/10859106/",
+        "https://pubmed.ncbi.nlm.nih.gov/12812240/",
+        "https://pubmed.ncbi.nlm.nih.gov/20566783/",
+        "https://pubmed.ncbi.nlm.nih.gov/3495141/",
+        "https://pubmed.ncbi.nlm.nih.gov/3809484/",
+        "https://pubmed.ncbi.nlm.nih.gov/8508844/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "osteonecrosis-2.21.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "hip",
+      "region_name": "Тазобедренный сустав",
+      "title": "Анатомия · 3D-ракурсы",
+      "description": "60 исходных ракурсов с анатомическими подписями.",
+      "url": "hip-mri.html?set=vascular",
+      "type": "3D-РАКУРСЫ",
+      "thumb": "menu-thumbs/hip-mri-set-vascular.webp",
+      "contentKind": "model",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5520564/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6251069/",
+        "https://pubmed.ncbi.nlm.nih.gov/10350290/",
+        "https://pubmed.ncbi.nlm.nih.gov/10789798/",
+        "https://pubmed.ncbi.nlm.nih.gov/2252083/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "hip",
+      "region_name": "Тазобедренный сустав",
+      "title": "Костный мозг",
+      "description": "Отёк · реконверсия · перелом · замещение · CSI / DWI",
+      "url": "bone-marrow.html?from=hip",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/bone-marrow.svg",
+      "contentKind": "reference",
+      "sources_found": [
+        "https://academic.oup.com/bjr/article/97/1156/828/7602148",
+        "https://doi.org/10.1007/s00256-021-03807-7",
+        "https://doi.org/10.1007/s00256-022-04022-8",
+        "https://doi.org/10.1007/s00330-025-12307-4",
+        "https://doi.org/10.1007/s11604-021-01224-3",
+        "https://doi.org/10.1148/radiol.242371",
+        "https://doi.org/10.1259/bjr.20220063",
+        "https://doi.org/10.4103/0971-3026.137049",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3177109/",
+        "https://pubmed.ncbi.nlm.nih.gov/30247978/",
+        "https://www.nature.com/articles/s41416-024-02868-4"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "hip",
+      "region_name": "Тазобедренный сустав",
+      "title": "Очаговые образования костей",
+      "description": "Агрессивность · матрикс · типичные очаги · SSR Bone-RADS",
+      "url": "bone-lesions.html?from=hip",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/bone-lesions.svg",
+      "contentKind": "reference",
+      "sources_found": [
+        "https://doi.org/10.1007/s00256-022-04022-8",
+        "https://doi.org/10.1007/s00330-025-12307-4",
+        "https://doi.org/10.1016/j.annonc.2021.08.1995",
+        "https://doi.org/10.1038/s41416-024-02868-4",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10661611/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9929425/",
+        "https://pubmed.ncbi.nlm.nih.gov/17340164/",
+        "https://pubmed.ncbi.nlm.nih.gov/20392983/",
+        "https://pubmed.ncbi.nlm.nih.gov/27101076/",
+        "https://pubmed.ncbi.nlm.nih.gov/32248448/",
+        "https://pubmed.ncbi.nlm.nih.gov/40409893/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "bone-lesions-2.23.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "hip",
+      "region_name": "Тазобедренный сустав",
+      "title": "Туннельные невропатии",
+      "description": "13 локализаций · нервы · карта денервации · причины компрессии",
+      "url": "tunnel-neuropathies.html?from=hip",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "module231/tunnel-neuropathies.svg",
+      "contentKind": "reference",
+      "sources_found": [],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "hip",
+      "region_name": "Тазобедренный сустав",
+      "title": "Стрессовые и недостаточностные переломы",
+      "description": "Стресс-реакция · опасные зоны · SIFK · крестец · Fredericson",
+      "url": "stress-fractures.html?from=hip",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "module231/stress-fractures.svg",
+      "contentKind": "reference",
+      "sources_found": [],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "pelvis",
+      "region_name": "Малый таз",
+      "title": "Перианальная область · мужчина",
+      "description": "Сфинктеры, мышцы и пространства · анатомия для описания свищей",
+      "url": "perianal-mri.html",
+      "type": "МРТ",
+      "thumb": "menu-thumbs/perianal-mri.webp",
+      "contentKind": "mri",
+      "sources_found": [
+        "https://clinicalimagingscience.org/magnetic-resonance-imaging-of-the-anal-region-clinical-applications/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13262977/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5520564/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6251069/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7431441/",
+        "https://pubmed.ncbi.nlm.nih.gov/10350290/",
+        "https://pubmed.ncbi.nlm.nih.gov/10789798/",
+        "https://pubmed.ncbi.nlm.nih.gov/2252083/",
+        "https://pubs.rsna.org/doi/10.1148/rg.250033"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false,
+      "real_image_frames": 88,
+      "real_image_series": 3
+    },
+    {
+      "region": "pelvis",
+      "region_name": "Малый таз",
+      "title": "МРТ мужского таза · исходный атлас",
+      "description": "Предстательная железа, органы и структуры таза",
+      "url": "male-pelvis-mri.html",
+      "type": "МРТ",
+      "thumb": "menu-thumbs/male-pelvis-mri.webp",
+      "contentKind": "mri",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5520564/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6251069/",
+        "https://pubmed.ncbi.nlm.nih.gov/10350290/",
+        "https://pubmed.ncbi.nlm.nih.gov/10789798/",
+        "https://pubmed.ncbi.nlm.nih.gov/2252083/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false,
+      "real_image_frames": 220,
+      "real_image_series": 3
+    },
+    {
+      "region": "pelvis",
+      "region_name": "Малый таз",
+      "title": "МРТ женского таза · исходный атлас",
+      "description": "Матка, придатки и структуры таза · T1 / T2",
+      "url": "female-pelvis-mri.html",
+      "type": "МРТ",
+      "thumb": "menu-thumbs/female-pelvis-mri.webp",
+      "contentKind": "mri",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5520564/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6251069/",
+        "https://pubmed.ncbi.nlm.nih.gov/10350290/",
+        "https://pubmed.ncbi.nlm.nih.gov/10789798/",
+        "https://pubmed.ncbi.nlm.nih.gov/2252083/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false,
+      "real_image_frames": 116,
+      "real_image_series": 5
+    },
+    {
+      "region": "pelvis",
+      "region_name": "Малый таз",
+      "title": "Сакроилиит и имитаторы",
+      "description": "BME · эрозии · backfill · OCI · механика · протокол КПС",
+      "url": "sacroiliitis.html?from=pelvis",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/sacroiliitis.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://doi.org/10.1002/art.40475",
+        "https://doi.org/10.1093/rheumatology/keaa175",
+        "https://doi.org/10.1136/annrheumdis-2015-208642",
+        "https://doi.org/10.1136/annrheumdis-2019-215589",
+        "https://doi.org/10.1136/ard-2024-225882",
+        "https://pubmed.ncbi.nlm.nih.gov/2255946/",
+        "https://pubmed.ncbi.nlm.nih.gov/26496552/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "sacroiliitis-2.22.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "pelvis",
+      "region_name": "Малый таз",
+      "title": "Рак простаты · PI-RADS",
+      "description": "Зоны простаты · требования к МРТ · оценка очагов",
+      "url": "prostate-cancer.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/prostate-cancer.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://edge.sitecorecloud.io/americancoldf5f-acrorgf92a-productioncb02-3650/media/ACR/Files/RADS/PI-RADS/PIRADS-2019.pdf",
+        "https://edge.sitecorecloud.io/americancoldf5f-acrorgf92a-productioncb02-3650/media/ACR/Files/RADS/PI-RADS/PIRADS-Report-Template.pdf",
+        "https://edge.sitecorecloud.io/americancoldf5f-acrorgf92a-productioncb02-3650/media/ACR/Files/RADS/PI-RADS/PIRADS-Revisions.pdf",
+        "https://nrgoncology.org/wp-content/uploads/2025/09/MRI-Prostate-Guidelines-v1.02.pdf",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6467207/",
+        "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/PI-RADS"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "pelvis",
+      "region_name": "Малый таз",
+      "title": "Образования придатков · O-RADS MRI",
+      "description": "Категория риска · признаки · контрастирование · заключение",
+      "url": "orads-mri.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/orads-mri.webp",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://radssupport.acr.org/support/solutions/articles/11000115597-lesion-characteristics-and-types-of-lesions",
+        "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/O-RADS/MRI"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "pelvis",
+      "region_name": "Малый таз",
+      "title": "Эндометриоз",
+      "description": "Сигнал · глубокие очаги · карта таза · протокол и описание",
+      "url": "endometriosis.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/endometriosis.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://doi.org/10.1007/s00330-025-11579-0",
+        "https://doi.org/10.1007/s00330-025-11611-3",
+        "https://doi.org/10.1093/hropen/hoae029",
+        "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2804476",
+        "https://pubmed.ncbi.nlm.nih.gov/24475842/",
+        "https://pubmed.ncbi.nlm.nih.gov/27921160/",
+        "https://pubmed.ncbi.nlm.nih.gov/32619220/",
+        "https://pubmed.ncbi.nlm.nih.gov/42142520/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "pelvis",
+      "region_name": "Малый таз",
+      "title": "Пролапс тазовых органов у женщин",
+      "description": "Три компартмента · PCL / H / M · ректоцеле · МР-дефекография",
+      "url": "pelvic-prolapse.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/pelvic-prolapse.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://acsearch.acr.org/docs/3083064/Narrative/",
+        "https://link.springer.com/article/10.1007/s00330-016-4471-7",
+        "https://link.springer.com/article/10.1007/s00330-026-12706-1",
+        "https://www.arganz.org/wp-content/uploads/2023/10/MRI-Defaecography-2021-SAR-Joint-Consensus-Guidelines.pdf",
+        "https://www.esur.org/wp-content/uploads/2022/10/ESUR_2019_-_ESUR_Quick_Guide_to_Female_Pelvis_Imaging.pdf"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "pelvic-2.33.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "pelvis",
+      "region_name": "Малый таз",
+      "title": "Рак эндометрия",
+      "description": "МР-критерии · FIGO · распространение · протокол и заключение",
+      "url": "endometrial-cancer.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/endometrial-cancer.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://doi.org/10.1002/ijgo.12969",
+        "https://doi.org/10.1002/ijgo.14923",
+        "https://doi.org/10.1002/ijgo.15193",
+        "https://doi.org/10.1002/ijgo.70277",
+        "https://doi.org/10.1007/s00330-020-07632-9",
+        "https://doi.org/10.1007/s00330-025-11700-3",
+        "https://doi.org/10.1007/s00330-026-12705-2"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "uterine-2.26.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "pelvis",
+      "region_name": "Малый таз",
+      "title": "Рак шейки матки",
+      "description": "МР-критерии · FIGO · распространение · протокол и заключение",
+      "url": "cervical-cancer.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/cervical-cancer.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://doi.org/10.1002/ijgo.12969",
+        "https://doi.org/10.1002/ijgo.14923",
+        "https://doi.org/10.1002/ijgo.15193",
+        "https://doi.org/10.1002/ijgo.70277",
+        "https://doi.org/10.1007/s00330-020-07632-9",
+        "https://doi.org/10.1007/s00330-025-11700-3",
+        "https://doi.org/10.1007/s00330-026-12705-2"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "uterine-2.26.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "pelvis",
+      "region_name": "Малый таз",
+      "title": "Рак прямой кишки",
+      "description": "Стадирование · MRF / EMVI · ответ на лечение · протокол GE",
+      "url": "rectal-cancer.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/rectal-cancer.webp",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://doi.org/10.1007/s00261-023-03893-2",
+        "https://doi.org/10.1007/s00330-017-5026-2",
+        "https://doi.org/10.1007/s00330-025-12274-w",
+        "https://doi.org/10.1007/s00330-025-12275-9"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "pelvis",
+      "region_name": "Малый таз",
+      "title": "Миомы матки · МР-справочник",
+      "description": "FIGO со схемами, дегенерации, атипичные узлы и заключения",
+      "url": "fibroids.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/fibroids.webp",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://doi.org/10.1002/ijgo.12666",
+        "https://doi.org/10.1007/s00330-016-4623-9",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12553092/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12559084/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6028852/",
+        "https://pubmed.ncbi.nlm.nih.gov/10517450/",
+        "https://pubmed.ncbi.nlm.nih.gov/23254582/",
+        "https://pubmed.ncbi.nlm.nih.gov/31264010/",
+        "https://pubs.rsna.org/doi/10.1148/radiol.211658"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "fibroids-2.34.md",
+        "adenomyosis-2.35.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "pelvis",
+      "region_name": "Малый таз",
+      "title": "Аденомиоз",
+      "description": "Формы · JZ и прямые признаки · аденомиома · ловушки",
+      "url": "adenomyosis.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/adenomyosis.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://doi.org/10.1007/s00330-025-11611-3",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12233108/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6028852/",
+        "https://pubmed.ncbi.nlm.nih.gov/22840719/",
+        "https://pubmed.ncbi.nlm.nih.gov/2704819/",
+        "https://pubmed.ncbi.nlm.nih.gov/31264010/",
+        "https://pubmed.ncbi.nlm.nih.gov/3336669/",
+        "https://pubmed.ncbi.nlm.nih.gov/3715022/",
+        "https://pubmed.ncbi.nlm.nih.gov/8633139/",
+        "https://pubmed.ncbi.nlm.nih.gov/9442129/",
+        "https://pubmed.ncbi.nlm.nih.gov/9848728/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "adenomyosis-2.35.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "pelvis",
+      "region_name": "Малый таз",
+      "title": "Костный мозг",
+      "description": "Отёк · реконверсия · перелом · замещение · CSI / DWI",
+      "url": "bone-marrow.html?from=pelvis",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/bone-marrow.svg",
+      "contentKind": "reference",
+      "sources_found": [
+        "https://academic.oup.com/bjr/article/97/1156/828/7602148",
+        "https://doi.org/10.1007/s00256-021-03807-7",
+        "https://doi.org/10.1007/s00256-022-04022-8",
+        "https://doi.org/10.1007/s00330-025-12307-4",
+        "https://doi.org/10.1007/s11604-021-01224-3",
+        "https://doi.org/10.1148/radiol.242371",
+        "https://doi.org/10.1259/bjr.20220063",
+        "https://doi.org/10.4103/0971-3026.137049",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3177109/",
+        "https://pubmed.ncbi.nlm.nih.gov/30247978/",
+        "https://www.nature.com/articles/s41416-024-02868-4"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "pelvis",
+      "region_name": "Малый таз",
+      "title": "Очаговые образования костей",
+      "description": "Агрессивность · матрикс · типичные очаги · SSR Bone-RADS",
+      "url": "bone-lesions.html?from=pelvis",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/bone-lesions.svg",
+      "contentKind": "reference",
+      "sources_found": [
+        "https://doi.org/10.1007/s00256-022-04022-8",
+        "https://doi.org/10.1007/s00330-025-12307-4",
+        "https://doi.org/10.1016/j.annonc.2021.08.1995",
+        "https://doi.org/10.1038/s41416-024-02868-4",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10661611/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9929425/",
+        "https://pubmed.ncbi.nlm.nih.gov/17340164/",
+        "https://pubmed.ncbi.nlm.nih.gov/20392983/",
+        "https://pubmed.ncbi.nlm.nih.gov/27101076/",
+        "https://pubmed.ncbi.nlm.nih.gov/32248448/",
+        "https://pubmed.ncbi.nlm.nih.gov/40409893/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "bone-lesions-2.23.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "abdomen",
+      "region_name": "Брюшная полость",
+      "title": "КТ · нормальная анатомия",
+      "description": "182 среза · сегменты печени, IVa и IVb",
+      "url": "abdomen-ct.html",
+      "type": "КТ",
+      "thumb": "menu-thumbs/abdomen-ct.webp",
+      "contentKind": "ct",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5520564/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6251069/",
+        "https://pubmed.ncbi.nlm.nih.gov/10350290/",
+        "https://pubmed.ncbi.nlm.nih.gov/10789798/",
+        "https://pubmed.ncbi.nlm.nih.gov/2252083/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false,
+      "real_image_frames": 182,
+      "real_image_series": 1
+    },
+    {
+      "region": "abdomen",
+      "region_name": "Брюшная полость",
+      "title": "КТ · цирроз и асцит",
+      "description": "303 среза · три плоскости · органы, сосуды и брюшина",
+      "url": "abdomen-pelvis-ct.html",
+      "type": "КТ",
+      "thumb": "menu-thumbs/abdomen-pelvis-ct.webp",
+      "contentKind": "ct",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5520564/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6251069/",
+        "https://pubmed.ncbi.nlm.nih.gov/10350290/",
+        "https://pubmed.ncbi.nlm.nih.gov/10789798/",
+        "https://pubmed.ncbi.nlm.nih.gov/2252083/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false,
+      "real_image_frames": 303,
+      "real_image_series": 3
+    },
+    {
+      "region": "abdomen",
+      "region_name": "Брюшная полость",
+      "title": "Диффузные заболевания печени",
+      "description": "Стеатоз · PDFF · железо / LIC · цирроз · портальные и печёночные вены",
+      "url": "diffuse-liver.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/diffuse-liver.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://doi.org/10.1016/j.jhep.2025.08.001",
+        "https://doi.org/10.1148/radiol.221856",
+        "https://easlcampus.eu/sites/default/files/2024-06/EASL_CPGs_on_MASLD.pdf"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "abdomen",
+      "region_name": "Брюшная полость",
+      "title": "Очаговые образования печени",
+      "description": "Киста · гемангиома · ФНГ · аденома · ГЦР · метастазы",
+      "url": "liver-lesions.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/liver-lesions.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://doi.org/10.1007/s00330-015-3900-3",
+        "https://doi.org/10.1007/s00330-019-06369-4",
+        "https://doi.org/10.1007/s00330-024-10606-w",
+        "https://doi.org/10.1016/j.jhep.2016.04.001",
+        "https://doi.org/10.1016/j.jhep.2024.08.028",
+        "https://doi.org/10.1371/journal.pone.0313212",
+        "https://doi.org/10.14309/ajg.0000000000002857",
+        "https://doi.org/10.2214/AJR.22.28233",
+        "https://pubmed.ncbi.nlm.nih.gov/27986172/",
+        "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/LI-RADS"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "abdomen",
+      "region_name": "Брюшная полость",
+      "title": "Желчные протоки · МРХПГ",
+      "description": "Камни · стриктуры · PSC · уровень обструкции · ловушки",
+      "url": "biliary-mrcp.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/biliary-mrcp.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://link.springer.com/article/10.1007/s00330-025-11583-4",
+        "https://www.asge.org/home/resources/publications/guidelines/asge-guideline-on-the-role-of-endoscopy-in-the-evaluation-and-management-of-choledocholithiasis"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "abdomen",
+      "region_name": "Брюшная полость",
+      "title": "Кистозные образования поджелудочной",
+      "description": "IPMN · SCN · MCN · Kyoto2024 · узелки · наблюдение",
+      "url": "pancreatic-cysts.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/pancreatic-cysts.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://doi.org/10.1016/j.pan.2023.12.009",
+        "https://doi.org/10.1136/gutjnl-2012-302779",
+        "https://gut.bmj.com/content/67/5/789"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "abdomen",
+      "region_name": "Брюшная полость",
+      "title": "Солидные образования поджелудочной и имитаторы",
+      "description": "PDAC · Pan-NET · панкреатит / AIP · протоки · сосуды",
+      "url": "pancreatic-solid.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/pancreatic-solid.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://doi.org/10.1111/jne.13343",
+        "https://doi.org/10.1148/radiol.13131184",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8938398/",
+        "https://pubmed.ncbi.nlm.nih.gov/11568327/",
+        "https://pubmed.ncbi.nlm.nih.gov/17690542/",
+        "https://pubmed.ncbi.nlm.nih.gov/18440173/",
+        "https://pubmed.ncbi.nlm.nih.gov/21412117/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "abdomen",
+      "region_name": "Брюшная полость",
+      "title": "Образования почек · Bosniak",
+      "description": "Bosniak2019 I–IV · усиление · субтракция · солидные массы",
+      "url": "renal-bosniak.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/renal-bosniak.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://cuaj.ca/index.php/journal/article/view/8389",
+        "https://pubs.rsna.org/doi/10.1148/radiol.2019182646",
+        "https://uroweb.org/guidelines/renal-cell-carcinoma/chapter/epidemiology-aetiology-and-pathology",
+        "https://www.auajournals.org/doi/abs/10.1097/ju.0000000000001911"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "abdomen",
+      "region_name": "Брюшная полость",
+      "title": "Образования надпочечников",
+      "description": "Аденома · CSI · жир / кровь · феохромоцитома · рост",
+      "url": "adrenal-masses.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/adrenal-masses.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://academic.oup.com/ejendo/article/189/1/G1/7198474",
+        "https://pubmed.ncbi.nlm.nih.gov/28742373/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "breast",
+      "region_name": "Молочные железы",
+      "title": "МРТ молочных желёз · BI-RADS v2025",
+      "description": "Узлы и NME · кинетика · категории0–6 · импланты · протокол и заключение",
+      "url": "breast-mri.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "home-icons/breast.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://accreditationsupport.acr.org/support/solutions/articles/11000114407-mri-exam-specific-parameters-breast-revised-4-28-22-",
+        "https://acsearch.acr.org/docs/3100728/Narrative/",
+        "https://edge.sitecorecloud.io/americancoldf5f-acrorgf92a-productioncb02-3650/media/ACR/Files/RADS/BI-RADS/BI-RADS-Summary-Form-MRI.pdf",
+        "https://edge.sitecorecloud.io/americancoldf5f-acrorgf92a-productioncb02-3650/media/ACR/Files/RADS/BI-RADS/BIRADS-v2025-Whats-New.pdf",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13266119/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7033067/",
+        "https://www.cancer.gov/types/breast/hp/breast-treatment-pdq",
+        "https://www.fda.gov/medical-devices/breast-implants/questions-and-answers-about-breast-implant-associated-anaplastic-large-cell-lymphoma-bia-alcl"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "foot",
+      "region_name": "Голеностоп и стопа",
+      "title": "МРТ предплюсны и стопы",
+      "description": "284 кадра · три плоскости и исходные метки",
+      "url": "foot-mri.html",
+      "type": "МРТ",
+      "thumb": "menu-thumbs/foot-mri.webp",
+      "contentKind": "mri",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5520564/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6251069/",
+        "https://pubmed.ncbi.nlm.nih.gov/10350290/",
+        "https://pubmed.ncbi.nlm.nih.gov/10789798/",
+        "https://pubmed.ncbi.nlm.nih.gov/2252083/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false,
+      "real_image_frames": 284,
+      "real_image_series": 6
+    },
+    {
+      "region": "foot",
+      "region_name": "Голеностоп и стопа",
+      "title": "Связки голеностопа",
+      "description": "ATFL / CFL / PTFL · синдесмоз · дельтовидная · повреждения",
+      "url": "ankle-ligaments.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/ankle-ligaments.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://essr.org/content-essr/uploads/2016/10/ESSR-MRI-Protocols-Ankle.pdf",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4559781/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8221687/",
+        "https://pubmed.ncbi.nlm.nih.gov/1620855/",
+        "https://pubmed.ncbi.nlm.nih.gov/24740670/",
+        "https://pubmed.ncbi.nlm.nih.gov/25539277/",
+        "https://pubmed.ncbi.nlm.nih.gov/26704800/",
+        "https://pubmed.ncbi.nlm.nih.gov/35722175/",
+        "https://pubmed.ncbi.nlm.nih.gov/39310958/",
+        "https://www.nature.com/articles/s41598-020-77856-8"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "ankle-2.27.md",
+        "hindfoot-2.28.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "foot",
+      "region_name": "Голеностоп и стопа",
+      "title": "Сухожилия голеностопа",
+      "description": "Ахилл · PB / PL · PTT · разрывы · влагалища · после шва",
+      "url": "ankle-tendons.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/ankle-tendons.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://esskajournals.onlinelibrary.wiley.com/doi/full/10.1007/s00167-018-4971-x",
+        "https://essr.org/content-essr/uploads/2016/10/ESSR-MRI-Protocols-Ankle.pdf",
+        "https://pubmed.ncbi.nlm.nih.gov/17954656/",
+        "https://pubmed.ncbi.nlm.nih.gov/19696280/",
+        "https://pubmed.ncbi.nlm.nih.gov/26356649/",
+        "https://pubmed.ncbi.nlm.nih.gov/34187784/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "hindfoot-2.28.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "foot",
+      "region_name": "Голеностоп и стопа",
+      "title": "Остеохондральные поражения таранной кости",
+      "description": "Hepple I–V · карта купола · хрящ · кисты · стабильность",
+      "url": "talar-olt.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/talar-olt.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://essr.org/content-essr/uploads/2016/10/ESSR-MRI-Protocols-Ankle.pdf",
+        "https://journals.sagepub.com/doi/full/10.1177/19476035231161806",
+        "https://pubmed.ncbi.nlm.nih.gov/10609707/",
+        "https://pubmed.ncbi.nlm.nih.gov/16539895/",
+        "https://pubmed.ncbi.nlm.nih.gov/17296131/",
+        "https://pubmed.ncbi.nlm.nih.gov/2106221/",
+        "https://pubmed.ncbi.nlm.nih.gov/32306071/",
+        "https://pubmed.ncbi.nlm.nih.gov/38457916/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "hindfoot-2.28.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "foot",
+      "region_name": "Голеностоп и стопа",
+      "title": "Импинджмент голеностопа",
+      "description": "Передние / задние · os trigonum · латеральный конфликт",
+      "url": "ankle-impingement.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/ankle-impingement.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://essr.org/content-essr/uploads/2016/10/ESSR-MRI-Protocols-Ankle.pdf",
+        "https://pubmed.ncbi.nlm.nih.gov/10663587/",
+        "https://pubmed.ncbi.nlm.nih.gov/12764653/",
+        "https://pubmed.ncbi.nlm.nih.gov/16621392/",
+        "https://pubmed.ncbi.nlm.nih.gov/19696280/",
+        "https://pubmed.ncbi.nlm.nih.gov/33487238/",
+        "https://pubmed.ncbi.nlm.nih.gov/9275907/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "hindfoot-2.28.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "foot",
+      "region_name": "Голеностоп и стопа",
+      "title": "Боль в пятке",
+      "description": "Фасция · ахиллов энтезис · бурсы · стресс-перелом",
+      "url": "heel-pain.html",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/heel-pain.svg",
+      "contentKind": "clinical",
+      "sources_found": [
+        "https://essr.org/content-essr/uploads/2016/10/ESSR-MRI-Protocols-Ankle.pdf",
+        "https://jfootankle.com/JournalFootAnkle/article/view/1228",
+        "https://pubmed.ncbi.nlm.nih.gov/22473075/",
+        "https://pubmed.ncbi.nlm.nih.gov/24814176/",
+        "https://pubmed.ncbi.nlm.nih.gov/34187784/",
+        "https://pubmed.ncbi.nlm.nih.gov/38037331/",
+        "https://pubmed.ncbi.nlm.nih.gov/42033738/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "hindfoot-2.28.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "foot",
+      "region_name": "Голеностоп и стопа",
+      "title": "Костный мозг",
+      "description": "Отёк · реконверсия · перелом · замещение · CSI / DWI",
+      "url": "bone-marrow.html?from=foot",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/bone-marrow.svg",
+      "contentKind": "reference",
+      "sources_found": [
+        "https://academic.oup.com/bjr/article/97/1156/828/7602148",
+        "https://doi.org/10.1007/s00256-021-03807-7",
+        "https://doi.org/10.1007/s00256-022-04022-8",
+        "https://doi.org/10.1007/s00330-025-12307-4",
+        "https://doi.org/10.1007/s11604-021-01224-3",
+        "https://doi.org/10.1148/radiol.242371",
+        "https://doi.org/10.1259/bjr.20220063",
+        "https://doi.org/10.4103/0971-3026.137049",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3177109/",
+        "https://pubmed.ncbi.nlm.nih.gov/30247978/",
+        "https://www.nature.com/articles/s41416-024-02868-4"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "foot",
+      "region_name": "Голеностоп и стопа",
+      "title": "Очаговые образования костей",
+      "description": "Агрессивность · матрикс · типичные очаги · SSR Bone-RADS",
+      "url": "bone-lesions.html?from=foot",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/bone-lesions.svg",
+      "contentKind": "reference",
+      "sources_found": [
+        "https://doi.org/10.1007/s00256-022-04022-8",
+        "https://doi.org/10.1007/s00330-025-12307-4",
+        "https://doi.org/10.1016/j.annonc.2021.08.1995",
+        "https://doi.org/10.1038/s41416-024-02868-4",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10661611/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9929425/",
+        "https://pubmed.ncbi.nlm.nih.gov/17340164/",
+        "https://pubmed.ncbi.nlm.nih.gov/20392983/",
+        "https://pubmed.ncbi.nlm.nih.gov/27101076/",
+        "https://pubmed.ncbi.nlm.nih.gov/32248448/",
+        "https://pubmed.ncbi.nlm.nih.gov/40409893/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "bone-lesions-2.23.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "foot",
+      "region_name": "Голеностоп и стопа",
+      "title": "Туннельные невропатии",
+      "description": "13 локализаций · нервы · карта денервации · причины компрессии",
+      "url": "tunnel-neuropathies.html?from=foot",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "module231/tunnel-neuropathies.svg",
+      "contentKind": "reference",
+      "sources_found": [],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "foot",
+      "region_name": "Голеностоп и стопа",
+      "title": "Стрессовые и недостаточностные переломы",
+      "description": "Стресс-реакция · опасные зоны · SIFK · крестец · Fredericson",
+      "url": "stress-fractures.html?from=foot",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "module231/stress-fractures.svg",
+      "contentKind": "reference",
+      "sources_found": [],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "upper-limb",
+      "region_name": "Верхняя конечность",
+      "title": "МРТ · верхняя конечность",
+      "description": "194 кадра · 6 областей · исходные анатомические метки",
+      "url": "upper-limb-mri.html",
+      "type": "МРТ",
+      "thumb": "menu-thumbs/upper-limb-mri.webp",
+      "contentKind": "mri",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5520564/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6251069/",
+        "https://pubmed.ncbi.nlm.nih.gov/10350290/",
+        "https://pubmed.ncbi.nlm.nih.gov/10789798/",
+        "https://pubmed.ncbi.nlm.nih.gov/2252083/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false,
+      "real_image_frames": 194,
+      "real_image_series": 6
+    },
+    {
+      "region": "upper-limb",
+      "region_name": "Верхняя конечность",
+      "title": "Костный мозг",
+      "description": "Отёк · реконверсия · перелом · замещение · CSI / DWI",
+      "url": "bone-marrow.html?from=upper-limb",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/bone-marrow.svg",
+      "contentKind": "reference",
+      "sources_found": [
+        "https://academic.oup.com/bjr/article/97/1156/828/7602148",
+        "https://doi.org/10.1007/s00256-021-03807-7",
+        "https://doi.org/10.1007/s00256-022-04022-8",
+        "https://doi.org/10.1007/s00330-025-12307-4",
+        "https://doi.org/10.1007/s11604-021-01224-3",
+        "https://doi.org/10.1148/radiol.242371",
+        "https://doi.org/10.1259/bjr.20220063",
+        "https://doi.org/10.4103/0971-3026.137049",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3177109/",
+        "https://pubmed.ncbi.nlm.nih.gov/30247978/",
+        "https://www.nature.com/articles/s41416-024-02868-4"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "upper-limb",
+      "region_name": "Верхняя конечность",
+      "title": "Очаговые образования костей",
+      "description": "Агрессивность · матрикс · типичные очаги · SSR Bone-RADS",
+      "url": "bone-lesions.html?from=upper-limb",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/bone-lesions.svg",
+      "contentKind": "reference",
+      "sources_found": [
+        "https://doi.org/10.1007/s00256-022-04022-8",
+        "https://doi.org/10.1007/s00330-025-12307-4",
+        "https://doi.org/10.1016/j.annonc.2021.08.1995",
+        "https://doi.org/10.1038/s41416-024-02868-4",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10661611/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9929425/",
+        "https://pubmed.ncbi.nlm.nih.gov/17340164/",
+        "https://pubmed.ncbi.nlm.nih.gov/20392983/",
+        "https://pubmed.ncbi.nlm.nih.gov/27101076/",
+        "https://pubmed.ncbi.nlm.nih.gov/32248448/",
+        "https://pubmed.ncbi.nlm.nih.gov/40409893/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "bone-lesions-2.23.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "upper-limb",
+      "region_name": "Верхняя конечность",
+      "title": "Туннельные невропатии",
+      "description": "13 локализаций · нервы · карта денервации · причины компрессии",
+      "url": "tunnel-neuropathies.html?from=upper-limb",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "module231/tunnel-neuropathies.svg",
+      "contentKind": "reference",
+      "sources_found": [],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "lower-limb",
+      "region_name": "Нижняя конечность",
+      "title": "МРТ · нижняя конечность",
+      "description": "277 кадров · 6 областей · исходные анатомические метки",
+      "url": "lower-limb-mri.html",
+      "type": "МРТ",
+      "thumb": "menu-thumbs/lower-limb-mri.webp",
+      "contentKind": "mri",
+      "sources_found": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5520564/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6251069/",
+        "https://pubmed.ncbi.nlm.nih.gov/10350290/",
+        "https://pubmed.ncbi.nlm.nih.gov/10789798/",
+        "https://pubmed.ncbi.nlm.nih.gov/2252083/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false,
+      "real_image_frames": 277,
+      "real_image_series": 6
+    },
+    {
+      "region": "lower-limb",
+      "region_name": "Нижняя конечность",
+      "title": "Костный мозг",
+      "description": "Отёк · реконверсия · перелом · замещение · CSI / DWI",
+      "url": "bone-marrow.html?from=lower-limb",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/bone-marrow.svg",
+      "contentKind": "reference",
+      "sources_found": [
+        "https://academic.oup.com/bjr/article/97/1156/828/7602148",
+        "https://doi.org/10.1007/s00256-021-03807-7",
+        "https://doi.org/10.1007/s00256-022-04022-8",
+        "https://doi.org/10.1007/s00330-025-12307-4",
+        "https://doi.org/10.1007/s11604-021-01224-3",
+        "https://doi.org/10.1148/radiol.242371",
+        "https://doi.org/10.1259/bjr.20220063",
+        "https://doi.org/10.4103/0971-3026.137049",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3177109/",
+        "https://pubmed.ncbi.nlm.nih.gov/30247978/",
+        "https://www.nature.com/articles/s41416-024-02868-4"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "lower-limb",
+      "region_name": "Нижняя конечность",
+      "title": "Очаговые образования костей",
+      "description": "Агрессивность · матрикс · типичные очаги · SSR Bone-RADS",
+      "url": "bone-lesions.html?from=lower-limb",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "menu-thumbs/bone-lesions.svg",
+      "contentKind": "reference",
+      "sources_found": [
+        "https://doi.org/10.1007/s00256-022-04022-8",
+        "https://doi.org/10.1007/s00330-025-12307-4",
+        "https://doi.org/10.1016/j.annonc.2021.08.1995",
+        "https://doi.org/10.1038/s41416-024-02868-4",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10661611/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9929425/",
+        "https://pubmed.ncbi.nlm.nih.gov/17340164/",
+        "https://pubmed.ncbi.nlm.nih.gov/20392983/",
+        "https://pubmed.ncbi.nlm.nih.gov/27101076/",
+        "https://pubmed.ncbi.nlm.nih.gov/32248448/",
+        "https://pubmed.ncbi.nlm.nih.gov/40409893/"
+      ],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [
+        "bone-lesions-2.23.md"
+      ],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "lower-limb",
+      "region_name": "Нижняя конечность",
+      "title": "Туннельные невропатии",
+      "description": "13 локализаций · нервы · карта денервации · причины компрессии",
+      "url": "tunnel-neuropathies.html?from=lower-limb",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "module231/tunnel-neuropathies.svg",
+      "contentKind": "reference",
+      "sources_found": [],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "region": "lower-limb",
+      "region_name": "Нижняя конечность",
+      "title": "Стрессовые и недостаточностные переломы",
+      "description": "Стресс-реакция · опасные зоны · SIFK · крестец · Fredericson",
+      "url": "stress-fractures.html?from=lower-limb",
+      "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+      "thumb": "module231/stress-fractures.svg",
+      "contentKind": "reference",
+      "sources_found": [],
+      "source_note": "Обнаружены ссылки, актуальность и медицинские критерии заново не сверялись",
+      "review_files": [],
+      "clinical_revalidated_this_audit": false
+    }
+  ],
+  "nested_clinical_entries": [
+    {
+      "hub": "brain-tumors.html",
+      "route": "meningioma.html",
+      "page_exists": true,
+      "external_source_links_detected": true,
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "hub": "brain-tumors.html",
+      "route": "sellar.html",
+      "page_exists": true,
+      "external_source_links_detected": true,
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "hub": "brain-tumors.html",
+      "route": "glioblastoma.html",
+      "page_exists": true,
+      "external_source_links_detected": true,
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "hub": "brain-tumors.html",
+      "route": "vestibular.html",
+      "page_exists": true,
+      "external_source_links_detected": true,
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "hub": "brain-tumors.html",
+      "route": "diffuse-gliomas.html",
+      "page_exists": true,
+      "external_source_links_detected": true,
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "hub": "brain-tumors.html",
+      "route": "cns-lymphoma.html",
+      "page_exists": true,
+      "external_source_links_detected": true,
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "hub": "brain-tumors.html",
+      "route": "ependymal.html",
+      "page_exists": true,
+      "external_source_links_detected": true,
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "hub": "brain-tumors.html",
+      "route": "pilocytic.html",
+      "page_exists": true,
+      "external_source_links_detected": true,
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "hub": "brain-tumors.html",
+      "route": "craniopharyngioma.html",
+      "page_exists": true,
+      "external_source_links_detected": true,
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "hub": "brain-tumors.html",
+      "route": "glioneuronal.html",
+      "page_exists": true,
+      "external_source_links_detected": true,
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "hub": "brain-tumors.html",
+      "route": "hemangioblastoma.html",
+      "page_exists": true,
+      "external_source_links_detected": true,
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "hub": "brain-tumors.html",
+      "route": "neurocytoma.html",
+      "page_exists": true,
+      "external_source_links_detected": true,
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "hub": "brain-metastases-module.html",
+      "route": "brain-metastases.html",
+      "page_exists": true,
+      "external_source_links_detected": true,
+      "clinical_revalidated_this_audit": false
+    },
+    {
+      "hub": "brain-metastases-module.html",
+      "route": "brain-metastases-followup.html",
+      "page_exists": true,
+      "external_source_links_detected": true,
+      "clinical_revalidated_this_audit": false
+    }
+  ]
+}
