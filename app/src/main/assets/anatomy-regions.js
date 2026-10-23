@@ -302,20 +302,12 @@ export const regions=[
         "contentKind": "clinical"
       },
       {
-        "title": "Суставная губа · повреждения",
-        "description": "Варианты губы · Bankart/SLAP · HAGL/GAGL · киста",
-        "url": "shoulder-labrum.html",
-        "type": "3D-МОДЕЛЬ",
-        "thumb": "menu-thumbs/shoulder-labrum.webp",
-        "contentKind": "model"
-      },
-      {
-        "title": "Хилл—Сакс и обратный",
-        "description": "Импрессия головки · передний и задний вывих · МРТ 1,5 Т",
-        "url": "shoulder-hill-sachs.html",
-        "type": "3D-МОДЕЛЬ",
-        "thumb": "menu-thumbs/shoulder-hill-sachs.webp",
-        "contentKind": "model"
+        "title": "Нестабильность плеча",
+        "description": "Губа / капсула · Hill–Sachs · glenoid track · костная потеря",
+        "url": "shoulder-instability.html",
+        "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+        "thumb": "menu-thumbs/clinical-shoulder239.svg",
+        "contentKind": "clinical"
       },
       {
         "title": "Сумки плеча",
@@ -414,28 +406,12 @@ export const regions=[
         "contentKind": "mri"
       },
       {
-        "title": "Связки ЛЗС",
-        "description": "SL, LT и наружные связки запястья",
-        "url": "wrist.html?mode=ligaments",
-        "type": "3D-МОДЕЛЬ",
-        "thumb": "menu-thumbs/wrist-mode-ligaments.webp",
-        "contentKind": "model"
-      },
-      {
-        "title": "Сухожилия ЛЗС",
-        "description": "Каналы разгибателей, сгибатели и удерживатели",
-        "url": "wrist.html?mode=tendons",
-        "type": "3D-МОДЕЛЬ",
-        "thumb": "menu-thumbs/wrist-mode-tendons.webp",
-        "contentKind": "model"
-      },
-      {
-        "title": "TFCC · Palmer",
-        "description": "ТФХК: норма и варианты повреждений Palmer",
-        "url": "wrist.html?mode=tfcc",
-        "type": "3D-МОДЕЛЬ",
-        "thumb": "menu-thumbs/wrist-mode-tfcc.webp",
-        "contentKind": "model"
+        "title": "Запястье · TFCC, связки и сухожилия",
+        "description": "Palmer · фовеальное прикрепление · SL/LT · сухожилия · протокол и заключения",
+        "url": "wrist-clinical.html",
+        "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+        "thumb": "menu-thumbs/clinical-wrist239.svg",
+        "contentKind": "clinical"
       },
       {
         "title": "Костный мозг",
@@ -486,6 +462,30 @@ export const regions=[
         "contentKind": "clinical"
       },
       {
+        "title": "Связки колена · нативные",
+        "description": "ПКС / ЗКС · МКС · PLC · разрывы · мукоидная дегенерация",
+        "url": "ligaments.html",
+        "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+        "thumb": "menu-thumbs/clinical-ligaments239.svg",
+        "contentKind": "clinical"
+      },
+      {
+        "title": "Хрящ колена",
+        "description": "Дефекты · глубина и площадь · ICRS · кость · формулировки",
+        "url": "cartilage.html",
+        "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+        "thumb": "menu-thumbs/clinical-cartilage239.svg",
+        "contentKind": "clinical"
+      },
+      {
+        "title": "Пателлофеморальный сустав",
+        "description": "Вывих · MPFL · форма блока · TT–TG / LTI · высота",
+        "url": "patellofemoral.html",
+        "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+        "thumb": "menu-thumbs/clinical-patellofemoral239.svg",
+        "contentKind": "clinical"
+      },
+      {
         "title": "ПКС после пластики",
         "description": "Трансплантат · каналы · фиксаторы · осложнения",
         "url": "acl-postop.html",
@@ -494,35 +494,11 @@ export const regions=[
         "contentKind": "clinical"
       },
       {
-        "title": "Пателлофеморальный сустав",
-        "description": "Положение надколенника и форма блока",
-        "url": "patellofemoral.html",
-        "type": "3D-МОДЕЛЬ",
-        "thumb": "menu-thumbs/patellofemoral.webp",
-        "contentKind": "model"
-      },
-      {
-        "title": "Связки",
-        "description": "ПКС, ЗКС, МКС и ЛКС: норма и разрывы",
-        "url": "ligaments.html",
-        "type": "3D-МОДЕЛЬ",
-        "thumb": "menu-thumbs/ligaments.webp",
-        "contentKind": "model"
-      },
-      {
         "title": "Сумки и завороты",
         "description": "Сумки, завороты и окружающие структуры",
         "url": "knee-bursae.html",
         "type": "3D-МОДЕЛЬ",
         "thumb": "menu-thumbs/knee-bursae.webp",
-        "contentKind": "model"
-      },
-      {
-        "title": "Хрящ",
-        "description": "Хрящевые и костно-хрящевые дефекты",
-        "url": "cartilage.html",
-        "type": "3D-МОДЕЛЬ",
-        "thumb": "menu-thumbs/cartilage.webp",
         "contentKind": "model"
       },
       {

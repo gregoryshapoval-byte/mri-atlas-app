@@ -1,0 +1,1 @@
+export function track(D,d,H){if(![D,d,H].every(Number.isFinite)||D<=0||d<0||d>=D||H<0)return null;const GT=.83*D-d;if(GT<=0)return null;const delta=GT-H;return {GT,delta,percent:100*d/D,kind:Math.abs(delta)<1e-9?'borderline':delta>0?'on-track':'off-track'}}

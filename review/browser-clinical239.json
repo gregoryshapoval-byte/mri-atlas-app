@@ -1,0 +1,23 @@
+{
+  "viewports": [
+    "320x568",
+    "393x852",
+    "852x393",
+    "1280x800"
+  ],
+  "modules": 5,
+  "tabs_per_module": 6,
+  "pattern_checks": 208,
+  "legacy_routes": [
+    "wrist.html?mode=ligaments",
+    "wrist.html?mode=tendons",
+    "wrist.html?mode=tfcc",
+    "shoulder-labrum.html",
+    "shoulder-hill-sachs.html",
+    "cartilage-model.html",
+    "patellofemoral-model.html",
+    "ligaments-model.html"
+  ],
+  "js_errors": [],
+  "missing_local_resources": []
+}

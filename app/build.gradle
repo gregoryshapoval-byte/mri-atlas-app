@@ -6,8 +6,8 @@ android {
   applicationId 'ru.grigory.shoulderatlas.restored'
   minSdk 26
   targetSdk 35
-  versionCode 138
-  versionName '2.38'
+  versionCode 139
+  versionName '2.39'
  }
  compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
 }
