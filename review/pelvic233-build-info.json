@@ -1,9 +1,9 @@
 {
   "version": "2.33",
   "code": 133,
-  "signed": false,
+  "signed": true,
   "base_sha256": "421e1e636c1f88ef2d10f9ca692e24da795c5747f098d50a8682e4230179c773",
-  "sha256": "f5b09f1314dce7650a93fe460a5f22e270a909dfa5fb4ae7e2138a4e8694e847",
+  "sha256": "b1e8897093facd37051ea06d4b7961701e49597fdae3d2e8898ea0d0b4a4870f",
   "old_assets": 9579,
   "assets": 9585,
   "changed_assets": [
@@ -20,5 +20,16 @@
     "pelvic233.js",
     "menu-thumbs/pelvic-prolapse.svg"
   ],
-  "unchanged_payload_verified": true
+  "unchanged_payload_verified": true,
+  "bytes": 139340872,
+  "certificate_sha256": "cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe",
+  "signature_v2": true,
+  "signature_v3": true,
+  "unsigned_to_signed_payload_identical": true,
+  "manifest": {
+    "versionCode": 133,
+    "versionName": "2.33",
+    "package": "ru.grigory.shoulderatlas.restored"
+  },
+  "physical_android_tested": false
 }
