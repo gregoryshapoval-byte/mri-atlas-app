@@ -663,6 +663,13 @@ export const regions=[
         "url": "fibroids.html",
         "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
         "thumb": "menu-thumbs/fibroids.webp"
+      },
+      {
+        "title": "Аденомиоз",
+        "description": "Формы · JZ и прямые признаки · аденомиома · ловушки",
+        "url": "adenomyosis.html",
+        "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+        "thumb": "menu-thumbs/adenomyosis.svg"
       }
     ]
   },
