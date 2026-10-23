@@ -1,0 +1,24 @@
+{
+  "version": "2.36",
+  "versionCode": 136,
+  "base": "2.35",
+  "source_parent": "c102b1a41bfa8f044bbde19cec0b11d6e3c254c4",
+  "changed": [
+    "AndroidManifest.xml",
+    "assets/anatomy-regions.js",
+    "assets/cuff.html",
+    "assets/index.html",
+    "assets/region.html"
+  ],
+  "added": [
+    "assets/cuff-model.html"
+  ],
+  "assets": 9589,
+  "unchanged_payload_entries": 9591,
+  "sha256": "e2b675dbf24a21b8ea4bc49103e57da3ab2eed8c5f09237a49b8cd716b91ef0f",
+  "size": 139373929,
+  "certificate": "cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe",
+  "signature_v2_v3": true,
+  "zipalign": true,
+  "physical_android_tested": false
+}

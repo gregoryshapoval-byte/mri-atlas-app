@@ -297,9 +297,9 @@ export const regions=[
       },
       {
         "title": "Вращательная манжета",
-        "description": "Варианты разрывов надостного сухожилия",
+        "description": "Все сухожилия · разрывы · Ellman / Patte · мышцы и заключения",
         "url": "cuff.html",
-        "type": "3D-МОДЕЛЬ",
+        "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
         "thumb": "menu-thumbs/cuff.webp"
       },
       {
