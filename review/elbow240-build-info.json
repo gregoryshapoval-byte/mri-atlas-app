@@ -1,0 +1,29 @@
+{
+  "version": "2.40",
+  "code": 140,
+  "signed": true,
+  "base_sha256": "949eed285bf8bd83dbf2464a1d00b127b2ba0f9484b5b84936dd001f02ebd38a",
+  "sha256": "3038cb3a96714d8e321e7fc9ca5abe062e2148326b6983611b90fd829c23f3d3",
+  "old_assets": 9606,
+  "assets": 9610,
+  "changed_assets": [
+    "anatomy-regions.js",
+    "elbow-mri.html",
+    "index.html",
+    "region.html"
+  ],
+  "new_assets": [
+    "elbow-clinical.html",
+    "elbow240-data.js",
+    "elbow240.js",
+    "menu-thumbs/elbow-clinical240.svg"
+  ],
+  "unchanged_payload_verified": true,
+  "bytes": 139445179,
+  "certificate_sha256": "cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe",
+  "unsigned_signed_payload_equal": true,
+  "source_assets_equal": true,
+  "previous_catalog_preserved": true,
+  "library_file_id": "libfile_82c0c37791ac8191ab175f7b4a3eb175",
+  "library_file_name": "MRIAtlas-2.40.apk"
+}

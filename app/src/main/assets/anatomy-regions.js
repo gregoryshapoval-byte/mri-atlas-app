@@ -358,6 +358,14 @@ export const regions=[
         "contentKind": "mri"
       },
       {
+        "title": "Локоть · сухожилия и связки",
+        "description": "Эпикондилиты · бицепс / трицепс · UCL / LUCL · бурситы",
+        "url": "elbow-clinical.html",
+        "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+        "thumb": "menu-thumbs/elbow-clinical240.svg",
+        "contentKind": "clinical"
+      },
+      {
         "title": "Костный мозг",
         "description": "Отёк · реконверсия · перелом · замещение · CSI / DWI",
         "url": "bone-marrow.html?from=elbow",
