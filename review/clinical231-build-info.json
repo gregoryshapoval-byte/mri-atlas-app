@@ -1,0 +1,76 @@
+{
+  "version": "2.31",
+  "code": 131,
+  "signed": true,
+  "base": "2.30",
+  "sha256": "bb0fada92ab70ab80677a17798bf45ca84a62aee73ff03cb7d28fcfe4f96c40f",
+  "bytes": 139303153,
+  "old_assets": 9565,
+  "new_assets": 9573,
+  "changed_old_assets": [
+    "assets/anatomy-regions.js"
+  ],
+  "ui": [
+    {
+      "module": "tunnel-neuropathies",
+      "width": 320,
+      "height": 568,
+      "cases": 13,
+      "status": "passed"
+    },
+    {
+      "module": "stress-fractures",
+      "width": 320,
+      "height": 568,
+      "cases": 9,
+      "status": "passed"
+    },
+    {
+      "module": "tunnel-neuropathies",
+      "width": 393,
+      "height": 852,
+      "cases": 13,
+      "status": "passed"
+    },
+    {
+      "module": "stress-fractures",
+      "width": 393,
+      "height": 852,
+      "cases": 9,
+      "status": "passed"
+    },
+    {
+      "module": "tunnel-neuropathies",
+      "width": 852,
+      "height": 393,
+      "cases": 13,
+      "status": "passed"
+    },
+    {
+      "module": "stress-fractures",
+      "width": 852,
+      "height": 393,
+      "cases": 9,
+      "status": "passed"
+    },
+    {
+      "module": "tunnel-neuropathies",
+      "width": 1280,
+      "height": 800,
+      "cases": 13,
+      "status": "passed"
+    },
+    {
+      "module": "stress-fractures",
+      "width": 1280,
+      "height": 800,
+      "cases": 9,
+      "status": "passed"
+    }
+  ],
+  "limitations": [
+    "No physical Android check",
+    "No independent medical validation"
+  ],
+  "certificate_sha256": "cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe"
+}
