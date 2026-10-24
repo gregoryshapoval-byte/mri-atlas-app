@@ -1,0 +1,10 @@
+{
+  "version": "2.41",
+  "versionCode": 141,
+  "applicationId": "ru.grigory.shoulderatlas.restored",
+  "bytes": 153794813,
+  "sha256": "0f36bcc6c4eaddc1969c831d5ecff50aa97fa54e374cc5b08a2465bebc1cb10a",
+  "certificate_sha256": "cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe",
+  "matches_2_40": true,
+  "unsigned_payload_unchanged": true
+}

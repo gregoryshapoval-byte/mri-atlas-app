@@ -9,6 +9,7 @@ SDK_ROOT="${ANDROID_SDK_ROOT:?Set ANDROID_SDK_ROOT}"
 BT="$SDK_ROOT/build-tools/35.0.0"
 PLATFORM="$SDK_ROOT/platforms/android-35/android.jar"
 SIGNING_DIR="${SIGNING_DIR:-$PWD/../atlas-signing}"
+KEYSTORE_FILE="${KEYSTORE_FILE:-$SIGNING_DIR/atlas.keystore}"
 mkdir -p build/classes build/dex
 "$BT/aapt2" compile --dir app/src/main/res -o build/resources.zip
 "$BT/aapt2" link -o build/base.apk -I "$PLATFORM" --manifest app/src/main/AndroidManifest.xml --min-sdk-version 26 --target-sdk-version 35 --version-code 141 --version-name 2.41 --rename-manifest-package ru.grigory.shoulderatlas.restored build/resources.zip
@@ -30,12 +31,19 @@ if [ "${UNSIGNED_ONLY:-0}" = "1" ]; then
  "$BT/aapt2" dump badging build/MRIAtlas-2.41-unsigned.apk
  exit 0
 fi
-if [ ! -f "$SIGNING_DIR/atlas.jks" ]; then
- echo 'Signing key missing. Restore the release key; do not generate a replacement.' >&2
+if [ ! -f "$KEYSTORE_FILE" ]; then
+ echo 'Restore the saved key: python3 tools/restore_signing_key.py. Do not generate a replacement.' >&2
  exit 1
 fi
+keytool -exportcert -keystore "$KEYSTORE_FILE" -storepass android -alias atlas -file build/signing-cert.der
+python3 - <<'PY'
+from pathlib import Path
+import hashlib
+expected='cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe'
+assert hashlib.sha256(Path('build/signing-cert.der').read_bytes()).hexdigest()==expected, 'Wrong signing key: expected current 1.83–2.40 certificate'
+PY
 "$BT/zipalign" -f 4 build/base.apk build/aligned.apk
-"$BT/apksigner" sign --ks "$SIGNING_DIR/atlas.jks" --ks-pass pass:android --key-pass pass:android --ks-key-alias atlas --out /tmp/MRIAtlas-2.41-restored-signed.apk build/aligned.apk
+"$BT/apksigner" sign --ks "$KEYSTORE_FILE" --ks-pass pass:android --key-pass pass:android --ks-key-alias atlas --out /tmp/MRIAtlas-2.41-restored-signed.apk build/aligned.apk
 python3 - <<'PYCODE'
 from pathlib import Path
 import os
