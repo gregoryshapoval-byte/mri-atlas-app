@@ -1,0 +1,4 @@
+import fs from 'node:fs';import crypto from 'node:crypto';import assert from 'node:assert/strict';import{layouts}from'../app/src/main/assets/case-panel-layouts.js';
+let count=0;for(const[src,l]of Object.entries(layouts)){assert.equal(crypto.createHash('sha256').update(fs.readFileSync(new URL('../app/src/main/assets/'+src,import.meta.url))).digest('hex'),l.sha256,src);for(const p of l.panels){const[x,y,w,h]=p.box;assert(x>=0&&y>=0&&w>0&&h>0&&x+w<=l.width&&y+h<=l.height,src+' invalid bounds');assert(p.label.length>3);count++;}}
+for(const module of['liver','rectal','endometriosis']){const{cases}=await import('../app/src/main/assets/'+module+'-cases-data.js');for(const c of cases){const src=module+'-cases/'+(c.file||`figure-${String(c.figure).padStart(2,'0')}.png`);assert(layouts[src],src);}}
+assert.equal(Object.keys(layouts).length,56);assert.equal(count,225);console.log('PASS: 56 original source hashes, 225 valid panel bounds, all gallery cases mapped.');

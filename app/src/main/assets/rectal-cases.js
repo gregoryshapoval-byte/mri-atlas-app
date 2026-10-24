@@ -1,3 +1,4 @@
+import {createPanelGallery,initPanelZoom} from './case-panels.js';
 import {cases,sources} from './rectal-cases-data.js';
 const el=id=>document.getElementById(id);
 const make=(tag,text,cls)=>{const n=document.createElement(tag);if(text)n.textContent=text;if(cls)n.className=cls;return n;};
@@ -19,17 +20,15 @@ function addText(parent,title,text){const p=make('p');p.append(make('strong',tit
 function renderCase(){
  const c=selected,root=el('realCase');root.replaceChildren();if(!c){root.append(make('p','По этому запросу нет иллюстраций. Измените поиск или выберите «Все».'));return;}
  root.append(make('p',`Иллюстрация ${cases.indexOf(c)+1} / ${cases.length} · ${c.group}`,'caseCount'),make('h3',c.title),make('p',c.series,'caseMeta'));
- const b=make('button',null,'caseImageButton');b.type='button';b.setAttribute('aria-label','Увеличить: '+c.title);const img=make('img');img.src=path(c);img.alt=c.title+'; оригинальная иллюстрация '+c.figure;img.decoding='async';b.append(img);
- b.onclick=()=>{el('caseZoomTitle').textContent=c.title;el('caseZoomImage').src=path(c);el('caseZoomImage').alt=img.alt;el('caseZoomScale').value='1';el('caseZoomImage').style.width='100%';el('caseZoom').showModal();};root.append(b,make('p','Нажмите на снимок для увеличения до 4×.','caseMeta'),make('p',c.question,'casePanelNote'));
+ root.append(createPanelGallery(path(c),c.title),make('p','Каждый кадр — на всю ширину. Нажмите на него для дополнительного увеличения.','caseMeta'),make('p',c.question,'casePanelNote'));
  const d=make('details',null,'caseAnswer');d.append(make('summary','Показать разбор'));addText(d,'На изображении:',c.finding);addText(d,'В полном исследовании:',c.check);addText(d,'Ловушка:',c.trap);root.append(d);
  const names={staging:'Стадирование',nodes:'Узлы и риски',response:'После лечения'};
  const jump=make('button','Открыть раздел «'+names[c.tab]+'» →','caseFeature');jump.type='button';jump.onclick=()=>document.querySelector(`[data-tab="${c.tab}"]`).click();root.append(jump);
  const source=sources[c.source],credit=make('p',null,'caseCredit'),a=make('a',source.short+` · Fig. ${c.figure}`);a.href=c.source==='mdpi'?source.url+'#fig_body_display_jcm-13-00172-f'+String(c.figure).padStart(3,'0'):source.url+'#Fig'+c.figure;a.target='_blank';a.rel='noopener';
  const license=make('a','CC BY 4.0');license.href='https://creativecommons.org/licenses/by/4.0/';license.target='_blank';license.rel='noopener';
- credit.append(a,document.createTextNode(' · '),license,document.createTextNode(` · © Авторы, ${source.copyrightYear||source.year}. Изображение без изменений; русский разбор — MRIAtlas.`));root.append(credit);
+ credit.append(a,document.createTextNode(' · '),license,document.createTextNode(` · © Авторы, ${source.copyrightYear||source.year}. Исходный файл без изменений; панели показаны отдельно. Русский разбор — MRIAtlas.`));root.append(credit);
 }
-el('caseZoom').querySelector('.close').onclick=()=>el('caseZoom').close();
-el('caseZoomScale').oninput=e=>{el('caseZoomImage').style.width=`${Number(e.target.value)*100}%`;};
+initPanelZoom();
 el('caseSearch').oninput=e=>{query=e.target.value.trim().toLowerCase();refresh();};
 for(const source of Object.values(sources)){const li=make('li'),a=make('a',source.authors+'. '+source.title+'. DOI '+source.doi);a.href=source.url;a.target='_blank';a.rel='noopener';li.append(a);el('caseSourceList').append(li);}
 refresh();

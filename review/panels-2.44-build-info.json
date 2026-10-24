@@ -1,0 +1,22 @@
+{
+  "version": "2.44",
+  "versionCode": 144,
+  "applicationId": "ru.grigory.shoulderatlas.restored",
+  "sha256": "e5e2905e205179dbf36bd3350f23cb593861fcfb689a278344acf826ec9928e0",
+  "bytes": 182847948,
+  "asset_count": 9681,
+  "old_asset_changes": [
+    "app/src/main/assets/endometriosis-cases.js",
+    "app/src/main/assets/endometriosis.html",
+    "app/src/main/assets/liver-cases.js",
+    "app/src/main/assets/liver-lesions.html",
+    "app/src/main/assets/rectal-cancer.html",
+    "app/src/main/assets/rectal-cases.js"
+  ],
+  "missing_old_assets": [],
+  "certificate_sha256": "cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe",
+  "source_compositions": 56,
+  "vertical_panels": 225,
+  "original_images_unchanged": true,
+  "all_assets_match_source": true
+}
