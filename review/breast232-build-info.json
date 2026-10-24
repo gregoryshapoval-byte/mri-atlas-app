@@ -1,0 +1,58 @@
+{
+  "version": "2.32",
+  "code": 132,
+  "signed": true,
+  "bytes": 139328143,
+  "sha256": "421e1e636c1f88ef2d10f9ca692e24da795c5747f098d50a8682e4230179c773",
+  "certificate_sha256": "cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe",
+  "base_commit": "cad6f623159d00e87c87ef46963d1c892a230546",
+  "old_assets": 9573,
+  "assets": 9579,
+  "changed_old_assets": [
+    "assets/anatomy-regions.js",
+    "assets/home-icons.js",
+    "assets/index.html",
+    "assets/menus.js",
+    "assets/region.html"
+  ],
+  "ui": [
+    {
+      "width": 320,
+      "height": 568,
+      "patterns": 14,
+      "implants": 4,
+      "categories": 10,
+      "tabs": 6,
+      "status": "passed"
+    },
+    {
+      "width": 393,
+      "height": 852,
+      "patterns": 14,
+      "implants": 4,
+      "categories": 10,
+      "tabs": 6,
+      "status": "passed"
+    },
+    {
+      "width": 852,
+      "height": 393,
+      "patterns": 14,
+      "implants": 4,
+      "categories": 10,
+      "tabs": 6,
+      "status": "passed"
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "patterns": 14,
+      "implants": 4,
+      "categories": 10,
+      "tabs": 6,
+      "status": "passed"
+    }
+  ],
+  "physical_android_tested": false,
+  "independent_medical_validation": false
+}

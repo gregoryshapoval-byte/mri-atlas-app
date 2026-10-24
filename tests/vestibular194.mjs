@@ -1,0 +1,25 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {data} from '../app/src/main/assets/vestibular-data.js';
+import {figures,koosFigures} from '../app/src/main/assets/vestibular-figures.js';
+const html=fs.readFileSync('app/src/main/assets/vestibular.html','utf8'),hub=fs.readFileSync('app/src/main/assets/brain-tumors.html','utf8');
+assert.match(hub,/href="vestibular.html"/);assert.match(hub,/Модули серии доступны/);
+assert.deepEqual(data.features.map(f=>f.id),['anatomy','typical','fundus','mass']);
+assert.deepEqual(data.features[0].legend,['VII: передневерхний квадрант.','Улитковый нерв: передненижний квадрант.','Верхний преддверный: задневерхний квадрант.','Нижний преддверный: задненижний квадрант.']);
+assert.match(data.features[0].good,/передняя сторона слева, задняя справа/);assert.match(data.features[0].trap,/нервы смещаются.*нельзя автоматически/);
+assert.deepEqual(new Set(Object.keys(figures)),new Set(data.features.map(f=>f.id)));
+assert.deepEqual(data.koos.map(k=>k.id),['I','II','III','IV']);assert.deepEqual(Object.keys(koosFigures),['I','II','III','IV']);
+assert.match(data.koos[0].criterion,/ограничена внутренним слуховым/);
+assert.match(data.koos[1].criterion,/выход.*без контакта со стволом/);
+assert.match(data.koos[2].criterion,/заполняет.*без смещения ствола/);
+assert.match(data.koos[3].criterion,/смещением ствола и черепных нервов/);
+assert.match(html,/Без автоматических сантиметровых порогов/);assert.match(html,/биопсия не является обязательным/);
+assert.match(data.features[2].good,/Отдельно измерять цистернальный.*не складывая/);assert.match(data.features[2].trap,/не гарантируют сохранение слуха/);
+assert.equal(data.locations.length,4);assert.equal(data.scan.length,5);assert.equal(data.differentials.length,4);assert.equal(data.checklist.length,7);assert.equal(data.reports.length,3);
+assert.match(data.scan[0][1],/Субмиллиметровая.*перпендикулярно ВСП.*оба ВСП/);
+assert.match(data.scan[1][0],/T1 до \/ после Gd/);assert.match(data.scan[3][0],/DWI \+ ADC/);
+assert.match(html,/уже известной нелеченой.*без Gd/);assert.match(html,/не универсальная отмена контраста/);
+assert.match(data.differentials[1].trap,/VII- и VIII-шванному.*невозможно/);
+assert.match(data.reports[1][1],/Koos/);assert.match(data.reports[2][1],/сопоставимых сериях/);
+for(const svg of [...Object.values(figures),...Object.values(koosFigures)]){assert.match(svg,/viewBox="0 0 420 300"/);assert(!/<script|<image|https?:\/\//.test(svg.replace('http://www.w3.org/2000/svg','')));}
+console.log('PASS vestibular194: four nerve quadrants/orientation, Koos I-IV without size shortcuts, fundus/hearing limits, targeted MRI, mimics and comparative reports.');

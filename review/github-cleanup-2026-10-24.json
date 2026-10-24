@@ -1,0 +1,1614 @@
+{
+  "date": "2026-10-24",
+  "main": "6ee216f54d03007925b4c2e62dc7d220cb7b3df6",
+  "branches": [
+    {
+      "name": "anatomy-sections-safe-20261018",
+      "sha": "9a2194c4b58bb82ba803fdf19ded09b38fd8bba9"
+    },
+    {
+      "name": "female-pelvis-import-with-archive",
+      "sha": "3b3ab183995acca877009d30f9230d9006399761"
+    },
+    {
+      "name": "female-pelvis-source-import-ci-20261018-v2",
+      "sha": "b98c8eebcfe342b2b10e3381aac067f48eb608fa"
+    },
+    {
+      "name": "female-pelvis-source-import-ci-20261018",
+      "sha": "0d44c12e70f9e173fa0de8a317dee4f272aa4cf1"
+    },
+    {
+      "name": "fix-default-mri-viewer-init-20261018",
+      "sha": "19b224e50f2185f77e49003cc60547e410adffbd"
+    },
+    {
+      "name": "fix-mri-viewer-braces-20261018",
+      "sha": "fe1f93aa35e9e1c9a4e61783679551c31d4769d7"
+    },
+    {
+      "name": "main",
+      "sha": "6ee216f54d03007925b4c2e62dc7d220cb7b3df6"
+    },
+    {
+      "name": "work/abdomen-ct-1-65",
+      "sha": "e47a91e269757f304074c402d094c4e3182a3df9"
+    },
+    {
+      "name": "work/anatomy-audit-1-45",
+      "sha": "1d50e47bcef8becd7955cbfb5e5810991a445906"
+    },
+    {
+      "name": "work/anatomy-icons-1-48",
+      "sha": "0c1f172a550484a3011d28e3e010235ffd5cd47e"
+    },
+    {
+      "name": "work/continuous-scroll-1-64",
+      "sha": "870ecbeb01d82a93965639ff47f341e65debfc67"
+    },
+    {
+      "name": "work/design-and-mri-1-42",
+      "sha": "eadfea60b8e0eb5f5be835c7293de2072376eb4b"
+    },
+    {
+      "name": "work/female-pelvis-ligaments-1-62",
+      "sha": "5fbc9107598333adcc6d60cf5ddd1ae79f419c7f"
+    },
+    {
+      "name": "work/female-pelvis-on-1-30",
+      "sha": "4a831f59a2f4e3a12d32c37bb6db6f99588ff11e"
+    },
+    {
+      "name": "work/foot-joints-1-51",
+      "sha": "c159394e24d6201de314f7cd32bae528c6680dcd"
+    },
+    {
+      "name": "work/hand-anatomy-1-53",
+      "sha": "93517041f99e387a714722527c25742c26596590"
+    },
+    {
+      "name": "work/hand-brain-knee-1-52",
+      "sha": "af27ec5de6918ad05147e2b92db025a111330e6a"
+    },
+    {
+      "name": "work/hip-insertions-1-47",
+      "sha": "f7ef1d0877e186edb56481d8997a933da849e638"
+    },
+    {
+      "name": "work/hip-knee-tendons-1-49",
+      "sha": "7601bfafe6f03f655f365469d12783d972f634ad"
+    },
+    {
+      "name": "work/home-icons-1-63",
+      "sha": "8c5cfc6834ecb72cbe1e1271ad1fba683c6c5a8b"
+    },
+    {
+      "name": "work/home-limbs-plexus-1-50",
+      "sha": "6edd4291bc11f89910f09be266779ae413c56fe4"
+    },
+    {
+      "name": "work/joint-lines-1-54",
+      "sha": "8b3b4d7e06718ca77acb929935dcbd16e50c4d6e"
+    },
+    {
+      "name": "work/joint-recesses-1-44",
+      "sha": "40e66a9ee26b36c9b9a8f5753ce244a6736b7c68"
+    },
+    {
+      "name": "work/ligaments-pd-1-46",
+      "sha": "ab09106f17328f28f7c1a25eba3774a8295ce423"
+    },
+    {
+      "name": "work/orads-simplify-1-83",
+      "sha": "92adead38c340692c990cee2d3a0df585977d379"
+    },
+    {
+      "name": "work/perianal-classification-1-60",
+      "sha": "3b1219ed6bf6f86bc01a5c0ebcb2a2c7546a8c7e"
+    },
+    {
+      "name": "work/perianal-module-1-58",
+      "sha": "290de41ef8a48fff37fc0491ff3f092003a16788"
+    },
+    {
+      "name": "work/perianal-training-1-61",
+      "sha": "5b32228fb0cb1b91a27e287102a1e1da5e1d3444"
+    },
+    {
+      "name": "work/shoulder-mri-from-1-4",
+      "sha": "830dc3e237961fe5b000021d43d45be2d0ebbff2"
+    },
+    {
+      "name": "work/shoulder-on-1-4-from-1-30",
+      "sha": "4ff68f763f139a162b24b0e0ff698787614b2aa6"
+    },
+    {
+      "name": "work/shoulder-pd-1-43",
+      "sha": "fca815ce24a04c7eafb2ffe2628da777c5c47a8e"
+    },
+    {
+      "name": "work/viewer-all-modules-1-41",
+      "sha": "0edf9ca9547b8f941fe005209296094d92eed98d"
+    },
+    {
+      "name": "work/viewer-fit-1-59",
+      "sha": "284c6718dd453b33b9916243f2d7cc3721f26c0e"
+    },
+    {
+      "name": "work/wrist-capitate-ligaments-1-55",
+      "sha": "c3f5d8dca2b449f5214381f802c265db8c637aeb"
+    },
+    {
+      "name": "work/wrist-ligament-topography-1-56",
+      "sha": "bdc9407db93fa929db8798adecc8b553e5363b35"
+    },
+    {
+      "name": "work/wrist-review-1-57",
+      "sha": "2b69305947bba71a6108147c791578a13cd42e26"
+    },
+    {
+      "name": "work/wrist-tfcc-1-30",
+      "sha": "a33e8cac7f3f3eaef604961d604e858aa0edbab0"
+    }
+  ],
+  "releases": [
+    {
+      "id": 421117078,
+      "tag": "atlas-2.30-abdomen-metastases",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 521
+        },
+        {
+          "name": "MRIAtlas-2.30.apk",
+          "size": 139277965
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 421087963,
+      "tag": "atlas-2.29-abdomen",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.29.apk",
+          "size": 139217507
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 421061762,
+      "tag": "atlas-2.28-hindfoot",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.28.apk",
+          "size": 139157234
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 421033437,
+      "tag": "atlas-2.27-ankle-ligaments",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.27.apk",
+          "size": 139088098
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 421010415,
+      "tag": "atlas-2.26-uterine-cancer",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.26.apk",
+          "size": 139061942
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 420981933,
+      "tag": "atlas-2.25-acl-postop",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.25.apk",
+          "size": 139027261
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 420948921,
+      "tag": "atlas-2.24-meniscus",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.24.apk",
+          "size": 139001193
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 420718159,
+      "tag": "atlas-2.23-bone-lesions",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.23.apk",
+          "size": 138971174
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 420690719,
+      "tag": "atlas-2.22-sacroiliitis",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.22.apk",
+          "size": 138932332
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 420628775,
+      "tag": "atlas-2.21-osteonecrosis",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.21.apk",
+          "size": 138897886
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 420583291,
+      "tag": "atlas-2.20-disc-nerve",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.20.apk",
+          "size": 138867541
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 420550529,
+      "tag": "atlas-2.19-schizas",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.19.apk",
+          "size": 138841500
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 420521006,
+      "tag": "atlas-2.18-mriatlas-branding",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.18.apk",
+          "size": 138828410
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 420491447,
+      "tag": "atlas-2.17-glioma-followup",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.17.apk",
+          "size": 138823911
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 420440988,
+      "tag": "atlas-2.16-stable-labels",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.16.apk",
+          "size": 138807144
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 420411708,
+      "tag": "atlas-2.15-spinal-infection",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.15.apk",
+          "size": 138807144
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 420391913,
+      "tag": "atlas-2.14-liver-lesions",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.14.apk",
+          "size": 138786276
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 420371192,
+      "tag": "atlas-2.13-bone-marrow",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.13.apk",
+          "size": 138761327
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 420267942,
+      "tag": "atlas-2.12-metastases-followup",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.12.apk",
+          "size": 138740484
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 420253610,
+      "tag": "atlas-2.11-metastases-primary",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.11.apk",
+          "size": 138719571
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 420243296,
+      "tag": "atlas-2.10-endometriosis-metastases-final",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.10.apk",
+          "size": 138715392
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 420241258,
+      "tag": "atlas-2.10-endometriosis-metastases",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.10.apk",
+          "size": 138715392
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 420072269,
+      "tag": "atlas-2.09-venous-aneurysm-sah",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.09.apk",
+          "size": 138690292
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 419874048,
+      "tag": "atlas-2.08-toxic-hypoxic",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.08.apk",
+          "size": 138669409
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 419847483,
+      "tag": "atlas-2.07-trauma",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.07.apk",
+          "size": 138644460
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 419809115,
+      "tag": "atlas-2.06-epileptogenic",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.06.apk",
+          "size": 138623612
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 419775621,
+      "tag": "atlas-2.05-neuroinfection-demyelination",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.05.apk",
+          "size": 138606880
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 419781637,
+      "tag": "atlas-2.05-clinical-final",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.05.apk",
+          "size": 138602784
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 419748506,
+      "tag": "atlas-2.04-cysts-final",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.04.apk",
+          "size": 138573448
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 419660140,
+      "tag": "atlas-2.03-csf",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.03.apk",
+          "size": 138556701
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 419557641,
+      "tag": "atlas-2.02-atrophy",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.02.apk",
+          "size": 138535848
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 419524679,
+      "tag": "atlas-2.01-svd-final",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.01.apk",
+          "size": 138519121
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 419518274,
+      "tag": "atlas-2.01-svd",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.01.apk",
+          "size": 138519121
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 419494254,
+      "tag": "atlas-2.00-vascular",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-2.00.apk",
+          "size": 138502369
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 419474791,
+      "tag": "atlas-1.99-stroke",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-1.99.apk",
+          "size": 138485567
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 419427978,
+      "tag": "atlas-1.98-neuronal",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-1.98.apk",
+          "size": 138472941
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 419405650,
+      "tag": "atlas-1.97-age-final",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-1.97.apk",
+          "size": 138451891
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 419402828,
+      "tag": "atlas-1.97-age",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-1.97.apk",
+          "size": 138451891
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 419377920,
+      "tag": "atlas-1.96-ependymal",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-1.96.apk",
+          "size": 138426661
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 419282080,
+      "tag": "atlas-1.95-hemangioblastoma",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-1.95.apk",
+          "size": 138414098
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 419255240,
+      "tag": "atlas-1.94-vestibular",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-1.94.apk",
+          "size": 138401507
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 419240306,
+      "tag": "atlas-1.93-sellar-final",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-1.93.apk",
+          "size": 138388940
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 419238269,
+      "tag": "atlas-1.93-sellar",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-1.93.apk",
+          "size": 138388940
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 419218501,
+      "tag": "atlas-1.92-cns-lymphoma",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-1.92.apk",
+          "size": 138376389
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 419189473,
+      "tag": "atlas-1.91-diffuse-gliomas",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-1.91.apk",
+          "size": 138363814
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 419180637,
+      "tag": "atlas-1.90-meningioma-final",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-1.90.apk",
+          "size": 138351227
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 419178524,
+      "tag": "atlas-1.90-meningioma",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-1.90.apk",
+          "size": 138351227
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 419164261,
+      "tag": "atlas-1.89-metastases",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-1.89.apk",
+          "size": 138338660
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 419153821,
+      "tag": "atlas-1.88-brain",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-1.88.apk",
+          "size": 138326069
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 418840318,
+      "tag": "atlas-1.87-prostate",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-1.87.apk",
+          "size": 138313274
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 418835792,
+      "tag": "atlas-1.86-prostate",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-1.86.apk",
+          "size": 138309178
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 418817951,
+      "tag": "atlas-1.85-prostate",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-1.85.apk",
+          "size": 138305007
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 418796433,
+      "tag": "atlas-1.84-ms",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 380
+        },
+        {
+          "name": "MRIAtlas-1.84.apk",
+          "size": 138288112
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 418778626,
+      "tag": "atlas-1.83-personal-backup",
+      "assets": [
+        {
+          "name": "build-info.json",
+          "size": 283
+        },
+        {
+          "name": "MRIAtlas-1.83-signed.apk",
+          "size": 138275512
+        },
+        {
+          "name": "MRIAtlas-test-signing-key.zip",
+          "size": 5135
+        },
+        {
+          "name": "package-info.txt",
+          "size": 802
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "size": 432
+        },
+        {
+          "name": "signature.txt",
+          "size": 962
+        }
+      ]
+    },
+    {
+      "id": 416582841,
+      "tag": "source-archive-1",
+      "assets": [
+        {
+          "name": "net.imaios.eanatomy.zip",
+          "size": 502061764
+        }
+      ]
+    }
+  ],
+  "preserve_releases": [
+    "atlas-1.83-personal-backup",
+    "source-archive-1",
+    "atlas-2.41"
+  ],
+  "restored_support_files": [
+    "tools/abdomen_data229.py",
+    "tools/abdomen_data230.py",
+    "tools/abdomen_figures229.py",
+    "tools/abdomen_figures230.py",
+    "tools/acl225_figures.py",
+    "tools/atrophy202.py",
+    "tools/audit238.py",
+    "tools/bone223_content.py",
+    "tools/bone223_figures.py",
+    "tools/brain_tumors188.py",
+    "tools/brand218.py",
+    "tools/breast232_data.py",
+    "tools/clinical239.py",
+    "tools/csf203.py",
+    "tools/cysts204.py",
+    "tools/disc_nerve220_figures.py",
+    "tools/elbow240.py",
+    "tools/figures239.py",
+    "tools/hip237.py",
+    "tools/home_icons218.py",
+    "tools/meningioma190.py",
+    "tools/meniscus224_figures.py",
+    "tools/metastases189.py",
+    "tools/modules231.py",
+    "tools/neuronal198.py",
+    "tools/osteonecrosis221_figures.py",
+    "tools/pelvic233.py",
+    "tools/prostate_sectors186.py",
+    "tools/repack233.py",
+    "tools/repack237.py",
+    "tools/repack238.py",
+    "tools/repack239.py",
+    "tools/repack240.py",
+    "tools/sacroiliitis222_figures.py",
+    "tools/standalone233.py",
+    "tools/stroke199.py",
+    "tools/svd201.py",
+    "tools/vascular200.py",
+    "tests/abdomen229.mjs",
+    "tests/abdomen230.mjs",
+    "tests/acl225.mjs",
+    "tests/adenomyosis235.mjs",
+    "tests/age197.mjs",
+    "tests/ankle227.mjs",
+    "tests/atrophy202.mjs",
+    "tests/bone223.mjs",
+    "tests/brain188.mjs",
+    "tests/branding218.mjs",
+    "tests/breast232.mjs",
+    "tests/browser-abdomen229.mjs",
+    "tests/browser-abdomen230.mjs",
+    "tests/browser-acl225.mjs",
+    "tests/browser-ankle227.mjs",
+    "tests/browser-atrophy202.mjs",
+    "tests/browser-bone223.mjs",
+    "tests/browser-brain-age197.mjs",
+    "tests/browser-brain188.mjs",
+    "tests/browser-branding218.mjs",
+    "tests/browser-breast232.mjs",
+    "tests/browser-clinical210.mjs",
+    "tests/browser-clinical231.mjs",
+    "tests/browser-clinical239.mjs",
+    "tests/browser-craniopharyngioma197.mjs",
+    "tests/browser-csf203.mjs",
+    "tests/browser-cysts204.mjs",
+    "tests/browser-diffuse191.mjs",
+    "tests/browser-disc220.mjs",
+    "tests/browser-elbow240.mjs",
+    "tests/browser-ependymal196.mjs",
+    "tests/browser-epilepsy206.mjs",
+    "tests/browser-followup212.mjs",
+    "tests/browser-glioma217.mjs",
+    "tests/browser-glioneuronal198.mjs",
+    "tests/browser-hemangioblastoma195.mjs",
+    "tests/browser-hindfoot228.mjs",
+    "tests/browser-hip237.mjs",
+    "tests/browser-liver214.mjs",
+    "tests/browser-lymphoma192.mjs",
+    "tests/browser-marrow213.mjs",
+    "tests/browser-meningioma190.mjs",
+    "tests/browser-meniscus224.mjs",
+    "tests/browser-metastases189.mjs",
+    "tests/browser-ms184.mjs",
+    "tests/browser-navigation238.mjs",
+    "tests/browser-navigation240.mjs",
+    "tests/browser-neuro205.mjs",
+    "tests/browser-neurocytoma198.mjs",
+    "tests/browser-orads180.mjs",
+    "tests/browser-orads181.mjs",
+    "tests/browser-orads183.mjs",
+    "tests/browser-osteonecrosis221.mjs",
+    "tests/browser-pager216.mjs",
+    "tests/browser-pelvic233.mjs",
+    "tests/browser-pilocytic197.mjs",
+    "tests/browser-primary211.mjs",
+    "tests/browser-prostate185.mjs",
+    "tests/browser-prostate186.mjs",
+    "tests/browser-prostate187.mjs",
+    "tests/browser-sacroiliitis222.mjs",
+    "tests/browser-schizas219.mjs",
+    "tests/browser-sellar193.mjs",
+    "tests/browser-spinal215.mjs",
+    "tests/browser-stroke199.mjs",
+    "tests/browser-svd201.mjs",
+    "tests/browser-toxic208.mjs",
+    "tests/browser-trauma207.mjs",
+    "tests/browser-uterine226.mjs",
+    "tests/browser-vascular200.mjs",
+    "tests/browser-vessels209.mjs",
+    "tests/browser-vestibular194.mjs",
+    "tests/catalog-current230.mjs",
+    "tests/catalog142.mjs",
+    "tests/clinical210.mjs",
+    "tests/clinical239.mjs",
+    "tests/csf203.mjs",
+    "tests/cuff236.mjs",
+    "tests/cysts204.mjs",
+    "tests/diffuse191.mjs",
+    "tests/disc220.mjs",
+    "tests/elbow240.mjs",
+    "tests/ependymal196.mjs",
+    "tests/epilepsy206.mjs",
+    "tests/followup212.mjs",
+    "tests/glioma217.mjs",
+    "tests/hemangioblastoma195.mjs",
+    "tests/hindfoot228.mjs",
+    "tests/hip237.mjs",
+    "tests/home163.mjs",
+    "tests/kinetics232.mjs",
+    "tests/liver214.mjs",
+    "tests/lymphoma192.mjs",
+    "tests/marrow213.mjs",
+    "tests/meningioma190.mjs",
+    "tests/meniscus224.mjs",
+    "tests/menus142.mjs",
+    "tests/metastases189.mjs",
+    "tests/navigation238.mjs",
+    "tests/neuro205.mjs",
+    "tests/neuronal198.mjs",
+    "tests/osteonecrosis221.mjs",
+    "tests/pelvic233.mjs",
+    "tests/primary211.mjs",
+    "tests/prostate185.mjs",
+    "tests/prostate186.mjs",
+    "tests/prostate187.mjs",
+    "tests/sacroiliitis222.mjs",
+    "tests/schizas219.mjs",
+    "tests/sellar193.mjs",
+    "tests/spinal215.mjs",
+    "tests/stroke199.mjs",
+    "tests/svd201.mjs",
+    "tests/toxic208.mjs",
+    "tests/trauma207.mjs",
+    "tests/uterine226.mjs",
+    "tests/vascular200.mjs",
+    "tests/vessels209.mjs",
+    "tests/vestibular194.mjs",
+    "review/abdomen-2.29.md",
+    "review/abdomen-metastases-2.30.md",
+    "review/acl-2.25.md",
+    "review/adenomyosis-2.35.md",
+    "review/adenomyosis235-build-info.json",
+    "review/age-1.97.md",
+    "review/ankle-2.27.md",
+    "review/atrophy-2.02.md",
+    "review/bone-lesions-2.23.md",
+    "review/brain-tumors-1.88.md",
+    "review/branding-2.18.md",
+    "review/breast-2.32.md",
+    "review/breast232-build-info.json",
+    "review/browser-audit238.json",
+    "review/browser-clinical239.json",
+    "review/browser-elbow240.json",
+    "review/browser-navigation240.json",
+    "review/clinical-2.10.md",
+    "review/clinical-2.39.md",
+    "review/clinical231-build-info.json",
+    "review/clinical239-build-info.json",
+    "review/cns-lymphoma-1.92.md",
+    "review/csf-2.03.md",
+    "review/cuff-2.36.md",
+    "review/cuff236-build-info.json",
+    "review/cysts-2.04.md",
+    "review/diffuse-gliomas-1.91.md",
+    "review/disc-2.20.md",
+    "review/elbow-2.40.md",
+    "review/elbow240-build-info.json",
+    "review/ependymal-1.96.md",
+    "review/epilepsy-2.06.md",
+    "review/fibroids-2.34.md",
+    "review/fibroids234-build-info.json",
+    "review/followup-2.12.md",
+    "review/glioma-2.17.md",
+    "review/global-audit238.json",
+    "review/hemangioblastoma-1.95.md",
+    "review/hindfoot-2.28.md",
+    "review/hip-2.37.md",
+    "review/hip237-build-info.json",
+    "review/liver-2.14.md",
+    "review/marrow-2.13.md",
+    "review/meningioma-1.90.md",
+    "review/meniscus-2.24.md",
+    "review/metastases-1.89.md",
+    "review/metastases-2.11.md",
+    "review/multiple-sclerosis-1.84.md",
+    "review/navigation-2.38.md",
+    "review/navigation238-build-info.json",
+    "review/neuro-2.05.md",
+    "review/neuronal-1.98.md",
+    "review/neuropathy-fractures-2.31.md",
+    "review/orads-simplify-1.83.md",
+    "review/osteonecrosis-2.21.md",
+    "review/pager-2.16.md",
+    "review/pelvic-2.33.md",
+    "review/pelvic233-build-info.json",
+    "review/pelvic233/ui-results.json",
+    "review/prostate-audit-1.87.md",
+    "review/prostate-cancer-1.85.md",
+    "review/prostate-sectors-1.86.md",
+    "review/sacroiliitis-2.22.md",
+    "review/schizas-2.19.md",
+    "review/sellar-1.93.md",
+    "review/spinal-2.15.md",
+    "review/stroke-1.99.md",
+    "review/svd-2.01.md",
+    "review/toxic-hypoxic-2.08.md",
+    "review/trauma-2.07.md",
+    "review/uterine-2.26.md",
+    "review/vascular-2.00.md",
+    "review/vessels-2.09.md",
+    "review/vestibular-1.94.md"
+  ],
+  "tags": [
+    {
+      "name": "atlas-1.83-personal-backup",
+      "sha": "39f63e96adda567a9c1e6416f30cf02b2c5bdb40"
+    },
+    {
+      "name": "atlas-1.84-ms",
+      "sha": "101cb7017bea0aed0731d762fb8e335832379d13"
+    },
+    {
+      "name": "atlas-1.85-prostate",
+      "sha": "c8352ea2836acb0449ac5fb8511bf57d727eff8a"
+    },
+    {
+      "name": "atlas-1.86-prostate",
+      "sha": "e0f4bf90cebd6cd1cf32cffeb7fc596bf6075940"
+    },
+    {
+      "name": "atlas-1.87-prostate",
+      "sha": "039ef847b9c50eec1064246c861a27104c4c00cf"
+    },
+    {
+      "name": "atlas-1.88-brain",
+      "sha": "d1f36156ec10488f8bb7cae79bf466ad145b65dd"
+    },
+    {
+      "name": "atlas-1.89-metastases",
+      "sha": "0c807800c4d1fe8a9f31248d23047be1b284b1ec"
+    },
+    {
+      "name": "atlas-1.90-meningioma",
+      "sha": "a817b8db3fc0e26abf4f0fd292a3ab17c415c034"
+    },
+    {
+      "name": "atlas-1.90-meningioma-final",
+      "sha": "0bb9bf25f50d60f03d102ce7525e42e9cdb5a3e0"
+    },
+    {
+      "name": "atlas-1.91-diffuse-gliomas",
+      "sha": "2a560650fbfff077d346569db0ecc9f5057197aa"
+    },
+    {
+      "name": "atlas-1.92-cns-lymphoma",
+      "sha": "956cd922c62f3447747142998ea07c0c71cc3504"
+    },
+    {
+      "name": "atlas-1.93-sellar",
+      "sha": "c15504a674d9dc1cd5cd8ba79c5d886b67aed6aa"
+    },
+    {
+      "name": "atlas-1.93-sellar-final",
+      "sha": "3fd97c429c0ecd8d0e6e34366a428bb509bcfc38"
+    },
+    {
+      "name": "atlas-1.94-vestibular",
+      "sha": "d1470076917a1b266a7a43a716a5bd9cd956c381"
+    },
+    {
+      "name": "atlas-1.95-hemangioblastoma",
+      "sha": "f3828196ad29135d92cb2645cc41ea0fe52daa44"
+    },
+    {
+      "name": "atlas-1.96-ependymal",
+      "sha": "6df87c1e11556e7c2e995cfee031fbbbf76a9944"
+    },
+    {
+      "name": "atlas-1.97-age",
+      "sha": "ae3aa54ce5010dd32cf6738db5b1462bd4f360c6"
+    },
+    {
+      "name": "atlas-1.97-age-final",
+      "sha": "13f12729c57335726db847179d4c0a1d0161a373"
+    },
+    {
+      "name": "atlas-1.98-neuronal",
+      "sha": "cd38921823c9c2cf4918d0d83e3f3522218d51ff"
+    },
+    {
+      "name": "atlas-1.99-stroke",
+      "sha": "f083e8c987a88f899fb3368df421419a6f5889d8"
+    },
+    {
+      "name": "atlas-2.00-vascular",
+      "sha": "da4c3e83e48edba181b635f6a111d6e397585333"
+    },
+    {
+      "name": "atlas-2.01-svd",
+      "sha": "81ed465603c9e5ea0ea5e3e8714cbc2be399ed04"
+    },
+    {
+      "name": "atlas-2.01-svd-final",
+      "sha": "337828acd5b4e53388c03cde415be00e73dcaf81"
+    },
+    {
+      "name": "atlas-2.02-atrophy",
+      "sha": "f5b8344cf1de4e11bb67839203fae4305cedad93"
+    },
+    {
+      "name": "atlas-2.03-csf",
+      "sha": "57470ec76eaf270fa4d882764da5e796213908a0"
+    },
+    {
+      "name": "atlas-2.04-cysts-final",
+      "sha": "7e3cee3c8345116541a113435e744156c745f23c"
+    },
+    {
+      "name": "atlas-2.05-clinical-final",
+      "sha": "3afedf6df3c2dd18b227d1abaf7b9e9549aef6ef"
+    },
+    {
+      "name": "atlas-2.05-neuroinfection-demyelination",
+      "sha": "adfd4072d0ebeb3071c9c0c6887dd710f782e19b"
+    },
+    {
+      "name": "atlas-2.06-epileptogenic",
+      "sha": "12ffe217e961b809d933259f7b52521849eb7cd6"
+    },
+    {
+      "name": "atlas-2.07-trauma",
+      "sha": "0b0b21fe8e3612b10fc5128787243415d46b1bcc"
+    },
+    {
+      "name": "atlas-2.08-toxic-hypoxic",
+      "sha": "02f346f6eef71b4112699c075fd5665f1a2195ff"
+    },
+    {
+      "name": "atlas-2.09-venous-aneurysm-sah",
+      "sha": "65995ce147a68f90239c9d6cd1c2075bfa5fdc60"
+    },
+    {
+      "name": "atlas-2.10-endometriosis-metastases",
+      "sha": "6406756733d44b346e1cf21a7f0a627232b8e5ae"
+    },
+    {
+      "name": "atlas-2.10-endometriosis-metastases-final",
+      "sha": "8234f122edd863b04fa3a4c25407d2bd82180473"
+    },
+    {
+      "name": "atlas-2.11-metastases-primary",
+      "sha": "dfddc8a1177b48179b5bf8d87d6d1b12cba89717"
+    },
+    {
+      "name": "atlas-2.12-metastases-followup",
+      "sha": "aa97f138ba43795972661193b7144795ceac30db"
+    },
+    {
+      "name": "atlas-2.13-bone-marrow",
+      "sha": "4ffeb9f145d4218a6beb69a4ca62be8d5f1a1d97"
+    },
+    {
+      "name": "atlas-2.14-liver-lesions",
+      "sha": "b94a485554aefdc8c41b5798179877e82718d285"
+    },
+    {
+      "name": "atlas-2.15-spinal-infection",
+      "sha": "61a6854186d6eb5f6b0f24c340f15b1535c2db98"
+    },
+    {
+      "name": "atlas-2.16-stable-labels",
+      "sha": "bf500eac90626408e33fbdb0d45843734d36c88a"
+    },
+    {
+      "name": "atlas-2.17-glioma-followup",
+      "sha": "3c714a51bc0f4138f60ec622e1f5e23725fbd365"
+    },
+    {
+      "name": "atlas-2.18-mriatlas-branding",
+      "sha": "bd2d438ab5e7b0d99dac3810ac7443f8a633e5b6"
+    },
+    {
+      "name": "atlas-2.19-schizas",
+      "sha": "36c48d9a87daa592a3dd53b39a5ef127d1f6654a"
+    },
+    {
+      "name": "atlas-2.20-disc-nerve",
+      "sha": "eb071f41f65c6c4f88f4cf60134bc88b7c6b025e"
+    },
+    {
+      "name": "atlas-2.21-osteonecrosis",
+      "sha": "e3fedbf7126deb3f844a6f365d4c55385a3c6896"
+    },
+    {
+      "name": "atlas-2.22-sacroiliitis",
+      "sha": "50f5f58668a5c964572023cc733cddd261842138"
+    },
+    {
+      "name": "atlas-2.23-bone-lesions",
+      "sha": "2a254ff11aa741fa9ded84c2bf2b2747c13d0f6e"
+    },
+    {
+      "name": "atlas-2.24-meniscus",
+      "sha": "eab9dabb14e43ff43618da5c6d42d0f19012d3d8"
+    },
+    {
+      "name": "atlas-2.25-acl-postop",
+      "sha": "cdf4028f15009fb992ef655dfa4b79f9c95dbbf3"
+    },
+    {
+      "name": "atlas-2.26-uterine-cancer",
+      "sha": "3f9a3bb08b5a2755ec06c524e91e5b4d1d0d92ca"
+    },
+    {
+      "name": "atlas-2.27-ankle-ligaments",
+      "sha": "9e8f762a604ea99f13daad36bdbea0cc85218bda"
+    },
+    {
+      "name": "atlas-2.28-hindfoot",
+      "sha": "d658891853438e93a0deb28a4e9b5ff2ac1b9626"
+    },
+    {
+      "name": "atlas-2.29-abdomen",
+      "sha": "fb871c0c7590a5ee9bf72af3a34bd7b5d1e7825c"
+    },
+    {
+      "name": "atlas-2.30-abdomen-metastases",
+      "sha": "c9d47a3781fd8aec1344e962dde70f76609ef65f"
+    },
+    {
+      "name": "source-archive-1",
+      "sha": "7649439bc24b64055dda1734e35ef1da65aa0a9c"
+    }
+  ],
+  "additional_preserved_parents": [
+    "92adead38c340692c990cee2d3a0df585977d379",
+    "e47a91e269757f304074c402d094c4e3182a3df9"
+  ]
+}

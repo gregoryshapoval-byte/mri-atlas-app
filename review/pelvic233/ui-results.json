@@ -1,0 +1,30 @@
+[
+  {
+    "width": 320,
+    "height": 568,
+    "patterns": 9,
+    "tabs": 5,
+    "status": "passed"
+  },
+  {
+    "width": 393,
+    "height": 852,
+    "patterns": 9,
+    "tabs": 5,
+    "status": "passed"
+  },
+  {
+    "width": 852,
+    "height": 393,
+    "patterns": 9,
+    "tabs": 5,
+    "status": "passed"
+  },
+  {
+    "width": 1280,
+    "height": 800,
+    "patterns": 9,
+    "tabs": 5,
+    "status": "passed"
+  }
+]

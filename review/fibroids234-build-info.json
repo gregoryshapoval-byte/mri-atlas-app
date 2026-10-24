@@ -1,0 +1,20 @@
+{
+  "version": "2.34",
+  "code": 134,
+  "changed": [
+    "AndroidManifest.xml",
+    "assets/anatomy-regions.js",
+    "assets/fibroids.html",
+    "assets/index.html",
+    "assets/region.html"
+  ],
+  "added": [
+    "assets/fibroids-model.html"
+  ],
+  "assets": 9586,
+  "sha256": "b188573ba6a58d853a1b22b090807607cecb7c938d4fdc51f6b20a08e89fb04c",
+  "size": 139349136,
+  "certificate": "cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe",
+  "signature_v2_v3": true,
+  "zipalign": true
+}

@@ -1,0 +1,74 @@
+name: Consolidate current MRI Atlas
+on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/consolidate-current.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+  pull-requests: write
+concurrency:
+  group: atlas-repository-maintenance
+  cancel-in-progress: false
+jobs:
+  consolidate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Verify current clinical data
+        run: |
+          node tests/elbow240.mjs
+          node tests/clinical239.mjs
+          node --check app/src/main/assets/endometriosis-cases.js
+      - name: Restore existing signing identity
+        run: python3 tools/restore_signing_key.py
+      - name: Build and verify current signed APK
+        run: |
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'platforms;android-35' 'build-tools;35.0.0'
+          ANDROID_SDK_ROOT="$ANDROID_HOME" bash build-apk.sh
+          mkdir -p release
+          cp build/MRIAtlas-2.41-restored.apk release/MRIAtlas-2.41.apk
+          "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --verbose --print-certs release/MRIAtlas-2.41.apk > release/signature.txt
+          python3 - <<'PY'
+          import hashlib,json,zipfile,os
+          from pathlib import Path
+          p=Path('release/MRIAtlas-2.41.apk');z=zipfile.ZipFile(p)
+          assert z.testzip() is None
+          for f in Path('app/src/main/assets').rglob('*'):
+              if f.is_file(): assert z.read('assets/'+f.relative_to('app/src/main/assets').as_posix())==f.read_bytes()
+          cert='cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe'
+          assert cert in Path('release/signature.txt').read_text()
+          Path('release/build-info.json').write_text(json.dumps({'version':'2.41','versionCode':141,'commit':os.environ['GITHUB_SHA'],'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'bytes':p.stat().st_size,'certificate_sha256':cert,'all_assets_verified':True},indent=2))
+          PY
+      - name: Preserve current release before cleanup
+        run: |
+          if gh release view atlas-2.41 >/dev/null 2>&1; then
+            gh release upload atlas-2.41 release/* --clobber
+            gh release edit atlas-2.41 --title 'MRIAtlas 2.41 · актуальная версия' --latest
+          else
+            gh release create atlas-2.41 release/* --target "$GITHUB_SHA" --title 'MRIAtlas 2.41 · актуальная версия' --notes 'Полный офлайн-атлас с 12 реальными МР-примерами эндометриоза. Прежние модули сохранены. Подпись совпадает с 2.40. Проверены подписи, целостность и все локальные assets.' --latest
+          fi
+          mkdir -p verify-release
+          gh release download atlas-2.41 --pattern MRIAtlas-2.41.apk --dir verify-release
+          cmp release/MRIAtlas-2.41.apk verify-release/MRIAtlas-2.41.apk
+      - name: Remove obsolete repository items from the checked inventory
+        run: python3 tools/consolidate_github.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: github-cleanup-report-2.41
+          path: build/github-cleanup-result.json

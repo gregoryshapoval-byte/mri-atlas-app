@@ -1,0 +1,13 @@
+{
+  "viewports": [
+    "320x568",
+    "393x852",
+    "852x393",
+    "1280x800"
+  ],
+  "modules": 1,
+  "tabs_per_module": 6,
+  "pattern_checks": 64,
+  "js_errors": [],
+  "missing_local_resources": []
+}

@@ -1,0 +1,25 @@
+{
+  "version": "2.35",
+  "versionCode": 135,
+  "base_version": "2.34",
+  "source_parent": "76594c531ebb583506f54fc8ae35e1e156ec8ab7",
+  "changed": [
+    "AndroidManifest.xml",
+    "assets/anatomy-regions.js",
+    "assets/fibroids.html",
+    "assets/index.html",
+    "assets/region.html"
+  ],
+  "added": [
+    "assets/adenomyosis.html",
+    "assets/menu-thumbs/adenomyosis.svg"
+  ],
+  "unchanged_payload_entries": 9589,
+  "assets": 9588,
+  "sha256": "9348f7b8997b83ba575e72402f3cfa3c808fdcb4604e7493ba01d5d211bdbbfe",
+  "size": 139361573,
+  "certificate": "cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe",
+  "signature_v2_v3": true,
+  "zipalign": true,
+  "physical_android_tested": false
+}

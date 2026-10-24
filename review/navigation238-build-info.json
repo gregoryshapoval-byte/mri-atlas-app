@@ -1,0 +1,49 @@
+{
+  "version": "2.38",
+  "code": 138,
+  "signed": true,
+  "base_sha256": "d8274591f5c3f6e6aee33ba9e3e7a80b240061bfc1545c6a92552f513d982efa",
+  "sha256": "1b9c528b73313c5e6e13bcd205b4247fb17a45e32cfcb4f2607f4b4fffc710a5",
+  "old_assets": 9591,
+  "assets": 9592,
+  "changed_assets": [
+    "anatomy-regions.js",
+    "face-neck-mri.html",
+    "foot-mri.html",
+    "hip-mri.html",
+    "index.html",
+    "knee-mri.html",
+    "menus.css",
+    "menus.js",
+    "region.html",
+    "regions.js",
+    "spine-mri.html"
+  ],
+  "new_assets": [
+    "navigation238.js"
+  ],
+  "unchanged_payload_verified": true,
+  "unsigned_sha256": "eb83742b4c554e5dd7d64d49e6cf9e07ffd1b3155d8d1f50463801b68ba4dc81",
+  "size_bytes": 139390538,
+  "certificate_sha256": "cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe",
+  "signature_v2": true,
+  "signature_v3": true,
+  "zipalign4": true,
+  "crc": true,
+  "unsigned_to_signed_payload_identical": true,
+  "source_base": "1beb57bd10a6b1ad15db5f83d288fa496329cd75",
+  "physical_android_tested": false,
+  "full_sdk_build": false,
+  "ci_run": false,
+  "menu_checks": 56,
+  "smoke_routes": 130,
+  "mri_ct_frame_references_verified": 4880,
+  "ui_viewports": [
+    "320x568",
+    "393x852",
+    "852x393",
+    "1280x800"
+  ],
+  "library_apk_id": "libfile_9b741c902cec8191b87f8eec19ebaa25",
+  "library_audit_id": "libfile_ae9219e72308819180b6499f995f8ad7"
+}
