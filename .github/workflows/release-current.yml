@@ -34,7 +34,7 @@ jobs:
           images=json.loads(Path('app/src/main/assets/liver-cases/ATTRIBUTION.json').read_text())['images']
           assert len(images)==24
           for image in images:
-              p=Path('app/src/main/assets/rectal-cases')/image['file']
+              p=Path('app/src/main/assets/liver-cases')/image['file']
               assert hashlib.sha256(p.read_bytes()).hexdigest()==image['sha256']
           PY
           node --check app/src/main/assets/liver-cases.js
@@ -76,3 +76,4 @@ jobs:
           if gh release view atlas-2.42 >/dev/null 2>&1; then
             gh release delete atlas-2.42 --cleanup-tag --yes
           fi
+
