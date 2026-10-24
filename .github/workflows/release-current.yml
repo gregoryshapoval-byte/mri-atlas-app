@@ -44,6 +44,7 @@ jobs:
           python3 tools/restore_signing_key.py
           "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'platforms;android-35' 'build-tools;35.0.0'
           ANDROID_SDK_ROOT="$ANDROID_HOME" bash build-apk.sh
+          "$ANDROID_HOME/build-tools/35.0.0/aapt2" dump badging "build/MRIAtlas-${ATLAS_VERSION}-restored.apk" | head -n 1 | grep "versionCode='${ATLAS_CODE}' versionName='${ATLAS_VERSION}'"
           mkdir -p release
           cp "build/MRIAtlas-${ATLAS_VERSION}-restored.apk" "release/MRIAtlas-${ATLAS_VERSION}.apk"
           "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --verbose --print-certs "release/MRIAtlas-${ATLAS_VERSION}.apk" > release/signature.txt
@@ -76,4 +77,3 @@ jobs:
           if gh release view atlas-2.42 >/dev/null 2>&1; then
             gh release delete atlas-2.42 --cleanup-tag --yes
           fi
-
