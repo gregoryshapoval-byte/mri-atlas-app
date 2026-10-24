@@ -22,7 +22,7 @@ export function caseDiagram(kind,title){
  }else if(kind==='fat'||kind==='fatSolid'){
   drawing=ellipse(fat,wall,4)+`<path d="M84 ${cy+20}Q180 ${cy+5} 264 ${cy+20}L245 ${cy+50}Q175 ${cy+95} 100 ${cy+40}Z" fill="${blue}" opacity=".65"/>`;
   drawing+=kind==='fat'?`<path d="M231 76Q210 94 238 108L254 93Z" fill="${tissue}" stroke="${wall}" stroke-width="3"/>`:`<path d="M179 44Q268 42 269 120Q269 185 193 192L166 157L184 128L163 98Z" fill="${tissue}" stroke="${wall}" stroke-width="4"/>`;
-  notes=[kind==='fat'?'Небольшой узел Рокитанского':'Большой объём усиливающейся ткани'];
+  notes=[kind==='fat'?'Небольшой узел Рокитанского':'Большой объём ткани с контрастом'];
  }else{
   const hemorrhagic=['blood','bloodWall','endo'].includes(kind),enhancing=['bloodWall','multi','simple','endo','para'].includes(kind);
   drawing=ellipse(hemorrhagic?blood:blue,enhancing?wall:'#a8b9c9',enhancing?5:3);
@@ -35,7 +35,7 @@ export function caseDiagram(kind,title){
    drawing+=`<path d="M37 43Q9 120 48 196M313 36Q345 127 307 202" fill="none" stroke="#a8b9c9" stroke-width="3"/>`;
    for(const[x,y,r]of [[36,65,9],[28,120,11],[38,169,8],[320,72,10],[326,131,8]])drawing+=`<circle cx="${x}" cy="${y}" r="${r}" fill="${tissue}" stroke="${wall}" stroke-width="2"/>`;
   }
-  notes=[{simple:'Простая жидкость · гладкая стенка',blood:'Стенка и сгусток не усиливаются',bloodWall:'Гладкая стенка усиливается',endo:'Кровь / shading · нет солидной ткани',multi:'Гладкие усиливающиеся перегородки',para:'Яичник виден отдельно',peritoneal:'Образование + узлы брюшины'}[kind]||'Усиливающаяся солидная ткань'];
+  notes=[{simple:'Простая жидкость · гладкая стенка',blood:'Контраста в стенке и сгустке нет',bloodWall:'Гладкая стенка накапливает контраст',endo:'Кровь / shading · нет солидной ткани',multi:'Перегородки накапливают контраст',para:'Яичник виден отдельно',peritoneal:'Образование + узлы брюшины'}[kind]||'Солидная ткань накапливает контраст'];
  }
  if(isCurve){
   const line=kind==='solidLow'?'M62 219Q140 210 262 182':kind==='solidIntermediate'?'M62 219C102 211 118 179 158 177S231 177 262 177':'M62 219C78 210 80 164 128 160S220 160 262 160';

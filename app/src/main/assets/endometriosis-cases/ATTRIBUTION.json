@@ -1,0 +1,106 @@
+{
+  "article": "Piccolo CL, Cea L, Sbarra M, De Nicola AM, De Cicco Nardone C, Faiella E, Grasso RF, Beomonte Zobel B. Magnetic Resonance Roadmap in Detecting and Staging Endometriosis: Usual and Unusual Localizations. Applied Sciences 2023;13:10509.",
+  "doi": "10.3390/app131810509",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "copyright": "The authors, 2023",
+  "changes": "Original PNG files unchanged. Russian educational annotations added separately.",
+  "checked": "2026-10-24",
+  "images": [
+    {
+      "file": "figure-01.png",
+      "figure": 1,
+      "sha256": "317ed1f4ffe1615d93aac144d7ab449a8dcb146671c49186adf448d23a1595db",
+      "bytes": 1382322,
+      "original_caption": "Figure 1. Localization of endometriosis in the vesico-uterine pouch in a 42-year-old female. (A) Sagittal T2WI (black arrow); (B) Sagittal fat-suppressed T1WI (white arrow); (C) Coronal T2WI (black arrow).",
+      "source_url": "https://www.mdpi.com/applsci/applsci-13-10509/article_deploy/html/images/applsci-13-10509-g001.png"
+    },
+    {
+      "file": "figure-03.png",
+      "figure": 3,
+      "sha256": "df6ba0d56345bfdb4b0c9065bd7e51630b2acc3124a5905d376f9ed3d48664e4",
+      "bytes": 897757,
+      "original_caption": "Figure 3. Right uterosacral ligament localization in a 43-year-old female. The right uterosacral ligament appears thickened at uterine insertion (white arrow).",
+      "source_url": "https://www.mdpi.com/applsci/applsci-13-10509/article_deploy/html/images/applsci-13-10509-g003.png"
+    },
+    {
+      "file": "figure-04.png",
+      "figure": 4,
+      "sha256": "e965f06f90b3a276d2826ecc4a02e713dcbf51bf145aff8ade7ccf71dc715a4a",
+      "bytes": 1941368,
+      "original_caption": "Figure 4. Retrocervical endometriosis plaque, intestinal localization, kissing ovaries with bilateral ovarian endometriomas. (A,B) Axial T2WI; (C) Coronal T2WI. Hypointense retrocervical plaque (white arrowhead in (A)) localized in the uterine torus with involvement of the utero-sacral ligaments. Adhesions involve both ovaries with bilateral endometriomas (white arrows), which are prolapsed in a retro-uterine position and adhered to the utero-sacral ligaments and the recto-sigmoid junction. There is also an eccentric anterior parietal thickening in the recto-sigmoid junction suggestive of intestinal endometriosis lesion (white dotted arrow in (A)).",
+      "source_url": "https://www.mdpi.com/applsci/applsci-13-10509/article_deploy/html/images/applsci-13-10509-g004.png"
+    },
+    {
+      "file": "figure-05.png",
+      "figure": 5,
+      "sha256": "e4b44e649c35e595d706f007a0a1c3bd0658186c7bd155bda2a25ea4a635b469",
+      "bytes": 630385,
+      "original_caption": "Figure 5. External adenomyosis and intestinal endometriosis localization in 49-year-old female with story of multiple laparoscopy surgery. Sagittal T2WI shows a hypointense ill-defined subserosal mass in the posterior myometrium with hyperintense foci (long white arrow), suggestive for external adenomyosis, that cause retracting phenomena towards the anterior wall of the rectum. Additionally, there is deep endometriosis of the posterior compartment with hypointense nodule involving the serous and muscular layers of the anterior wall of the rectum (short white arrow).",
+      "source_url": "https://www.mdpi.com/applsci/applsci-13-10509/article_deploy/html/images/applsci-13-10509-g005.png"
+    },
+    {
+      "file": "figure-06.png",
+      "figure": 6,
+      "sha256": "88fe56539881e3f68b54b7b31f548c689fd6487d771ef0c72f8440f2d88af9b7",
+      "bytes": 640470,
+      "original_caption": "Figure 6. Retrocervical localization, intestinal mushroom cap sign and isthmocele in a 40-years old female. Retrocervical endometriosis localization (white dotted arrow), intestinal “mushroom cap sign” (white arrows) and isthmocele (black arrow).",
+      "source_url": "https://www.mdpi.com/applsci/applsci-13-10509/article_deploy/html/images/applsci-13-10509-g006.png"
+    },
+    {
+      "file": "figure-07.png",
+      "figure": 7,
+      "sha256": "4da3935a7dc75aa4572a503469a9588998811731da2ff3d973e02fabf043f4d5",
+      "bytes": 1282684,
+      "original_caption": "Figure 7. Ovarian endometrioma in a 37-year-old female. (A) Axial T1WI; (B) Axial fat-suppressed T1WI. Typical aspect of an ovarian endometrioma (white arrows).",
+      "source_url": "https://www.mdpi.com/applsci/applsci-13-10509/article_deploy/html/images/applsci-13-10509-g007.png"
+    },
+    {
+      "file": "figure-08.png",
+      "figure": 8,
+      "sha256": "c83ea9c6c461fc05926ba11076190c16661d788a5caadaa175c01af31f3faa93",
+      "bytes": 1400340,
+      "original_caption": "Figure 8. Right tubo-ovarian endometriosis in a 25-year-old female patient with reported localized abdominal pain in the right iliac fossa, which increases intensity during the menstrual cycle. (A) Axial T2WI; (B) Axial fat-suppressed T1WI. Enlarged right adnexal cyst with incomplete septa denoting dilated tube (white arrows). The cystic content shows low signal intensity on T2WI and high signal intensity on fat-suppressed T1WI, consistent with hemorrhagic fluid.",
+      "source_url": "https://www.mdpi.com/applsci/applsci-13-10509/article_deploy/html/images/applsci-13-10509-g008.png"
+    },
+    {
+      "file": "figure-09.png",
+      "figure": 9,
+      "sha256": "a43b705e45b957b02660db5dba464045e01607e2ebab5843acf9869ee097fa50",
+      "bytes": 767235,
+      "original_caption": "Figure 9. Diffuse internal and external adenomyosis in a 37-year-old female. (A) Sagittal T2WI; (B) Axial T2WI. Diffuse internal adenomyosis as demonstrated by diffuse hypertrophy of the JZ (white arrowhead in (A,B)), subserosal hypointense ill-defined mass in the posterior myometrium consistent with external adenomyosis (white dotted arrows in (A,B)), with associated deep endometriosis of posterior compartment. Left endometrioma with T2 dark spot sign (white arrow in (B)).",
+      "source_url": "https://www.mdpi.com/applsci/applsci-13-10509/article_deploy/html/images/applsci-13-10509-g009.png"
+    },
+    {
+      "file": "figure-10.png",
+      "figure": 10,
+      "sha256": "8a86839eadba8ed7aceab335657ab7e944f1da92683e9551b663613a5b64c71e",
+      "bytes": 934296,
+      "original_caption": "Figure 10. Focal internal adenomyosis and focal uterine contraction in 36-year-old female with dysmenorrhea, chronic pelvic pain, dyspareunia and dyschezia. (A) Sagittal T2WI; (B) Sagittal T2WI; (C) Sagittal fat-suppressed T1WI. Isolated subendometrial cyst with hemorrhagic content without JZ hypertrophy (white arrow), consistent with focal internal adenomyosis, and a transient uterine contraction in the anterior myometrium (white dotted arrow in (A)).",
+      "source_url": "https://www.mdpi.com/applsci/applsci-13-10509/article_deploy/html/images/applsci-13-10509-g010.png"
+    },
+    {
+      "file": "figure-12.png",
+      "figure": 12,
+      "sha256": "a8ba101df0f019534accd3f7941c735b3c12276b5d86aa9de3351b3c90eebc40",
+      "bytes": 1965800,
+      "original_caption": "Figure 12. C-section scar endometriosis in a 38-year-old female with subcutaneous nodule causing increasing pain during menstrual cycle. (A,B) Axial T2WI, T1WI. Nodular hypointense lesion with spiculated margins in subcutaneous soft tissues of abdominal wall; (C) Axial fat-suppressed T1WI. The lesion shows small hyperintense foci; (D) Axial T1WI post-contrast medium. The lesion shows homogenous contrast enhancement (white arrows).",
+      "source_url": "https://www.mdpi.com/applsci/applsci-13-10509/article_deploy/html/images/applsci-13-10509-g012.png"
+    },
+    {
+      "file": "figure-14.png",
+      "figure": 14,
+      "sha256": "e474b1b57f001453a2c5eadd304ef0684d640dfd3f52eb33dffb2f3528535aec",
+      "bytes": 1251958,
+      "original_caption": "Figure 14. Localization of the left sciatic nerve and para-uterine endometriotic nodule in a 43-year-olf female with a previously diagnosed endometriosis and surgery approach, accepted at the emergency department for reported left lumbar pain, which radiates to the left side and is associated with episodes of vomiting. (A) Coronal T2WI. Involvement of peripheral nerve plexuses of the pelvic region (sciatic nerve) appearing as a hypointense plaque (white arrow); (B) Coronal fat-suppressed T1WI. The lesion shows small hematic foci (white arrow); (C) Axial T2WI. Para-uterine endometriotic nodule (white dotted arrow) shows variable intensity ranging from low intensity (referred to as shading) to intermediate or high intensity; (D) Axial T1WI. Para-uterine endometriotic nodule with hyperintense signal (white dotted arrow).",
+      "source_url": "https://www.mdpi.com/applsci/applsci-13-10509/article_deploy/html/images/applsci-13-10509-g014.png"
+    },
+    {
+      "file": "figure-16.png",
+      "figure": 16,
+      "sha256": "48f6062b7710b322cb37f59619d6d9681ab047f6e99b313861ab00a6c7b3fd14",
+      "bytes": 1264271,
+      "original_caption": "Figure 16. Localization of endometriosis in the left parametrium and ureteral stenosis in 49-year-old female who underwent supracervical hysterectomy, bilateral salpingectomy and mild vaginal bleeding and abdominal pain. (A) Axial T2WI; (B) Sagittal T2WI. Endometriotic localization of the left parametrium (white arrow), with irregular margins and heterogeneous signal intensity. Tractions towards the sigmoid colon, left pararectal fascia, anterior pelvic peritoneal reflection and adnexa. Ureteral stenosis caused by the parametrial plaque (dotted arrows in (B)). (C) Axial T2WI; (D) Axial fat-suppressed T1WI. Endometriotic nodule of the left pelvic wall (white arrow).",
+      "source_url": "https://www.mdpi.com/applsci/applsci-13-10509/article_deploy/html/images/applsci-13-10509-g016.png"
+    }
+  ]
+}

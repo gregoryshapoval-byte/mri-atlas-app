@@ -1,0 +1,9 @@
+.featureChoices{grid-template-columns:repeat(3,minmax(0,1fr))}.featureChoices button:last-child{grid-column:auto}.related{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:18px}header a{max-width:60%}@media(max-width:600px){.featureChoices{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.featureChoices{grid-template-columns:repeat(2,minmax(0,1fr))}table{width:100%}td,th{overflow-wrap:anywhere} .reportText{white-space:pre-wrap} #copyFallback{box-sizing:border-box;width:100%}
+
+@media(max-width:600px){.featureChoices button:last-child{grid-column:auto}}
+
+h1,h2,h3,.featureCard p,.featureCard li,.related a{overflow-wrap:anywhere}
+
+.featureChoices button{min-width:0;overflow-wrap:anywhere;hyphens:auto}

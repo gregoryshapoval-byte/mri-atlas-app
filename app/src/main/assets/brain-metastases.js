@@ -1,0 +1,24 @@
+import {signalRows} from './brain-metastases-signals210.js';
+import {primaryRows} from './brain-metastases-primary211.js';
+import {data} from './brain-metastases-data.js';
+import {figures} from './brain-metastases-figures.js';
+const el=id=>document.getElementById(id);
+const tabs=[...document.querySelectorAll('[data-tab]')];
+function activate(tab,focus=false){for(const b of tabs){const active=b===tab;b.setAttribute('aria-selected',String(active));b.tabIndex=active?0:-1;el(b.dataset.tab).hidden=!active;}if(focus)tab.focus();}
+for(const b of tabs){b.addEventListener('click',()=>activate(b));b.addEventListener('keydown',e=>{const i=tabs.indexOf(b);let n;if(e.key==='ArrowRight')n=(i+1)%tabs.length;else if(e.key==='ArrowLeft')n=(i+tabs.length-1)%tabs.length;else if(e.key==='Home')n=0;else if(e.key==='End')n=tabs.length-1;else return;e.preventDefault();activate(tabs[n],true);});}
+let current='single';
+function feature(id){const f=data.features.find(x=>x.id===id);if(!f)return;current=id;el('featureFigure').innerHTML=figures[id];el('featureTitle').textContent=f.title;el('featureGood').textContent=f.good;el('featureTrap').textContent=f.trap;el('featureLegend').replaceChildren(...f.legend.map(t=>{const li=document.createElement('li');li.textContent=t;return li;}));for(const b of document.querySelectorAll('[data-feature]'))b.setAttribute('aria-pressed',String(b.dataset.feature===id));}
+for(const b of document.querySelectorAll('[data-feature]'))b.addEventListener('click',()=>feature(b.dataset.feature));
+feature('single');
+const zoom=el('zoom');el('featureFigure').addEventListener('click',()=>{el('zoomFigure').innerHTML=figures[current];zoom.showModal();});zoom.querySelector('.close').addEventListener('click',()=>zoom.close());
+function paragraph(text,className=''){const p=document.createElement('p');p.textContent=text;p.className=className;return p;}
+for(const d of data.differentials){const card=document.createElement('article');card.className='card';const h=document.createElement('h3');h.textContent=d.title;card.append(h,paragraph(d.feature),paragraph(d.check),paragraph(d.trap,'trap'));el('differentials').append(card);}
+function scan(field){el('scanRows').replaceChildren();for(const row of data.scan[field]){const tr=document.createElement('tr');row.forEach((t,i)=>{const td=document.createElement(i===0?'th':'td');if(i===0)td.scope='row';td.textContent=t;tr.append(td);});el('scanRows').append(tr);}for(const b of document.querySelectorAll('button[data-field]'))b.setAttribute('aria-pressed',String(b.dataset.field===field));el('scanTable').dataset.field=field;}
+for(const b of document.querySelectorAll('button[data-field]'))b.addEventListener('click',()=>scan(b.dataset.field));scan('1.5');
+for(const text of data.checklist){const label=document.createElement('label'),input=document.createElement('input'),span=document.createElement('span');input.type='checkbox';span.textContent=text;label.append(input,span);el('checklist').append(label);}
+for(const [title,body]of data.reports){const card=document.createElement('article');card.className='card';const h=document.createElement('h3');h.textContent=title;const p=paragraph(body,'reportText'),b=document.createElement('button');b.type='button';b.className='copy';b.textContent='Копировать';b.setAttribute('aria-label','Копировать: '+title);b.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(body);el('copyFallback').hidden=true;el('fallbackLabel').hidden=true;el('copyStatus').textContent='Скопировано. Заполните поля в скобках.';}catch{el('copyFallback').value=body;el('copyFallback').hidden=false;el('fallbackLabel').hidden=false;el('copyFallback').focus();el('copyFallback').select();el('copyStatus').textContent='Выделен текст для ручного копирования.';}});card.append(h,p,b);el('reportCards').append(card);}
+
+
+for(const row of signalRows){const tr=document.createElement("tr");row.forEach((text,i)=>{const td=document.createElement(i===0?"th":"td");if(i===0)td.scope="row";else td.dataset.label=["Компонент","МР-сигнал","Проверка / ограничение"][i];td.textContent=text;tr.append(td);});el("signalRows210").append(tr);}
+
+for(const row of primaryRows){const tr=document.createElement('tr');tr.dataset.primary=row.id;for(const[key,label]of [['cancer','Первичная опухоль'],['pattern','МР-особенность'],['trap','Ловушка / что проверить']]){const cell=document.createElement(key==='cancer'?'th':'td');if(key==='cancer')cell.scope='row';else cell.dataset.label=label;cell.append(document.createTextNode(row[key]));if(key==='trap'){const p=document.createElement('p');p.className='hint';for(const[name,url]of row.sources){if(p.childNodes.length)p.append(document.createTextNode(' · '));const a=document.createElement('a');a.textContent=name;a.href=url;a.target='_blank';a.rel='noopener';p.append(a);}cell.append(p);}tr.append(cell);}el('primaryRows211').append(tr);}
