@@ -1,8 +1,5 @@
 name: Publish current signed MRIAtlas
 on:
-  push:
-    branches: [main]
-    paths: [.github/workflows/release-current.yml]
   workflow_dispatch:
 permissions:
   contents: write
