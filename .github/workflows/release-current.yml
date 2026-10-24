@@ -1,5 +1,8 @@
 name: Publish current signed MRIAtlas
 on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/release-current.yml]
   workflow_dispatch:
 permissions:
   contents: write
@@ -28,14 +31,14 @@ jobs:
           version=re.search(r"versionName '([^']+)'",text).group(1)
           code=int(re.search(r'versionCode (\d+)',text).group(1))
           with open(os.environ['GITHUB_ENV'],'a') as f:f.write('ATLAS_VERSION='+version+'\nATLAS_CODE='+str(code)+'\n')
-          images=json.loads(Path('app/src/main/assets/rectal-cases/ATTRIBUTION.json').read_text())['images']
-          assert len(images)==20
+          images=json.loads(Path('app/src/main/assets/liver-cases/ATTRIBUTION.json').read_text())['images']
+          assert len(images)==24
           for image in images:
               p=Path('app/src/main/assets/rectal-cases')/image['file']
               assert hashlib.sha256(p.read_bytes()).hexdigest()==image['sha256']
           PY
-          node --check app/src/main/assets/rectal-cases.js
-          node --check app/src/main/assets/rectal-cases-data.js
+          node --check app/src/main/assets/liver-cases.js
+          node --check app/src/main/assets/liver-cases-data.js
       - name: Restore existing key and build signed APK
         run: |
           python3 tools/restore_signing_key.py
@@ -62,14 +65,14 @@ jobs:
             gh release upload "$tag" release/* --clobber
             gh release edit "$tag" --latest
           else
-            gh release create "$tag" release/* --target "$GITHUB_SHA" --title "MRIAtlas ${ATLAS_VERSION} · актуальная версия" --notes 'Рак прямой кишки: 20 реальных МР-иллюстраций, стадирование, MRF/EMVI, узлы и ответ на лечение. Офлайн, разборы, поиск и увеличение. Прежние модули сохранены; подпись та же.' --latest
+            gh release create "$tag" release/* --target "$GITHUB_SHA" --title "MRIAtlas ${ATLAS_VERSION} · актуальная версия" --notes 'Образования печени: 24 реальные иллюстрации, кисты, гемангиомы, ФНГ, аденомы, ГЦР, холангиокарцинома и метастазы. Офлайн, разборы, поиск и увеличение. Прежние модули сохранены; подпись та же.' --latest
           fi
           mkdir -p verify-release
           gh release download "$tag" --pattern "MRIAtlas-${ATLAS_VERSION}.apk" --dir verify-release
           cmp "release/MRIAtlas-${ATLAS_VERSION}.apk" "verify-release/MRIAtlas-${ATLAS_VERSION}.apk"
       - name: Retain only the current application release
-        if: env.ATLAS_VERSION == '2.42'
+        if: env.ATLAS_VERSION == '2.43'
         run: |
-          if gh release view atlas-2.41 >/dev/null 2>&1; then
-            gh release delete atlas-2.41 --cleanup-tag --yes
+          if gh release view atlas-2.42 >/dev/null 2>&1; then
+            gh release delete atlas-2.42 --cleanup-tag --yes
           fi

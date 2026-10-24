@@ -1,6 +1,10 @@
 # Актуальное состояние MRIAtlas
 
-Версия **2.42**, versionCode142, applicationId `ru.grigory.shoulderatlas.restored`. Рабочая основа — main.
+Версия **2.43**, versionCode143, applicationId `ru.grigory.shoulderatlas.restored`. Рабочая основа — main.
+
+## Новое в 2.43
+
+Брюшная полость → Очаговые образования печени → Реальные снимки: 24 офлайн-иллюстрации с поиском, семью тематическими группами, увеличением до 4× и переходом к прежним схемам. Все прежние модули и изображения сохранены; обновлён только HTML печени. Источники CC BY 4.0; детали — review/liver-real-2.43.md, browser-liver243.json и liver-real-2.43-build-info.json. APK 2.43 подписан прежним ключом.
 
 ## Новое в 2.42
 

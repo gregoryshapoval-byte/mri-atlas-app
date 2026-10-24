@@ -1,0 +1,316 @@
+{
+  "version": "2.43",
+  "reviewed": "2026-10-24",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "changes": "Original image files unchanged. Russian teaching commentary and UI added separately.",
+  "sources": {
+    "frontiers": {
+      "short": "Granata et al., 2025",
+      "authors": "Vincenza Granata, Roberta Fusco, Igino Simonetti, Maria Giovanna Riga, Giuseppe Pellegrino, Serena Carriero, Michele Ahmed Antonio Karaboue, Gianpaolo Carrafiello, Antonella Petrillo, Francesco Izzo",
+      "title": "MRI management of focal liver lesions: what a beginner cannot fail to know",
+      "doi": "10.3389/fonc.2025.1630424",
+      "year": 2025,
+      "url": "https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2025.1630424/full",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "mimickers": {
+      "short": "Bonatti et al., 2024",
+      "authors": "Matteo Bonatti, Riccardo Valletta, Valentina Corato, Tommaso Gorgatti, Andrea Posteraro, Vincenzo Vingiani, Fabio Lombardo, Giacomo Avesani, Andrea Mega, Giulia A. Zamboni",
+      "title": "I thought it was a hemangioma! A pictorial essay about common and uncommon liver hemangiomas’ mimickers",
+      "doi": "10.1186/s13244-024-01745-1",
+      "year": 2024,
+      "url": "https://link.springer.com/article/10.1186/s13244-024-01745-1",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "peripheral": {
+      "short": "Matteini et al., 2024 / выпуск 2025",
+      "authors": "Francesco Matteini, Roberto Cannella, Marco Dioguardi Burgio, Chiara Torrisi, Riccardo Sartoris, Giuseppe Brancatelli, Valérie Vilgrain, Maxime Ronot, Federica Vernuccio",
+      "title": "Discontinuous peripheral enhancement of focal liver lesions on CT and MRI: outside the box of typical cavernous hemangioma",
+      "doi": "10.1007/s00261-024-04522-2",
+      "year": 2025,
+      "copyrightYear": 2024,
+      "url": "https://link.springer.com/article/10.1007/s00261-024-04522-2",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "cystic": {
+      "short": "Chenin et al., 2022",
+      "authors": "Mégane Chenin, Anita Paisant, Jérôme Lebigot, Paul Bazeries, Kawtar Debbi, Maxime Ronot, Valérie Laurent, Christophe Aubé",
+      "title": "Cystic liver lesions: a pictorial review",
+      "doi": "10.1186/s13244-022-01242-3",
+      "year": 2022,
+      "url": "https://link.springer.com/article/10.1186/s13244-022-01242-3",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  },
+  "images": [
+    {
+      "source": "frontiers",
+      "figure": 1,
+      "url": "https://www.frontiersin.org/files/Articles/1630424/fonc-15-1630424-HTML/image_m/fonc-15-1630424-g001.jpg",
+      "caption": "MRI assessment of liver hemangiomas (arrows). In (A) (T2-W sequence, axial plane), the hemangioma (arrow) shows hyperintense signal, and after non-specific contrast agent administration a progressive enhancement is seen (B) T1-W in axial plane during in arterial phase; (C) T1-W in axial plane during portal phase and (D) T1-W in coronal plane during late phase).",
+      "file": "frontiers-01.jpg",
+      "bytes": 167199,
+      "sha256": "0b421852173f73dbd71ec53dbee66a3fa298ad24f8454184c5af9dc65d94595f",
+      "width": 1712,
+      "height": 1187
+    },
+    {
+      "source": "frontiers",
+      "figure": 2,
+      "url": "https://www.frontiersin.org/files/Articles/1630424/fonc-15-1630424-HTML/image_m/fonc-15-1630424-g002.jpg",
+      "caption": "MRI assessment of non-mucinous colorectal liver metastases (arrows). In (A) (T2-W sequence, axial plane), the lesion (arrow) shows hyperintense signal with restricted diffusion on b = 880 s/mm² (B) and targetoid appearance on ADC map (C) . After non-specific contrast agent, rim enhancement is seen in the arterial phase (D , T1-W, axial ) , with peripheral enhancement in the portal (E) and late phases (F) showing targetoid appearance from central necrosis.",
+      "file": "frontiers-02.jpg",
+      "bytes": 160728,
+      "sha256": "c67b592404f0f8607d24623c7938c65db2cae5ded39fcdf410d3d933cdd733c9",
+      "width": 1890,
+      "height": 854
+    },
+    {
+      "source": "frontiers",
+      "figure": 3,
+      "url": "https://www.frontiersin.org/files/Articles/1630424/fonc-15-1630424-HTML/image_m/fonc-15-1630424-g003.jpg",
+      "caption": "MRI assessment of mucinous colorectal liver metastases (arrows). In (A) (T1-W sequence, axial plane), the lesion (arrow) shows hypointense signal, with very high signal on T2-W FS sequence (B) and restricted diffusion on b = 880 s/mm² (C) . After non-specific contrast agent, rim enhancement is seen in the arterial phase (D , T1-W, axial ) , with progressive enhancement in the portal (E) and late phases (F) .",
+      "file": "frontiers-03.jpg",
+      "bytes": 158739,
+      "sha256": "301d12bd3e2696f32cc42e729532cac0c3a6ffc685e91ddf03f73bdb343fbbcb",
+      "width": 1890,
+      "height": 1009
+    },
+    {
+      "source": "frontiers",
+      "figure": 4,
+      "url": "https://www.frontiersin.org/files/Articles/1630424/fonc-15-1630424-HTML/image_m/fonc-15-1630424-g004.jpg",
+      "caption": "MRI assessment of HCC (arrows). Contrast evaluation with non-specific contrast agent. In (A) and (B) (T1-W FS sequences, axial plane), the lesion shows APHE during arterial phase (A) and washout in portal phase (B) , with capsule appearance. These are typical major features according to LI-RADS v2018.",
+      "file": "frontiers-04.jpg",
+      "bytes": 104490,
+      "sha256": "5336ffe7e5f8fde5019fe5e843ea5bff6fcb35cfc75a49686e355562216fac18",
+      "width": 1654,
+      "height": 634
+    },
+    {
+      "source": "frontiers",
+      "figure": 5,
+      "url": "https://www.frontiersin.org/files/Articles/1630424/fonc-15-1630424-HTML/image_m/fonc-15-1630424-g005.jpg",
+      "caption": "MRI assessment of nodule-in-nodule in early HCC (arrows). Contrast study with specific agent (Gd-EOB-DTPA). In (A) (T1-W FS sequence, axial plane), the lesion shows APHE during arterial phase, while during portal (B) and transitional phases no washout is present. (C) Only the nodule-in-nodule shows hypointense signal in the hepatospecific phase (D) .",
+      "file": "frontiers-05.jpg",
+      "bytes": 173375,
+      "sha256": "8742818e0d4ce4f6ca57e4bd9282c1cfdd416584b08ffca5a77cde71d3c92f73",
+      "width": 1654,
+      "height": 1251
+    },
+    {
+      "source": "frontiers",
+      "figure": 6,
+      "url": "https://www.frontiersin.org/files/Articles/1630424/fonc-15-1630424-HTML/image_m/fonc-15-1630424-g006.jpg",
+      "caption": "MRI assessment of colorectal liver metastases with Gd-EOB-DTPA contrast during multi-arterial phase: motion artifacts on all phases with low image quality. (A–C) Sequence acquired on 3T VIDA System (Siemens, Germany) with deep learning AI technology.",
+      "file": "frontiers-06.jpg",
+      "bytes": 115156,
+      "sha256": "658148b15226e9989fcb4fd5447ce613cc761da30bc3958c0512e1899bb62ca0",
+      "width": 1890,
+      "height": 609
+    },
+    {
+      "source": "frontiers",
+      "figure": 7,
+      "url": "https://www.frontiersin.org/files/Articles/1630424/fonc-15-1630424-HTML/image_m/fonc-15-1630424-g007.jpg",
+      "caption": "MRI assessment of FNH lesion (arrows) with Gd-EOB-DTPA contrast. In (A) (in-phase) and (B) (out-phase), the lesion shows hypointense signal with central scar and steatosis of the liver parenchyma in (B) . In C (T2-W FS sequence), the lesion is hyperintense with central scar. During contrast study, the lesion shows non-rim hyperenhancement during arterial phase (D) , no washout during portal (E) or transitional (F) phases, and hyperintense signal on hepatospecific phase (G) .",
+      "file": "frontiers-07.jpg",
+      "bytes": 240095,
+      "sha256": "20d9ac2eebcfdb6cb4ee68b59a50319862695e7b345317eca1bdd3047c98a9b6",
+      "width": 1949,
+      "height": 1113
+    },
+    {
+      "source": "frontiers",
+      "figure": 8,
+      "url": "https://www.frontiersin.org/files/Articles/1630424/fonc-15-1630424-HTML/image_m/fonc-15-1630424-g008.jpg",
+      "caption": "MRI assessment of multiple adenoma lesions (arrows) with Gd-EOB-DTPA contrast. In (A) (T2-W sequence), lesions are hyperintense; in (B) (T1-W in-phase) and (C) (T1-W out-of-phase), lesions are hypointense. During contrast study, lesions show non-rim hyperenhancement during arterial phase (D) , washout during portal phase (E) , and hypointense signal on hepatospecific phase (F) .",
+      "file": "frontiers-08.jpg",
+      "bytes": 136505,
+      "sha256": "9db7accd6fd63a545f83d6b1a791afe18eea05a0157f36989528617c74c4fb84",
+      "width": 1890,
+      "height": 930
+    },
+    {
+      "source": "frontiers",
+      "figure": 9,
+      "url": "https://www.frontiersin.org/files/Articles/1630424/fonc-15-1630424-HTML/image_m/fonc-15-1630424-g009.jpg",
+      "caption": "MRI of liver abscess after surgical resection. The lesion (arrows) shows hyperintense signal in T2-W sequence (A) , hypointense signal in T1-W sequence (B) , restricted diffusion on b = 800 s/mm² (C) , and hypointense signal on ADC map (D) . This demonstrates that a benign lesion can also show restricted signal and hypointensity on ADC maps.",
+      "file": "frontiers-09.jpg",
+      "bytes": 181947,
+      "sha256": "f1b4616cea524bc45c45c8dc985ff3b3e0506d74d6a491b2a5f43d46f911d827",
+      "width": 1713,
+      "height": 1187
+    },
+    {
+      "source": "frontiers",
+      "figure": 10,
+      "url": "https://www.frontiersin.org/files/Articles/1630424/fonc-15-1630424-HTML/image_m/fonc-15-1630424-g010.jpg",
+      "caption": "MRI assessment of residual disease after surgical resection. The lesion shows similar features to the patient in Figure 9 , with hyperintense signal in T2-W sequence (A) , hypointense signal in T1-W out-of-phase sequence (B) , restricted diffusion on b = 800 s/mm² (C) , and hypointense signal on ADC map (D) . In this case, DWI is suggestive of residual lesion.",
+      "file": "frontiers-10.jpg",
+      "bytes": 199960,
+      "sha256": "11fdadef14bbdef1737861435fd1035d4b169e46a76db69c5576a21439f19f76",
+      "width": 1713,
+      "height": 1177
+    },
+    {
+      "source": "mimickers",
+      "figure": 3,
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-024-01745-1/MediaObjects/13244_2024_1745_Fig3_HTML.png",
+      "caption": "Fig. 3 Full size image Typical MRI findings in cavernous hemangioma. Liver hemangioma appears markedly hyperintense on T2-weighted images ( a ) determining shine through artifact on high b value DWI ( b ) without true diffusion restriction on ADC map ( c ). The lesion appears hypointense on T1-weighted images ( d ), shows globular peripheral enhancement in the arterial phase ( e) and appears hypointense in the hepatobiliary phase ( f )",
+      "file": "mimickers-03.png",
+      "bytes": 369432,
+      "sha256": "1f51b822280cc60ece702f371a9b8b35ce8e45221fa0dcab1d170ad2ff92c04a",
+      "width": 1350,
+      "height": 900
+    },
+    {
+      "source": "mimickers",
+      "figure": 4,
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-024-01745-1/MediaObjects/13244_2024_1745_Fig4_HTML.png",
+      "caption": "Fig. 4 Full size image Focal nodular hyperplasia (FNH). The lesion shows strong arterial enhancement ( a ), but its signal intensity is lower than adjacent vessels in the portal venous phase ( b ). Moreover, the lesion appears only mildly hyperintense on T2-weighted images ( c ). On contrast-enhanced US the lesion appears homogeneously hypervascular in the late arterial phase ( f ), but rapid centripetal filling can be depicted in earlier arterial phases ( d , e )",
+      "file": "mimickers-04.png",
+      "bytes": 1345890,
+      "sha256": "07f761080ef42790ec9e10f31fc9c6dd0b2f318d8df9376ecc9c06794d69fed5",
+      "width": 1350,
+      "height": 902
+    },
+    {
+      "source": "mimickers",
+      "figure": 6,
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-024-01745-1/MediaObjects/13244_2024_1745_Fig6_HTML.png",
+      "caption": "Fig. 6 Full size image Inflammatory adenoma (biopsy-proven and resected). B-mode US ( a ) shows a lobulated hyperechoic mass surrounded by a hypoechoic halo. Contrast-enhanced US ( b , c ) shows homogeneous arterial enhancement without washout. On MRI, the lesion appears isointense on T1-weighted images ( d ) with a signal drop in the out-of-phase T1-weighted acquisition ( e ) and slightly hyperintense on T2-weighted images ( f ). The lesion shows homogeneous enhancement in the arterial phase ( g ), minimal washout in the portal venous phase ( h ) and appears hypointense in the hepatobiliary phase ( i )",
+      "file": "mimickers-06.png",
+      "bytes": 1872461,
+      "sha256": "220d2b62ac468df15d3025fb45da3efa3e1369a18a06df76edcec88f15fb887a",
+      "width": 1350,
+      "height": 1347
+    },
+    {
+      "source": "mimickers",
+      "figure": 7,
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-024-01745-1/MediaObjects/13244_2024_1745_Fig7_HTML.png",
+      "caption": "Fig. 7 Full size image Artero-venous fistula. A focal hypervascular nodule (arrow) is appreciable on arterial phase T1-weighted images ( a ) between an arterial and a portal branch. The nodule shows the same signal intensity of adjacent vessels in portal venous phase ( b ), but no focal lesion can be delimited on fat-saturated T2-weighted images ( c ). On US ( d ) an anechoic round lesion with arterial flow signal on color-Doppler can be observed",
+      "file": "mimickers-07.png",
+      "bytes": 859373,
+      "sha256": "43c691d82096bec56334a7f9c0f54df353451747f01abc2e160f6a565dde32a1",
+      "width": 1350,
+      "height": 901
+    },
+    {
+      "source": "mimickers",
+      "figure": 8,
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-024-01745-1/MediaObjects/13244_2024_1745_Fig8_HTML.png",
+      "caption": "Fig. 8 Full size image Angiomyolipoma. On B-mode US ( a ) a heterogeneous hyperechoic lesion is appreciable. The lesion appears markedly hyperintense on T2-weighted images ( b ) becoming prevalently hypointense after fat saturation ( c ) because of the macroscopic fatty content. On T1-weighted images ( d ) the lesion appears heterogeneously hyperintense; the peripheral components resemble a globular enhancement pattern during arterial ( e ) and portal venous ( f ) phases",
+      "file": "mimickers-08.png",
+      "bytes": 1151881,
+      "sha256": "bf31e5a36bf342aa2f91e25184a9f40b90d26bad4c68d975a33aaa7d77d51681",
+      "width": 1350,
+      "height": 899
+    },
+    {
+      "source": "mimickers",
+      "figure": 9,
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-024-01745-1/MediaObjects/13244_2024_1745_Fig9_HTML.png",
+      "caption": "Fig. 9 Full size image Intrahepatic cholangiocarcinoma (biopsy-proven and resected). The lesion shows heterogeneous signal intensity on T2-weighted images ( a ) with peripheral hyperintensity associated with central hypointensity. During the dynamic study, peripheral rim enhancement is appreciable in the arterial phase ( b ), followed by centripetal filling in the portal venous ( c ) and equilibrium ( d ) phase",
+      "file": "mimickers-09.png",
+      "bytes": 267348,
+      "sha256": "70ea0ef3e92e73d56cfa6d19c32aaad628d9b70bc722cd4b4afbd7c16ebdb422",
+      "width": 1750,
+      "height": 439
+    },
+    {
+      "source": "mimickers",
+      "figure": 10,
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-024-01745-1/MediaObjects/13244_2024_1745_Fig10_HTML.png",
+      "caption": "Fig. 10 Full size image Mucinous colorectal cancer metastasis (biopsy-proven and resected). The lesion appears heterogeneously hyperechoic on B-mode US ( a ). On CT the lesion appears markedly hypodense in the native phase ( b ) and shows progressive enhancement in the portal venous ( c ) and equilibrium ( d ) phase. On MRI the lesion appears markedly hyperintense on T2-weighted images ( e ), determining shine through artifact on high b-value DWI ( f ) without true diffusion coefficient restriction on ADC map ( g ). The lesion shows peripheral enhancement in late arterial phase ( h ) with progressive centripetal filling in portal venous phase ( i ). In hepatobiliary phase ( j ) the central component shows contrast material retention",
+      "file": "mimickers-10.png",
+      "bytes": 2025805,
+      "sha256": "6c0cfd9d67dde56c8677fe31588bc5807e8d18817f4875f47c63ca7ee709a2f6",
+      "width": 1350,
+      "height": 1800
+    },
+    {
+      "source": "peripheral",
+      "figure": 2,
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs00261-024-04522-2/MediaObjects/261_2024_4522_Fig2_HTML.jpg",
+      "caption": "Fig. 2 Full size image Giant hemangioma in a 40-year-old man who presented with abdominal pain. a Axial fat-suppressed T2-weighted MRI shows a large, lobulated, markedly hyperintense liver lesion located in the right hepatic lobe, with high signal intensity cleftlike area (arrow) and some hypointense internal septa. The lesion shows high signal intensity on diffusion-weighted images (DWI) ( b ) and high signal intensity on apparent diffusion coefficient (ADC) map ( c ); the cleftlike area and the internal septa appear hypointense on DWI, with marked high signal intensity on ADC map. The lesion displays a low signal intensity on unenhanced T1-weighted image ( d ), with peripheral discontinuous nodular enhancement on arterial phase ( e ), and progressive but incomplete peripheral filling on delayed phase (arrowheads, f )",
+      "file": "peripheral-02.jpg",
+      "bytes": 359543,
+      "sha256": "bf10a0df16725397c71d0fc69be527f15fbb92c98cb495736fe4d02ea79f7898",
+      "width": 1949,
+      "height": 1354
+    },
+    {
+      "source": "peripheral",
+      "figure": 3,
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs00261-024-04522-2/MediaObjects/261_2024_4522_Fig3_HTML.jpg",
+      "caption": "Fig. 3 Full size image Sclerosed hemangioma in a 69-year-old man. MRI shows a focal liver lesion in the left lobe with heterogenous high signal intensity on axial fat-suppressed T2-weighted image (arrow, a ), with high signal intensity on diffusion-weighted imaging ( b ), and high intensity on the apparent diffusion coefficient map ( c ). On contrast-enhanced MR images the lesion shows low signal intensity on unenhanced T1-wighted image ( d ), and peripheral discontinuous enhancement on arterial phase (arrows, e ), followed by a progressive centripetal enhancement on portal venous ( f ) and delayed ( g ) phases. On the hepatobiliary phase acquired 2 h after the administration of gadobenate dimeglumine contrast agent, an heterogenous low signal intensity is observed",
+      "file": "peripheral-03.jpg",
+      "bytes": 358429,
+      "sha256": "a4531e27f268e9bc5de8e6678626dff1dd9fc7b0644bc44b5ab95828a42ea40a",
+      "width": 1949,
+      "height": 1170
+    },
+    {
+      "source": "peripheral",
+      "figure": 7,
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs00261-024-04522-2/MediaObjects/261_2024_4522_Fig7_HTML.jpg",
+      "caption": "Fig. 7 Full size image Hepatic epithelioid hemangioendothelioma in a 38 year-old woman. a Axial fat-suppressed T2-weighted MRI shows a subcapsular focal liver lesion in the right lobe with a three-layered target appearance. The high signal intensity of the lesion’s core is surrounded by a thin hypointense ring with a peripheral slight hyperintense halo. Capsular retraction also could be seen. The lesion shows a low signal intensity with a target appearance also on unenhanced T1-weighted MRI ( b ), with a central area of low signal intensity, surrounded by a thin slight hyperintense irregular ring with a peripheral hypointense halo. Extracellular contrast agent-enhanced MRI demonstrates a peripheral globular discontinuous enhancement on arterial phase (arrow, c ), that minimally increases on portal venous ( d ) and delayed phases at 3′ ( e ) and 5′ ( f ). The typical ‘‘lollipop sign’’ is also visible on contrast-enhanced MRI, with portal veins entering and terminating in the periphery of the lesion (thin arrow, e )",
+      "file": "peripheral-07.jpg",
+      "bytes": 409874,
+      "sha256": "2f1aeb3e8dcc2f87fc21cfaf84cd8c72180f7ae5ef192de0169f9af14be94e08",
+      "width": 1949,
+      "height": 1478
+    },
+    {
+      "source": "cystic",
+      "figure": 3,
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-022-01242-3/MediaObjects/13244_2022_1242_Fig3_HTML.jpg",
+      "caption": "Fig. 3 Full size image Incidentally found simple hepatic cyst in an asymptomatic 64-year-old male. a Ultrasonography shows a round homogeneous anechoic cystic hepatic lesion, well-circumscribed and without any mural nodule or vegetation. The arrows show an increased through transmission, confirming the cystic nature of the lesion. b T2-weighted magnetic resonance imaging shows a highly hyperintense round lesion. c and d Computed tomography without and with contrast on portal venous phase shows a round homogeneous non-enhancing hypoattenuating lesion (3 Hounsfield Units)",
+      "file": "cystic-03.jpg",
+      "bytes": 350017,
+      "sha256": "b548d4ffea33ce54b7bf1b480e51411048c7c76267fc0e0a86896d081d8120c1",
+      "width": 1592,
+      "height": 1340
+    },
+    {
+      "source": "cystic",
+      "figure": 7,
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-022-01242-3/MediaObjects/13244_2022_1242_Fig7_HTML.jpg",
+      "caption": "Fig. 7 Full size image Haemorrhagic cyst in a 55-year-old male patient. a Axial T1 fat-sat-weighted magnetic resonance imaging shows hyperintense lesion and ( b ) axial T2-weighted magnetic resonance imaging shows a heterogeneous hyperintensity; c and d axial T1-fat-sat-weighted imaging without and with subtraction shows no enhancement after gadolinium-chelate injection",
+      "file": "cystic-07.jpg",
+      "bytes": 201303,
+      "sha256": "3c5b4b1c9b99402341d655c5ecd10f5a486c075f149c34e5afe8e169d597d708",
+      "width": 1592,
+      "height": 1206
+    },
+    {
+      "source": "cystic",
+      "figure": 19,
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-022-01242-3/MediaObjects/13244_2022_1242_Fig19_HTML.jpg",
+      "caption": "Fig. 19 Full size image Typical non-invasive mucinous cystic neoplasm of the liver in a 59-year-old female. a Axial T2-weighted magnetic resonance imaging shows a solitary hyperintense cystic lesion, with hypointense septa (arrows). b Axial T1-weighted magnetic resonance imaging on portal venous phase depicts the enhancement of the capsule and septa (arrows)",
+      "file": "cystic-19.jpg",
+      "bytes": 151676,
+      "sha256": "df7d1bf492f2e019cdfc3cef1d1ec7bab86e372615540cb281d62fbcf3a8b93c",
+      "width": 1592,
+      "height": 1151
+    },
+    {
+      "source": "cystic",
+      "figure": 29,
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-022-01242-3/MediaObjects/13244_2022_1242_Fig29_HTML.jpg",
+      "caption": "Fig. 29 Full size image cyst echinococcosis 2, in a 50-year-old male. a Axial non-enhanced computed tomography shows a heterogeneous mass with a cystic part (arrow) and calcification of the wall (arrowhead). b On axial computed tomography on portal venous phase no enhancement of the cystic component is observed. c The cystic part and the differentiation between the daughter (arrow) and the mother (star) cysts are better evaluated on axial T2-weighted magnetic resonance imaging. d Coronal 3D magnetic resonance cholangiopancreatography excludes biliary fistula from the possible diagnosis",
+      "file": "cystic-29.jpg",
+      "bytes": 271773,
+      "sha256": "64bf4c5893797f37c407c973f590f49a179d90cdbcfdcbee689dd389a3e50deb",
+      "width": 1592,
+      "height": 1146
+    }
+  ]
+}

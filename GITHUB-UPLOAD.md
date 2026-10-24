@@ -1,6 +1,6 @@
 # Сборка и выпуск MRIAtlas
 
-Актуальная версия2.42/versionCode142, веткаmain. Подробности состояния — CONTINUE.md. Android SDK35/build-tools35.0.0, JDK17.
+Актуальная версия2.43/versionCode143, веткаmain. Подробности состояния — CONTINUE.md. Android SDK35/build-tools35.0.0, JDK17.
 
 ## Локальная сборка
 
@@ -9,7 +9,7 @@ python3 tools/restore_signing_key.py
 ANDROID_SDK_ROOT=/path/android-sdk bash build-apk.sh
 ```
 
-Результат — build/MRIAtlas-2.42-restored.apk. Для проверки без ключа передать UNSIGNED_ONLY=1; такой APK не является устанавливаемым подписанным выпуском. Подпись и постоянная копия ключа — SIGNING.md.
+Результат — build/MRIAtlas-2.43-restored.apk. Для проверки без ключа передать UNSIGNED_ONLY=1; такой APK не является устанавливаемым подписанным выпуском. Подпись и постоянная копия ключа — SIGNING.md.
 
 build-apk.sh сначала восстанавливает точные локальные ресурсы из source-assets. Ключ хранится вне репозитория. Проверяются текущий сертификат и подписьAPK. Перед выпуском сверить package,versionCode/versionName,ZIP и assets.
 

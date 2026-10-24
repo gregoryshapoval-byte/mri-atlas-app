@@ -1,0 +1,15 @@
+{
+  "version": "2.43",
+  "versionCode": 143,
+  "applicationId": "ru.grigory.shoulderatlas.restored",
+  "sha256": "bf0dd4e5c40afa6fcf89625da59330bebe4cb136af653288817963725a5002c3",
+  "bytes": 182839547,
+  "asset_count": 9678,
+  "old_asset_changes": [
+    "app/src/main/assets/liver-lesions.html"
+  ],
+  "missing_old_assets": [],
+  "certificate_sha256": "cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe",
+  "offline_illustrations": 24,
+  "all_assets_match_source": true
+}
