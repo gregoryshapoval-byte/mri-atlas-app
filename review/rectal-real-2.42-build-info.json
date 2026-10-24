@@ -1,0 +1,15 @@
+{
+  "version": "2.42",
+  "versionCode": 142,
+  "applicationId": "ru.grigory.shoulderatlas.restored",
+  "sha256": "318e4603fa3cf4ac39f7dac3d00671477bd6b102c7d6a52d5653b468cd32e087",
+  "bytes": 171241548,
+  "asset_count": 9650,
+  "old_asset_changes": [
+    "app/src/main/assets/rectal-cancer.html"
+  ],
+  "missing_old_assets": [],
+  "certificate_sha256": "cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe",
+  "offline_illustrations": 20,
+  "all_assets_match_source": true
+}

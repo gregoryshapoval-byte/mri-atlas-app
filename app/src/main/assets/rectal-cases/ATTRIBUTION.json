@@ -1,0 +1,214 @@
+{
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "checked": "2026-10-24",
+  "changes": "Original image files unchanged. Russian educational annotations added separately, reviewed against ESGAR 2026.",
+  "sources": {
+    "staging": {
+      "authors": "Inês Santiago, Nuno Figueiredo, Oriol Parés, Celso Matos",
+      "short": "Santiago и соавт., 2020",
+      "title": "MRI of rectal cancer—relevant anatomy and staging key points",
+      "doi": "10.1186/s13244-020-00890-7",
+      "url": "https://link.springer.com/article/10.1186/s13244-020-00890-7",
+      "year": 2020
+    },
+    "anatomy": {
+      "authors": "Nino Bogveradze, Petur Snaebjornsson, Brechtje A. Grotenhuis, Baukelien van Triest, Max J. Lahaye, Monique Maas, Geerard L. Beets, Regina G. H. Beets-Tan, Doenja M. J. Lambregts",
+      "short": "Bogveradze и соавт., 2023",
+      "title": "MRI anatomy of the rectum: key concepts important for rectal cancer staging and treatment planning",
+      "doi": "10.1186/s13244-022-01348-8",
+      "url": "https://link.springer.com/article/10.1186/s13244-022-01348-8",
+      "year": 2023
+    },
+    "mdpi": {
+      "authors": "Joao Miranda, Pamela Causa Andrieu, Josip Nincevic, Lucas de Padua Gomes de Farias, Hala Khasawneh, Yuki Arita, Nir Stanietzky, Maria Clara Fernandes, Tiago Biachi De Castria, Natally Horvat",
+      "short": "Miranda и соавт., J Clin Med 2024",
+      "copyrightYear": 2023,
+      "title": "Advances in MRI-Based Assessment of Rectal Cancer Post-Neoadjuvant Therapy: A Comprehensive Review",
+      "doi": "10.3390/jcm13010172",
+      "url": "https://www.mdpi.com/2077-0383/13/1/172",
+      "year": 2024
+    }
+  },
+  "images": [
+    {
+      "source": "staging",
+      "figure": 6,
+      "file": "staging-06.png",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-020-00890-7/MediaObjects/13244_2020_890_Fig6_HTML.png",
+      "caption": "Fig. 6 Full size image The peritoneal reflection, when visible, may present with a seagull or V-shaped appearance on the (oblique) axial plane (arrow in a ). The sagittal plane is depicted as a hypointense line extending from the rectal wall to the roof of the mesorectal fascia (arrow in b ). It is more easily identified whenever there is a small amount of peritoneal effusion, which will accumulate immediately above it (arrow in c )",
+      "bytes": 1557436,
+      "sha256": "a0c57e627c1fae203e66de49bba1d746777a16c69bee076121a34abc18afedd1"
+    },
+    {
+      "source": "staging",
+      "figure": 10,
+      "file": "staging-10.png",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-020-00890-7/MediaObjects/13244_2020_890_Fig10_HTML.png",
+      "caption": "Fig. 10 Full size image Patient staged as mrT3a/b mrN2b due to multiple bulky lymph nodes in the mesorectum of which one is depicted, measuring 13 mm in the long axis and 10 mm in the short axis. The patient underwent surgery and was a pT3N0. While carefully reviewing the lymph node appearance on T2-WI, we notice they all presented with well-defined borders, homogeneous signal intensity and a preserved chemical shift effect",
+      "bytes": 1366738,
+      "sha256": "640e334f71fc3168814b732bf5d5ed5c0ca82ed66779ee97cc3ddd1f1508dc78"
+    },
+    {
+      "source": "staging",
+      "figure": 12,
+      "file": "staging-12.png",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-020-00890-7/MediaObjects/13244_2020_890_Fig12_HTML.png",
+      "caption": "Fig. 12 Full size image Examples of differently T-staged tumours. a , b Arrows point to an early polypoid tumour occupying the full depth of the submucosa centrally and therefore staged clinically as mrT1sm3/early T2. Total mesorectal excision was performed, and at pathology, it corresponded to a T1sm3. c , d This ulcerated tumour extends in depth through the full thickness of the muscularis propria and was therefore staged as an MR advanced T2 (red arrows), which was confirmed at pathology. Notice how the periphery of the tumour overhangs the rectal wall both in the axial and coronal planes (blue arrows). e , f This mid-high, sub-circumferential rectal cancer extends 4 mm into the mesorectal fat at its most central area (red arrows) and was therefore staged as T3b. Notice the overhanging edges on the sagittal plane (blue arrows in f ). g , h An anterior mid-high rectal cancer crosses the Denonvillier fascia and the peritoneal reflection to invade the seminal vesicles in this male patient, corresponding to an mrT4b. The patient underwent chemoradiation and is currently under palliative treatment due to distant metastatic disease",
+      "bytes": 3189470,
+      "sha256": "a4c12bcbd0380dc6d4da28d20021ebb932711cdd31d150dbe3b43a8c29c34794"
+    },
+    {
+      "source": "staging",
+      "figure": 15,
+      "file": "staging-15.png",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-020-00890-7/MediaObjects/13244_2020_890_Fig15_HTML.png",
+      "caption": "Fig. 15 Full size image a This patient presents with a polypoid tumour (blue arrow in a ) located 7 cm above the anal verge. Tumour is underlined by a clear, uninterrupted, hyperintense submucosal fat plane and may as such be staged as mrT1 sm1/2. The patient also presented with a hypointense round lymph node in the mesorectum (red arrow), at tumour plane, 10 o’clock, with a slightly irregular contour anterolaterally. A very bulky, irregularly contoured, heterogeneous lymphadenopathy was found in the obturator space of the right lateral pelvic sidewall. The patient was selected for chemoradiation therapy",
+      "bytes": 954340,
+      "sha256": "fb095bc41590cb95f78315990ccdb5b6d086e00c0ed6ffd05a94c8d695ef2eaf"
+    },
+    {
+      "source": "staging",
+      "figure": 16,
+      "file": "staging-16.png",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-020-00890-7/MediaObjects/13244_2020_890_Fig16_HTML.png",
+      "caption": "Fig. 16 Full size image This patient with a large T3 MRF+ rectal cancer (yellow arrow in a ) presents with a hypointense, highly irregular, intermediate-to-low signal intensity nodule in the mesorectum (red arrows in a and b ) that does not interrupt the course of a vein but is irregular enough for us to admit the possibility of an extranodal deposit (mrENTD). The patient also presented with a round, hypointense slightly heterogeneous and slightly irregularly contoured lesion which we believe to be a lymphadenopathy (blue arrow in b )",
+      "bytes": 1081242,
+      "sha256": "eb31ed95d65dc3513af4f6b7f87ddcd2184cf21c1433ea8a9636e711b85179e4"
+    },
+    {
+      "source": "staging",
+      "figure": 21,
+      "file": "staging-21.png",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-020-00890-7/MediaObjects/13244_2020_890_Fig21_HTML.png",
+      "caption": "Fig. 21 Full size image In a to c , we observe a low/mid rectal cancer with a predominance of high signal intensity in accordance with a mucinous histologic subtype. It presents with bilateral (arrows in a ) and anterior (arrow in b ) transgression of the mesorectal fascia, extending into the pelvic sidewall and middle pelvic compartment, respectively. It may not be easy to define its exact boundaries due to the approximation of signal intensity to that of fat (arrow in c ). b0 DWI images are fat-suppressed T2-WI and may aid in the distinction (arrow in d ). T1WI may work even better, namely to define or exclude a fat plane between tumour and circumferential margin of resection. In e , a low mucinous rectal cancer appears to invade the levator muscle on T2-WI but in the corresponding T1WI ( f ), we see a thin fat plane between the two.",
+      "bytes": 3075165,
+      "sha256": "832299ee487c5fb6709962cd5382a1352086ff6ae22a39094cc2d3d0688cd4ea"
+    },
+    {
+      "source": "anatomy",
+      "figure": 5,
+      "file": "anatomy-05.png",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-022-01348-8/MediaObjects/13244_2022_1348_Fig5_HTML.png",
+      "caption": "Fig. 5 Full size image Schematic coronal drawing a showing the different layers of the anal canal and pelvic floor. The dotted line represents the intersphincteric plane. The coronal T2-weighted MRI in b is an example of a 62 year old male patient with a cT3a tumour (white arrow showing an irregular rectal wall with ± 1 mm perirectal extension) that extends into the anal canal and invades the right internal anal sphincter. The coronal image in c is an example of a 59-year-old female patient with a cT4b rectal tumour that invades the internal sphincter on both sides and extends into the external sphincter, levator ani, and puborectalis muscles on the left side",
+      "bytes": 372244,
+      "sha256": "db382c512b6a13423b6877c8b1a84e4764d5ed6cfa5b60d64cb1d1a046bb18dc"
+    },
+    {
+      "source": "mdpi",
+      "figure": 2,
+      "file": "mdpi-02.png",
+      "url": "https://www.mdpi.com/jcm/jcm-13-00172/article_deploy/html/images/jcm-13-00172-g002.png",
+      "caption": "Figure 2. Complete response after neoadjuvant chemotherapy in a 54-year-old man with low rectal adenocarcinoma. (A) Baseline axial T2-weighted MR image shows a low rectal tumor (dotted line). (B) Axial T2-weighted MR image after the completion of neoadjuvant chemoradiotherapy shows a thick hypointense scar at the site of the treated tumor (arrow). No diffusion restriction was present on diffusion-weighted images (C), and no residual malignancy was identified at endoscopy (D). The patient was offered a watch-and-wait (non-operative management) strategy and has been without evidence of disease for 36 months.",
+      "bytes": 554085,
+      "sha256": "e595f086c7d1ce87fcc149079e9f1a5870b16631c86b85fd33b8e32bf189ab3b"
+    },
+    {
+      "source": "mdpi",
+      "figure": 3,
+      "file": "mdpi-03.png",
+      "url": "https://www.mdpi.com/jcm/jcm-13-00172/article_deploy/html/images/jcm-13-00172-g003.png",
+      "caption": "Figure 3. Near-complete response in a 65-year-old man with middle rectal adenocarcinoma. (A) Baseline axial T2-weighted MR image shows an intermediate-signal-intensity, near-circumferential low rectal tumor (dotted line). (B) Axial T2-weighted MR image after the completion of neoadjuvant chemoradiotherapy shows a slight response with a small amount of fibrosis and residual tumor signal intensity (arrow). Axial diffusion-weighted image (C) shows high signal intensity (arrowhead), and the axial apparent diffusion coefficient map (D) shows a corresponding low signal intensity (arrowhead), in keeping with restricted diffusion at the nonfibrotic portion of the tumor.",
+      "bytes": 392685,
+      "sha256": "d9994bd62ef2ccf883e0bdf32b7bd9866db906758873d2238544b18be5f54e8d"
+    },
+    {
+      "source": "mdpi",
+      "figure": 4,
+      "file": "mdpi-04.png",
+      "url": "https://www.mdpi.com/jcm/jcm-13-00172/article_deploy/html/images/jcm-13-00172-g004.png",
+      "caption": "Figure 4. Incomplete response in a 60-year-old man with low/middle rectal adenocarcinoma. (A) Baseline axial T2-weighted MR image shows an intermediate-signal-intensity, near-circumferential low rectal tumor (dotted line). (B) Axial T2-weighted MR image after the completion of neoadjuvant chemoradiotherapy shows persistent intermediate signal intensity (arrow) representing incomplete response and residual tumor. (C) Axial diffusion-weighted image shows high signal intensity (arrowhead). (D) The residual malignancy was identified at endoscopy. The patient underwent total mesorectal excision.",
+      "bytes": 615905,
+      "sha256": "0a4425d6beb7887e5fb447635cfa4145d59e6c517207ee120236822df662aace"
+    },
+    {
+      "source": "mdpi",
+      "figure": 5,
+      "file": "mdpi-05.png",
+      "url": "https://www.mdpi.com/jcm/jcm-13-00172/article_deploy/html/images/jcm-13-00172-g005.png",
+      "caption": "Figure 5. A 57-year-old female diagnosed with mucinous rectal carcinoma. Initial T2-weighted oblique axial image reveals a large low mucinous rectal carcinoma invading the external sphincter (A). Following total neoadjuvant therapy, a considerable decrease in tumor size was observed about four months later, with some mucin deposits persisting (B). While the intermediate T2 signal has diminished, indicative of a response to treatment, slender strands of fibrosis remain. b-800 diffusion-weighted imaging (C) and apparent diffusion coefficient (ADC) mapping (D) are somewhat compromised in their diagnostic utility by the ‘T2 shine-through” effect associated with mucin. Furthermore, endoscopic examination identified a healed ulcer with overlying irregular mucosa in the posterior anal canal (E).",
+      "bytes": 1097056,
+      "sha256": "35d98114dd6746ba3f0cce8fdfa0f46fd58de768e2e4e45244ab95eba46c34c6"
+    },
+    {
+      "source": "mdpi",
+      "figure": 6,
+      "file": "mdpi-06.png",
+      "url": "https://www.mdpi.com/jcm/jcm-13-00172/article_deploy/html/images/jcm-13-00172-g006.png",
+      "caption": "Figure 6. T2 shine-through effect mimicking residual tumor in a 58-year-old man with rectal adenocarcinoma. Axial T2-weighted MR image after the completion of neoadjuvant chemoradiotherapy shows a thick scar along the tumor bed (arrowhead), and mucin extension into the left mesorectal space is noted at the 2:00 to 4:00 position (arrow) (A). On the corresponding axial diffusion-weighted image, there is a notable high signal at the same location as the mucin extension (arrow) (B). An axial apparent diffusion coefficient map (ADC) further confirms the presence of high signal intensity at the location of the mucin extension (indicated by the arrow) (C). This high signal intensity observed on both the diffusion-weighted image and the ADC map indicates the T2 shine-through effect, signifying non-restricted diffusion.",
+      "bytes": 384972,
+      "sha256": "d6c3111dcdcf40777771b2b232c3ffcff683c446ecf289f5da64d58c4c5da493"
+    },
+    {
+      "source": "mdpi",
+      "figure": 7,
+      "file": "mdpi-07.png",
+      "url": "https://www.mdpi.com/jcm/jcm-13-00172/article_deploy/html/images/jcm-13-00172-g007.png",
+      "caption": "Figure 7. T2 dark-through effect and rectal contents causing restricted diffusion and mimicking residual tumor in a 54-year-old man with rectal adenocarcinoma. (A) Axial T2-weighted MR image after the completion of neoadjuvant chemoradiotherapy shows a thin hypointense scar at the tumor bed (arrow). (B) Axial diffusion-weighted image shows low signal intensity within the tumor bed (arrow). (C) Corresponding axial apparent diffusion coefficient (ADC) map shows low signal intensity at this site (arrow). T2 dark-through shows the rectal wall scar with low signal intensity on T2-weighted imaging, diffusion-weighted imaging, and the ADC map due to fibrosis. Viable tumor should be considered only in cases with high signal intensity on diffusion-weighted imaging and low signal intensity on the ADC map within the tumor bed. Comparison with baseline scans may also be of value.",
+      "bytes": 550649,
+      "sha256": "f45cac0ffd0c1d7339cfbd0db0cb7e2c1da7f822ca11098f74b846a06997fb55"
+    },
+    {
+      "source": "mdpi",
+      "figure": 8,
+      "file": "mdpi-08.png",
+      "url": "https://www.mdpi.com/jcm/jcm-13-00172/article_deploy/html/images/jcm-13-00172-g008.png",
+      "caption": "Figure 8. Submucosal edema mimicking residual tumor in the uninvolved rectal wall in a 47-year-old man with rectal adenocarcinoma. (A) Baseline axial T2-weighted image shows a semicircumferential rectal tumor extending between the 7 o’clock and 12 o’clock positions (arrow). (B) Axial T2-weighted image after the completion of neoadjuvant chemoradiotherapy shows a complete response appearance, characterized by a crescent-shaped scar within the mucosal/submucosal layers (arrow). Note the high signal intensity at the uninvolved rectal wall (arrowhead), representing submucosal edema. Response assessment should not be based on the appearance of uninvolved parts of the rectum.",
+      "bytes": 196219,
+      "sha256": "6f8f254db6c1d5f355283b0cd7a2de04c090b468ad7f0cfba93523907b626493"
+    },
+    {
+      "source": "anatomy",
+      "figure": 1,
+      "file": "anatomy-01.jpg",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-022-01348-8/MediaObjects/13244_2022_1348_Fig1_HTML.jpg",
+      "caption": "Fig. 1 Full size image Axial T2-weighted images of a low risk T3ab tumour without MRF involvement ( a ) and a high-risk T3cd tumour with MRF involvement ( b ). The left patient is a 52 year old male patient with a tumour that extends beyond the muscularis propria from approximately 12 till 2 o’clock (white arrows) with an extramural invasion depth of < 5 mm. There is a sufficient margin (> 1 mm) between the tumour and MRF. The right patient is a 55-year-old female patient with extensive extramural invasion from 4 to 6 o’clock with broad-based involvement of the MRF (white arrowheads)",
+      "bytes": 123875,
+      "sha256": "5ffebaa5e022400e198799332456632b0c2f42377672e89fa4486a03a4bb6418"
+    },
+    {
+      "source": "anatomy",
+      "figure": 3,
+      "file": "anatomy-03.jpg",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-022-01348-8/MediaObjects/13244_2022_1348_Fig3_HTML.jpg",
+      "caption": "Fig. 3 Full size image Sagittal and axial T2-weighted images of a normal rectum of a male individual (without rectal cancer) demonstrating the sigmoid take-off (STO, indicated by the *) as the point from which the sigmoid sweeps horizontally on a sagittal view ( a ) and ventrally on an axial view ( b ), away from the sacrum. The white dashed line on the sagittal view indicates the anorectal junction (ARJ) that is typically situated at the level of an imaginary line between the lower margin of the sacral and pubic bone",
+      "bytes": 215462,
+      "sha256": "fa418720bcddc9bb8608a5eb062ec86d89e5f23b2929f65d0e69964092f4d3e4"
+    },
+    {
+      "source": "anatomy",
+      "figure": 9,
+      "file": "anatomy-09.jpg",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-022-01348-8/MediaObjects/13244_2022_1348_Fig9_HTML.jpg",
+      "caption": "Fig. 9 Full size image Coronal T2-weighted image ( a ) and axial T2-weighted cross sections at two different levels ( b , c ) of a 48 year old female patient with a cT4b rectal tumour based on invasion of the left external anal sphincter (white arrow in a ; = skeletal muscle invasion), invasion of the pelvic floor (black arrow in a ; = skeletal muscle invasion), invasion of the obturator compartment (arrowheads in b ; = invasion of compartment outside the mesorectum), and invasion of the vagina (white arrow in b ; = organ invasion). There is also a close relation to the sacral nerve plexus (white dotted lines) on the left side (arrowhead in c )",
+      "bytes": 266314,
+      "sha256": "f17a9c761bc8031035e7721a4ad7dd7b504f46a55fe1331b69c6903522d78bd0"
+    },
+    {
+      "source": "anatomy",
+      "figure": 11,
+      "file": "anatomy-11.jpg",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-022-01348-8/MediaObjects/13244_2022_1348_Fig11_HTML.jpg",
+      "caption": "Fig. 11 Full size image Axial T2-weighted images of two rectal cancer patients; a 63-year-old male patient with a cT1-2 rectal tumour ( a ; tumour not shown) an another 83-year-old female patient with a cT3cd tumour ( b ). The image in A is a cross section just above the level of the tumour in the rectal wall and shows a small vessel radiating outwards from the muscularis propria into the perirectal fat (white arrows). The vessel has a normal contour and low T2 signal; there are no signs of EMVI. The image in b shows a semicircular tumour that involves the rectal wall from 7 till 1 o’clock. The intermediate signal of the tumour extends into the adjacent vessels. The vessels is expanded, and the vessel contour is disrupted. These are all signs indicative of EMVI",
+      "bytes": 142722,
+      "sha256": "82fa9ad16410156dd67fdf11924abebee553f6bc7c19cb424687ad112404cbba"
+    },
+    {
+      "source": "anatomy",
+      "figure": 13,
+      "file": "anatomy-13.jpg",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-022-01348-8/MediaObjects/13244_2022_1348_Fig13_HTML.jpg",
+      "caption": "Fig. 13 Full size image Pre-treatment and post-chemoradiotherapy T2-weighted MR images of 74-year-old male patient with a distal tumour primarily staged as cT1-2 (upper row; a = pre-treatment, b = post-treatment, arrowheads indicating intact bowel wall around the tumour), and another 62 year old male patient with a more advanced cT4b tumour invading the dorsal bladder wall (bottom row, c = pre-treatment, d = post-treatment, arrows indicating invasion of the bladder). In both cases the tumour has decreased in size and become largely hypointense after CRT, indicating a fibrotic transformation (white arrowheads in b , white arrows in d ). If and to what extent viable residual tumour is present within the fibrosis is difficult to discern. The upper patient proved to be a complete responder (ycT0, followed by watch-and-wait with no signs of tumour regrowth for > 2 years). The bottom patient underwent resection showing a ypT3 tumour remnant at histopathology. The fibrosis invading and retracting the bladder wall (white arrows in d ) did not contain any vital residual tumour cells",
+      "bytes": 362901,
+      "sha256": "24d88fde1954c3205e924e0c5aa006eaafea7c9955393d65e914660ca026cfa1"
+    },
+    {
+      "source": "staging",
+      "figure": 13,
+      "file": "staging-13.png",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-020-00890-7/MediaObjects/13244_2020_890_Fig13_HTML.png",
+      "caption": "Fig. 13 Full size image Circumferential margin of resection involvement. a A T3d tumour invades the mesorectal fascia on the left side (arrow). b A 1–2 mm fat plane between this mrT3b low rectal cancer and the sphincter complex (arrow) is observed and as such the circumferential margin of resection may be considered free",
+      "bytes": 1006666,
+      "sha256": "e871e7867c56ef5cdcf9b67a16559354aec28eaca76a1f64087bee1d2578e4be"
+    }
+  ]
+}
