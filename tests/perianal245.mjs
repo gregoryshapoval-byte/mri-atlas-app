@@ -1,0 +1,5 @@
+import assert from 'node:assert/strict';import fs from 'node:fs';import crypto from 'node:crypto';
+import {cases,sources} from '../app/src/main/assets/perianal-cases-data.js';import {layouts} from '../app/src/main/assets/perianal-panel-layouts.js';
+const A='app/src/main/assets/';assert.equal(cases.length,16);assert.equal(Object.keys(layouts).length,16);let total=0;
+for(const c of cases){const key='perianal-cases/'+c.file,l=layouts[key];assert(l);assert(sources[c.source]);assert.equal(crypto.createHash('sha256').update(fs.readFileSync(A+key)).digest('hex'),l.sha256);for(const p of l.panels){const[x,y,w,h]=p.box;assert(x>=0&&y>=0&&w>0&&h>0&&x+w<=l.width&&y+h<=l.height);assert(p.label.length>4);total++;}}
+assert.equal(total,59);const m=JSON.parse(fs.readFileSync(A+'perianal-cases/ATTRIBUTION.json'));assert.equal(m.license,'CC BY 4.0');assert.equal(m.images.length,16);assert.equal(new Set(cases.map(c=>c.id)).size,16);console.log('PASS perianal245: 16 source hashes, 59 valid panels, case/source attribution');

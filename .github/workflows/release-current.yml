@@ -1,9 +1,6 @@
 name: Publish current signed MRIAtlas
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: [review/publish-2.45.json]
 permissions:
   contents: write
 concurrency:
@@ -40,6 +37,7 @@ jobs:
           node --check app/src/main/assets/liver-cases.js
           node --check app/src/main/assets/liver-cases-data.js
           node tests/panel-layouts244.mjs
+          node tests/perianal245.mjs
       - name: Restore existing key and build signed APK
         run: |
           python3 tools/restore_signing_key.py
