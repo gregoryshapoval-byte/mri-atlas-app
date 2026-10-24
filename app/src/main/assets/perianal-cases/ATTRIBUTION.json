@@ -1,0 +1,165 @@
+{
+  "license": "CC BY 4.0",
+  "images": [
+    {
+      "source": "aly",
+      "figure": 1,
+      "file": "aly-1.jpg",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs43055-024-01304-0/MediaObjects/43055_2024_1304_Fig1_HTML.jpg",
+      "caption": "Fig. 1  Axial STIR ( A ), coronal STIR ( B ), and axial T2 ( C and D ) images showing fluid-filled left perianal simple intersphincteric fistulas tract of bright T2/STIR signal seen connected to the internal anal sphincter at 5 o’clock position then descending downward within intersphincteric space to be ended by skin opening on the left aspect of the natal cleft",
+      "width": 1770,
+      "height": 1297,
+      "sha256": "1c79dd5d325234c305b12753fcbe1c71ef12097fba4efc5a6b24a122bafefafe"
+    },
+    {
+      "source": "aly",
+      "figure": 2,
+      "file": "aly-2.jpg",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs43055-024-01304-0/MediaObjects/43055_2024_1304_Fig2_HTML.jpg",
+      "caption": "Fig. 2  Coronal ( A ) and axial STIR ( B ) as well as axial T2 ( C ) images showing fluid-filled right perianal complex intersphincteric fistulas tract of bright T2/STIR signal seen connected to the internal anal sphincter at 6 o’clock position with localized collection seen within the right aspect of the intersphincteric space then the tract descending downward within intersphincteric space to be ended by skin opening on the right aspect of the natal cleft",
+      "width": 1770,
+      "height": 647,
+      "sha256": "dbd4a82f3c512d42094d4084c6fb35fa22b36592d692dbf4999a8d1460a4ba6c"
+    },
+    {
+      "source": "aly",
+      "figure": 3,
+      "file": "aly-3.jpg",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs43055-024-01304-0/MediaObjects/43055_2024_1304_Fig3_HTML.jpg",
+      "caption": "Fig. 3  Coronal ( A ) and axial STIR ( B ) as well as axial T2 ( C ) images showing a fluid-filled right perianal complex intersphincteric fistulas tract of bright T2/STIR signal seen connected to the internal anal sphincter at 9 o’clock position with blind-ended intersphincteric side branch seen extended upward and anteriorly. The main tract descending downward within intersphincteric space is to end with a skin opening on the right aspect of the natal cleft",
+      "width": 1770,
+      "height": 638,
+      "sha256": "e46477ab33080a2bfb3c747f337becb0e227151cfa105b7ad06f0441e9d5f9ae"
+    },
+    {
+      "source": "aly",
+      "figure": 4,
+      "file": "aly-4.jpg",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs43055-024-01304-0/MediaObjects/43055_2024_1304_Fig4_HTML.jpg",
+      "caption": "Fig. 4  Coronal ( A and C ) and axial ( B and D ) STIR images showing fluid-filled left perianal complex transsphincteric fistulas tract of bright STIR signal seen connected to the internal anal sphincter at 6 o’clock position then passing within the intersphincteric plane giving left-sided blind ended intersphincteric side branch. The main tract also pierces the external anal sphincter at 5 o’clock position and then passes within the left ischioanal fossa slight left para-median in location to end with skin opening on the left aspect of the natal cleft",
+      "width": 1593,
+      "height": 1259,
+      "sha256": "9cb0d880ddaeeee80646180781cceddb9a99f86918a7641c2eed4cc229c3629a"
+    },
+    {
+      "source": "aly",
+      "figure": 5,
+      "file": "aly-5.jpg",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs43055-024-01304-0/MediaObjects/43055_2024_1304_Fig5_HTML.jpg",
+      "caption": "Fig. 5  Axial T2 ( A ), coronal ( B and C ), and axial STIR ( D ) images illustrate a fluid-filled left perianal suprasphincteric/translevator fistulous tract with a bright T2/STIR signal connected to the left aspect of the lower rectal segment at 3 o’clock, with a small localized collection at the left ischiorectal fossa. The tract descends within the ischioanal fossa and terminates at a skin opening on the left",
+      "width": 1592,
+      "height": 1460,
+      "sha256": "504bfdb624a437fd839d603afb48e4b07c2ae602037af809873ea984fa040c24"
+    },
+    {
+      "source": "aly",
+      "figure": 6,
+      "file": "aly-6.jpg",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs43055-024-01304-0/MediaObjects/43055_2024_1304_Fig6_HTML.jpg",
+      "caption": "Fig. 6  Sagittal ( A ), coronal ( B ), and axial ( C ) STIR images showing a fluid-filled pilonidal sinus of bright STIR signal seen at the slight left para-median retro-sacrococcygeal region extending from S2 level down to the uppermost part of the natal cleft being surrounded by subcutaneous edema and opening into the skin surface opposite S2 vertebra. It is seen infiltrating the deep retro-coccygeal region",
+      "width": 1769,
+      "height": 582,
+      "sha256": "a53c57186a901e4ae8403680c757324a830ecfcfd3abcc6cbaf2ac6e2c6cf38f"
+    },
+    {
+      "source": "arkenbosch",
+      "figure": 1,
+      "file": "arkenbosch-1.jpg",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs00261-024-04455-w/MediaObjects/261_2024_4455_Fig1_HTML.jpg",
+      "caption": "Fig. 1  A computed tomography (CT) scan can be used in emergency setting to diagnose pelvic abscesses and to determine the presence and extent of pelvic sepsis. CT-scan of a 37 year old female with Crohn’s disease with clinical complaint of a perianal abscess. A CT-scan in emergency setting confirmed perianal abscess (arrow). B , C Follow-up postoperative MRI one day after surgical treatment. Resolution of the abscess after incision and drainage and small perianal fistula tracts remain visible. Furthermore, MR-images depict tissue inflammation surrounding the fistula tract",
+      "width": 2029,
+      "height": 614,
+      "sha256": "b3f849e5d5a62e925671ce7772d470b7c84d5ab909ff98ca3186a33ffbcc1095"
+    },
+    {
+      "source": "arkenbosch",
+      "figure": 2,
+      "file": "arkenbosch-2.jpg",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs00261-024-04455-w/MediaObjects/261_2024_4455_Fig2_HTML.jpg",
+      "caption": "Fig. 2  Pelvic Phased array versus endoluminal coils on postoperative MRI after incision and drainage of perianal abscess including seton drain placement. Axial T2-weighted (T2W) with fat suppression ( A ) and without ( B , C ). A On the external phased array image no evident lesions are seen; conversion to endoanal coil (1.5T) demonstrates a sub-sphincteric fistula with drain in situ (arrow), B including the patent ostia of two fistula tracts. C Arrowheads point at fibrotic remnants of dried up fistula tracts",
+      "width": 2029,
+      "height": 684,
+      "sha256": "966dc236433bc5fcb169ef426ecef338164e8010af22a9087393a676ac063087"
+    },
+    {
+      "source": "arkenbosch",
+      "figure": 3,
+      "file": "arkenbosch-3.jpg",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs00261-024-04455-w/MediaObjects/261_2024_4455_Fig3_HTML.jpg",
+      "caption": "Fig. 3  MRI of malignancy complicating perianal fistulizing disease in a patient with Crohn’s disease. A Initial T2W MRI; B , C follow-up T2W MRI (with and without fat suppression). A 42 year old male patient had a history of chronic persistent fistula ( A ) and refrained from treatment for 5 years. On follow-up MRI a mass lesion is visible, arising within the fistula tract and ending into the supralevator space with evident invasion in the surrounding tissue (arrow)",
+      "width": 2023,
+      "height": 634,
+      "sha256": "c517cc5cacfe9276438a0e03948ec841065416cfae2ee7543e36fd87d8cdfa61"
+    },
+    {
+      "source": "arkenbosch",
+      "figure": 4,
+      "file": "arkenbosch-4.jpg",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs00261-024-04455-w/MediaObjects/261_2024_4455_Fig4_HTML.jpg",
+      "caption": "Fig. 4  Pre- and postoperative MRI in patient with Crohn’s disease showing clinical and imaging response after surgical fistula closure. A , B Preoperative T2W- ( A ) and DWI- MRI, b = 1000 s/mm 2 ( B ) show a transsphincteric fistula (arrow) with presence of a perianal abscess (arrowheads); C postoperative T2W MRI showing radiological resolution with absence of fistula activity and abscess (preoperative Original van Assche score of 16 points versus a postoperative Original van Assche score of 0 points)",
+      "width": 1770,
+      "height": 526,
+      "sha256": "fed78140ca18ca861848249d631e1892cdc1aeb3a310da706f48c9e2490c2071"
+    },
+    {
+      "source": "maps",
+      "figure": 22,
+      "file": "maps-22.png",
+      "url": "https://mdpi-res.com/diagnostics/diagnostics-16-02584/article_deploy/html/images/diagnostics-16-02584-g022.png",
+      "caption": "Figure 22. Selected magnetic resonance imaging images. ( A ) Axial STIR T2-weighted image showing a perianal fistula arising from the left posterior anal sphincter region at the 5 o’clock position (arrow) around the anal canal (dot) in the lithotomy position, with the internal opening located 20 mm from the anal verge. ( A+ ) Corresponding unannotated image. ( B ) Coronal STIR T2-weighted image showing an intersphincteric fistulous tract measuring 53 mm in length and 8 mm in width, extending inferiorly in the left posterior quadrant to form an external opening. No branching or abscess formation is identified. ( B+ ) Corresponding unannotated image. UB: Urinary bladder.",
+      "width": 3342,
+      "height": 3438,
+      "sha256": "261a5fb1c4a1bdc7ae55fa3f510bf1f060fa42e552867aecbef2f33504638548"
+    },
+    {
+      "source": "maps",
+      "figure": 23,
+      "file": "maps-23.png",
+      "url": "https://mdpi-res.com/diagnostics/diagnostics-16-02584/article_deploy/html/images/diagnostics-16-02584-g023.png",
+      "caption": "Figure 23. Selected magnetic resonance imaging images. ( A ) Axial STIR T2-weighted image showing a perianal fistula arising from the posterior anal sphincter region at the 6 o’clock position (arrow) around the anal canal (dot) in the lithotomy position, with the internal opening located approximately 20 mm from the anal verge. ( A+ ) Corresponding unannotated image. ( B ) Coronal STIR T2-weighted image showing an intersphincteric fistulous tract measuring 35 mm in length and 3 mm in width, extending inferiorly in the posterior midline to form an external opening. No branching or abscess formation is identified. ( B+ ) Corresponding unannotated image.",
+      "width": 4013,
+      "height": 4005,
+      "sha256": "dfe5082db3603bdf261b197a67a390114ee5e1fe9796be2a464b26a9b23458b8"
+    },
+    {
+      "source": "maps",
+      "figure": 24,
+      "file": "maps-24.png",
+      "url": "https://mdpi-res.com/diagnostics/diagnostics-16-02584/article_deploy/html/images/diagnostics-16-02584-g024.png",
+      "caption": "Figure 24. Selected magnetic resonance imaging images. ( A ) Axial DIXON T1-weighted image showing a perianal fistula arising from the right posterior anal sphincter region at the 7 o’clock position (arrow) around the anal canal (dot) in the lithotomy position, with the internal opening located approximately 35 mm from the anal verge. ( A+ ) Corresponding unannotated image. ( B ) Coronal STIR T2-weighted image showing an intersphincteric fistulous tract measuring 60 mm in length and 3 mm in width, extending inferiorly in the right posterior quadrant to form two external openings. No abscess formation is identified. ( B+ ) Corresponding unannotated image. ( C ) Sagittal STIR T2-weighted image showing part of the branching fistulous tract and the two external openings. ( C+ ) Corresponding unannotated image. UB: Urinary bladder.",
+      "width": 2902,
+      "height": 4031,
+      "sha256": "75e723b00bbab58ed6adb37e96123fb03fd748747df0c83f8dcac91be8f89c48"
+    },
+    {
+      "source": "maps",
+      "figure": 25,
+      "file": "maps-25.png",
+      "url": "https://mdpi-res.com/diagnostics/diagnostics-16-02584/article_deploy/html/images/diagnostics-16-02584-g025.png",
+      "caption": "Figure 25. Selected magnetic resonance imaging images. ( A ) Axial STIR T2-weighted image showing a transsphincteric perianal fistula arising from the right anterior anal sphincter region at the 2 o’clock position (arrow) around the anal canal (dot) in the lithotomy position, with the internal opening located approximately 40 mm from the anal verge. ( A+ ) Corresponding unannotated image. ( B ) Coronal STIR T2-weighted image showing the distal part of the fistulous tract, measuring 70 mm in length and 6 mm in width, extending inferiorly in the right anterior quadrant to form a single external opening. No branching or abscess formation is identified. ( B+ ) Corresponding unannotated image. ( C ) Sagittal STIR T2-weighted image showing part of the fistulous tract. ( C+ ) Corresponding unannotated image. UB: Urinary bladder.",
+      "width": 2708,
+      "height": 4088,
+      "sha256": "b12f04ae45d5b3e9e53904b34d5af1a7a0e2816a0c21e9758cadf29a6cd6ad4f"
+    },
+    {
+      "source": "maps",
+      "figure": 26,
+      "file": "maps-26.png",
+      "url": "https://mdpi-res.com/diagnostics/diagnostics-16-02584/article_deploy/html/images/diagnostics-16-02584-g026.png",
+      "caption": "Figure 26. Selected magnetic resonance images of a patient with Crohn’s disease. ( A ) Axial fat-suppressed T2-weighted image showing a complex transsphincteric perianal fistula arising from the anterior midline anal sphincter region at the 12 o’clock position and extending into both sides of the perineum around the anal canal (dot), forming a horseshoe fistula. ( A+ ) Corresponding unannotated image. ( B ) Coronal fat-suppressed T2-weighted image showing the complex fistula extending into both sides of the perineum, with greater involvement on the left side than on the right. Marked skin thickening and a hyperintense area are present in the left medial buttock, consistent with cellulitis (arrows). ( B+ ) Corresponding unannotated image. UB: Urinary bladder.",
+      "width": 3333,
+      "height": 3390,
+      "sha256": "581ed2f301d91686c557be84fbbf417e46866ad2cb054666654156e7763311db"
+    },
+    {
+      "source": "maps",
+      "figure": 27,
+      "file": "maps-27.png",
+      "url": "https://mdpi-res.com/diagnostics/diagnostics-16-02584/article_deploy/html/images/diagnostics-16-02584-g027.png",
+      "caption": "Figure 27. Selected magnetic resonance images of another patient with Crohn’s disease shown in Figure 26 . ( A ) Axial post-contrast T1-weighted image showing a small blind-ending sinus tract (filled with yellow color) arising from the posterior midline around the anal canal. ( A+ ) Corresponding unannotated image.",
+      "width": 3320,
+      "height": 3452,
+      "sha256": "2095ae8c68e71d6115885614e422143f5399cb9f14f113f6bffa97e6f10b53ec"
+    }
+  ]
+}

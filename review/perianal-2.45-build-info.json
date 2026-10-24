@@ -1,0 +1,11 @@
+{
+  "version": "2.45",
+  "versionCode": 145,
+  "bytes": 194302160,
+  "sha256": "ed28fc8df71bf9d5bb031a27c02430322f478b9fb2a77485a0249967d2b88e4e",
+  "certificate_sha256": "cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe",
+  "assets": 9704,
+  "all_asset_bytes_verified": true,
+  "previous_assets_deleted": 0,
+  "physical_android_tested": false
+}

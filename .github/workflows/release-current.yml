@@ -1,6 +1,9 @@
 name: Publish current signed MRIAtlas
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [review/publish-2.45.json]
 permissions:
   contents: write
 concurrency:
@@ -64,7 +67,7 @@ jobs:
             gh release upload "$tag" release/* --clobber
             gh release edit "$tag" --latest
           else
-            gh release create "$tag" release/* --target "$GITHUB_SHA" --title "MRIAtlas ${ATLAS_VERSION} · актуальная версия" --notes 'Телефонная раскладка: 56 композиций печени, прямой кишки и эндометриоза разделены на 225 вертикальных кадров с подписями. Каждый кадр на ширину экрана, отдельное увеличение и доступ к исходной композиции. Офлайн, разборы, поиск и увеличение. Прежние модули сохранены; подпись та же.' --latest
+            gh release create "$tag" release/* --target "$GITHUB_SHA" --title "MRIAtlas ${ATLAS_VERSION} · актуальная версия" --notes-file review/perianal-2.45.md --latest
           fi
           mkdir -p verify-release
           gh release download "$tag" --pattern "MRIAtlas-${ATLAS_VERSION}.apk" --dir verify-release

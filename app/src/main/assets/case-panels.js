@@ -15,8 +15,8 @@ export function initPanelZoom(){
  el('caseZoomScale').max='4';el('caseZoomScale').oninput=e=>{el('caseZoomImage').style.width=`${Number(e.target.value)*100}%`;};
  dialog.addEventListener('close',()=>{dialog.querySelector('.caseZoomScroll').replaceChildren();});
 }
-export function createPanelGallery(src,title){
- const layout=layouts[src];if(!layout)throw new Error('No reviewed panel layout: '+src);
+export function createPanelGallery(src,title,layout=layouts[src]){
+ if(!layout)throw new Error('No reviewed panel layout: '+src);
  const gallery=document.createElement('div');gallery.className='casePanelGallery';gallery.dataset.source=src;
  for(const [index,panel] of layout.panels.entries()){
   const fig=document.createElement('figure');fig.className='casePanel';fig.dataset.panel=String(index+1);
