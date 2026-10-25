@@ -1,4 +1,6 @@
 export const reportRoutes=[
+  "bladder-urethra.html",
+  "orbits-optic.html",
   "acl-postop.html",
   "adenomyosis.html",
   "adrenal-masses.html",

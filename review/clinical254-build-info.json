@@ -1,0 +1,13 @@
+{
+  "version": "2.54",
+  "versionCode": 154,
+  "bytes": 223435041,
+  "sha256": "ca66440a86cb424ab40f4ae659aee4ea124492e3a3cb986420b605e406de7165",
+  "certificate_sha256": "cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe",
+  "assets": 9788,
+  "unchanged_tracked_assets": 4691,
+  "all_assets_verified": true,
+  "zip_verified": true,
+  "signature_v2_v3": true,
+  "physical_android_test": false
+}

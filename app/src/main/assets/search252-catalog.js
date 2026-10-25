@@ -267,6 +267,13 @@ export const catalog=[
     "area": "Лицо и шея"
   },
   {
+    "id": "orbits-optic.html",
+    "url": "orbits-optic.html",
+    "title": "Орбиты и зрительные нервы",
+    "kind": "Модуль",
+    "area": "Лицо и шея"
+  },
+  {
     "id": "region.html?area=shoulder",
     "url": "region.html?area=shoulder",
     "title": "Плечо",
@@ -550,6 +557,13 @@ export const catalog=[
     "id": "adenomyosis.html",
     "url": "adenomyosis.html",
     "title": "Аденомиоз",
+    "kind": "Модуль",
+    "area": "Малый таз"
+  },
+  {
+    "id": "bladder-urethra.html",
+    "url": "bladder-urethra.html",
+    "title": "Мочевой пузырь и уретра",
     "kind": "Модуль",
     "area": "Малый таз"
   },
@@ -3436,6 +3450,167 @@ export const catalog=[
     "title": "Плеоморфная ксантоастроцитома — PXA",
     "kind": "Тема",
     "area": "Головной мозг"
+  },
+  {
+    "id": "bladder-urethra.html?focus254=wall",
+    "url": "bladder-urethra.html?focus254=wall",
+    "title": "Сначала — стенка и качество исследования",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "bladder-urethra.html?focus254=virads-low",
+    "url": "bladder-urethra.html?focus254=virads-low",
+    "title": "VI-RADS 1–2: низкая вероятность мышечной инвазии",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "bladder-urethra.html?focus254=virads-three",
+    "url": "bladder-urethra.html?focus254=virads-three",
+    "title": "VI-RADS 3: неопределённая инвазия",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "bladder-urethra.html?focus254=virads-high",
+    "url": "bladder-urethra.html?focus254=virads-high",
+    "title": "VI-RADS 4–5: вероятная инвазия",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "bladder-urethra.html?focus254=post-turbt",
+    "url": "bladder-urethra.html?focus254=post-turbt",
+    "title": "После ТУР / лечения: ограничение VI-RADS",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "bladder-urethra.html?focus254=mimics",
+    "url": "bladder-urethra.html?focus254=mimics",
+    "title": "Утолщение стенки и внутрипузырное содержимое",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "bladder-urethra.html?focus254=diverticulum",
+    "url": "bladder-urethra.html?focus254=diverticulum",
+    "title": "Дивертикул женской уретры",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "bladder-urethra.html?focus254=complex-diverticulum",
+    "url": "bladder-urethra.html?focus254=complex-diverticulum",
+    "title": "Осложнённый дивертикул",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "bladder-urethra.html?focus254=skene",
+    "url": "bladder-urethra.html?focus254=skene",
+    "title": "Киста желёз Скина",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "bladder-urethra.html?focus254=gartner",
+    "url": "bladder-urethra.html?focus254=gartner",
+    "title": "Киста Гартнерова протока / влагалищная киста",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "bladder-urethra.html?focus254=periurethral-solid",
+    "url": "bladder-urethra.html?focus254=periurethral-solid",
+    "title": "Солидное периуретральное образование",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "orbits-optic.html?focus254=optic-neuritis",
+    "url": "orbits-optic.html?focus254=optic-neuritis",
+    "title": "Неврит зрительного нерва",
+    "kind": "Паттерн",
+    "area": "Лицо и шея"
+  },
+  {
+    "id": "orbits-optic.html?focus254=ms-pattern",
+    "url": "orbits-optic.html?focus254=ms-pattern",
+    "title": "Короткий односторонний очаг: паттерн, возможный при РС",
+    "kind": "Паттерн",
+    "area": "Лицо и шея"
+  },
+  {
+    "id": "orbits-optic.html?focus254=mog-pattern",
+    "url": "orbits-optic.html?focus254=mog-pattern",
+    "title": "Длинный передний / двусторонний очаг: MOGAD в дифряде",
+    "kind": "Паттерн",
+    "area": "Лицо и шея"
+  },
+  {
+    "id": "orbits-optic.html?focus254=aqp4-pattern",
+    "url": "orbits-optic.html?focus254=aqp4-pattern",
+    "title": "Задние отделы и хиазма: NMOSD в дифряде",
+    "kind": "Паттерн",
+    "area": "Лицо и шея"
+  },
+  {
+    "id": "orbits-optic.html?focus254=sheath",
+    "url": "orbits-optic.html?focus254=sheath",
+    "title": "Оболочки нерва: периневрит ↔ менингиома",
+    "kind": "Паттерн",
+    "area": "Лицо и шея"
+  },
+  {
+    "id": "orbits-optic.html?focus254=ted",
+    "url": "orbits-optic.html?focus254=ted",
+    "title": "Тиреоидная офтальмопатия",
+    "kind": "Паттерн",
+    "area": "Лицо и шея"
+  },
+  {
+    "id": "orbits-optic.html?focus254=myositis",
+    "url": "orbits-optic.html?focus254=myositis",
+    "title": "Орбитальный миозит / идиопатическое воспаление",
+    "kind": "Паттерн",
+    "area": "Лицо и шея"
+  },
+  {
+    "id": "orbits-optic.html?focus254=igg4",
+    "url": "orbits-optic.html?focus254=igg4",
+    "title": "IgG4: мышцы, слёзные железы и нервы",
+    "kind": "Паттерн",
+    "area": "Лицо и шея"
+  },
+  {
+    "id": "orbits-optic.html?focus254=lymphoma",
+    "url": "orbits-optic.html?focus254=lymphoma",
+    "title": "Лимфома / клеточное образование",
+    "kind": "Паттерн",
+    "area": "Лицо и шея"
+  },
+  {
+    "id": "orbits-optic.html?focus254=cvm",
+    "url": "orbits-optic.html?focus254=cvm",
+    "title": "Кавернозная венозная мальформация ↔ шваннома",
+    "kind": "Паттерн",
+    "area": "Лицо и шея"
+  },
+  {
+    "id": "orbits-optic.html?focus254=lacrimal",
+    "url": "orbits-optic.html?focus254=lacrimal",
+    "title": "Слёзная железа: диффузное увеличение ↔ очаг",
+    "kind": "Паттерн",
+    "area": "Лицо и шея"
+  },
+  {
+    "id": "orbits-optic.html?focus254=cellulitis",
+    "url": "orbits-optic.html?focus254=cellulitis",
+    "title": "Целлюлит / орбитальный абсцесс",
+    "kind": "Паттерн",
+    "area": "Лицо и шея"
   },
   {
     "id": "salivary-glands.html?neckFeature252=pleomorphic",

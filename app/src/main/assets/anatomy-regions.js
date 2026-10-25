@@ -300,6 +300,14 @@ export const regions=[
         "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
         "thumb": "menu-thumbs/neck-spaces.svg",
         "contentKind": "clinical"
+      },
+      {
+        "title": "Орбиты и зрительные нервы",
+        "description": "Неврит · мышцы · слёзные железы · орбитальные образования",
+        "url": "orbits-optic.html",
+        "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+        "thumb": "menu-thumbs/face-neck-mri.webp",
+        "contentKind": "clinical"
       }
     ]
   },
@@ -763,6 +771,14 @@ export const regions=[
         "url": "adenomyosis.html",
         "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
         "thumb": "menu-thumbs/adenomyosis.svg",
+        "contentKind": "clinical"
+      },
+      {
+        "title": "Мочевой пузырь и уретра",
+        "description": "VI-RADS · стенка · дивертикулы и периуретральные образования",
+        "url": "bladder-urethra.html",
+        "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+        "thumb": "menu-thumbs/male-pelvis-mri.webp",
         "contentKind": "clinical"
       },
       {
