@@ -21,15 +21,22 @@ export function measurement(raw,{positive=false}={}){
  const n=Number(normalized);return !Number.isFinite(n)||n<0||(positive&&n===0)?null:n;
 }
 export function mrfStatus(raw){const n=measurement(raw);return n===null?'не оценена':n<=1?'MRF+':'MRF−'}
+export const mrfSources=['Опухоль','EMVI','Неровный депозит / узел с выходом за капсулу'];
+export function mrfAssessment(raw,source){
+ if(source==='Гладкий лимфоузел')return {status:'не оценена',reason:'Гладкий узел сам по себе не определяет MRF+. Измерьте расстояние от опухоли, EMVI или неровного депозита / узла.'};
+ if(!mrfSources.includes(source))return {status:'не оценена',reason:'Укажите допустимый источник расстояния до MRF.'};
+ const status=mrfStatus(raw);return {status,reason:status==='не оценена'?'Укажите корректное расстояние.':status};
+}
 export function report(v){
  const format=(raw,positive=false)=>{const n=measurement(raw,{positive});return n===null?'___':String(n).replace('.',',')};
- const distance=v.source?measurement(v.mrf):null,status=mrfStatus(distance);
+ const validSource=mrfSources.includes(v.source),distance=validSource?measurement(v.mrf):null,{status}=mrfAssessment(v.mrf,v.source);
+ const sourceText=validSource?v.source:v.source==='Гладкий лимфоузел'?'___ (гладкий лимфоузел не определяет MRF+)':'___';
  const emvi=['не выявлена','подозрение','выявлена'].includes(v.emvi)?v.emvi:'не оценена';
  return `МРТ прямой кишки · первичное стадирование
 Нижний край от анального края: ${format(v.height)} см (метод измерения указать). Длина: ${format(v.length,true)} мм.
 Положение по окружности: ___; относительно sigmoid take-off и перитонеального отражения: ___.
 Глубина инвазии / cT: ___. Экстрамуральная инвазия: ___ мм.
-Минимум до MRF: ${format(distance)} мм; источник ближайшей ткани: ${v.source||'___'}; ${status}.
+Минимум до MRF: ${format(distance)} мм; источник ближайшей ткани: ${sourceText}; ${status}.
 EMVI: ${emvi}. Опухолевые депозиты: ___.
 Мезоректальные и латеральные узлы: ___; локализация, короткая ось и морфология: ___. cN / уверенность: ___.
 Анальный канал, сфинктеры, межсфинктерное пространство, леваторы: ___. Соседние органы: ___.

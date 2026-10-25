@@ -1,4 +1,4 @@
-import{stages,protocol,mrfStatus,report,measurement}from'./rectal-cancer-data.js';
+import{stages,protocol,mrfStatus,mrfAssessment,report,measurement}from'./rectal-cancer-data.js';
 const $=id=>document.getElementById(id);
 for(const s of stages){const o=document.createElement('option');o.value=s.id;o.textContent=s.name+' · '+s.short;$('stage').append(o)}
 for(const row of protocol){const tr=document.createElement('tr');for(const v of row){const td=document.createElement('td');td.textContent=v;tr.append(td)}$('protocolRows').append(tr)}
@@ -8,10 +8,10 @@ const axial=`<svg viewBox="0 0 540 370" aria-labelledby="diagramTitle"><title id
 const sag=`<svg viewBox="0 0 540 370" aria-labelledby="diagramTitle"><title id="diagramTitle">T4a, инвазия перитонеального отражения; условная сагиттальная схема</title><text x="25" y="24" class="sLabel">Перед</text><text x="455" y="24" class="sLabel">Зад</text><path d="M343 45 Q288 119 318 191 L318 303 M396 45 Q343 119 373 191 L373 303" fill="none" stroke="#d9b27a" stroke-width="13"/><path d="M60 114 Q155 111 225 171 Q270 205 315 166" fill="none" stroke="#63d3cb" stroke-width="4"/><path d="M321 122 Q286 142 275 181 L329 204 Q347 162 344 139Z" fill="#ee8493" stroke="#ffc2cc" stroke-width="2"/><text x="46" y="89" class="sLabel">Перитонеальное</text><text x="46" y="109" class="sLabel">отражение</text><text x="381" y="258" class="small">Кишка</text><text x="80" y="330" class="small">Инвазия брюшины; не просто контакт</text></svg>`;
 $('scheme').innerHTML=s.id==='t4a'?sag:axial;$('legend').innerHTML='<span style="color:#ee8493">● Опухоль</span><span style="color:#d9b27a">● Мышечная оболочка</span><span style="color:#63d3cb">● '+(s.id==='t4a'?'Брюшина':'MRF')+'</span>'+(s.id==='t4b'?'<span style="color:#c9abda">● Соседний орган вне мезоректума</span>':'');}
 function mrf(){
- const raw=$('mrf').value,val=mrfStatus(raw),source=$('source').value;
+ const raw=$('mrf').value,source=$('source').value,assessment=mrfAssessment(raw,source),val=assessment.status;
  const invalid=raw.trim()!==''&&measurement(raw)===null;
  $('mrf').setAttribute('aria-invalid',invalid);
- $('mrfResult').textContent=invalid?'Введите число ≥0':val==='не оценена'?'Не оценена':source?val:'Укажите источник расстояния';
+ $('mrfResult').textContent=invalid?'Введите число ≥0':assessment.reason;
  $('mrfResult').dataset.positive=val==='MRF+'&&!!source;
 }
 $('stage').addEventListener('change',scheme);$('mrf').addEventListener('input',mrf);$('source').addEventListener('change',mrf);

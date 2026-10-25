@@ -3466,6 +3466,195 @@ export const catalog=[
     "area": "Головной мозг"
   },
   {
+    "id": "liver-lesions.html?compare256=0",
+    "url": "liver-lesions.html?compare256=0",
+    "title": "Динамика усиления",
+    "kind": "Тема",
+    "area": "Брюшная полость"
+  },
+  {
+    "id": "liver-lesions.html?compare256=1",
+    "url": "liver-lesions.html?compare256=1",
+    "title": "ФНГ и аденома",
+    "kind": "Тема",
+    "area": "Брюшная полость"
+  },
+  {
+    "id": "liver-lesions.html?compare256=2",
+    "url": "liver-lesions.html?compare256=2",
+    "title": "Яркость DWI",
+    "kind": "Тема",
+    "area": "Брюшная полость"
+  },
+  {
+    "id": "liver-lesions.html?compare256=3",
+    "url": "liver-lesions.html?compare256=3",
+    "title": "После лечения / вмешательства",
+    "kind": "Тема",
+    "area": "Брюшная полость"
+  },
+  {
+    "id": "rectal-cancer.html?compare256=0",
+    "url": "rectal-cancer.html?compare256=0",
+    "title": "Стенка и экстрамуральная ткань",
+    "kind": "Тема",
+    "area": "Малый таз"
+  },
+  {
+    "id": "rectal-cancer.html?compare256=1",
+    "url": "rectal-cancer.html?compare256=1",
+    "title": "Что ограничивает резекционный край",
+    "kind": "Тема",
+    "area": "Малый таз"
+  },
+  {
+    "id": "rectal-cancer.html?compare256=2",
+    "url": "rectal-cancer.html?compare256=2",
+    "title": "После неоадъювантного лечения",
+    "kind": "Тема",
+    "area": "Малый таз"
+  },
+  {
+    "id": "rectal-cancer.html?compare256=3",
+    "url": "rectal-cancer.html?compare256=3",
+    "title": "Яркий T2 после лечения",
+    "kind": "Тема",
+    "area": "Малый таз"
+  },
+  {
+    "id": "endometriosis.html?compare256=0",
+    "url": "endometriosis.html?compare256=0",
+    "title": "T1-яркое содержимое",
+    "kind": "Тема",
+    "area": "Малый таз"
+  },
+  {
+    "id": "endometriosis.html?compare256=1",
+    "url": "endometriosis.html?compare256=1",
+    "title": "Пристеночный компонент",
+    "kind": "Тема",
+    "area": "Малый таз"
+  },
+  {
+    "id": "endometriosis.html?compare256=2",
+    "url": "endometriosis.html?compare256=2",
+    "title": "Фокальное утолщение миометрия",
+    "kind": "Тема",
+    "area": "Малый таз"
+  },
+  {
+    "id": "endometriosis.html?compare256=3",
+    "url": "endometriosis.html?compare256=3",
+    "title": "Связь с соседней структурой",
+    "kind": "Тема",
+    "area": "Малый таз"
+  },
+  {
+    "id": "renal-bosniak.html?compare256=0",
+    "url": "renal-bosniak.html?compare256=0",
+    "title": "Перегородки",
+    "kind": "Тема",
+    "area": "Брюшная полость"
+  },
+  {
+    "id": "renal-bosniak.html?compare256=1",
+    "url": "renal-bosniak.html?compare256=1",
+    "title": "Утолщение и узел",
+    "kind": "Тема",
+    "area": "Брюшная полость"
+  },
+  {
+    "id": "renal-bosniak.html?compare256=2",
+    "url": "renal-bosniak.html?compare256=2",
+    "title": "Киста и некротическая масса",
+    "kind": "Тема",
+    "area": "Брюшная полость"
+  },
+  {
+    "id": "prostate-cancer.html?compare256=0",
+    "url": "prostate-cancer.html?compare256=0",
+    "title": "Зональный алгоритм",
+    "kind": "Тема",
+    "area": "Малый таз"
+  },
+  {
+    "id": "prostate-cancer.html?compare256=1",
+    "url": "prostate-cancer.html?compare256=1",
+    "title": "Диффузия",
+    "kind": "Тема",
+    "area": "Малый таз"
+  },
+  {
+    "id": "prostate-cancer.html?compare256=2",
+    "url": "prostate-cancer.html?compare256=2",
+    "title": "Имитация опухоли",
+    "kind": "Тема",
+    "area": "Малый таз"
+  },
+  {
+    "id": "orads-mri.html?compare256=0",
+    "url": "orads-mri.html?compare256=0",
+    "title": "Что является solid tissue",
+    "kind": "Тема",
+    "area": "Малый таз"
+  },
+  {
+    "id": "orads-mri.html?compare256=1",
+    "url": "orads-mri.html?compare256=1",
+    "title": "Фиброзная ткань",
+    "kind": "Тема",
+    "area": "Малый таз"
+  },
+  {
+    "id": "orads-mri.html?compare256=2",
+    "url": "orads-mri.html?compare256=2",
+    "title": "Оценка усиления",
+    "kind": "Тема",
+    "area": "Малый таз"
+  },
+  {
+    "id": "cervical-cancer.html?compare256=0",
+    "url": "cervical-cancer.html?compare256=0",
+    "title": "Параметрий",
+    "kind": "Тема",
+    "area": "Малый таз"
+  },
+  {
+    "id": "endometrial-cancer.html?compare256=0",
+    "url": "endometrial-cancer.html?compare256=0",
+    "title": "Распространение к шейке",
+    "kind": "Тема",
+    "area": "Малый таз"
+  },
+  {
+    "id": "soft-tissue-tumors.html?compare256=0",
+    "url": "soft-tissue-tumors.html?compare256=0",
+    "title": "Геморрагическая масса",
+    "kind": "Тема",
+    "area": "Нижняя конечность"
+  },
+  {
+    "id": "inflammatory-arthritis.html?compare256=0",
+    "url": "inflammatory-arthritis.html?compare256=0",
+    "title": "Острый моноартрит",
+    "kind": "Тема",
+    "area": "Голеностоп и стопа"
+  },
+  {
+    "id": "orbits-optic.html?compare256=0",
+    "url": "orbits-optic.html?compare256=0",
+    "title": "Неврит: ориентиры",
+    "kind": "Тема",
+    "area": "Лицо и шея"
+  },
+  {
+    "id": "bladder-urethra.html?compare256=0",
+    "url": "bladder-urethra.html?compare256=0",
+    "title": "Основание опухоли",
+    "kind": "Тема",
+    "area": "Малый таз"
+  },
+  {
     "id": "soft-tissue-tumors.html?focus255=lipoma",
     "url": "soft-tissue-tumors.html?focus255=lipoma",
     "title": "Липома: преимущественно однородный жир",

@@ -1,0 +1,11 @@
+{
+  "pass": true,
+  "viewports": 4,
+  "modules": 12,
+  "comparisons": 27,
+  "case_count": 56,
+  "panel_cues": 225,
+  "mrf_scope_and_boundaries": true,
+  "errors": [],
+  "external": []
+}

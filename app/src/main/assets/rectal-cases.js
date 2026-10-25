@@ -1,3 +1,4 @@
+import {panelGuides} from './panel-guides256-data.js';
 import {createPanelGallery,initPanelZoom} from './case-panels.js';
 import {cases,sources} from './rectal-cases-data.js';
 const el=id=>document.getElementById(id);
@@ -20,7 +21,7 @@ function addText(parent,title,text){const p=make('p');p.append(make('strong',tit
 function renderCase(){
  const c=selected,root=el('realCase');root.replaceChildren();if(!c){root.append(make('p','По этому запросу нет иллюстраций. Измените поиск или выберите «Все».'));return;}
  root.append(make('p',`Иллюстрация ${cases.indexOf(c)+1} / ${cases.length} · ${c.group}`,'caseCount'),make('h3',c.title),make('p',c.series,'caseMeta'));
- root.append(createPanelGallery(path(c),c.title),make('p','Каждый кадр — на всю ширину. Нажмите на него для дополнительного увеличения.','caseMeta'),make('p',c.question,'casePanelNote'));
+ root.append(createPanelGallery(path(c),c.title,undefined,panelGuides[path(c)]),make('p','Каждый кадр — на всю ширину. Нажмите на него для дополнительного увеличения.','caseMeta'),make('p',c.question,'casePanelNote'));
  const d=make('details',null,'caseAnswer');d.append(make('summary','Показать разбор'));addText(d,'На изображении:',c.finding);addText(d,'В полном исследовании:',c.check);addText(d,'Ловушка:',c.trap);root.append(d);
  const names={staging:'Стадирование',nodes:'Узлы и риски',response:'После лечения'};
  const jump=make('button','Открыть раздел «'+names[c.tab]+'» →','caseFeature');jump.type='button';jump.onclick=()=>document.querySelector(`[data-tab="${c.tab}"]`).click();root.append(jump);

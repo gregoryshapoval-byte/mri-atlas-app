@@ -1,0 +1,13 @@
+{
+  "versionName": "2.56",
+  "versionCode": 156,
+  "apk": "MRIAtlas-2.56-restored.apk",
+  "bytes": 223497053,
+  "sha256": "9b8bb175bab5229dcfaa93d5d79ae2a80fa51f6d583995c8b2de98a8ea2d3fb7",
+  "assets": 9796,
+  "all_local_assets_byte_verified": true,
+  "certificate_sha256": "cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe",
+  "signature_v2": true,
+  "signature_v3": true,
+  "physical_android_test": false
+}

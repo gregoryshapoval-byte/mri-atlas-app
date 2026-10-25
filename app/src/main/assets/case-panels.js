@@ -15,17 +15,20 @@ export function initPanelZoom(){
  el('caseZoomScale').max='4';el('caseZoomScale').oninput=e=>{el('caseZoomImage').style.width=`${Number(e.target.value)*100}%`;};
  dialog.addEventListener('close',()=>{dialog.querySelector('.caseZoomScroll').replaceChildren();});
 }
-export function createPanelGallery(src,title,layout=layouts[src]){
+export function createPanelGallery(src,title,layout=layouts[src],guide){
  if(!layout)throw new Error('No reviewed panel layout: '+src);
  const gallery=document.createElement('div');gallery.className='casePanelGallery';gallery.dataset.source=src;
  for(const [index,panel] of layout.panels.entries()){
   const fig=document.createElement('figure');fig.className='casePanel';fig.dataset.panel=String(index+1);
   const button=document.createElement('button');button.type='button';button.className='caseImageButton panelButton';button.setAttribute('aria-label','Увеличить: '+panel.label);button.append(crop(src,layout,panel));button.onclick=()=>openZoom(src,layout,panel,title);
-  const caption=document.createElement('figcaption');caption.textContent=panel.label;fig.append(button,caption);gallery.append(fig);
+  const caption=document.createElement('figcaption');caption.textContent=panel.label;fig.append(button,caption);
+  if(guide){const cue=document.createElement('p');cue.className='casePanelCue256';cue.dataset.evidencePanel=String(index+1);const label=document.createElement('strong');label.textContent='Где смотреть и что проверить: ';cue.append(label,document.createTextNode(guide.cues[index]));fig.append(cue);}
+  gallery.append(fig);
  }
  if(layout.panels.length>1){
   const details=document.createElement('details');details.className='caseOriginal';const summary=document.createElement('summary');summary.textContent='Исходная композиция целиком';
   const button=document.createElement('button');button.type='button';button.className='caseImageButton originalButton';button.setAttribute('aria-label','Увеличить исходную композицию');const img=document.createElement('img');img.src=src;img.alt=title+' · исходная композиция';img.loading='lazy';button.append(img);button.onclick=()=>openZoom(src,layout,{box:[0,0,layout.width,layout.height],label:'Исходная композиция'},title);details.append(summary,button);gallery.append(details);
  }
+ if(guide){const limits=document.createElement('details');limits.className='caseLimits256';const summary=document.createElement('summary');summary.textContent='Что эта композиция не доказывает';const p=document.createElement('p');p.textContent=guide.limit;limits.append(summary,p);gallery.append(limits);}
  return gallery;
 }
