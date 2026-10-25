@@ -190,6 +190,14 @@ export const regions=[
         "contentKind": "mri"
       },
       {
+        "title": "Спинной мозг · очаги и миелопатии",
+        "description": "Реальные МРТ · компрессия · РС / NMOSD / MOGAD · ишемия · опухоли",
+        "url": "spinal-cord.html",
+        "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+        "thumb": "menu-thumbs/spinal-cord.svg",
+        "contentKind": "clinical"
+      },
+      {
         "title": "Диски, рецессусы и корешки",
         "description": "Выбухание · протрузия · экструзия · компрессия · отверстия Lee",
         "url": "disc-nerve.html",
@@ -215,7 +223,7 @@ export const regions=[
       },
       {
         "title": "Спондилодисцит и имитаторы",
-        "description": "Инфекция · Modic I · эпидурально · после операции",
+        "description": "Реальные снимки · Modic I · эпидуральное распространение · контроль",
         "url": "spinal-infection.html",
         "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
         "thumb": "menu-thumbs/spinal-infection.svg",

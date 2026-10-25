@@ -1,0 +1,15 @@
+{
+  "version": "2.46",
+  "versionCode": 146,
+  "package": "ru.grigory.shoulderatlas.restored",
+  "bytes": 201484154,
+  "sha256": "719be0ba1d24b031346450962199c24b5853dafc97ba4f5d98b569dc437574c7",
+  "certificate_sha256": "cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe",
+  "old_assets": 9704,
+  "changed_old_assets": [
+    "assets/anatomy-regions.js",
+    "assets/spinal-infection.html"
+  ],
+  "all_assets_verified": 9727,
+  "physical_android_tested": false
+}

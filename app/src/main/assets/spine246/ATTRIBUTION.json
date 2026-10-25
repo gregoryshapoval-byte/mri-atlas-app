@@ -1,0 +1,184 @@
+{
+  "images": [
+    {
+      "file": "cord-1.webp",
+      "url": "https://www.frontiersin.org/files/Articles/993645/xml-images/fneur-13-993645-g0001.webp",
+      "figure": 1,
+      "source": "cord",
+      "caption": "Examples of inflammatory myelopathies on MRI. The extension of the T2-hyperintensities along consecutive vertebral segments is highlighted by asterisks. [  (A)   MS] Acute short cervical lesion with focal spinal cord swelling [  (A  1  )   arrow] involving the central gray matter and the dorsal columns [  (A  2  )   arrow], showing homogeneous enhancement on sagittal view [  (A  4  )   arrow] and a circular ring of enhancement on axial view [  (A  5  )   arrow]. A chronic lesion at the level of C4 is also observed [  (A  1  )   arrowhead], located in the dorsal columns [  (A  3  )   arrowhead] and not showing contrast enhancement   (A  6  )  . [  (B)   AQP4+NMOSD] Thoracic spinal cord lesion, longitudinally extensive on T2-weighted images [  (B  1  )   arrow], centrally located [  (B  2  )   arrow], showing lens-shaped ring enhancement on sagittal view [  (B  3  )   arrow], and inhomogeneous enhancement on axial view [  (B  4  )   arrow]. [  (C)   MOGAD] Cervico-thoracic spinal cord lesion, longitudinally extensive on T2-weighted images characterized by a “sagittal linear” aspect [  (C  1  )   arrow] corresponding to a selective involvement of the gray matter (“H-sign”), on axial view [  (C  2  )   arrow]. Parenchymal enhancement is absent   (C      3      ,C      4      )  , although a subtle leptomeningeal enhancement is detected [  (C      3      )   arrowheads]. [  (D)   Sarcoidosis] Cervical spinal cord lesion, longitudinally extensive on T2-weighted images [  (D      1      )   arrow] involving the central gray matter and the dorsal columns [  (D      2      )   arrow], with dorsal enhancement on sagittal view [  (D      3      )   arrow] and “trident sign” on axial view [  (D      5      )   arrow]. Increased glucose uptake is also observed, corresponding to an area of red color in the positron-emission tomography   (D      4      )  . [  (E)   Paraneoplastic] Cervical spinal cord lesion, longitudinally extensive on T2-weighted images [  (E      1      )   arrow] involving the lateral white matter tracts bilaterally [  (E      2      )   arrows], showing subtle enhancement on sagittal view [  (E      3      )   arrow] and axial view [  (E      4      )   arrows]. FDG-PET,   18  F-Fluorodeoxyglucose-positron emission tomography; Gd, gadolinium; T2-w, T2-weighted; T1-w, T1-weighted.",
+      "sha256": "25c6f9664ea623ff45822c2eb99c8a8700ed6dc73a325bebf7a3667964681f98",
+      "width": 1772,
+      "height": 686
+    },
+    {
+      "file": "cord-2.webp",
+      "url": "https://www.frontiersin.org/files/Articles/993645/xml-images/fneur-13-993645-g0002.webp",
+      "figure": 2,
+      "source": "cord",
+      "caption": "Examples of longitudinally extensive spinal cord lesions mimicking inflammatory myelopathies on MRI. The extension of the T2-hyperintensities along consecutive vertebral segments is highlighted by asterisks. [  (A)   Spinal cord infarct] Thoracic T2-hyperintense spinal cord lesion [  (A  1  )   arrow] mainly involving the gray matter [  (A  2  )   arrow], with corresponding anterior linear enhancement on sagittal view   (A  3  )   and homogeneous enhancement on axial view   (A  4  )  . [  (B)   Copper deficiency] Cervical T2-hyperintense spinal cord lesion [  (B  1  )   arrow] selectively involving the dorsal columns bilaterally in a rabbit ears configuration [  (B  2  )   arrows], not showing concomitant contrast-enhancement   (B      3      ,B      4      )  . [  (C)   Spondylosis] Cervical T2-hyperintense spinal cord lesion located right under the level of maximal spinal cord compression [  (C  1  )   arrow], diffusively involving the cross-sectional area of the cord [  (C  2  )   arrow], showing a transverse area of contrast-enhancement on sagittal view [“pancake sign”,   (C      3      )   arrow], corresponding to a peripheral area of contrast enhancement on axial images [  (C      4      )   arrow]. [  (D)   Dural arteriovenous fistula] Thoracic T2-hyperintense spinal cord lesion [  (D      1      )   arrow], diffusively involving the cross-sectional area of the cord [  (D      2      )   arrow], showing a focal lack of enhancement in an otherwise homogeneous pattern of contrast enhancement on sagittal images [“missing-piece sign”,   (D      3      )   arrow], and homogeneous enhancement on axial images [  (D      4      )   arrow]. [  (E)   Glioma] Cervico-thoracic T2-hyperintense spinal cord lesion [  (E      1      )   arrow], diffusively involving the cross-sectional area of the cord [  (E      2      )   arrow], showing homogeneous contrast enhancement on both sagittal [  (E      4      )   arrow], and axial images [  (E      5      )   arrow]. Increased glucose uptake is also observed, corresponding to an area of red signal in the positron-emission tomography   (E      3      )  . FDG-PET,   18  F-Fluorodeoxyglucose-positron emission tomography; Gd, gadolinium; T2-w, T2-weighted; T1-w, T1-weighted.",
+      "sha256": "c96d156b7db5ca923dfd3974e3b7d944a2619966470d91e6f2a19f1f6e5e2f74",
+      "width": 1772,
+      "height": 647
+    },
+    {
+      "file": "lesions-13.png",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs13244-018-0608-3/MediaObjects/13244_2018_608_Fig13_HTML.png",
+      "figure": 13,
+      "source": "lesions",
+      "caption": "Fig. 13          Full size image          Ependymoma. A 38-year-old female with pulse-like sensation in both hands.  a  and  b  T2 hyperintense mass (arrow) involves more than two vertebral body levels within the central cord.  c  Minimal heterogeneous enhancement (arrow) on the T1 post-contrast image",
+      "sha256": "055f317bb88905fac46d124bea17a5465cc5f0e7e38915d9c8479168b3c324aa",
+      "width": 1524,
+      "height": 843
+    },
+    {
+      "file": "lesions-14.png",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs13244-018-0608-3/MediaObjects/13244_2018_608_Fig14_HTML.png",
+      "figure": 14,
+      "source": "lesions",
+      "caption": "Fig. 14          Full size image          Hemangioblastoma. A 40-year-old male with neck spasms and gait disturbance.  a  and  b  Spinal cord syrinx involving the entirety of the cervical cord extends superiorly to the cervicomedullary junction, where there is mass effect on the brainstem with resulting edema (arrow); therefore, more inferior spine imaging was obtained to look for the cause.  c  Sagittal T2 image shows an intramedullary lesion within the lower thoracic cord with associated syrinx (arrow). Serpiginous flow voids (arrowhead) are feeding vessels.  d  T1 post-contrast fat-saturated image demonstrates a nodule of homogeneous enhancement",
+      "sha256": "161555e798718dda03e76940146bfb1b79952affb26cecba94b85053965ab0b0",
+      "width": 1772,
+      "height": 869
+    },
+    {
+      "file": "lesions-18.png",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs13244-018-0608-3/MediaObjects/13244_2018_608_Fig18_HTML.png",
+      "figure": 18,
+      "source": "lesions",
+      "caption": "Fig. 18          Full size image          Dural arteriovenous fistula. A 50-year-old male with gradual onset of inability to walk, off and on constipation, and urinary incontinence.  a  Axial T2 image demonstrates hyperintensity in the cord and multiple serpiginous flow voids (arrow) within the thecal sac.  b  Sagittal T2 image reveals long segment involvement (bracket).  c  Conventional spinal angiogram shows injection of a paraspinal artery with simultaneous robust filling of a corkscrew venous vessel",
+      "sha256": "44cc993ba44d38583565f38d6ef0933ee6e89220794c4b7a36cdb4bf9c944e11",
+      "width": 1524,
+      "height": 996
+    },
+    {
+      "file": "lesions-21.png",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs13244-018-0608-3/MediaObjects/13244_2018_608_Fig21_HTML.png",
+      "figure": 21,
+      "source": "lesions",
+      "caption": "Fig. 21          Full size image          Cavernoma. A 40-year-old female with left upper extremity numbness.  a  Sagittal T2 image shows a short segment mixed signal lesion and layering of low signal at the inferior aspect.  b  The lesion is hypointense on the sagittal GRE image.  c  Sagittal T1 post-contrast image shows minimal strands of enhancement",
+      "sha256": "ee36b678473f95145b41b3fd549bcfd2a8a935905d3057b84e7ada3aca16c09e",
+      "width": 1524,
+      "height": 921
+    },
+    {
+      "file": "lesions-23.png",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs13244-018-0608-3/MediaObjects/13244_2018_608_Fig23_HTML.png",
+      "figure": 23,
+      "source": "lesions",
+      "caption": "Fig. 23          Full size image          Compressive myelopathy. A 50-year-old patient with bilateral hand tingling.  a  Sagittal T2 image shows severe spinal canal narrowing at C3–C4 due to degenerative changes, with focal faint signal hyperintensity (arrow).  b  Post-contrast image shows focal enhancement (arrow)",
+      "sha256": "ed47f57e5162d345751fdda1669217654d82e9b9635aaeee0266c830b4c6507f",
+      "width": 988,
+      "height": 697
+    },
+    {
+      "file": "mimics-1.jpg",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-021-01103-5/MediaObjects/13244_2021_1103_Fig1_HTML.jpg",
+      "figure": 1,
+      "source": "mimics",
+      "caption": "Fig. 1           Full size image          68-year-old male with increasing back pain referred for pathologic confirmation and treatment of spondylodiscitis. Sagittal XR ( a ), Sagittal T1 ( b ), T2 ( c ), STIR ( d ) and T1 Fatsat after gadolinium R1 point 5 ( e ) confirm edema-type enhancing marrow signal abnormalities as well as disc hyperintensity (arrow), and narrowed L3–L4 space without disc enhancement. Following sagittal CT ( f ) R1 point 6 confirms the absence of endplates destruction and that the hypersignal on the underlying disc (L4–L5) corresponds to the vacuum phenomenon (star), biopsy performed under CT guidance ( g ) was negative. At 3 months, MRI control on sagittal T1 ( h ), STIR ( i ) and after contrast ( j ) shows stability of disco-vertebral features (arrow)",
+      "sha256": "31524fed933eee57a375705e7a2a2117f28095edd59926f76e955872490cf125",
+      "width": 1959,
+      "height": 970
+    },
+    {
+      "file": "mimics-2.jpg",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-021-01103-5/MediaObjects/13244_2021_1103_Fig2_HTML.jpg",
+      "figure": 2,
+      "source": "mimics",
+      "caption": "Fig. 2           Full size image          32-year-old male admitted for exacerbation of back pain and inflammatory markers. T1 ( a ), T2WI ( b ), and STIR- R1 point 7 ( c ) show inflammatory endplate changes at the L3–L4 level mimicking a Schmorl node (arrow). Note that nuclear cleft sign is preserved (star). Enhancement in T1 fat-suppressed sequence after contrast ( d ) without disc enhancement or inflammatory paraspinal tissue. The same pattern is seen in the D11–D12 disc space (long arrow), associated with Romanus feature R1 point 8 at L5 body margin (short arrow)",
+      "sha256": "54e0b6f4611279883a8832d8bb88dd9d45f12b2bfe301ddc4b5fb1e92d5f2294",
+      "width": 1959,
+      "height": 932
+    },
+    {
+      "file": "mimics-3.jpg",
+      "url": "https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13244-021-01103-5/MediaObjects/13244_2021_1103_Fig3_HTML.jpg",
+      "figure": 3,
+      "source": "mimics",
+      "caption": "Fig. 3           Full size image          R1 point 9: 78-year-old male with sepsis and thoracic back pain with ankylosing spondylitis. MRI (sagittal T1 ( a ), T2 ( b ), STIR ( c ) and T1 Fat Sat Gadolinium ( d )) shows T6-T7 disc hypersignal, enhanced after administration of contrast (arrow) and marked inflammatory surrounding tissue in axial T2 ( f ) and axial T1FS with contrast ( g ) (star). Note the elevated medullary signal intensity secondary to compression (black arrow). Reformatted CT ( e ) shows ankylosed spine and transdiscal fracture (star). Discal biopsy ( h ) was performed to exclude an infection R1 point 10. Andersson discitis was diagnosed",
+      "sha256": "a4b70d4f345a2d841ce92d78817ad1b1f86650c161da1263ba2e3db69b812ac0",
+      "width": 1959,
+      "height": 1009
+    },
+    {
+      "file": "infection-1.png",
+      "url": "https://www.mdpi.com/biomedicines/biomedicines-12-02566/article_deploy/html/images/biomedicines-12-02566-g001.png",
+      "figure": 1,
+      "source": "infection",
+      "caption": "id=\"biomedicines-12-02566-f001\" data-position=\"float\">      \n   \n     \n         \n      \n     \n\n   \n   \n     Figure 1. \n      ( A , B ) MRI T2-weighted image on the sagittal plane shows marrow edema involving dorsal vertebra reaching up to the endplates (white arrows in  A , B ), with great enhancement on post contrast imaging (arrows in  C ) consistent with osteomyelitis. There is an increased amount of fluid signal in the intervertebral disc suggesting a discitis–osteomyelitis complex. ( D ) Post contrast imaging shows enhanced epidural soft tissue (yellow arrows  D ).",
+      "sha256": "ee802193f5f0013ca1447735e63c299ad521c0b2ca777d197e0af19d20fe7461",
+      "width": 3196,
+      "height": 1127
+    },
+    {
+      "file": "infection-2.png",
+      "url": "https://www.mdpi.com/biomedicines/biomedicines-12-02566/article_deploy/html/images/biomedicines-12-02566-g002.png",
+      "figure": 2,
+      "source": "infection",
+      "caption": "id=\"biomedicines-12-02566-f002\" data-position=\"float\">      \n   \n     \n         \n      \n     \n\n   \n   \n     Figure 2. \n      Tubercular spondylodiscitis. Axial ( A ) and coronal STIR ( B ), axial T1 with contrast ( C , D ), and sagittal CT ( E ) images demonstrate a severe morpho-structural alteration of the L2 vertebral body and partially of L1, with invasion of the paravertebral space with abscesses affecting the psoas muscles bilaterally (arrows).",
+      "sha256": "390ae11ee42f00badae91f7ec50671681578778013cea2c48a007f6b0739fd97",
+      "width": 3949,
+      "height": 2331
+    },
+    {
+      "file": "infection-3.png",
+      "url": "https://www.mdpi.com/biomedicines/biomedicines-12-02566/article_deploy/html/images/biomedicines-12-02566-g003.png",
+      "figure": 3,
+      "source": "infection",
+      "caption": "id=\"biomedicines-12-02566-f003\" data-position=\"float\">      \n   \n     \n         \n      \n     \n\n   \n   \n     Figure 3. \n       E. Coli  spondylodiscitis. In the sagittal T2 image ( A ) and T1 image ( B ), osteo-structural alterations with collapse and wedging of the vertebral bodies, accentuation of the physiological dorsal kyphosis, absence of the disc space, and partial vertebral fusion can be observed. In the sagittal ( C ) and axial ( D ) T1 image with contrast, bilateral paravertebral infectious collections are observed (arrows).",
+      "sha256": "ad987cce04193e65347d9b5ab56fa8f0cc11168713fdd1c1037b523308d97cc8",
+      "width": 4198,
+      "height": 1830
+    },
+    {
+      "file": "infection-5.png",
+      "url": "https://www.mdpi.com/biomedicines/biomedicines-12-02566/article_deploy/html/images/biomedicines-12-02566-g005.png",
+      "figure": 5,
+      "source": "infection",
+      "caption": "id=\"biomedicines-12-02566-f005\" data-position=\"float\">      \n   \n     \n         \n      \n     \n\n   \n   \n     Figure 5. \n      Type I Modic changes at L2–3 endplates showing a hyperintense signal (arrows) on an STIR image ( A ) and a T2-weighted image ( B ). The disc is characterized by degenerative changes, appearing reduced in height. There is no involvement of the surrounding paravertebral edema or psoas muscle.",
+      "sha256": "549a5cbad22e24decdaec448582fda586e0dcac41de96b347c5e0e8fa99182b6",
+      "width": 2232,
+      "height": 2048
+    },
+    {
+      "file": "infection-6.png",
+      "url": "https://www.mdpi.com/biomedicines/biomedicines-12-02566/article_deploy/html/images/biomedicines-12-02566-g006.png",
+      "figure": 6,
+      "source": "infection",
+      "caption": "id=\"biomedicines-12-02566-f006\" data-position=\"float\">      \n   \n     \n         \n      \n     \n\n   \n   \n     Figure 6. \n      Sagittal T2-weighted image ( A ) and STIR image ( B ) image show a well-defined, crescent nodule (arrow) located in the subchondral area of the L4 body.",
+      "sha256": "09b6986e448881fcdcdb19f406b964faaf853a32adcd4680dcb35b4b4a16e4b9",
+      "width": 2306,
+      "height": 2369
+    }
+  ],
+  "sources": {
+    "cord": {
+      "short": "Cacciaguerra et al., 2022",
+      "year": 2022,
+      "url": "https://doi.org/10.3389/fneur.2022.993645",
+      "title": "Neuroimaging features in inflammatory myelopathies: A review",
+      "license": "CC BY 4.0"
+    },
+    "lesions": {
+      "short": "Mohajeri Moghaddam & Bhatt, 2018",
+      "year": 2018,
+      "url": "https://doi.org/10.1007/s13244-018-0608-3",
+      "title": "Location, length, and enhancement: systematic approach to differentiating intramedullary spinal cord lesions",
+      "license": "CC BY 4.0"
+    },
+    "mimics": {
+      "short": "Boudabbous et al., 2021",
+      "year": 2021,
+      "url": "https://doi.org/10.1186/s13244-021-01103-5",
+      "title": "Spinal disorders mimicking infection",
+      "license": "CC BY 4.0"
+    },
+    "infection": {
+      "short": "Piccolo et al., 2024",
+      "year": 2024,
+      "url": "https://doi.org/10.3390/biomedicines12112566",
+      "title": "Spondylodiscitis and Its Mimickers: A Pictorial Review",
+      "license": "CC BY 4.0"
+    }
+  }
+}

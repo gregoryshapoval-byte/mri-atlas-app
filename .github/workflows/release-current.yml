@@ -65,7 +65,7 @@ jobs:
             gh release upload "$tag" release/* --clobber
             gh release edit "$tag" --latest
           else
-            gh release create "$tag" release/* --target "$GITHUB_SHA" --title "MRIAtlas ${ATLAS_VERSION} · актуальная версия" --notes-file review/perianal-2.45.md --latest
+            gh release create "$tag" release/* --target "$GITHUB_SHA" --title "MRIAtlas ${ATLAS_VERSION} · актуальная версия" --notes-file review/spine-2.46.md --latest
           fi
           mkdir -p verify-release
           gh release download "$tag" --pattern "MRIAtlas-${ATLAS_VERSION}.apk" --dir verify-release
