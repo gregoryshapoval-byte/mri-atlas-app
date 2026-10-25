@@ -1,9 +1,6 @@
 name: Publish current signed MRIAtlas
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: [review/publish-2.51.json]
 permissions:
   contents: write
 concurrency:
