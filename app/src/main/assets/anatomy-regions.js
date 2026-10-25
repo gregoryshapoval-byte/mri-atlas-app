@@ -266,7 +266,7 @@ export const regions=[
   {
     "id": "face-neck",
     "name": "Лицо и шея",
-    "description": "МРТ · три плоскости",
+    "description": "МР-анатомия · слюнные железы · лимфоузлы · пространства",
     "image": "menu-art/face-neck.webp",
     "items": [
       {
@@ -276,6 +276,30 @@ export const regions=[
         "type": "МРТ",
         "thumb": "menu-thumbs/face-neck-mri.webp",
         "contentKind": "mri"
+      },
+      {
+        "title": "Слюнные железы · очаги и имитаторы",
+        "description": "Околоушная · подчелюстная · ADC · периневральное распространение",
+        "url": "salivary-glands.html",
+        "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+        "thumb": "menu-thumbs/salivary-glands.svg",
+        "contentKind": "clinical"
+      },
+      {
+        "title": "Лимфоузлы шеи",
+        "description": "Уровни · некроз · iENE · кистозный узел · дифряд",
+        "url": "neck-nodes.html",
+        "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+        "thumb": "menu-thumbs/neck-nodes.svg",
+        "contentKind": "clinical"
+      },
+      {
+        "title": "Образования по пространствам шеи",
+        "description": "Центр · парафарингеальный жир · сосуды · дно рта",
+        "url": "neck-spaces.html",
+        "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+        "thumb": "menu-thumbs/neck-spaces.svg",
+        "contentKind": "clinical"
       }
     ]
   },

@@ -1,0 +1,4 @@
+export function splitTemplate(text){const s=String(text||'').trim(),m=s.match(/(?:^|\n|\s)(?:Заключение|Вывод)\s*:/i);return m?{description:s.slice(0,m.index).replace(/^Описание\s*:/i,'').trim(),conclusion:s.slice(m.index+m[0].length).trim()}:{description:s,conclusion:''};}
+export function unresolved(text){return /\[[^\]\n]*\]|…|\.{3,}|\{[^}\n]*\}|\b(?:TODO|TBD)\b|не заполнено|укажите|выберите/i.test(text);}
+export function reportIssues(v){const issues=[];for(const [k,label]of [['region','Область исследования'],['description','Описание'],['conclusion','Заключение']]){if(!v[k]?.trim())issues.push('Заполните: '+label+'.');else if(unresolved(v[k]))issues.push('Незаполненные фрагменты: '+label+'.');}if(!v.reviewed)issues.push('Подтвердите проверку текста по исследованию.');return issues;}
+export function composeReport(v){return 'Область исследования: '+v.region.trim()+'\n\nОписание:\n'+v.description.trim()+'\n\nЗаключение:\n'+v.conclusion.trim();}
