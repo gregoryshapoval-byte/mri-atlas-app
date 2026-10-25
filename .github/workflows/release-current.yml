@@ -1,6 +1,9 @@
 name: Publish current signed MRIAtlas
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [review/publish-2.52.json]
 permissions:
   contents: write
 concurrency:
@@ -41,6 +44,8 @@ jobs:
           node tests/navigation238.mjs
           node tests/branding218.mjs
           node tests/head-neck251.mjs
+          node tests/search-navigator252.mjs
+          node tools/generate_search252.mjs --check
           python3 tools/release_metadata.py --check
       - name: Restore existing key and build signed APK
         run: |
@@ -69,7 +74,7 @@ jobs:
             gh release upload "$tag" release/* --clobber
             gh release edit "$tag" --latest
           else
-            gh release create "$tag" release/* --target "$GITHUB_SHA" --title "MRIAtlas ${ATLAS_VERSION} · актуальная версия" --notes-file review/head-neck-2.51.md --latest
+            gh release create "$tag" release/* --target "$GITHUB_SHA" --title "MRIAtlas ${ATLAS_VERSION} · актуальная версия" --notes-file review/search-2.52.md --latest
           fi
           mkdir -p verify-release
           gh release download "$tag" --pattern "MRIAtlas-${ATLAS_VERSION}.apk" --dir verify-release

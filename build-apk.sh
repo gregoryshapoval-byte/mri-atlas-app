@@ -6,6 +6,7 @@ python3 tools/materialize_assets150.py
 python3 tools/materialize_assets152.py
 python3 tools/materialize_assets165.py
 python3 tools/release_metadata.py --check
+node tools/generate_search252.mjs --check
 ATLAS_VERSION="$(python3 tools/release_metadata.py --version)"
 ATLAS_CODE="$(python3 tools/release_metadata.py --code)"
 export ATLAS_VERSION ATLAS_CODE

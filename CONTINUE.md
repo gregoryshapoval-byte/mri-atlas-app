@@ -1,6 +1,6 @@
 # Актуальное состояние MRIAtlas
 
-Версия **2.51**, versionCode151, applicationId `ru.grigory.shoulderatlas.restored`. Рабочая основа — main.
+Версия **2.52**, versionCode152, applicationId `ru.grigory.shoulderatlas.restored`. Рабочая основа — main.
 
 ## Новое в 2.44
 
@@ -63,3 +63,6 @@ GitHub Release atlas-2.50 опубликован: https://github.com/gregoryshap
 
 ## Постоянный выпуск 2.51
 GitHub Release atlas-2.51 опубликован: https://github.com/gregoryshapoval-byte/mri-atlas-app/releases/tag/atlas-2.51 . Workflow 40192442731 SUCCESS: версия, сертификат, ZIP, все assets и скачивание с побайтным сравнением проверены. Исходник 48142964993ec605df87051b619fcfa7adb44e94. Подпись прежняя. Одноразовый push-триггер снят; обычные CI и публикация ручные. См. review/github-release-2.51.json.
+
+## 2.52
+Сквозной офлайн-поиск: 641 запись, включая 386 паттернов и 104 клинических примера. Прямые ссылки выбирают нужный разбор / пример. Избранное и последние 20 материалов хранят зарегистрированные ID на устройстве; отказ сохранения переводит их в память сессии. Запросы и тексты описаний не сохраняются. Пять навигаторов: 20 паттернов / 40 ветвей; действующие классификации и калькуляторы не изменены. После изменения контента выполнить node tools/generate_search252.mjs; --check в сборке. См. review/search-2.52.md.
