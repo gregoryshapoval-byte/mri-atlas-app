@@ -380,6 +380,14 @@ export const regions=[
         "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
         "thumb": "module231/tunnel-neuropathies.svg",
         "contentKind": "reference"
+      },
+      {
+        "title": "Воспалительные заболевания суставов",
+        "description": "Синовит · теносиновит · эрозии · РА / ПсА · инфекция",
+        "url": "inflammatory-arthritis.html",
+        "type": "ОБЩИЙ СПРАВОЧНИК",
+        "thumb": "menu-thumbs/sacroiliitis.svg",
+        "contentKind": "reference"
       }
     ]
   },
@@ -427,6 +435,14 @@ export const regions=[
         "url": "tunnel-neuropathies.html?from=elbow",
         "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
         "thumb": "module231/tunnel-neuropathies.svg",
+        "contentKind": "reference"
+      },
+      {
+        "title": "Воспалительные заболевания суставов",
+        "description": "Синовит · теносиновит · эрозии · РА / ПсА · инфекция",
+        "url": "inflammatory-arthritis.html",
+        "type": "ОБЩИЙ СПРАВОЧНИК",
+        "thumb": "menu-thumbs/sacroiliitis.svg",
         "contentKind": "reference"
       }
     ]
@@ -483,6 +499,14 @@ export const regions=[
         "url": "tunnel-neuropathies.html?from=wrist",
         "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
         "thumb": "module231/tunnel-neuropathies.svg",
+        "contentKind": "reference"
+      },
+      {
+        "title": "Воспалительные заболевания суставов",
+        "description": "Синовит · теносиновит · эрозии · РА / ПсА · инфекция",
+        "url": "inflammatory-arthritis.html",
+        "type": "ОБЩИЙ СПРАВОЧНИК",
+        "thumb": "menu-thumbs/sacroiliitis.svg",
         "contentKind": "reference"
       }
     ]
@@ -588,6 +612,14 @@ export const regions=[
         "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
         "thumb": "module231/stress-fractures.svg",
         "contentKind": "reference"
+      },
+      {
+        "title": "Воспалительные заболевания суставов",
+        "description": "Синовит · теносиновит · эрозии · РА / ПсА · инфекция",
+        "url": "inflammatory-arthritis.html",
+        "type": "ОБЩИЙ СПРАВОЧНИК",
+        "thumb": "menu-thumbs/sacroiliitis.svg",
+        "contentKind": "reference"
       }
     ]
   },
@@ -659,6 +691,14 @@ export const regions=[
         "url": "stress-fractures.html?from=hip",
         "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
         "thumb": "module231/stress-fractures.svg",
+        "contentKind": "reference"
+      },
+      {
+        "title": "Воспалительные заболевания суставов",
+        "description": "Синовит · теносиновит · эрозии · РА / ПсА · инфекция",
+        "url": "inflammatory-arthritis.html",
+        "type": "ОБЩИЙ СПРАВОЧНИК",
+        "thumb": "menu-thumbs/sacroiliitis.svg",
         "contentKind": "reference"
       }
     ]
@@ -980,6 +1020,14 @@ export const regions=[
         "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
         "thumb": "module231/stress-fractures.svg",
         "contentKind": "reference"
+      },
+      {
+        "title": "Воспалительные заболевания суставов",
+        "description": "Синовит · теносиновит · эрозии · РА / ПсА · инфекция",
+        "url": "inflammatory-arthritis.html",
+        "type": "ОБЩИЙ СПРАВОЧНИК",
+        "thumb": "menu-thumbs/sacroiliitis.svg",
+        "contentKind": "reference"
       }
     ]
   },
@@ -1019,6 +1067,14 @@ export const regions=[
         "url": "tunnel-neuropathies.html?from=upper-limb",
         "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
         "thumb": "module231/tunnel-neuropathies.svg",
+        "contentKind": "reference"
+      },
+      {
+        "title": "Опухоли мягких тканей",
+        "description": "Жир · миксоидный матрикс · нервы · сосуды · подозрение на саркому",
+        "url": "soft-tissue-tumors.html",
+        "type": "ОБЩИЙ СПРАВОЧНИК",
+        "thumb": "menu-thumbs/bone-lesions.svg",
         "contentKind": "reference"
       }
     ]
@@ -1067,6 +1123,14 @@ export const regions=[
         "url": "stress-fractures.html?from=lower-limb",
         "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
         "thumb": "module231/stress-fractures.svg",
+        "contentKind": "reference"
+      },
+      {
+        "title": "Опухоли мягких тканей",
+        "description": "Жир · миксоидный матрикс · нервы · сосуды · подозрение на саркому",
+        "url": "soft-tissue-tumors.html",
+        "type": "ОБЩИЙ СПРАВОЧНИК",
+        "thumb": "menu-thumbs/bone-lesions.svg",
         "contentKind": "reference"
       }
     ]

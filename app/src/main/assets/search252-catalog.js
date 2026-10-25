@@ -323,6 +323,13 @@ export const catalog=[
     "area": "Плечо · Локтевой сустав · Кисть и запястье · Коленный сустав · Тазобедренный сустав · Голеностоп и стопа · Верхняя конечность · Нижняя конечность"
   },
   {
+    "id": "inflammatory-arthritis.html",
+    "url": "inflammatory-arthritis.html",
+    "title": "Воспалительные заболевания суставов",
+    "kind": "Модуль",
+    "area": "Плечо · Локтевой сустав · Кисть и запястье · Коленный сустав · Тазобедренный сустав · Голеностоп и стопа"
+  },
+  {
     "id": "region.html?area=elbow",
     "url": "region.html?area=elbow",
     "title": "Локтевой сустав",
@@ -713,6 +720,13 @@ export const catalog=[
     "title": "МРТ · верхняя конечность",
     "kind": "Анатомический атлас",
     "area": "Верхняя конечность"
+  },
+  {
+    "id": "soft-tissue-tumors.html",
+    "url": "soft-tissue-tumors.html",
+    "title": "Опухоли мягких тканей",
+    "kind": "Модуль",
+    "area": "Верхняя конечность · Нижняя конечность"
   },
   {
     "id": "region.html?area=lower-limb",
@@ -3450,6 +3464,181 @@ export const catalog=[
     "title": "Плеоморфная ксантоастроцитома — PXA",
     "kind": "Тема",
     "area": "Головной мозг"
+  },
+  {
+    "id": "soft-tissue-tumors.html?focus255=lipoma",
+    "url": "soft-tissue-tumors.html?focus255=lipoma",
+    "title": "Липома: преимущественно однородный жир",
+    "kind": "Паттерн",
+    "area": "Верхняя и нижняя конечности"
+  },
+  {
+    "id": "soft-tissue-tumors.html?focus255=alt",
+    "url": "soft-tissue-tumors.html?focus255=alt",
+    "title": "ALT / высокодифференцированная липосаркома",
+    "kind": "Паттерн",
+    "area": "Верхняя и нижняя конечности"
+  },
+  {
+    "id": "soft-tissue-tumors.html?focus255=myxoid",
+    "url": "soft-tissue-tumors.html?focus255=myxoid",
+    "title": "Миксоидное образование ↔ киста",
+    "kind": "Паттерн",
+    "area": "Верхняя и нижняя конечности"
+  },
+  {
+    "id": "soft-tissue-tumors.html?focus255=pnst",
+    "url": "soft-tissue-tumors.html?focus255=pnst",
+    "title": "Опухоль оболочек периферического нерва",
+    "kind": "Паттерн",
+    "area": "Верхняя и нижняя конечности"
+  },
+  {
+    "id": "soft-tissue-tumors.html?focus255=mpnst",
+    "url": "soft-tissue-tumors.html?focus255=mpnst",
+    "title": "Подозрение на злокачественную опухоль оболочек нерва",
+    "kind": "Паттерн",
+    "area": "Верхняя и нижняя конечности"
+  },
+  {
+    "id": "soft-tissue-tumors.html?focus255=vascular",
+    "url": "soft-tissue-tumors.html?focus255=vascular",
+    "title": "Сосудистая мальформация / сосудистый очаг",
+    "kind": "Паттерн",
+    "area": "Верхняя и нижняя конечности"
+  },
+  {
+    "id": "soft-tissue-tumors.html?focus255=desmoid",
+    "url": "soft-tissue-tumors.html?focus255=desmoid",
+    "title": "Десмоидный фиброматоз",
+    "kind": "Паттерн",
+    "area": "Верхняя и нижняя конечности"
+  },
+  {
+    "id": "soft-tissue-tumors.html?focus255=tgct",
+    "url": "soft-tissue-tumors.html?focus255=tgct",
+    "title": "Теносиновиальная гигантоклеточная опухоль · TGCT",
+    "kind": "Паттерн",
+    "area": "Верхняя и нижняя конечности"
+  },
+  {
+    "id": "soft-tissue-tumors.html?focus255=synovial-sarcoma",
+    "url": "soft-tissue-tumors.html?focus255=synovial-sarcoma",
+    "title": "Синовиальная саркома: околосуставной солидный очаг",
+    "kind": "Паттерн",
+    "area": "Верхняя и нижняя конечности"
+  },
+  {
+    "id": "soft-tissue-tumors.html?focus255=hematoma",
+    "url": "soft-tissue-tumors.html?focus255=hematoma",
+    "title": "Гематома ↔ кровоизлияние в опухоль",
+    "kind": "Паттерн",
+    "area": "Верхняя и нижняя конечности"
+  },
+  {
+    "id": "soft-tissue-tumors.html?focus255=chronic-hematoma",
+    "url": "soft-tissue-tumors.html?focus255=chronic-hematoma",
+    "title": "Хроническая расширяющаяся гематома",
+    "kind": "Паттерн",
+    "area": "Верхняя и нижняя конечности"
+  },
+  {
+    "id": "soft-tissue-tumors.html?focus255=indeterminate",
+    "url": "soft-tissue-tumors.html?focus255=indeterminate",
+    "title": "Неопределённое солидное образование",
+    "kind": "Паттерн",
+    "area": "Верхняя и нижняя конечности"
+  },
+  {
+    "id": "inflammatory-arthritis.html?focus255=synovitis",
+    "url": "inflammatory-arthritis.html?focus255=synovitis",
+    "title": "Синовит ↔ выпот",
+    "kind": "Паттерн",
+    "area": "Периферические суставы"
+  },
+  {
+    "id": "inflammatory-arthritis.html?focus255=tenosynovitis",
+    "url": "inflammatory-arthritis.html?focus255=tenosynovitis",
+    "title": "Теносиновит",
+    "kind": "Паттерн",
+    "area": "Периферические суставы"
+  },
+  {
+    "id": "inflammatory-arthritis.html?focus255=osteitis",
+    "url": "inflammatory-arthritis.html?focus255=osteitis",
+    "title": "Отёкоподобный сигнал костного мозга / остеит",
+    "kind": "Паттерн",
+    "area": "Периферические суставы"
+  },
+  {
+    "id": "inflammatory-arthritis.html?focus255=erosion",
+    "url": "inflammatory-arthritis.html?focus255=erosion",
+    "title": "Эрозия ↔ киста / псевдоэрозия",
+    "kind": "Паттерн",
+    "area": "Периферические суставы"
+  },
+  {
+    "id": "inflammatory-arthritis.html?focus255=ra",
+    "url": "inflammatory-arthritis.html?focus255=ra",
+    "title": "Паттерн, возможный при ревматоидном артрите",
+    "kind": "Паттерн",
+    "area": "Периферические суставы"
+  },
+  {
+    "id": "inflammatory-arthritis.html?focus255=psa",
+    "url": "inflammatory-arthritis.html?focus255=psa",
+    "title": "Псориатический / периферический спондилоартрит",
+    "kind": "Паттерн",
+    "area": "Периферические суставы"
+  },
+  {
+    "id": "inflammatory-arthritis.html?focus255=enthesitis",
+    "url": "inflammatory-arthritis.html?focus255=enthesitis",
+    "title": "Энтезит ↔ механическая энтезопатия",
+    "kind": "Паттерн",
+    "area": "Периферические суставы"
+  },
+  {
+    "id": "inflammatory-arthritis.html?focus255=dactylitis",
+    "url": "inflammatory-arthritis.html?focus255=dactylitis",
+    "title": "Дактилит: несколько поражённых структур пальца",
+    "kind": "Паттерн",
+    "area": "Периферические суставы"
+  },
+  {
+    "id": "inflammatory-arthritis.html?focus255=crystal",
+    "url": "inflammatory-arthritis.html?focus255=crystal",
+    "title": "Подагра / CPPD / кальциевые депозиты",
+    "kind": "Паттерн",
+    "area": "Периферические суставы"
+  },
+  {
+    "id": "inflammatory-arthritis.html?focus255=infection",
+    "url": "inflammatory-arthritis.html?focus255=infection",
+    "title": "Септический артрит и распространение инфекции",
+    "kind": "Паттерн",
+    "area": "Периферические суставы"
+  },
+  {
+    "id": "inflammatory-arthritis.html?focus255=degenerative",
+    "url": "inflammatory-arthritis.html?focus255=degenerative",
+    "title": "Остеоартрит с реактивным синовитом",
+    "kind": "Паттерн",
+    "area": "Периферические суставы"
+  },
+  {
+    "id": "inflammatory-arthritis.html?focus255=pitfalls",
+    "url": "inflammatory-arthritis.html?focus255=pitfalls",
+    "title": "Малые МР-находки у людей без артрита",
+    "kind": "Паттерн",
+    "area": "Периферические суставы"
+  },
+  {
+    "id": "inflammatory-arthritis.html?focus255=proliferative",
+    "url": "inflammatory-arthritis.html?focus255=proliferative",
+    "title": "Узловая синовия: TGCT в дифряде",
+    "kind": "Паттерн",
+    "area": "Периферические суставы"
   },
   {
     "id": "bladder-urethra.html?focus254=wall",

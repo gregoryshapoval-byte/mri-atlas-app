@@ -1,4 +1,6 @@
 export const reportRoutes=[
+  "soft-tissue-tumors.html",
+  "inflammatory-arthritis.html",
   "bladder-urethra.html",
   "orbits-optic.html",
   "acl-postop.html",

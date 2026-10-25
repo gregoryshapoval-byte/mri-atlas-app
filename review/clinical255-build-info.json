@@ -1,0 +1,21 @@
+{
+  "version": "2.55",
+  "versionCode": 155,
+  "bytes": 223468104,
+  "sha256": "6f08eb1960f24f76b655e9628c1fff590d184f373ab668889648510e865266be",
+  "certificate_sha256": "cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe",
+  "assets": 9792,
+  "previous_assets": 9788,
+  "changed_previous_assets": [
+    "assets/search252-catalog.js",
+    "assets/anatomy-regions.js",
+    "assets/search252-data.js",
+    "assets/report251-catalog.js",
+    "assets/app-version-data.js"
+  ],
+  "all_previous_clinical_pages_and_images_unchanged": true,
+  "all_assets_verified": true,
+  "zip_verified": true,
+  "signature_v2_v3": true,
+  "physical_android_test": false
+}
