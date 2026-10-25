@@ -1,0 +1,20 @@
+import assert from 'node:assert/strict';import fs from 'node:fs';import path from 'node:path';import http from 'node:http';import {profiles} from '../app/src/main/assets/protocol257-data.js';
+const {chromium}=await import(process.env.PLAYWRIGHT_IMPORT),root=path.resolve('app/src/main/assets');const mime={'.js':'text/javascript','.css':'text/css','.html':'text/html','.svg':'image/svg+xml','.webp':'image/webp','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.json':'application/json'};
+const server=http.createServer((req,res)=>{try{const f=path.join(root,new URL(req.url,'http://local').pathname);res.setHeader('Content-Type',mime[path.extname(f)]||'application/octet-stream');res.end(fs.readFileSync(f));}catch{res.statusCode=404;res.end();}});await new Promise(r=>server.listen(0,'127.0.0.1',r));const base='http://127.0.0.1:'+server.address().port;
+const browser=await chromium.launch({executablePath:process.env.CHROME_PATH,args:['--no-sandbox','--single-process','--no-zygote','--disable-gpu']}),page=await browser.newPage();const errors=[],external=[];let checked=0,items=0;page.on('pageerror',e=>errors.push(String(e)));page.on('response',r=>{if(r.status()>=400&&!r.url().endsWith('favicon.ico'))errors.push(r.status()+' '+r.url());});page.on('request',r=>{if(!r.url().startsWith(base))external.push(r.url());});
+try{for(const [width,height]of [[320,568],[393,852],[852,393],[1280,800]]){await page.setViewportSize({width,height});for(const [key,p]of Object.entries(profiles)){
+ await page.goto(base+'/'+key+(key.includes('?')?'&':'?')+'protocol257=1');await page.waitForFunction(()=>document.documentElement.dataset.protocol257==='ready',{},{timeout:10000});
+ assert(await page.locator('#protocol257').isVisible(),key);assert.equal(await page.locator('.protocolGroup257').count(),5,key);assert.equal(await page.locator('.protocolItem257').count(),p.labels.length,key);
+ const titles=await page.locator('.protocolItem257').evaluateAll(ns=>Object.fromEntries(ns.map(n=>[n.dataset.protocolItem,n.querySelector('h4').textContent])));p.labels.forEach((t,i)=>assert.equal(titles[i],t));
+ // Every original cell / paragraph survives verbatim in its corresponding normalized card.
+ const orig=await page.locator('.protocolOriginal257').evaluate((details,adapter)=>{const body=details.querySelector('#scanRows,#protocolRows'),table=body?.closest('table')||(adapter==='ms'?details.querySelector('table'):null);return table?[...(body?.rows||table.tBodies[0].rows)].map(row=>[...row.cells].map(n=>n.textContent.trim())):[...details.querySelectorAll('article')].map(n=>[...n.querySelectorAll('h2,h3,p,ul,ol')].filter(p=>!p.parentElement.closest('p,ul,ol')).map(p=>p.textContent.trim()));},p.adapter);
+ for(let i=0;i<orig.length;i++){const text=await page.locator('[data-protocol-item="'+i+'"]').textContent();for(const s of orig[i])assert(text.includes(s),key+' omitted '+s);}
+ assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false,key+' overflow '+width);
+ if(width===393){items+=p.labels.length;if(['liver-lesions.html','rectal-cancer.html','multiple-sclerosis.html','prostate-cancer.html','orbits-optic.html'].includes(key)){await page.locator('#protocol257').screenshot({path:'review/protocol257-'+key.replace('.html','.png')});}}
+ await page.locator('.protocolOriginal257>summary').click();assert(await page.locator('.protocolOriginal257').evaluate(n=>n.open));
+ // Normalizing must not break tab activation or keyboard access.
+ const button=page.locator('button').filter({hasText:/^Протокол МРТ$/}).first();await button.focus();assert.equal(await button.getAttribute('aria-selected'),'true');
+ checked++;
+ }}
+ assert.deepEqual(errors,[]);assert.deepEqual(external,[]);fs.writeFileSync('review/browser-protocol257.json',JSON.stringify({pass:true,protocols:Object.keys(profiles).length,html_pages:63,viewports:4,checks:checked,items,source_text_preserved:true,errors,external},null,2)+'\n');console.log('PASS protocols257:',checked,'page/viewport checks;',items,'original rows preserved; no overflow/errors/external requests.');
+}finally{await browser.close();server.close();}

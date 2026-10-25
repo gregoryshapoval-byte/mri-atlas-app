@@ -1,0 +1,15 @@
+{
+  "versionName": "2.57",
+  "versionCode": 157,
+  "apk": "MRIAtlas-2.57-restored.apk",
+  "bytes": 223505452,
+  "sha256": "a6a8fb04bf1581aeac8308ddaf9ec047bf5d4067fbde8d8c695fda0377696b5b",
+  "runtime_assets": 9799,
+  "all_assets_byte_verified": true,
+  "zip_integrity": true,
+  "existing_images_changed": false,
+  "certificate_sha256": "cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe",
+  "signature_v2": true,
+  "signature_v3": true,
+  "physical_android_test": false
+}
