@@ -54,3 +54,6 @@ GitHub Release atlas-2.45: https://github.com/gregoryshapoval-byte/mri-atlas-app
 
 ## 2.50
 Новые навигаторы: brain-infections.html, epilepsy.html, csf-disorders.html. Исходная база — все 9753 assets сохранённого APK 2.49; изменены только три HTML, добавлены три файла navigator250. См. review/navigator-2.50.md. Последние опухолевые данные 2.47–2.49 восстановлены из APK без потерь; их старые генераторы не запускать.
+
+## Постоянный выпуск 2.50
+GitHub Release atlas-2.50 опубликован: https://github.com/gregoryshapoval-byte/mri-atlas-app/releases/tag/atlas-2.50 . Workflow 40182690346 SUCCESS: версия, сертификат, ZIP, все assets и скачивание с побайтным сравнением проверены. Источник b5f227c1d7c956399ee94d4d38117fe5d42a0a77. Релиз собран отдельно от локального APK, хеш может отличаться. Одноразовый push-триггер снят; обычный CI и публикация снова ручные.
