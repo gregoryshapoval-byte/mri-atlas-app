@@ -1,6 +1,6 @@
 # Актуальное состояние MRIAtlas
 
-Версия **2.52**, versionCode152, applicationId `ru.grigory.shoulderatlas.restored`. Рабочая основа — main.
+Версия исходников **2.53**, versionCode153, applicationId `ru.grigory.shoulderatlas.restored`. Рабочая основа — main.
 
 ## Новое в 2.44
 
@@ -69,3 +69,6 @@ GitHub Release atlas-2.51 опубликован: https://github.com/gregoryshap
 
 ## Постоянный выпуск 2.52
 GitHub Release atlas-2.52 опубликован: https://github.com/gregoryshapoval-byte/mri-atlas-app/releases/tag/atlas-2.52 . Workflow 40197454391 SUCCESS: версия, сертификат, ZIP, все assets, статические проверки поиска и обратное скачивание APK с побайтным сравнением. Исходник f6df8723b94e3df7125ee012296205260c121625. Одноразовый push-триггер удалён, CI и публикация снова ручные. Параметры review/github-release-2.52.json.
+
+## 2.53 — модуль и подписанный APK готовы
+Главный экран → Практика сканирования → Настройка последовательностей. Пять разделов, модель 2D SE/FSE и геометрия 3D/EPI, шесть практических задач, GE Voyager 1.5T. Прежние модули и изображения сохранены; общий поиск обновлён. Читайте review/sequence-2.53.md. Подписанный APK 153/2.53 готов; пользователь явно разрешил подпись. Восстановлен прежний ключ, сертификат cb7d43e1…3624fe и v2/v3 проверены, ZIP и все 9784 assets сверены. GitHub Release пока не опубликован; последний опубликованный выпуск — 2.52. Браузерная визуальная проверка и физический Android не выполнены.

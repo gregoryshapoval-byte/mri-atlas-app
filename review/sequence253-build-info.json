@@ -1,0 +1,14 @@
+{
+  "version": "2.53",
+  "versionCode": 153,
+  "signed": true,
+  "v2": true,
+  "v3": true,
+  "certificate_sha256": "cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe",
+  "bytes": 223406087,
+  "sha256": "734981bf3289c0bd0244d6e6df9fe0d7355c97f79ba1042bb3d1ddeb7cfb762e",
+  "asset_count": 9784,
+  "all_assets_verified": true,
+  "physical_android_tested": false,
+  "browser_layout_tested": false
+}

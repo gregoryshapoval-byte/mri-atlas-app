@@ -4486,5 +4486,12 @@ export const catalog=[
     "title": "Узлы брюшины / сальника",
     "kind": "Учебная схема",
     "area": "Малый таз"
+  },
+  {
+    "id": "sequence-tuning.html",
+    "url": "sequence-tuning.html",
+    "title": "Настройка последовательностей",
+    "kind": "Модуль",
+    "area": "Практика сканирования"
   }
 ];

@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';import {defaults as d,compare,bandwidth} from '../app/src/main/assets/sequence253-core.js';
+const near=(a,b)=>assert(Math.abs(a-b)<1e-10,`${a} != ${b}`);
+near(compare(d,d).snr,1);near(compare(d,d).time,1);
+near(compare(d,{...d,nex:4}).snr,Math.sqrt(2));near(compare(d,{...d,nex:4}).time,2);
+near(compare(d,{...d,r:2}).snr,1/Math.sqrt(2));near(compare(d,{...d,r:2}).time,.5);
+near(compare(d,{...d,np:128}).snr,Math.sqrt(2));near(compare(d,{...d,np:128}).time,.5);
+near(compare(d,{...d,nf:640}).snr,1/Math.sqrt(2));
+near(compare(d,{...d,slice:1.5}).snr,.5);near(compare(d,{...d,bw:62.5}).snr,1/Math.sqrt(2));near(compare(d,{...d,g:1.4}).snr,1/1.4);
+near(compare(d,{...d,etl:32}).time,.5);assert.equal(compare(d,d,'half','epi').snr,null);assert.equal(compare(d,d,'half','3d').time,null);
+near(bandwidth(d,'half'),62500);near(bandwidth({...d,bw:62.5},'total'),62500);near(bandwidth({...d,bw:195.3125},'hzpx'),62500);
+for(const v of [0,-1,NaN,Infinity])assert.throws(()=>compare(d,{...d,bw:v}));assert.throws(()=>compare(d,{...d,nex:.5}));assert.throws(()=>compare(d,{...d,np:2.5}));
+console.log('PASS: identity, averaging, acceleration, phase/frequency matrix, slice, bandwidth units, ETL, g, unsupported families and invalid values');
