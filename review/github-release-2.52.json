@@ -1,0 +1,10 @@
+{
+  "version": "2.52",
+  "commit": "f6df8723b94e3df7125ee012296205260c121625",
+  "run": 40197454391,
+  "conclusion": "success",
+  "url": "https://github.com/gregoryshapoval-byte/mri-atlas-app/releases/download/atlas-2.52/MRIAtlas-2.52.apk",
+  "bytes": 223393519,
+  "digest": "sha256:a141246d3f693c25d29d995f2256d4dea32f7b6fc7529a7dda3eb7983c88bdc7",
+  "download_compared_by_workflow": true
+}
