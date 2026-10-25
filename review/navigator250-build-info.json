@@ -1,0 +1,20 @@
+{
+  "version": "2.50",
+  "versionCode": 150,
+  "bytes": 222539852,
+  "sha256": "e8b4044c95624c8b499b659191fb4381b2053c8ae27bc7dab89936f957c7025d",
+  "previous": "2.49",
+  "previous_assets": 9753,
+  "changed_previous_assets": [
+    "assets/brain-infections.html",
+    "assets/csf-disorders.html",
+    "assets/epilepsy.html"
+  ],
+  "new_assets": [
+    "assets/navigator250-data.js",
+    "assets/navigator250.css",
+    "assets/navigator250.js"
+  ],
+  "all_assets_verified": true,
+  "physical_android_test": false
+}

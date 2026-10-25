@@ -87,7 +87,7 @@ export const regions=[
       },
       {
         "title": "Первичные опухоли головного мозга",
-        "description": "Возраст и частота · 12 тем · схемы · протоколы МРТ",
+        "description": "15 тем · диагностический навигатор · реальные примеры · протоколы МРТ",
         "url": "brain-tumors.html",
         "type": "КЛИНИЧЕСКИЕ МОДУЛИ",
         "thumb": "menu-thumbs/brain-tumors.svg",

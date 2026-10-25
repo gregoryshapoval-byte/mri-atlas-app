@@ -1,0 +1,20 @@
+import assert from 'node:assert/strict';import fs from 'node:fs';import path from 'node:path';import http from 'node:http';
+import {guides} from '../app/src/main/assets/navigator250-data.js';
+const {chromium}=await import(process.env.PLAYWRIGHT_IMPORT);const root=path.resolve('app/src/main/assets');
+const server=http.createServer((req,res)=>{try{const f=path.join(root,new URL(req.url,'http://local').pathname);res.setHeader('Content-Type',({'.js':'text/javascript','.html':'text/html','.css':'text/css','.svg':'image/svg+xml'})[path.extname(f)]||'application/octet-stream');res.end(fs.readFileSync(f));}catch{res.statusCode=404;res.end();}});await new Promise(r=>server.listen(0,'127.0.0.1',r));
+const base='http://127.0.0.1:'+server.address().port,browser=await chromium.launch({headless:true,executablePath:process.env.CHROME_PATH,args:['--no-sandbox','--single-process','--no-zygote','--disable-gpu']});const errors=[],external=[];let branches=0;fs.mkdirSync('review',{recursive:true});
+const page=await browser.newPage();page.on('pageerror',e=>errors.push(String(e)));page.on('response',r=>{if(r.status()>=400)errors.push(r.status()+' '+r.url());});page.on('request',r=>{if(!r.url().startsWith(base))external.push(r.url());});
+try{for(const [width,height]of [[320,568],[393,852],[852,393],[1280,800]])for(const [key,data]of Object.entries(guides)){
+ console.log('Checking',key,width);await page.setViewportSize({width,height});
+ await page.goto(base+'/'+key+'.html');await page.waitForSelector('#diagnosticNavigator');assert(await page.locator('#navigator250Clue').isDisabled());assert.equal(await page.locator('#navigator250Result article').count(),0);
+ for(const p of data.patterns){await page.locator('#navigator250Pattern').selectOption(p.id);assert.equal(await page.locator('#navigator250Result article').count(),0);for(const [i,b]of p.branches.entries()){
+  await page.locator('#navigator250Clue').selectOption(String(i));assert.match(await page.locator('#navigator250Result').innerText(),new RegExp(b.lead.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')));assert.equal(await page.locator('#navigator250Result .navigatorUrgent').count(),b.urgent?1:0);
+  await page.locator('#navigator250Result button').click();assert.equal(await page.locator('[data-feature="'+b.feature+'"]').getAttribute('aria-pressed'),'true');assert.equal(await page.locator('[data-tab=features]').getAttribute('aria-selected'),'true');
+  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false,key+' '+width+' '+p.id);branches++;
+ }}
+ await page.locator('#diagnosticNavigator').getByRole('button',{name:'Сбросить выбор',exact:true}).click();assert.equal(await page.locator('#navigator250Pattern').inputValue(),'');assert(await page.locator('#navigator250Clue').isDisabled());assert.equal(await page.locator('#navigator250Result article').count(),0);
+ for(const tab of ['features','location','differences','scanning','report']){await page.locator('[data-tab="'+tab+'"]').click();assert.equal(await page.locator('[role=tabpanel]:visible').count(),1);}
+ await page.locator('[data-tab=features]').click();await page.locator('#featureFigure').click();assert.equal(await page.locator('#zoom').evaluate(d=>d.open),true);await page.keyboard.press('Escape');
+ if(width===393){await page.locator('#navigator250Pattern').selectOption(data.patterns[0].id);await page.locator('#navigator250Clue').selectOption('0');await page.locator('#diagnosticNavigator').scrollIntoViewIfNeeded();await page.screenshot({path:'review/navigator250-'+key+'.png',fullPage:true});}
+ await page.reload();assert.equal(await page.locator('#navigator250Pattern').inputValue(),'');
+}assert.deepEqual(errors,[]);assert.deepEqual(external,[]);fs.writeFileSync('review/browser-navigator250.json',JSON.stringify({pass:true,viewports:4,modules:3,branches,errors,external},null,2));console.log('PASS navigator250: '+branches+' branch/viewports, detail links, reset/reload, old tabs/zoom, no overflow, JS errors or external requests.');}finally{await browser.close();server.close();}

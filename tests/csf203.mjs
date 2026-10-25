@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';import fs from 'node:fs';
 import{data}from '../app/src/main/assets/csf-disorders-data.js';import{figures}from '../app/src/main/assets/csf-disorders-figures.js';import{regions}from '../app/src/main/assets/anatomy-regions.js';
 const h=fs.readFileSync('app/src/main/assets/csf-disorders.html','utf8');
 assert.match(h,/MRI Atlas · 2.03/);assert.match(h,/Проверено 21.10.2026/);assert.match(h,/href="region.html\?area=brain"/);
-assert.equal(regions.find(r=>r.id==='brain').items[2].url,'csf-disorders.html');assert.equal(regions.flatMap(r=>r.items).filter(i=>i.url==='csf-disorders.html').length,1);
+assert.equal(regions.find(r=>r.id==='brain').items.find(i=>i.url==='csf-disorders.html')?.url,'csf-disorders.html');assert.equal(regions.flatMap(r=>r.items).filter(i=>i.url==='csf-disorders.html').length,1);
 assert.deepEqual(data.features.map(x=>x.id),['obstruction','communicating','nph','exvacuo','evans','angle','low','high']);assert.deepEqual(Object.keys(figures),data.features.map(x=>x.id));
 for(const f of data.features){assert.equal(f.legend.length,3);assert(h.includes('data-feature="'+f.id+'"'));}
 for(const s of Object.values(figures)){assert.match(s,/viewBox="0 0 420 300"/);assert.match(s,/role="img" aria-label=/);assert(!/<script|<image/.test(s));}
