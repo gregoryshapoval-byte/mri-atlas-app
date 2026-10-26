@@ -1,9 +1,6 @@
 name: Release MRIAtlas 2.60
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: ['review/essence-2.60.md']
 permissions:
   contents: write
 concurrency:
