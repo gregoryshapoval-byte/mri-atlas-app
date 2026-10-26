@@ -1,0 +1,15 @@
+{
+  "version": "2.58",
+  "versionCode": 158,
+  "package": "ru.grigory.shoulderatlas.restored",
+  "bytes": 223513916,
+  "sha256": "8af54f5ae955dfa241a4ce65c9128be1d5cc543e524afe8fe4a593354ad67e35",
+  "certificate_sha256": "cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe",
+  "v2": true,
+  "v3": true,
+  "zip_valid": true,
+  "zipaligned": true,
+  "all_assets_verified": 9803,
+  "prior_tracked_assets_retained": 4711,
+  "physical_android_test": false
+}

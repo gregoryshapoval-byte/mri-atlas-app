@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';import fs from 'node:fs';import {regions} from '../app/src/main/assets/anatomy-regions.js';import {groups,groupItems,matches} from '../app/src/main/assets/navigation238.js';
-const root='app/src/main/assets/',old=JSON.parse(fs.readFileSync('tests/fixtures/menu250.json'));assert.deepEqual(regions.map(r=>r.id),old.map(r=>r.id));const added=['salivary-glands.html','neck-nodes.html','neck-spaces.html','bladder-urethra.html','orbits-optic.html','soft-tissue-tumors.html','inflammatory-arthritis.html'];const allowed={
- 'face-neck':['salivary-glands.html','neck-nodes.html','neck-spaces.html','orbits-optic.html'],pelvis:['bladder-urethra.html'],
+const root='app/src/main/assets/',old=JSON.parse(fs.readFileSync('tests/fixtures/menu250.json'));assert.deepEqual(regions.map(r=>r.id),old.map(r=>r.id));const added=['prostate-recurrence.html','salivary-glands.html','neck-nodes.html','neck-spaces.html','bladder-urethra.html','orbits-optic.html','soft-tissue-tumors.html','inflammatory-arthritis.html'];const allowed={
+ 'face-neck':['salivary-glands.html','neck-nodes.html','neck-spaces.html','orbits-optic.html'],pelvis:['bladder-urethra.html','prostate-recurrence.html'],
  'upper-limb':['soft-tissue-tumors.html'],'lower-limb':['soft-tissue-tumors.html'],
  ...Object.fromEntries(['shoulder','elbow','wrist','knee','hip','foot'].map(id=>[id,['inflammatory-arthritis.html']]))
 };

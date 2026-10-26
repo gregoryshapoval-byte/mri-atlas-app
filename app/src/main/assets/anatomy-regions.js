@@ -750,6 +750,14 @@ export const regions=[
         "contentKind": "clinical"
       },
       {
+        "title": "Рецидив рака простаты · PI-RR",
+        "description": "После РПЭ и ЛТ · DWI / DCE · категория · протокол и описание",
+        "url": "prostate-recurrence.html",
+        "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+        "thumb": "menu-thumbs/prostate-cancer.svg",
+        "contentKind": "clinical"
+      },
+      {
         "title": "Образования придатков · O-RADS MRI",
         "description": "Категория риска · признаки · контрастирование · заключение",
         "url": "orads-mri.html",

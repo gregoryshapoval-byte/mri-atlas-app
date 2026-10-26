@@ -512,6 +512,13 @@ export const catalog=[
     "area": "Малый таз"
   },
   {
+    "id": "prostate-recurrence.html",
+    "url": "prostate-recurrence.html",
+    "title": "Рецидив рака простаты · PI-RR",
+    "kind": "Модуль",
+    "area": "Малый таз"
+  },
+  {
     "id": "orads-mri.html",
     "url": "orads-mri.html",
     "title": "Образования придатков · O-RADS MRI",

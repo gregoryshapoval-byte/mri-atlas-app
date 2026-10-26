@@ -64,6 +64,7 @@ export const reportRoutes=[
   "perianal-cases.html",
   "pilocytic.html",
   "prostate-cancer.html",
+  "prostate-recurrence.html",
   "rectal-cancer.html",
   "renal-bosniak.html",
   "sacroiliitis.html",
