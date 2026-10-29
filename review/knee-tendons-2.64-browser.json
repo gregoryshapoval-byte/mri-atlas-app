@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "tests": [
+    {
+      "viewport": {
+        "width": 393,
+        "height": 852
+      },
+      "entries": 23,
+      "posteriorThreePlaneNavigation": true,
+      "noErrors": true
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 640
+      },
+      "entries": 23,
+      "posteriorThreePlaneNavigation": true,
+      "noErrors": true
+    },
+    {
+      "viewport": {
+        "width": 852,
+        "height": 393
+      },
+      "entries": 23,
+      "posteriorThreePlaneNavigation": true,
+      "noErrors": true
+    }
+  ],
+  "otherModuleIsolated": true
+}

@@ -1,3 +1,4 @@
+import {renderKneeTendonGuide} from './knee-tendon-guide264.js';
 // Separate augmentation: original shoulder JSON, images and coordinates stay intact.
 export async function addShoulderAnatomy(data){
  const res=await fetch('shoulder-pd-anatomy.json');if(!res.ok)throw Error('shoulder anatomy');const extra=await res.json();
@@ -6,6 +7,7 @@ export async function addShoulderAnatomy(data){
 }
 export function shoulderGuide(layer,box){
  if(!layer.data.shoulderGuide)return;
+ renderKneeTendonGuide(layer,box);
  const section=document.createElement('details');section.className='shoulderGuide';const summary=document.createElement('summary');summary.textContent=layer.data.shoulderGuide.guideTitle||'Связки, аксиллярный карман и сумки · подробнее';section.append(summary);
  const hint=document.createElement('p');hint.textContent=layer.data.shoulderGuide.guideHint||'Дополнительные ориентиры доступны на PD-SPIR. ≈ и пунктир — ожидаемая топография, не сегментация. Нажми на название, чтобы прочитать описание и перейти к контрольному срезу.';section.append(hint);
  const chapters=layer.data.shoulderGuide.guideChapters||[['Связки плеча',[9863,9864,9865,1620,1596,1601,1604,1605,1597,1621]],['Аксиллярный карман',[143201,143202,143203,143204,143205,143206]],['Сумки и подсухожильная область',[143101,143102,143103]]];

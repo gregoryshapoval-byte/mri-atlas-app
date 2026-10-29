@@ -1,0 +1,135 @@
+{
+  "passed": true,
+  "frames": 228,
+  "newMarkers": 66,
+  "reviewedEntries": 23,
+  "sourceTendonCount": 760,
+  "coverage": {
+    "264204": {
+      "652-contraste_": [
+        17694,
+        17695
+      ],
+      "652-contraste_dp": [
+        17694,
+        17695
+      ],
+      "654-contraste_": [
+        17751,
+        17752
+      ],
+      "654-contraste_dp": [
+        17751,
+        17752
+      ]
+    },
+    "264205": {
+      "652-contraste_": [
+        17696,
+        17697
+      ],
+      "652-contraste_dp": [
+        17696,
+        17697
+      ]
+    },
+    "264211": {
+      "652-contraste_": [
+        17676,
+        17677,
+        17678
+      ],
+      "652-contraste_dp": [
+        17676,
+        17677,
+        17678
+      ],
+      "653-contraste_": [
+        17728,
+        17729,
+        17730
+      ],
+      "653-contraste_dp": [
+        17728,
+        17729,
+        17730
+      ],
+      "654-contraste_": [
+        17759,
+        17760,
+        17761
+      ],
+      "654-contraste_dp": [
+        17759,
+        17760,
+        17761
+      ]
+    },
+    "264212": {
+      "652-contraste_": [
+        17676,
+        17677,
+        17678
+      ],
+      "652-contraste_dp": [
+        17676,
+        17677,
+        17678
+      ],
+      "653-contraste_": [
+        17714,
+        17715,
+        17716
+      ],
+      "653-contraste_dp": [
+        17714,
+        17715,
+        17716
+      ],
+      "654-contraste_": [
+        17759,
+        17760,
+        17761
+      ],
+      "654-contraste_dp": [
+        17759,
+        17760,
+        17761
+      ]
+    },
+    "264213": {
+      "652-contraste_": [
+        17675,
+        17676,
+        17677
+      ],
+      "652-contraste_dp": [
+        17675,
+        17676,
+        17677
+      ],
+      "653-contraste_": [
+        17713,
+        17714,
+        17715
+      ],
+      "653-contraste_dp": [
+        17713,
+        17714,
+        17715
+      ],
+      "654-contraste_": [
+        17757,
+        17758,
+        17759
+      ],
+      "654-contraste_dp": [
+        17757,
+        17758,
+        17759
+      ]
+    }
+  },
+  "sourceImagesAndCoordinatesPreserved": true,
+  "anatomicalAccuracy": "Educational topographic landmarks; no independent expert validation or enthesis segmentation"
+}

@@ -1,0 +1,12 @@
+.kneeTendonGuide264 {margin:14px 0;border:1px solid #65998d;border-radius:12px;padding:12px;background:var(--panel,#142330)}
+.kneeTendonGuide264 summary {cursor:pointer;line-height:1.45;font-weight:650}
+.kneeTendonGuide264 input {box-sizing:border-box;width:100%;margin:8px 0;padding:10px;border-radius:8px;border:1px solid #6b8294;background:var(--bg,#101b27);color:inherit;font-size:16px}
+.kneeTendonGuide264 details {border-top:1px solid #52606d;margin-top:10px;padding-top:12px}
+.kneeTendonGuide264 dl {margin:8px 0}
+.kneeTendonGuide264 dt {font-weight:700;color:#9ddfcf;margin-top:12px}
+.kneeTendonGuide264 dd {margin:4px 0;line-height:1.55;overflow-wrap:anywhere}
+.tendon264Targets {display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}
+.tendon264Targets button {white-space:normal;text-align:left;max-width:100%;font:inherit;min-height:44px}
+.tendon264Sources {font-size:12px;line-height:1.5;overflow-wrap:anywhere}
+.tendon264Sources a {color:inherit;text-decoration:underline}
+.kneeTendonGuide264 [hidden] {display:none!important}

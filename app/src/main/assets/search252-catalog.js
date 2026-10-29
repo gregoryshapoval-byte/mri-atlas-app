@@ -5326,5 +5326,166 @@ export const catalog=[
     "title": "12 · Тазовое дно и промежность",
     "kind": "Учебная схема",
     "area": "Брюшная полость · Малый таз"
+  },
+  {
+    "id": "knee-mri.html?tendon264=quadriceps",
+    "url": "knee-mri.html?tendon264=quadriceps",
+    "title": "Общее сухожилие четырёхглавой мышцы",
+    "kind": "Анатомический ориентир",
+    "area": "Коленный сустав"
+  },
+  {
+    "id": "knee-mri.html?tendon264=rectus-femoris",
+    "url": "knee-mri.html?tendon264=rectus-femoris",
+    "title": "Прямая мышца бедра · сухожильный компонент",
+    "kind": "Анатомический ориентир",
+    "area": "Коленный сустав"
+  },
+  {
+    "id": "knee-mri.html?tendon264=vastus-medialis",
+    "url": "knee-mri.html?tendon264=vastus-medialis",
+    "title": "Медиальная широкая · сухожильно-апоневротический компонент",
+    "kind": "Анатомический ориентир",
+    "area": "Коленный сустав"
+  },
+  {
+    "id": "knee-mri.html?tendon264=vastus-intermedius",
+    "url": "knee-mri.html?tendon264=vastus-intermedius",
+    "title": "Промежуточная широкая · глубокий компонент",
+    "kind": "Анатомический ориентир",
+    "area": "Коленный сустав"
+  },
+  {
+    "id": "knee-mri.html?tendon264=vastus-lateralis",
+    "url": "knee-mri.html?tendon264=vastus-lateralis",
+    "title": "Латеральная широкая · сухожильно-апоневротический компонент",
+    "kind": "Анатомический ориентир",
+    "area": "Коленный сустав"
+  },
+  {
+    "id": "knee-mri.html?tendon264=patellar-ligament",
+    "url": "knee-mri.html?tendon264=patellar-ligament",
+    "title": "Связка надколенника · оба прикрепления",
+    "kind": "Анатомический ориентир",
+    "area": "Коленный сустав"
+  },
+  {
+    "id": "knee-mri.html?tendon264=sartorius",
+    "url": "knee-mri.html?tendon264=sartorius",
+    "title": "Портняжная · сухожилие и поверхностный апоневроз",
+    "kind": "Анатомический ориентир",
+    "area": "Коленный сустав"
+  },
+  {
+    "id": "knee-mri.html?tendon264=gracilis",
+    "url": "knee-mri.html?tendon264=gracilis",
+    "title": "Тонкая мышца · дистальное сухожилие",
+    "kind": "Анатомический ориентир",
+    "area": "Коленный сустав"
+  },
+  {
+    "id": "knee-mri.html?tendon264=semitendinosus",
+    "url": "knee-mri.html?tendon264=semitendinosus",
+    "title": "Полусухожильная · дистальное сухожилие",
+    "kind": "Анатомический ориентир",
+    "area": "Коленный сустав"
+  },
+  {
+    "id": "knee-mri.html?tendon264=semimembranosus",
+    "url": "knee-mri.html?tendon264=semimembranosus",
+    "title": "Полуперепончатая · прямой и расширенные пучки",
+    "kind": "Анатомический ориентир",
+    "area": "Коленный сустав"
+  },
+  {
+    "id": "knee-mri.html?tendon264=adductor-magnus",
+    "url": "knee-mri.html?tendon264=adductor-magnus",
+    "title": "Большая приводящая · дистальное сухожилие",
+    "kind": "Анатомический ориентир",
+    "area": "Коленный сустав"
+  },
+  {
+    "id": "knee-mri.html?tendon264=biceps-femoris",
+    "url": "knee-mri.html?tendon264=biceps-femoris",
+    "title": "Двуглавая бедра · дистальный сухожильный комплекс",
+    "kind": "Анатомический ориентир",
+    "area": "Коленный сустав"
+  },
+  {
+    "id": "knee-mri.html?tendon264=iliotibial-band",
+    "url": "knee-mri.html?tendon264=iliotibial-band",
+    "title": "Подвздошно-большеберцовый тракт · дистальная фиксация",
+    "kind": "Анатомический ориентир",
+    "area": "Коленный сустав"
+  },
+  {
+    "id": "knee-mri.html?tendon264=popliteus",
+    "url": "knee-mri.html?tendon264=popliteus",
+    "title": "Подколенная · сухожилие, hiatus и тибиальное прикрепление",
+    "kind": "Анатомический ориентир",
+    "area": "Коленный сустав"
+  },
+  {
+    "id": "knee-mri.html?tendon264=medial-gastrocnemius",
+    "url": "knee-mri.html?tendon264=medial-gastrocnemius",
+    "title": "Икроножная · медиальная головка: начало и сухожилие",
+    "kind": "Анатомический ориентир",
+    "area": "Коленный сустав"
+  },
+  {
+    "id": "knee-mri.html?tendon264=lateral-gastrocnemius",
+    "url": "knee-mri.html?tendon264=lateral-gastrocnemius",
+    "title": "Икроножная · латеральная головка: начало и сухожилие",
+    "kind": "Анатомический ориентир",
+    "area": "Коленный сустав"
+  },
+  {
+    "id": "knee-mri.html?tendon264=plantaris",
+    "url": "knee-mri.html?tendon264=plantaris",
+    "title": "Подошвенная · проксимальное начало и сухожильный переход",
+    "kind": "Анатомический ориентир",
+    "area": "Коленный сустав"
+  },
+  {
+    "id": "knee-mri.html?tendon264=soleus",
+    "url": "knee-mri.html?tendon264=soleus",
+    "title": "Камбаловидная · проксимальные апоневрозы",
+    "kind": "Анатомический ориентир",
+    "area": "Коленный сустав"
+  },
+  {
+    "id": "knee-mri.html?tendon264=articularis-genu",
+    "url": "knee-mri.html?tendon264=articularis-genu",
+    "title": "Суставная мышца колена · капсулярное прикрепление",
+    "kind": "Анатомический ориентир",
+    "area": "Коленный сустав"
+  },
+  {
+    "id": "knee-mri.html?tendon264=tibialis-anterior",
+    "url": "knee-mri.html?tendon264=tibialis-anterior",
+    "title": "Передняя большеберцовая · граница коленного набора",
+    "kind": "Анатомический ориентир",
+    "area": "Коленный сустав"
+  },
+  {
+    "id": "knee-mri.html?tendon264=extensor-digitorum-longus",
+    "url": "knee-mri.html?tendon264=extensor-digitorum-longus",
+    "title": "Длинный разгибатель пальцев · граница набора",
+    "kind": "Анатомический ориентир",
+    "area": "Коленный сустав"
+  },
+  {
+    "id": "knee-mri.html?tendon264=fibularis-longus",
+    "url": "knee-mri.html?tendon264=fibularis-longus",
+    "title": "Длинная малоберцовая · граница набора",
+    "kind": "Анатомический ориентир",
+    "area": "Коленный сустав"
+  },
+  {
+    "id": "knee-mri.html?tendon264=tibialis-posterior",
+    "url": "knee-mri.html?tendon264=tibialis-posterior",
+    "title": "Задняя большеберцовая · граница набора",
+    "kind": "Анатомический ориентир",
+    "area": "Коленный сустав"
   }
 ];
