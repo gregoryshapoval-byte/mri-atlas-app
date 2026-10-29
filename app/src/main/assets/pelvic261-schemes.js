@@ -1,0 +1,19 @@
+const txt=(s,x,y,size=15)=>`<text x="${x}" y="${y}" font-size="${size}" fill="#deebf2" text-anchor="middle">${s}</text>`;
+const outer='<path d="M100 75 Q125 45 155 68 Q180 82 205 68 Q235 45 260 75 L240 125 Q218 145 212 180 L212 211 L148 211 L148 180 Q142 145 120 125Z" fill="#74475b" stroke="#e09daf" stroke-width="3"/>';
+const cavity='<path d="M130 88 Q180 108 230 88 L195 139 L190 188 L170 188 L165 139Z" fill="#83cdbf"/>';
+const outlines={
+ measure:outer+cavity+'<path d="M130 88H230 M180 88V108" stroke="#ffd18b" stroke-width="3" stroke-dasharray="5 3"/>'+txt('Межустьевая линия',180,38)+txt('Внутреннее углубление',180,245),
+ septate:outer+'<path d="M130 88L165 140L170 187L179 187L179 101Z M230 88L195 140L190 187L181 187L181 101Z" fill="#83cdbf"/>'+txt('Наружный контур сохранён',180,38)+txt('Перегородка полости',180,245),
+ bicornuate:'<path d="M90 75Q116 39 145 65L180 114L215 65Q244 39 270 75L248 140L211 182L211 211H149V182L112 140Z" fill="#74475b" stroke="#e09daf" stroke-width="3"/><path d="M116 79L170 156L174 190H186L190 156L244 79L218 101L180 151L142 101Z" fill="#83cdbf"/>'+txt('Наружная выемка дна',180,30)+txt('Два рога',180,245),
+ didelphys:'<path d="M67 90Q79 44 119 66Q157 86 145 137L129 182V211H102V182L77 137Z M215 90Q227 44 267 66Q305 86 293 137L277 182V211H250V182L225 137Z" fill="#74475b" stroke="#e09daf" stroke-width="3"/><path d="M92 92L120 137L116 199M240 92L268 137L264 199" fill="none" stroke="#83cdbf" stroke-width="12"/>'+txt('Два раздельных тела',180,30)+txt('Шейки оценить отдельно',180,245),
+ unicornuate:'<path d="M87 81Q143 39 182 103Q195 130 177 169L177 211H145V173Q107 159 93 124Z" fill="#74475b" stroke="#e09daf" stroke-width="3"/><path d="M113 88L161 137V199" fill="none" stroke="#83cdbf" stroke-width="13"/><ellipse cx="255" cy="128" rx="25" ry="35" fill="#74475b" stroke="#e09daf" stroke-width="3"/><ellipse cx="255" cy="128" rx="6" ry="14" fill="#83cdbf"/>'+txt('Гемиматка и рудимент',180,30)+txt('Искать эндометрий и связь',180,245),
+ obstruction:'<path d="M116 67V218Q137 236 158 218V67 M204 67V218Q225 236 246 218V67" fill="#74475b" stroke="#e09daf" stroke-width="3"/><path d="M130 79V211M218 79V198" stroke="#83cdbf" stroke-width="15"/><path d="M218 107V194" stroke="#ec9a7d" stroke-width="20"/><path d="M202 203H246" stroke="#ffd18b" stroke-width="7"/>'+txt('Схема гемивлагалищ',180,30)+txt('Блок и содержимое',180,265)
+};
+function presacral(id){
+ const body='<path d="M283 41Q319 86 307 134L280 206L248 228L258 185L278 120Z" fill="#b7afa1" stroke="#e9d8bd" stroke-width="3"/><path d="M292 55L293 123L267 194" fill="none" stroke="#6cbbe0" stroke-width="8"/><path d="M110 42Q105 97 124 138Q145 184 132 229" fill="none" stroke="#d0a9ba" stroke-width="33"/>';
+ let lesion='<ellipse cx="205" cy="153" rx="42" ry="48" fill="#599f99" fill-opacity=".8" stroke="#98e1d1" stroke-width="3"/>';
+ if(id==='canal')lesion+='<path d="M235 139L287 116" stroke="#6cbbe0" stroke-width="12"/>';
+ if(id==='cyst')lesion+='<path d="M170 153H240M204 108V197" stroke="#c5e7df" stroke-width="2"/><circle cx="229" cy="128" r="9" fill="#f3aa83"/>';
+ return body+lesion+txt('Кишка',96,27)+txt('Крестец',291,27)+txt(id==='canal'?'Проверить сообщение с каналом':id==='cyst'?'Стенка · камеры · узлы':'Образование между кишкой и крестцом',180,267);
+}
+export function diagram261(id,title){const figure=document.createElement('figure');figure.className='pelvicScheme261';const shape=['space','canal','cyst'].includes(id)?presacral(id):outlines[id];figure.innerHTML=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 290" role="img" aria-label="${title}"><rect width="360" height="290" rx="14" fill="#14232d"/>${shape||''}</svg>`;const caption=document.createElement('figcaption');caption.textContent='Условная схема · не МРТ · без масштаба. Форма и цвет не задают диагноз или сторону пациента.';figure.append(caption);return figure;}

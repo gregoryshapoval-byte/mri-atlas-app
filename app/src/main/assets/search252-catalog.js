@@ -582,6 +582,27 @@ export const catalog=[
     "area": "Малый таз"
   },
   {
+    "id": "presacral-masses.html",
+    "url": "presacral-masses.html",
+    "title": "Пресакральные образования",
+    "kind": "Модуль",
+    "area": "Малый таз"
+  },
+  {
+    "id": "mullerian-anomalies.html",
+    "url": "mullerian-anomalies.html",
+    "title": "Аномалии матки, шейки и влагалища",
+    "kind": "Модуль",
+    "area": "Малый таз"
+  },
+  {
+    "id": "peritoneum-spaces.html",
+    "url": "peritoneum-spaces.html",
+    "title": "Брюшина, фасции и пространства",
+    "kind": "Модуль",
+    "area": "Малый таз · Брюшная полость"
+  },
+  {
     "id": "region.html?area=abdomen",
     "url": "region.html?area=abdomen",
     "title": "Брюшная полость",
@@ -5053,5 +5074,257 @@ export const catalog=[
     "title": "Настройка последовательностей",
     "kind": "Модуль",
     "area": "Практика сканирования"
+  },
+  {
+    "id": "presacral-masses.html?focus261=origin",
+    "url": "presacral-masses.html?focus261=origin",
+    "title": "1. Где центр образования?",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "presacral-masses.html?focus261=meningocele",
+    "url": "presacral-masses.html?focus261=meningocele",
+    "title": "Переднее крестцовое менингоцеле",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "presacral-masses.html?focus261=tailgut",
+    "url": "presacral-masses.html?focus261=tailgut",
+    "title": "Tailgut-киста",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "presacral-masses.html?focus261=epidermoid",
+    "url": "presacral-masses.html?focus261=epidermoid",
+    "title": "Эпидермоидная киста",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "presacral-masses.html?focus261=dermoid",
+    "url": "presacral-masses.html?focus261=dermoid",
+    "title": "Дермоид / тератома",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "presacral-masses.html?focus261=duplication",
+    "url": "presacral-masses.html?focus261=duplication",
+    "title": "Дупликационная киста кишки",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "presacral-masses.html?focus261=abscess",
+    "url": "presacral-masses.html?focus261=abscess",
+    "title": "Абсцесс / воспалительное скопление",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "presacral-masses.html?focus261=neural",
+    "url": "presacral-masses.html?focus261=neural",
+    "title": "Нейрогенное образование",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "presacral-masses.html?focus261=sacral",
+    "url": "presacral-masses.html?focus261=sacral",
+    "title": "Образование из крестца",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "presacral-masses.html?focus261=rectal",
+    "url": "presacral-masses.html?focus261=rectal",
+    "title": "Источник в прямой кишке",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "presacral-masses.html?focus261=solid-nodule",
+    "url": "presacral-masses.html?focus261=solid-nodule",
+    "title": "Усиливающийся узел в кисте",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "presacral-masses.html?focus261=planning",
+    "url": "presacral-masses.html?focus261=planning",
+    "title": "Карта для профильного обсуждения",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "mullerian-anomalies.html?focus261=plane",
+    "url": "mullerian-anomalies.html?focus261=plane",
+    "title": "1. Правильная плоскость",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "mullerian-anomalies.html?focus261=septate",
+    "url": "mullerian-anomalies.html?focus261=septate",
+    "title": "Матка с перегородкой · ASRM",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "mullerian-anomalies.html?focus261=bicornuate",
+    "url": "mullerian-anomalies.html?focus261=bicornuate",
+    "title": "Двурогая матка · ASRM",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "mullerian-anomalies.html?focus261=arcuate",
+    "url": "mullerian-anomalies.html?focus261=arcuate",
+    "title": "Нормальный / дугообразный контур полости",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "mullerian-anomalies.html?focus261=didelphys",
+    "url": "mullerian-anomalies.html?focus261=didelphys",
+    "title": "Удвоение матки",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "mullerian-anomalies.html?focus261=unicornuate",
+    "url": "mullerian-anomalies.html?focus261=unicornuate",
+    "title": "Однорогая матка и рудиментарный рог",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "mullerian-anomalies.html?focus261=agenesis",
+    "url": "mullerian-anomalies.html?focus261=agenesis",
+    "title": "Агенезия / выраженная гипоплазия",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "mullerian-anomalies.html?focus261=cervix",
+    "url": "mullerian-anomalies.html?focus261=cervix",
+    "title": "Шейка: отдельная оценка",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "mullerian-anomalies.html?focus261=vagina",
+    "url": "mullerian-anomalies.html?focus261=vagina",
+    "title": "Продольная / поперечная перегородка влагалища",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "mullerian-anomalies.html?focus261=obstruction",
+    "url": "mullerian-anomalies.html?focus261=obstruction",
+    "title": "Обструкция и OHVIRA",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "mullerian-anomalies.html?focus261=kidneys",
+    "url": "mullerian-anomalies.html?focus261=kidneys",
+    "title": "Почки, мочеточники и яичники",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "mullerian-anomalies.html?focus261=systems",
+    "url": "mullerian-anomalies.html?focus261=systems",
+    "title": "ASRM и ESHRE/ESGE: не смешивать",
+    "kind": "Паттерн",
+    "area": "Малый таз"
+  },
+  {
+    "id": "peritoneum-spaces.html?level262=diaphragm",
+    "url": "peritoneum-spaces.html?level262=diaphragm",
+    "title": "01 · Диафрагма и купол печени",
+    "kind": "Учебная схема",
+    "area": "Брюшная полость · Малый таз"
+  },
+  {
+    "id": "peritoneum-spaces.html?level262=lesser-sac",
+    "url": "peritoneum-spaces.html?level262=lesser-sac",
+    "title": "02 · Желудок и сальниковая сумка",
+    "kind": "Учебная схема",
+    "area": "Брюшная полость · Малый таз"
+  },
+  {
+    "id": "peritoneum-spaces.html?level262=pancreas",
+    "url": "peritoneum-spaces.html?level262=pancreas",
+    "title": "03 · Поджелудочная железа и D2",
+    "kind": "Учебная схема",
+    "area": "Брюшная полость · Малый таз"
+  },
+  {
+    "id": "peritoneum-spaces.html?level262=kidneys",
+    "url": "peritoneum-spaces.html?level262=kidneys",
+    "title": "04 · Почки и почечные фасции",
+    "kind": "Учебная схема",
+    "area": "Брюшная полость · Малый таз"
+  },
+  {
+    "id": "peritoneum-spaces.html?level262=mesocolon",
+    "url": "peritoneum-spaces.html?level262=mesocolon",
+    "title": "05 · Поперечная брыжейка и боковые каналы",
+    "kind": "Учебная схема",
+    "area": "Брюшная полость · Малый таз"
+  },
+  {
+    "id": "peritoneum-spaces.html?level262=infrarenal",
+    "url": "peritoneum-spaces.html?level262=infrarenal",
+    "title": "06 · Ниже почек и корень брыжейки",
+    "kind": "Учебная схема",
+    "area": "Брюшная полость · Малый таз"
+  },
+  {
+    "id": "peritoneum-spaces.html?level262=sigmoid",
+    "url": "peritoneum-spaces.html?level262=sigmoid",
+    "title": "07 · Вход в таз и сигмовидная брыжейка",
+    "kind": "Учебная схема",
+    "area": "Брюшная полость · Малый таз"
+  },
+  {
+    "id": "peritoneum-spaces.html?level262=upper-rectum",
+    "url": "peritoneum-spaces.html?level262=upper-rectum",
+    "title": "08 · Верхняя прямая кишка",
+    "kind": "Учебная схема",
+    "area": "Брюшная полость · Малый таз"
+  },
+  {
+    "id": "peritoneum-spaces.html?level262=reflection",
+    "url": "peritoneum-spaces.html?level262=reflection",
+    "title": "09 · Передняя брюшинная складка",
+    "kind": "Учебная схема",
+    "area": "Брюшная полость · Малый таз"
+  },
+  {
+    "id": "peritoneum-spaces.html?level262=mid-rectum",
+    "url": "peritoneum-spaces.html?level262=mid-rectum",
+    "title": "10 · Средняя прямая кишка ниже складки",
+    "kind": "Учебная схема",
+    "area": "Брюшная полость · Малый таз"
+  },
+  {
+    "id": "peritoneum-spaces.html?level262=low-rectum",
+    "url": "peritoneum-spaces.html?level262=low-rectum",
+    "title": "11 · Нижняя прямая кишка и ректосакральная фасция",
+    "kind": "Учебная схема",
+    "area": "Брюшная полость · Малый таз"
+  },
+  {
+    "id": "peritoneum-spaces.html?level262=floor",
+    "url": "peritoneum-spaces.html?level262=floor",
+    "title": "12 · Тазовое дно и промежность",
+    "kind": "Учебная схема",
+    "area": "Брюшная полость · Малый таз"
   }
 ];

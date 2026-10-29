@@ -830,6 +830,22 @@ export const regions=[
         "contentKind": "clinical"
       },
       {
+        "title": "Пресакральные образования",
+        "description": "Ретроректальные кисты · менингоцеле · источник · DWI · усиление",
+        "url": "presacral-masses.html",
+        "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+        "thumb": "menu-thumbs/presacral-masses.svg",
+        "contentKind": "clinical"
+      },
+      {
+        "title": "Аномалии матки, шейки и влагалища",
+        "description": "ASRM / ESHRE-ESGE · перегородка · обструкция · почки",
+        "url": "mullerian-anomalies.html",
+        "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+        "thumb": "menu-thumbs/mullerian-anomalies.svg",
+        "contentKind": "clinical"
+      },
+      {
         "title": "Костный мозг",
         "description": "Отёк · реконверсия · перелом · замещение · CSI / DWI",
         "url": "bone-marrow.html?from=pelvis",
@@ -843,6 +859,14 @@ export const regions=[
         "url": "bone-lesions.html?from=pelvis",
         "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
         "thumb": "menu-thumbs/bone-lesions.svg",
+        "contentKind": "reference"
+      },
+      {
+        "title": "Брюшина, фасции и пространства",
+        "description": "12 уровней · живот и таз · внутри- и внебрюшинные отделы · границы и сообщения",
+        "url": "peritoneum-spaces.html",
+        "type": "АНАТОМИЧЕСКИЕ СХЕМЫ",
+        "thumb": "menu-thumbs/peritoneum-spaces.svg",
         "contentKind": "reference"
       }
     ]
@@ -924,6 +948,14 @@ export const regions=[
         "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
         "thumb": "menu-thumbs/adrenal-masses.svg",
         "contentKind": "clinical"
+      },
+      {
+        "title": "Брюшина, фасции и пространства",
+        "description": "12 уровней · живот и таз · внутри- и внебрюшинные отделы · границы и сообщения",
+        "url": "peritoneum-spaces.html",
+        "type": "АНАТОМИЧЕСКИЕ СХЕМЫ",
+        "thumb": "menu-thumbs/peritoneum-spaces.svg",
+        "contentKind": "reference"
       }
     ]
   },

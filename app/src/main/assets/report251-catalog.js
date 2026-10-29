@@ -1,4 +1,6 @@
 export const reportRoutes=[
+  "presacral-masses.html",
+  "mullerian-anomalies.html",
   "soft-tissue-tumors.html",
   "inflammatory-arthritis.html",
   "bladder-urethra.html",

@@ -1,0 +1,23 @@
+{
+  "version": "2.63",
+  "code": 163,
+  "size": 222618119,
+  "sha256": "b818329eee34c7b54c0e10d7ba2c1f7c7846015e2ab16ae3a8abda801bc906ea",
+  "assets": 9822,
+  "new_assets": [
+    "assets/knee-tendons263.js"
+  ],
+  "changed_assets": [
+    "assets/app-version-data.js",
+    "assets/source-mri-viewer.js",
+    "assets/search252-data.js",
+    "assets/search252-catalog.js"
+  ],
+  "source_images_and_points_preserved": true,
+  "stored_entries_4byte_aligned": true,
+  "certificate": "cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe",
+  "v2": true,
+  "v3": true,
+  "browser_tested": false,
+  "physical_android_tested": false
+}
