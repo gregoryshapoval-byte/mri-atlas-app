@@ -1,0 +1,21 @@
+{
+  "checked_on": "2026-11-02",
+  "version": "2.99",
+  "versionCode": 199,
+  "reconstructed": true,
+  "exact_original299": false,
+  "apk_sha256": "3b589b6c125ad433f1f7e5d8f79c4a70b69b62df98e3c32c52995964e5610097",
+  "apk_bytes": 380246448,
+  "assets_verified": 10968,
+  "base_images_preserved": 9861,
+  "native_entries_preserved": 7,
+  "signature_v2": true,
+  "signature_v3": true,
+  "certificate_sha256": "cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe",
+  "physical_android_tested": false,
+  "github_release_published": false,
+  "main_runtime_updated": false,
+  "base_library_file_id": "libfile_dd55c7738524819183cfc225f3ac1068",
+  "patch_library_file_id": "libfile_1c0fa0f593bc8191b195a798ab08d455",
+  "patch_sha256": "408ae00e6a412fbef3554f9e45f2ec4e7d9be75406f8b57b37ec05aa3213f47f"
+}
