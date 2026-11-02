@@ -1,0 +1,47 @@
+[
+  {
+    "page": "sellar",
+    "cases": 4,
+    "images": 12,
+    "filter": true,
+    "zoom": true,
+    "close": true,
+    "glossary": 12
+  },
+  {
+    "page": "vestibular",
+    "cases": 1,
+    "images": 4,
+    "filter": true,
+    "zoom": true,
+    "close": true,
+    "glossary": 4
+  },
+  {
+    "page": "glioblastoma",
+    "cases": 1,
+    "images": 4,
+    "filter": true,
+    "zoom": true,
+    "close": true,
+    "glossary": 24
+  },
+  {
+    "page": "cns-lymphoma",
+    "cases": 2,
+    "images": 8,
+    "filter": true,
+    "zoom": true,
+    "close": true,
+    "glossary": 26
+  },
+  {
+    "page": "glioma-followup",
+    "cases": 2,
+    "images": 12,
+    "filter": true,
+    "zoom": true,
+    "close": true,
+    "glossary": 19
+  }
+]

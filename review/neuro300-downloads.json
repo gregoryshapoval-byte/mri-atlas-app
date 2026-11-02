@@ -1,0 +1,14 @@
+[
+  {
+    "file": "MRIAtlas-3.00.apk",
+    "bytes": 388594531,
+    "sha256": "0b7c8ac7453d76fc84ceb0c9fdd981c860c21fbc5d9d5d9afa9036d26ec1dd1a",
+    "match": true
+  },
+  {
+    "file": "MRIAtlas-3.00-source.zip",
+    "bytes": 392429512,
+    "sha256": "df25133eca6ca0ede1726c260aafaee886cbc3d743960518f309a12049e3d4c9",
+    "match": true
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "version": "3.00",
+  "versionCode": 200,
+  "apk_sha256": "0b7c8ac7453d76fc84ceb0c9fdd981c860c21fbc5d9d5d9afa9036d26ec1dd1a",
+  "apk_bytes": 388594531,
+  "new_panels": 40,
+  "previous_raster_images_preserved": 9989,
+  "physical_android_tested": false,
+  "full_mobile_visual_check": false,
+  "dom_check": true,
+  "certificate_sha256": "cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe",
+  "signature_v2": true,
+  "signature_v3": true
+}
