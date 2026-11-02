@@ -1,0 +1,52 @@
+[
+  {
+    "page": "ependymal",
+    "groups": 2,
+    "panels": 7,
+    "filter": true,
+    "age_filter": true,
+    "zoom": true,
+    "close": true,
+    "expanded_terms": 25
+  },
+  {
+    "page": "pilocytic",
+    "groups": 1,
+    "panels": 4,
+    "filter": true,
+    "age_filter": true,
+    "zoom": true,
+    "close": true,
+    "expanded_terms": 15
+  },
+  {
+    "page": "craniopharyngioma",
+    "groups": 3,
+    "panels": 13,
+    "filter": true,
+    "age_filter": true,
+    "zoom": true,
+    "close": true,
+    "expanded_terms": 12
+  },
+  {
+    "page": "glioneuronal",
+    "groups": 2,
+    "panels": 7,
+    "filter": true,
+    "age_filter": true,
+    "zoom": true,
+    "close": true,
+    "expanded_terms": 11
+  },
+  {
+    "page": "hemangioblastoma",
+    "groups": 1,
+    "panels": 4,
+    "filter": true,
+    "age_filter": true,
+    "zoom": true,
+    "close": true,
+    "expanded_terms": 29
+  }
+]

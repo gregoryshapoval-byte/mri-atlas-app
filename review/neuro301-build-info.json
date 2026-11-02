@@ -1,0 +1,19 @@
+{
+  "version": "3.01",
+  "versionCode": 201,
+  "new_mri_panels": 33,
+  "new_ct_panels": 2,
+  "gallery_groups": 9,
+  "old_assets_retained": 11029,
+  "old_raster_images_unchanged": 10044,
+  "dictionary_terms": 126,
+  "search_destinations": 807,
+  "apk_bytes": 397904742,
+  "apk_sha256": "dca2c183a304cbe0e4de7777c7582a468cfd21666e692608102c4ce9e1a07c16",
+  "certificate_sha256": "cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe",
+  "signature_v2": true,
+  "signature_v3": true,
+  "full_mobile_visual_test": false,
+  "physical_android_test": false,
+  "dom_tests": true
+}

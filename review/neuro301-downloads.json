@@ -1,0 +1,16 @@
+[
+  {
+    "file": "MRIAtlas-3.01.apk",
+    "url": "https://github.com/gregoryshapoval-byte/mri-atlas-app/releases/download/atlas-3.01/MRIAtlas-3.01.apk",
+    "bytes": 397904742,
+    "sha256": "dca2c183a304cbe0e4de7777c7582a468cfd21666e692608102c4ce9e1a07c16",
+    "verified": true
+  },
+  {
+    "file": "MRIAtlas-3.01-source.zip",
+    "url": "https://github.com/gregoryshapoval-byte/mri-atlas-app/releases/download/atlas-3.01/MRIAtlas-3.01-source.zip",
+    "bytes": 407065189,
+    "sha256": "efb0efb2e74f90b3f835f9ede89d5d806c34d15949e7b20611c91b9eff4ff8bb",
+    "verified": true
+  }
+]
