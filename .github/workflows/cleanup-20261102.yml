@@ -1,0 +1,44 @@
+name: Clean obsolete MRIAtlas releases
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/cleanup-20261102.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: atlas-release-signing
+  cancel-in-progress: false
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - name: Verify retained backups before removing obsolete releases
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p verify
+          gh release download atlas-2.60 --pattern MRIAtlas-2.60.apk --dir verify
+          gh release download atlas-1.83-personal-backup --pattern MRIAtlas-test-signing-key.zip --dir verify
+          echo '21e95c8f3b3b57579f8ad930e5dd011a7800efccc00750b003d70a5a9d9c87c6  verify/MRIAtlas-test-signing-key.zip' | sha256sum -c -
+          gh release view source-archive-1 --json assets --jq '.assets[].name' | grep -Fx net.imaios.eanatomy.zip
+          python3 - <<'PY'
+          import zipfile
+          for p in ['verify/MRIAtlas-2.60.apk','verify/MRIAtlas-test-signing-key.zip']:
+              with zipfile.ZipFile(p) as z:
+                  assert z.testzip() is None
+          PY
+      - name: Delete only the five verified obsolete releases
+        shell: bash
+        run: |
+          set -euo pipefail
+          for tag in atlas-2.52 atlas-2.51 atlas-2.50 atlas-2.45 atlas-2.44; do
+            if gh release view "$tag" >/dev/null 2>&1; then
+              gh release delete "$tag" --yes
+            fi
+          done
+          gh release list --limit 100 >> "$GITHUB_STEP_SUMMARY"
