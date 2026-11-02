@@ -1,0 +1,94 @@
+name: MRIAtlas 3.06 cumulative vascular release
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/vascular306-release.yml']
+permissions:
+  contents: write
+concurrency:
+  group: atlas-release-signing
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Restore verified complete cumulative runtime
+        run: |
+          gh release download atlas-3.02 --pattern MRIAtlas-3.02-source.zip
+          gh release download atlas-3.05 --pattern MRIAtlas-3.05.apk
+          gh release download atlas-1.83-personal-backup --pattern MRIAtlas-test-signing-key.zip
+          echo 'c305199cb11357d43b992063e5652604b6043b0c7485ea24d2242735f150bebc  MRIAtlas-3.02-source.zip' | sha256sum -c -
+          echo '571ca91967b021517947d2fa5c1bc05408bda62e8fd65cade1df476275e6cb4b  MRIAtlas-3.05.apk' | sha256sum -c -
+          cat release-inputs/306/part* > MRIAtlas-3.06-patch.zip
+          echo '2e3b6282bf588d719762bbf3917c722bbe5a9e9b610dcc19bc6fed914f9fd30e  MRIAtlas-3.06-patch.zip' | sha256sum -c -
+          unzip -q MRIAtlas-3.02-source.zip -d snapshot
+          unzip -q MRIAtlas-test-signing-key.zip -d private-signing
+          python3 - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+          r=Path('snapshot/MRIAtlas-3.02-source')
+          with ZipFile('MRIAtlas-3.05.apk') as z:
+              for n in z.namelist():
+                  if n.startswith('assets/') and not n.endswith('/'):
+                      p=r/'app/src/main/assets'/n[7:];p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(z.read(n))
+          with ZipFile('MRIAtlas-3.06-patch.zip') as z:z.extractall(r)
+          assert "versionName '3.06'" in (r/'app/build.gradle').read_text()
+          assert 'versionCode 206' in (r/'app/build.gradle').read_text()
+          PY
+      - name: Build and sign with preserved identity
+        run: |
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'build-tools;35.0.0' >/dev/null
+          mkdir -p release
+          KEYSTORE_FILE="$GITHUB_WORKSPACE/private-signing/atlas.keystore" APKSIGNER_JAR="$ANDROID_HOME/build-tools/35.0.0/lib/apksigner.jar" python3 snapshot/MRIAtlas-3.02-source/tools/build_neuro306.py "$GITHUB_WORKSPACE/release/MRIAtlas-3.06.apk"
+          "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --verbose --print-certs release/MRIAtlas-3.06.apk > release/signature306.txt
+          "$ANDROID_HOME/build-tools/35.0.0/aapt2" dump badging release/MRIAtlas-3.06.apk | head -1 | grep "versionCode='206' versionName='3.06'"
+      - name: Verify preservation and package sources
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile,ZIP_DEFLATED
+          import hashlib,json
+          r=Path('snapshot/MRIAtlas-3.02-source');a=r/'app/src/main/assets'
+          with ZipFile('MRIAtlas-3.05.apk') as old,ZipFile('release/MRIAtlas-3.06.apk') as new:
+              assert new.testzip() is None
+              assert old.read('classes.dex')==new.read('classes.dex')
+              names=[n for n in old.namelist()if n.startswith('assets/')and not n.endswith('/')]
+              assert len(names)==11224 and all(n in new.namelist()for n in names)
+              changed=[n for n in names if old.read(n)!=new.read(n)]
+              assert set(changed)=={'assets/'+n for n in ['anatomy-regions.js','app-version-data.js','brain-clinical299.html','search252-catalog.js','search252-data.js']}
+              assert len([n for n in new.namelist()if n.startswith('assets/')and not n.endswith('/')])==11268
+          cases=json.loads((a/'vascular306/CASES.json').read_text())
+          for c in cases:
+              assert hashlib.sha256((a/c['original']).read_bytes()).hexdigest()==c['original_sha256']
+              for p in c['panels']:assert hashlib.sha256((a/p['file']).read_bytes()).hexdigest()==p['sha256']
+          assert len(cases)==8 and sum(len(c['panels'])for c in cases)==26
+          cert='cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe'
+          assert cert in Path('release/signature306.txt').read_text()
+          apk=Path('release/MRIAtlas-3.06.apk')
+          Path('release/SHA256SUMS-3.06.txt').write_text(hashlib.sha256(apk.read_bytes()).hexdigest()+'  '+apk.name+'\n')
+          with ZipFile('release/MRIAtlas-3.06-source.zip','w',ZIP_DEFLATED)as z:
+              for p in r.rglob('*'):
+                  if p.is_file() and not any(s in p.parts for s in ['.git','build','private-signing']):z.write(p,Path('MRIAtlas-3.06-source')/p.relative_to(r))
+          PY
+          cp MRIAtlas-3.06-patch.zip release/
+          cp snapshot/MRIAtlas-3.02-source/review/vascular306.md release/MRIAtlas-3.06-review.md
+      - name: Publish and verify download
+        run: |
+          if gh release view atlas-3.06 >/dev/null 2>&1; then
+            echo 'Release already exists; refusing to overwrite' >&2
+            exit 1
+          fi
+          gh release create atlas-3.06 release/* --target "$GITHUB_SHA" --title 'MRIAtlas 3.06 · сосудистые наблюдения' --notes-file release/MRIAtlas-3.06-review.md --latest
+          mkdir verify-download
+          gh release download atlas-3.06 --pattern MRIAtlas-3.06.apk --dir verify-download
+          cmp release/MRIAtlas-3.06.apk verify-download/MRIAtlas-3.06.apk
