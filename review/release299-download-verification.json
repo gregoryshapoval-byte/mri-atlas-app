@@ -1,0 +1,14 @@
+[
+  {
+    "file": "MRIAtlas-2.99-reconstructed.apk",
+    "bytes": 380246448,
+    "sha256": "3b589b6c125ad433f1f7e5d8f79c4a70b69b62df98e3c32c52995964e5610097",
+    "match": true
+  },
+  {
+    "file": "MRIAtlas-2.99-recovery-source.zip",
+    "bytes": 384300772,
+    "sha256": "c98eac5193793dbaec71523ab614114446e792f9e3931ba0ea219d973823b3b5",
+    "match": true
+  }
+]
