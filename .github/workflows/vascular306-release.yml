@@ -1,9 +1,6 @@
 name: MRIAtlas 3.06 cumulative vascular release
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: ['.github/workflows/vascular306-release.yml']
 permissions:
   contents: write
 concurrency:
