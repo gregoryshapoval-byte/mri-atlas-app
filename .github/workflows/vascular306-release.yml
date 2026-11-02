@@ -1,9 +1,6 @@
 name: MRIAtlas 3.06 cumulative vascular release
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: ['.github/workflows/vascular306-release.yml']
 permissions:
   contents: write
 concurrency:
@@ -11,7 +8,6 @@ concurrency:
   cancel-in-progress: false
 jobs:
   release:
-    if: github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     timeout-minutes: 25
     env:
@@ -98,14 +94,3 @@ jobs:
           mkdir verify-download
           gh release download atlas-3.06 --pattern MRIAtlas-3.06.apk --dir verify-download
           cmp release/MRIAtlas-3.06.apk verify-download/MRIAtlas-3.06.apk
-  tidy_delivery:
-    if: github.event_name == 'push'
-    runs-on: ubuntu-latest
-    env:
-      GH_TOKEN: ${{ github.token }}
-      GH_REPO: ${{ github.repository }}
-    steps:
-      - name: Remove unsigned intermediate from delivery
-        run: |
-          gh release delete-asset atlas-3.06 MRIAtlas-3.06-unsigned.apk --yes
-          gh release delete-asset atlas-3.06 MRIAtlas-3.06.apk.idsig --yes
