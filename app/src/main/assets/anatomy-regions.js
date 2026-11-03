@@ -334,6 +334,14 @@ export const regions=[
         "contentKind": "mri"
       },
       {
+        "title": "Сухожилия бицепса",
+        "description": "Длинная и короткая головки · якорь · pulley · борозда · разрывы и нестабильность",
+        "url": "biceps-tendon.html",
+        "type": "КЛИНИЧЕСКИЙ МОДУЛЬ",
+        "thumb": "menu-thumbs/shoulder-mri.webp",
+        "contentKind": "clinical"
+      },
+      {
         "title": "Вращательная манжета",
         "description": "Все сухожилия · разрывы · Ellman / Patte · мышцы и заключения",
         "url": "cuff.html",
