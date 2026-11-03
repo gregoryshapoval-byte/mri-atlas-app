@@ -26,11 +26,11 @@ for name,url,pmc,licence in SOURCES:
         req=Request(url, headers={"User-Agent":"MRIAtlas-personal-educational/1.0"})
         with urlopen(req, timeout=40) as response:
             data=response.read(15_000_000)
-        if len(data) < 1000 or not data.startswith(b"\\xff\\xd8\\xff"):
+        if len(data) < 1000 or not data.startswith(bytes((255,216,255))):
             raise RuntimeError(f"Not a valid JPEG: {name}, bytes={len(data)}")
         target.write_bytes(data)
     raw=target.read_bytes()
-    if not raw.startswith(b"\\xff\\xd8\\xff") or len(raw)<1000:
+    if not raw.startswith(bytes((255,216,255))) or len(raw)<1000:
         raise RuntimeError(f"Missing/corrupt image: {name}")
     records.append({"file":name,"url":url,"pmcid":pmc,"licence":licence,"bytes":len(raw),"sha256":hashlib.sha256(raw).hexdigest()})
 (OUT/"sources.json").write_text(json.dumps(records,ensure_ascii=False,indent=2)+"\\n")
