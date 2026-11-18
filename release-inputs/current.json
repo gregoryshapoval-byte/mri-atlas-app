@@ -1,6 +1,6 @@
 {
-  "version": "3.47",
-  "versionCode": 247,
+  "version": "3.48",
+  "versionCode": 248,
   "package": "ru.grigory.shoulderatlas.restored",
   "base": {
     "version": "3.44",
@@ -15,6 +15,7 @@
     "biceps-mri/10-1.jpg",
     "biceps-mri/10-2.jpg",
     "biceps-mri/10-3.jpg",
+    "brain-oncology247.html",
     "breast-mimics/adenosis-b.png",
     "breast-mimics/adenosis-c.png",
     "breast-mimics/adenosis-e.png",
@@ -22,6 +23,8 @@
     "breast-staging/nodes-k5f.png",
     "breast-staging/panels.json",
     "breast-staging/posterior-k5e.png",
+    "nav327.css",
+    "nav327.js",
     "nav327/CASES.json",
     "neuro300/CASES.json",
     "neuro300/gbm-0.jpg",
@@ -29,11 +32,11 @@
     "neuro300/gbm-2.jpg",
     "neuro300/gbm-3.jpg",
     "neuro302/GALLERY.json",
+    "nvc310.html",
     "perianal-cases.html",
     "perianal-report.js",
     "search252-core.js",
-    "shoulder-followup-mri/posterior-reduced-b.png",
-    "nvc310.html"
+    "shoulder-followup-mri/posterior-reduced-b.png"
   ],
   "generated": [
     "app-version-data.js",
@@ -41,6 +44,8 @@
     "search252-catalog.js"
   ],
   "additions": [
+    "nav327-diffusion.js",
+    "nav327/epidermoid-fig2.jpg",
     "nvc310/v-contact-fig1.png"
   ]
 }
