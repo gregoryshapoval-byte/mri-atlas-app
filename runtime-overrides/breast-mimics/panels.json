@@ -1,0 +1,122 @@
+[
+  {
+    "file": "papilloma-c.png",
+    "source": "https://doi.org/10.4103/2156-7514.85655",
+    "authors": "Dhillon и соавт., рис. 8c–d",
+    "license": "CC BY",
+    "crop": [
+      0,
+      156,
+      184,
+      364
+    ],
+    "original_sha256": "070710ad652d3f61f5664fb964bffcd0148ce80f9a982ce4a884b488867f8d37"
+  },
+  {
+    "file": "papilloma-d.png",
+    "source": "https://doi.org/10.4103/2156-7514.85655",
+    "authors": "Dhillon и соавт., рис. 8c–d",
+    "license": "CC BY",
+    "crop": [
+      186,
+      156,
+      371,
+      364
+    ],
+    "original_sha256": "070710ad652d3f61f5664fb964bffcd0148ce80f9a982ce4a884b488867f8d37"
+  },
+  {
+    "file": "adenosis-b.png",
+    "source": "https://doi.org/10.4048/jbc.2015.18.2.187",
+    "authors": "Gity и соавт., рис. 1b, 1c и 1e",
+    "license": "CC BY-NC 3.0",
+    "crop": [
+      326,
+      0,
+      645,
+      151
+    ],
+    "original_sha256": "0d95136cb7a385bf0682a4029283263b76fe8ab9376fe01e8e7e421863566aef",
+    "source_image": "https://www.ejbc.kr/ArticleImage/0096JBC/jbc-18-187-g001-l.jpg"
+  },
+  {
+    "file": "adenosis-c.png",
+    "source": "https://doi.org/10.4048/jbc.2015.18.2.187",
+    "authors": "Gity и соавт., рис. 1b, 1c и 1e",
+    "license": "CC BY-NC 3.0",
+    "crop": [
+      651,
+      0,
+      975,
+      151
+    ],
+    "original_sha256": "0d95136cb7a385bf0682a4029283263b76fe8ab9376fe01e8e7e421863566aef",
+    "source_image": "https://www.ejbc.kr/ArticleImage/0096JBC/jbc-18-187-g001-l.jpg"
+  },
+  {
+    "file": "adenosis-e.png",
+    "source": "https://doi.org/10.4048/jbc.2015.18.2.187",
+    "authors": "Gity и соавт., рис. 1b, 1c и 1e",
+    "license": "CC BY-NC 3.0",
+    "crop": [
+      326,
+      157,
+      645,
+      308
+    ],
+    "original_sha256": "0d95136cb7a385bf0682a4029283263b76fe8ab9376fe01e8e7e421863566aef",
+    "source_image": "https://www.ejbc.kr/ArticleImage/0096JBC/jbc-18-187-g001-l.jpg"
+  },
+  {
+    "file": "abscess-a.webp",
+    "source": "https://doi.org/10.1259/bjr.20220280",
+    "authors": "Jones и соавт., рис. 9a–c",
+    "license": "CC BY 4.0",
+    "crop": [
+      30,
+      0,
+      735,
+      405
+    ],
+    "original_sha256": "2ab3c318e266b47804ab85a9bf20e905c0c8bc797975078b29c14e5127e62efc"
+  },
+  {
+    "file": "abscess-b.png",
+    "source": "https://doi.org/10.1259/bjr.20220280",
+    "authors": "Jones и соавт., рис. 9a–c",
+    "license": "CC BY 4.0",
+    "crop": [
+      30,
+      414,
+      735,
+      839
+    ],
+    "original_sha256": "2ab3c318e266b47804ab85a9bf20e905c0c8bc797975078b29c14e5127e62efc"
+  },
+  {
+    "file": "abscess-c.webp",
+    "source": "https://doi.org/10.1259/bjr.20220280",
+    "authors": "Jones и соавт., рис. 9a–c",
+    "license": "CC BY 4.0",
+    "crop": [
+      30,
+      846,
+      735,
+      1273
+    ],
+    "original_sha256": "2ab3c318e266b47804ab85a9bf20e905c0c8bc797975078b29c14e5127e62efc"
+  },
+  {
+    "file": "rim-cancer-a.png",
+    "source": "https://doi.org/10.3348/jksr.2026.0042",
+    "authors": "Kim и соавт., рис. 3",
+    "license": "CC BY-NC 4.0",
+    "crop": [
+      0,
+      0,
+      557,
+      588
+    ],
+    "original_sha256": "e1d925d9c392989ccad1262c8147363632515e54b4e92a5a5b5dc16031e66ae3"
+  }
+]

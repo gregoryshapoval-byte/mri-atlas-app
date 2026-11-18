@@ -1,0 +1,200 @@
+[
+  {
+    "file": "extent-h3a.webp",
+    "figure": "3a",
+    "source": "https://doi.org/10.1007/s11604-026-02033-2",
+    "authors": "Honda и соавт., 2026",
+    "license": "CC BY 4.0",
+    "original_sha256": "959e68805b56c26b41cfd60c2f629dc3ad0ccd65c211e21ef444d5a0c739fdf8",
+    "crop": [
+      0,
+      0,
+      800,
+      903
+    ]
+  },
+  {
+    "file": "extent-h3b.webp",
+    "figure": "3b",
+    "source": "https://doi.org/10.1007/s11604-026-02033-2",
+    "authors": "Honda и соавт., 2026",
+    "license": "CC BY 4.0",
+    "original_sha256": "959e68805b56c26b41cfd60c2f629dc3ad0ccd65c211e21ef444d5a0c739fdf8",
+    "crop": [
+      802,
+      0,
+      1600,
+      903
+    ]
+  },
+  {
+    "file": "nipple-h7a.webp",
+    "figure": "7a",
+    "source": "https://doi.org/10.1007/s11604-026-02033-2",
+    "authors": "Honda и соавт., 2026",
+    "license": "CC BY 4.0",
+    "original_sha256": "00873416b737d9b44e9b4f7bf8c9ed57701b216a4c340e63e72f8b829133b5aa",
+    "crop": [
+      0,
+      0,
+      800,
+      799
+    ]
+  },
+  {
+    "file": "nipple-h7b.webp",
+    "figure": "7b",
+    "source": "https://doi.org/10.1007/s11604-026-02033-2",
+    "authors": "Honda и соавт., 2026",
+    "license": "CC BY 4.0",
+    "original_sha256": "00873416b737d9b44e9b4f7bf8c9ed57701b216a4c340e63e72f8b829133b5aa",
+    "crop": [
+      800,
+      0,
+      1600,
+      799
+    ]
+  },
+  {
+    "file": "skin-h11b.webp",
+    "figure": "11b",
+    "source": "https://doi.org/10.1007/s11604-026-02033-2",
+    "authors": "Honda и соавт., 2026",
+    "license": "CC BY 4.0",
+    "original_sha256": "aaa4279f263024e4088d79ea4b117dfdc22d985464cac9bcd756b5fbbe209b65",
+    "crop": [
+      535,
+      0,
+      1031,
+      534
+    ]
+  },
+  {
+    "file": "skin-h12a.webp",
+    "figure": "12a",
+    "source": "https://doi.org/10.1007/s11604-026-02033-2",
+    "authors": "Honda и соавт., 2026",
+    "license": "CC BY 4.0",
+    "original_sha256": "aef854d0f6a3065572a5e983c5030daa95c2f83b86674a7f41a9a11bde354f01",
+    "crop": [
+      0,
+      0,
+      800,
+      536
+    ]
+  },
+  {
+    "file": "skin-h12b.webp",
+    "figure": "12b",
+    "source": "https://doi.org/10.1007/s11604-026-02033-2",
+    "authors": "Honda и соавт., 2026",
+    "license": "CC BY 4.0",
+    "original_sha256": "aef854d0f6a3065572a5e983c5030daa95c2f83b86674a7f41a9a11bde354f01",
+    "crop": [
+      800,
+      0,
+      1600,
+      536
+    ]
+  },
+  {
+    "file": "posterior-h14a.webp",
+    "figure": "14a",
+    "source": "https://doi.org/10.1007/s11604-026-02033-2",
+    "authors": "Honda и соавт., 2026",
+    "license": "CC BY 4.0",
+    "original_sha256": "f34b9ebd782934f57f12966f4a33c049a50fca88bd4cb678b6bf7a09aa785ca4",
+    "crop": [
+      0,
+      0,
+      760,
+      766
+    ]
+  },
+  {
+    "file": "posterior-h14b.webp",
+    "figure": "14b",
+    "source": "https://doi.org/10.1007/s11604-026-02033-2",
+    "authors": "Honda и соавт., 2026",
+    "license": "CC BY 4.0",
+    "original_sha256": "f34b9ebd782934f57f12966f4a33c049a50fca88bd4cb678b6bf7a09aa785ca4",
+    "crop": [
+      760,
+      0,
+      1600,
+      766
+    ]
+  },
+  {
+    "file": "posterior-k5e.png",
+    "figure": "5e",
+    "source": "https://doi.org/10.3348/jksr.2026.0042",
+    "authors": "Kim и соавт., 2026",
+    "license": "CC BY-NC 4.0",
+    "original_sha256": "dd77b44811dc25827d727e12fef8d41bd80f8c2c3897a23072b088730b872028",
+    "source_image": "https://www.jksronline.org/ArticleImage/3016JKSR/jksr-87-473-g005-l.jpg",
+    "crop": [
+      360,
+      313,
+      680,
+      577
+    ]
+  },
+  {
+    "file": "nodes-h15a.webp",
+    "figure": "15a",
+    "source": "https://doi.org/10.1007/s11604-026-02033-2",
+    "authors": "Honda и соавт., 2026",
+    "license": "CC BY 4.0",
+    "original_sha256": "58d1b0a78f2713f43884914fc843d9326e83030ed69e49107d0c45249f9a8b4f",
+    "crop": [
+      0,
+      0,
+      800,
+      468
+    ]
+  },
+  {
+    "file": "nodes-h15c.webp",
+    "figure": "15c",
+    "source": "https://doi.org/10.1007/s11604-026-02033-2",
+    "authors": "Honda и соавт., 2026",
+    "license": "CC BY 4.0",
+    "original_sha256": "58d1b0a78f2713f43884914fc843d9326e83030ed69e49107d0c45249f9a8b4f",
+    "crop": [
+      0,
+      515,
+      800,
+      1038
+    ]
+  },
+  {
+    "file": "nodes-h15d.webp",
+    "figure": "15d",
+    "source": "https://doi.org/10.1007/s11604-026-02033-2",
+    "authors": "Honda и соавт., 2026",
+    "license": "CC BY 4.0",
+    "original_sha256": "58d1b0a78f2713f43884914fc843d9326e83030ed69e49107d0c45249f9a8b4f",
+    "crop": [
+      800,
+      515,
+      1600,
+      1038
+    ]
+  },
+  {
+    "file": "nodes-k5f.png",
+    "figure": "5f",
+    "source": "https://doi.org/10.3348/jksr.2026.0042",
+    "authors": "Kim и соавт., 2026",
+    "license": "CC BY-NC 4.0",
+    "original_sha256": "dd77b44811dc25827d727e12fef8d41bd80f8c2c3897a23072b088730b872028",
+    "source_image": "https://www.jksronline.org/ArticleImage/3016JKSR/jksr-87-473-g005-l.jpg",
+    "crop": [
+      686,
+      313,
+      971,
+      575
+    ]
+  }
+]

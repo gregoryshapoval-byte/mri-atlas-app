@@ -1,0 +1,2132 @@
+{
+  "stage": 4,
+  "profiles": 52,
+  "fields": 35,
+  "rules": 347,
+  "example_discussions": 36,
+  "mr_panels": 86,
+  "reused_mr_panels": 60,
+  "new_mr_panels": 26,
+  "independent_patients_claimed": false,
+  "examples": [
+    {
+      "id": "meningioma--PMC3948902-Fig10",
+      "entity": "meningioma",
+      "title": "Менингиома мостомозжечкового угла",
+      "note": "Широкое дуральное основание без внутриканального распространения в этом примере.",
+      "trap": "Гистологическую степень нельзя устанавливать по одному МР-признаку; оценить все серии и анамнез.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3948902/",
+      "authors": "PMC3948902",
+      "license": "© The Author(s) 2014Open Access This article is distributed under the terms of the Creative Commons Attribution License which permits any use, distribution, and reproduction in any medium, provided the original author(s) and the source are credited.",
+      "license_url": "",
+      "link": "meningioma.html?case306=PMC3948902-Fig10",
+      "tags": {
+        "loc": [
+          "cpa"
+        ],
+        "comp": [
+          "extra"
+        ],
+        "dura": [
+          "broad"
+        ]
+      },
+      "panels": [
+        {
+          "file": "neuro291/PMC3948902-Fig10-0.jpg",
+          "label": "T1 после контраста · аксиально",
+          "note": "Широкое дуральное основание без внутриканального распространения в этом примере.",
+          "modality": "MRI",
+          "sha256": "6319e54dc1f06a16f359341dc8770630c3b9adeb7f0dd22c289ff47299d3721b"
+        }
+      ]
+    },
+    {
+      "id": "meningioma--PMC3948902-Fig11",
+      "entity": "meningioma",
+      "title": "Ликворная щель",
+      "note": "Ликворная щель между опухолью и смещённой корой поддерживает экстрааксиальное происхождение.",
+      "trap": "Гистологическую степень нельзя устанавливать по одному МР-признаку; оценить все серии и анамнез.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3948902/",
+      "authors": "PMC3948902",
+      "license": "© The Author(s) 2014Open Access This article is distributed under the terms of the Creative Commons Attribution License which permits any use, distribution, and reproduction in any medium, provided the original author(s) and the source are credited.",
+      "license_url": "",
+      "link": "meningioma.html?case306=PMC3948902-Fig11",
+      "tags": {
+        "comp": [
+          "extra"
+        ],
+        "interface": [
+          "cleft"
+        ]
+      },
+      "panels": [
+        {
+          "file": "neuro291/PMC3948902-Fig11-0.jpg",
+          "label": "T2 · аксиально",
+          "note": "Ликворная щель между опухолью и смещённой корой поддерживает экстрааксиальное происхождение.",
+          "modality": "MRI",
+          "sha256": "a352a163006176aed0aa55f82a65cd36c602c3a40631b3008957e3299648284c"
+        }
+      ]
+    },
+    {
+      "id": "meningioma--PMC3948902-Fig20",
+      "entity": "dural-met",
+      "title": "Имитатор: дуральный метастаз",
+      "note": "Дуральное образование с отёком имитирует менингиому.",
+      "trap": "Гистологическую степень нельзя устанавливать по одному МР-признаку; оценить все серии и анамнез.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3948902/",
+      "authors": "PMC3948902",
+      "license": "© The Author(s) 2014Open Access This article is distributed under the terms of the Creative Commons Attribution License which permits any use, distribution, and reproduction in any medium, provided the original author(s) and the source are credited.",
+      "license_url": "",
+      "link": "meningioma.html?case306=PMC3948902-Fig20",
+      "tags": {
+        "comp": [
+          "extra"
+        ],
+        "dura": [
+          "broad"
+        ]
+      },
+      "panels": [
+        {
+          "file": "neuro291/PMC3948902-Fig20-0.jpg",
+          "label": "T1 после контраста · коронально",
+          "note": "Дуральное образование с отёком имитирует менингиому.",
+          "modality": "MRI",
+          "sha256": "e32367ebe220c6f512ca26bb1b2903aaff91440f02c4f6b324d2add81467acc2"
+        }
+      ]
+    },
+    {
+      "id": "vestibular--koos",
+      "entity": "schwannoma",
+      "title": "Реальные МРТ · Koos I–IV",
+      "note": "Панель Koos II иллюстрирует выход из ВСП; другие стадии не считаются динамикой этого пациента.",
+      "trap": "Категории приведены по исходной иллюстрации. Koos описывает распространение, не гистологическую степень и не выраженность потери слуха.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8965062/",
+      "authors": "Sporadic Vestibular Schwannoma Size and Location…, 2022",
+      "license": "CC BY 4.0; кадрирование и русские пояснения добавлены MRIAtlas",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "link": "vestibular.html?case306=koos",
+      "tags": {
+        "loc": [
+          "cpa"
+        ],
+        "comp": [
+          "extra"
+        ]
+      },
+      "panels": [
+        {
+          "file": "neuro300/koos-1.jpg",
+          "label": "Koos II · T1 после контраста",
+          "note": "Опухоль выходит во внутреннюю слуховую цистерну без контакта со стволом.",
+          "modality": "MRI",
+          "sha256": "48c8dcebbd05042695a1b04241c1d2a12294ecca95da64c7d9a6e0c8e27655db"
+        }
+      ]
+    },
+    {
+      "id": "hemangioblastoma--hb",
+      "entity": "hb",
+      "title": "Гемангиобластома · кистозно-солидный вариант",
+      "note": "",
+      "trap": "",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13525972/",
+      "authors": "Oshima Sonoko, Fushimi Yasutaka, Okuchi Sachi et al.",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "link": "hemangioblastoma.html?case306=hb",
+      "tags": {
+        "loc": [
+          "cerebellum"
+        ],
+        "comp": [
+          "intra"
+        ],
+        "structure": [
+          "cyst_node"
+        ],
+        "enhance": [
+          "node"
+        ]
+      },
+      "panels": [
+        {
+          "file": "neuro301/hb-1.jpg",
+          "label": "B · аксиальная T2",
+          "note": "Сосудистые структуры с выпадением сигнала поддерживают гиперваскулярность.",
+          "modality": "MRI",
+          "sha256": "0afa8d164321d4cda3dfcd50bb8d029d54d25899c4b8200af2306a2a56496f03"
+        },
+        {
+          "file": "neuro301/hb-2.jpg",
+          "label": "C · ADC — измеряемый коэффициент диффузии",
+          "note": "В источнике нет ограничения диффузии; сравнивать с солидным узлом пилоцитарной астроцитомы.",
+          "modality": "MRI",
+          "sha256": "40762921716c2b7b2efb4c35fe6594d6dd235dd16da7454d2e2cfb411b63ffe7"
+        },
+        {
+          "file": "neuro301/hb-3.jpg",
+          "label": "D · аксиальная T1 после контраста",
+          "note": "Интенсивное усиление солидной ткани; форма узла бывает нерегулярной.",
+          "modality": "MRI",
+          "sha256": "dce95fe3fc501941c0e27b10dcca7dabea2570d5d1e68a3095d3516f87e66177"
+        }
+      ]
+    },
+    {
+      "id": "pilocytic--pa-cerebellum",
+      "entity": "pa",
+      "title": "Пилоцитарная астроцитома · киста с узлом",
+      "note": "",
+      "trap": "",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13525972/",
+      "authors": "Oshima Sonoko, Fushimi Yasutaka, Okuchi Sachi et al.",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "link": "pilocytic.html?case306=pa-cerebellum",
+      "tags": {
+        "loc": [
+          "cerebellum"
+        ],
+        "comp": [
+          "intra"
+        ],
+        "structure": [
+          "cyst_node"
+        ],
+        "enhance": [
+          "node"
+        ]
+      },
+      "panels": [
+        {
+          "file": "neuro301/pa-cerebellum-1.jpg",
+          "label": "B · аксиальная T2",
+          "note": "Высокий T2-сигнал; оценить компрессию IV желудочка.",
+          "modality": "MRI",
+          "sha256": "425f4e42ebd5eb9d85a337c7c16531527cd11e8cb7eaf7c99151073f23fb376a"
+        },
+        {
+          "file": "neuro301/pa-cerebellum-2.jpg",
+          "label": "C · ADC — измеряемый коэффициент диффузии",
+          "note": "Повышенная диффузия в узле не исключает опухоль.",
+          "modality": "MRI",
+          "sha256": "d4c985db351b5aae6faf8a5d73efe3bba8b85df6c8b5c321c5ade1ea90a26e52"
+        },
+        {
+          "file": "neuro301/pa-cerebellum-3.jpg",
+          "label": "D · аксиальная T1 после контраста",
+          "note": "Яркое усиление узла само по себе не означает высокую степень злокачественности.",
+          "modality": "MRI",
+          "sha256": "7b16d13ce7bec4697793d3ba3ea97698b22c53f7ae1194d84206501ed333ab9a"
+        }
+      ]
+    },
+    {
+      "id": "ependymal--ep-pfb",
+      "entity": "ependymoma",
+      "title": "Эпендимома задней черепной ямки · PFB по публикации",
+      "note": "",
+      "trap": "",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13525972/",
+      "authors": "Oshima Sonoko, Fushimi Yasutaka, Okuchi Sachi et al.",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "link": "ependymal.html?case306=ep-pfb",
+      "tags": {
+        "loc": [
+          "fourth"
+        ],
+        "comp": [
+          "ventricular"
+        ],
+        "enhance": [
+          "heterogeneous"
+        ]
+      },
+      "panels": [
+        {
+          "file": "neuro301/ep-pfb-1.jpg",
+          "label": "B · аксиальная T2",
+          "note": "Солидные и кистозные участки; оценить продолговатый мозг.",
+          "modality": "MRI",
+          "sha256": "44783460604d0b7bf395fa0db7eca214a450cdf43e4506010d7384ce87fe6d57"
+        },
+        {
+          "file": "neuro301/ep-pfb-2.jpg",
+          "label": "C · аксиальная T1 после контраста",
+          "note": "Неоднородно усиливающаяся ткань. PFB — результат верификации в источнике.",
+          "modality": "MRI",
+          "sha256": "046dad9f79778987d9468c6c7f5646a2f5e5f1bd9efa22b2c25243c548e22e03"
+        },
+        {
+          "file": "neuro301/ep-pfb-3.jpg",
+          "label": "D · сагиттальная T1 после контраста",
+          "note": "Продолжение через большое затылочное отверстие до C3; компрессия ствола и обструктивная гидроцефалия.",
+          "modality": "MRI",
+          "sha256": "2c2ed846e042d18b0f3266b8f6cb329a1841a7c411d300cc5d14be61251b04fc"
+        }
+      ]
+    },
+    {
+      "id": "ependymal--subependymoma",
+      "entity": "subependymoma",
+      "title": "Субэпендимома IV желудочка · спектр усиления",
+      "note": "Спектр усиления и T2 из публикации; разные иллюстрации не считать одной динамической серией.",
+      "trap": "",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9365749/",
+      "authors": "Haider Ali S., El Ahmadieh Tarek Y., Haider Maryam et al.",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "link": "ependymal.html?case306=subependymoma",
+      "tags": {
+        "loc": [
+          "fourth"
+        ],
+        "comp": [
+          "ventricular"
+        ]
+      },
+      "panels": [
+        {
+          "file": "neuro304/subependymoma-0.jpg",
+          "label": "A · сагиттальная T1 после контраста",
+          "note": "Умеренное усиление опухоли нижней части IV желудочка у obex — задвижки.",
+          "modality": "MRI",
+          "sha256": "410db6fe48bfaa8a76aae0578aa42ba7087cab0e1c3be001e6b3cce5b95110e0"
+        },
+        {
+          "file": "neuro304/subependymoma-2.jpg",
+          "label": "C · аксиальная T2",
+          "note": "Рост к отверстию Мажанди. Панели публикации показывают спектр, а не серии одного установленного пациента.",
+          "modality": "MRI",
+          "sha256": "f73dae80adc92a40440fc4587a369b7a44ea8bed6b08d339c24a5232fd6e4709"
+        }
+      ]
+    },
+    {
+      "id": "brain-oncology247--pediatric-medullo",
+      "entity": "medullo",
+      "title": "Медуллобластома: диффузия, усиление и дополнительные методы",
+      "note": "В исходном случае 7-летнего ребёнка — срединная опухоль ЗЧЯ с рестрикцией солидной ткани; отдельно показаны перфузия и MRS.",
+      "trap": "Высокий Cho или rCBV не устанавливают тип; спектральный пик не заменяет морфомолекулярную верификацию.",
+      "source": "https://doi.org/10.3390/diagnostics12040961",
+      "authors": "Jaju, Yeom & Ryan, 2022",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "link": "brain-oncology247.html?case306=pediatric-medullo",
+      "tags": {
+        "loc": [
+          "posterior"
+        ],
+        "age": [
+          "child"
+        ],
+        "adc": [
+          "solid_low"
+        ]
+      },
+      "panels": [
+        {
+          "file": "neuro306-panels/pediatric-001a-0.jpg",
+          "label": "A · AX T2",
+          "note": "В исходном случае 7-летнего ребёнка — срединная опухоль ЗЧЯ с рестрикцией солидной ткани; отдельно показаны перфузия и MRS.",
+          "modality": "MRI",
+          "sha256": "495180a602bc3db29c0867362c9fce7873b865d3fe69a1a53763eade7cc461db"
+        },
+        {
+          "file": "neuro306-panels/pediatric-001a-1.jpg",
+          "label": "B · SAG T1 после Gd",
+          "note": "В исходном случае 7-летнего ребёнка — срединная опухоль ЗЧЯ с рестрикцией солидной ткани; отдельно показаны перфузия и MRS.",
+          "modality": "MRI",
+          "sha256": "b8d5686674ddd9a2a58ce2b2a7f407134e9a535256819fdc922e0b678aa14711"
+        },
+        {
+          "file": "neuro306-panels/pediatric-001a-2.jpg",
+          "label": "C · DWI",
+          "note": "В исходном случае 7-летнего ребёнка — срединная опухоль ЗЧЯ с рестрикцией солидной ткани; отдельно показаны перфузия и MRS.",
+          "modality": "MRI",
+          "sha256": "da17299e91c5fcd48d4b7895d280878eab370a29fe004ab823e2632b0a25aec6"
+        },
+        {
+          "file": "neuro306-panels/pediatric-001a-3.jpg",
+          "label": "D · ADC",
+          "note": "В исходном случае 7-летнего ребёнка — срединная опухоль ЗЧЯ с рестрикцией солидной ткани; отдельно показаны перфузия и MRS.",
+          "modality": "MRI",
+          "sha256": "8c78a26711ec9d80f88960592dc5b6c7beefaf78ebff009d685ba6451ff20b55"
+        }
+      ]
+    },
+    {
+      "id": "brain-oncology247--pediatric-atrt",
+      "entity": "atrt",
+      "title": "AT/RT: неоднородная опухоль ЗЧЯ у маленького ребёнка",
+      "note": "Источник описывает маленького ребёнка. DWI без отдельной ADC-панели не является самостоятельным доказательством ограничения.",
+      "trap": "Локализация в ВСП не делает опухоль шванномой. На DWI без ADC нельзя самостоятельно подтвердить рестрикцию.",
+      "source": "https://doi.org/10.3390/diagnostics12040961",
+      "authors": "Jaju, Yeom & Ryan, 2022",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "link": "brain-oncology247.html?case306=pediatric-atrt",
+      "tags": {
+        "loc": [
+          "posterior"
+        ],
+        "age": [
+          "child"
+        ],
+        "enhance": [
+          "heterogeneous"
+        ]
+      },
+      "panels": [
+        {
+          "file": "neuro306-panels/pediatric-004a-0.jpg",
+          "label": "A · AX T2",
+          "note": "В исходном случае AT/RT — неоднородная опухоль ММУ с внутриканальным распространением и контралатеральным очагом в ВСП.",
+          "modality": "MRI",
+          "sha256": "bcf541aec7d2e849cf175a48f19971a0a2fba73a792208d80ef06ef357aee1c7"
+        },
+        {
+          "file": "neuro306-panels/pediatric-004a-1.jpg",
+          "label": "B · AX T1 после Gd",
+          "note": "В исходном случае AT/RT — неоднородная опухоль ММУ с внутриканальным распространением и контралатеральным очагом в ВСП.",
+          "modality": "MRI",
+          "sha256": "7180eb0afdd18ab0af5c535b73fc98c558247b22a26e62af0a9516bdbfffc628"
+        },
+        {
+          "file": "neuro306-panels/pediatric-004b-0.jpg",
+          "label": "C · DWI",
+          "note": "В исходном случае AT/RT — неоднородная опухоль ММУ с внутриканальным распространением и контралатеральным очагом в ВСП.",
+          "modality": "MRI",
+          "sha256": "a370a39761c670bb09d530abfa9b7f238056b51aefad677b1970fb92ebf942a5"
+        }
+      ]
+    },
+    {
+      "id": "glioblastoma--gbm",
+      "entity": "gbm",
+      "title": "Глиобластома · подтверждённый случай из сравнительного исследования",
+      "note": "",
+      "trap": "Диагноз установлен в публикации; молекулярный тип не выводится из изображения. Четыре карты относятся к одному случаю.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11214103/",
+      "authors": "Würtemberger et al., 2024",
+      "license": "CC BY 4.0; кадрирование и русские пояснения добавлены MRIAtlas",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "link": "glioblastoma.html?case306=gbm",
+      "tags": {
+        "comp": [
+          "intra"
+        ],
+        "enhance": [
+          "heterogeneous"
+        ]
+      },
+      "panels": [
+        {
+          "file": "neuro300/gbm-0.jpg",
+          "label": "T1 после контраста",
+          "note": "Леволобная опухоль с неоднородным усилением; оценивать солидную ткань и некроз раздельно.",
+          "modality": "MRI",
+          "sha256": "bcc5ed5c6354d167921712b44595cb7b1a3e2c2c5ebc136b76fbfb055a8ee851"
+        }
+      ]
+    },
+    {
+      "id": "cns-lymphoma--pcnsl",
+      "entity": "pcnsl",
+      "title": "Первичная лимфома ЦНС · типичная солидная опухоль",
+      "note": "",
+      "trap": "В источнике подтверждена диффузная крупноклеточная B-клеточная лимфома. Цифры отдельного случая не являются универсальными порогами.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7367972/",
+      "authors": "Sawlani et al., 2020",
+      "license": "CC BY 4.0; кадрирование и русские пояснения добавлены MRIAtlas",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "link": "cns-lymphoma.html?case306=pcnsl",
+      "tags": {
+        "comp": [
+          "intra"
+        ],
+        "enhance": [
+          "uniform"
+        ],
+        "adc": [
+          "solid_low"
+        ]
+      },
+      "panels": [
+        {
+          "file": "neuro300/pcnsl-0.jpg",
+          "label": "A · T2",
+          "note": "Левозатылочная солидная опухоль и окружающий отёк.",
+          "modality": "MRI",
+          "sha256": "20254034405151ebcb19255060b323ab6a63a29b15e4f02c59a5275c40a86e10"
+        },
+        {
+          "file": "neuro300/pcnsl-1.jpg",
+          "label": "B · T1 после контраста",
+          "note": "Относительно однородное усиление солидного компонента.",
+          "modality": "MRI",
+          "sha256": "874976b875fa7df96a3cf885e3ef3dc5186afd7ee2886530c619484d96f84587"
+        },
+        {
+          "file": "neuro300/pcnsl-2.jpg",
+          "label": "C · ADC · измеряемый коэффициент диффузии",
+          "note": "Выраженное снижение ADC поддерживает высокую клеточность, но не специфично для лимфомы.",
+          "modality": "MRI",
+          "sha256": "1a1749e27c2d5495a58fb051c8071009d88cbbb8757281d1e61032c6c55c0f03"
+        }
+      ]
+    },
+    {
+      "id": "brain-metastases--met-1-01",
+      "entity": "mets",
+      "title": "Кольцевидно усиливающийся правотеменной метастаз рака лёгкого.",
+      "note": "Кольцевидно усиливающийся правотеменной метастаз рака лёгкого.",
+      "trap": "Тип первичной опухоли и итоговый диагноз взяты из публикации. По одной МР-серии первичный источник не устанавливают; DWI всегда сопоставляют с ADC.",
+      "source": "https://doi.org/10.4103/2152-7806.111298",
+      "authors": "Fink et al.",
+      "license": "CC BY-NC-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+      "link": "brain-metastases.html?case306=met-1-01",
+      "tags": {
+        "comp": [
+          "intra"
+        ],
+        "enhance": [
+          "ring"
+        ]
+      },
+      "panels": [
+        {
+          "file": "neuro290/met-1-01.png",
+          "label": "AX T1 +C",
+          "note": "Кольцевидно усиливающийся правотеменной метастаз рака лёгкого.",
+          "modality": "MRI",
+          "sha256": "66e9006d2e738ffe68467af741f0a4a1823e126b8c73a34cf8c7867ef88e1131"
+        }
+      ]
+    },
+    {
+      "id": "brain-infections--abscess-gd",
+      "entity": "abscess",
+      "title": "Пиогенный абсцесс: капсула",
+      "note": "Кольцевое усиление капсулы.",
+      "trap": "Оценить вместе с T2 и DWI/ADC, а не по форме кольца.",
+      "source": "https://doi.org/10.3389/fnins.2023.1248493",
+      "authors": "Zhang et al., 2023",
+      "license": "CC BY 4.0",
+      "license_url": "",
+      "link": "brain-infections.html?case306=abscess-gd",
+      "tags": {
+        "enhance": [
+          "ring"
+        ]
+      },
+      "panels": [
+        {
+          "file": "infect287/abscess-gd.png",
+          "label": "AX T1 после Gd",
+          "note": "Кольцевое усиление капсулы.",
+          "modality": "MRI",
+          "sha256": "0b311672a6dcbfda58bff7614c411a2ef40cb55ac7cfa5e2159856ec3e631a91"
+        }
+      ]
+    },
+    {
+      "id": "brain-infections--tdl-gd",
+      "entity": "tdl",
+      "title": "Демиелинизация: незамкнутое кольцо",
+      "note": "Незамкнутое кольцевое усиление в подтверждённом случае.",
+      "trap": "Открытое кольцо поддерживает демиелинизацию, но не исключает инфекцию или опухоль.",
+      "source": "https://doi.org/10.3389/fmed.2026.1779221",
+      "authors": "Talybov et al., 2026",
+      "license": "CC BY 4.0",
+      "license_url": "",
+      "link": "brain-infections.html?case306=tdl-gd",
+      "tags": {
+        "enhance": [
+          "open_ring"
+        ]
+      },
+      "panels": [
+        {
+          "file": "infect287/tdl-gd.png",
+          "label": "AX T1 после Gd",
+          "note": "Незамкнутое кольцевое усиление в подтверждённом случае.",
+          "modality": "MRI",
+          "sha256": "67a35a3ba06778250e3b5e952f2e8cf8a27007a53a02ce3393c796b717e62a1b"
+        }
+      ]
+    },
+    {
+      "id": "brain-cysts--epid-flair",
+      "entity": "epidermoid",
+      "title": "Эпидермоидная киста · AX FLAIR",
+      "note": "FLAIR-панель; оценка ограничения требует DWI и ADC.",
+      "trap": "DWI сопоставить с ADC; FLAIR-подавление может быть неполным.",
+      "source": "https://doi.org/10.1590/0100-3984.2019.0144",
+      "authors": "Pereira et al., 2021",
+      "license": "CC BY 4.0",
+      "license_url": "",
+      "link": "brain-cysts.html?case306=epid-flair",
+      "tags": {
+        "comp": [
+          "extra"
+        ],
+        "structure": [
+          "csf"
+        ]
+      },
+      "panels": [
+        {
+          "file": "neuro289/epid-flair.png",
+          "label": "AX FLAIR",
+          "note": "Супра-/параселлярная киста слева.",
+          "modality": "MRI",
+          "sha256": "131b182f7fdad5530dc383ae3dbf04c0f9e6450d34f0765f118401ce999ce92a"
+        }
+      ]
+    },
+    {
+      "id": "brain-cysts--epid-dwi",
+      "entity": "epidermoid",
+      "title": "Эпидермоидная киста · AX DWI",
+      "note": "Опубликованная DWI-панель. Отдельной ADC-панели здесь нет; по одной яркости рестрикция не доказывается.",
+      "trap": "ADC в этой иллюстрации не представлен: истинное ограничение проверяют по ADC.",
+      "source": "https://doi.org/10.1590/0100-3984.2019.0144",
+      "authors": "Pereira et al., 2021",
+      "license": "CC BY 4.0",
+      "license_url": "",
+      "link": "brain-cysts.html?case306=epid-dwi",
+      "tags": {
+        "comp": [
+          "extra"
+        ],
+        "structure": [
+          "csf"
+        ]
+      },
+      "panels": [
+        {
+          "file": "neuro289/epid-dwi.png",
+          "label": "AX DWI",
+          "note": "Выраженно высокий DWI-сигнал содержимого.",
+          "modality": "MRI",
+          "sha256": "fa08b6bf90e2442207cb7835a172b92b094ba11ef25f3856de170e92ac4dff52"
+        }
+      ]
+    },
+    {
+      "id": "brain-cysts--arach-ax",
+      "entity": "arachnoid",
+      "title": "Крупная арахноидальная киста · AX T2",
+      "note": "Структурная иллюстрация арахноидальной кисты; не считать отдельную плоскость независимым пациентом.",
+      "trap": "В публикации смещение средней линии 1 см. Это осложнённый крупный пример, а не типичная случайная малая киста.",
+      "source": "https://doi.org/10.4103/sni.sni_320_18",
+      "authors": "Jafrani et al., 2019",
+      "license": "CC BY-NC-SA 4.0",
+      "license_url": "",
+      "link": "brain-cysts.html?case306=arach-ax",
+      "tags": {
+        "comp": [
+          "extra"
+        ],
+        "structure": [
+          "csf"
+        ]
+      },
+      "panels": [
+        {
+          "file": "neuro289/arach-ax.png",
+          "label": "AX T2",
+          "note": "Киста передней/средней черепной ямки слева с выраженным масс-эффектом.",
+          "modality": "MRI",
+          "sha256": "285e84112369a6dd5d60b3a555f1722aef5c08dfb9caade42fad8e6502fafa75"
+        }
+      ]
+    },
+    {
+      "id": "brain-cysts--arach-cor",
+      "entity": "arachnoid",
+      "title": "Крупная арахноидальная киста · COR T2",
+      "note": "Структурная иллюстрация арахноидальной кисты; не считать отдельную плоскость независимым пациентом.",
+      "trap": "В публикации смещение средней линии 1 см. Это осложнённый крупный пример, а не типичная случайная малая киста.",
+      "source": "https://doi.org/10.4103/sni.sni_320_18",
+      "authors": "Jafrani et al., 2019",
+      "license": "CC BY-NC-SA 4.0",
+      "license_url": "",
+      "link": "brain-cysts.html?case306=arach-cor",
+      "tags": {
+        "comp": [
+          "extra"
+        ],
+        "structure": [
+          "csf"
+        ]
+      },
+      "panels": [
+        {
+          "file": "neuro289/arach-cor.png",
+          "label": "COR T2",
+          "note": "Киста передней/средней черепной ямки слева с выраженным масс-эффектом.",
+          "modality": "MRI",
+          "sha256": "e3709438cc839027c39706ecc229fa3453743db9026610c8574f42cb864b66bc"
+        }
+      ]
+    },
+    {
+      "id": "brain-cysts--arach-sag",
+      "entity": "arachnoid",
+      "title": "Крупная арахноидальная киста · SAG T2",
+      "note": "Структурная иллюстрация арахноидальной кисты; не считать отдельную плоскость независимым пациентом.",
+      "trap": "В публикации смещение средней линии 1 см. Это осложнённый крупный пример, а не типичная случайная малая киста.",
+      "source": "https://doi.org/10.4103/sni.sni_320_18",
+      "authors": "Jafrani et al., 2019",
+      "license": "CC BY-NC-SA 4.0",
+      "license_url": "",
+      "link": "brain-cysts.html?case306=arach-sag",
+      "tags": {
+        "comp": [
+          "extra"
+        ],
+        "structure": [
+          "csf"
+        ]
+      },
+      "panels": [
+        {
+          "file": "neuro289/arach-sag.png",
+          "label": "SAG T2",
+          "note": "Киста передней/средней черепной ямки слева с выраженным масс-эффектом.",
+          "modality": "MRI",
+          "sha256": "acbe766511cc18911b751e61370152256e1aa6c0ff637b8cf206957086358ce1"
+        }
+      ]
+    },
+    {
+      "id": "glioneuronal--ganglio",
+      "entity": "ganglio",
+      "title": "Ганглиоглиома и прилежащая кортикальная дисплазия",
+      "note": "",
+      "trap": "",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13525972/",
+      "authors": "Oshima Sonoko, Fushimi Yasutaka, Okuchi Sachi et al.",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "link": "glioneuronal.html?case306=ganglio",
+      "tags": {
+        "comp": [
+          "intra"
+        ],
+        "loc": [
+          "cortex"
+        ]
+      },
+      "panels": [
+        {
+          "file": "neuro301/ganglio-0.jpg",
+          "label": "A · корональная T2",
+          "note": "Кистозная опухоль правой височной коры в эпилептическом контексте.",
+          "modality": "MRI",
+          "sha256": "5f78aec1126acbb113aa7de798b6b8e769eacc4535e8a840328e9069b74c8311"
+        },
+        {
+          "file": "neuro301/ganglio-1.jpg",
+          "label": "B · корональная T1 после контраста",
+          "note": "Заметного усиления нет: оно не обязательно для ганглиоглиомы.",
+          "modality": "MRI",
+          "sha256": "75cc3a3f9b7c5d6c153e6799f274a9d08e26abdc0d43b98d94e3b8b88b8a72a2"
+        },
+        {
+          "file": "neuro301/ganglio-2.jpg",
+          "label": "C · аксиальная T2",
+          "note": "Прилежащие изменения коры и белого вещества соответствуют дисплазии по публикации. Подтип дисплазии по кадру не назначается.",
+          "modality": "MRI",
+          "sha256": "e3fb59c8316405e65c410f21495497d4b52e0eefaec935d508e87c2dc82f47a2"
+        }
+      ]
+    },
+    {
+      "id": "diffuse-gliomas--pediatric-dmg",
+      "entity": "stem-glioma",
+      "title": "Диффузная срединная глиома: мало усиления",
+      "note": "Диффузная срединная глиома по публикации. Молекулярный тип не выводится из выбранной локализации; слабое усиление не тождественно его отсутствию.",
+      "trap": "Известный H3-статус взят из публикации, а не определён по изображению. Отсутствие усиления не означает low-grade.",
+      "source": "https://doi.org/10.3390/diagnostics12040961",
+      "authors": "Jaju, Yeom & Ryan, 2022",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "link": "diffuse-gliomas.html?case306=pediatric-dmg",
+      "tags": {
+        "loc": [
+          "brainstem"
+        ],
+        "comp": [
+          "intra"
+        ],
+        "age": [
+          "child"
+        ]
+      },
+      "panels": [
+        {
+          "file": "neuro306-panels/pediatric-006a-0.jpg",
+          "label": "A · AX T2",
+          "note": "В опубликованном случае H3 K27-altered глиомы — экспансивное инфильтративное поражение моста с минимальным усилением и без выраженной рестрикции.",
+          "modality": "MRI",
+          "sha256": "f49fa8e03aa8eb003dea4168a393183f1099a5492fb0cca763bff8ec9b892079"
+        },
+        {
+          "file": "neuro306-panels/pediatric-006a-1.jpg",
+          "label": "B · AX T1 после Gd",
+          "note": "В опубликованном случае H3 K27-altered глиомы — экспансивное инфильтративное поражение моста с минимальным усилением и без выраженной рестрикции.",
+          "modality": "MRI",
+          "sha256": "6b93f5a40e3813300da958674a1b61ea32e55a5521f106fe8e23eeafe9a0ea0d"
+        },
+        {
+          "file": "neuro306-panels/pediatric-006b-0.jpg",
+          "label": "C · DWI",
+          "note": "В опубликованном случае H3 K27-altered глиомы — экспансивное инфильтративное поражение моста с минимальным усилением и без выраженной рестрикции.",
+          "modality": "MRI",
+          "sha256": "375060173db4461a094aabcc5cdbbcf618277be161f3ecdbb4c142d141d720c0"
+        },
+        {
+          "file": "neuro306-panels/pediatric-006b-1.jpg",
+          "label": "D · ADC",
+          "note": "В опубликованном случае H3 K27-altered глиомы — экспансивное инфильтративное поражение моста с минимальным усилением и без выраженной рестрикции.",
+          "modality": "MRI",
+          "sha256": "14a93684a26855abf70aae9318dbd3730edf4308833e5cbc69d2d3e1edef7c1e"
+        }
+      ]
+    },
+    {
+      "id": "diffuse-gliomas--PMC10411771-f1",
+      "entity": "diffuse",
+      "title": "Астроцитома IDH-mutant · динамика grade 2 → grade 4",
+      "note": "Исходные T2/FLAIR 2010 года. Здесь нет постконтрастного кадра того же срока: это не доказательство отсутствия усиления. Поздние кадры другого срока не подмешаны.",
+      "trap": "Это один пациент в динамике. Grade подтверждён тканью; карта перфузии не самостоятельная шкала grade.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10411771/",
+      "authors": "PMC10411771",
+      "license": "This is an Open Access article distributed under the terms of the\nCreative Commons Attribution License, which permits unrestricted use,\ndistribution, and reproduction in any medium, provided the original work is\nproperly cited.",
+      "license_url": "",
+      "link": "diffuse-gliomas.html?case306=PMC10411771-f1",
+      "tags": {
+        "comp": [
+          "intra"
+        ],
+        "loc": [
+          "hemisphere"
+        ]
+      },
+      "panels": [
+        {
+          "file": "neuro291/PMC10411771-f1-0.jpg",
+          "label": "A · T2 · 2010",
+          "note": "Исходный T2/FLAIR mismatch; спустя 11 лет усиление и повышенный rCBV.",
+          "modality": "MRI",
+          "sha256": "dd2fa24f16d462f4a8fbdd6524bbafea98a36cf32d36a0c36b79fbc84f3839f7"
+        },
+        {
+          "file": "neuro291/PMC10411771-f1-1.jpg",
+          "label": "B · FLAIR · 2010",
+          "note": "Исходный T2/FLAIR mismatch; спустя 11 лет усиление и повышенный rCBV.",
+          "modality": "MRI",
+          "sha256": "931c15861d55c77c6bf3099c1fa5cdc1e9380dd19357982e02539df40897ea17"
+        }
+      ]
+    },
+    {
+      "id": "neurocytoma--cn",
+      "entity": "neurocytoma",
+      "title": "Центральная нейроцитома · септальная связь и микрокисты",
+      "note": "Один опубликованный случай; T1 после контраста, T2, DWI и ADC. Связь с перегородкой и микрокисты оцениваются вместе. Рестрикция возможна и не исключает нейроцитому.",
+      "trap": "",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11194141/",
+      "authors": "",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "link": "neurocytoma.html?case306=cn",
+      "tags": {
+        "loc": [
+          "monro",
+          "lateral"
+        ],
+        "comp": [
+          "ventricular"
+        ],
+        "attachment": [
+          "septum"
+        ],
+        "structure": [
+          "microcystic"
+        ]
+      },
+      "panels": [
+        {
+          "file": "neuro302/cn-1.jpg",
+          "label": "B · аксиальная T1 после контраста",
+          "note": "Неоднородное усиление солидной ткани. Яркость усиления не определяет степень или Ki-67.",
+          "modality": "MRI",
+          "sha256": "eae66e2e3ba77f3891db3f53097a4d0edc9417c2b7435d112cc6ef777507809b"
+        },
+        {
+          "file": "neuro302/cn-2.jpg",
+          "label": "A · аксиальная T2",
+          "note": "Неоднородная солидная ткань и кистозные включения; оценить расширение желудочков.",
+          "modality": "MRI",
+          "sha256": "67105b06f11c88000797a712a399f4b093e23341df569ba00be439d201e49602"
+        },
+        {
+          "file": "neuro302/cn-4.jpg",
+          "label": "A · DWI — диффузионно-взвешенное изображение",
+          "note": "Высокий сигнал в солидном компоненте сопоставить с ADC того же участка.",
+          "modality": "MRI",
+          "sha256": "5c82c5f69c7c37458e405b721aad6d8b1cb303df48bc5a830e007b761b957e26"
+        },
+        {
+          "file": "neuro302/cn-5.jpg",
+          "label": "B · ADC — измеряемый коэффициент диффузии",
+          "note": "Снижение сигнала солидной ткани подтверждает рестрикцию в примере. Это не специфический критерий нейроцитомы.",
+          "modality": "MRI",
+          "sha256": "3f81ed391bdb583a192b178169401c6442c8d7fbafd5937bc8502d4dca4951a5"
+        }
+      ]
+    },
+    {
+      "id": "brain-cysts--colloid-t1",
+      "entity": "colloid",
+      "title": "Коллоидная киста · SAG T1",
+      "note": "Повторно используемая панель коллоидной кисты. Плоскости не считать независимыми пациентами; нативный T1-сигнал не приравнивать к усилению.",
+      "trap": "Сигнал вариабелен. Оценить отверстия Монро и признаки обструкции.",
+      "source": "https://doi.org/10.1590/0100-3984.2019.0144",
+      "authors": "Pereira et al., 2021",
+      "license": "CC BY 4.0",
+      "license_url": "",
+      "link": "brain-cysts.html?case306=colloid-t1",
+      "tags": {
+        "loc": [
+          "third_ant",
+          "monro"
+        ],
+        "structure": [
+          "cyst"
+        ]
+      },
+      "panels": [
+        {
+          "file": "neuro289/colloid-t1.png",
+          "label": "SAG T1",
+          "note": "T1-гиперинтенсивная киста передневерхнего отдела III желудочка.",
+          "modality": "MRI",
+          "sha256": "fe67f6de1e76bd7afc3ac4b3c1021f992ed99b47ce541017368f3f17fb43b1da"
+        }
+      ]
+    },
+    {
+      "id": "brain-cysts--colloid-t2",
+      "entity": "colloid",
+      "title": "Коллоидная киста · AX T2",
+      "note": "Повторно используемая панель коллоидной кисты. Плоскости не считать независимыми пациентами; нативный T1-сигнал не приравнивать к усилению.",
+      "trap": "Гидроцефалия требует клинической оценки срочности, независимо от малого размера кисты.",
+      "source": "https://doi.org/10.1590/0100-3984.2019.0144",
+      "authors": "Pereira et al., 2021",
+      "license": "CC BY 4.0",
+      "license_url": "",
+      "link": "brain-cysts.html?case306=colloid-t2",
+      "tags": {
+        "loc": [
+          "third_ant",
+          "monro"
+        ],
+        "structure": [
+          "cyst"
+        ]
+      },
+      "panels": [
+        {
+          "file": "neuro289/colloid-t2.png",
+          "label": "AX T2",
+          "note": "T2-гипоинтенсивное содержимое и расширенные желудочки.",
+          "modality": "MRI",
+          "sha256": "56637c81147eafcfb3d0ca3b21505b5ec41fa39171e95a86d1dd3d9f45b0a970"
+        }
+      ]
+    },
+    {
+      "id": "new328-plexus2015",
+      "entity": "plexus",
+      "title": "Папиллома сосудистого сплетения · мальчик10 лет",
+      "note": "de Castro et al., рис.5. Один гистологически верифицированный случай. Микродольчатая опухоль левого бокового желудочка с усилением и гидроцефалией.",
+      "trap": "Папиллома — диагноз источника; гистологическая степень не вычисляется навигатором.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4337139/",
+      "authors": "de Castro, Reis, Guerra · 2015",
+      "license": "CC BY-NC 3.0 · учебное некоммерческое использование",
+      "license_url": "https://creativecommons.org/licenses/by-nc/3.0/",
+      "link": "brain-oncology247.html?topic=choroid-plexus",
+      "tags": {
+        "loc": [
+          "lateral"
+        ],
+        "comp": [
+          "ventricular"
+        ],
+        "attachment": [
+          "plexus"
+        ],
+        "structure": [
+          "villous"
+        ],
+        "age": [
+          "child"
+        ]
+      },
+      "panels": [
+        {
+          "file": "nav328/plexus2015.jpg",
+          "label": "A · Корональная T1",
+          "note": "Микродольчатое строение; нативная серия.",
+          "box": [
+            0,
+            0,
+            259,
+            194
+          ],
+          "modality": "MRI",
+          "sha256": "6360f01d23cf62995f7ad56de8f1eef10bd44f87f1f69751b255629dfbea93a0"
+        },
+        {
+          "file": "nav328/plexus2015.jpg",
+          "label": "B · Аксиальная T1 после контраста",
+          "note": "Усиление солидной ткани.",
+          "box": [
+            290,
+            0,
+            234,
+            194
+          ],
+          "modality": "MRI",
+          "sha256": "6360f01d23cf62995f7ad56de8f1eef10bd44f87f1f69751b255629dfbea93a0"
+        },
+        {
+          "file": "nav328/plexus2015.jpg",
+          "label": "C · Корональная T1 после контраста",
+          "note": "Связь с боковым желудочком.",
+          "box": [
+            550,
+            0,
+            221,
+            194
+          ],
+          "modality": "MRI",
+          "sha256": "6360f01d23cf62995f7ad56de8f1eef10bd44f87f1f69751b255629dfbea93a0"
+        },
+        {
+          "file": "nav328/plexus2015.jpg",
+          "label": "D · Сагиттальная T1 после контраста",
+          "note": "Протяжённость образования.",
+          "box": [
+            142,
+            194,
+            248,
+            193
+          ],
+          "modality": "MRI",
+          "sha256": "6360f01d23cf62995f7ad56de8f1eef10bd44f87f1f69751b255629dfbea93a0"
+        },
+        {
+          "file": "nav328/plexus2015.jpg",
+          "label": "E · Аксиальная T2",
+          "note": "Неоднородная ткань и желудочковая система.",
+          "box": [
+            422,
+            194,
+            250,
+            193
+          ],
+          "modality": "MRI",
+          "sha256": "6360f01d23cf62995f7ad56de8f1eef10bd44f87f1f69751b255629dfbea93a0"
+        }
+      ]
+    },
+    {
+      "id": "new328-sega2024",
+      "entity": "sega",
+      "title": "SEGA у ребёнка8 лет с туберозным склерозом",
+      "note": "Goncalves et al., рис.4A–C. Один пациент; узел у Монро, дополнительные изменения при туберозном склерозе и усиление.",
+      "trap": "C по видимой анатомии — корональная T1 после контраста, хотя текст источника называет её аксиальной. ИллюстрацияD исключена из МР-галереи.",
+      "source": "https://doi.org/10.1007/s00234-023-03253-3",
+      "authors": "Goncalves et al. · 2023/2024",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "link": "brain-ventricular328.html#sega",
+      "tags": {
+        "loc": [
+          "monro"
+        ],
+        "comp": [
+          "ventricular"
+        ],
+        "age": [
+          "child"
+        ],
+        "tsc": [
+          "yes"
+        ]
+      },
+      "panels": [
+        {
+          "file": "nav328/sega2024.jpeg",
+          "label": "A · Аксиальная T2",
+          "note": "Узел около отверстия Монро; дополнительные изменения.",
+          "box": [
+            0,
+            0,
+            407,
+            473
+          ],
+          "modality": "MRI",
+          "sha256": "1675862f8845290ccb112a4367cfb355efbddb6e5fccffca4849aa8b44692807"
+        },
+        {
+          "file": "nav328/sega2024.jpeg",
+          "label": "B · Аксиальная FLAIR",
+          "note": "Сопоставьте субэпендимальный узел и корковые изменения.",
+          "box": [
+            441,
+            0,
+            408,
+            473
+          ],
+          "modality": "MRI",
+          "sha256": "1675862f8845290ccb112a4367cfb355efbddb6e5fccffca4849aa8b44692807"
+        },
+        {
+          "file": "nav328/sega2024.jpeg",
+          "label": "C · Корональная T1 после контраста",
+          "note": "Выраженное усиление; плоскость исправлена по изображению.",
+          "box": [
+            884,
+            0,
+            408,
+            473
+          ],
+          "modality": "MRI",
+          "sha256": "1675862f8845290ccb112a4367cfb355efbddb6e5fccffca4849aa8b44692807"
+        }
+      ]
+    },
+    {
+      "id": "new328-colloid2024",
+      "entity": "colloid",
+      "title": "Коллоидная киста с низким T1-сигналом · ребёнок2 лет",
+      "note": "Goncalves et al., рис.2A–D. Один пациент. Передний III желудочек, низкий T1-сигнал и отсутствие усиления; сигнал ликвору полностью не следует.",
+      "trap": "Коллоидная киста не обязана быть яркой на T1. ИллюстрацияE не включена в число МР-кадров.",
+      "source": "https://doi.org/10.1007/s00234-023-03253-3",
+      "authors": "Goncalves et al. · 2023/2024",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "link": "brain-cysts.html",
+      "tags": {
+        "loc": [
+          "third_ant"
+        ],
+        "comp": [
+          "ventricular"
+        ],
+        "age": [
+          "infant"
+        ],
+        "enhance": [
+          "none"
+        ],
+        "t1": [
+          "low_iso"
+        ],
+        "structure": [
+          "cyst"
+        ]
+      },
+      "panels": [
+        {
+          "file": "nav328/colloid2024.jpeg",
+          "label": "A · Сагиттальная T1",
+          "note": "Низкий нативный T1-сигнал в этом случае.",
+          "box": [
+            0,
+            0,
+            385,
+            405
+          ],
+          "modality": "MRI",
+          "sha256": "eb4414257b3778df033a02794e57f5bfc876184ef111741ddb8f3644ba9c90ea"
+        },
+        {
+          "file": "nav328/colloid2024.jpeg",
+          "label": "B · Сагиттальная сильно T2-взвешенная серия",
+          "note": "Кистозное содержимое с сигналом ниже ликвора.",
+          "box": [
+            406,
+            0,
+            377,
+            405
+          ],
+          "modality": "MRI",
+          "sha256": "eb4414257b3778df033a02794e57f5bfc876184ef111741ddb8f3644ba9c90ea"
+        },
+        {
+          "file": "nav328/colloid2024.jpeg",
+          "label": "C · Аксиальная FLAIR",
+          "note": "Передний отдел III желудочка.",
+          "box": [
+            812,
+            0,
+            374,
+            405
+          ],
+          "modality": "MRI",
+          "sha256": "eb4414257b3778df033a02794e57f5bfc876184ef111741ddb8f3644ba9c90ea"
+        },
+        {
+          "file": "nav328/colloid2024.jpeg",
+          "label": "D · Корональная T1 после контраста",
+          "note": "Усиления содержимого не выявлено.",
+          "box": [
+            1217,
+            0,
+            370,
+            405
+          ],
+          "modality": "MRI",
+          "sha256": "eb4414257b3778df033a02794e57f5bfc876184ef111741ddb8f3644ba9c90ea"
+        }
+      ]
+    },
+    {
+      "id": "rathke-ugga14",
+      "entity": "rathke",
+      "title": "Киста Ратке · неусиливающийся узел",
+      "source": "https://doi.org/10.1007/s00234-023-03120-1",
+      "authors": "Ugga, Franca, Scaravilli et al., 2023",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "tags": {
+        "loc": [
+          "suprasellar"
+        ],
+        "structure": [
+          "cyst"
+        ],
+        "cyst_wall": [
+          "nonenhancing_nodule"
+        ]
+      },
+      "note": "Супраселлярная киста; воронка смещена влево.",
+      "trap": "Гистологическая панель D исключена из МР-галереи.",
+      "panels": [
+        {
+          "file": "nav329/rathke2023.png",
+          "label": "A · T2 сагиттально",
+          "box": [
+            0,
+            0,
+            422,
+            669
+          ],
+          "note": "Внутрикистозный узел.",
+          "modality": "MRI",
+          "sha256": "7b156c224a222efc5e32e8cf8d1284820ed8a3a65ec897ea63ef2d44b2280c78"
+        },
+        {
+          "file": "nav329/rathke2023.png",
+          "label": "B · T2 коронально",
+          "box": [
+            424,
+            0,
+            420,
+            669
+          ],
+          "note": "Низкий сигнал узла по отношению к жидкости.",
+          "modality": "MRI",
+          "sha256": "7b156c224a222efc5e32e8cf8d1284820ed8a3a65ec897ea63ef2d44b2280c78"
+        },
+        {
+          "file": "nav329/rathke2023.png",
+          "label": "C · T1 после контраста, коронально",
+          "box": [
+            846,
+            0,
+            422,
+            669
+          ],
+          "note": "Узел не усиливается; железа и воронка видны отдельно.",
+          "modality": "MRI",
+          "sha256": "7b156c224a222efc5e32e8cf8d1284820ed8a3a65ec897ea63ef2d44b2280c78"
+        }
+      ]
+    },
+    {
+      "id": "acp-ugga7",
+      "entity": "acp",
+      "title": "Адамантиноматозная краниофарингиома · опубликованный случай",
+      "source": "https://doi.org/10.1007/s00234-023-03120-1",
+      "authors": "Ugga, Franca, Scaravilli et al., 2023",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "tags": {
+        "loc": [
+          "pituitary",
+          "suprasellar"
+        ],
+        "structure": [
+          "cyst_node"
+        ],
+        "t1": [
+          "high",
+          "mixed"
+        ]
+      },
+      "note": "Интра- и супраселлярное кистозно-солидное образование.",
+      "trap": "Кальцинаты по этим кадрам не подтверждаются; гистологическая панель E исключена.",
+      "panels": [
+        {
+          "file": "nav329/acp2023.png",
+          "label": "A · T2 сагиттально",
+          "box": [
+            0,
+            0,
+            740,
+            716
+          ],
+          "note": "Многокамерное образование.",
+          "modality": "MRI",
+          "sha256": "8368e3346fdd24b5c411aa62fe4ea8916705524bd80b2288b5c21dc47b25e5b2"
+        },
+        {
+          "file": "nav329/acp2023.png",
+          "label": "B · T1 после контраста, сагиттально",
+          "box": [
+            0,
+            718,
+            740,
+            718
+          ],
+          "note": "Усиление по периферии.",
+          "modality": "MRI",
+          "sha256": "8368e3346fdd24b5c411aa62fe4ea8916705524bd80b2288b5c21dc47b25e5b2"
+        },
+        {
+          "file": "nav329/acp2023.png",
+          "label": "C · T1 нативно, коронально",
+          "box": [
+            742,
+            0,
+            757,
+            358
+          ],
+          "note": "Гиперинтенсивное содержимое не равно накоплению контраста.",
+          "modality": "MRI",
+          "sha256": "8368e3346fdd24b5c411aa62fe4ea8916705524bd80b2288b5c21dc47b25e5b2"
+        },
+        {
+          "file": "nav329/acp2023.png",
+          "label": "D · T2 коронально",
+          "box": [
+            742,
+            360,
+            757,
+            356
+          ],
+          "note": "Внутреннее строение.",
+          "modality": "MRI",
+          "sha256": "8368e3346fdd24b5c411aa62fe4ea8916705524bd80b2288b5c21dc47b25e5b2"
+        }
+      ]
+    },
+    {
+      "id": "pineocytoma-fang2",
+      "entity": "pineal-parenchymal",
+      "title": "Пинеоцитома · женщина 65 лет",
+      "source": "https://doi.org/10.1007/s13244-013-0248-6",
+      "authors": "Fang & Meyers, 2013",
+      "license": "CC BY-NC 2.0 · консервативно по XML-лицензии PMC",
+      "license_url": "https://creativecommons.org/licenses/by-nc/2.0/",
+      "tags": {
+        "loc": [
+          "pineal"
+        ],
+        "enhance": [
+          "uniform"
+        ],
+        "t2": [
+          "low"
+        ]
+      },
+      "note": "Диагноз пинеоцитомы указан авторами.",
+      "trap": "Этот пример не представляет все опухоли промежуточной дифференцировки. Исторические степени из обзора не перенесены.",
+      "panels": [
+        {
+          "file": "nav329/pineocytoma2013.jpg",
+          "label": "a · T2 аксиально",
+          "box": [
+            0,
+            0,
+            478,
+            649
+          ],
+          "note": "Низкий–промежуточный сигнал образования.",
+          "modality": "MRI",
+          "sha256": "1deab20a594ecaf58d4aef6fe5888c590a90005fccf555fceb39fa1b15a59368"
+        },
+        {
+          "file": "nav329/pineocytoma2013.jpg",
+          "label": "b · T1 после контраста, аксиально",
+          "box": [
+            0,
+            659,
+            478,
+            594
+          ],
+          "note": "Усиление ткани.",
+          "modality": "MRI",
+          "sha256": "1deab20a594ecaf58d4aef6fe5888c590a90005fccf555fceb39fa1b15a59368"
+        },
+        {
+          "file": "nav329/pineocytoma2013.jpg",
+          "label": "c · T1 после контраста, сагиттально",
+          "box": [
+            0,
+            1264,
+            478,
+            548
+          ],
+          "note": "Пинеальная масса.",
+          "modality": "MRI",
+          "sha256": "1deab20a594ecaf58d4aef6fe5888c590a90005fccf555fceb39fa1b15a59368"
+        }
+      ]
+    },
+    {
+      "id": "germinoma-fang6",
+      "entity": "germcell",
+      "title": "Герминома · девочка 12 месяцев",
+      "source": "https://doi.org/10.1007/s13244-013-0248-6",
+      "authors": "Fang & Meyers, 2013",
+      "license": "CC BY-NC 2.0 · консервативно по XML-лицензии PMC",
+      "license_url": "https://creativecommons.org/licenses/by-nc/2.0/",
+      "tags": {
+        "loc": [
+          "pineal"
+        ],
+        "age": [
+          "infant",
+          "child"
+        ],
+        "enhance": [
+          "heterogeneous",
+          "uniform"
+        ]
+      },
+      "note": "Показан атипичный ранний возраст. Опубликованный случай иллюстрирует перекрытие МР-признаков.",
+      "trap": "Панели спектроскопии e и установочного среза f исключены. DWI без ADC не используется для самостоятельного вывода об ограничении.",
+      "panels": [
+        {
+          "file": "nav329/germinoma2013.jpg",
+          "label": "a · T1 нативно, сагиттально",
+          "box": [
+            0,
+            0,
+            526,
+            436
+          ],
+          "note": "Пинеальная масса и вторичные очаги.",
+          "modality": "MRI",
+          "sha256": "8ac444cf3792da0341f9625646256b4512328628037c07a62538f747ffda7d68"
+        },
+        {
+          "file": "nav329/germinoma2013.jpg",
+          "label": "b · T2 аксиально",
+          "box": [
+            0,
+            448,
+            526,
+            490
+          ],
+          "note": "Опухолевая ткань и ликворные пространства.",
+          "modality": "MRI",
+          "sha256": "8ac444cf3792da0341f9625646256b4512328628037c07a62538f747ffda7d68"
+        },
+        {
+          "file": "nav329/germinoma2013.jpg",
+          "label": "c · T1 после контраста, сагиттально",
+          "box": [
+            0,
+            949,
+            526,
+            416
+          ],
+          "note": "Усиление пинеального и вторичных очагов.",
+          "modality": "MRI",
+          "sha256": "8ac444cf3792da0341f9625646256b4512328628037c07a62538f747ffda7d68"
+        },
+        {
+          "file": "nav329/germinoma2013.jpg",
+          "label": "d · DWI аксиально",
+          "box": [
+            538,
+            0,
+            417,
+            504
+          ],
+          "note": "ADC в фигуре не приведена; отсутствие ограничения описано авторами.",
+          "modality": "MRI",
+          "sha256": "8ac444cf3792da0341f9625646256b4512328628037c07a62538f747ffda7d68"
+        }
+      ]
+    },
+    {
+      "title": "Фокальная кортикальная дисплазия · пациент 14 лет",
+      "note": "Левая лобная кора утолщена; граница серого и белого вещества размыта.",
+      "trap": "Гистологический подтип по этим изображениям не установлен.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8813621/",
+      "authors": "PMC8813621",
+      "license": "© 2022 Published by Scientific Scholar on behalf of Journal of Clinical Imaging ScienceThis is an open-access article distributed under the terms of the Creative Commons Attribution-Non Commercial-Share Alike 4.0 License, which allows others to remix, transform, and build upon the work non-commercially, as long as the author is credited and the new creations are licensed under the identical terms.",
+      "license_url": "",
+      "panels": [
+        {
+          "file": "neuro291/PMC8813621-F3-0.jpg",
+          "label": "A · корональная FLAIR",
+          "note": "Левая лобная кора утолщена; граница серого и белого вещества размыта.",
+          "modality": "MRI",
+          "sha256": "31712e5ac6f1ee00c7103e07e758fb89f037b192389799ad78ca804b30b4b71c"
+        },
+        {
+          "file": "neuro291/PMC8813621-F3-1.jpg",
+          "label": "B · аксиальная FLAIR",
+          "note": "Левая лобная кора утолщена; граница серого и белого вещества размыта.",
+          "modality": "MRI",
+          "sha256": "ac95ede5923722026a7d02d9f758c489677bb42441a42fc74db321ab4bd78a3e"
+        },
+        {
+          "file": "neuro291/PMC8813621-F3-2.jpg",
+          "label": "C · корональная T1 IR",
+          "note": "Левая лобная кора утолщена; граница серого и белого вещества размыта.",
+          "modality": "MRI",
+          "sha256": "c34bac2485c5132f390b074c597ae0ec6cf30ff641e050dbf15a18716c39234e"
+        },
+        {
+          "file": "neuro291/PMC8813621-F3-3.jpg",
+          "label": "D · аксиальная T1",
+          "note": "Левая лобная кора утолщена; граница серого и белого вещества размыта.",
+          "modality": "MRI",
+          "sha256": "e150005833f5e2854f585ba5a561b895fc8ae8a30114ff3ef2ed18ebb3763f03"
+        }
+      ],
+      "id": "stage4-fcd-PMC8813621-F3",
+      "entity": "fcd",
+      "tags": {
+        "loc": [
+          "cortex"
+        ],
+        "cortex_shape": [
+          "thickblur"
+        ]
+      }
+    },
+    {
+      "title": "DNET · пациентка 20 лет",
+      "note": "Пузырчатое кортикальное образование слева в теменной доле; FLAIR-ободок; усиления нет.",
+      "trap": "МР-паттерн поддерживает DNET, но не заменяет верификацию.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8813621/",
+      "authors": "PMC8813621",
+      "license": "© 2022 Published by Scientific Scholar on behalf of Journal of Clinical Imaging ScienceThis is an open-access article distributed under the terms of the Creative Commons Attribution-Non Commercial-Share Alike 4.0 License, which allows others to remix, transform, and build upon the work non-commercially, as long as the author is credited and the new creations are licensed under the identical terms.",
+      "license_url": "",
+      "panels": [
+        {
+          "file": "neuro291/PMC8813621-F7-0.jpg",
+          "label": "A · аксиальная T2",
+          "note": "Пузырчатое кортикальное образование слева в теменной доле; FLAIR-ободок; усиления нет.",
+          "modality": "MRI",
+          "sha256": "19bea17f2c52642a10c2eeb7b0e53ab41d09de052bcd773f6574d9a47894e1fb"
+        },
+        {
+          "file": "neuro291/PMC8813621-F7-1.jpg",
+          "label": "B · аксиальная FLAIR",
+          "note": "Пузырчатое кортикальное образование слева в теменной доле; FLAIR-ободок; усиления нет.",
+          "modality": "MRI",
+          "sha256": "44c14a45a421942a6480927786fb5dcec558941d26d6b9ee92e3efdf30ed76db"
+        },
+        {
+          "file": "neuro291/PMC8813621-F7-2.jpg",
+          "label": "C · T1 после контраста",
+          "note": "Пузырчатое кортикальное образование слева в теменной доле; FLAIR-ободок; усиления нет.",
+          "modality": "MRI",
+          "sha256": "5de56e78f63d161faa37ef95c6157cbee7e2052ca8b62f7d50ed9c6a75389068"
+        }
+      ],
+      "id": "stage4-dnet-PMC8813621-F7",
+      "entity": "dnet",
+      "tags": {
+        "loc": [
+          "cortex"
+        ],
+        "cortex_shape": [
+          "bubbly"
+        ],
+        "enhance": [
+          "none"
+        ]
+      }
+    },
+    {
+      "title": "DNET — дизэмбриопластическая нейроэпителиальная опухоль",
+      "note": "",
+      "trap": "",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13525972/",
+      "authors": "Oshima Sonoko, Fushimi Yasutaka, Okuchi Sachi et al.",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "panels": [
+        {
+          "file": "neuro301/dnet-0.jpg",
+          "label": "A · аксиальная T1",
+          "note": "Кистоподобное образование правой медиальной височной области.",
+          "modality": "MRI",
+          "sha256": "96325177fe7f30a5409300c7e10fc46828bfa42bb8866606786c1acff460e32a"
+        },
+        {
+          "file": "neuro301/dnet-1.jpg",
+          "label": "B · аксиальная T2",
+          "note": "Отчётливый высокий сигнал, кортикальная/юкстакортикальная локализация.",
+          "modality": "MRI",
+          "sha256": "2aae4faad65d6b16f9ec671c81fb1081db2006cd715fd4224df1470f7fcc2e41"
+        },
+        {
+          "file": "neuro301/dnet-2.jpg",
+          "label": "C · DWI — диффузионно-взвешенное изображение",
+          "note": "Нет выраженного повышения DWI-сигнала. Без ADC на этой фигуре не рассчитывать рестрикцию.",
+          "modality": "MRI",
+          "sha256": "ac37d0be4c99856740948ed5ece34b0e045e142632850665f2eb54bdd81837d2"
+        },
+        {
+          "file": "neuro301/dnet-3.jpg",
+          "label": "D · аксиальная T1 после контраста",
+          "note": "В данном случае есть узловое усиление: отсутствие усиления не является обязательным критерием DNET.",
+          "modality": "MRI",
+          "sha256": "b8bea025fe6168898c80105016b028c8d04e2f6035acb95eae49fa4f74209ddb"
+        }
+      ],
+      "id": "stage4-dnet-dnet",
+      "entity": "dnet",
+      "tags": {
+        "loc": [
+          "cortex"
+        ],
+        "enhance": [
+          "node"
+        ]
+      }
+    }
+  ],
+  "files": [
+    {
+      "file": "infect287/abscess-gd.png",
+      "sha256": "0b311672a6dcbfda58bff7614c411a2ef40cb55ac7cfa5e2159856ec3e631a91",
+      "size": [
+        371,
+        440
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "infect287/tdl-gd.png",
+      "sha256": "67a35a3ba06778250e3b5e952f2e8cf8a27007a53a02ce3393c796b717e62a1b",
+      "size": [
+        333,
+        423
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "nav328/colloid2024.jpeg",
+      "sha256": "eb4414257b3778df033a02794e57f5bfc876184ef111741ddb8f3644ba9c90ea",
+      "size": [
+        1996,
+        405
+      ],
+      "reused_from_326": false
+    },
+    {
+      "file": "nav328/plexus2015.jpg",
+      "sha256": "6360f01d23cf62995f7ad56de8f1eef10bd44f87f1f69751b255629dfbea93a0",
+      "size": [
+        771,
+        387
+      ],
+      "reused_from_326": false
+    },
+    {
+      "file": "nav328/sega2024.jpeg",
+      "sha256": "1675862f8845290ccb112a4367cfb355efbddb6e5fccffca4849aa8b44692807",
+      "size": [
+        1733,
+        473
+      ],
+      "reused_from_326": false
+    },
+    {
+      "file": "neuro289/arach-ax.png",
+      "sha256": "285e84112369a6dd5d60b3a555f1722aef5c08dfb9caade42fad8e6502fafa75",
+      "size": [
+        180,
+        213
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro289/arach-cor.png",
+      "sha256": "e3709438cc839027c39706ecc229fa3453743db9026610c8574f42cb864b66bc",
+      "size": [
+        179,
+        213
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro289/arach-sag.png",
+      "sha256": "acbe766511cc18911b751e61370152256e1aa6c0ff637b8cf206957086358ce1",
+      "size": [
+        180,
+        213
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro289/colloid-t1.png",
+      "sha256": "fe67f6de1e76bd7afc3ac4b3c1021f992ed99b47ce541017368f3f17fb43b1da",
+      "size": [
+        386,
+        404
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro289/colloid-t2.png",
+      "sha256": "56637c81147eafcfb3d0ca3b21505b5ec41fa39171e95a86d1dd3d9f45b0a970",
+      "size": [
+        385,
+        404
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro289/epid-dwi.png",
+      "sha256": "fa08b6bf90e2442207cb7835a172b92b094ba11ef25f3856de170e92ac4dff52",
+      "size": [
+        385,
+        423
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro289/epid-flair.png",
+      "sha256": "131b182f7fdad5530dc383ae3dbf04c0f9e6450d34f0765f118401ce999ce92a",
+      "size": [
+        386,
+        423
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro290/met-1-01.png",
+      "sha256": "66e9006d2e738ffe68467af741f0a4a1823e126b8c73a34cf8c7867ef88e1131",
+      "size": [
+        230,
+        322
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro291/PMC10411771-f1-0.jpg",
+      "sha256": "dd2fa24f16d462f4a8fbdd6524bbafea98a36cf32d36a0c36b79fbc84f3839f7",
+      "size": [
+        176,
+        199
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro291/PMC10411771-f1-1.jpg",
+      "sha256": "931c15861d55c77c6bf3099c1fa5cdc1e9380dd19357982e02539df40897ea17",
+      "size": [
+        176,
+        199
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro291/PMC3948902-Fig10-0.jpg",
+      "sha256": "6319e54dc1f06a16f359341dc8770630c3b9adeb7f0dd22c289ff47299d3721b",
+      "size": [
+        307,
+        205
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro291/PMC3948902-Fig11-0.jpg",
+      "sha256": "a352a163006176aed0aa55f82a65cd36c602c3a40631b3008957e3299648284c",
+      "size": [
+        260,
+        323
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro291/PMC3948902-Fig20-0.jpg",
+      "sha256": "e32367ebe220c6f512ca26bb1b2903aaff91440f02c4f6b324d2add81467acc2",
+      "size": [
+        260,
+        251
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro300/gbm-0.jpg",
+      "sha256": "bcc5ed5c6354d167921712b44595cb7b1a3e2c2c5ebc136b76fbfb055a8ee851",
+      "size": [
+        108,
+        92
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro300/koos-1.jpg",
+      "sha256": "48c8dcebbd05042695a1b04241c1d2a12294ecca95da64c7d9a6e0c8e27655db",
+      "size": [
+        579,
+        352
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro300/pcnsl-0.jpg",
+      "sha256": "20254034405151ebcb19255060b323ab6a63a29b15e4f02c59a5275c40a86e10",
+      "size": [
+        486,
+        595
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro300/pcnsl-1.jpg",
+      "sha256": "874976b875fa7df96a3cf885e3ef3dc5186afd7ee2886530c619484d96f84587",
+      "size": [
+        487,
+        595
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro300/pcnsl-2.jpg",
+      "sha256": "1a1749e27c2d5495a58fb051c8071009d88cbbb8757281d1e61032c6c55c0f03",
+      "size": [
+        487,
+        595
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro301/ep-pfb-1.jpg",
+      "sha256": "44783460604d0b7bf395fa0db7eca214a450cdf43e4506010d7384ce87fe6d57",
+      "size": [
+        497,
+        496
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro301/ep-pfb-2.jpg",
+      "sha256": "046dad9f79778987d9468c6c7f5646a2f5e5f1bd9efa22b2c25243c548e22e03",
+      "size": [
+        496,
+        497
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro301/ep-pfb-3.jpg",
+      "sha256": "2c2ed846e042d18b0f3266b8f6cb329a1841a7c411d300cc5d14be61251b04fc",
+      "size": [
+        497,
+        497
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro301/ganglio-0.jpg",
+      "sha256": "5f78aec1126acbb113aa7de798b6b8e769eacc4535e8a840328e9069b74c8311",
+      "size": [
+        685,
+        685
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro301/ganglio-1.jpg",
+      "sha256": "75cc3a3f9b7c5d6c153e6799f274a9d08e26abdc0d43b98d94e3b8b88b8a72a2",
+      "size": [
+        686,
+        685
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro301/ganglio-2.jpg",
+      "sha256": "e3fb59c8316405e65c410f21495497d4b52e0eefaec935d508e87c2dc82f47a2",
+      "size": [
+        685,
+        685
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro301/hb-1.jpg",
+      "sha256": "0afa8d164321d4cda3dfcd50bb8d029d54d25899c4b8200af2306a2a56496f03",
+      "size": [
+        497,
+        496
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro301/hb-2.jpg",
+      "sha256": "40762921716c2b7b2efb4c35fe6594d6dd235dd16da7454d2e2cfb411b63ffe7",
+      "size": [
+        496,
+        497
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro301/hb-3.jpg",
+      "sha256": "dce95fe3fc501941c0e27b10dcca7dabea2570d5d1e68a3095d3516f87e66177",
+      "size": [
+        497,
+        497
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro301/pa-cerebellum-1.jpg",
+      "sha256": "425f4e42ebd5eb9d85a337c7c16531527cd11e8cb7eaf7c99151073f23fb376a",
+      "size": [
+        497,
+        496
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro301/pa-cerebellum-2.jpg",
+      "sha256": "d4c985db351b5aae6faf8a5d73efe3bba8b85df6c8b5c321c5ade1ea90a26e52",
+      "size": [
+        496,
+        497
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro301/pa-cerebellum-3.jpg",
+      "sha256": "7b16d13ce7bec4697793d3ba3ea97698b22c53f7ae1194d84206501ed333ab9a",
+      "size": [
+        497,
+        497
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro302/cn-1.jpg",
+      "sha256": "eae66e2e3ba77f3891db3f53097a4d0edc9417c2b7435d112cc6ef777507809b",
+      "size": [
+        375,
+        440
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro302/cn-2.jpg",
+      "sha256": "67105b06f11c88000797a712a399f4b093e23341df569ba00be439d201e49602",
+      "size": [
+        375,
+        449
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro302/cn-4.jpg",
+      "sha256": "5c82c5f69c7c37458e405b721aad6d8b1cb303df48bc5a830e007b761b957e26",
+      "size": [
+        250,
+        296
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro302/cn-5.jpg",
+      "sha256": "3f81ed391bdb583a192b178169401c6442c8d7fbafd5937bc8502d4dca4951a5",
+      "size": [
+        250,
+        296
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro304/subependymoma-0.jpg",
+      "sha256": "410db6fe48bfaa8a76aae0578aa42ba7087cab0e1c3be001e6b3cce5b95110e0",
+      "size": [
+        342,
+        329
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro304/subependymoma-2.jpg",
+      "sha256": "f73dae80adc92a40440fc4587a369b7a44ea8bed6b08d339c24a5232fd6e4709",
+      "size": [
+        342,
+        329
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro306-panels/pediatric-001a-0.jpg",
+      "sha256": "495180a602bc3db29c0867362c9fce7873b865d3fe69a1a53763eade7cc461db",
+      "size": [
+        1632,
+        1308
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro306-panels/pediatric-001a-1.jpg",
+      "sha256": "b8d5686674ddd9a2a58ce2b2a7f407134e9a535256819fdc922e0b678aa14711",
+      "size": [
+        1615,
+        1308
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro306-panels/pediatric-001a-2.jpg",
+      "sha256": "da17299e91c5fcd48d4b7895d280878eab370a29fe004ab823e2632b0a25aec6",
+      "size": [
+        1632,
+        1392
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro306-panels/pediatric-001a-3.jpg",
+      "sha256": "8c78a26711ec9d80f88960592dc5b6c7beefaf78ebff009d685ba6451ff20b55",
+      "size": [
+        1615,
+        1392
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro306-panels/pediatric-004a-0.jpg",
+      "sha256": "bcf541aec7d2e849cf175a48f19971a0a2fba73a792208d80ef06ef357aee1c7",
+      "size": [
+        1643,
+        1464
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro306-panels/pediatric-004a-1.jpg",
+      "sha256": "7180eb0afdd18ab0af5c535b73fc98c558247b22a26e62af0a9516bdbfffc628",
+      "size": [
+        1626,
+        1464
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro306-panels/pediatric-004b-0.jpg",
+      "sha256": "a370a39761c670bb09d530abfa9b7f238056b51aefad677b1970fb92ebf942a5",
+      "size": [
+        1657,
+        1490
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro306-panels/pediatric-006a-0.jpg",
+      "sha256": "f49fa8e03aa8eb003dea4168a393183f1099a5492fb0cca763bff8ec9b892079",
+      "size": [
+        1640,
+        1477
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro306-panels/pediatric-006a-1.jpg",
+      "sha256": "6b93f5a40e3813300da958674a1b61ea32e55a5521f106fe8e23eeafe9a0ea0d",
+      "size": [
+        1623,
+        1477
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro306-panels/pediatric-006b-0.jpg",
+      "sha256": "375060173db4461a094aabcc5cdbbcf618277be161f3ecdbb4c142d141d720c0",
+      "size": [
+        1621,
+        1460
+      ],
+      "reused_from_326": true
+    },
+    {
+      "file": "neuro306-panels/pediatric-006b-1.jpg",
+      "sha256": "14a93684a26855abf70aae9318dbd3730edf4308833e5cbc69d2d3e1edef7c1e",
+      "size": [
+        1605,
+        1460
+      ],
+      "reused_from_326": true
+    }
+  ],
+  "notes": [
+    "43 stage1 panels retained; six baseline panels added; twelve new panels from three unchanged original figures",
+    "2015 choroid plexus original CC BY-NC3.0; 2024 figures CC BY4.0",
+    "PDF images 2024 xref35/56 extracted unchanged; diagram panels excluded by viewport",
+    "2015 PDF raw image uses reversed decode; selected normal publisher-display JPEG instead, with no pixel inversion",
+    "SEGA panelC is labelled coronal according to visible anatomy, not erroneous axial source wording"
+  ],
+  "stage3": {
+    "new_profiles": 14,
+    "new_fields": 7,
+    "new_mr_panels": 14,
+    "new_published_cases": 4,
+    "unchanged_originals": true,
+    "display": "CSS viewports only; histology/spectroscopy excluded",
+    "pineal_pdf_xrefs": {
+      "pineocytoma2013.jpg": 27,
+      "germinoma2013.jpg": 82
+    },
+    "license_note": "Fang2013 narrative says attribution, XML license URI is BY-NC2.0; the stricter URI is retained."
+  },
+  "stage4": {
+    "new_profiles": 7,
+    "new_fields": 6,
+    "reconnected_existing_panels": 11,
+    "new_image_files": 0,
+    "independent_patient_count_not_claimed": true
+  }
+}

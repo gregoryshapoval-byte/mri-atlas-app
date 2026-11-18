@@ -1,0 +1,275 @@
+{
+  "neuro300/gbm-0.jpg": {
+    "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11214103.1/PMC11214103.1.pdf",
+    "figure": "Würtemberger и соавт., рис. 4 (нижний ряд, изображение из PDF)",
+    "license": "CC BY 4.0",
+    "source_sha256": "b166c1299c544e5dad7f731f0ee29a32c46835c9b767c24f50fe1ed31c01d3b5",
+    "crop": [
+      0,
+      349,
+      300,
+      640
+    ],
+    "old_pixels": [
+      108,
+      92
+    ],
+    "pixels": [
+      300,
+      291
+    ],
+    "sha256": "bcc5ed5c6354d167921712b44595cb7b1a3e2c2c5ebc136b76fbfb055a8ee851"
+  },
+  "neuro300/gbm-1.jpg": {
+    "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11214103.1/PMC11214103.1.pdf",
+    "figure": "Würtemberger и соавт., рис. 4 (нижний ряд, изображение из PDF)",
+    "license": "CC BY 4.0",
+    "source_sha256": "b166c1299c544e5dad7f731f0ee29a32c46835c9b767c24f50fe1ed31c01d3b5",
+    "crop": [
+      300,
+      349,
+      622,
+      640
+    ],
+    "old_pixels": [
+      108,
+      92
+    ],
+    "pixels": [
+      322,
+      291
+    ],
+    "sha256": "4d89804e6b3f6d1c8bcf34e6d2d3bfa00615949ebfa34e587c48f4746875dd79"
+  },
+  "neuro300/gbm-2.jpg": {
+    "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11214103.1/PMC11214103.1.pdf",
+    "figure": "Würtemberger и соавт., рис. 4 (нижний ряд, изображение из PDF)",
+    "license": "CC BY 4.0",
+    "source_sha256": "b166c1299c544e5dad7f731f0ee29a32c46835c9b767c24f50fe1ed31c01d3b5",
+    "crop": [
+      622,
+      349,
+      944,
+      640
+    ],
+    "old_pixels": [
+      109,
+      92
+    ],
+    "pixels": [
+      322,
+      291
+    ],
+    "sha256": "b4c128efafbca2bd484748b5fe064cee9fe1c913a7f6f9c1f94dc8bc0219e352"
+  },
+  "neuro300/gbm-3.jpg": {
+    "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11214103.1/PMC11214103.1.pdf",
+    "figure": "Würtemberger и соавт., рис. 4 (нижний ряд, изображение из PDF)",
+    "license": "CC BY 4.0",
+    "source_sha256": "b166c1299c544e5dad7f731f0ee29a32c46835c9b767c24f50fe1ed31c01d3b5",
+    "crop": [
+      944,
+      349,
+      1268,
+      640
+    ],
+    "old_pixels": [
+      108,
+      92
+    ],
+    "pixels": [
+      324,
+      291
+    ],
+    "sha256": "943a064eff09dc25a47a6633b8e64faaaba9a8cdce9f34845f2456f940b4c5f7"
+  },
+  "shoulder-followup-mri/posterior-reduced-b.png": {
+    "source": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11099582.1/PMC11099582.1.pdf",
+    "figure": "Paksoy и соавт., рис. 4B (изображение из PDF)",
+    "license": "CC BY-NC 4.0",
+    "source_sha256": "0434446a2505783c0c9330ef3aa3d223393016e7378edff5be0ad4e7f15724a7",
+    "crop": [
+      264,
+      0,
+      520,
+      302
+    ],
+    "old_pixels": [
+      128,
+      151
+    ],
+    "pixels": [
+      256,
+      302
+    ],
+    "sha256": "2dd86b6456637639438cd1c76be4dba0ae8e1806e0ed30683ebc926c76c19aaf"
+  },
+  "biceps-mri/10-1.jpg": {
+    "source": "https://www.cisejournal.org/upload/thumbnails/cise-2023-00458f5.gif",
+    "figure": "Boyle и MacLean, рис. 5A–C",
+    "license": "CC BY-NC 4.0",
+    "source_sha256": "23215e5edafc3e35ba8c2621a75455c2cf0afe4d0b0d3674ac9ab22d68994966",
+    "crop": [
+      21,
+      19,
+      610,
+      440
+    ],
+    "old_pixels": [
+      197,
+      142
+    ],
+    "pixels": [
+      589,
+      421
+    ],
+    "sha256": "c498474193915255f09352913e779245c9e1d4aaa54ff09abcf95315270a2b66"
+  },
+  "biceps-mri/10-2.jpg": {
+    "source": "https://www.cisejournal.org/upload/thumbnails/cise-2023-00458f5.gif",
+    "figure": "Boyle и MacLean, рис. 5A–C",
+    "license": "CC BY-NC 4.0",
+    "source_sha256": "23215e5edafc3e35ba8c2621a75455c2cf0afe4d0b0d3674ac9ab22d68994966",
+    "crop": [
+      630,
+      19,
+      1337,
+      440
+    ],
+    "old_pixels": [
+      239,
+      142
+    ],
+    "pixels": [
+      707,
+      421
+    ],
+    "sha256": "1fcc1114ac86dd2ea7f2722a88e2067d43de5aab47efd341ee12a2506ad5e26d"
+  },
+  "biceps-mri/10-3.jpg": {
+    "source": "https://www.cisejournal.org/upload/thumbnails/cise-2023-00458f5.gif",
+    "figure": "Boyle и MacLean, рис. 5A–C",
+    "license": "CC BY-NC 4.0",
+    "source_sha256": "23215e5edafc3e35ba8c2621a75455c2cf0afe4d0b0d3674ac9ab22d68994966",
+    "crop": [
+      1362,
+      19,
+      2100,
+      440
+    ],
+    "old_pixels": [
+      245,
+      142
+    ],
+    "pixels": [
+      738,
+      421
+    ],
+    "sha256": "bc42bd4c06fac2c0077326376cc8ba0c747d5a6238dc311185f7794c64da49a1"
+  },
+  "breast-mimics/adenosis-b.png": {
+    "source": "https://www.ejbc.kr/ArticleImage/0096JBC/jbc-18-187-g001-l.jpg",
+    "figure": "Gity и соавт., рис. 1B, C, E",
+    "license": "CC BY-NC 3.0",
+    "source_sha256": "0d95136cb7a385bf0682a4029283263b76fe8ab9376fe01e8e7e421863566aef",
+    "crop": [
+      326,
+      0,
+      645,
+      151
+    ],
+    "old_pixels": [
+      240,
+      114
+    ],
+    "pixels": [
+      319,
+      151
+    ],
+    "sha256": "d1d006da07c306ae7ca56be82960897bb5ec4d87c9e3b0e13c0fd1b3a0a4471c"
+  },
+  "breast-mimics/adenosis-c.png": {
+    "source": "https://www.ejbc.kr/ArticleImage/0096JBC/jbc-18-187-g001-l.jpg",
+    "figure": "Gity и соавт., рис. 1B, C, E",
+    "license": "CC BY-NC 3.0",
+    "source_sha256": "0d95136cb7a385bf0682a4029283263b76fe8ab9376fe01e8e7e421863566aef",
+    "crop": [
+      651,
+      0,
+      975,
+      151
+    ],
+    "old_pixels": [
+      244,
+      114
+    ],
+    "pixels": [
+      324,
+      151
+    ],
+    "sha256": "67bfb331fc761f324f559e6bed8b3e3025b887e6ba19b4a54149e009ad2f5e41"
+  },
+  "breast-mimics/adenosis-e.png": {
+    "source": "https://www.ejbc.kr/ArticleImage/0096JBC/jbc-18-187-g001-l.jpg",
+    "figure": "Gity и соавт., рис. 1B, C, E",
+    "license": "CC BY-NC 3.0",
+    "source_sha256": "0d95136cb7a385bf0682a4029283263b76fe8ab9376fe01e8e7e421863566aef",
+    "crop": [
+      326,
+      157,
+      645,
+      308
+    ],
+    "old_pixels": [
+      240,
+      114
+    ],
+    "pixels": [
+      319,
+      151
+    ],
+    "sha256": "670ecab077fa39a66f3a41df3c3ce6444609e2abab529d17f38c1da9b7715149"
+  },
+  "breast-staging/nodes-k5f.png": {
+    "source": "https://www.jksronline.org/ArticleImage/3016JKSR/jksr-87-473-g005-l.jpg",
+    "figure": "Kim, рис. 5E–F",
+    "license": "CC BY-NC 4.0",
+    "source_sha256": "dd77b44811dc25827d727e12fef8d41bd80f8c2c3897a23072b088730b872028",
+    "crop": [
+      686,
+      313,
+      971,
+      575
+    ],
+    "old_pixels": [
+      197,
+      181
+    ],
+    "pixels": [
+      285,
+      262
+    ],
+    "sha256": "58a8c1b62fe412e646f06c75c90a613deb376d7f199c9d9850669846c575b27e"
+  },
+  "breast-staging/posterior-k5e.png": {
+    "source": "https://www.jksronline.org/ArticleImage/3016JKSR/jksr-87-473-g005-l.jpg",
+    "figure": "Kim, рис. 5E–F",
+    "license": "CC BY-NC 4.0",
+    "source_sha256": "dd77b44811dc25827d727e12fef8d41bd80f8c2c3897a23072b088730b872028",
+    "crop": [
+      360,
+      313,
+      680,
+      577
+    ],
+    "old_pixels": [
+      220,
+      181
+    ],
+    "pixels": [
+      320,
+      264
+    ],
+    "sha256": "c6186f987b0e4c1ebb092c0d972d057b34f5f29cc543f9f626370fe929b788ac"
+  }
+}
