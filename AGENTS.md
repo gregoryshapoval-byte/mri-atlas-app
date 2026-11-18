@@ -1,4 +1,4 @@
-# Актуально: MRIAtlas 3.46 / 246
+# Актуально: MRIAtlas 3.47 / 247
 
 Сначала START-HERE.md. Текущий runtime — build/runtime-assets/ после tools/prepare_runtime.py; исходные правки — runtime-overrides/ и release-inputs/search-routes.json. База и все её хэши закреплены в release-inputs/current.json и release-inputs/344/manifest.json. Исторические app/src/main/assets, генераторы и materialize/import не использовать для замены актуального runtime. Не удалять atlas-3.44: это проверяемая сборочная зависимость. Текущие проверки: tests/current345.mjs, tests/dom-smart345.mjs, tests/browser-current345.mjs, tests/runtime-integrity345.py, tools/verify_current.py. Генерация/проверка версии и поиска работает с текущим build/runtime-assets, а не со старым деревом. Сборка и публикация — существующими ручными current workflows.
 
@@ -10,7 +10,7 @@
 
 # MRIAtlas — правила работы с актуальным проектом
 
-Историческое дерево app/src/main/assets соответствует 2.64. Актуальная версия 3.46/246 готовится только по START-HERE.md из закреплённого APK 3.44 и runtime-overrides; рабочая ветка main. Старое дерево не является входом сборки.
+Историческое дерево app/src/main/assets соответствует 2.64. Актуальная версия 3.47/247 готовится только по START-HERE.md из закреплённого APK 3.44 и runtime-overrides; рабочая ветка main. Старое дерево не является входом сборки.
 
 ## Сохранность данных
 

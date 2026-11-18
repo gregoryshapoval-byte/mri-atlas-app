@@ -11,7 +11,19 @@ try{
    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false,'overflow '+viewport.width+' '+query);
   }
   await page.goto(origin+'/assets/index.html');for(const q of ['PI-RR','pirr','пи рр']){await page.locator('#areaSearch').fill(q);assert.equal(await page.locator('.searchCard252 a').first().getAttribute('href'),'prostate-recurrence.html');}
-  assert.deepEqual(errors,[]);results.push({viewport,searchAndDeepLinks:true,noOverflow:true});await context.close();
+  await page.goto(origin+'/assets/nvc310.html');
+  const comparison=page.locator('#nvc-compare');
+  assert.equal(await comparison.locator('img:visible').count(),4);
+  await comparison.getByText('Сравнить в аксиальной и косой сагиттальной плоскостях').click();
+  assert.equal(await comparison.locator('img:visible').count(),8);
+  assert(await comparison.locator('img').evaluateAll(images=>images.every(image=>image.complete&&image.naturalWidth>0)));
+  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false,'NVC overflow '+viewport.width);
+  await comparison.getByRole('link',{name:'Три реконструкции одного случая'}).click();
+  await page.locator('#n306-case-v-indentation').waitFor();
+  await page.goto(origin+'/assets/nvc310.html');
+  await comparison.getByRole('link',{name:'Все три плоскости',exact:true}).last().click();
+  await page.locator('#n306-case-vii-deformity').waitFor();
+  assert.deepEqual(errors,[]);results.push({viewport,searchAndDeepLinks:true,nvcComparison:true,noOverflow:true});await context.close();
  }
  fs.writeFileSync(path.join(repo,'build/browser-current345.json'),JSON.stringify({pass:true,results},null,2));console.log('PASS browser current search and SMART targets at four viewport sizes.');
 }finally{await browser.close();}

@@ -38,19 +38,23 @@ def asset_name(name):
 def validate_assets(root=ASSETS):
     root = Path(root)
     expected = manifest()['assets']
+    additions = set(CONFIG.get('additions', []))
+    if additions & set(expected):
+        raise ValueError('Added assets already exist in the base')
+    expected_names = set(expected) | additions
     allowed = set(CONFIG['overrides'] + CONFIG['generated'])
     files = {p.relative_to(root).as_posix(): p for p in root.rglob('*') if p.is_file()}
-    if set(files) != set(expected):
-        raise ValueError('Runtime file set differs from 3.44: missing=%r added=%r' % (sorted(set(expected)-set(files)), sorted(set(files)-set(expected))))
+    if set(files) != expected_names:
+        raise ValueError('Runtime file set differs from 3.44: missing=%r added=%r' % (sorted(expected_names-set(files)), sorted(set(files)-expected_names)))
     changed = []
     for name, row in expected.items():
         if sha(files[name]) != row['sha256']:
             if name not in allowed: raise ValueError('Unexpected change to preserved asset: ' + name)
             changed.append(name)
-    for name in CONFIG['overrides']:
+    for name in set(CONFIG['overrides']) | additions:
         if files[name].read_bytes() != (ROOT / 'runtime-overrides' / name).read_bytes():
             raise ValueError('Source override differs from prepared runtime: ' + name)
-    return {'assets': len(files), 'changed_assets': sorted(changed), 'preserved_assets': len(files)-len(changed)}
+    return {'assets': len(files), 'changed_assets': sorted(changed), 'added_assets': sorted(additions), 'preserved_assets': len(expected)-len(changed)}
 
 if __name__ == '__main__':
     import argparse

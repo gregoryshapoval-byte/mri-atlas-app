@@ -1,7 +1,7 @@
-# MRIAtlas 3.46 — актуальная основа проекта
+# MRIAtlas 3.47 — актуальная основа проекта
 
-Версия проекта: **3.46 / 246**, package `ru.grigory.shoulderatlas.restored`.
-В 3.46 обновлены 13 МР-панелей из пяти исходных публикаций. Для каждой панели размеры, координаты кадрирования, источник и контрольные суммы перечислены в [реестре изображений](review/image-quality-3.46.json). Поиск SMART/RIFIL/HOPE и PI-RR из 3.45 сохранён.
+Версия проекта: **3.47 / 247**, package `ru.grigory.shoulderatlas.restored`.
+В 3.47 в модуле вазоневральных конфликтов добавлено сравнение контакта и компрессии V и VII нервов на реальных МР-снимках. Сохранены 13 заменённых панелей из 3.46.
 
 ## Единственная рабочая основа
 
@@ -25,7 +25,7 @@ python3 tools/verify_current.py
 Если база уже скачана, задайте `ATLAS_BASE_APK=/absolute/path/MRIAtlas-3.44.apk`.
 Подготовленные `build/runtime-assets/` — производный результат. Для постоянной правки скопируйте нужный текущий файл в runtime-overrides, внесите изменение и явно зарегистрируйте его в current.json. Исторические генераторы/materialize/import поверх актуального runtime не запускать. Поиск генерирует текущая версия `tools/generate_search252.mjs`, сохраняющая все назначения 3.44; исторический рекурсивный генератор не используется.
 
-Подпись: `python3 tools/restore_signing_key.py`, затем `APKSIGNER_JAR=/absolute/path/apksigner.jar bash build-apk.sh`. Прежний сертификат `cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe`, подписи v2/v3. Новый ключ не создавать. Выход: `build/MRIAtlas-3.46.apk`.
+Подпись: `python3 tools/restore_signing_key.py`, затем `APKSIGNER_JAR=/absolute/path/apksigner.jar bash build-apk.sh`. Прежний сертификат `cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe`, подписи v2/v3. Новый ключ не создавать. Выход: `build/MRIAtlas-3.47.apk`.
 
 ## Проверка и публикация
 
@@ -33,7 +33,7 @@ python3 tools/verify_current.py
 - Workflow **Publish current signed MRIAtlas** — ручная проверка, подпись прежним ключом, публикация только APK и обратное скачивание со сравнением.
 - Зелёный **Source anatomy import environment** подтверждает только свои шаги импорта/зависимостей, а не сборку текущего APK.
 - Результаты текущего запуска: workflow summary/artifact; локально `build/current-verification.json` и `build/browser-current345.json`.
-- Цель релиза: https://github.com/gregoryshapoval-byte/mri-atlas-app/releases/tag/atlas-3.46 . Факт публикации и совпадение скачанного APK подтверждаются только успешным Publish workflow.
+- Цель релиза: https://github.com/gregoryshapoval-byte/mri-atlas-app/releases/tag/atlas-3.47 . Факт публикации и совпадение скачанного APK подтверждаются только успешным Publish workflow.
 
 Полноценная проверка физического Android и независимая клиническая валидация не выполнены. Сохраняется очередь клинических улучшений из ревизии 18.11.2026; пункты DWI/ADC, Hepple IIB и семь геометрий Ramp не закрываются этим выпуском.
 

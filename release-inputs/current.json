@@ -1,6 +1,6 @@
 {
-  "version": "3.46",
-  "versionCode": 246,
+  "version": "3.47",
+  "versionCode": 247,
   "package": "ru.grigory.shoulderatlas.restored",
   "base": {
     "version": "3.44",
@@ -32,11 +32,15 @@
     "perianal-cases.html",
     "perianal-report.js",
     "search252-core.js",
-    "shoulder-followup-mri/posterior-reduced-b.png"
+    "shoulder-followup-mri/posterior-reduced-b.png",
+    "nvc310.html"
   ],
   "generated": [
     "app-version-data.js",
     "search252-data.js",
     "search252-catalog.js"
+  ],
+  "additions": [
+    "nvc310/v-contact-fig1.png"
   ]
 }

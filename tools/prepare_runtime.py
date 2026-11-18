@@ -7,7 +7,8 @@ def prepare(base=None):
     apk = base_apk(base)
     baseline = manifest()['assets']
     actual_overrides = {p.relative_to(ROOT/'runtime-overrides').as_posix() for p in (ROOT/'runtime-overrides').rglob('*') if p.is_file()}
-    if actual_overrides != set(CONFIG['overrides']): raise ValueError('Override files must be explicitly registered')
+    registered = set(CONFIG['overrides']) | set(CONFIG.get('additions', []))
+    if actual_overrides != registered: raise ValueError('Override files must be explicitly registered')
     ASSETS.parent.mkdir(parents=True, exist_ok=True)
     staging = Path(tempfile.mkdtemp(prefix='runtime-staging-', dir=ASSETS.parent))
     try:
@@ -18,8 +19,10 @@ def prepare(base=None):
                 raw=z.read('assets/'+asset_name(name))
                 if len(raw)!=row['bytes'] or hashlib.sha256(raw).hexdigest()!=row['sha256']: raise ValueError('Base asset mismatch: '+name)
                 out=staging/name;out.parent.mkdir(parents=True,exist_ok=True);out.write_bytes(raw)
-        for name in CONFIG['overrides']:
-            shutil.copyfile(ROOT/'runtime-overrides'/name,staging/name)
+        for name in registered:
+            destination = staging / asset_name(name)
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(ROOT/'runtime-overrides'/name, destination)
         subprocess.run(['python3', str(ROOT/'tools/release_metadata.py'), '--root', str(staging)],check=True,cwd=ROOT)
         subprocess.run(['node', str(ROOT/'tools/generate_search252.mjs'), '--root', str(staging), '--base',str(apk)],check=True,cwd=ROOT)
         report=validate_assets(staging)

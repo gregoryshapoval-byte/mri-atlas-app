@@ -24,6 +24,8 @@ def main():
                 pad=(-(target.fp.tell()+30+len(entry.filename.encode('utf8'))))%4
                 if pad:entry.extra=struct.pack('<HH',0xd935,pad)+b'\0'*pad
             target.writestr(entry,raw)
+        for name in sorted(CONFIG.get('additions', [])):
+            target.write(ASSETS / name, f'assets/{name}', compress_type=zipfile.ZIP_DEFLATED)
     if a.unsigned:verify(output);return
     signer=Path(os.environ['APKSIGNER_JAR']).resolve();key=Path(os.environ.get('KEYSTORE_FILE',ROOT.parent/'atlas-signing/atlas.keystore')).resolve()
     cert=subprocess.check_output(['keytool','-exportcert','-keystore',str(key),'-storepass','android','-alias','atlas'],stderr=subprocess.DEVNULL)

@@ -14,7 +14,7 @@ def verify(apk=None, signer=None):
             if z.testzip() is not None:raise ValueError('Corrupt APK')
             if len(z.namelist())!=len(set(z.namelist())):raise ValueError('Duplicate ZIP entries')
             assets={n[7:] for n in z.namelist() if n.startswith('assets/') and not n.endswith('/')}
-            if assets!=set(baseline['assets']):raise ValueError('APK lost or added an asset')
+            if assets != set(baseline['assets']) | set(CONFIG.get('additions', [])):raise ValueError('APK lost or added an asset')
             for name in assets:
                 if z.read('assets/'+name)!=(ASSETS/name).read_bytes():raise ValueError('APK asset differs: '+name)
             extra={n for n in z.namelist() if not n.endswith('/') and not n.startswith('assets/')}-set(baseline['native'])
