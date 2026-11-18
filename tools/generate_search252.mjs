@@ -1,34 +1,27 @@
-// Build the offline index from the shipped clinical content, never patient data.
-import fs from 'node:fs';import path from 'node:path';import {pathToFileURL} from 'node:url';
-import {regions} from '../app/src/main/assets/anatomy-regions.js';import {reportRoutes} from '../app/src/main/assets/report251-catalog.js';
-const root=path.resolve('app/src/main/assets'),entries=new Map(),cache=new Map(),moduleCache=new Map(),warnings=[];
-const clean=s=>String(s).replace(/<svg[\s\S]*?<\/svg>/gi,' ').replace(/<[^>]+>/g,' ').replace(/&(?:nbsp|amp|lt|gt|quot);/g,' ').replace(/\s+/g,' ').trim();
-function flatten(v,key=''){if(/^(?:sources?|figures?|files?|images?|layout|panels|box|path|url|license|series|frames|legend)$/i.test(key))return '';if(typeof v==='string')return /^(?:https?:|data:)|<svg/i.test(v)?'':clean(v);if(!v||typeof v!=='object')return '';return Object.entries(v).map(([k,x])=>flatten(x,k)).join(' ');}
-function add(url,title,kind,text,area=''){if(!title)return;const id=url;const old=entries.get(id);if(old){if(area&&!old.area.includes(area))old.area+=' · '+area;old.text=clean(old.text+' '+text);return;}entries.set(id,{id,url,title:clean(title),kind,area,text:clean(text)});}
-function dependencies(name,seen=new Set()){if(seen.has(name))return [];seen.add(name);if(name==='panel-guides256-data.js'||name==='essence260-data.js')return [name];if(!cache.has(name))cache.set(name,fs.existsSync(path.join(root,name))?fs.readFileSync(path.join(root,name),'utf8'):'');const s=cache.get(name),out=[name];for(const m of s.matchAll(/(?:from\s*|import\s*)['"]\.\/([^'"\n]+\.js)['"]/g))out.push(...dependencies(m[1],seen));return out;}
-async function content(name){if(!moduleCache.has(name)){try{moduleCache.set(name,await import(pathToFileURL(path.join(root,name))));}catch(e){warnings.push(name+': '+e.message);moduleCache.set(name,null);}}return moduleCache.get(name);}
-const areas=new Map();for(const r of regions){add('region.html?area='+r.id,r.name,'Область',r.description,r.name);for(const i of r.items){const url=i.url.split('?')[0]+(i.contentKind==='mri'||i.contentKind==='model'?i.url.includes('?')?'?'+i.url.split('?')[1]:'':'');add(url,i.title,['mri','ct'].includes(i.contentKind)?'Анатомический атлас':i.contentKind==='model'?'Модель':'Модуль',i.description,r.name);areas.set(i.url.split('?')[0],r.name);}}
-for(const name of reportRoutes){const html=fs.readFileSync(path.join(root,name),'utf8'),title=clean((html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)||html.match(/<title>([\s\S]*?)<\/title>/i)||[])[1]||name).replace(/\s*·\s*MRI\s*Atlas.*$/i,'');const scripts=[...html.matchAll(/<script[^>]+src=['"]([^'"]+\.js)['"]/g)].map(m=>m[1]),deps=[...new Set(scripts.flatMap(s=>dependencies(s)))].filter(n=>!n.startsWith('search252')&&!n.startsWith('personal252'));
- const texts=[clean(html.replace(/<script[\s\S]*?<\/script>/gi,' '))];for(const dep of deps){if(dep==='protocol257-data.js')continue;if(!/(?:-data\.js|\d+-topics\.js|orads-cases\.js)$/.test(dep))continue;const exp=await content(dep);if(!exp)continue;let data=exp.data||exp;if(exp.guides)data=exp.guides[name.replace('.html','')]||{};if(exp.essence)data=exp.essence[name.replace('.html','')]||{};const key=(html.match(/data-(?:clinical|neck-module|clinical-module)=["']([^"']+)["']/)||[])[1];if(exp.modules&&key&&exp.modules[key])data=exp.modules[key];texts.push(flatten(data));
- const hasFeature=/data-feature=/.test(html)||deps.some(d=>(cache.get(d)||'').includes('dataset.feature'));
- if(hasFeature&&!exp.guides){for(const group of ['features','patterns','danger','mimics','assessment'])for(const f of data[group]||[]){if(!f.id||!(f.title||f.label))continue;const tab=html.includes('data-tab="'+group+'"')?group:'features';const params=new URLSearchParams({focus252:f.id,tab252:tab});add(name+'?'+params,(f.title||f.label),'Паттерн',flatten(f)+' '+title,areas.get(name)||'');}}
- if(data.patterns&&html.includes('data-clinical=')){data.patterns.forEach((p,i)=>add(name+'?pattern252='+i,p.label,'Паттерн',flatten(p)+' '+title,areas.get(name)||''));}
- }add(name,title,'Модуль',texts.join(' '),areas.get(name)||'');}
-// Topics and galleries have explicit stable destinations, so results open the actual content.
-const topics=await content('oncology247-topics.js');for(const [id,t]of Object.entries(topics?.topics||{}))add('brain-oncology247.html?topic='+id,t.title,'Тема',flatten(t),'Головной мозг');
-const compare256=await content('review256-data.js');for(const [id,g]of Object.entries(compare256?.guides||{}))g.comparisons.forEach((c,i)=>add(id+'.html?compare256='+i,c.title,'Тема',flatten(c),areas.get(id+'.html')||''));
-const new255=await content('clinical255-data.js');for(const [id,m]of Object.entries(new255?.modules||{}))for(const f of m.features)add(id+'.html?focus255='+f.id,f.title,'Паттерн',flatten(f)+' '+m.title,m.area);
-const new254=await content('clinical254-data.js');for(const [id,m]of Object.entries(new254?.modules||{}))for(const f of m.features)add(id+'.html?focus254='+f.id,f.title,'Паттерн',flatten(f)+' '+m.title,m.area);
-const hn=await content('head-neck251-data.js');for(const [id,m]of Object.entries(hn?.modules||{}))for(const f of m.features)add(id+'.html?neckFeature252='+f.id,f.title,'Паттерн',flatten(f),'Лицо и шея');
-for(const [dataFile,page,tab,exportName]of [['liver-cases-data.js','liver-lesions.html','cases','cases'],['rectal-cases-data.js','rectal-cancer.html','cases','cases'],['endometriosis-cases-data.js','endometriosis.html','cases','cases'],['perianal-cases-data.js','perianal-cases.html','','cases'],['oncology247-cases.js','brain-tumor-cases.html','','cases'],['spine246-cases.js','spinal-cord.html','cases','cordCases'],['spine246-cases.js','spinal-infection.html','cases','infectionCases']]){const exp=await content(dataFile);for(const c of exp?.[exportName]||[]){const params=new URLSearchParams({case252:c.id});if(tab)params.set('tab252',tab);add(page+'?'+params,c.title,'Клинический пример',flatten(c),areas.get(page)||'');}}
-const orads=await content('orads-cases.js');for(const [score,d]of Object.entries(orads?.categoryCases||{}))for(const [kind,title,when,comment]of d.cases)add('orads-mri.html?cat252='+score+'&oradsCase252='+kind,title,'Учебная схема',when+' '+comment+' O-RADS MRI '+score,'Малый таз');
-add('sequence-tuning.html','Настройка последовательностей','Модуль',clean(fs.readFileSync(path.join(root,'sequence-tuning.html'),'utf8').replace(/<script[\s\S]*?<\/script>/gi,'')),'Практика сканирования');
-// Recovered 2.61–2.62 destinations: build from the shipped modules.
-const pelvic261=await content('pelvic261-data.js');for(const[id,m]of Object.entries(pelvic261?.modules||{}))for(const f of m.features)add(id+'.html?focus261='+f.id,f.title,'Паттерн',flatten(f)+' '+m.title,m.area);
-const peritoneum262=await content('peritoneum262-data.js');for(const level of peritoneum262?.levels||[])add('peritoneum-spaces.html?level262='+level.id,level.title,'Учебная схема',flatten(level)+' '+flatten((peritoneum262.spaces||[]).filter(s=>level.spaces.includes(s.id))),'Брюшная полость · Малый таз');
-const knee264=await content('knee-tendons264-data.js');for(const t of knee264?.kneeTendons||[])add('knee-mri.html?tendon264='+t.id,t.title,'Анатомический ориентир',flatten(t),'Коленный сустав');
-const list=[...entries.values()];for(const e of list)if(!fs.existsSync(path.join(root,e.url.split('?')[0])))throw Error('Missing search route '+e.url);
-const data='// Generated by tools/generate_search252.mjs; no patient data.\nexport const searchEntries='+JSON.stringify(list,null,2)+';\n';const catalog='// Stable local destinations for bookmarks and recent pages.\nexport const catalog='+JSON.stringify(list.map(({text,...e})=>e),null,2)+';\n';
-if(process.argv.includes('--check')){if(fs.readFileSync(path.join(root,'search252-data.js'),'utf8')!==data||fs.readFileSync(path.join(root,'search252-catalog.js'),'utf8')!==catalog)throw Error('Search index stale: run tools/generate_search252.mjs');}else{fs.writeFileSync(path.join(root,'search252-data.js'),data);fs.writeFileSync(path.join(root,'search252-catalog.js'),catalog);}
-console.log(JSON.stringify({entries:list.length,kinds:Object.fromEntries([...new Set(list.map(e=>e.kind))].map(k=>[k,list.filter(e=>e.kind===k).length])),bytes:Buffer.byteLength(data),warnings}));if(warnings.length)process.exitCode=1;
-
+// Preserve every published 3.44 destination; apply explicit, reviewable additions.
+// Never run historical recursive data flattening over the recovered runtime.
+import fs from 'node:fs';import path from 'node:path';import {execFileSync} from 'node:child_process';import {fileURLToPath} from 'node:url';
+const repo=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
+const option=(key,fallback)=>process.argv.includes(key)?process.argv[process.argv.indexOf(key)+1]:fallback;
+const root=path.resolve(option('--root',path.join(repo,'build/runtime-assets'))),base=option('--base',process.env.ATLAS_BASE_APK);
+const args=[path.join(repo,'tools/runtime_current.py'),'--read-asset','search252-data.js'];if(base)args.push('--base',base);
+const original=execFileSync('python3',args,{maxBuffer:16*1024*1024,encoding:'utf8'});
+if(!/^export const searchEntries\s*=/.test(original))throw Error('Unexpected pinned index format');
+const list=JSON.parse(original.replace(/^export const searchEntries\s*=/,'').trim().replace(/;$/,''));
+const routes=JSON.parse(fs.readFileSync(path.join(repo,'release-inputs/search-routes.json'),'utf8'));
+for(const row of routes.existing){const e=list.find(e=>e.url===row.url);if(!e)throw Error('Missing existing destination '+row.url);e.aliases=row.aliases;}
+const clean=s=>s.replace(/<script\b[\s\S]*?<\/script>/gi,' ').replace(/<style\b[\s\S]*?<\/style>/gi,' ').replace(/<[^>]+>/g,' ').replace(/&(?:nbsp|amp|lt|gt|quot);/g,' ').replace(/\s+/g,' ').trim();
+for(const row of routes.additions){
+ const html=fs.readFileSync(path.join(root,row.source),'utf8');const marker='id="'+row.sourceAnchor+'"';const start=html.indexOf(marker),end=html.indexOf('</details>',start);
+ if(start<0||end<start)throw Error('Missing source block '+row.sourceAnchor);
+ const {source,sourceAnchor,...fields}=row;list.push({id:row.url,...fields,text:clean(html.slice(start+marker.length+1,end))});
+}
+const ids=new Set();for(const e of list){if(ids.has(e.id))throw Error('Duplicate search id '+e.id);ids.add(e.id);const file=e.url.split(/[?#]/)[0];if(!fs.existsSync(path.join(root,file)))throw Error('Missing route '+e.url);}
+const data='// Generated from pinned APK 3.44 and release-inputs/search-routes.json.\nexport const searchEntries='+JSON.stringify(list,null,2)+';\n';
+const catalog='// Stable local destinations for bookmarks and recent pages.\nexport const catalog='+JSON.stringify(list.map(({text,...e})=>e),null,2)+';\n';
+for(const [name,text] of [['search252-data.js',data],['search252-catalog.js',catalog]]){
+ const file=path.join(root,name);
+ if(process.argv.includes('--check')){if(fs.readFileSync(file,'utf8')!==text)throw Error('Stale search index '+name);}
+ else fs.writeFileSync(file,text);
+}
+console.log(JSON.stringify({entries:list.length,preservedPublishedEntries:list.length-routes.additions.length,added:routes.additions.length}));

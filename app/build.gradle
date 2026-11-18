@@ -6,9 +6,17 @@ android {
   applicationId 'ru.grigory.shoulderatlas.restored'
   minSdk 26
   targetSdk 35
-  versionCode 164
-  versionName '2.64'
+  versionCode 245
+  versionName '3.45'
  }
+ sourceSets { main { assets.srcDirs = [rootProject.file('build/runtime-assets')] } }
  compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
 }
 
+
+// The historical app/src/main/assets tree is not a release input.
+tasks.register('prepareCurrentRuntime', Exec) {
+ workingDir rootProject.projectDir
+ commandLine 'python3', 'tools/prepare_runtime.py'
+}
+tasks.named('preBuild').configure { dependsOn 'prepareCurrentRuntime' }

@@ -1,3 +1,9 @@
+# Актуальные входы сборки 3.45
+
+В main сохраняются runtime-overrides, release-inputs/current.json, release-inputs/search-routes.json, манифест закреплённой базы и инструменты/проверки. build/runtime-assets — производный результат; старое app/src/main/assets не обновлять историческими генераторами. Не загружать повторно неизменённые снимки. APK — только в Releases. Архивы базы и ключа сохранять. Версия — app/build.gradle, проверяемая против current.json. Оба current workflows запускаются вручную. Подробности — START-HERE.md.
+
+## Порядок сохранения
+
 # Сохранение MRIAtlas без повторной загрузки проекта
 
 Текущее подтверждённое состояние: START-HERE.md. Версию брать из app/build.gradle, а не из старого описания сборки.

@@ -1,0 +1,8 @@
+{
+  "existing": [{"url":"prostate-recurrence.html","aliases":["PI-RR","pirr","пи рр"]}],
+  "additions": [
+    {"url":"perianal-cases.html#smart2024","title":"SMART 2024 · структурированное описание перианальных свищей","kind":"Тема","area":"Малый таз","aliases":["SMART","смарт","SMART 2024","смарт 2024","шаблон SMART"],"source":"perianal-cases.html","sourceAnchor":"smart2024"},
+    {"url":"perianal-cases.html#smart-rifil","title":"RIFIL · ответвление у свода седалищно-анальной ямки","kind":"Тема","area":"Малый таз","aliases":["RIFIL","рифил"],"source":"perianal-cases.html","sourceAnchor":"smart2024"},
+    {"url":"perianal-cases.html#smart-hope","title":"HOPE · высота пересечения наружного анального сфинктера","kind":"Тема","area":"Малый таз","aliases":["HOPE","хоуп","высота пересечения наружного сфинктера"],"source":"perianal-cases.html","sourceAnchor":"smart2024"}
+  ]
+}

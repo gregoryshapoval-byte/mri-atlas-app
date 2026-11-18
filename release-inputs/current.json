@@ -1,0 +1,16 @@
+{
+  "version": "3.45",
+  "versionCode": 245,
+  "package": "ru.grigory.shoulderatlas.restored",
+  "base": {
+    "version": "3.44",
+    "versionCode": 244,
+    "url": "https://github.com/gregoryshapoval-byte/mri-atlas-app/releases/download/atlas-3.44/MRIAtlas-3.44.apk",
+    "sha256": "1a36bd546a34212c77c700a63b2a3c15a330fcc89a28dd92baa9e34d9759fa6b",
+    "bytes": 543197400,
+    "manifest": "release-inputs/344/manifest.json"
+  },
+  "certificate_sha256": "cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe",
+  "overrides": ["search252-core.js", "perianal-report.js", "perianal-cases.html"],
+  "generated": ["app-version-data.js", "search252-data.js", "search252-catalog.js"]
+}

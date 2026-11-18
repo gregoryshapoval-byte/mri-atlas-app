@@ -1,3 +1,9 @@
+# MRIAtlas 3.45
+
+Актуальная точка входа — [START-HERE.md](START-HERE.md). Версия проекта 3.45/245. Полный runtime воспроизводится из закреплённого APK 3.44 и проверяемых runtime-overrides; старое app/src/main/assets 2.64 исключено из сборки. Подготовка: `python3 tools/prepare_runtime.py`. Сборка: `bash build-apk.sh` с прежним ключом. Текущие workflow — Verify current MRIAtlas APK и Publish current signed MRIAtlas, оба ручные.
+
+## Историческое описание
+
 # MRIAtlas 2.44
 
 Личный офлайн-атлас МРТ и КТ для Android 8.0+. Актуальный исходный код — ветка `main`, versionCode 144.
