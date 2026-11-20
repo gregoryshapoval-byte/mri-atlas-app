@@ -1,12 +1,12 @@
-"""Prepare current runtime atomically from verified 3.44 plus reviewed overrides."""
+"""Prepare current runtime atomically from the verified release plus reviewed overrides."""
 import argparse, hashlib, json, shutil, subprocess, tempfile, zipfile
 from pathlib import Path
-from runtime_current import ROOT, CONFIG, ASSETS, base_apk, manifest, asset_name, validate_assets
+from runtime_current import ROOT, CONFIG, ASSETS, OVERRIDES, base_apk, manifest, asset_name, validate_assets
 
 def prepare(base=None):
     apk = base_apk(base)
-    baseline = manifest()['assets']
-    actual_overrides = {p.relative_to(ROOT/'runtime-overrides').as_posix() for p in (ROOT/'runtime-overrides').rglob('*') if p.is_file()}
+    baseline = manifest(apk)['assets']
+    actual_overrides = {p.relative_to(OVERRIDES).as_posix() for p in OVERRIDES.rglob('*') if p.is_file()}
     registered = set(CONFIG['overrides']) | set(CONFIG.get('additions', []))
     if actual_overrides != registered: raise ValueError('Override files must be explicitly registered')
     ASSETS.parent.mkdir(parents=True, exist_ok=True)
@@ -22,10 +22,10 @@ def prepare(base=None):
         for name in registered:
             destination = staging / asset_name(name)
             destination.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(ROOT/'runtime-overrides'/name, destination)
+            shutil.copyfile(OVERRIDES/name, destination)
         subprocess.run(['python3', str(ROOT/'tools/release_metadata.py'), '--root', str(staging)],check=True,cwd=ROOT)
         subprocess.run(['node', str(ROOT/'tools/generate_search252.mjs'), '--root', str(staging), '--base',str(apk)],check=True,cwd=ROOT)
-        report=validate_assets(staging)
+        report=validate_assets(staging, apk)
         # Only derived build output is replaced; sources and historical assets are never touched.
         previous=ASSETS.with_name('runtime-previous')
         if previous.exists(): shutil.rmtree(previous)
@@ -42,5 +42,5 @@ def prepare(base=None):
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser();parser.add_argument('--base');parser.add_argument('--check',action='store_true');args=parser.parse_args()
-    if args.check: print(json.dumps(validate_assets(),ensure_ascii=False))
+    if args.check: print(json.dumps(validate_assets(base=args.base),ensure_ascii=False))
     else: prepare(args.base)

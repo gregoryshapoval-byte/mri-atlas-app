@@ -24,25 +24,28 @@ try{
   await comparison.getByRole('link',{name:'Все три плоскости',exact:true}).last().click();
   await page.locator('#n306-case-vii-deformity').waitFor();
   await page.goto(origin+'/assets/brain-oncology247.html');
-  const diffusionButton=page.getByRole('button',{name:'Сравнить DWI и ADC на снимках'});
+  const diffusionButton=page.getByRole('button',{name:'Яркий очаг на DWI'});
   await diffusionButton.click();
   const diffusion=page.getByRole('dialog',{name:'DWI и ADC на реальных снимках'});
   await diffusion.waitFor();
-  assert.equal(await diffusion.locator('[data-case-id]').count(),5);
-  const ids=await diffusion.locator('[data-case-id]').evaluateAll(cards=>cards.map(card=>card.dataset.caseId));
-  assert.equal(new Set(ids).size,5);
+  const cards=diffusion.locator('[data-case-id]');
+  assert.equal(await cards.count(),19);
+  const ids=await cards.evaluateAll(items=>items.map(card=>card.dataset.caseId));
+  assert.equal(new Set(ids).size,19);
+  assert.equal(await diffusion.locator('[data-adc-answer=""]').getAttribute('aria-pressed'),'true');
   const pairs=diffusion.locator('.diffusion-pair327');
   for(const pair of await pairs.all()){
    assert.equal(await pair.locator('figure').count(),2);
    assert.match(await pair.locator('figcaption').first().textContent(),/DWI/);
-   assert.match(await pair.locator('figcaption').last().textContent(),/ADC/);
+   assert.match(await pair.locator('figcaption').last().textContent(),/ADC|ИКД/);
   }
   await diffusion.locator('img').evaluateAll(images=>Promise.all(images.map(image=>image.decode())));
   assert.equal(await diffusion.evaluate(dialog=>dialog.scrollWidth>dialog.clientWidth+1),false,'DWI/ADC dialog overflow '+viewport.width);
-  await diffusion.locator('[data-case-id="PMC12186845-case1"] button').last().click();
+  const abscessPair=cards.filter({hasText:'Абсцесс · жидкостный центр'}).locator('.diffusion-pair327');
+  await abscessPair.getByRole('button',{name:/ADC|ИКД/}).click();
   const zoom=page.locator('#zoom327');
   await zoom.waitFor();
-  assert.match(await zoom.locator('h2').textContent(),/ADC/);
+  assert.match(await zoom.locator('h2').textContent(),/ADC|ИКД/);
   await zoom.getByRole('button',{name:'Закрыть ×'}).click();
   await zoom.waitFor({state:'hidden'});
   await diffusion.getByRole('button',{name:'Закрыть ×'}).click();

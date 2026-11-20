@@ -1,51 +1,28 @@
 {
-  "version": "3.48",
-  "versionCode": 248,
+  "version": "3.57",
+  "versionCode": 257,
   "package": "ru.grigory.shoulderatlas.restored",
   "base": {
-    "version": "3.44",
-    "versionCode": 244,
-    "url": "https://github.com/gregoryshapoval-byte/mri-atlas-app/releases/download/atlas-3.44/MRIAtlas-3.44.apk",
-    "sha256": "1a36bd546a34212c77c700a63b2a3c15a330fcc89a28dd92baa9e34d9759fa6b",
-    "bytes": 543197400,
-    "manifest": "release-inputs/344/manifest.json"
+    "version": "3.57",
+    "versionCode": 257,
+    "url": "https://github.com/gregoryshapoval-byte/mri-atlas-app/releases/download/atlas-3.57/MRIAtlas-3.57.apk",
+    "sha256": "688b43b37105e64ee6cd04ea63b83f8f83dd8fecfb564a0aba9cd7892b75de37",
+    "bytes": 556647208
   },
   "certificate_sha256": "cb7d43e1eb8ff4c1eee663e918b5413b70fb9d6f8221790075f83c7e153624fe",
-  "overrides": [
-    "biceps-mri/10-1.jpg",
-    "biceps-mri/10-2.jpg",
-    "biceps-mri/10-3.jpg",
-    "brain-oncology247.html",
-    "breast-mimics/adenosis-b.png",
-    "breast-mimics/adenosis-c.png",
-    "breast-mimics/adenosis-e.png",
-    "breast-mimics/panels.json",
-    "breast-staging/nodes-k5f.png",
-    "breast-staging/panels.json",
-    "breast-staging/posterior-k5e.png",
-    "nav327.css",
-    "nav327.js",
-    "nav327/CASES.json",
-    "neuro300/CASES.json",
-    "neuro300/gbm-0.jpg",
-    "neuro300/gbm-1.jpg",
-    "neuro300/gbm-2.jpg",
-    "neuro300/gbm-3.jpg",
-    "neuro302/GALLERY.json",
-    "nvc310.html",
-    "perianal-cases.html",
-    "perianal-report.js",
-    "search252-core.js",
-    "shoulder-followup-mri/posterior-reduced-b.png"
-  ],
+  "overrides": [],
   "generated": [
     "app-version-data.js",
     "search252-data.js",
     "search252-catalog.js"
   ],
-  "additions": [
-    "nav327-diffusion.js",
-    "nav327/epidermoid-fig2.jpg",
-    "nvc310/v-contact-fig1.png"
-  ]
+  "additions": [],
+  "override_directory": "runtime-overrides/357",
+  "signing": {
+    "v1": true,
+    "v2": true,
+    "v3": true,
+    "v4": false,
+    "verify_min_sdk": 23
+  }
 }
